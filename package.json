@@ -1,0 +1,25 @@
+{
+  "name": "sekai-ai-itinerary-planner",
+  "version": "1.0.0",
+  "description": "A travel itinerary planner built from 20 hand-curated destinations — real landmarks, restaurants, and neighborhoods, with a deterministic engine that builds geographically sensible day-by-day plans. No invented venues, no AI-generated data.",
+  "keywords": ["nextjs", "react", "typescript", "travel", "itinerary-planner", "trip-planner"],
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.3.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.2",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "typescript": "^5.8.3"
+  }
+}
