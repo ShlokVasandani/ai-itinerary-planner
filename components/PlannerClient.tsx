@@ -72,6 +72,7 @@ export interface PlannerInitial {
   end?: string;
   adults?: string;
   go?: string;
+  origin?: string;
 }
 
 export default function PlannerClient({ initial }: { initial: PlannerInitial }) {
@@ -90,7 +91,7 @@ export default function PlannerClient({ initial }: { initial: PlannerInitial }) 
   const [itinerary, setItinerary] = useState<GeneratedItinerary | null>(null);
   const [busy, setBusy] = useState(false);
   const [stale, setStale] = useState(false);
-  const [origin, setOrigin] = useState("");
+  const [origin, setOrigin] = useState(/^[A-Za-z]{3}$/.test(initial.origin ?? "") ? initial.origin!.toUpperCase() : "");
   const regen = useRef(0);
   const resultsRef = useRef<HTMLDivElement>(null);
 
@@ -164,7 +165,7 @@ export default function PlannerClient({ initial }: { initial: PlannerInitial }) 
     <main className="planner">
       <header className="planner-hero">
         <div className="planner-hero-photo" aria-hidden="true">
-          <Photo slug={destination.slug} city={destination.city} sizes="(max-width: 820px) 100vw, 360px" priority />
+          <Photo slug={destination.slug} city={destination.city} sizes="120px" priority />
         </div>
         <div>
           <p className="eyebrow">Plan a trip</p>

@@ -1064,6 +1064,18 @@ function finishDay(env: Env, ctx: DayCtx, st: BuildState, title: string, mustIds
 
 function buildCityDay(env: Env, ctx: DayCtx, used: Used, forced: Entry[], titleIdx: number): ItineraryDay {
   const st: BuildState = { clock: ctx.startMin, stops: [], used, placed: [] };
+  if (ctx.startMin >= toMin("21:30")) {
+    // Landing very late: nothing sensible fits, so the first day is just arrival and rest.
+    st.stops.push({
+      time: fromMin(Math.min(ctx.startMin, 23 * 60)),
+      kind: "free-time",
+      name: "Arrive, check in and rest",
+      neighborhood: env.inp.destination.city,
+      description: "Your flight lands too late for sightseeing; the plan starts fresh tomorrow.",
+      durationLabel: "open",
+    });
+    return finishDay(env, ctx, st, "Arrival", []);
+  }
   const forcedLandmarks = forced.filter((f) => f.cat === "landmark");
   // Daytime experiences and shopping count against the same pace cap as landmarks.
   // At least one landmark always stays; extras are dropped (shopping first) when the cap is tight.
@@ -1219,7 +1231,7 @@ function buildTripDay(env: Env, ctx: DayCtx, used: Used, trip: Entry, forced: En
   });
   const arrive = departAt + travel;
   const stay = fullDay ? Math.max(180, toMin("16:30") - arrive) : Math.max(120, toMin("13:30") - arrive);
-  const fitted = fitOpening(rec as Verifiable, ctx.weekday, arrive, Math.min(stay, 120), 60);
+  const fitted = fitOpening(rec as Verifiable, ctx.weekday, arrive, Math.min(stay, 120), 150);
   const activityStart = fitted ?? arrive;
   const tripCost = entryCost(trip, currency);
   const activity: TimelineStop = {
@@ -1344,6 +1356,14 @@ function assignForced(env: Env, ctxs: DayCtx[], tripDays: Set<number>): { byDay:
   return { byDay, warnings, tripPicks };
 }
 
+/** A day trip is only viable if the place is open soon after the traveller would arrive. */
+function tripFeasible(t: Entry, ctx: DayCtx): boolean {
+  const rec = t.rec as DayTrip;
+  const departAt = rec.suggestedDuration === "half-day" ? toMin("09:00") : toMin("08:00");
+  const arrive = departAt + parseTravelMinutes(rec.travelTime, 90);
+  return fitOpening(rec as Verifiable, ctx.weekday, arrive, 120, 150) !== null;
+}
+
 function pickTrips(env: Env, ctxs: DayCtx[], idxs: number[], forcedPicks: Map<number, Entry>, used: Used): Map<number, Entry> {
   const out = new Map<number, Entry>(forcedPicks);
   const boosted = new Set<Interest>([...env.inp.interests, ...(STYLE_INTEREST_BOOST[env.inp.travelStyle] ?? [])]);
@@ -1351,7 +1371,7 @@ function pickTrips(env: Env, ctxs: DayCtx[], idxs: number[], forcedPicks: Map<nu
   for (const idx of idxs) {
     if (out.has(idx)) continue;
     const ranked = env.cat.dayTrips
-      .filter((t) => !taken.has(t.id) && !env.avoid.has(t.id) && !used.names.has(t.norm) && !isClosedAllDay(t.rec as Verifiable, ctxs[idx].weekday))
+      .filter((t) => !taken.has(t.id) && !env.avoid.has(t.id) && !used.names.has(t.norm) && !isClosedAllDay(t.rec as Verifiable, ctxs[idx].weekday) && tripFeasible(t, ctxs[idx]))
       .map((t) => {
         const rec = t.rec as DayTrip;
         let s = rec.suggestedDuration === "full-day" ? 5 : 0;
@@ -1491,7 +1511,7 @@ export function regenerateDay(itinerary: GeneratedItinerary, dayNumber: number, 
     const currentTripId = current.stops.find((s) => s.category === "dayTrip")?.refId;
     const forcedTrip = forced.find((f) => f.cat === "dayTrip");
     const alternatives = env.cat.dayTrips.filter(
-      (t) => !used.ids.has(t.id) && !env.avoid.has(t.id) && !isClosedAllDay(t.rec as Verifiable, ctx.weekday)
+      (t) => !used.ids.has(t.id) && !env.avoid.has(t.id) && !isClosedAllDay(t.rec as Verifiable, ctx.weekday) && tripFeasible(t, ctx)
     );
     const others = alternatives.filter((t) => t.id !== currentTripId);
     const pick = forcedTrip ?? (others.length > 0 ? others[Math.floor(env.rng() * others.length)] : alternatives[0]);
@@ -1610,7 +1630,11 @@ export function swapStop(
     .filter((e) => e.id !== current.id && isAvailable(env, used, e))
     .filter((e) => {
       if (e.cat !== "restaurant") return true;
-      return combinedDietFit(e.rec as Restaurant, inp.dietary) !== "no";
+      const r = e.rec as Restaurant;
+      if (combinedDietFit(r, inp.dietary) === "no") return false;
+      if (inp.hasKids && r.priceLevel === "$$$$") return false;
+      if (stop.kind === "breakfast" || stop.kind === "lunch" || stop.kind === "dinner") return mealMatches(r, stop.kind, false);
+      return true;
     })
     .map((e) => {
       const km = distanceKm(prevEntry, e);
@@ -1659,7 +1683,7 @@ export function findClosedStops(it: GeneratedItinerary): { day: number; stop: st
   for (const day of it.days) {
     if (day.weekday === undefined) continue;
     for (const s of day.stops) {
-      if (!s.refId || s.kind === "transit" || s.kind === "free-time") continue;
+      if (!s.refId || s.kind === "transit" || s.kind === "free-time" || s.name.startsWith("Depart for ")) continue;
       const e = cat.byId.get(s.refId);
       if (!e) continue;
       const rec = e.rec as Verifiable;

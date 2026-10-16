@@ -12,7 +12,7 @@ export class TtlCache<T> {
   constructor(private ttlMs = DEFAULT_TTL_MS, private max = 500, private now: () => number = Date.now) {}
 
   /** Returns the cached value (and when it was fetched) or runs `load` once. Failed loads are not cached. */
-  async get(key: string, load: () => Promise<T>): Promise<{ value: T; cachedAt: number; hit: boolean }> {
+  async get(key: string, load: () => Promise<T>, ttlFor?: (value: T) => number): Promise<{ value: T; cachedAt: number; hit: boolean }> {
     const t = this.now();
     const found = this.store.get(key);
     if (found && found.expires > t) {
@@ -25,7 +25,13 @@ export class TtlCache<T> {
       if (oldest !== undefined) this.store.delete(oldest);
     }
     try {
-      return { value: await promise, cachedAt: t, hit: false };
+      const value = await promise;
+      // Lets callers keep degraded (fallback) results for a much shorter time than good ones.
+      if (ttlFor) {
+        const entry = this.store.get(key);
+        if (entry && entry.value === promise) entry.expires = t + ttlFor(value);
+      }
+      return { value, cachedAt: t, hit: false };
     } catch (e) {
       this.store.delete(key);
       throw e;

@@ -2180,3 +2180,13 @@ main {
 .planner-loading {
   min-height: 100svh;
 }
+
+@media (pointer: coarse), (max-width: 700px) {
+  .btn-small {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  .stop-actions {
+    gap: 12px;
+  }
+}

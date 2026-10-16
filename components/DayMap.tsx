@@ -49,6 +49,7 @@ export default function DayMap({ stops, dayNumber, city }: Props) {
         map = L.map(mapEl.current, { scrollWheelZoom: false, zoomControl: true, attributionControl: true });
         L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
           maxZoom: 19,
+          detectRetina: true,
           attribution: '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors',
         }).addTo(map);
         const pts: [number, number][] = [];

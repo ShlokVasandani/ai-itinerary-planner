@@ -124,6 +124,19 @@ describe("route helper", () => {
   });
 });
 
+describe("fallback caching", () => {
+  it("keeps fallbacks for a short time only", async () => {
+    let calls = 0;
+    const f = (async () => { calls++; return json({}, 500); }) as unknown as typeof fetch;
+    const a = activityQuery.parse({ q: "Louvre", city: "Paris" });
+    await getActivityPrices(a, { VIATOR_API_KEY: "k" }, f);
+    await getActivityPrices(a, { VIATOR_API_KEY: "k" }, f);
+    expect(calls).toBe(1); // still cached within the minute
+    const { FALLBACK_TTL_MS } = await import("../lib/prices/service");
+    expect(FALLBACK_TTL_MS).toBeLessThan(30 * 60 * 1000);
+  });
+});
+
 describe("untrusted upstream URLs", () => {
   it("ignores hostile Travelpayouts links and non-Viator product URLs", async () => {
     const f = (async () => json({ success: true, data: [

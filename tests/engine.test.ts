@@ -91,7 +91,7 @@ describe("opening hours", () => {
   it("never schedules a closed venue, whatever weekday the trip starts", () => {
     for (const d of destinations) {
       for (let offset = 0; offset < 7; offset++) {
-        const it = generateItinerary(base(d.slug, { duration: 5, startDate: nextDate(START, offset) }));
+        const it = generateItinerary(base(d.slug, { duration: 14, startDate: nextDate(START, offset) }));
         expect(findClosedStops(it), `${d.slug} +${offset}`).toEqual([]);
       }
     }
@@ -278,5 +278,14 @@ describe("dietary", () => {
         }
       }
     }
+  });
+});
+
+describe("late arrival", () => {
+  it("never wraps past midnight", () => {
+    const it = generateItinerary(base("new-york-city", { duration: 3, arrivalFlightTime: "22:30" }));
+    expect(it.days[0].stops).toHaveLength(1);
+    expect(it.days[0].stops[0].name).toMatch(/rest/i);
+    expect(findClosedStops(it)).toEqual([]);
   });
 });

@@ -1,7 +1,7 @@
 import { buildLinks } from "../providers/links";
 import type { Offer } from "../providers/types";
 import { hashSeed } from "../engine/rng";
-import { TtlCache } from "./cache";
+import { DEFAULT_TTL_MS, TtlCache } from "./cache";
 import { travelpayoutsFlights, viatorActivities } from "./providers";
 import type { ActivityQuery, FlightQuery } from "./schema";
 
@@ -70,9 +70,13 @@ export async function getFlightPrices(q: FlightQuery, env: Env, f: typeof fetch 
       reason,
       disclaimer: DISCLAIMER,
     };
-  });
+  }, ttlFor);
   return { ...value, updatedAt: new Date(cachedAt).toISOString() };
 }
+
+/** Fallback responses are kept for one minute so an API recovery shows up quickly. */
+export const FALLBACK_TTL_MS = 60_000;
+const ttlFor = (v: PriceResponse) => (v.mode === "fallback" ? FALLBACK_TTL_MS : DEFAULT_TTL_MS);
 
 export async function getActivityPrices(q: ActivityQuery, env: Env, f: typeof fetch = fetch): Promise<PriceResponse> {
   const key = `activity|${q.q.toLowerCase()}|${q.city.toLowerCase()}|${q.currency}|${env.VIATOR_API_KEY ? "k" : "n"}`;
@@ -99,6 +103,6 @@ export async function getActivityPrices(q: ActivityQuery, env: Env, f: typeof fe
       reason,
       disclaimer: DISCLAIMER,
     };
-  });
+  }, ttlFor);
   return { ...value, updatedAt: new Date(cachedAt).toISOString() };
 }

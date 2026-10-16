@@ -21,6 +21,7 @@ export default async function PlannerPage({ searchParams }: { searchParams: Prom
     end: one(p.end),
     adults: one(p.adults),
     go: one(p.go),
+    origin: one(p.origin),
   };
   return <PlannerClient initial={initial} />;
 }
