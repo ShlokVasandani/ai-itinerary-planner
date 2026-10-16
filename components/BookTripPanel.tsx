@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import OutboundLink from "@/components/OutboundLink";
 import AffiliateNote from "@/components/AffiliateNote";
 import { tripLinksSync, type Offer, type TripLinkInput } from "@/lib/providers";
@@ -42,15 +42,14 @@ function Group({ title, offers, hint }: { title: string; offers: Offer[]; hint?:
 export default function BookTripPanel({
   trip,
   topActivities,
-  defaultOrigin = "",
+  origin,
   onOriginChange,
 }: {
   trip: TripLinkInput;
   topActivities: string[];
-  defaultOrigin?: string;
-  onOriginChange?: (origin: string) => void;
+  origin: string;
+  onOriginChange: (origin: string) => void;
 }) {
-  const [origin, setOrigin] = useState(defaultOrigin);
   const links = useMemo(() => tripLinksSync({ ...trip, origin: origin || undefined }, topActivities), [trip, origin, topActivities]);
 
   return (
@@ -69,10 +68,7 @@ export default function BookTripPanel({
           value={origin}
           maxLength={40}
           placeholder="e.g. JFK or London"
-          onChange={(e) => {
-            setOrigin(e.target.value);
-            onOriginChange?.(e.target.value);
-          }}
+          onChange={(e) => onOriginChange(e.target.value)}
         />
       </div>
       <div className="book-grid">

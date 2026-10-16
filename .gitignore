@@ -8,3 +8,5 @@ next-env.d.ts
 *.tsbuildinfo
 coverage
 scripts/.cache
+!.env.example
+!.env.example

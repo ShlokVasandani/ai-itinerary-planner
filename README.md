@@ -1,134 +1,100 @@
-# Sekai — real itineraries for 20 cities
+# Sekai
 
-**A travel-planning app that builds day-by-day itineraries from a hand-curated dataset
-of real, named, verifiable places — no invented venues, no AI-hallucinated
-restaurants, no generic filler.**
+A trip planner built on hand-verified real places in 20 cities. A deterministic engine turns them into day-by-day
+itineraries with real dates, distances, opening hours and cost ranges, and every stop links to the venue's own site,
+a map and booking providers. It runs with **zero API keys**.
 
-[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Landing page](docs/screenshots/landing-1440.png)
 
-## Screenshots
+## Features
 
-| Homepage | Destination hub |
+- **20 cities**, each with at least 12 landmarks, 12 restaurants, 6 cafes, 6 neighborhoods, 5 experiences, 3 day trips
+  and 5 nightlife spots. No invented venues: coordinates, official URLs and opening hours come from OpenStreetMap and
+  Wikidata, and anything unconfirmed is left empty and listed in [`data-gaps.md`](data-gaps.md).
+- **Itinerary engine v2** (`lib/itinerary-engine.ts`, pure and seeded): 1 to 14 days with real dates; days clustered by
+  coordinates and ordered nearest-first; walking/transit/taxi time per hop; never schedules a closed venue; pace
+  (relaxed / balanced / packed), group size, kids, limited mobility, dietary filters, must-include and skip lists;
+  per-person cost ranges and a budget-fit status; lighter arrival day; departure day that ends 3 hours before a flight;
+  `regenerateDay()` and `swapStop()`.
+- **Booking links** (`lib/providers`): official site first, then deep links to Google Flights, Skyscanner, Booking.com,
+  Airbnb, Viator, GetYourGuide, Klook, 12Go and Rome2rio with your dates filled in. Optional affiliate IDs.
+- **Planner UI**: per-day timeline, cost range, lazy-loaded Leaflet/OpenStreetMap map, swap and shuffle, running trip
+  total, "Book this trip" panel, and a price comparer.
+- **Prices** (optional keys): see [How prices work](#how-prices-work).
+
+| Planner | Destination |
 |---|---|
-| ![Homepage hero](docs/screenshots/home-hero.jpg) | ![Destination grid](docs/screenshots/destination-grid.jpg) |
+| ![Planner](docs/screenshots/planner-1440.png) | ![Destination](docs/screenshots/destination-1440.png) |
 
-| Destination detail | Generated itinerary |
-|---|---|
-| ![Tokyo destination page](docs/screenshots/destination-detail.jpg) | ![Planner with itinerary](docs/screenshots/planner-result.jpg) |
-
-## What it does
-
-- **20 fully documented destinations** (Tokyo, Paris, London, Dubai, Singapore, Bangkok,
-  Rome, Barcelona, New York City, Istanbul, Seoul, Amsterdam, Copenhagen, Hong Kong,
-  Sydney, Zurich, Los Angeles, Kuala Lumpur, Vienna, Lisbon), each with landmarks,
-  restaurants, cafés, neighborhoods, shopping, nightlife, experiences, day trips,
-  transportation, and practical travel info — hundreds of real, individually
-  researched places in total.
-- **A deterministic itinerary engine** (`lib/itinerary-engine.ts`) that clusters stops
-  geographically by neighborhood, paces meals and breaks realistically, avoids
-  overpacking a day, and adapts the plan to trip length (3/5/7 days), budget, travel
-  style, and interests — no LLM call, no external API, same input always produces
-  the same well-formed output.
-- **Real, licensed destination photography**, sourced from Wikimedia Commons and
-  individually verified (see `/credits` once running, or `CREDITS.md`).
-- **No external APIs required to run it.** Everything runs from the static dataset in
-  `lib/data/`, so there's nothing to configure and nothing that can invent a place
-  that doesn't exist.
-
-## Why this exists
-
-Most "AI travel planner" demos wire an LLM to a prompt and call it done — which means
-the itinerary is only as good as whatever the model happened to hallucinate that day,
-with no guarantee a restaurant exists, a museum is still open, or two "must-see" stops
-aren't a 90-minute walk apart. Sekai takes the opposite approach: **the data is real
-and hand-verified, and the planning logic is a deterministic algorithm, not a model.**
-
-The itinerary engine specifically handles:
-- **Geographic clustering** — ranks each city's neighborhoods against the traveler's
-  interests and travel style, then builds each day around the highest-scoring
-  neighborhood so you're not crossing town and back for a single stop.
-- **Realistic pacing** — caps total sightseeing time per day, inserts meals at
-  sensible hours, adds a coffee/rest break, and avoids scheduling overlaps.
-- **Personalization that actually changes the output** — budget, travel style, and
-  interests all measurably affect which restaurants and landmarks get selected, not
-  just the copy around them.
-- **Duration-aware structure** — a 7-day trip gets a dedicated day trip out of the
-  city where the data supports one; a 3-day trip doesn't.
-
-## Tech stack
-
-- **Next.js 15** (App Router) + **React 19** + **TypeScript**
-- Plain CSS (no framework) — a single design system covering an editorial,
-  photography-led visual language
-- No external runtime dependencies beyond Next/React itself — no CMS, no database,
-  no LLM API
-
-## Project structure
-
-```
-lib/types.ts               Destination data model
-lib/data/<city>.ts          One file per destination (20 total)
-lib/data/index.ts           Central registry + search/lookup helpers
-lib/itinerary-engine.ts     generateItinerary() — the planning algorithm
-lib/city-photo-urls.ts      Verified photo sources + license metadata
-lib/format.ts                Shared display labels for interests/styles/budgets
-components/                 UI components (destination cards, tabs, planner)
-app/page.tsx                Homepage + destination hub
-app/destinations/[slug]/    Destination detail page (tabbed sections)
-app/planner/                Interactive itinerary builder
-app/credits/                Live photo attribution page
-```
-
-## Run locally
+## Run it
 
 ```bash
 npm install
-npm run dev
+npm run dev          # http://localhost:3000
+npm test             # vitest
+npm run validate     # data checks (add --skip-urls via npm run validate:offline)
+npm run build
 ```
 
-Visit `http://localhost:3000`.
+## Data model
 
-## Adding destination #21
+Types live in `lib/types.ts`.
 
-1. Create `lib/data/<slug>.ts` implementing the `Destination` type from `lib/types.ts`.
-2. Import it in `lib/data/index.ts` and add it to the `destinations` array.
+- Hand-written content stays in `lib/data/<slug>.ts` (`DestinationSource`).
+- Per-city meta is in `lib/data/city-meta.ts`: ISO `currency`, `airportCodes`, `transitCardInfo`, 12-month `seasons`
+  (crowds / weather / price, 1 to 5, **editorial estimates**), `events`, eight `localPhrases`, `ianaTimezone`.
+- Verified facts are generated into `lib/data/generated/<slug>.json` and merged at load by `lib/data/merge.ts`:
+  `coords`, `officialUrl`, `openingHours`, `closedDays` (0 = Sunday), `costMin` / `costMax` / `costCurrency`,
+  `sources`, `verifiedAt`, plus neighborhood `coords` and `radiusKm` and a city bounding box. `mapsUrl` is generated from
+  the name and city. The original text is kept as `approxCost`.
+- Every record (landmark, restaurant, cafe, experience, shopping, nightlife, day trip) has a unique `id`.
 
-Nothing else needs to change — the UI, search, and itinerary engine all read from
-that single list.
+### Scripts
 
-## Destination imagery
+| Command | What it does |
+|---|---|
+| `npx tsx scripts/parse-costs.ts` | Parses `approxCost` text to numbers; writes `docs/cost-parse-report.md` for review |
+| `npm run enrich -- <slug>` | Looks up coordinates, URLs and opening hours (Nominatim at 1 request/second, Wikidata); cached in `scripts/.cache` |
+| `npx tsx scripts/prune-dead-urls.ts` | Removes official URLs that return 404/410 |
+| `npx tsx scripts/build-gaps.ts` | Regenerates `data-gaps.md` |
+| `npm run validate` | Duplicate ids, required fields, coordinates inside the city box, `costMin <= costMax`, URL HEAD checks (report only) |
+| `npx tsx scripts/fetch-photos.ts` | Downloads the Wikimedia photos and builds AVIF/WebP + blur placeholders |
+| `npx tsx scripts/screenshots.ts` | Screenshots at 375, 820 and 1440 px (needs the app running and Chrome) |
 
-Each destination card and hero shows a real photograph, hotlinked from
-Wikimedia Commons (see `lib/city-photo-urls.ts` and `CREDITS.md` for the full list
-with sources and licenses — also visible live at `/credits`). Every file was
-individually verified to exist on Commons, with its license recorded, before use.
+### Add a city
 
-To switch a city to a locally-hosted file instead (e.g. your own photo, or a
-downloaded copy for offline/production use), drop one image into
-`public/images/destinations/` named exactly after that city's slug:
+1. Create `lib/data/<slug>.ts` exporting a `DestinationSource` (copy `lib/data/paris.ts`). Meet the minimum counts and
+   give every record a unique `id`.
+2. Add its meta (currency, airports, seasons, events, 8 phrases) to `lib/data/city-meta.ts`.
+3. Create `lib/data/generated/<slug>.json` containing `{}`, import it and the city in `lib/data/index.ts`.
+4. Add a photo entry in `lib/city-photo-urls.ts`, then run `npx tsx scripts/fetch-photos.ts <slug>`.
+5. Run `npm run enrich -- <slug>`, `npx tsx scripts/parse-costs.ts`, `npx tsx scripts/build-gaps.ts`, then
+   `npm run validate` and `npm test`.
 
-```
-public/images/destinations/tokyo.jpg
-public/images/destinations/new-york-city.jpg
-```
+## Environment variables
 
-Accepted extensions: `.jpg`, `.jpeg`, `.png`, `.webp`. `lib/destination-photo.ts`
-checks for a matching file at request time — as soon as it's there, it takes
-priority over the Wikimedia URL, with no code changes required. If a city has
-neither a local file nor a Wikimedia entry, it falls back to the generative art in
-`components/DestinationArt.tsx` so nothing ever breaks.
+Copy `.env.example` to `.env.local`. Everything is optional.
 
-## Data quality standards
+| Variable | Scope | Purpose |
+|---|---|---|
+| `TRAVELPAYOUTS_TOKEN` | server only | Flight prices (Travelpayouts / Aviasales Data API) |
+| `VIATOR_API_KEY` | server only | Activity prices (Viator Partner API, Basic Access) |
+| `NEXT_PUBLIC_AFFILIATE_BOOKING_AID`, `_SKYSCANNER_ID`, `_VIATOR_PID`, `_GETYOURGUIDE_PARTNER_ID`, `_KLOOK_AID`, `_12GO_ID` | public | Appended to outbound links as each provider's tracking parameter. Affiliate links get `rel="noopener noreferrer sponsored"` and an "Affiliate links" disclosure |
 
-Every place listed is a real, well-known, independently verifiable business or
-landmark. No prices, hours, or addresses are invented — where a specific detail
-can't be responsibly verified, it's omitted rather than guessed, and cost estimates
-are flagged as approximate.
+## How prices work
+
+`/api/prices/flights` and `/api/prices/activities` run on the server, validate params with zod, rate-limit (20/min per
+client) and cache for 30 minutes. With a key they return real prices (flights are cached fares, not live availability).
+Without a key, or if an API fails, they return link-only offers with placeholder numbers marked **"Sample prices"**
+(`isSample: true`); sample numbers are never presented as real. Every price block shows when it was last updated and
+"Prices change, confirm on the provider's site". Provider choice, signup steps, limits and production notes are in
+[`docs/PRICES.md`](docs/PRICES.md).
+
+## Photos and credits
+
+Photos are licensed Wikimedia Commons images (see [`CREDITS.md`](CREDITS.md) and `/credits`). Map tiles and place data are
+© OpenStreetMap contributors.
 
 ## License
 
-Code is [MIT licensed](LICENSE). Destination photography is **not** covered by that
-license — each image carries its own Wikimedia Commons license (CC BY, CC BY-SA,
-CC0, or public domain); see `CREDITS.md` or `/credits` for the specifics of each.
+MIT

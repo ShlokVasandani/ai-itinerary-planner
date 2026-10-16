@@ -14,7 +14,6 @@
       "costCurrency": "HKD",
       "costMax": 265,
       "costMin": 265,
-      "officialUrl": "http://www.plm.org.hk/.com",
       "sources": [
         "https://www.openstreetmap.org/way/45659816",
         "https://www.wikidata.org/wiki/Q528079"

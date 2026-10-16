@@ -529,7 +529,6 @@
       "costCurrency": "MYR",
       "costMax": 0,
       "costMin": 0,
-      "officialUrl": "http://www.hainannet.com.my/v2/index.php",
       "sources": [
         "https://www.openstreetmap.org/way/453802547",
         "https://www.wikidata.org/wiki/Q2639733"

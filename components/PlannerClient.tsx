@@ -299,8 +299,8 @@ export default function PlannerClient({ initial }: { initial: PlannerInitial }) 
                 </p>
               )}
 
-              <PricesPanel trip={trip} currency={itinerary.currency} />
-              <BookTripPanel trip={trip} topActivities={topActivities} defaultOrigin={origin} onOriginChange={setOrigin} />
+              <PricesPanel trip={trip} currency={itinerary.currency} origin={origin} onOriginChange={setOrigin} topActivities={topActivities} />
+              <BookTripPanel trip={trip} topActivities={topActivities} origin={origin} onOriginChange={setOrigin} />
             </>
           )}
         </div>

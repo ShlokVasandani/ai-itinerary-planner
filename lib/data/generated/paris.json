@@ -449,7 +449,6 @@
         "lat": 48.828814,
         "lng": 2.35064
       },
-      "officialUrl": "https://chezgladines-butteauxcailles.fr/",
       "openingHours": [
         {
           "days": "Mo-Fr",
@@ -570,7 +569,6 @@
       "costCurrency": "EUR",
       "costMax": 10,
       "costMin": 8,
-      "officialUrl": "https://asdufallafel.com/",
       "openingHours": [
         {
           "days": "Mo-Th,Su",

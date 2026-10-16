@@ -230,7 +230,6 @@
       "costCurrency": "CHF",
       "costMax": 55,
       "costMin": 35,
-      "officialUrl": "https://www.bindella.ch/de/bindella-zuerich.html",
       "openingHours": [
         {
           "days": "Mo-Sa",
@@ -278,33 +277,9 @@
       "verifiedAt": "2026-10-16"
     },
     "r-confiserie-sprungli": {
-      "closedDays": [
-        0
-      ],
-      "coords": {
-        "lat": 47.398473,
-        "lng": 8.429914
-      },
       "costCurrency": "CHF",
       "costMax": 25,
-      "costMin": 10,
-      "officialUrl": "https://www.spruengli.ch/de/standorte/produktion-dietikon-kein-verkauf.html",
-      "openingHours": [
-        {
-          "days": "Mo-Fr",
-          "open": "08:00",
-          "close": "18:00"
-        },
-        {
-          "days": "Sa",
-          "open": "08:00",
-          "close": "12:00"
-        }
-      ],
-      "sources": [
-        "https://www.openstreetmap.org/node/7548052334"
-      ],
-      "verifiedAt": "2026-10-16"
+      "costMin": 10
     },
     "r-hiltl": {
       "closedDays": [],
@@ -473,32 +448,7 @@
       ],
       "verifiedAt": "2026-10-16"
     },
-    "s-confiserie-sprungli": {
-      "closedDays": [
-        0
-      ],
-      "coords": {
-        "lat": 47.398473,
-        "lng": 8.429914
-      },
-      "officialUrl": "https://www.spruengli.ch/de/standorte/produktion-dietikon-kein-verkauf.html",
-      "openingHours": [
-        {
-          "days": "Mo-Fr",
-          "open": "08:00",
-          "close": "18:00"
-        },
-        {
-          "days": "Sa",
-          "open": "08:00",
-          "close": "12:00"
-        }
-      ],
-      "sources": [
-        "https://www.openstreetmap.org/node/7548052334"
-      ],
-      "verifiedAt": "2026-10-16"
-    },
+    "s-confiserie-sprungli": {},
     "s-freitag-flagship-store": {
       "closedDays": [
         0

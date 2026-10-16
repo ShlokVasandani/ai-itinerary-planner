@@ -12,10 +12,10 @@ holiday rules are skipped. Prices are the original hand-written `approxCost` tex
 
 | City | Records | With coordinates | With official URL | With opening hours or closed day | Without coordinates |
 |---|---:|---:|---:|---:|---:|
-| Tokyo | 48 | 30 | 21 | 13 | 18 |
-| Paris | 48 | 36 | 30 | 21 | 12 |
+| Tokyo | 48 | 30 | 20 | 13 | 18 |
+| Paris | 48 | 36 | 28 | 21 | 12 |
 | London | 48 | 37 | 35 | 19 | 11 |
-| Dubai | 48 | 31 | 12 | 9 | 17 |
+| Dubai | 48 | 31 | 11 | 9 | 17 |
 | Singapore | 48 | 34 | 18 | 15 | 14 |
 | Bangkok | 48 | 32 | 19 | 18 | 16 |
 | Rome | 48 | 30 | 18 | 12 | 18 |
@@ -23,16 +23,16 @@ holiday rules are skipped. Prices are the original hand-written `approxCost` tex
 | New York City | 48 | 42 | 34 | 27 | 6 |
 | Istanbul | 48 | 35 | 25 | 16 | 13 |
 | Seoul | 48 | 30 | 13 | 7 | 18 |
-| Amsterdam | 48 | 32 | 24 | 20 | 16 |
+| Amsterdam | 48 | 32 | 23 | 20 | 16 |
 | Copenhagen | 48 | 29 | 21 | 16 | 19 |
-| Hong Kong | 48 | 31 | 9 | 13 | 17 |
+| Hong Kong | 48 | 31 | 8 | 13 | 17 |
 | Sydney | 48 | 35 | 23 | 9 | 13 |
-| Zurich | 48 | 31 | 30 | 16 | 17 |
-| Los Angeles | 48 | 35 | 23 | 12 | 13 |
-| Kuala Lumpur | 48 | 32 | 16 | 13 | 16 |
+| Zurich | 48 | 29 | 27 | 14 | 19 |
+| Los Angeles | 48 | 35 | 22 | 12 | 13 |
+| Kuala Lumpur | 48 | 32 | 15 | 13 | 16 |
 | Vienna | 48 | 30 | 26 | 11 | 18 |
-| Lisbon | 48 | 38 | 24 | 16 | 10 |
-| **Total** | **960** | **663** | **446** | **295** | **297** |
+| Lisbon | 48 | 38 | 23 | 16 | 10 |
+| **Total** | **960** | **661** | **434** | **293** | **299** |
 
 Experiences are mostly activities (a cruise, a cooking class) rather than a single venue, so most of them have no
 coordinates by design; the engine places them near the rest of the day instead.
@@ -60,12 +60,13 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Robot Restaurant-style neon show (experience)
 - Tea ceremony experience (experience)
 
-**Official URL not confirmed (9).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+**Official URL not confirmed (10).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
 
 - Ueno Park (landmark)
 - Ichiran Shibuya (restaurant)
 - Tonki (restaurant)
 - Afuri (restaurant)
+- Gyukatsu Motomura (restaurant)
 - Koffee Mameya (cafe)
 - Nana's Green Tea (cafe)
 - Fuglen Tokyo (cafe)
@@ -89,11 +90,13 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Père Lachaise Cemetery walk (experience)
 - Moulin Rouge cabaret show (experience)
 
-**Official URL not confirmed (6).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+**Official URL not confirmed (8).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
 
 - Place des Vosges (landmark)
+- L'As du Fallafel (restaurant)
 - Marché des Enfants Rouges (restaurant)
 - Le Relais de l'Entrecôte (restaurant)
+- Chez Gladines (restaurant)
 - Pierre Hermé (cafe)
 - Carette (cafe)
 - Avenue des Champs-Élysées (shopping)
@@ -145,7 +148,7 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Ski Dubai indoor snow park (experience)
 - Alserkal Avenue gallery walk (experience)
 
-**Official URL not confirmed (19).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+**Official URL not confirmed (20).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
 
 - Al Fahidi Historical Neighbourhood (landmark)
 - Gold Souk (landmark)
@@ -165,6 +168,7 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Bateel Café (cafe)
 - Gold Souk (shopping)
 - Spice Souk (shopping)
+- SkyView Bar (nightlife)
 - Hatta (day trip)
 
 ## Singapore
@@ -434,7 +438,7 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Jordaan hofjes (hidden courtyards) walk (experience)
 - Albert Cuyp Market wander (experience)
 
-**Official URL not confirmed (8).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+**Official URL not confirmed (9).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
 
 - Canal cruise (landmark)
 - Dam Square & Royal Palace (landmark)
@@ -444,6 +448,7 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Bloemenmarkt (Flower Market) (shopping)
 - Waterlooplein Market (shopping)
 - P.C. Hooftstraat (shopping)
+- Heineken Experience (experience)
 
 **Neighborhood centre not confirmed:** Nine Streets (De Negen Straatjes)
 
@@ -504,11 +509,12 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Tram ride ('Ding Ding') across Hong Kong Island (experience)
 - Big Buddha and Tai O fishing village (experience)
 
-**Official URL not confirmed (22).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+**Official URL not confirmed (23).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
 
 - Victoria Peak (landmark)
 - Symphony of Lights & Avenue of Stars (landmark)
 - Man Mo Temple (landmark)
+- Tian Tan Buddha & Ngong Ping 360 (landmark)
 - Temple Street Night Market (landmark)
 - Hong Kong Tramways (Ding Ding) (landmark)
 - Lin Heung Tea House (restaurant)
@@ -566,17 +572,19 @@ coordinates by design; the engine places them near the rest of the day instead.
 
 ## Zurich
 
-**Coordinates not confirmed (17).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+**Coordinates not confirmed (19).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
 
 - Lake Zurich promenade & lido swimming (landmark)
 - Swiss National Museum (landmark)
 - LUXX (restaurant)
+- Confiserie Sprüngli (restaurant)
 - Zum Kropf (restaurant)
 - Café Schober (cafe)
 - Bohnenblust (cafe)
 - Conditorei Honold (cafe)
 - Café Terrasse (cafe)
 - Niederdorf boutiques (shopping)
+- Confiserie Sprüngli (shopping)
 - Kreis 5 bar scene (nightlife)
 - Niederdorf bar lane (nightlife)
 - Zukunft (nightlife)
@@ -586,9 +594,10 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Swiss chocolate and cheese tasting tour (experience)
 - Old Town self-guided walking tour (experience)
 
-**Official URL not confirmed (1).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+**Official URL not confirmed (2).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
 
 - Lindenhof (landmark)
+- Bindella (restaurant)
 
 ## Los Angeles
 
@@ -608,13 +617,14 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Pacific Coast Highway drive to Malibu (experience)
 - Getty Center architecture and garden walk (experience)
 
-**Official URL not confirmed (12).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+**Official URL not confirmed (13).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
 
 - Venice Beach Boardwalk (landmark)
 - Venice Canals (landmark)
 - Hollywood Sign viewpoints (landmark)
 - Grand Central Market (restaurant)
 - Gjusta (restaurant)
+- Intelligentsia Coffee (cafe)
 - Go Get Em Tiger (cafe)
 - Rodeo Drive (shopping)
 - Melrose Avenue (shopping)
@@ -644,10 +654,11 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Malaysian cooking class (experience)
 - Cameron Highlands tea plantation visit (extended day trip) (experience)
 
-**Official URL not confirmed (16).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+**Official URL not confirmed (17).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
 
 - Batu Caves (landmark)
 - KLCC Park & Aquaria (landmark)
+- Thean Hou Temple (landmark)
 - Merdeka Square (Dataran Merdeka) (landmark)
 - KL Bird Park (landmark)
 - Nasi Kandar Pelita (restaurant)
@@ -710,11 +721,12 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Day trip to Sintra (experience)
 - Portuguese wine tasting (experience)
 
-**Official URL not confirmed (14).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+**Official URL not confirmed (15).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
 
 - Praça do Comércio (landmark)
 - Santa Justa Lift (landmark)
 - Convento do Carmo (landmark)
+- MAAT (Museum of Art, Architecture and Technology) (landmark)
 - A Cevicheria (restaurant)
 - Taberna da Rua das Flores (restaurant)
 - Manteigaria (restaurant)

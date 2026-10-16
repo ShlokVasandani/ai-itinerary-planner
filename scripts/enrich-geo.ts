@@ -194,6 +194,8 @@ const REJECTED_MATCHES = new Set<string>([
   "vienna:s-mariahilfer-strae", // Mariahilfer Straße
   "zurich:n-zukunft", // Zukunft
   "dubai:r-gold-souk-cafeteria", // Al Ahmadiya Cafeteria (Deira)
+  "zurich:r-confiserie-sprungli", // matched the Dietikon production site, not the shop
+  "zurich:s-confiserie-sprungli",
 ]);
 
 const GAP_LINES: Record<string, string[]> = {};
