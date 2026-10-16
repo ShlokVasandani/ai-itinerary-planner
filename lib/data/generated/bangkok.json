@@ -1,0 +1,667 @@
+{
+  "bbox": [
+    13.4525,
+    100.1847,
+    14.0525,
+    100.8024
+  ],
+  "places": {
+    "bangkok-art-and-culture-centre": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 13.746778,
+        "lng": 100.530263
+      },
+      "officialUrl": "https://www.bacc.or.th/",
+      "openingHours": [
+        {
+          "days": "Tu-Su",
+          "open": "10:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/48966995",
+        "https://www.wikidata.org/wiki/Q1130188"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-ari-coffee": {
+      "coords": {
+        "lat": 13.728683,
+        "lng": 100.530207
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1185590826"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-factory-coffee": {
+      "coords": {
+        "lat": 13.75945,
+        "lng": 100.535473
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/6169935485"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-mont-nom-sod": {
+      "closedDays": [],
+      "coords": {
+        "lat": 13.744435,
+        "lng": 100.52993
+      },
+      "officialUrl": "https://www.anywheel.co.th/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:30",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6301527885"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "chao-phraya-cruise": {
+      "costCurrency": "THB",
+      "costMax": 200,
+      "costMin": 40
+    },
+    "chatuchak-market": {
+      "closedDays": [
+        1,
+        2
+      ],
+      "coords": {
+        "lat": 13.800265,
+        "lng": 100.551123
+      },
+      "costCurrency": "THB",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.chatuchakmarket.org/",
+      "openingHours": [
+        {
+          "days": "Sa,Su",
+          "open": "09:00",
+          "close": "18:00"
+        },
+        {
+          "days": "We,Th",
+          "open": "07:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Fr",
+          "open": "18:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/37911198",
+        "https://www.wikidata.org/wiki/Q1068311"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "erawan-shrine": {
+      "coords": {
+        "lat": 13.744321,
+        "lng": 100.540421
+      },
+      "costCurrency": "THB",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/373104218",
+        "https://www.wikidata.org/wiki/Q1235886"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "grand-palace": {
+      "closedDays": [],
+      "coords": {
+        "lat": 13.749351,
+        "lng": 100.491864
+      },
+      "costCurrency": "THB",
+      "costMax": 500,
+      "costMin": 500,
+      "officialUrl": "https://www.royalgrandpalace.th/en/home",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:30",
+          "close": "15:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/23482754",
+        "https://www.wikidata.org/wiki/Q873769"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "jim-thompson-house": {
+      "closedDays": [],
+      "coords": {
+        "lat": 13.749227,
+        "lng": 100.528281
+      },
+      "costCurrency": "THB",
+      "costMax": 200,
+      "costMin": 200,
+      "officialUrl": "https://www.jimthompsonhouse.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/341577338",
+        "https://www.wikidata.org/wiki/Q2916351"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "khao-san-road": {
+      "coords": {
+        "lat": 13.758905,
+        "lng": 100.497275
+      },
+      "costCurrency": "THB",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/1516377328",
+        "https://www.wikidata.org/wiki/Q1203550"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "lumphini-park": {
+      "closedDays": [],
+      "coords": {
+        "lat": 13.7306,
+        "lng": 100.541538
+      },
+      "costCurrency": "THB",
+      "costMax": 0,
+      "costMin": 0,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "04:30",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/23483299",
+        "https://www.wikidata.org/wiki/Q977437"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-route-66-club": {
+      "coords": {
+        "lat": 13.751352,
+        "lng": 100.575416
+      },
+      "officialUrl": "https://www.route66club.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/329917333"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-baan-khanitha": {
+      "coords": {
+        "lat": 13.723047,
+        "lng": 100.536476
+      },
+      "costCurrency": "THB",
+      "costMax": 1000,
+      "costMin": 600,
+      "officialUrl": "https://www.baan-khanitha.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/420434412"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-jay-fai": {
+      "closedDays": [
+        0,
+        1,
+        2
+      ],
+      "coords": {
+        "lat": 13.752534,
+        "lng": 100.504737
+      },
+      "costCurrency": "THB",
+      "costMax": 1000,
+      "costMin": 400,
+      "openingHours": [
+        {
+          "days": "We-Sa",
+          "open": "07:00",
+          "close": "19:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4438022589",
+        "https://www.wikidata.org/wiki/Q47206330"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-krua-apsorn": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 13.755241,
+        "lng": 100.501761
+      },
+      "costCurrency": "THB",
+      "costMax": 400,
+      "costMin": 250,
+      "officialUrl": "http://www.kruaapsorn.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "10:30",
+          "close": "20:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1525165266"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-nahm": {
+      "coords": {
+        "lat": 13.723571,
+        "lng": 100.538971
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4160412689"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-or-tor-kor": {
+      "closedDays": [],
+      "coords": {
+        "lat": 13.79713,
+        "lng": 100.547575
+      },
+      "costCurrency": "THB",
+      "costMax": 150,
+      "costMin": 60,
+      "officialUrl": "http://www.ortorkor.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "06:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/156639205",
+        "https://www.wikidata.org/wiki/Q13023506"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-polo-fried-chicken": {
+      "coords": {
+        "lat": 13.732278,
+        "lng": 100.546054
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1021928153"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-sirocco": {
+      "costCurrency": "THB",
+      "costMin": 3000
+    },
+    "r-somtum-der": {
+      "coords": {
+        "lat": 13.727671,
+        "lng": 100.536421
+      },
+      "costCurrency": "THB",
+      "costMax": 350,
+      "costMin": 200,
+      "officialUrl": "https://somtumder.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1224696637"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-thipsamai": {
+      "costCurrency": "THB",
+      "costMax": 150,
+      "costMin": 100
+    },
+    "r-wattana-panich": {
+      "closedDays": [],
+      "coords": {
+        "lat": 13.734174,
+        "lng": 100.587722
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4148034689"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-yaowarat-street-food": {
+      "costCurrency": "THB",
+      "costMax": 200,
+      "costMin": 50
+    },
+    "s-chatuchak-weekend-market": {
+      "closedDays": [
+        1,
+        2
+      ],
+      "coords": {
+        "lat": 13.800265,
+        "lng": 100.551123
+      },
+      "officialUrl": "https://www.chatuchakmarket.org/",
+      "openingHours": [
+        {
+          "days": "Sa,Su",
+          "open": "09:00",
+          "close": "18:00"
+        },
+        {
+          "days": "We,Th",
+          "open": "07:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Fr",
+          "open": "18:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/37911198",
+        "https://www.wikidata.org/wiki/Q1068311"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-icon-siam": {
+      "closedDays": [],
+      "coords": {
+        "lat": 13.726823,
+        "lng": 100.510294
+      },
+      "officialUrl": "https://www.iconsiam.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/680735864",
+        "https://www.wikidata.org/wiki/Q20585880"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-mbk-center": {
+      "closedDays": [],
+      "coords": {
+        "lat": 13.744715,
+        "lng": 100.529916
+      },
+      "officialUrl": "https://www.mbk-center.co.th/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/157487610",
+        "https://www.wikidata.org/wiki/Q1926372"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-pak-khlong-talat-flower-market": {
+      "closedDays": [],
+      "coords": {
+        "lat": 13.741709,
+        "lng": 100.49633
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1423814928"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-siam-paragon-siam-center": {
+      "coords": {
+        "lat": 13.746778,
+        "lng": 100.534954
+      },
+      "officialUrl": "http://www.siamparagon.co.th/",
+      "sources": [
+        "https://www.openstreetmap.org/way/781138575",
+        "https://www.wikidata.org/wiki/Q972334"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-ayutthaya": {
+      "coords": {
+        "lat": 14.318947,
+        "lng": 100.511168
+      },
+      "officialUrl": "http://www.ayutthaya.go.th/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/1908806",
+        "https://www.wikidata.org/wiki/Q476222"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-damnoen-saduak-floating-market": {
+      "closedDays": [],
+      "coords": {
+        "lat": 13.519762,
+        "lng": 99.959352
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "12:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/603657447",
+        "https://www.wikidata.org/wiki/Q13014948"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-kanchanaburi": {
+      "coords": {
+        "lat": 14.44019,
+        "lng": 99.267673
+      },
+      "officialUrl": "http://www.kanchanaburi.go.th/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/1908777",
+        "https://www.wikidata.org/wiki/Q275740"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "wat-arun": {
+      "closedDays": [],
+      "coords": {
+        "lat": 13.743898,
+        "lng": 100.488514
+      },
+      "costCurrency": "THB",
+      "costMax": 200,
+      "costMin": 200,
+      "officialUrl": "https://www.bangkok.com/attraction-temple/wat-arun.htm",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:30",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/23481741",
+        "https://www.wikidata.org/wiki/Q724970"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "wat-pho": {
+      "closedDays": [],
+      "coords": {
+        "lat": 13.746346,
+        "lng": 100.492738
+      },
+      "costCurrency": "THB",
+      "costMax": 300,
+      "costMin": 300,
+      "officialUrl": "https://www.watpho.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "18:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/11169995",
+        "https://www.wikidata.org/wiki/Q1059910"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "wat-saket-golden-mount": {
+      "coords": {
+        "lat": 13.753849,
+        "lng": 100.506694
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/88359228"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "wat-traimit": {
+      "coords": {
+        "lat": 13.737999,
+        "lng": 100.513653
+      },
+      "costCurrency": "THB",
+      "costMax": 100,
+      "costMin": 100,
+      "sources": [
+        "https://www.openstreetmap.org/way/241879483",
+        "https://www.wikidata.org/wiki/Q2552433"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-chao-phraya-sunset-river-cruise": {
+      "costCurrency": "THB",
+      "costMax": 2500,
+      "costMin": 1000
+    },
+    "x-damnoen-saduak-floating-market-half-day-trip": {
+      "costCurrency": "THB",
+      "costMax": 1800,
+      "costMin": 1000
+    },
+    "x-muay-thai-match-at-rajadamnern-stadium": {
+      "costCurrency": "THB",
+      "costMax": 2000,
+      "costMin": 1000
+    },
+    "x-thai-cooking-class": {
+      "closedDays": [],
+      "coords": {
+        "lat": 13.720698,
+        "lng": 100.515242
+      },
+      "costCurrency": "THB",
+      "costMax": 2000,
+      "costMin": 1200,
+      "officialUrl": "https://gothaicookingschool.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4646637096"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-traditional-thai-massage": {
+      "costCurrency": "THB",
+      "costMax": 600,
+      "costMin": 300
+    }
+  },
+  "neighborhoods": {
+    "ari": {
+      "coords": {
+        "lat": 13.779708,
+        "lng": 100.54462
+      },
+      "radiusKm": 0.77
+    },
+    "chinatown-bkk": {
+      "coords": {
+        "lat": 13.741907,
+        "lng": 100.508948
+      },
+      "radiusKm": 1.55
+    },
+    "rattanakosin": {
+      "coords": {
+        "lat": 13.752111,
+        "lng": 100.496733
+      },
+      "radiusKm": 1.69
+    },
+    "silom-sathorn": {
+      "coords": {
+        "lat": 13.728816,
+        "lng": 100.542188
+      },
+      "radiusKm": 0.8
+    },
+    "sukhumvit": {
+      "coords": {
+        "lat": 13.737467,
+        "lng": 100.561498
+      },
+      "radiusKm": 0.77
+    }
+  }
+}

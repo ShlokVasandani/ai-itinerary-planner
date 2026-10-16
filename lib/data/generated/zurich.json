@@ -1,0 +1,687 @@
+{
+  "bbox": [
+    47.0744,
+    8.098,
+    47.6744,
+    8.984
+  ],
+  "places": {
+    "bahnhofstrasse-walk": {
+      "coords": {
+        "lat": 47.368086,
+        "lng": 8.539887
+      },
+      "costCurrency": "CHF",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.bahnhofstrasse-zuerich.ch/",
+      "sources": [
+        "https://www.openstreetmap.org/way/43583464",
+        "https://www.wikidata.org/wiki/Q675026"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-sprungli-cafe": {
+      "coords": {
+        "lat": 47.452177,
+        "lng": 8.560774
+      },
+      "officialUrl": "https://www.spruengli.ch/de/",
+      "sources": [
+        "https://www.openstreetmap.org/node/8647553986"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-viadukt": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 47.387744,
+        "lng": 8.52639
+      },
+      "officialUrl": "https://im-viadukt.ch/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/39607099"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "fraumunster": {
+      "coords": {
+        "lat": 47.369715,
+        "lng": 8.5412
+      },
+      "costCurrency": "CHF",
+      "costMax": 6,
+      "costMin": 6,
+      "officialUrl": "http://www.fraumuenster.ch/",
+      "sources": [
+        "https://www.openstreetmap.org/way/89967877",
+        "https://www.wikidata.org/wiki/Q690944"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "freitag-tower": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 47.38566,
+        "lng": 8.519434
+      },
+      "costCurrency": "CHF",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.freitag.ch/de/store/freitag-flagship-store-zuerich",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "11:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Sa",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/107104812"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "grossmunster": {
+      "coords": {
+        "lat": 47.370121,
+        "lng": 8.543912
+      },
+      "costCurrency": "CHF",
+      "costMax": 5,
+      "costMin": 0,
+      "officialUrl": "https://www.grossmuenster.ch/",
+      "sources": [
+        "https://www.openstreetmap.org/way/36916418",
+        "https://www.wikidata.org/wiki/Q684948"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "kunsthaus": {
+      "coords": {
+        "lat": 47.370224,
+        "lng": 8.54798
+      },
+      "costCurrency": "CHF",
+      "costMax": 23,
+      "costMin": 23,
+      "officialUrl": "https://www.kunsthaus.ch/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/3768127",
+        "https://www.wikidata.org/wiki/Q685038"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "lake-zurich-promenade": {
+      "costCurrency": "CHF",
+      "costMax": 8,
+      "costMin": 0
+    },
+    "lindenhof": {
+      "coords": {
+        "lat": 47.372916,
+        "lng": 8.540176
+      },
+      "costCurrency": "CHF",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/relation/1693094",
+        "https://www.wikidata.org/wiki/Q10987378"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "lindt-home-of-chocolate": {
+      "closedDays": [],
+      "coords": {
+        "lat": 47.318466,
+        "lng": 8.5509
+      },
+      "officialUrl": "https://www.lindt-home-of-chocolate.com/en/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/715436712",
+        "https://www.wikidata.org/wiki/Q125946609"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "museum-rietberg": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 47.358918,
+        "lng": 8.529735
+      },
+      "officialUrl": "https://www.rietberg.ch/",
+      "sources": [
+        "https://www.openstreetmap.org/node/451722224",
+        "https://www.wikidata.org/wiki/Q668300"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-frau-gerolds-garten": {
+      "coords": {
+        "lat": 47.385302,
+        "lng": 8.519136
+      },
+      "officialUrl": "https://www.fraugerold.ch/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1409699323"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-rimini-bar": {
+      "closedDays": [],
+      "coords": {
+        "lat": 47.371554,
+        "lng": 8.532904
+      },
+      "officialUrl": "http://www.rimini.ch/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "18:45",
+          "close": "24:00"
+        },
+        {
+          "days": "Sa",
+          "open": "18:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Su",
+          "open": "18:45",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/794022952"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-bindella": {
+      "closedDays": [],
+      "coords": {
+        "lat": 47.370685,
+        "lng": 8.540643
+      },
+      "costCurrency": "CHF",
+      "costMax": 55,
+      "costMin": 35,
+      "officialUrl": "https://www.bindella.ch/de/bindella-zuerich.html",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "11:30",
+          "close": "23:30"
+        },
+        {
+          "days": "Su",
+          "open": "17:30",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/331184721"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-cafe-odeon": {
+      "closedDays": [],
+      "coords": {
+        "lat": 47.367794,
+        "lng": 8.545145
+      },
+      "officialUrl": "https://odeon.ch/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "07:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "07:00",
+          "close": "26:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/268468109"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-confiserie-sprungli": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 47.398473,
+        "lng": 8.429914
+      },
+      "costCurrency": "CHF",
+      "costMax": 25,
+      "costMin": 10,
+      "officialUrl": "https://www.spruengli.ch/de/standorte/produktion-dietikon-kein-verkauf.html",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Sa",
+          "open": "08:00",
+          "close": "12:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/7548052334"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-hiltl": {
+      "closedDays": [],
+      "coords": {
+        "lat": 47.373211,
+        "lng": 8.536573
+      },
+      "costCurrency": "CHF",
+      "costMax": 40,
+      "costMin": 25,
+      "officialUrl": "https://hiltl.ch/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "07:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Fr",
+          "open": "07:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Sa",
+          "open": "08:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Su",
+          "open": "10:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/13878894291",
+        "https://www.wikidata.org/wiki/Q5764402"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-kronenhalle": {
+      "closedDays": [],
+      "coords": {
+        "lat": 47.367551,
+        "lng": 8.545719
+      },
+      "costCurrency": "CHF",
+      "costMax": 130,
+      "costMin": 80,
+      "officialUrl": "https://www.kronenhalle.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/268467807",
+        "https://www.wikidata.org/wiki/Q1789864"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-luxx": {
+      "costCurrency": "CHF",
+      "costMax": 65,
+      "costMin": 40
+    },
+    "r-raclette-stube": {
+      "coords": {
+        "lat": 47.374762,
+        "lng": 8.544783
+      },
+      "officialUrl": "https://www.raclette-stube.ch/",
+      "sources": [
+        "https://www.openstreetmap.org/node/656327772"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-sternen-grill": {
+      "closedDays": [],
+      "coords": {
+        "lat": 47.367278,
+        "lng": 8.545563
+      },
+      "costCurrency": "CHF",
+      "costMax": 12,
+      "costMin": 8,
+      "officialUrl": "https://www.sternengrill.ch/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:30",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4860115709"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-swiss-chuchi": {
+      "closedDays": [],
+      "coords": {
+        "lat": 47.373152,
+        "lng": 8.543642
+      },
+      "costCurrency": "CHF",
+      "costMax": 60,
+      "costMin": 40,
+      "officialUrl": "https://hotel-adler.ch/en/swiss-chuchi-restaurant/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:30",
+          "close": "23:15"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6337148508"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-zeughauskeller": {
+      "closedDays": [],
+      "coords": {
+        "lat": 47.370373,
+        "lng": 8.539923
+      },
+      "costCurrency": "CHF",
+      "costMax": 45,
+      "costMin": 30,
+      "officialUrl": "https://www.zeughauskeller.ch/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:30",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/105459350"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-zunfthaus-zur-waag": {
+      "coords": {
+        "lat": 47.37024,
+        "lng": 8.540312
+      },
+      "officialUrl": "https://zunfthaus-zur-waag.ch/",
+      "sources": [
+        "https://www.openstreetmap.org/node/270938371",
+        "https://www.wikidata.org/wiki/Q9392139"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-bahnhofstrasse": {
+      "coords": {
+        "lat": 47.368086,
+        "lng": 8.539887
+      },
+      "officialUrl": "http://www.bahnhofstrasse-zuerich.ch/",
+      "sources": [
+        "https://www.openstreetmap.org/way/43583464",
+        "https://www.wikidata.org/wiki/Q675026"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-confiserie-sprungli": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 47.398473,
+        "lng": 8.429914
+      },
+      "officialUrl": "https://www.spruengli.ch/de/standorte/produktion-dietikon-kein-verkauf.html",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Sa",
+          "open": "08:00",
+          "close": "12:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/7548052334"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-freitag-flagship-store": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 47.38566,
+        "lng": 8.519434
+      },
+      "officialUrl": "https://www.freitag.ch/de/store/freitag-flagship-store-zuerich",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "11:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Sa",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/107104812"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-markthalle-im-viadukt": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 47.387744,
+        "lng": 8.52639
+      },
+      "officialUrl": "https://im-viadukt.ch/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/39607099"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "swiss-national-museum": {
+      "costCurrency": "CHF",
+      "costMax": 10,
+      "costMin": 10
+    },
+    "t-jungfraujoch-top-of-europe": {
+      "coords": {
+        "lat": 46.547579,
+        "lng": 7.978974
+      },
+      "officialUrl": "http://www.ifjungo.ch/",
+      "sources": [
+        "https://www.openstreetmap.org/node/240120705",
+        "https://www.wikidata.org/wiki/Q665676"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-lucerne": {
+      "coords": {
+        "lat": 47.052144,
+        "lng": 8.305812
+      },
+      "officialUrl": "https://www.stadtluzern.ch/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/1682891",
+        "https://www.wikidata.org/wiki/Q4191"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-rhine-falls": {
+      "coords": {
+        "lat": 47.678362,
+        "lng": 8.614871
+      },
+      "officialUrl": "https://rheinfall.ch/",
+      "sources": [
+        "https://www.openstreetmap.org/node/13078248019",
+        "https://www.wikidata.org/wiki/Q214924"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "uetliberg": {
+      "coords": {
+        "lat": 47.351869,
+        "lng": 8.487419
+      },
+      "costCurrency": "CHF",
+      "costMax": 10,
+      "costMin": 10,
+      "officialUrl": "https://www.zvv.ch/",
+      "sources": [
+        "https://www.openstreetmap.org/node/1262086033",
+        "https://www.wikidata.org/wiki/Q201977"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-jungfraujoch-or-rigi-day-trip-from-zurich": {
+      "costCurrency": "CHF",
+      "costMax": 250,
+      "costMin": 150
+    },
+    "x-lake-zurich-boat-cruise": {
+      "costCurrency": "CHF",
+      "costMax": 50,
+      "costMin": 30
+    },
+    "x-old-town-self-guided-walking-tour": {
+      "costCurrency": "CHF",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-swiss-chocolate-and-cheese-tasting-tour": {
+      "costCurrency": "CHF",
+      "costMax": 100,
+      "costMin": 60
+    },
+    "x-uetliberg-sunset-hike": {
+      "costCurrency": "CHF",
+      "costMax": 10,
+      "costMin": 10
+    },
+    "zurich-zoo": {
+      "coords": {
+        "lat": 47.386914,
+        "lng": 8.577599
+      },
+      "officialUrl": "https://www.zoo.ch/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/9344765",
+        "https://www.wikidata.org/wiki/Q220109"
+      ],
+      "verifiedAt": "2026-10-16"
+    }
+  },
+  "neighborhoods": {
+    "altstadt": {
+      "coords": {
+        "lat": 47.372233,
+        "lng": 8.542329
+      },
+      "radiusKm": 1.36
+    },
+    "bahnhofstrasse": {
+      "coords": {
+        "lat": 47.368086,
+        "lng": 8.539887
+      },
+      "radiusKm": 0.4
+    },
+    "kreis-5": {
+      "coords": {
+        "lat": 47.387507,
+        "lng": 8.520627
+      },
+      "radiusKm": 1.76
+    },
+    "langstrasse-kreis-4": {
+      "coords": {
+        "lat": 47.382797,
+        "lng": 8.529996
+      },
+      "radiusKm": 0.4
+    },
+    "niederdorf": {
+      "coords": {
+        "lat": 47.373298,
+        "lng": 8.543809
+      },
+      "radiusKm": 1.34
+    },
+    "seefeld": {
+      "coords": {
+        "lat": 47.357783,
+        "lng": 8.551074
+      },
+      "radiusKm": 1.6
+    }
+  }
+}

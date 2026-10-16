@@ -1,0 +1,593 @@
+{
+  "bbox": [
+    21.9818,
+    113.8341,
+    22.5818,
+    114.4825
+  ],
+  "places": {
+    "big-buddha-ngong-ping": {
+      "coords": {
+        "lat": 22.25396,
+        "lng": 113.905012
+      },
+      "costCurrency": "HKD",
+      "costMax": 265,
+      "costMin": 265,
+      "officialUrl": "http://www.plm.org.hk/.com",
+      "sources": [
+        "https://www.openstreetmap.org/way/45659816",
+        "https://www.wikidata.org/wiki/Q528079"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-cupping-room": {
+      "coords": {
+        "lat": 22.285075,
+        "lng": 114.150472
+      },
+      "officialUrl": "https://cuppingroom.hk/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4214042291"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-elephant-grounds": {
+      "coords": {
+        "lat": 22.281781,
+        "lng": 114.185319
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/6417901292"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-halfway-coffee": {
+      "closedDays": [],
+      "coords": {
+        "lat": 22.284766,
+        "lng": 114.149696
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/12597608801"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-lan-fong-yuen": {
+      "closedDays": [],
+      "coords": {
+        "lat": 22.28264,
+        "lng": 114.1538
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3493470992",
+        "https://www.wikidata.org/wiki/Q15921803"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-tai-cheong-bakery": {
+      "coords": {
+        "lat": 22.282628,
+        "lng": 114.153578
+      },
+      "officialUrl": "http://www.taoheung.com.hk/",
+      "sources": [
+        "https://www.openstreetmap.org/node/1095720321"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "chi-lin-nunnery-nan-lian-garden": {
+      "closedDays": [],
+      "coords": {
+        "lat": 22.340673,
+        "lng": 114.205365
+      },
+      "costCurrency": "HKD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.chilin.org/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "16:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/109743814",
+        "https://www.wikidata.org/wiki/Q2180716"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "dragons-back": {
+      "costCurrency": "HKD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "hong-kong-tramways-ding-ding": {
+      "coords": {
+        "lat": 22.278308,
+        "lng": 114.226573
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/296714048"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "man-mo-temple": {
+      "coords": {
+        "lat": 22.283871,
+        "lng": 114.150158
+      },
+      "costCurrency": "HKD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/1300658311",
+        "https://www.wikidata.org/wiki/Q717524"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-lan-kwai-fong": {
+      "coords": {
+        "lat": 22.280839,
+        "lng": 114.155381
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/988355887",
+        "https://www.wikidata.org/wiki/Q3124270"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-temple-street-night-market": {
+      "closedDays": [],
+      "coords": {
+        "lat": 22.306397,
+        "lng": 114.169965
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "14:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/880775625"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "pmq-noho": {
+      "coords": {
+        "lat": 22.283274,
+        "lng": 114.151846
+      },
+      "costCurrency": "HKD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.pmq.org.hk/",
+      "sources": [
+        "https://www.openstreetmap.org/way/242554453",
+        "https://www.wikidata.org/wiki/Q16922815"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-australia-dairy": {
+      "closedDays": [
+        4
+      ],
+      "coords": {
+        "lat": 22.304613,
+        "lng": 114.170594
+      },
+      "costCurrency": "HKD",
+      "costMax": 60,
+      "costMin": 40,
+      "openingHours": [
+        {
+          "days": "Mo-We,Fr-Su",
+          "open": "07:30",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4106956091",
+        "https://www.wikidata.org/wiki/Q13359551"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-kam-wah-cafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 22.322299,
+        "lng": 114.16975
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "06:30",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3844277894"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-kau-kee": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 22.284229,
+        "lng": 114.152537
+      },
+      "costCurrency": "HKD",
+      "costMax": 70,
+      "costMin": 50,
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "12:30",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4106961589",
+        "https://www.wikidata.org/wiki/Q6378616"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-lin-heung-tea-house": {
+      "coords": {
+        "lat": 22.284342,
+        "lng": 114.153456
+      },
+      "costCurrency": "HKD",
+      "costMax": 150,
+      "costMin": 100,
+      "sources": [
+        "https://www.openstreetmap.org/node/3064312021",
+        "https://www.wikidata.org/wiki/Q19647633"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-mak-noodle": {
+      "coords": {
+        "lat": 22.283,
+        "lng": 114.15463
+      },
+      "costCurrency": "HKD",
+      "costMax": 60,
+      "costMin": 40,
+      "officialUrl": "https://www.maksnoodle.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4207227078",
+        "https://www.wikidata.org/wiki/Q6738531"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-mido-cafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 22.310226,
+        "lng": 114.170369
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:30",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4181250694",
+        "https://www.wikidata.org/wiki/Q15943714"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-sing-heung-yuen": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 22.284123,
+        "lng": 114.152536
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "08:00",
+          "close": "16:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4106960593"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-temple-street-stalls": {
+      "costCurrency": "HKD",
+      "costMax": 200,
+      "costMin": 100
+    },
+    "r-tim-ho-wan": {
+      "closedDays": [],
+      "coords": {
+        "lat": 22.32903,
+        "lng": 114.16634
+      },
+      "costCurrency": "HKD",
+      "costMax": 130,
+      "costMin": 80,
+      "officialUrl": "http://www.timhowan.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr,Su",
+          "open": "10:00",
+          "close": "21:30"
+        },
+        {
+          "days": "Sa",
+          "open": "09:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4106961590",
+        "https://www.wikidata.org/wiki/Q11153709"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-tin-lung-heen": {
+      "costCurrency": "HKD",
+      "costMin": 800
+    },
+    "r-yat-lok": {
+      "costCurrency": "HKD",
+      "costMax": 150,
+      "costMin": 100
+    },
+    "s-causeway-bay": {
+      "coords": {
+        "lat": 22.282078,
+        "lng": 114.189159
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/7682648805",
+        "https://www.wikidata.org/wiki/Q564732"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-ifc-mall-central-skyline": {
+      "coords": {
+        "lat": 22.285093,
+        "lng": 114.158601
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/2623059657"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-ladies-market": {
+      "coords": {
+        "lat": 22.317522,
+        "lng": 114.170934
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/906154980",
+        "https://www.wikidata.org/wiki/Q4115280"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-temple-street-night-market": {
+      "closedDays": [],
+      "coords": {
+        "lat": 22.306397,
+        "lng": 114.169965
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "14:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/880775625"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "star-ferry": {
+      "costCurrency": "HKD",
+      "costMax": 5,
+      "costMin": 3
+    },
+    "symphony-of-lights": {
+      "coords": {
+        "lat": 22.290617,
+        "lng": 114.167647
+      },
+      "costCurrency": "HKD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/4443950090",
+        "https://www.wikidata.org/wiki/Q1068874"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-cheung-chau": {
+      "coords": {
+        "lat": 22.209625,
+        "lng": 114.029569
+      },
+      "sources": [
+        "https://www.openstreetmap.org/relation/12923464",
+        "https://www.wikidata.org/wiki/Q137563"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-lantau-island-big-buddha-tai-o": {
+      "coords": {
+        "lat": 22.271428,
+        "lng": 113.944081
+      },
+      "sources": [
+        "https://www.openstreetmap.org/relation/3676782",
+        "https://www.wikidata.org/wiki/Q502379"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-macau": {
+      "coords": {
+        "lat": 22.17576,
+        "lng": 113.551414
+      },
+      "officialUrl": "https://www.gov.mo/zh-hant/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/1867188",
+        "https://www.wikidata.org/wiki/Q14773"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "temple-street-market": {
+      "closedDays": [],
+      "coords": {
+        "lat": 22.306397,
+        "lng": 114.169965
+      },
+      "costCurrency": "HKD",
+      "costMax": 0,
+      "costMin": 0,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "14:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/880775625"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "victoria-peak": {
+      "coords": {
+        "lat": 22.276039,
+        "lng": 114.145457
+      },
+      "costCurrency": "HKD",
+      "costMax": 88,
+      "costMin": 88,
+      "sources": [
+        "https://www.openstreetmap.org/node/26412171",
+        "https://www.wikidata.org/wiki/Q17541"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "wong-tai-sin-temple": {
+      "closedDays": [],
+      "coords": {
+        "lat": 22.342818,
+        "lng": 114.193551
+      },
+      "officialUrl": "http://www.wongtaisintemple.org.hk/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/264462808",
+        "https://www.wikidata.org/wiki/Q1116359"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-big-buddha-and-tai-o-fishing-village": {
+      "costCurrency": "HKD",
+      "costMax": 265,
+      "costMin": 265
+    },
+    "x-dragon-s-back-hike-to-shek-o": {
+      "costCurrency": "HKD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-star-ferry-harbor-crossing": {
+      "costCurrency": "HKD",
+      "costMax": 5,
+      "costMin": 3
+    },
+    "x-symphony-of-lights-from-the-tsim-sha-tsui-promen": {
+      "costCurrency": "HKD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-tram-ride-ding-ding-across-hong-kong-island": {
+      "costCurrency": "HKD",
+      "costMax": 3,
+      "costMin": 3
+    }
+  },
+  "neighborhoods": {
+    "central": {
+      "coords": {
+        "lat": 22.281216,
+        "lng": 114.189554
+      },
+      "radiusKm": 0.8
+    },
+    "lan-kwai-fong": {
+      "coords": {
+        "lat": 22.280746,
+        "lng": 114.155615
+      },
+      "radiusKm": 0.4
+    },
+    "mong-kok": {
+      "coords": {
+        "lat": 22.319308,
+        "lng": 114.169808
+      },
+      "radiusKm": 0.4
+    },
+    "sham-shui-po": {
+      "coords": {
+        "lat": 22.329757,
+        "lng": 114.160851
+      },
+      "radiusKm": 3
+    },
+    "sheung-wan": {
+      "coords": {
+        "lat": 22.286516,
+        "lng": 114.150208
+      },
+      "radiusKm": 3
+    },
+    "tsim-sha-tsui": {
+      "coords": {
+        "lat": 22.29856,
+        "lng": 114.173603
+      },
+      "radiusKm": 1.51
+    }
+  }
+}

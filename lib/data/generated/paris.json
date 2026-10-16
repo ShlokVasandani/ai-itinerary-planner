@@ -1,0 +1,823 @@
+{
+  "bbox": [
+    48.5535,
+    1.8925,
+    49.1535,
+    2.8043
+  ],
+  "places": {
+    "arc-de-triomphe": {
+      "coords": {
+        "lat": 48.873779,
+        "lng": 2.295037
+      },
+      "costCurrency": "EUR",
+      "costMax": 16,
+      "costMin": 16,
+      "officialUrl": "https://www.paris-arc-de-triomphe.fr/",
+      "sources": [
+        "https://www.openstreetmap.org/way/226413508",
+        "https://www.wikidata.org/wiki/Q64436"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-angelina": {
+      "coords": {
+        "lat": 48.865078,
+        "lng": 2.32841
+      },
+      "officialUrl": "https://www.angelina-paris.fr/",
+      "sources": [
+        "https://www.openstreetmap.org/node/3980096134",
+        "https://www.wikidata.org/wiki/Q45107"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-cafe-de-la-paix": {
+      "coords": {
+        "lat": 48.870768,
+        "lng": 2.331696
+      },
+      "officialUrl": "https://www.cafedelapaix.fr/",
+      "sources": [
+        "https://www.openstreetmap.org/node/1682771444",
+        "https://www.wikidata.org/wiki/Q2933008"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-carette": {
+      "coords": {
+        "lat": 48.886294,
+        "lng": 2.340896
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5331770659"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-pierre-herme": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.845029,
+        "lng": 2.374223
+      },
+      "openingHours": [
+        {
+          "days": "Mo-We,Sa",
+          "open": "06:00",
+          "close": "20:00"
+        },
+        {
+          "days": "Th,Fr",
+          "open": "06:00",
+          "close": "21:00"
+        },
+        {
+          "days": "Su",
+          "open": "06:30",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/430782843"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-ten-belles": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.873492,
+        "lng": 2.364738
+      },
+      "officialUrl": "https://www.tenbelles.com/paris-10",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:30",
+          "close": "16:30"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "09:00",
+          "close": "17:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2769238610"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "eiffel-tower": {
+      "coords": {
+        "lat": 48.85826,
+        "lng": 2.294501
+      },
+      "costCurrency": "EUR",
+      "costMax": 29,
+      "costMin": 18,
+      "officialUrl": "https://www.toureiffel.paris/",
+      "sources": [
+        "https://www.openstreetmap.org/way/5013364",
+        "https://www.wikidata.org/wiki/Q243"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "louvre": {
+      "costCurrency": "EUR",
+      "costMax": 22,
+      "costMin": 22
+    },
+    "luxembourg-gardens": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "musee-de-l-orangerie": {
+      "closedDays": [
+        2
+      ],
+      "coords": {
+        "lat": 48.863765,
+        "lng": 2.32266
+      },
+      "officialUrl": "https://www.musee-orangerie.fr/",
+      "openingHours": [
+        {
+          "days": "Mo,We-Su",
+          "open": "09:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/54188996",
+        "https://www.wikidata.org/wiki/Q726781"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "musee-dorsay": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 48.859918,
+        "lng": 2.326585
+      },
+      "costCurrency": "EUR",
+      "costMax": 16,
+      "costMin": 16,
+      "officialUrl": "https://www.musee-orsay.fr/",
+      "openingHours": [
+        {
+          "days": "Tu,We,Fr-Su",
+          "open": "09:30",
+          "close": "18:00"
+        },
+        {
+          "days": "Th",
+          "open": "09:30",
+          "close": "21:45"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/63178753",
+        "https://www.wikidata.org/wiki/Q23402"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "musee-rodin": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 48.854747,
+        "lng": 2.315867
+      },
+      "officialUrl": "https://www.musee-rodin.fr/",
+      "openingHours": [
+        {
+          "days": "Tu-Su",
+          "open": "10:00",
+          "close": "18:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/472159547",
+        "https://www.wikidata.org/wiki/Q650519"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-le-comptoir-general": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.872398,
+        "lng": 2.365021
+      },
+      "officialUrl": "https://www.lecomptoirgeneral.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "18:00",
+          "close": "26:00"
+        },
+        {
+          "days": "Fr",
+          "open": "16:00",
+          "close": "26:00"
+        },
+        {
+          "days": "Sa",
+          "open": "14:00",
+          "close": "26:00"
+        },
+        {
+          "days": "Su",
+          "open": "11:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3089653307"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-moulin-rouge": {
+      "coords": {
+        "lat": 48.884109,
+        "lng": 2.332356
+      },
+      "officialUrl": "https://www.moulinrouge.fr/",
+      "sources": [
+        "https://www.openstreetmap.org/node/252969214",
+        "https://www.wikidata.org/wiki/Q151030"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-point-ephemere": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.881517,
+        "lng": 2.368573
+      },
+      "officialUrl": "https://www.pointephemere.org/bar",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "12:00",
+          "close": "26:00"
+        },
+        {
+          "days": "Su",
+          "open": "14:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/921881553",
+        "https://www.wikidata.org/wiki/Q3393486"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-rex-club": {
+      "closedDays": [
+        0,
+        1,
+        2
+      ],
+      "coords": {
+        "lat": 48.87058,
+        "lng": 2.347338
+      },
+      "officialUrl": "https://rexclub.com/",
+      "openingHours": [
+        {
+          "days": "We-Sa",
+          "open": "23:55",
+          "close": "31:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5552694364"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "notre-dame": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.852937,
+        "lng": 2.35005
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.notredamedeparis.fr/",
+      "openingHours": [
+        {
+          "days": "Mo-We,Fr",
+          "open": "07:50",
+          "close": "19:00"
+        },
+        {
+          "days": "Th",
+          "open": "07:50",
+          "close": "22:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "08:15",
+          "close": "19:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/201611261",
+        "https://www.wikidata.org/wiki/Q2981"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "pantheon": {
+      "coords": {
+        "lat": 48.846195,
+        "lng": 2.346051
+      },
+      "officialUrl": "https://www.paris-pantheon.fr/",
+      "sources": [
+        "https://www.openstreetmap.org/way/16407465",
+        "https://www.wikidata.org/wiki/Q188856"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "place-des-vosges": {
+      "coords": {
+        "lat": 48.855631,
+        "lng": 2.365535
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/14080384533",
+        "https://www.wikidata.org/wiki/Q898629"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-bouillon-chartier": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.871936,
+        "lng": 2.343014
+      },
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 15,
+      "officialUrl": "https://www.bouillon-chartier.com/grands-boulevards/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:30",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/10804882603",
+        "https://www.wikidata.org/wiki/Q1071456"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-bouillon-pigalle": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.882619,
+        "lng": 2.337414
+      },
+      "officialUrl": "https://www.bouillonlesite.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5239464697"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-breizh-cafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.852534,
+        "lng": 2.384726
+      },
+      "officialUrl": "https://www.breizhcafe.com/paul-bert",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/589485677"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-cafe-de-flore": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.854144,
+        "lng": 2.332631
+      },
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 15,
+      "officialUrl": "https://cafedeflore.fr/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:30",
+          "close": "25:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/251699776",
+        "https://www.wikidata.org/wiki/Q1025686"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-chez-gladines": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.828814,
+        "lng": 2.35064
+      },
+      "officialUrl": "https://chezgladines-butteauxcailles.fr/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "12:00",
+          "close": "15:00"
+        },
+        {
+          "days": "Mo-Fr",
+          "open": "19:00",
+          "close": "23:45"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "12:00",
+          "close": "16:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "19:00",
+          "close": "23:45"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/304965514"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-chez-janou": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.856707,
+        "lng": 2.367214
+      },
+      "costCurrency": "EUR",
+      "costMax": 40,
+      "costMin": 25,
+      "officialUrl": "https://www.chezjanou.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:00",
+          "close": "15:00"
+        },
+        {
+          "days": "Mo-Su",
+          "open": "19:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3213130981"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-du-pain-et-des-idees": {
+      "closedDays": [
+        0,
+        6
+      ],
+      "coords": {
+        "lat": 48.871247,
+        "lng": 2.362904
+      },
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 5,
+      "officialUrl": "https://dupainetdesidees.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:00",
+          "close": "19:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/324294628"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-lami-jean": {
+      "closedDays": [
+        0,
+        1
+      ],
+      "coords": {
+        "lat": 48.860318,
+        "lng": 2.305992
+      },
+      "costCurrency": "EUR",
+      "costMax": 70,
+      "costMin": 50,
+      "officialUrl": "https://www.lamijean.fr/",
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "12:00",
+          "close": "14:00"
+        },
+        {
+          "days": "Tu-Sa",
+          "open": "19:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/254497766"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-lascar-falafel": {
+      "closedDays": [
+        6
+      ],
+      "coords": {
+        "lat": 48.857415,
+        "lng": 2.359068
+      },
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 8,
+      "officialUrl": "https://asdufallafel.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "11:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Fr",
+          "open": "11:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4413941090",
+        "https://www.wikidata.org/wiki/Q106357649"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-le-relais-de-l-entrecote": {
+      "coords": {
+        "lat": 48.86642,
+        "lng": 2.331523
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5580549321"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-marche-des-enfants-rouges": {
+      "coords": {
+        "lat": 48.862766,
+        "lng": 2.362519
+      },
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 10,
+      "sources": [
+        "https://www.openstreetmap.org/node/3200443067"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-septime": {
+      "closedDays": [
+        0,
+        6
+      ],
+      "coords": {
+        "lat": 48.853603,
+        "lng": 2.380956
+      },
+      "costCurrency": "EUR",
+      "costMin": 90,
+      "officialUrl": "http://septime-charonne.fr/",
+      "openingHours": [
+        {
+          "days": "Mo",
+          "open": "19:00",
+          "close": "22:30"
+        },
+        {
+          "days": "Tu-Fr",
+          "open": "12:15",
+          "close": "14:00"
+        },
+        {
+          "days": "Tu-Fr",
+          "open": "19:00",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3602657896",
+        "https://www.wikidata.org/wiki/Q123347626"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-avenue-des-champs-elysees": {
+      "coords": {
+        "lat": 48.868331,
+        "lng": 2.312152
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/4294035",
+        "https://www.wikidata.org/wiki/Q550"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-galeries-lafayette": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.873646,
+        "lng": 2.332127
+      },
+      "officialUrl": "https://haussmann.galerieslafayette.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "10:00",
+          "close": "20:30"
+        },
+        {
+          "days": "Su",
+          "open": "11:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/69224062",
+        "https://www.wikidata.org/wiki/Q218613"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "sacre-coeur": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.886806,
+        "lng": 2.343015
+      },
+      "costCurrency": "EUR",
+      "costMax": 8,
+      "costMin": 0,
+      "officialUrl": "https://www.sacre-coeur-montmartre.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "06:00",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/23762981",
+        "https://www.wikidata.org/wiki/Q28785"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "sainte-chapelle": {
+      "coords": {
+        "lat": 48.855393,
+        "lng": 2.344994
+      },
+      "costCurrency": "EUR",
+      "costMax": 13,
+      "costMin": 13,
+      "officialUrl": "http://sainte-chapelle.monuments-nationaux.fr/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/3344870",
+        "https://www.wikidata.org/wiki/Q193193"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-fontainebleau": {
+      "coords": {
+        "lat": 48.404938,
+        "lng": 2.701587
+      },
+      "officialUrl": "https://www.fontainebleau.fr/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/216359",
+        "https://www.wikidata.org/wiki/Q182872"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-giverny-monet-s-garden": {
+      "coords": {
+        "lat": 49.076619,
+        "lng": 1.529028
+      },
+      "officialUrl": "https://www.giverny27.fr/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/74718",
+        "https://www.wikidata.org/wiki/Q165061"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-palace-of-versailles": {
+      "coords": {
+        "lat": 48.804425,
+        "lng": 2.120285
+      },
+      "officialUrl": "https://www.chateauversailles.fr/decouvrir/domaine/chateau",
+      "sources": [
+        "https://www.openstreetmap.org/relation/1149002",
+        "https://www.wikidata.org/wiki/Q2946"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-moulin-rouge-cabaret-show": {
+      "costCurrency": "EUR",
+      "costMax": 200,
+      "costMin": 90
+    },
+    "x-palais-garnier-opera-house-tour": {
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 15
+    },
+    "x-pere-lachaise-cemetery-walk": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-seine-river-cruise-at-sunset": {
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 15
+    },
+    "x-wine-and-cheese-tasting-class": {
+      "costCurrency": "EUR",
+      "costMax": 90,
+      "costMin": 60
+    }
+  },
+  "neighborhoods": {
+    "canal-saint-martin": {
+      "coords": {
+        "lat": 48.868956,
+        "lng": 2.367169
+      },
+      "radiusKm": 2.67
+    },
+    "latin-quarter": {
+      "coords": {
+        "lat": 48.848603,
+        "lng": 2.342516
+      },
+      "radiusKm": 2.66
+    },
+    "le-marais": {
+      "coords": {
+        "lat": 48.860382,
+        "lng": 2.360742
+      },
+      "radiusKm": 1.12
+    },
+    "montmartre": {
+      "coords": {
+        "lat": 48.885462,
+        "lng": 2.339154
+      },
+      "radiusKm": 0.53
+    },
+    "saint-germain": {
+      "coords": {
+        "lat": 48.854429,
+        "lng": 2.333707
+      },
+      "radiusKm": 0.52
+    }
+  }
+}

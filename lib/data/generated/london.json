@@ -1,0 +1,808 @@
+{
+  "bbox": [
+    51.2074,
+    -0.6098,
+    51.8074,
+    0.3542
+  ],
+  "places": {
+    "british-museum": {
+      "coords": {
+        "lat": 51.519376,
+        "lng": -0.127486
+      },
+      "costCurrency": "GBP",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/12492321601"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "buckingham-palace": {
+      "closedDays": [],
+      "coords": {
+        "lat": 51.500835,
+        "lng": -0.143005
+      },
+      "costCurrency": "GBP",
+      "costMax": 30,
+      "costMin": 0,
+      "officialUrl": "https://www.royalcollection.org.uk/visit/the-state-rooms-buckingham-palace",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "17:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/5208404",
+        "https://www.wikidata.org/wiki/Q42182"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-betty-blythe": {
+      "coords": {
+        "lat": 51.512734,
+        "lng": -0.141486
+      },
+      "officialUrl": "https://sketch.london/",
+      "sources": [
+        "https://www.openstreetmap.org/node/259774384",
+        "https://www.wikidata.org/wiki/Q14955160"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-flat-white": {
+      "closedDays": [],
+      "coords": {
+        "lat": 51.513599,
+        "lng": -0.134807
+      },
+      "officialUrl": "https://www.flatwhitesoho.co.uk/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:30",
+          "close": "17:00"
+        },
+        {
+          "days": "Sa",
+          "open": "09:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:30",
+          "close": "17:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/14178877182"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-fortnum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 51.508186,
+        "lng": -0.138141
+      },
+      "officialUrl": "http://www.fortnumandmason.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "10:00",
+          "close": "21:00"
+        },
+        {
+          "days": "Su",
+          "open": "12:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/211484721",
+        "https://www.wikidata.org/wiki/Q498563"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-monmouth": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 51.505505,
+        "lng": -0.091426
+      },
+      "officialUrl": "https://www.monmouthcoffee.co.uk/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "07:30",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/14181043726"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-ozone": {
+      "closedDays": [],
+      "coords": {
+        "lat": 51.532589,
+        "lng": -0.061287
+      },
+      "officialUrl": "https://ozonecoffee.co.uk/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:30",
+          "close": "16:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "08:30",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/216592541"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "greenwich-royal-observatory-cutty-sark": {
+      "coords": {
+        "lat": 51.477362,
+        "lng": -0.000846
+      },
+      "officialUrl": "https://www.rmg.co.uk/royal-observatory",
+      "sources": [
+        "https://www.openstreetmap.org/way/268533448",
+        "https://www.wikidata.org/wiki/Q192988"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "hyde-park-kensington-gardens": {
+      "coords": {
+        "lat": 51.507489,
+        "lng": -0.162207
+      },
+      "costCurrency": "GBP",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.royalparks.org.uk/parks/hyde-park",
+      "sources": [
+        "https://www.openstreetmap.org/way/372975520",
+        "https://www.wikidata.org/wiki/Q123738"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "kew-gardens": {
+      "coords": {
+        "lat": 51.478197,
+        "lng": -0.296886
+      },
+      "officialUrl": "https://www.kew.org/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/8048808",
+        "https://www.wikidata.org/wiki/Q188617"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "london-eye": {
+      "closedDays": [],
+      "coords": {
+        "lat": 51.503342,
+        "lng": -0.119677
+      },
+      "costCurrency": "GBP",
+      "costMin": 30,
+      "officialUrl": "https://www.londoneye.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/204068874",
+        "https://www.wikidata.org/wiki/Q160659"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-ministry-of-sound": {
+      "coords": {
+        "lat": 51.497768,
+        "lng": -0.099496
+      },
+      "officialUrl": "http://www.ministryofsound.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/380605745",
+        "https://www.wikidata.org/wiki/Q23087"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-ronnie-scott-s-jazz-club": {
+      "coords": {
+        "lat": 51.513451,
+        "lng": -0.131518
+      },
+      "officialUrl": "https://www.ronniescotts.co.uk/",
+      "sources": [
+        "https://www.openstreetmap.org/node/14178896026",
+        "https://www.wikidata.org/wiki/Q1296978"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-sky-garden": {
+      "coords": {
+        "lat": 51.51127,
+        "lng": -0.08354
+      },
+      "officialUrl": "http://www.20fenchurchstreet.co.uk/",
+      "sources": [
+        "https://www.openstreetmap.org/way/201247295",
+        "https://www.wikidata.org/wiki/Q212834"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-the-ten-bells": {
+      "closedDays": [],
+      "coords": {
+        "lat": 51.519363,
+        "lng": -0.074292
+      },
+      "officialUrl": "http://www.tenbells.com/",
+      "openingHours": [
+        {
+          "days": "Mo-We,Su",
+          "open": "12:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Th-Sa",
+          "open": "12:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/157323000",
+        "https://www.wikidata.org/wiki/Q2414574"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "natural-history-museum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 51.496511,
+        "lng": -0.176002
+      },
+      "costCurrency": "GBP",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.nhm.ac.uk/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "17:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/24436446",
+        "https://www.wikidata.org/wiki/Q309388"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-borough-market": {
+      "costCurrency": "GBP",
+      "costMax": 20,
+      "costMin": 10
+    },
+    "r-brick-lane-curry": {
+      "costCurrency": "GBP",
+      "costMax": 25,
+      "costMin": 15
+    },
+    "r-dishoom": {
+      "closedDays": [],
+      "coords": {
+        "lat": 51.512427,
+        "lng": -0.126856
+      },
+      "costCurrency": "GBP",
+      "costMax": 30,
+      "costMin": 20,
+      "officialUrl": "http://www.dishoom.com/covent-garden/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "08:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Fr",
+          "open": "08:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Sa",
+          "open": "10:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Su",
+          "open": "10:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/207104925"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-flat-iron": {
+      "coords": {
+        "lat": 51.515136,
+        "lng": -0.129538
+      },
+      "costCurrency": "GBP",
+      "costMax": 30,
+      "costMin": 20,
+      "officialUrl": "https://flatironsteak.co.uk/restaurant/tottenham-court-road/",
+      "sources": [
+        "https://www.openstreetmap.org/node/5857437388",
+        "https://www.wikidata.org/wiki/Q17511523"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-full-english": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 51.526496,
+        "lng": -0.063379
+      },
+      "costCurrency": "GBP",
+      "costMax": 12,
+      "costMin": 8,
+      "officialUrl": "https://epellicci.co.uk/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "08:00",
+          "close": "15:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1024570955"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-gymkhana": {
+      "coords": {
+        "lat": 51.508481,
+        "lng": -0.141486
+      },
+      "officialUrl": "http://www.gymkhanalondon.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4546702589",
+        "https://www.wikidata.org/wiki/Q125847292"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-kiln": {
+      "closedDays": [],
+      "coords": {
+        "lat": 51.511351,
+        "lng": -0.135996
+      },
+      "officialUrl": "https://www.kilnsoho.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "12:00",
+          "close": "14:30"
+        },
+        {
+          "days": "Mo-Sa",
+          "open": "17:00",
+          "close": "22:30"
+        },
+        {
+          "days": "Su",
+          "open": "13:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/466926237"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-ottolenghi": {
+      "costCurrency": "GBP",
+      "costMax": 30,
+      "costMin": 20
+    },
+    "r-padella": {
+      "closedDays": [],
+      "coords": {
+        "lat": 51.505134,
+        "lng": -0.089909
+      },
+      "officialUrl": "https://padella.co/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "12:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Su",
+          "open": "12:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/14181043755"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-poppies-fish-chips": {
+      "costCurrency": "GBP",
+      "costMax": 18,
+      "costMin": 12
+    },
+    "r-rules": {
+      "closedDays": [],
+      "coords": {
+        "lat": 51.510829,
+        "lng": -0.123191
+      },
+      "costCurrency": "GBP",
+      "costMax": 90,
+      "costMin": 60,
+      "officialUrl": "https://rules.co.uk/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "12:00",
+          "close": "23:30"
+        },
+        {
+          "days": "Su",
+          "open": "12:00",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/558928361",
+        "https://www.wikidata.org/wiki/Q7379013"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-st-john": {
+      "coords": {
+        "lat": 51.520481,
+        "lng": -0.101275
+      },
+      "officialUrl": "https://stjohnrestaurant.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/97175538",
+        "https://www.wikidata.org/wiki/Q7588869"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-camden-market": {
+      "closedDays": [],
+      "coords": {
+        "lat": 51.542378,
+        "lng": -0.147195
+      },
+      "officialUrl": "https://www.camdenmarket.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3608653828",
+        "https://www.wikidata.org/wiki/Q1028420"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-harrods": {
+      "closedDays": [],
+      "coords": {
+        "lat": 51.49921,
+        "lng": -0.162989
+      },
+      "officialUrl": "https://www.harrods.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "10:00",
+          "close": "21:00"
+        },
+        {
+          "days": "Su",
+          "open": "11:30",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/25739565",
+        "https://www.wikidata.org/wiki/Q332474"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-liberty-london": {
+      "coords": {
+        "lat": 51.513756,
+        "lng": -0.14027
+      },
+      "officialUrl": "https://libertylondon.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/272198110",
+        "https://www.wikidata.org/wiki/Q3237793"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-oxford-street-regent-street": {
+      "coords": {
+        "lat": 51.515436,
+        "lng": -0.141889
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/659654480"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-portobello-road-market": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 51.516086,
+        "lng": -0.205117
+      },
+      "officialUrl": "https://www.portobelloroad.co.uk/",
+      "openingHours": [
+        {
+          "days": "Mo-We",
+          "open": "09:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Th",
+          "open": "09:00",
+          "close": "13:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "09:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3976263603",
+        "https://www.wikidata.org/wiki/Q1813941"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "st-pauls": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 51.513787,
+        "lng": -0.098451
+      },
+      "costCurrency": "GBP",
+      "costMax": 25,
+      "costMin": 25,
+      "officialUrl": "https://www.stpauls.co.uk/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "08:30",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/369161987",
+        "https://www.wikidata.org/wiki/Q173882"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-oxford": {
+      "coords": {
+        "lat": 51.752013,
+        "lng": -1.25785
+      },
+      "officialUrl": "https://www.oxford.gov.uk/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/394037",
+        "https://www.wikidata.org/wiki/Q34217"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-stonehenge-bath": {
+      "coords": {
+        "lat": 51.178829,
+        "lng": -1.826183
+      },
+      "officialUrl": "https://www.english-heritage.org.uk/visit/places/stonehenge/",
+      "sources": [
+        "https://www.openstreetmap.org/way/37118074",
+        "https://www.wikidata.org/wiki/Q39671"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-windsor-castle": {
+      "coords": {
+        "lat": 51.483789,
+        "lng": -0.604042
+      },
+      "officialUrl": "https://www.rct.uk/visit/windsor-castle",
+      "sources": [
+        "https://www.openstreetmap.org/way/23580556",
+        "https://www.wikidata.org/wiki/Q42646"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "tate-modern": {
+      "closedDays": [],
+      "coords": {
+        "lat": 51.507429,
+        "lng": -0.099342
+      },
+      "costCurrency": "GBP",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.tate.org.uk/visit/tate-modern",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "10:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "10:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/24642569",
+        "https://www.wikidata.org/wiki/Q193375"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "tower-bridge": {
+      "coords": {
+        "lat": 51.505516,
+        "lng": -0.075367
+      },
+      "costCurrency": "GBP",
+      "costMax": 12.3,
+      "costMin": 12.3,
+      "officialUrl": "https://www.towerbridge.org.uk/",
+      "sources": [
+        "https://www.openstreetmap.org/way/378541210",
+        "https://www.wikidata.org/wiki/Q83125"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "tower-of-london": {
+      "coords": {
+        "lat": 51.508217,
+        "lng": -0.076188
+      },
+      "costCurrency": "GBP",
+      "costMax": 33.6,
+      "costMin": 33.6,
+      "officialUrl": "https://www.hrp.org.uk/toweroflondon",
+      "sources": [
+        "https://www.openstreetmap.org/way/370870741",
+        "https://www.wikidata.org/wiki/Q62378"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "westminster-abbey": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 51.499399,
+        "lng": -0.127391
+      },
+      "costCurrency": "GBP",
+      "costMax": 29,
+      "costMin": 29,
+      "officialUrl": "https://www.westminster-abbey.org/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:30",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/364313092",
+        "https://www.wikidata.org/wiki/Q5933"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-camden-market-wander": {
+      "costCurrency": "GBP",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-harry-potter-studio-tour": {
+      "costCurrency": "GBP",
+      "costMax": 60,
+      "costMin": 50
+    },
+    "x-thames-river-cruise": {
+      "costCurrency": "GBP",
+      "costMax": 25,
+      "costMin": 15
+    },
+    "x-traditional-pub-crawl": {
+      "costCurrency": "GBP",
+      "costMax": 7,
+      "costMin": 5
+    },
+    "x-west-end-theatre-show": {
+      "costCurrency": "GBP",
+      "costMax": 150,
+      "costMin": 30
+    }
+  },
+  "neighborhoods": {
+    "borough": {
+      "coords": {
+        "lat": 51.503689,
+        "lng": -0.098969
+      },
+      "radiusKm": 1.01
+    },
+    "notting-hill": {
+      "coords": {
+        "lat": 51.510999,
+        "lng": -0.205527
+      },
+      "radiusKm": 2.61
+    },
+    "shoreditch": {
+      "coords": {
+        "lat": 51.526669,
+        "lng": -0.079893
+      },
+      "radiusKm": 2.61
+    },
+    "soho": {
+      "coords": {
+        "lat": 51.512475,
+        "lng": -0.135402
+      },
+      "radiusKm": 0.8
+    },
+    "south-kensington-museum-quarter": {
+      "coords": {
+        "lat": 51.495582,
+        "lng": -0.183137
+      },
+      "radiusKm": 2.62
+    }
+  }
+}

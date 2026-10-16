@@ -1,0 +1,631 @@
+{
+  "bbox": [
+    41.5933,
+    12.0799,
+    42.1933,
+    12.8859
+  ],
+  "places": {
+    "appian-way-via-appia-antica": {
+      "coords": {
+        "lat": 41.807696,
+        "lng": 12.570387
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/158181232"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "borghese-gallery": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 41.914113,
+        "lng": 12.492105
+      },
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 15,
+      "officialUrl": "https://galleriaborghese.beniculturali.it/",
+      "openingHours": [
+        {
+          "days": "Tu-Su",
+          "open": "09:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1440405490",
+        "https://www.wikidata.org/wiki/Q841506"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-barnum-cafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.896727,
+        "lng": 12.470677
+      },
+      "officialUrl": "https://barnumroma.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "15:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4359128194"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-fatamorgana": {
+      "coords": {
+        "lat": 41.926551,
+        "lng": 12.510454
+      },
+      "officialUrl": "http://www.gelateriafatamorgana.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/5009296445"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-roscioli-caffe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.894153,
+        "lng": 12.474433
+      },
+      "officialUrl": "https://www.rosciolicaffe.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "07:00",
+          "close": "21:00"
+        },
+        {
+          "days": "Su",
+          "open": "08:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5739794921"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-sant-eustachio": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.898252,
+        "lng": 12.475427
+      },
+      "officialUrl": "http://www.santeustachioilcaffe.it/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "07:30",
+          "close": "25:00"
+        },
+        {
+          "days": "Fr",
+          "open": "07:30",
+          "close": "25:30"
+        },
+        {
+          "days": "Sa",
+          "open": "07:30",
+          "close": "26:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/261859088"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-tazza-doro": {
+      "coords": {
+        "lat": 41.733521,
+        "lng": 12.276656
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/10717412204"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "capitoline-museums": {
+      "coords": {
+        "lat": 41.892666,
+        "lng": 12.482201
+      },
+      "officialUrl": "https://www.museicapitolini.org/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/9909127",
+        "https://www.wikidata.org/wiki/Q333906"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "castel-santangelo": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.903118,
+        "lng": 12.466343
+      },
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 15,
+      "officialUrl": "http://www.castelsantangelo.beniculturali.it/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "19:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/8035487",
+        "https://www.wikidata.org/wiki/Q486382"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "colosseum": {
+      "coords": {
+        "lat": 41.890942,
+        "lng": 12.491903
+      },
+      "costCurrency": "EUR",
+      "costMax": 18,
+      "costMin": 18,
+      "officialUrl": "https://parcocolosseo.it/",
+      "sources": [
+        "https://www.openstreetmap.org/way/215801333"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-terrazza-borromini-rooftop": {
+      "coords": {
+        "lat": 41.89914,
+        "lng": 12.472405
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5063951021"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "pantheon": {
+      "coords": {
+        "lat": 41.899312,
+        "lng": 12.476772
+      },
+      "costCurrency": "EUR",
+      "costMax": 5,
+      "costMin": 5,
+      "sources": [
+        "https://www.openstreetmap.org/relation/1737642",
+        "https://www.wikidata.org/wiki/Q3747445"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "piazza-navona": {
+      "coords": {
+        "lat": 41.898928,
+        "lng": 12.473118
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/4247138",
+        "https://www.wikidata.org/wiki/Q463400"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-armando-al-pantheon": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 41.89906,
+        "lng": 12.476199
+      },
+      "costCurrency": "EUR",
+      "costMax": 45,
+      "costMin": 30,
+      "officialUrl": "https://www.armandoalpantheon.it/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "12:30",
+          "close": "15:00"
+        },
+        {
+          "days": "Mo-Fr",
+          "open": "19:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Sa",
+          "open": "12:30",
+          "close": "15:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2276143197"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-da-enzo": {
+      "costCurrency": "EUR",
+      "costMax": 40,
+      "costMin": 30
+    },
+    "r-felice-a-testaccio": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.878501,
+        "lng": 12.477466
+      },
+      "officialUrl": "https://www.feliceatestaccio.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:30",
+          "close": "15:30"
+        },
+        {
+          "days": "Mo-Su",
+          "open": "19:00",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1572825942"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-forno-campo-de-fiori": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 41.895802,
+        "lng": 12.47152
+      },
+      "officialUrl": "http://www.fornocampodefiori.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "07:30",
+          "close": "14:30"
+        },
+        {
+          "days": "Mo-Sa",
+          "open": "16:45",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/10074889578"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-giolitti": {
+      "coords": {
+        "lat": 41.897552,
+        "lng": 12.505356
+      },
+      "costCurrency": "EUR",
+      "costMax": 7,
+      "costMin": 4,
+      "sources": [
+        "https://www.openstreetmap.org/way/463432042"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-la-pergola": {
+      "coords": {
+        "lat": 41.91892,
+        "lng": 12.521349
+      },
+      "costCurrency": "EUR",
+      "costMin": 250,
+      "sources": [
+        "https://www.openstreetmap.org/node/4730709890"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-pizzarium": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.906697,
+        "lng": 12.446661
+      },
+      "costCurrency": "EUR",
+      "costMax": 12,
+      "costMin": 6,
+      "officialUrl": "https://www.bonci.it/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "11:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Su",
+          "open": "12:00",
+          "close": "16:00"
+        },
+        {
+          "days": "Su",
+          "open": "18:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/761341454"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-pizzeria-ai-marmi": {
+      "closedDays": [
+        3
+      ],
+      "coords": {
+        "lat": 41.888263,
+        "lng": 12.47379
+      },
+      "openingHours": [
+        {
+          "days": "Mo,Tu,Th-Su",
+          "open": "18:30",
+          "close": "26:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/252440275"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-roscioli": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 41.894109,
+        "lng": 12.502857
+      },
+      "costCurrency": "EUR",
+      "costMax": 60,
+      "costMin": 40,
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "07:30",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4386822104"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-supplizio": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 41.897471,
+        "lng": 12.467903
+      },
+      "costCurrency": "EUR",
+      "costMax": 6,
+      "costMin": 3,
+      "officialUrl": "https://www.supplizioroma.it/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "11:30",
+          "close": "16:00"
+        },
+        {
+          "days": "Mo-Fr",
+          "open": "17:00",
+          "close": "21:30"
+        },
+        {
+          "days": "Sa",
+          "open": "11:30",
+          "close": "16:00"
+        },
+        {
+          "days": "Sa",
+          "open": "17:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4538925190"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-testaccio-market": {
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 8
+    },
+    "r-trattoria-da-teo": {
+      "coords": {
+        "lat": 41.888495,
+        "lng": 12.477674
+      },
+      "officialUrl": "http://www.trattoriadateo.it/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4086840623"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-via-condotti": {
+      "coords": {
+        "lat": 41.904992,
+        "lng": 12.480109
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/23337313"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-via-del-corso": {
+      "coords": {
+        "lat": 41.902174,
+        "lng": 12.479932
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/49305153",
+        "https://www.wikidata.org/wiki/Q958299"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "spanish-steps": {
+      "coords": {
+        "lat": 41.905976,
+        "lng": 12.482554
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/24098531"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "st-peters-basilica": {
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 0
+    },
+    "t-orvieto": {
+      "coords": {
+        "lat": 42.718615,
+        "lng": 12.108791
+      },
+      "officialUrl": "http://www.comune.orvieto.tr.it/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/42117",
+        "https://www.wikidata.org/wiki/Q541"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-ostia-antica": {
+      "coords": {
+        "lat": 41.753637,
+        "lng": 12.28574
+      },
+      "officialUrl": "https://ostiaantica.cultura.gov.it/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/15824763",
+        "https://www.wikidata.org/wiki/Q1012797"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-tivoli-villa-d-este-hadrian-s-villa": {
+      "coords": {
+        "lat": 41.960922,
+        "lng": 12.798884
+      },
+      "officialUrl": "https://www.comune.tivoli.rm.it/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/41662",
+        "https://www.wikidata.org/wiki/Q159605"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "trevi-fountain": {
+      "coords": {
+        "lat": 41.900978,
+        "lng": 12.483285
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.trevifountain.net/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/13448560",
+        "https://www.wikidata.org/wiki/Q185382"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "vatican-museums": {
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 20
+    },
+    "villa-borghese-gardens": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-appian-way-bike-ride": {
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 15
+    },
+    "x-colosseum-underground-arena-floor-tour": {
+      "costCurrency": "EUR",
+      "costMax": 50,
+      "costMin": 25
+    },
+    "x-pasta-making-class": {
+      "costCurrency": "EUR",
+      "costMax": 100,
+      "costMin": 70
+    },
+    "x-sunset-walk-from-the-gianicolo-hill": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-trastevere-evening-food-and-wine-walk": {
+      "costCurrency": "EUR",
+      "costMax": 90,
+      "costMin": 60
+    }
+  },
+  "neighborhoods": {
+    "centro-storico": {
+      "coords": {
+        "lat": 42.093383,
+        "lng": 12.269666
+      },
+      "radiusKm": 1.38
+    },
+    "jewish-ghetto-ghetto-ebraico": {
+      "coords": {
+        "lat": 41.893806,
+        "lng": 12.477811
+      },
+      "radiusKm": 0.4
+    },
+    "monti": {
+      "coords": {
+        "lat": 41.891973,
+        "lng": 12.495658
+      },
+      "radiusKm": 1.54
+    },
+    "testaccio": {
+      "coords": {
+        "lat": 41.879506,
+        "lng": 12.474483
+      },
+      "radiusKm": 0.76
+    },
+    "trastevere": {
+      "coords": {
+        "lat": 41.891159,
+        "lng": 12.466846
+      },
+      "radiusKm": 1.33
+    }
+  }
+}

@@ -1,0 +1,754 @@
+{
+  "bbox": [
+    52.0731,
+    4.4011,
+    52.6731,
+    5.3838
+  ],
+  "places": {
+    "anne-frank-house": {
+      "coords": {
+        "lat": 52.375156,
+        "lng": 4.884081
+      },
+      "costCurrency": "EUR",
+      "costMax": 16,
+      "costMin": 16,
+      "officialUrl": "https://www.annefrank.org/",
+      "sources": [
+        "https://www.openstreetmap.org/way/601081859",
+        "https://www.wikidata.org/wiki/Q165366"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "begijnhof": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.369431,
+        "lng": 4.890043
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/26658363",
+        "https://www.wikidata.org/wiki/Q1629214"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-cafe-papeneiland": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.380461,
+        "lng": 4.887994
+      },
+      "officialUrl": "https://www.papeneiland.nl/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Sa",
+          "open": "10:00",
+          "close": "25:00"
+        },
+        {
+          "days": "Fr",
+          "open": "10:00",
+          "close": "27:00"
+        },
+        {
+          "days": "Su",
+          "open": "12:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2186331503"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-coffee-coconuts": {
+      "closedDays": [
+        3
+      ],
+      "coords": {
+        "lat": 52.337231,
+        "lng": 4.873064
+      },
+      "officialUrl": "https://www.coffeeandcoconuts.com/",
+      "openingHours": [
+        {
+          "days": "Mo,Tu,Th,Fr",
+          "open": "07:30",
+          "close": "16:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "09:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/10862496229"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-winkel43-cafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.379084,
+        "lng": 4.886234
+      },
+      "officialUrl": "https://www.winkel43.nl/",
+      "openingHours": [
+        {
+          "days": "Mo",
+          "open": "07:00",
+          "close": "25:00"
+        },
+        {
+          "days": "Tu-Th",
+          "open": "08:00",
+          "close": "25:00"
+        },
+        {
+          "days": "Fr",
+          "open": "08:00",
+          "close": "26:00"
+        },
+        {
+          "days": "Sa",
+          "open": "07:00",
+          "close": "26:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/13404073479"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "canal-cruise": {
+      "coords": {
+        "lat": 52.363534,
+        "lng": 4.880547
+      },
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 18,
+      "sources": [
+        "https://www.openstreetmap.org/node/5071185622"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "dam-square": {
+      "coords": {
+        "lat": 52.373116,
+        "lng": 4.892351
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/94756489",
+        "https://www.wikidata.org/wiki/Q839050"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "jordaan-walk": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "moco-museum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.358716,
+        "lng": 4.881962
+      },
+      "costCurrency": "EUR",
+      "costMax": 21.95,
+      "costMin": 21.95,
+      "officialUrl": "https://mocomuseum.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "09:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "09:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2816504554",
+        "https://www.wikidata.org/wiki/Q26832671"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-melkweg": {
+      "coords": {
+        "lat": 52.364778,
+        "lng": 4.881073
+      },
+      "officialUrl": "https://www.melkweg.nl/",
+      "sources": [
+        "https://www.openstreetmap.org/way/267565714",
+        "https://www.wikidata.org/wiki/Q60481"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-albert-cuyp-stalls": {
+      "costCurrency": "EUR",
+      "costMax": 8,
+      "costMin": 3
+    },
+    "r-bakers-roasters": {
+      "coords": {
+        "lat": 52.357323,
+        "lng": 4.889858
+      },
+      "officialUrl": "https://www.bakersandroasters.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4500910636"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-cafe-de-reiger": {
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 20
+    },
+    "r-de-kas": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 52.352305,
+        "lng": 4.930564
+      },
+      "costCurrency": "EUR",
+      "costMax": 90,
+      "costMin": 60,
+      "officialUrl": "https://restaurantdekas.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "12:00",
+          "close": "13:45"
+        },
+        {
+          "days": "Mo-Sa",
+          "open": "18:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2830233516"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-de-luwte": {
+      "coords": {
+        "lat": 52.37529,
+        "lng": 4.88688
+      },
+      "costCurrency": "EUR",
+      "costMax": 65,
+      "costMin": 45,
+      "officialUrl": "http://restaurantdeluwte.nl/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2061794034"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-febo": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.356068,
+        "lng": 4.927427
+      },
+      "costCurrency": "EUR",
+      "costMax": 4,
+      "costMin": 2,
+      "officialUrl": "https://www.febo.nl/locaties/amsterdam-linnaeusstraat",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "11:30",
+          "close": "25:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "11:30",
+          "close": "27:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1308933300"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-foodhallen": {
+      "coords": {
+        "lat": 52.366948,
+        "lng": 4.8682
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 12,
+      "officialUrl": "https://foodhallen.nl/",
+      "sources": [
+        "https://www.openstreetmap.org/way/309944961"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-moeders": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.371843,
+        "lng": 4.874978
+      },
+      "officialUrl": "https://www.moeders.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "17:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "12:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1328355092"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-restaurant-greetje": {
+      "costCurrency": "EUR",
+      "costMax": 65,
+      "costMin": 45
+    },
+    "r-stubbe-s-haring": {
+      "closedDays": [
+        0,
+        1
+      ],
+      "coords": {
+        "lat": 52.379064,
+        "lng": 4.894237
+      },
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "12:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5203239222"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-the-pancake-bakery": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.377589,
+        "lng": 4.886264
+      },
+      "officialUrl": "https://www.pancake.nl/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "21:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/493987547"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-winkel43": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.379084,
+        "lng": 4.886234
+      },
+      "costCurrency": "EUR",
+      "costMax": 9,
+      "costMin": 6,
+      "officialUrl": "https://www.winkel43.nl/",
+      "openingHours": [
+        {
+          "days": "Mo",
+          "open": "07:00",
+          "close": "25:00"
+        },
+        {
+          "days": "Tu-Th",
+          "open": "08:00",
+          "close": "25:00"
+        },
+        {
+          "days": "Fr",
+          "open": "08:00",
+          "close": "26:00"
+        },
+        {
+          "days": "Sa",
+          "open": "07:00",
+          "close": "26:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/13404073479"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "rijksmuseum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.359843,
+        "lng": 4.88504
+      },
+      "costCurrency": "EUR",
+      "costMax": 22.5,
+      "costMin": 22.5,
+      "officialUrl": "https://www.rijksmuseum.nl/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/29989787",
+        "https://www.wikidata.org/wiki/Q190804"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-albert-cuyp-market": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 52.355233,
+        "lng": 4.891779
+      },
+      "officialUrl": "https://albertcuyp-markt.amsterdam/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/7112728",
+        "https://www.wikidata.org/wiki/Q2342892"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-bloemenmarkt-flower-market": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.366931,
+        "lng": 4.890765
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:00",
+          "close": "17:30"
+        },
+        {
+          "days": "Su",
+          "open": "11:30",
+          "close": "17:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/145953534",
+        "https://www.wikidata.org/wiki/Q643079"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-de-negen-straatjes-nine-streets": {
+      "coords": {
+        "lat": 52.368851,
+        "lng": 4.884994
+      },
+      "sources": [
+        "https://www.openstreetmap.org/relation/17947340",
+        "https://www.wikidata.org/wiki/Q1980981"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-p-c-hooftstraat": {
+      "coords": {
+        "lat": 52.360349,
+        "lng": 4.881067
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/322759665"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-waterlooplein-market": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 52.368622,
+        "lng": 4.901193
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:30",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1611202846"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "stedelijk-museum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.3579,
+        "lng": 4.87986
+      },
+      "officialUrl": "https://www.stedelijk.nl/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/44508819",
+        "https://www.wikidata.org/wiki/Q42175133"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-keukenhof-seasonal-spring-only": {
+      "coords": {
+        "lat": 52.269873,
+        "lng": 4.547257
+      },
+      "officialUrl": "https://www.keukenhof.nl/",
+      "sources": [
+        "https://www.openstreetmap.org/way/24463630",
+        "https://www.wikidata.org/wiki/Q18769666"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-utrecht": {
+      "coords": {
+        "lat": 52.090701,
+        "lng": 5.121563
+      },
+      "officialUrl": "https://www.utrecht.nl/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/419203",
+        "https://www.wikidata.org/wiki/Q803"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-zaanse-schans": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.475053,
+        "lng": 4.817976
+      },
+      "officialUrl": "https://www.zaanseschans.nl/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/177095326",
+        "https://www.wikidata.org/wiki/Q136661"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "van-gogh-museum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.358367,
+        "lng": 4.88109
+      },
+      "costCurrency": "EUR",
+      "costMax": 22,
+      "costMin": 22,
+      "officialUrl": "https://www.vangoghmuseum.nl/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Sa,Su",
+          "open": "09:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Fr",
+          "open": "09:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/6577680",
+        "https://www.wikidata.org/wiki/Q224124"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "vondelpark": {
+      "coords": {
+        "lat": 52.357197,
+        "lng": 4.864119
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.hetvondelpark.net/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/17080648",
+        "https://www.wikidata.org/wiki/Q1419691"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "westerkerk": {
+      "closedDays": [
+        0,
+        6
+      ],
+      "coords": {
+        "lat": 52.374547,
+        "lng": 4.883986
+      },
+      "officialUrl": "https://www.westerkerk.nl/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "11:00",
+          "close": "15:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/99205257",
+        "https://www.wikidata.org/wiki/Q1130722"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-albert-cuyp-market-wander": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-bike-ride-through-vondelpark-and-the-canals": {
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 10
+    },
+    "x-canal-cruise-at-golden-hour": {
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 18
+    },
+    "x-heineken-experience": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.35784,
+        "lng": 4.891784
+      },
+      "costCurrency": "EUR",
+      "costMax": 28,
+      "costMin": 23,
+      "officialUrl": "https://heineken.com/Heineken-Experience",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "10:30",
+          "close": "19:30"
+        },
+        {
+          "days": "Fr-Su",
+          "open": "10:30",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2817515795",
+        "https://www.wikidata.org/wiki/Q2087161"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-jordaan-hofjes-hidden-courtyards-walk": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    }
+  },
+  "neighborhoods": {
+    "canal-ring": {
+      "coords": {
+        "lat": 52.371979,
+        "lng": 4.884727
+      },
+      "radiusKm": 1.64
+    },
+    "de-pijp": {
+      "coords": {
+        "lat": 52.353346,
+        "lng": 4.896962
+      },
+      "radiusKm": 1.04
+    },
+    "jordaan": {
+      "coords": {
+        "lat": 52.375416,
+        "lng": 4.881096
+      },
+      "radiusKm": 1.17
+    },
+    "museum-quarter": {
+      "coords": {
+        "lat": 52.35585,
+        "lng": 4.886029
+      },
+      "radiusKm": 0.4
+    },
+    "red-light-district": {
+      "coords": {
+        "lat": 52.373408,
+        "lng": 4.898281
+      },
+      "radiusKm": 0.4
+    }
+  }
+}

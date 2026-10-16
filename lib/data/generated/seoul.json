@@ -1,0 +1,543 @@
+{
+  "bbox": [
+    37.2667,
+    126.5998,
+    37.8667,
+    127.3568
+  ],
+  "places": {
+    "bukchon-village": {
+      "coords": {
+        "lat": 37.582392,
+        "lng": 126.985865
+      },
+      "costCurrency": "KRW",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://hanok.seoul.go.kr/front/eng/town/town01.do",
+      "sources": [
+        "https://www.openstreetmap.org/node/2669684119",
+        "https://www.wikidata.org/wiki/Q490981"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-cafe-onion-seongsu": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.544714,
+        "lng": 127.058232
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "10:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5941351285"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-dessert39": {
+      "coords": {
+        "lat": 37.487074,
+        "lng": 126.981048
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4772803917"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-fritz-coffee-company": {
+      "coords": {
+        "lat": 37.577735,
+        "lng": 126.988499
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/6507549586"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-thanks-nature-cafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.553506,
+        "lng": 126.92382
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4315862894"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "changdeokgung": {
+      "coords": {
+        "lat": 37.582387,
+        "lng": 126.991701
+      },
+      "costCurrency": "KRW",
+      "costMax": 8000,
+      "costMin": 3000,
+      "officialUrl": "https://www.cdg.go.kr/",
+      "sources": [
+        "https://www.openstreetmap.org/way/789965985",
+        "https://www.wikidata.org/wiki/Q477157"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "cheonggyecheon-stream": {
+      "coords": {
+        "lat": 37.572287,
+        "lng": 127.036728
+      },
+      "costCurrency": "KRW",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/769631455",
+        "https://www.wikidata.org/wiki/Q495437"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "dongdaemun-dpp": {
+      "coords": {
+        "lat": 37.567069,
+        "lng": 127.009899
+      },
+      "costCurrency": "KRW",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://ddp.or.kr/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/10647068",
+        "https://www.wikidata.org/wiki/Q5295847"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "gwangjang-market": {
+      "coords": {
+        "lat": 37.570189,
+        "lng": 126.999499
+      },
+      "costCurrency": "KRW",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.kwangjangmarket.co.kr/",
+      "sources": [
+        "https://www.openstreetmap.org/way/607083156",
+        "https://www.wikidata.org/wiki/Q12585067"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "gyeongbokgung": {
+      "coords": {
+        "lat": 37.579754,
+        "lng": 126.976682
+      },
+      "costCurrency": "KRW",
+      "costMax": 3000,
+      "costMin": 3000,
+      "officialUrl": "http://www.royalpalace.go.kr/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/5501517",
+        "https://www.wikidata.org/wiki/Q482485"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "han-river-park": {
+      "coords": {
+        "lat": 37.541159,
+        "lng": 127.117254
+      },
+      "costCurrency": "KRW",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/4946044122"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "insadong-culture-street": {
+      "costCurrency": "KRW",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "jogyesa-temple": {
+      "coords": {
+        "lat": 37.574143,
+        "lng": 126.981912
+      },
+      "costCurrency": "KRW",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.jogyesa.kr/",
+      "sources": [
+        "https://www.openstreetmap.org/way/223157537",
+        "https://www.wikidata.org/wiki/Q488824"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "myeongdong-cathedral": {
+      "coords": {
+        "lat": 37.560898,
+        "lng": 126.986376
+      },
+      "costCurrency": "KRW",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/6036160341",
+        "https://www.wikidata.org/wiki/Q626260"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-noraebang-karaoke-room": {
+      "coords": {
+        "lat": 37.551162,
+        "lng": 126.921076
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/299797618"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-seoul-tower": {
+      "coords": {
+        "lat": 37.534951,
+        "lng": 126.987089
+      },
+      "costCurrency": "KRW",
+      "costMax": 31000,
+      "costMin": 21000,
+      "sources": [
+        "https://www.openstreetmap.org/node/14007758601"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "national-museum-of-korea": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.523953,
+        "lng": 126.98032
+      },
+      "costCurrency": "KRW",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.museum.go.kr/",
+      "openingHours": [
+        {
+          "days": "We,Sa",
+          "open": "10:00",
+          "close": "21:00"
+        },
+        {
+          "days": "Mo,Tu,Th,Fr,Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/168364800",
+        "https://www.wikidata.org/wiki/Q494407"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-balwoo-gongyang": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 37.573773,
+        "lng": 126.983174
+      },
+      "officialUrl": "http://www.balwoo.or.kr/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "11:30",
+          "close": "15:00"
+        },
+        {
+          "days": "Mo-Sa",
+          "open": "18:00",
+          "close": "21:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5622741722"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-gwangjang-bindaetteok": {
+      "costCurrency": "KRW",
+      "costMax": 20000,
+      "costMin": 10000
+    },
+    "r-hadongkwan": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.562975,
+        "lng": 126.985724
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "16:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/7217709085"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-isaac-toast": {
+      "coords": {
+        "lat": 37.542963,
+        "lng": 127.070718
+      },
+      "costCurrency": "KRW",
+      "costMax": 5000,
+      "costMin": 3000,
+      "sources": [
+        "https://www.openstreetmap.org/way/357571271"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-mapo-galmaegi": {
+      "costCurrency": "KRW",
+      "costMax": 35000,
+      "costMin": 20000
+    },
+    "r-mingles": {
+      "coords": {
+        "lat": 37.522682,
+        "lng": 127.039179
+      },
+      "costCurrency": "KRW",
+      "costMin": 250000,
+      "officialUrl": "https://www.restaurant-mingles.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4875713922"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-myeongdong-kyoja": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.562561,
+        "lng": 126.985604
+      },
+      "costCurrency": "KRW",
+      "costMax": 18000,
+      "costMin": 12000,
+      "officialUrl": "http://www.mdkj.co.kr/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:30",
+          "close": "21:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4397381096"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-noryangjin-fish-market": {
+      "coords": {
+        "lat": 37.514716,
+        "lng": 126.937737
+      },
+      "costCurrency": "KRW",
+      "costMax": 50000,
+      "costMin": 30000,
+      "sources": [
+        "https://www.openstreetmap.org/way/606419988"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-samcheongdong-sujebi": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.584542,
+        "lng": 126.981934
+      },
+      "officialUrl": "http://www.sujaebi.kr/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/316516024"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-tongin-market-lunchbox": {
+      "costCurrency": "KRW",
+      "costMax": 10000,
+      "costMin": 5000
+    },
+    "r-tosokchon": {
+      "coords": {
+        "lat": 37.57768,
+        "lng": 126.971528
+      },
+      "costCurrency": "KRW",
+      "costMax": 25000,
+      "costMin": 20000,
+      "officialUrl": "http://www.tosokchon.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/305674051"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-dongdaemun-market": {
+      "coords": {
+        "lat": 37.568345,
+        "lng": 127.008762
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5610739321"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-insadong": {
+      "coords": {
+        "lat": 37.573524,
+        "lng": 126.985596
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/26658460"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-myeongdong": {
+      "coords": {
+        "lat": 37.560898,
+        "lng": 126.986376
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/6036160341",
+        "https://www.wikidata.org/wiki/Q626260"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-dmz-panmunjom": {
+      "coords": {
+        "lat": 37.518419,
+        "lng": -118.57262
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1383882840"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-nami-island-petite-france": {
+      "coords": {
+        "lat": 37.791728,
+        "lng": 127.525144
+      },
+      "officialUrl": "https://www.namisum.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/238212575",
+        "https://www.wikidata.org/wiki/Q487536"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-suwon-hwaseong-fortress": {
+      "coords": {
+        "lat": 37.287628,
+        "lng": 126.996496
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/11821148698"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-dmz-demilitarized-zone-tour": {
+      "costCurrency": "KRW",
+      "costMax": 150000,
+      "costMin": 80000
+    },
+    "x-hanbok-rental-and-palace-walk": {
+      "costCurrency": "KRW",
+      "costMax": 30000,
+      "costMin": 15000
+    },
+    "x-jjimjilbang-korean-bathhouse-visit": {
+      "costCurrency": "KRW",
+      "costMax": 20000,
+      "costMin": 12000
+    },
+    "x-korean-cooking-class": {
+      "costCurrency": "KRW",
+      "costMax": 90000,
+      "costMin": 60000
+    },
+    "x-n-seoul-tower-at-night-with-love-locks": {
+      "costCurrency": "KRW",
+      "costMax": 31000,
+      "costMin": 21000
+    }
+  },
+  "neighborhoods": {
+    "bukchon": {
+      "coords": {
+        "lat": 37.582392,
+        "lng": 126.985865
+      },
+      "radiusKm": 0.4
+    },
+    "gangnam": {
+      "coords": {
+        "lat": 37.5177,
+        "lng": 127.0473
+      },
+      "radiusKm": 3
+    },
+    "hongdae": {
+      "coords": {
+        "lat": 37.554442,
+        "lng": 126.922512
+      },
+      "radiusKm": 1.42
+    },
+    "ikseondong": {
+      "coords": {
+        "lat": 37.574358,
+        "lng": 126.989776
+      },
+      "radiusKm": 1.42
+    },
+    "itaewon": {
+      "coords": {
+        "lat": 37.534503,
+        "lng": 126.994371
+      },
+      "radiusKm": 0.71
+    },
+    "myeongdong": {
+      "coords": {
+        "lat": 37.560898,
+        "lng": 126.986376
+      },
+      "radiusKm": 0.71
+    }
+  }
+}

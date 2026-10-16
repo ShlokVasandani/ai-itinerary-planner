@@ -1,6 +1,7 @@
-import type { Destination } from "../types";
+import type { DestinationSource } from "../types";
 
-export const tokyo: Destination = {
+// [added-v2] records appended by scripts/_add_records.py
+export const tokyo: DestinationSource = {
   slug: "tokyo",
   city: "Tokyo",
   country: "Japan",
@@ -63,6 +64,7 @@ export const tokyo: Destination = {
       bestTimeToVisit: "Weekend afternoons, when the main street closes to cars",
       walkable: true,
     },
+    { id: "harajuku-omotesando", name: "Harajuku & Omotesando", vibe: "Youth fashion on Takeshita Street meets tree-lined boulevards of luxury architecture", knownFor: ["Takeshita Street", "Meiji Jingu", "Omotesando architecture"], bestFor: ["shopping", "photography", "culture"], bestTimeToVisit: "Weekday mornings, before the crowds", walkable: true },
   ],
   landmarks: [
     {
@@ -156,6 +158,10 @@ export const tokyo: Destination = {
       suggestedDurationMin: 90,
       approxCost: "~¥2,100–3,400",
     },
+    { id: "imperial-palace-east-gardens", name: "Imperial Palace East Gardens", neighborhood: "Chiyoda", description: "The former Edo Castle grounds, now a public garden with stone walls and tower foundations.", whyGo: "A calm, free green space in the centre of Tokyo.", priority: "if-you-have-time", interestTags: ["history", "nature"], suggestedDurationMin: 90, approxCost: "Free" },
+    { id: "tokyo-tower", name: "Tokyo Tower", neighborhood: "Minato", description: "The 333-metre red-and-white lattice tower completed in 1958.", whyGo: "A retro icon with night views of the city.", priority: "if-you-have-time", interestTags: ["photography", "history"], suggestedDurationMin: 75 },
+    { id: "ueno-park", name: "Ueno Park", neighborhood: "Ueno", description: "A large park with museums, a zoo and a shrine, and one of the best cherry-blossom spots in Tokyo.", whyGo: "A museum quarter and cherry blossoms in the same park.", priority: "if-you-have-time", interestTags: ["nature", "culture", "art"], suggestedDurationMin: 120, approxCost: "Free" },
+    { id: "hamarikyu-gardens", name: "Hamarikyu Gardens", neighborhood: "Ginza", description: "A landscaped Edo-period garden with a tidal pond and a tea house, set against the skyscrapers of Shiodome.", whyGo: "A calm, traditional garden a short walk from Ginza, with a teahouse on the pond.", priority: "if-you-have-time", interestTags: ["nature", "photography"], suggestedDurationMin: 75 },
   ],
   restaurants: [
     {
@@ -279,6 +285,10 @@ export const tokyo: Destination = {
       priceLevel: "$",
       approxCost: "¥900–1,300",
     },
+    { id: "r-gyukatsu-motomura", name: "Gyukatsu Motomura", neighborhood: "Shibuya", description: "A restaurant serving breaded beef cutlet that diners finish on a small hot plate.", whyGo: "A fun and filling lunch in Shibuya.", priority: "highly-recommended", interestTags: ["food"], suggestedDurationMin: 45, cuisine: "Gyukatsu (beef cutlet)", signatureDishes: ["Gyukatsu set"], mealFor: ["lunch", "dinner"], priceLevel: "$$" },
+    { id: "r-uobei-shibuya-dogenzaka", name: "Uobei Shibuya Dogenzaka", neighborhood: "Shibuya", description: "A conveyor-belt sushi restaurant where orders are placed on touch screens and delivered by rail.", whyGo: "A cheap, entertaining and quick sushi meal.", priority: "interest-specific", interestTags: ["food"], suggestedDurationMin: 40, cuisine: "Conveyor-belt sushi", signatureDishes: ["Salmon nigiri", "Tuna nigiri"], mealFor: ["lunch", "dinner"], priceLevel: "$" },
+    { id: "r-rokurinsha-tokyo-station-ramen-street", name: "Rokurinsha (Tokyo Station Ramen Street)", neighborhood: "Chiyoda", description: "A popular tsukemen (dipping noodle) shop in the Tokyo Ramen Street under Tokyo Station.", whyGo: "A top tsukemen stop right at Tokyo Station.", priority: "if-you-have-time", interestTags: ["food"], suggestedDurationMin: 45, cuisine: "Tsukemen (ramen)", signatureDishes: ["Tsukemen"], mealFor: ["lunch", "dinner"], priceLevel: "$$" },
+    { id: "r-umegaoka-sushi-no-midori", name: "Umegaoka Sushi no Midori", neighborhood: "Shibuya", description: "A popular sushi restaurant known for large pieces of fish at moderate prices.", whyGo: "A Tokyo favourite for good value sushi, often with a queue.", priority: "interest-specific", interestTags: ["food"], suggestedDurationMin: 60, cuisine: "Sushi", signatureDishes: ["Nigiri sets"], mealFor: ["lunch", "dinner"], priceLevel: "$$" },
   ],
   cafes: [
     { id: "c-blue-bottle", name: "Blue Bottle Coffee Shinjuku", neighborhood: "Shinjuku", description: "A clean, minimalist third-wave coffee bar.", specialty: "Single-origin pour-over", priceLevel: "$$", priority: "if-you-have-time" },
@@ -286,6 +296,7 @@ export const tokyo: Destination = {
     { id: "c-shirohige", name: "Shirohige's Cream Puff Factory", neighborhood: "Setagaya", description: "A Studio Ghibli-themed pastry shop selling Totoro-shaped cream puffs.", specialty: "Totoro cream puffs", priceLevel: "$", priority: "if-you-have-time" },
     { id: "c-toranomon-koffee", name: "Koffee Mameya", neighborhood: "Harajuku", description: "A standing-room specialty coffee bar from the team behind Omotesando Koffee.", specialty: "Curated single-origin flights", priceLevel: "$$", priority: "highly-recommended" },
     { id: "c-nana-green-tea", name: "Nana's Green Tea", neighborhood: "Shibuya", description: "A modern matcha café doing parfaits and matcha lattes.", specialty: "Matcha parfait", priceLevel: "$", priority: "interest-specific" },
+    { id: "c-fuglen-tokyo", name: "Fuglen Tokyo", neighborhood: "Shibuya", description: "A Tokyo outpost of the Oslo coffee bar, with vintage Scandinavian furniture.", specialty: "Coffee in the day, cocktails by night", priceLevel: "$$", priority: "interest-specific" },
   ],
   localFoods: [
     { dish: "Sushi & sashimi", description: "Fresh raw fish over vinegared rice — the baseline against which the rest of the world is measured.", whereToTry: ["Sushisho Masa", "any Tsukiji Outer Market stall"] },
@@ -296,30 +307,30 @@ export const tokyo: Destination = {
     { dish: "Wagashi (traditional sweets)", description: "Delicate seasonal confections often served with matcha.", whereToTry: ["Nakamise-dori stalls in Asakusa"], vegetarian: true },
   ],
   experiences: [
-    { name: "Sumo morning practice viewing", description: "Watch professional sumo wrestlers train at a local stable in Ryogoku.", whyGo: "A rare, quiet, up-close look at a centuries-old sport.", approxCost: "¥5,000–10,000 via tour", duration: "2 hr", priority: "interest-specific", interestTags: ["culture"], bookingNote: "Book through a licensed stable-visit tour operator." },
-    { name: "Kimono photo walk in Asakusa", description: "Rent a kimono for the day and walk the temple grounds in traditional dress.", whyGo: "One of the most popular souvenir photo experiences in the city.", approxCost: "¥4,000–7,000", duration: "3 hr", priority: "if-you-have-time", interestTags: ["photography", "culture"] },
-    { name: "Golden Gai bar hop", description: "A maze of six alleys packed with 200+ tiny, themed bars, each seating 5–10 people.", whyGo: "The most atmospheric night out in the city, if you like small, characterful bars.", approxCost: "¥1,000–2,000 cover per bar plus drinks", duration: "2–3 hr", priority: "interest-specific", interestTags: ["nightlife"] },
-    { name: "Robot Restaurant-style neon show", description: "High-energy robot and light cabaret shows in Shinjuku's entertainment district.", whyGo: "Pure, unapologetic Tokyo maximalism.", approxCost: "¥6,000–8,000", duration: "90 min", priority: "if-you-have-time", interestTags: ["nightlife", "photography"] },
-    { name: "Tea ceremony experience", description: "A short, guided introduction to the formal Japanese tea ceremony.", whyGo: "A calm, meaningful cultural counterpoint to the city's pace.", approxCost: "¥3,000–5,000", duration: "60–90 min", priority: "interest-specific", interestTags: ["culture"] },
+    { id: "x-sumo-morning-practice-viewing", name: "Sumo morning practice viewing", description: "Watch professional sumo wrestlers train at a local stable in Ryogoku.", whyGo: "A rare, quiet, up-close look at a centuries-old sport.", approxCost: "¥5,000–10,000 via tour", duration: "2 hr", priority: "interest-specific", interestTags: ["culture"], bookingNote: "Book through a licensed stable-visit tour operator." },
+    { id: "x-kimono-photo-walk-in-asakusa", name: "Kimono photo walk in Asakusa", description: "Rent a kimono for the day and walk the temple grounds in traditional dress.", whyGo: "One of the most popular souvenir photo experiences in the city.", approxCost: "¥4,000–7,000", duration: "3 hr", priority: "if-you-have-time", interestTags: ["photography", "culture"] },
+    { id: "x-golden-gai-bar-hop", name: "Golden Gai bar hop", description: "A maze of six alleys packed with 200+ tiny, themed bars, each seating 5–10 people.", whyGo: "The most atmospheric night out in the city, if you like small, characterful bars.", approxCost: "¥1,000–2,000 cover per bar plus drinks", duration: "2–3 hr", priority: "interest-specific", interestTags: ["nightlife"] },
+    { id: "x-robot-restaurant-style-neon-show", name: "Robot Restaurant-style neon show", description: "High-energy robot and light cabaret shows in Shinjuku's entertainment district.", whyGo: "Pure, unapologetic Tokyo maximalism.", approxCost: "¥6,000–8,000", duration: "90 min", priority: "if-you-have-time", interestTags: ["nightlife", "photography"] },
+    { id: "x-tea-ceremony-experience", name: "Tea ceremony experience", description: "A short, guided introduction to the formal Japanese tea ceremony.", whyGo: "A calm, meaningful cultural counterpoint to the city's pace.", approxCost: "¥3,000–5,000", duration: "60–90 min", priority: "interest-specific", interestTags: ["culture"] },
   ],
   shopping: [
-    { name: "Takeshita Street", neighborhood: "Harajuku", type: "street", description: "Loud, youth-fashion-forward shopping street packed with crepe stands and streetwear." },
-    { name: "Ginza flagship stores", neighborhood: "Ginza", type: "luxury", description: "Multi-story flagships for global luxury houses and Japanese department stores like Mitsukoshi." },
-    { name: "Nakamise-dori", neighborhood: "Asakusa", type: "souvenir", description: "The historic approach to Senso-ji lined with traditional snack and craft stalls." },
-    { name: "Don Quijote (Shibuya)", neighborhood: "Shibuya", type: "market", description: "A chaotic, multi-floor discount store for snacks, cosmetics, and souvenirs, open late." },
-    { name: "Nakameguro canal boutiques", neighborhood: "Nakameguro", type: "district", description: "Independent fashion and design shops along a cherry-tree-lined canal." },
+    { id: "s-takeshita-street", name: "Takeshita Street", neighborhood: "Harajuku", type: "street", description: "Loud, youth-fashion-forward shopping street packed with crepe stands and streetwear." },
+    { id: "s-ginza-flagship-stores", name: "Ginza flagship stores", neighborhood: "Ginza", type: "luxury", description: "Multi-story flagships for global luxury houses and Japanese department stores like Mitsukoshi." },
+    { id: "s-nakamise-dori", name: "Nakamise-dori", neighborhood: "Asakusa", type: "souvenir", description: "The historic approach to Senso-ji lined with traditional snack and craft stalls." },
+    { id: "s-don-quijote-shibuya", name: "Don Quijote (Shibuya)", neighborhood: "Shibuya", type: "market", description: "A chaotic, multi-floor discount store for snacks, cosmetics, and souvenirs, open late." },
+    { id: "s-nakameguro-canal-boutiques", name: "Nakameguro canal boutiques", neighborhood: "Nakameguro", type: "district", description: "Independent fashion and design shops along a cherry-tree-lined canal." },
   ],
   nightlife: [
-    { name: "Golden Gai", neighborhood: "Shinjuku", type: "bar", description: "A tangle of tiny themed bars in narrow alleys.", priceLevel: "$$" },
-    { name: "Shibuya Sky at dusk", neighborhood: "Shibuya", type: "night-view", description: "Open-air rooftop views as the city lights switch on.", priceLevel: "$$" },
-    { name: "Omoide Yokocho", neighborhood: "Shinjuku", type: "bar", description: "Smoky yakitori-and-drinks alley, standing room only in most stalls.", priceLevel: "$" },
-    { name: "Womb Shibuya", neighborhood: "Shibuya", type: "club", description: "One of Tokyo's best-known electronic music clubs.", priceLevel: "$$" },
-    { name: "Ameyoko night market stalls", neighborhood: "Ueno", type: "night-market", description: "Post-market street food and cheap beer under the train tracks.", priceLevel: "$" },
+    { id: "n-golden-gai", name: "Golden Gai", neighborhood: "Shinjuku", type: "bar", description: "A tangle of tiny themed bars in narrow alleys.", priceLevel: "$$" },
+    { id: "n-shibuya-sky-at-dusk", name: "Shibuya Sky at dusk", neighborhood: "Shibuya", type: "night-view", description: "Open-air rooftop views as the city lights switch on.", priceLevel: "$$" },
+    { id: "n-omoide-yokocho", name: "Omoide Yokocho", neighborhood: "Shinjuku", type: "bar", description: "Smoky yakitori-and-drinks alley, standing room only in most stalls.", priceLevel: "$" },
+    { id: "n-womb-shibuya", name: "Womb Shibuya", neighborhood: "Shibuya", type: "club", description: "One of Tokyo's best-known electronic music clubs.", priceLevel: "$$" },
+    { id: "n-ameyoko-night-market-stalls", name: "Ameyoko night market stalls", neighborhood: "Ueno", type: "night-market", description: "Post-market street food and cheap beer under the train tracks.", priceLevel: "$" },
   ],
   dayTrips: [
-    { name: "Hakone", description: "Hot springs, Mt Fuji views, and the Hakone Open-Air Museum, an easy loop via train, cable car, and boat.", distanceFromCity: "~90 km", travelTime: "1.5–2 hr by train", suggestedDuration: "full-day", howToGetThere: "Odakyu Romancecar direct from Shinjuku Station.", worthItFor: ["Mt Fuji views", "onsen", "Hakone Open-Air Museum"] },
-    { name: "Nikko", description: "Ornate UNESCO shrine complex (Toshogu) set among cedar forests, about two hours north.", distanceFromCity: "~140 km", travelTime: "2 hr by train", suggestedDuration: "full-day", howToGetThere: "Tobu Limited Express from Asakusa Station.", worthItFor: ["Toshogu Shrine", "Kegon Falls", "mountain scenery"] },
-    { name: "Kamakura", description: "A former capital with the Great Buddha, bamboo groves, and a laid-back beach town feel.", distanceFromCity: "~50 km", travelTime: "1 hr by train", suggestedDuration: "half-day", howToGetThere: "JR Yokosuka Line direct from Tokyo Station.", worthItFor: ["Great Buddha of Kamakura", "Hasedera Temple", "coastal views"] },
+    { id: "t-hakone", name: "Hakone", description: "Hot springs, Mt Fuji views, and the Hakone Open-Air Museum, an easy loop via train, cable car, and boat.", distanceFromCity: "~90 km", travelTime: "1.5–2 hr by train", suggestedDuration: "full-day", howToGetThere: "Odakyu Romancecar direct from Shinjuku Station.", worthItFor: ["Mt Fuji views", "onsen", "Hakone Open-Air Museum"] },
+    { id: "t-nikko", name: "Nikko", description: "Ornate UNESCO shrine complex (Toshogu) set among cedar forests, about two hours north.", distanceFromCity: "~140 km", travelTime: "2 hr by train", suggestedDuration: "full-day", howToGetThere: "Tobu Limited Express from Asakusa Station.", worthItFor: ["Toshogu Shrine", "Kegon Falls", "mountain scenery"] },
+    { id: "t-kamakura", name: "Kamakura", description: "A former capital with the Great Buddha, bamboo groves, and a laid-back beach town feel.", distanceFromCity: "~50 km", travelTime: "1 hr by train", suggestedDuration: "half-day", howToGetThere: "JR Yokosuka Line direct from Tokyo Station.", worthItFor: ["Great Buddha of Kamakura", "Hasedera Temple", "coastal views"] },
   ],
   transportation: [
     { mode: "Subway/JR trains", description: "The most efficient way around the city; Tokyo Metro, Toei, and JR lines interconnect at major hubs.", approxCost: "¥170–320 per ride, or ~¥800/day with a pass", tips: "Get a Suica or Pasmo IC card (or use it via phone) — tap-and-go on every train, bus, and most vending machines." },
