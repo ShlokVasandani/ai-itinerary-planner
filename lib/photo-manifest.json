@@ -1,0 +1,217 @@
+{
+  "tokyo": {
+    "width": 1920,
+    "height": 1380,
+    "widths": [
+      480,
+      960,
+      1440,
+      1920
+    ],
+    "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwBACdASoYABEAPtFUokuoJKMhsAgBABoJZwDGQCHhNc1Mz6JoUCOgHzodjBRYF4AA/rfTB6rW1rr9KGk7XeJh8rm0PMNp5VGJb1U1AToBW3cnt9DezeOs6bqYQXqE/Gzk6buwIyAAAA=="
+  },
+  "paris": {
+    "width": 1920,
+    "height": 1280,
+    "widths": [
+      480,
+      960,
+      1440,
+      1920
+    ],
+    "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAwCdASoYABAAPtFapEwoJSOiMAgBABoJYgCdMoADTIpy0KhTPYN8AP7em1QsHBDllT0QNIFFox20F/u7E7D6pfGs0VZFx4tL5esphtPtU4soK4kGr2rMZkVgqNothJJYF2KbynY4AA=="
+  },
+  "london": {
+    "width": 1920,
+    "height": 1078,
+    "widths": [
+      480,
+      960,
+      1440,
+      1920
+    ],
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAwCdASoYAA0APtE4sFMoIiWjmAEAGgllAJ0AHoeZ7ofPop9H6gAA/lsuF0zcb1LFgyxsjMWve9PZP97vSfv+uu8Lbu2zHO+jyr8QRKxYotWSgAA="
+  },
+  "dubai": {
+    "width": 1920,
+    "height": 1280,
+    "widths": [
+      480,
+      960,
+      1440,
+      1920
+    ],
+    "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAwCdASoYABAAPtFcpkyoJSOiMAgBABoJZQCdACHfrSETf8KVOrAA/t5+m5Kts5Ih75Ql/osa2G91fJNGH8Us0F/3lpc0rqAAAA=="
+  },
+  "singapore": {
+    "width": 1920,
+    "height": 1446,
+    "widths": [
+      480,
+      960,
+      1440,
+      1920
+    ],
+    "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACwBACdASoYABIAPtFUo0woJKMiMBgMAQAaCWUAwNwQ3cVeWC+NF2WLGn+ozOKAAP7fQgzpwYOMa4thHhS2TL1a5mP78hGMmqaTqWHUjR9HeC0+QbhcNx0cHTohCPVhKiRnPAAA"
+  },
+  "bangkok": {
+    "width": 1920,
+    "height": 1280,
+    "widths": [
+      480,
+      960,
+      1440,
+      1920
+    ],
+    "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADwBACdASoYABAAPtFapEwoJSOiMAgBABoJbACdMoR3N5L+KtSAAbVjJX+TRX3vKIAA/RtRNZBoQT+j9++RxQ/Yu//2p1gQ8Eh/wWDtxcMdp1uHIkTdxRsbyZv2lM4lHsEPIst52RwxWDjx+XnhaBnGuBoKHUAA"
+  },
+  "rome": {
+    "width": 1920,
+    "height": 1280,
+    "widths": [
+      480,
+      960,
+      1440,
+      1920
+    ],
+    "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAwCdASoYABAAPtFapkuoJaOhsAgBABoJZgCdMoACKwgFUNL8RmvoAPWBJd1JcNehx4FCR9S4ojNFMHFdtUl7aGwlHkM/joByn69ppV/VQ1owKCkSsh1k8HegFMQXzCKLkZZll3x59GNJHUAAAA=="
+  },
+  "barcelona": {
+    "width": 1200,
+    "height": 1600,
+    "widths": [
+      480,
+      960
+    ],
+    "blur": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAABwBQCdASoYACAAPtFYpk2oJKOiMBgIAQAaCUAToAXrSYMDWbYlb0kvyo7m/Ot/ZBwU/S1gAP7gUpz2hLIKWtBWK+q2MkEx/6/hPCtwjXu4gLj8MRezZDmmsnMF70KxsHalbWuv6PV5lfkN7uTGhsdWFOnBrcs9ulpO8O1ixBvg6VuxxPxchPItntEUgAAA"
+  },
+  "new-york-city": {
+    "width": 1920,
+    "height": 1440,
+    "widths": [
+      480,
+      960,
+      1440,
+      1920
+    ],
+    "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACwBACdASoYABIAPsVUoUunpSMhsAwA8BiJQBdgBHzSYT3O2Tv6q9F/XRmzqr0AAP6wYVYVvVDr5PKXpTOchRWbZRLzPi1RFtq48DKfJbEzRwGDPjBo/SxsOY6XI5BH1hqIj+N8uwGJKK4RnBUAKpAA"
+  },
+  "istanbul": {
+    "width": 1920,
+    "height": 1115,
+    "widths": [
+      480,
+      960,
+      1440,
+      1920
+    ],
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwBACdASoYAA4APtFYpkwoJSOiMAgBABoJYwCdH8AB/aWw4Sip8E08jDAA1oXFZJ9IkdLHfoMyg12zSnWXVXUhguWwDnv6U9DpyKbAAAA="
+  },
+  "seoul": {
+    "width": 1920,
+    "height": 1076,
+    "widths": [
+      480,
+      960,
+      1440,
+      1920
+    ],
+    "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwBACdASoYAA0APtFUo0uoJKMhsAgBABoJYwCdMoC4AA3y4tSHZhBQyAAA/rB2SZsWwrWYRiKdM7Mw+UWgSl19r+7f/Q6bPI6KHuLPtiX/o4kD/ZTTTheA007kqlG/GAA="
+  },
+  "amsterdam": {
+    "width": 1920,
+    "height": 1280,
+    "widths": [
+      480,
+      960,
+      1440,
+      1920
+    ],
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAwCdASoYABAAPtFWpEuoJKOhsAgBABoJYwCdABrZD/mHUiaHyAD9NbuS2A/6TVOoCa7eYaEaWJ41VhMPR+ot9TjPzLFnuunJ11IyqAAAAA=="
+  },
+  "copenhagen": {
+    "width": 1920,
+    "height": 1280,
+    "widths": [
+      480,
+      960,
+      1440,
+      1920
+    ],
+    "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQBACdASoYABAAPtFWpUwoJKOiMAgBABoJagCdMoMYAEFmzOVZ7UMTZ6/0AMqR7aRnkSK1LkiEK8Bq0Fta6GRyp9GoAQRfjAET1mvzVk0PkAnU/BASKfJaYXPQ3PM6a/ICmAXoCo984Dz5Q2qgAA=="
+  },
+  "hong-kong": {
+    "width": 1920,
+    "height": 1440,
+    "widths": [
+      480,
+      960,
+      1440,
+      1920
+    ],
+    "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwBACdASoYABIAPslQoUunpKMht/VYAPAZCUATplvgI5UsfMs08zaJqMUAsuDCP0AA/RHJ2vPE1sfaF3Rbjqg6pOkvipeorSdSAk4qFngBPWAFYejSMsUnHzF8NQCRkjFPK9TGVeGUnWNAAAA="
+  },
+  "sydney": {
+    "width": 1920,
+    "height": 1001,
+    "widths": [
+      480,
+      960,
+      1440,
+      1920
+    ],
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAwCdASoYAA0APtFUpEuoJKOhsAgBABoJQBadBC1WIpxNYLTESFQA/IyX2Ai2sz9xmiL174a+cKysASXS8R06Nm973pMvI5l7vk3lcAA="
+  },
+  "zurich": {
+    "width": 1200,
+    "height": 849,
+    "widths": [
+      480,
+      960
+    ],
+    "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACQBACdASoYABEAPtFco00oJSMiMBgIAQAaCUATplAAOKmAChNondMrgAZ/jsgA4ajdlpokFSn/aE35uvS7A+pGq/RPDXAuxeGU0HCVpmy0DeOALhAaTJuNpvyNpv0RfBXDj98Dim5x7kkQEZnpuzAA"
+  },
+  "los-angeles": {
+    "width": 1920,
+    "height": 1440,
+    "widths": [
+      480,
+      960,
+      1440,
+      1920
+    ],
+    "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwBQCdASoYABIAPtFYpkwoJSOiKA1RABoJZQDMHA95EbG0uGZ9V5y5R6oo0YWUdZv+AAD8XZCyp6TyhUMw2Z36J++W8NCefpNizsgKi1vQyQBNIb8ME+kl6oANWcdjcUMbXwmZMwAAAA=="
+  },
+  "kuala-lumpur": {
+    "width": 1779,
+    "height": 1184,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAwCdASoYABAAPtFUo0uoJKMhsAgBABoJaQAARoNALLWu7tHREWAA/vAw7nm9NsxuPpLfWHR1R9f/lY7cOGnP1nqjIr29/+4ZxRgacXIAAA=="
+  },
+  "vienna": {
+    "width": 1920,
+    "height": 1206,
+    "widths": [
+      480,
+      960,
+      1440,
+      1920
+    ],
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAwCdASoYAA8APtFapkuoJaOhsAgBABoJZgCdL1AB7XNfjQpW/2L4AP5WyCIM6ghpn/BVbP9/crcIaePg4+9k+Pf5Vcmhc0aIhzYStPyWhJpEH01G1ZK09vqAAA=="
+  },
+  "lisbon": {
+    "width": 1920,
+    "height": 1285,
+    "widths": [
+      480,
+      960,
+      1440,
+      1920
+    ],
+    "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwBACdASoYABAAPtFWpEwoJKOiMAgBABoJQBOmUI4ABTUhs0f4KTDHdRAA/vPYTT984L4yNJGPkAEJ+5uycQxgmx3mwMGnwaYfB6KXn5JG5rBFmuYxumabaBxNqA3NzbBuPbwgAAA="
+  }
+}

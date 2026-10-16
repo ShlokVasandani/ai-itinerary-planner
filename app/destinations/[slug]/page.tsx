@@ -1,45 +1,54 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { destinations, getDestinationBySlug } from "@/lib/data";
 import DestinationTabs from "@/components/DestinationTabs";
-import DestinationMedia from "@/components/DestinationMedia";
+import Photo from "@/components/Photo";
 import { cityPhotos } from "@/lib/city-photo-urls";
 
 export function generateStaticParams() {
   return destinations.map((d) => ({ slug: d.slug }));
 }
 
-export default async function DestinationPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const d = getDestinationBySlug(slug);
+  return d ? { title: `${d.city}, ${d.country}`, description: d.tagline } : {};
+}
+
+export default async function DestinationPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const d = getDestinationBySlug(slug);
   if (!d) return notFound();
   const photo = cityPhotos[d.slug];
 
   return (
-    <main>
-      <section className="feature-open">
-        <Link href="/#destinations" className="feature-open-back">
+    <main className="dest-page">
+      <section className="dest-hero">
+        <Link href="/#destinations" className="back-link">
           ← All destinations
         </Link>
-        <p className="feature-open-country">{d.country}</p>
-        <h1 className="feature-open-city">{d.city}</h1>
-        <p className="feature-open-tagline">{d.tagline}</p>
+        <p className="eyebrow">{d.country}</p>
+        <h1>{d.city}</h1>
+        <p className="lede">{d.tagline}</p>
+        <Link href={`/planner?city=${d.slug}`} className="btn btn-primary">
+          Plan a trip to {d.city}
+        </Link>
       </section>
 
-      <section className="feature-photo-block">
-        <DestinationMedia slug={d.slug} city={d.city} variant="hero" priority />
+      <figure className="dest-figure">
+        <Photo slug={d.slug} city={d.city} sizes="(max-width: 1100px) 100vw, 1100px" priority />
         {photo && (
-          <a href={photo.sourcePage} target="_blank" rel="noopener noreferrer nofollow" className="photo-caption">
-            Photo: {photo.credit} · Wikimedia Commons ({photo.license})
-          </a>
+          <figcaption>
+            Photo: {photo.credit} ·{" "}
+            <a href={photo.sourcePage} target="_blank" rel="noopener noreferrer">
+              Wikimedia Commons ({photo.license})
+            </a>
+          </figcaption>
         )}
-      </section>
+      </figure>
 
-      <section className="feature-facts">
+      <section className="dest-facts" aria-label="Quick facts">
         <div>
           <span>Ideal trip</span>
           <strong>{d.quickFacts.idealTripLength}</strong>
@@ -52,12 +61,13 @@ export default async function DestinationPage({
           <span>Mid-range budget</span>
           <strong>{d.quickFacts.averageDailyBudget.midRange}/day</strong>
         </div>
-        <Link href={`/planner?city=${d.slug}`} className="hero-cta-link feature-facts-cta">
-          Plan a trip to {d.city} →
-        </Link>
+        <div>
+          <span>Getting around</span>
+          <strong>{d.transitCardInfo.name}</strong>
+        </div>
       </section>
 
-      <section style={{ padding: "0 clamp(24px,7vw,112px) 100px" }}>
+      <section className="section dest-tabs">
         <DestinationTabs d={d} />
       </section>
     </main>

@@ -3,19 +3,21 @@ import { destinations } from "@/lib/data";
 
 export default function SiteFooter() {
   const featured = destinations.slice(0, 6);
-
   return (
     <footer className="site-footer">
-      <div className="footer-top">
+      <div className="footer-inner">
         <div className="footer-brand">
-          <span className="logo">Sekai✦</span>
+          <span className="brand">
+            <span className="brand-mark" aria-hidden="true" />
+            Sekai
+          </span>
           <p>
-            20 cities, zero invented places — every trip built from real,
-            hand-verified landmarks, restaurants, and neighborhoods.
+            {destinations.length} cities, no invented places. Every trip is built from hand-verified landmarks,
+            restaurants and neighborhoods, with distances and opening hours from OpenStreetMap.
           </p>
         </div>
-        <div className="footer-col">
-          <h4>Popular cities</h4>
+        <nav className="footer-col" aria-label="Popular cities">
+          <h2>Popular cities</h2>
           <ul>
             {featured.map((d) => (
               <li key={d.slug}>
@@ -23,9 +25,9 @@ export default function SiteFooter() {
               </li>
             ))}
           </ul>
-        </div>
-        <div className="footer-col">
-          <h4>Plan</h4>
+        </nav>
+        <nav className="footer-col" aria-label="Plan">
+          <h2>Plan</h2>
           <ul>
             <li>
               <Link href="/#destinations">All destinations</Link>
@@ -37,17 +39,21 @@ export default function SiteFooter() {
               <Link href="/credits">Photo credits</Link>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
-      <div className="footer-bottom">
-        <span>© {new Date().getFullYear()} Sekai</span>
-        <span>
-          Photography via{" "}
-          <Link href="/credits" style={{ color: "inherit" }}>
-            Wikimedia Commons
-          </Link>
-          . No AI-generated venues. No sponsored placements.
-        </span>
+      <div className="footer-note">
+        <p>
+          <strong>Affiliate links.</strong> Some booking links (flights, stays, tours) may earn Sekai a small commission
+          at no extra cost to you. Official venue links never do. Prices change; always confirm on the provider&apos;s
+          site.
+        </p>
+        <p>
+          © {new Date().getFullYear()} Sekai · Map data ©{" "}
+          <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">
+            OpenStreetMap contributors
+          </a>{" "}
+          · Photography via <Link href="/credits">Wikimedia Commons</Link>
+        </p>
       </div>
     </footer>
   );

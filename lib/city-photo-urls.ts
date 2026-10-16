@@ -5,10 +5,8 @@
 // Wikimedia Commons site (not guessed or reused from an unverified list).
 // Each file's existence, subject, and license were confirmed individually.
 //
-// These are used as remote-hosted images (not downloaded into this sandbox,
-// which has no network access to any image host — see README for why).
-// Wikimedia's Special:FilePath endpoint gives a stable, direct, hotlink-safe
-// URL for any Commons file without needing to know its internal hash path.
+// The files are downloaded and converted by scripts/fetch-photos.ts; the
+// credit and license data below is what /credits and the photo captions show.
 // ============================================================================
 
 export interface CityPhoto {

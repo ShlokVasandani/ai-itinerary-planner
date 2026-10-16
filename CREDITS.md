@@ -8,13 +8,14 @@ individually verified (each file's existence, subject, and license were
 confirmed via live search against the current Commons site — not copied
 from an unverified list).
 
-Images are hotlinked directly from Wikimedia's CDN via their stable
-`Special:FilePath` redirect endpoint (see `lib/city-photo-urls.ts`), rather
-than bundled as local files, because this project was built in a sandboxed
-environment with no network access to any image host. To switch to fully
-local files instead, drop a photo at `public/images/destinations/<slug>.jpg`
-for any city — see `lib/destination-photo.ts`, which is checked first and
-takes priority over the remote URL.
+Photos are downloaded by `scripts/fetch-photos.ts` into
+`public/images/destinations/<slug>.jpg`, with responsive AVIF and WebP
+variants (`<slug>-<width>.avif|webp`) and a blurred placeholder recorded in
+`lib/photo-manifest.json`. The `Photo` component serves them with a `srcset`
+and intrinsic width/height. No Unsplash or Pexels photos are used: Wikimedia
+Commons had a usable photo for every city.
+
+Map tiles and place coordinates are © OpenStreetMap contributors.
 
 | City | File | Credit | License |
 |---|---|---|---|
