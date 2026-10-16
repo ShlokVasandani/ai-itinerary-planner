@@ -3,8 +3,9 @@ import { destinations } from "@/lib/data";
 import { cityPhotos } from "@/lib/city-photo-urls";
 
 export const metadata = {
-  title: "Photo credits",
-  description: "Attribution for every destination photograph, sourced from Wikimedia Commons.",
+  title: "Photo credits and data sources",
+  description: "Photographer credit and license for every destination photo (Wikimedia Commons), plus OpenStreetMap data attribution.",
+  alternates: { canonical: "/credits" },
 };
 
 export default function CreditsPage() {

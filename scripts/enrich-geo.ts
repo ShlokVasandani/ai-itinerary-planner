@@ -149,6 +149,7 @@ function normaliseUrl(u: string | undefined): string | undefined {
   if (!/^https?:\/\//i.test(url)) url = `https://${url}`;
   try {
     const parsed = new URL(url);
+    if (parsed.protocol !== "http:" && parsed.protocol !== "https:") return undefined; // OSM tags are user-editable
     // Social, video and aggregator links are not the venue's own site.
     if (/(^|\.)(youtube\.com|youtu\.be|facebook\.com|instagram\.com|twitter\.com|x\.com|tiktok\.com|tripadvisor\.[a-z.]+|yelp\.[a-z.]+|google\.[a-z.]+|goo\.gl|wikipedia\.org|wikimedia\.org|booking\.com|maps\.app\.goo\.gl|linktr\.ee)$/i.test(parsed.hostname)) return undefined;
     return parsed.toString();

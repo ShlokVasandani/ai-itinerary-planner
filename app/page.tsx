@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { destinations } from "@/lib/data";
 import { generateItinerary } from "@/lib/itinerary-engine";
@@ -11,6 +12,13 @@ import StackedDays from "@/components/StackedDays";
 import { cityPhotos } from "@/lib/city-photo-urls";
 
 const HERO_WORDS = ["Lisbon", "Tokyo", "Rome", "Seoul", "Paris", "Sydney"];
+
+export const metadata: Metadata = {
+  title: { absolute: "Sekai: real itineraries for 20 cities" },
+  description:
+    "Plan a trip to Tokyo, Paris, Lisbon and 17 more cities with day-by-day itineraries built from verified places, real opening hours and walking times.",
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   const lisbon = destinations.find((d) => d.slug === "lisbon") ?? destinations[0];

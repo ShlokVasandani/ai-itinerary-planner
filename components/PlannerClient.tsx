@@ -127,14 +127,14 @@ export default function PlannerClient({ initial }: { initial: PlannerInitial }) 
 
   const trip: TripLinkInput = useMemo(
     () => ({
-      destination,
+      destination: itinerary?.input.destination ?? destination,
       origin: origin || undefined,
       startDate: itinerary?.startDate,
       endDate: itinerary?.endDate,
       adults: form.adults,
       children: form.children,
     }),
-    [destination, origin, itinerary?.startDate, itinerary?.endDate, form.adults, form.children]
+    [destination, itinerary?.input.destination, origin, itinerary?.startDate, itinerary?.endDate, form.adults, form.children]
   );
 
   const topActivities = useMemo(() => {

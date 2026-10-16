@@ -3,6 +3,7 @@ import { Outfit, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import { SITE_NAME, jsonLd, siteUrl } from "@/lib/site";
 
 const display = Outfit({
   subsets: ["latin"],
@@ -19,9 +20,15 @@ const body = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl()),
   title: { default: "Sekai: real itineraries for 20 cities", template: "%s | Sekai" },
   description:
-    "Day-by-day trips built from hand-verified places, with real distances, opening hours and cost ranges. No invented venues.",
+    "Day-by-day trips built from hand-verified places in 20 cities, with real dates, distances, opening hours and cost ranges. No invented venues.",
+  applicationName: SITE_NAME,
+  alternates: { canonical: "/" },
+  openGraph: { type: "website", siteName: SITE_NAME, locale: "en_US" },
+  twitter: { card: "summary_large_image" },
+  robots: { index: true, follow: true },
 };
 
 export const viewport: Viewport = {
@@ -34,6 +41,18 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`}>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: jsonLd({
+              "@context": "https://schema.org",
+              "@graph": [
+                { "@type": "WebSite", name: SITE_NAME, url: siteUrl() },
+                { "@type": "Organization", name: SITE_NAME, url: siteUrl() },
+              ],
+            }),
+          }}
+        />
         <a className="skip-link" href="#main">
           Skip to content
         </a>

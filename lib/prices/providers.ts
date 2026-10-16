@@ -1,5 +1,6 @@
 import type { Offer } from "../providers/types";
 import { googleFlights } from "../providers/links";
+import { safeHttpUrl } from "../safe-url";
 import type { ActivityQuery, FlightQuery } from "./schema";
 
 type Fetch = typeof fetch;
@@ -32,7 +33,8 @@ export async function travelpayoutsFlights(q: FlightQuery, token: string, f: Fet
       kind: "flight" as const,
       title: `${d.airline ?? "Airline"}${d.departure_at ? `, departs ${d.departure_at.slice(0, 10)}` : ""}`,
       price: { amount: Math.round(d.price as number), currency: q.currency },
-      url: d.link ? `https://www.aviasales.com${d.link}` : fallbackLink.url,
+      // `link` is a path on aviasales.com; anything else (e.g. "@evil.com/x" or "//evil.com") is ignored.
+      url: (d.link && /^\/[^/\\]/.test(d.link) ? safeHttpUrl(`https://www.aviasales.com${d.link}`, ["aviasales.com"]) : undefined) ?? fallbackLink.url,
       isSample: false,
       note: "Cached fare; may have changed",
     }));
@@ -65,14 +67,14 @@ export async function viatorActivities(q: ActivityQuery, apiKey: string, f: Fetc
   };
   const results = json.products?.results ?? [];
   return results
-    .filter((r) => typeof r.pricing?.summary?.fromPrice === "number" && r.productUrl)
+    .filter((r) => typeof r.pricing?.summary?.fromPrice === "number" && safeHttpUrl(r.productUrl, ["viator.com"]))
     .slice(0, 3)
     .map((r) => ({
       provider: "viator" as const,
       kind: "activity" as const,
       title: r.title ?? q.q,
       price: { amount: Math.round(r.pricing!.summary!.fromPrice as number), currency: q.currency },
-      url: r.productUrl as string,
+      url: safeHttpUrl(r.productUrl, ["viator.com"]) as string,
       isSample: false,
       note: "From price per person",
     }));

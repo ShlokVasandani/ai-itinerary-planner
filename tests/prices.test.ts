@@ -123,3 +123,23 @@ describe("route helper", () => {
     expect(blocked.headers.get("Retry-After")).toBeTruthy();
   });
 });
+
+describe("untrusted upstream URLs", () => {
+  it("ignores hostile Travelpayouts links and non-Viator product URLs", async () => {
+    const f = (async () => json({ success: true, data: [
+      { price: 100, airline: "A", link: "@evil.example/x" },
+      { price: 101, airline: "B", link: "//evil.example/x" },
+      { price: 102, airline: "C", link: "/ok/path" },
+    ] })) as unknown as typeof fetch;
+    const offers = await travelpayoutsFlights(flightQuery.parse(q), "k", f);
+    for (const o of offers) expect(new URL(o.url).hostname).toMatch(/aviasales\.com$|google\.com$/);
+    expect(offers[2].url).toBe("https://www.aviasales.com/ok/path");
+    const g = (async () => json({ products: { results: [
+      { title: "x", productUrl: "javascript:alert(1)", pricing: { summary: { fromPrice: 5 } } },
+      { title: "y", productUrl: "https://evil.example/", pricing: { summary: { fromPrice: 5 } } },
+      { title: "z", productUrl: "https://www.viator.com/tours/x", pricing: { summary: { fromPrice: 5 } } },
+    ] } })) as unknown as typeof fetch;
+    const acts = await viatorActivities(activityQuery.parse({ q: "ab", city: "Paris" }), "k", g);
+    expect(acts.map((a) => a.title)).toEqual(["z"]);
+  });
+});

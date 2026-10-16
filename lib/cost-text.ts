@@ -9,10 +9,10 @@ export interface ParsedCost {
 }
 
 const SYMBOLS: [RegExp, string][] = [
+  [/US\$/, "USD"],
   [/HK\$/, "HKD"],
   [/S\$/, "SGD"],
   [/A\$|AUD/, "AUD"],
-  [/US\$/, "USD"],
   [/€|EUR/, "EUR"],
   [/£|GBP/, "GBP"],
   [/₩|KRW/, "KRW"],

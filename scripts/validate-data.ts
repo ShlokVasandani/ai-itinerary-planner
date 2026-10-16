@@ -113,6 +113,9 @@ function validateCity(d: Destination) {
       for (const rule of item.openingHours ?? []) {
         if (!DAY_LABEL.test(rule.days) || !isTime(rule.open) || !isTime(rule.close)) err(city, `${where}: malformed opening hours ${JSON.stringify(rule)}`);
       }
+      for (const u of [item.officialUrl, item.bookingUrl, item.mapsUrl]) {
+        if (u && !/^https?:\/\/[^\s/@?#]+(?::\d+)?([/?#]|$)/i.test(u)) err(city, `${where}: URL "${u}" is not a plain http(s) URL`);
+      }
       if (!item.mapsUrl) err(city, `${where}: mapsUrl missing`);
     }
   }
