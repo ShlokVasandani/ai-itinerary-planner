@@ -1,0 +1,616 @@
+{
+  "bbox": [
+    29.7444,
+    30.8892,
+    30.3444,
+    31.5823
+  ],
+  "places": {
+    "al-azhar-mosque": {
+      "coords": {
+        "lat": 30.045754,
+        "lng": 31.262677
+      },
+      "costCurrency": "EGP",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/24749059",
+        "https://www.wikidata.org/wiki/Q312342"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "al-azhar-park": {
+      "coords": {
+        "lat": 30.0401,
+        "lng": 31.26408
+      },
+      "costCurrency": "EGP",
+      "costMax": 100,
+      "costMin": 50,
+      "officialUrl": "https://azharpark.com/index.html",
+      "sources": [
+        "https://www.openstreetmap.org/way/24745061",
+        "https://www.wikidata.org/wiki/Q286446"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "al-muizz-street": {
+      "coords": {
+        "lat": 30.049309,
+        "lng": 31.261169
+      },
+      "costCurrency": "EGP",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/13442769701"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cilantro-zamalek": {
+      "coords": {
+        "lat": 30.064713,
+        "lng": 31.215795
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/366456632"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-el-fishawy": {
+      "coords": {
+        "lat": 30.047287,
+        "lng": 31.262287
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/6807931386"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-groppi": {
+      "closedDays": [],
+      "coords": {
+        "lat": 30.050741,
+        "lng": 31.245189
+      },
+      "officialUrl": "https://www.groppi-eg.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1559977522",
+        "https://www.wikidata.org/wiki/Q6757577"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-horreya-cafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 30.045226,
+        "lng": 31.24046
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "06:00",
+          "close": "27:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/331150968"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-simonds-cafe": {
+      "coords": {
+        "lat": 30.059648,
+        "lng": 31.222402
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/366472696"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "cairo-tower": {
+      "coords": {
+        "lat": 30.046014,
+        "lng": 31.224313
+      },
+      "costCurrency": "EGP",
+      "costMax": 300,
+      "costMin": 200,
+      "officialUrl": "http://www.cairotower.net/",
+      "sources": [
+        "https://www.openstreetmap.org/way/767933342",
+        "https://www.wikidata.org/wiki/Q614684"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "citadel-of-saladin-and-the-muhammad-ali-mosque": {
+      "costCurrency": "EGP",
+      "costMax": 550,
+      "costMin": 450
+    },
+    "coptic-cairo-and-the-hanging-church": {
+      "coords": {
+        "lat": 30.0063,
+        "lng": 31.2318
+      },
+      "costCurrency": "EGP",
+      "costMax": 200,
+      "costMin": 100,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q3438824"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "egyptian-museum-tahrir": {
+      "closedDays": [],
+      "coords": {
+        "lat": 30.047966,
+        "lng": 31.233609
+      },
+      "costCurrency": "EGP",
+      "costMax": 600,
+      "costMin": 450,
+      "officialUrl": "https://egyptianmuseumcairo.eg/emc/ar/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:00",
+          "close": "21:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/10873198",
+        "https://www.wikidata.org/wiki/Q201219"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "grand-egyptian-museum": {
+      "coords": {
+        "lat": 29.994575,
+        "lng": 31.119074
+      },
+      "costCurrency": "EGP",
+      "costMax": 1200,
+      "costMin": 800,
+      "officialUrl": "https://www.visit-gem.com/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/16783121",
+        "https://www.wikidata.org/wiki/Q2583681"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "khan-el-khalili": {
+      "coords": {
+        "lat": 30.048938,
+        "lng": 31.261338
+      },
+      "costCurrency": "EGP",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/709581114"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "mosque-of-ibn-tulun": {
+      "coords": {
+        "lat": 30.028714,
+        "lng": 31.250247
+      },
+      "costCurrency": "EGP",
+      "costMax": 200,
+      "costMin": 100,
+      "sources": [
+        "https://www.openstreetmap.org/relation/74081",
+        "https://www.wikidata.org/wiki/Q915413"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "museum-of-islamic-art": {
+      "coords": {
+        "lat": 30.044788,
+        "lng": 31.252732
+      },
+      "costCurrency": "EGP",
+      "costMax": 300,
+      "costMin": 200,
+      "officialUrl": "https://www.miaegypt.org/",
+      "sources": [
+        "https://www.openstreetmap.org/way/46579853",
+        "https://www.wikidata.org/wiki/Q3330629"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-cairo-opera-house": {
+      "coords": {
+        "lat": 30.042584,
+        "lng": 31.224072
+      },
+      "officialUrl": "https://cairoopera.org/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/2844528",
+        "https://www.wikidata.org/wiki/Q597617"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-horreya-cafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 30.045226,
+        "lng": 31.24046
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "06:00",
+          "close": "27:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/331150968"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-sequoia": {
+      "coords": {
+        "lat": 30.073306,
+        "lng": 31.222499
+      },
+      "officialUrl": "http://sequoiaonline.net/",
+      "sources": [
+        "https://www.openstreetmap.org/node/366473166"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "national-museum-of-egyptian-civilization": {
+      "coords": {
+        "lat": 30.007606,
+        "lng": 31.248363
+      },
+      "costCurrency": "EGP",
+      "costMax": 500,
+      "costMin": 300,
+      "officialUrl": "https://nmec.gov.eg/",
+      "sources": [
+        "https://www.openstreetmap.org/way/400424568",
+        "https://www.wikidata.org/wiki/Q29017001"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "pyramids-of-giza-and-the-sphinx": {
+      "coords": {
+        "lat": 29.976111,
+        "lng": 31.132778
+      },
+      "costCurrency": "EGP",
+      "costMax": 1000,
+      "costMin": 700,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q12508"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-abou-el-sid": {
+      "closedDays": [],
+      "coords": {
+        "lat": 30.059444,
+        "lng": 31.224249
+      },
+      "costCurrency": "EGP",
+      "costMax": 700,
+      "costMin": 400,
+      "officialUrl": "https://www.abouelsid.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "13:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3796625093"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-andrea-mariouteya": {
+      "costCurrency": "EGP",
+      "costMax": 450,
+      "costMin": 250
+    },
+    "r-cafe-riche": {
+      "coords": {
+        "lat": 30.046968,
+        "lng": 31.238239
+      },
+      "costCurrency": "EGP",
+      "costMax": 400,
+      "costMin": 200,
+      "sources": [
+        "https://www.openstreetmap.org/node/1262216203",
+        "https://www.wikidata.org/wiki/Q6866455"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-cairo-kitchen": {
+      "coords": {
+        "lat": 30.059998,
+        "lng": 31.221083
+      },
+      "costCurrency": "EGP",
+      "costMax": 350,
+      "costMin": 200,
+      "officialUrl": "http://www.cairokitchen.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2189631914"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-el-dahan": {
+      "costCurrency": "EGP",
+      "costMax": 400,
+      "costMin": 200
+    },
+    "r-felfela": {
+      "closedDays": [],
+      "coords": {
+        "lat": 30.046583,
+        "lng": 31.238197
+      },
+      "costCurrency": "EGP",
+      "costMax": 300,
+      "costMin": 150,
+      "officialUrl": "https://felfelaegypt.com/menu/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2789855480"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-gad": {
+      "coords": {
+        "lat": 30.05037,
+        "lng": 31.241599
+      },
+      "costCurrency": "EGP",
+      "costMax": 150,
+      "costMin": 80,
+      "sources": [
+        "https://www.openstreetmap.org/node/5559989421"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-kebdet-el-prince": {
+      "costCurrency": "EGP",
+      "costMax": 120,
+      "costMin": 60
+    },
+    "r-koshary-abou-tarek": {
+      "coords": {
+        "lat": 30.050252,
+        "lng": 31.237731
+      },
+      "costCurrency": "EGP",
+      "costMax": 120,
+      "costMin": 60,
+      "sources": [
+        "https://www.openstreetmap.org/way/767418990"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-naguib-mahfouz-cafe": {
+      "costCurrency": "EGP",
+      "costMax": 450,
+      "costMin": 250
+    },
+    "r-sequoia": {
+      "coords": {
+        "lat": 30.073306,
+        "lng": 31.222499
+      },
+      "costCurrency": "EGP",
+      "costMax": 900,
+      "costMin": 500,
+      "officialUrl": "http://sequoiaonline.net/",
+      "sources": [
+        "https://www.openstreetmap.org/node/366473166"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-taboula": {
+      "coords": {
+        "lat": 30.039753,
+        "lng": 31.232911
+      },
+      "costCurrency": "EGP",
+      "costMax": 500,
+      "costMin": 300,
+      "sources": [
+        "https://www.openstreetmap.org/node/6832607385"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-zooba": {
+      "closedDays": [],
+      "coords": {
+        "lat": 30.060999,
+        "lng": 31.219275
+      },
+      "costCurrency": "EGP",
+      "costMax": 200,
+      "costMin": 100,
+      "officialUrl": "http://www.zoobaeats.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/964316376"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-al-moez-street": {
+      "coords": {
+        "lat": 30.011628,
+        "lng": 31.2342
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/706166876"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-khan-el-khalili": {
+      "coords": {
+        "lat": 30.048938,
+        "lng": 31.261338
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/709581114"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "sultan-hassan-mosque-and-al-rifai-mosque": {
+      "coords": {
+        "lat": 30.0319,
+        "lng": 31.2567
+      },
+      "costCurrency": "EGP",
+      "costMax": 200,
+      "costMin": 100,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1430119"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-alexandria": {
+      "coords": {
+        "lat": 31.199181,
+        "lng": 29.895172
+      },
+      "officialUrl": "http://www.alexandria.gov.eg/",
+      "sources": [
+        "https://www.openstreetmap.org/node/27565020",
+        "https://www.wikidata.org/wiki/Q87"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-fayoum-oasis": {
+      "coords": {
+        "lat": 29.341033,
+        "lng": 30.783808
+      },
+      "sources": [
+        "https://www.openstreetmap.org/relation/9716764",
+        "https://www.wikidata.org/wiki/Q1399125"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-saqqara-and-dahshur": {
+      "coords": {
+        "lat": 29.85,
+        "lng": 31.233333
+      },
+      "sources": [
+        "https://www.wikidata.org/wiki/Q192134"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-cairo-street-food-tour": {
+      "costCurrency": "EGP",
+      "costMax": 2000,
+      "costMin": 1000
+    },
+    "x-guided-tour-of-islamic-cairo": {
+      "costCurrency": "EGP",
+      "costMax": 1500,
+      "costMin": 800
+    },
+    "x-pyramids-sound-and-light-show": {
+      "costCurrency": "EGP",
+      "costMax": 800,
+      "costMin": 500
+    },
+    "x-sunset-felucca-on-the-nile": {
+      "costCurrency": "EGP",
+      "costMax": 600,
+      "costMin": 300
+    },
+    "x-whirling-dervish-tanoura-show": {
+      "costCurrency": "EGP",
+      "costMax": 0,
+      "costMin": 0
+    }
+  },
+  "neighborhoods": {
+    "citadel-and-mosque-of-ibn-tulun": {
+      "coords": {
+        "lat": 30.030307,
+        "lng": 31.253473
+      },
+      "radiusKm": 0.8
+    },
+    "coptic-cairo-old-cairo": {
+      "coords": {
+        "lat": 30.006466,
+        "lng": 31.231844
+      },
+      "radiusKm": 0.4
+    },
+    "downtown-wust-el-balad": {
+      "coords": {
+        "lat": 30.088761,
+        "lng": 31.28982
+      },
+      "radiusKm": 0.4
+    },
+    "giza-and-the-pyramids": {
+      "coords": {
+        "lat": 29.985343,
+        "lng": 31.125926
+      },
+      "radiusKm": 0.8
+    },
+    "islamic-cairo": {
+      "coords": {
+        "lat": 30.048747,
+        "lng": 31.263775
+      },
+      "radiusKm": 2.94
+    },
+    "maadi": {
+      "coords": {
+        "lat": 29.960331,
+        "lng": 31.263055
+      },
+      "radiusKm": 0.4
+    },
+    "zamalek": {
+      "coords": {
+        "lat": 30.062993,
+        "lng": 31.219634
+      },
+      "radiusKm": 2.94
+    }
+  }
+}

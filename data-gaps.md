@@ -15,24 +15,54 @@ holiday rules are skipped. Prices are the original hand-written `approxCost` tex
 | Tokyo | 48 | 30 | 20 | 13 | 18 |
 | Paris | 48 | 36 | 28 | 21 | 12 |
 | London | 48 | 37 | 35 | 19 | 11 |
-| Dubai | 48 | 31 | 11 | 9 | 17 |
+| Dubai | 48 | 32 | 11 | 9 | 16 |
 | Singapore | 48 | 34 | 18 | 15 | 14 |
 | Bangkok | 48 | 32 | 19 | 18 | 16 |
-| Rome | 48 | 30 | 18 | 12 | 18 |
-| Barcelona | 48 | 33 | 25 | 12 | 15 |
+| Rome | 48 | 33 | 22 | 12 | 15 |
+| Barcelona | 48 | 31 | 25 | 12 | 17 |
 | New York City | 48 | 42 | 34 | 27 | 6 |
-| Istanbul | 48 | 35 | 25 | 16 | 13 |
+| Istanbul | 48 | 36 | 27 | 16 | 12 |
 | Seoul | 48 | 30 | 13 | 7 | 18 |
 | Amsterdam | 48 | 32 | 23 | 20 | 16 |
 | Copenhagen | 48 | 29 | 21 | 16 | 19 |
 | Hong Kong | 48 | 31 | 8 | 13 | 17 |
-| Sydney | 48 | 35 | 23 | 9 | 13 |
+| Sydney | 48 | 35 | 24 | 9 | 13 |
 | Zurich | 48 | 29 | 27 | 14 | 19 |
-| Los Angeles | 48 | 35 | 22 | 12 | 13 |
+| Los Angeles | 48 | 34 | 21 | 12 | 14 |
 | Kuala Lumpur | 48 | 32 | 15 | 13 | 16 |
 | Vienna | 48 | 30 | 26 | 11 | 18 |
 | Lisbon | 48 | 38 | 23 | 16 | 10 |
-| **Total** | **960** | **661** | **434** | **293** | **299** |
+| Prague | 51 | 40 | 31 | 20 | 11 |
+| Berlin | 50 | 40 | 33 | 18 | 10 |
+| Madrid | 50 | 40 | 28 | 14 | 10 |
+| Milan | 50 | 38 | 27 | 14 | 12 |
+| Florence | 50 | 38 | 24 | 12 | 12 |
+| Venice | 49 | 39 | 24 | 18 | 10 |
+| Athens | 49 | 33 | 13 | 8 | 16 |
+| Budapest | 50 | 40 | 31 | 21 | 10 |
+| Munich | 50 | 40 | 33 | 18 | 10 |
+| Edinburgh | 50 | 39 | 29 | 17 | 11 |
+| Dublin | 49 | 41 | 33 | 17 | 8 |
+| Brussels | 49 | 40 | 30 | 21 | 9 |
+| Stockholm | 48 | 39 | 33 | 26 | 9 |
+| Krakow | 49 | 33 | 22 | 11 | 16 |
+| Marrakesh | 50 | 38 | 20 | 14 | 12 |
+| Cairo | 49 | 34 | 14 | 7 | 15 |
+| Cape Town | 49 | 35 | 22 | 12 | 14 |
+| Mexico City | 48 | 38 | 16 | 10 | 10 |
+| Buenos Aires | 49 | 36 | 13 | 10 | 13 |
+| Rio de Janeiro | 48 | 34 | 15 | 7 | 14 |
+| Toronto | 49 | 39 | 23 | 15 | 10 |
+| San Francisco | 50 | 40 | 26 | 14 | 10 |
+| Chicago | 49 | 38 | 32 | 15 | 11 |
+| Miami | 48 | 35 | 21 | 9 | 13 |
+| Kyoto | 49 | 40 | 21 | 12 | 9 |
+| Osaka | 48 | 34 | 15 | 9 | 14 |
+| Taipei | 50 | 37 | 13 | 9 | 13 |
+| Hanoi | 49 | 37 | 8 | 14 | 12 |
+| Mumbai | 50 | 39 | 10 | 9 | 11 |
+| Melbourne | 50 | 39 | 27 | 14 | 11 |
+| **Total** | **2439** | **1796** | **1127** | **708** | **643** |
 
 Experiences are mostly activities (a cruise, a cooking class) rather than a single venue, so most of them have no
 coordinates by design; the engine places them near the rest of the day instead.
@@ -128,13 +158,11 @@ coordinates by design; the engine places them near the rest of the day instead.
 
 ## Dubai
 
-**Coordinates not confirmed (17).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+**Coordinates not confirmed (16).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
 
-- The Dubai Fountain (landmark)
 - Dubai Creek abra crossing (landmark)
 - Desert safari with dune bashing (landmark)
 - Zheng He's (restaurant)
-- Al Ahmadiya Cafeteria (Deira) (restaurant)
 - Arabian Tea House courtyard (cafe)
 - Sky Café at Address Sky View (cafe)
 - The Coffee Museum (cafe)
@@ -147,9 +175,11 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Dhow dinner cruise on the Marina or Creek (experience)
 - Ski Dubai indoor snow park (experience)
 - Alserkal Avenue gallery walk (experience)
+- Hatta (day trip)
 
-**Official URL not confirmed (20).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+**Official URL not confirmed (21).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
 
+- The Dubai Fountain (landmark)
 - Al Fahidi Historical Neighbourhood (landmark)
 - Gold Souk (landmark)
 - Palm Jumeirah & View at The Palm (landmark)
@@ -160,6 +190,7 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Ravi Restaurant (restaurant)
 - Al Mallah (restaurant)
 - Al Fanar Restaurant (restaurant)
+- Al Ahmadiya Cafeteria (Deira) (restaurant)
 - Bu Qtair (restaurant)
 - Al Safadi (restaurant)
 - Sikka Café (restaurant)
@@ -169,7 +200,6 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Gold Souk (shopping)
 - Spice Souk (shopping)
 - SkyView Bar (nightlife)
-- Hatta (day trip)
 
 ## Singapore
 
@@ -250,14 +280,11 @@ coordinates by design; the engine places them near the rest of the day instead.
 
 ## Rome
 
-**Coordinates not confirmed (18).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+**Coordinates not confirmed (15).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
 
-- Vatican Museums & Sistine Chapel (landmark)
-- St Peter's Basilica (landmark)
-- Villa Borghese Gardens (landmark)
 - Da Enzo al 29 (restaurant)
 - Mercato di Testaccio food stalls (restaurant)
-- Antico Caffè Greco (cafe)
+- Tazza d'Oro (cafe)
 - Monti vintage shops (shopping)
 - Porta Portese Market (shopping)
 - Campo de' Fiori Market (shopping)
@@ -271,7 +298,7 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Sunset walk from the Gianicolo Hill (experience)
 - Appian Way bike ride (experience)
 
-**Official URL not confirmed (12).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+**Official URL not confirmed (11).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
 
 - The Pantheon (landmark)
 - Piazza Navona (landmark)
@@ -281,7 +308,6 @@ coordinates by design; the engine places them near the rest of the day instead.
 - La Pergola (restaurant)
 - Giolitti (restaurant)
 - Pizzeria Ai Marmi (restaurant)
-- Tazza d'Oro (cafe)
 - Via del Corso (shopping)
 - Via Condotti (shopping)
 - Terrazza Borromini rooftop (nightlife)
@@ -290,11 +316,13 @@ coordinates by design; the engine places them near the rest of the day instead.
 
 ## Barcelona
 
-**Coordinates not confirmed (15).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+**Coordinates not confirmed (17).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
 
 - Montjuïc Hill (landmark)
 - La Boqueria Market (landmark)
+- Can Solé (restaurant)
 - La Boqueria market bars (restaurant)
+- Granja Viader (restaurant)
 - Nomad Coffee Lab (cafe)
 - Satan's Coffee Corner (cafe)
 - La Boqueria Market (shopping)
@@ -308,11 +336,9 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Tapas crawl through El Born and Gothic Quarter (experience)
 - Montjuïc cable car and castle (experience)
 
-**Official URL not confirmed (8).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+**Official URL not confirmed (6).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
 
 - Cal Pep (restaurant)
-- Can Solé (restaurant)
-- Granja Viader (restaurant)
 - Escribà (cafe)
 - Passeig de Gràcia (shopping)
 - Portal de l'Àngel (shopping)
@@ -343,10 +369,9 @@ coordinates by design; the engine places them near the rest of the day instead.
 
 ## Istanbul
 
-**Coordinates not confirmed (13).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+**Coordinates not confirmed (12).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
 
 - Bosphorus ferry cruise (landmark)
-- Istanbul Archaeology Museums (landmark)
 - Fish sandwich boats at Eminönü (restaurant)
 - Simit sellers citywide (restaurant)
 - Sultanahmet Köftecisi Selim Usta (restaurant)
@@ -359,7 +384,7 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Whirling dervish ceremony (experience)
 - Princes' Islands day trip (experience)
 
-**Official URL not confirmed (10).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+**Official URL not confirmed (9).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
 
 - Hocapaşa Pidecisi (restaurant)
 - Cibalikapı Balıkçısı (restaurant)
@@ -370,7 +395,6 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Arasta Bazaar (shopping)
 - Reina (nightlife)
 - Traditional hammam (Turkish bath) (experience)
-- Princes' Islands (day trip)
 
 **Neighborhood centre not confirmed:** Balat & Fener
 
@@ -540,11 +564,11 @@ coordinates by design; the engine places them near the rest of the day instead.
 **Coordinates not confirmed (13).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
 
 - Bondi to Coogee Coastal Walk (landmark)
-- Museum of Contemporary Art Australia (landmark)
 - Mr. Crackles (restaurant)
 - Icebergs Dining Room (restaurant)
 - Sydney Cove Oyster Bar (restaurant)
 - Bang Bang Espresso (cafe)
+- Gelato Messina (cafe)
 - The Rocks Weekend Market (shopping)
 - Bondi beach bars (nightlife)
 - Home Nightclub (nightlife)
@@ -553,7 +577,7 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Sydney Opera House guided tour (experience)
 - Blue Mountains day trip (experience)
 
-**Official URL not confirmed (12).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+**Official URL not confirmed (11).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
 
 - Sydney Harbour Bridge (landmark)
 - The Rocks (landmark)
@@ -562,7 +586,6 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Quay (restaurant)
 - Bourke Street Bakery (restaurant)
 - Mimi's (restaurant)
-- Gelato Messina (cafe)
 - Campos Coffee (cafe)
 - Pitt Street Mall (shopping)
 - Blue Mountains (day trip)
@@ -601,13 +624,14 @@ coordinates by design; the engine places them near the rest of the day instead.
 
 ## Los Angeles
 
-**Coordinates not confirmed (13).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+**Coordinates not confirmed (14).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
 
 - Griffith Park hiking trails (landmark)
 - Kogi BBQ Truck (restaurant)
 - Langer's Delicatessen (restaurant)
 - Chego / Koreatown BBQ (restaurant)
 - Nobu Malibu (restaurant)
+- In-N-Out Burger (restaurant)
 - Huckleberry Bakery & Café (cafe)
 - Canter's Deli bakery counter (cafe)
 - Melrose Trading Post (shopping)
@@ -738,4 +762,1052 @@ coordinates by design; the engine places them near the rest of the day instead.
 - Copenhagen Coffee Lab (cafe)
 - Mercado da Ribeira / Time Out Market (shopping)
 - Park (rooftop bar) (nightlife)
+
+## Prague
+
+**Coordinates not confirmed (11).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Petřín Hill and Lookout Tower (landmark)
+- Field (restaurant)
+- Pařížská Street (shopping)
+- Náplavka Farmers' Market (shopping)
+- Hanavský Pavilion (nightlife)
+- Letná Beer Garden (nightlife)
+- Vltava river cruise (experience)
+- Czech beer tasting (experience)
+- Jewish Quarter guided tour (experience)
+- Classical concert (experience)
+- Petřín funicular and rose garden walk (experience)
+
+**Official URL not confirmed (9).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Charles Bridge (landmark)
+- Old Town Square and the Astronomical Clock (landmark)
+- Jewish Quarter (Josefov) (landmark)
+- Wenceslas Square (landmark)
+- Kampa Island and the Lennon Wall (landmark)
+- Žižkov Television Tower (landmark)
+- U Černého vola (restaurant)
+- Havelské tržiště (shopping)
+- Hemingway Bar (nightlife)
+
+**Neighborhood centre not confirmed:** Letná and Holešovice
+
+## Berlin
+
+**Coordinates not confirmed (10).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Café Einstein Stammhaus (restaurant)
+- Mauerpark Flea Market (shopping)
+- Turkish Market at Maybachufer (shopping)
+- Prater Garten (nightlife)
+- Berlin Wall and Cold War walking tour (experience)
+- Reichstag dome visit (experience)
+- Cycling tour of Berlin (experience)
+- Berlin club night (experience)
+- Spree river cruise (experience)
+- Sachsenhausen Memorial (day trip)
+
+**Official URL not confirmed (7).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Gendarmenmarkt (landmark)
+- Mauerpark (landmark)
+- Zum Schusterjungen (restaurant)
+- Zeit für Brot (cafe)
+- The Barn (cafe)
+- Klunkerkranich (nightlife)
+- Spreewald (day trip)
+
+## Madrid
+
+**Coordinates not confirmed (10).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Reina Sofía Museum (landmark)
+- Taberna La Bola (restaurant)
+- DiverXO (restaurant)
+- La Taberna de Antonio Sánchez (restaurant)
+- Círculo de Bellas Artes Rooftop (nightlife)
+- Flamenco show (experience)
+- Tapas crawl in La Latina (experience)
+- Prado Museum guided tour (experience)
+- Sunday at El Rastro (experience)
+- Rowing boat on the Retiro lake (experience)
+
+**Official URL not confirmed (12).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Plaza Mayor (landmark)
+- Puerta del Sol (landmark)
+- Gran Vía (landmark)
+- Plaza de Cibeles (landmark)
+- El Rastro (landmark)
+- Bar El Tigre (restaurant)
+- Casa Mingo (restaurant)
+- Federal Café (cafe)
+- HanSo Café (cafe)
+- El Rastro (shopping)
+- Calle Serrano (shopping)
+- Plaza Dos de Mayo (nightlife)
+
+## Milan
+
+**Coordinates not confirmed (12).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Navigli canals (landmark)
+- Sempione Park (landmark)
+- Leonardo da Vinci National Museum of Science and Technology (landmark)
+- Panzerotti Luini (restaurant)
+- Peck Italian Bar (restaurant)
+- Ristorante Cracco (restaurant)
+- Mercatone dell'Antiquariato (shopping)
+- Last Supper guided visit (experience)
+- La Scala opera night (experience)
+- Duomo rooftop walk (experience)
+- Aperitivo in Navigli (experience)
+- Fashion walk in the Quadrilatero (experience)
+
+**Official URL not confirmed (11).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Galleria Vittorio Emanuele II (landmark)
+- Bosco Verticale (landmark)
+- Trattoria Milanese (restaurant)
+- Un Posto a Milano (restaurant)
+- Da Giacomo (restaurant)
+- Gattullo (cafe)
+- Caffè Cova (cafe)
+- Quadrilatero della Moda (shopping)
+- Galleria Vittorio Emanuele II (shopping)
+- Corso Buenos Aires (shopping)
+- Lake Maggiore and the Borromean Islands (day trip)
+
+## Florence
+
+**Coordinates not confirmed (12).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Basilica of San Miniato al Monte (landmark)
+- Giotto's Bell Tower (landmark)
+- Vivoli Gelateria (cafe)
+- Le Murate Caffè Letterario (nightlife)
+- Rasputin Bar (nightlife)
+- La Terrazza Continentale (nightlife)
+- Brunelleschi's Dome climb (experience)
+- Uffizi guided tour (experience)
+- Chianti wine tasting afternoon (experience)
+- Tuscan cooking class (experience)
+- Sunset at Piazzale Michelangelo (experience)
+- Chianti wine region (day trip)
+
+**Official URL not confirmed (14).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Ponte Vecchio (landmark)
+- Piazza della Signoria and Palazzo Vecchio (landmark)
+- Piazzale Michelangelo (landmark)
+- Santa Maria Novella (landmark)
+- Trattoria Sostanza (restaurant)
+- Osteria dell'Enoteca (restaurant)
+- L'Antico Trippaio (restaurant)
+- Trattoria Cammillo (restaurant)
+- Buca Lapi (restaurant)
+- Rivoire (cafe)
+- Caffè Santo Spirito (cafe)
+- Via de' Tornabuoni (shopping)
+- Scuola del Cuoio (shopping)
+- Space Club (nightlife)
+
+**Neighborhood centre not confirmed:** Fortezza da Basso and Cascine
+
+## Venice
+
+**Coordinates not confirmed (10).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Jewish Ghetto (landmark)
+- San Giorgio Maggiore bell tower (landmark)
+- Gelato Nico (cafe)
+- Rialto Market area (shopping)
+- Mercerie (shopping)
+- Vaporetto along the Grand Canal (experience)
+- Murano glassblowing demonstration (experience)
+- Cicchetti and wine tour (experience)
+- Doge's Palace Secret Itineraries tour (experience)
+- Murano, Burano and Torcello (day trip)
+
+**Official URL not confirmed (15).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Piazza San Marco and the Campanile (landmark)
+- Rialto Bridge (landmark)
+- Grand Canal (landmark)
+- Rialto Market (landmark)
+- Cantina Do Mori (restaurant)
+- Osteria alle Testiere (restaurant)
+- All'Arco (restaurant)
+- Al Timon (restaurant)
+- Alla Vedova (restaurant)
+- Osteria Ai Promessi Sposi (restaurant)
+- Pasticceria Rizzardini (cafe)
+- Torrefazione Cannaregio (cafe)
+- Paolo Olbi (shopping)
+- Skyline Rooftop Bar (nightlife)
+- Gondola ride (experience)
+
+## Athens
+
+**Coordinates not confirmed (16).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Monastiraki Flea Market and Square (landmark)
+- Changing of the Guard at Syntagma (landmark)
+- Karamanlidika tou Fani (restaurant)
+- Taverna Psaras (restaurant)
+- Diporto Agoras (restaurant)
+- Oikonomou (restaurant)
+- Taf Coffee (cafe)
+- Aristokratikon (cafe)
+- Filion (cafe)
+- Kolonaki boutiques (shopping)
+- Six D.O.G.S. (nightlife)
+- Acropolis at opening time (experience)
+- Athens street food tour (experience)
+- Sunset at Lycabettus (experience)
+- Greek cooking class (experience)
+- Rooftop drinks in Monastiraki (experience)
+
+**Official URL not confirmed (20).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Acropolis and the Parthenon (landmark)
+- Ancient Agora and the Temple of Hephaestus (landmark)
+- Temple of Olympian Zeus (landmark)
+- Panathenaic Stadium (landmark)
+- Lycabettus Hill (landmark)
+- Roman Agora and the Tower of the Winds (landmark)
+- Hadrian's Library (landmark)
+- Filopappou Hill (landmark)
+- Kuzina (restaurant)
+- Spondi (restaurant)
+- Mani Mani (restaurant)
+- Café Avissinia (restaurant)
+- Zonar's (cafe)
+- Ariston (cafe)
+- Monastiraki Flea Market (shopping)
+- Athens Central Market (Varvakios) (shopping)
+- Ermou Street (shopping)
+- Brettos (nightlife)
+- Cape Sounion (day trip)
+- Delphi (day trip)
+
+## Budapest
+
+**Coordinates not confirmed (10).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Hungarikum Bistro (restaurant)
+- Borkonyha Winekitchen (restaurant)
+- Fakanál Étterem (restaurant)
+- Pest-Buda Bistro (restaurant)
+- Ruszwurm Confectionery (cafe)
+- Thermal bath day (experience)
+- Danube evening cruise (experience)
+- Ruin bar crawl (experience)
+- Parliament tour (experience)
+- Tram 2 along the Danube (experience)
+
+**Official URL not confirmed (9).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Gellért Hill and the Citadella (landmark)
+- Heroes' Square (landmark)
+- Margaret Island (landmark)
+- Gundel (restaurant)
+- Menza (restaurant)
+- Café Kor (restaurant)
+- Váci Street (shopping)
+- Ecseri Flea Market (shopping)
+- Danube Bend (Visegrád) (day trip)
+
+## Munich
+
+**Coordinates not confirmed (10).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Haxnbauer im Scholastikabräu (restaurant)
+- Bratwurst Glöckl am Dom (restaurant)
+- Eisdiele Ballabeni (cafe)
+- Gärtnerplatz boutiques (shopping)
+- Harry Klein (nightlife)
+- Atomic Café (nightlife)
+- Beer garden afternoon (experience)
+- Eisbach surfers (experience)
+- Viktualienmarkt tasting walk (experience)
+- Bavarian cooking class (experience)
+
+**Official URL not confirmed (7).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Marienplatz and the Neues Rathaus (landmark)
+- Asamkirche (landmark)
+- Hofbräuhaus München (restaurant)
+- Café Schmalznudel Frischhut (restaurant)
+- Café Luitpold (cafe)
+- Rischart (cafe)
+- Kaufingerstraße (shopping)
+
+## Edinburgh
+
+**Coordinates not confirmed (11).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Contini George Street (restaurant)
+- Howies Victoria Street (restaurant)
+- Cairngorm Coffee (cafe)
+- Brew Lab (cafe)
+- Royal Mile shops (shopping)
+- The Bow Bar (nightlife)
+- Arthur's Seat sunrise hike (experience)
+- Whisky tasting (experience)
+- Underground vaults ghost tour (experience)
+- Edinburgh Festival Fringe show (experience)
+- Royal Mile historic walking tour (experience)
+
+**Official URL not confirmed (10).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- The Royal Mile (landmark)
+- Arthur's Seat and Holyrood Park (landmark)
+- Calton Hill (landmark)
+- Greyfriars Kirkyard (landmark)
+- Princes Street Gardens (landmark)
+- Mother India's Cafe (restaurant)
+- The Milkman (cafe)
+- Mimi's Bakehouse (cafe)
+- Victoria Street (shopping)
+- Multrees Walk (shopping)
+
+**Neighborhood centre not confirmed:** Grassmarket and Victoria Street
+
+## Dublin
+
+**Coordinates not confirmed (8).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Bewley's Oriental Café (cafe)
+- Queen of Tarts (cafe)
+- Moore Street Market (shopping)
+- Guinness Storehouse visit (experience)
+- Traditional music session (experience)
+- Whiskey distillery tour (experience)
+- Literary pub crawl (experience)
+- Howth Cliff Walk (experience)
+
+**Official URL not confirmed (8).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Ha'penny Bridge (landmark)
+- The Winding Stair (restaurant)
+- Delahunt (restaurant)
+- Klaw (restaurant)
+- Brother Hubbard (cafe)
+- Brown Thomas (shopping)
+- The Long Hall (nightlife)
+- Howth (day trip)
+
+**Neighborhood centre not confirmed:** Portobello and Camden
+
+## Brussels
+
+**Coordinates not confirmed (9).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Palace of Justice and Place Poelaert (landmark)
+- Comic Strip Walk (landmark)
+- Noordzee Mer du Nord (restaurant)
+- Rue Dansaert (shopping)
+- Belgian beer tasting (experience)
+- Chocolate workshop (experience)
+- Grand-Place at night (experience)
+- Day trip to Bruges (experience)
+- Marolles flea market (experience)
+
+**Official URL not confirmed (10).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Grand-Place (landmark)
+- Manneken Pis (landmark)
+- Place du Grand Sablon (landmark)
+- Fritland (restaurant)
+- La Roue d'Or (restaurant)
+- Le Perroquet (restaurant)
+- Mokafé (restaurant)
+- Mokafé (cafe)
+- Mary (cafe)
+- Marolles Flea Market (shopping)
+
+## Stockholm
+
+**Coordinates not confirmed (9).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Rosendal Garden (landmark)
+- Oaxen Slip (restaurant)
+- NK department store (shopping)
+- Mosebacke Etablissement (nightlife)
+- Fika at a traditional café (experience)
+- Archipelago boat trip (experience)
+- Gamla Stan walking tour (experience)
+- Metro art tour (experience)
+- Sauna and sea dip (experience)
+
+**Official URL not confirmed (6).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Gamla Stan (landmark)
+- Monteliusvägen (landmark)
+- Rosendals Trädgårdskafé (restaurant)
+- Chokladfabriken (cafe)
+- SoFo (South of Folkungagatan) (shopping)
+- Drottninggatan (shopping)
+
+**Neighborhood centre not confirmed:** Norrmalm and the City Centre
+
+## Krakow
+
+**Coordinates not confirmed (16).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Barbican and Florian Gate (landmark)
+- Ghetto Heroes Square (landmark)
+- Vistula Boulevards (landmark)
+- Restauracja Wierzynek (restaurant)
+- Endzior Zapiekanki (restaurant)
+- Chimera Salad Bar (restaurant)
+- Massolit Books & Café (cafe)
+- E. Wedel Chocolate Lounge (cafe)
+- Charlotte Chleb i Wino (cafe)
+- Plac Nowy market (shopping)
+- Forum Przestrzenie (nightlife)
+- Wieliczka Salt Mine tour (experience)
+- Auschwitz-Birkenau guided visit (experience)
+- Kazimierz walking tour (experience)
+- Nowa Huta communist tour (experience)
+- Pierogi cooking class (experience)
+
+**Official URL not confirmed (11).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Main Market Square (Rynek Główny) (landmark)
+- Collegium Maius (landmark)
+- Planty Park (landmark)
+- Zapiecek (restaurant)
+- Bar Mleczny Pod Temidą (restaurant)
+- Mleczarnia (restaurant)
+- Café Noworolski (cafe)
+- Bunkier Café (cafe)
+- Singer Bar (nightlife)
+- Piwnica pod Baranami (nightlife)
+- Hevre (nightlife)
+
+**Neighborhood centre not confirmed:** Wawel Hill
+
+## Marrakesh
+
+**Coordinates not confirmed (12).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Souk Semmarine and the medina souks (landmark)
+- Place des Épices and the Mellah spice market (landmark)
+- Rue de la Liberté boutiques (shopping)
+- Kosybar (nightlife)
+- Le Comptoir Darna (nightlife)
+- Churchill Bar at La Mamounia (nightlife)
+- Hammam and spa (experience)
+- Moroccan cooking class (experience)
+- Agafay Desert sunset and dinner (experience)
+- Souk guided walk (experience)
+- Hot-air balloon over the Palmeraie (experience)
+- Ouzoud Waterfalls (day trip)
+
+**Official URL not confirmed (18).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Jemaa el-Fnaa (landmark)
+- Koutoubia Mosque (landmark)
+- Saadian Tombs (landmark)
+- Le Jardin (restaurant)
+- Al Fassia (restaurant)
+- Chez Lamine (Hajj Mustapha) (restaurant)
+- Le Salama (restaurant)
+- Dar Zellij (restaurant)
+- La Famille (restaurant)
+- Jemaa el-Fnaa food stalls (restaurant)
+- Café Atay (cafe)
+- Café du Livre (cafe)
+- Pâtisserie des Princes (cafe)
+- Souk Semmarine (shopping)
+- Souk des Teinturiers (Dyers' Souk) (shopping)
+- Ensemble Artisanal (shopping)
+- Jemaa el-Fnaa at night (nightlife)
+- Ourika Valley and the High Atlas (day trip)
+
+## Cairo
+
+**Coordinates not confirmed (15).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Citadel of Saladin and the Muhammad Ali Mosque (landmark)
+- Naguib Mahfouz Café (restaurant)
+- Andrea Mariouteya (restaurant)
+- Kebdet El Prince (restaurant)
+- El Dahan (restaurant)
+- Zahret El Bustan (cafe)
+- Souq Al-Fustat (shopping)
+- Zamalek boutiques (shopping)
+- Cairo Jazz Club (nightlife)
+- Nile Maxim Dinner Cruise (nightlife)
+- Sunset felucca on the Nile (experience)
+- Pyramids Sound and Light show (experience)
+- Guided tour of Islamic Cairo (experience)
+- Cairo street-food tour (experience)
+- Whirling dervish (Tanoura) show (experience)
+
+**Official URL not confirmed (20).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Pyramids of Giza and the Sphinx (landmark)
+- Khan el-Khalili (landmark)
+- Al-Muizz Street (landmark)
+- Mosque of Ibn Tulun (landmark)
+- Sultan Hassan Mosque and Al-Rifai Mosque (landmark)
+- Coptic Cairo and the Hanging Church (landmark)
+- Al-Azhar Mosque (landmark)
+- Koshary Abou Tarek (restaurant)
+- Café Riche (restaurant)
+- Gad (restaurant)
+- Taboula (restaurant)
+- El Fishawy (cafe)
+- Simonds Café (cafe)
+- Horreya Café (cafe)
+- Cilantro Zamalek (cafe)
+- Khan el-Khalili (shopping)
+- Al-Moez Street (shopping)
+- Horreya Café (nightlife)
+- Saqqara and Dahshur (day trip)
+- Fayoum Oasis (day trip)
+
+**Neighborhood centre not confirmed:** Garden City and Nile Corniche
+
+## Cape Town
+
+**Coordinates not confirmed (14).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Boulders Beach penguin colony (landmark)
+- Kalky's Fish & Chips (restaurant)
+- Bo-Kaap Kitchen (restaurant)
+- Marco's African Place (restaurant)
+- Origin Coffee Roasting (cafe)
+- Haas Coffee Collective (cafe)
+- Beerhouse on Long (nightlife)
+- The Orphanage Cocktail Emporium (nightlife)
+- Mitchell's Waterfront Brewery (nightlife)
+- Table Mountain cable car or hike (experience)
+- Robben Island tour (experience)
+- Winelands tasting day (experience)
+- Township culture tour (experience)
+- Lion's Head sunrise hike (experience)
+
+**Official URL not confirmed (13).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Signal Hill and Lion's Head (landmark)
+- Camps Bay Beach (landmark)
+- Chapman's Peak Drive (landmark)
+- Biesmiellah (restaurant)
+- Mama Africa (restaurant)
+- Harbour House Kalk Bay (restaurant)
+- Kloof Street House (restaurant)
+- Hemelhuijs (restaurant)
+- Willoughby & Co (restaurant)
+- Greenmarket Square (shopping)
+- Pan African Market (shopping)
+- The Waiting Room (nightlife)
+- Cape Peninsula (Cape Point and Boulders Beach) (day trip)
+
+**Neighborhood centre not confirmed:** Woodstock and Salt River
+
+## Mexico City
+
+**Coordinates not confirmed (10).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Coyoacán historic centre (landmark)
+- Tacos Los Cocuyos (restaurant)
+- Mercado de Artesanías La Ciudadela (shopping)
+- Roma and Condesa boutiques (shopping)
+- Salón Los Ángeles (nightlife)
+- Sunday cycling on Reforma (experience)
+- Xochimilco trajinera ride (experience)
+- Lucha libre night (experience)
+- Mexican cooking class with a market visit (experience)
+- Mezcal tasting (experience)
+
+**Official URL not confirmed (22).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Zócalo and the Metropolitan Cathedral (landmark)
+- Torre Latinoamericana (landmark)
+- Diego Rivera Mural Museum (landmark)
+- Monument to the Revolution (landmark)
+- Pujol (restaurant)
+- Quintonil (restaurant)
+- El Califa de León (restaurant)
+- El Huequito (restaurant)
+- Rosetta (restaurant)
+- Máximo Bistrot (restaurant)
+- Mercado de Coyoacán (restaurant)
+- Churrería El Moro (cafe)
+- Panadería Rosetta (cafe)
+- Café Avellaneda (cafe)
+- Cielito Querido Café (cafe)
+- Bazar del Sábado (shopping)
+- Mercado de Jamaica (shopping)
+- Licorería Limantour (nightlife)
+- Zinco Jazz Club (nightlife)
+- Pulquería Las Duelistas (nightlife)
+- Mama Rumba (nightlife)
+- Tepoztlán (day trip)
+
+## Buenos Aires
+
+**Coordinates not confirmed (13).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- San Telmo Market and Plaza Dorrego (landmark)
+- Aramburu (restaurant)
+- El Obrero (restaurant)
+- Café Los Galgos (cafe)
+- LAB Tostadores de Café (cafe)
+- San Telmo Sunday Fair (shopping)
+- Feria de Plaza Francia (shopping)
+- Palermo Soho boutiques (shopping)
+- Tango show or milonga (experience)
+- San Telmo Sunday fair (experience)
+- Teatro Colón tour (experience)
+- Steak and wine class (experience)
+- Recoleta Cemetery guided tour (experience)
+
+**Official URL not confirmed (23).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Plaza de Mayo and Casa Rosada (landmark)
+- Recoleta Cemetery (landmark)
+- El Ateneo Grand Splendid (landmark)
+- Caminito and La Boca (landmark)
+- Floralis Genérica (landmark)
+- Obelisco (landmark)
+- Puente de la Mujer (landmark)
+- Don Julio (restaurant)
+- El Sanjuanino (restaurant)
+- Parrilla Peña (restaurant)
+- Pizzería Güerrín (restaurant)
+- Cumaná (restaurant)
+- El Preferido de Palermo (restaurant)
+- Chan Chan (restaurant)
+- La Brigada (restaurant)
+- Sudestada (restaurant)
+- Full City Coffee House (cafe)
+- Café Margot (cafe)
+- Florería Atlántico (nightlife)
+- Frank's Bar (nightlife)
+- Bar Sur (nightlife)
+- Tigre and the Paraná Delta (day trip)
+- Colonia del Sacramento (day trip)
+
+## Rio de Janeiro
+
+**Coordinates not confirmed (14).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Selarón Steps (landmark)
+- Zazá Bistrô Tropical (restaurant)
+- Satyricon (restaurant)
+- Churrascaria Palace (restaurant)
+- Bibi Sucos (restaurant)
+- Colombo Forte de Copacabana (cafe)
+- Bibi Sucos (cafe)
+- Ipanema boutiques (shopping)
+- Bar dos Descasados (nightlife)
+- Sunset at Arpoador (experience)
+- Samba night in Lapa (experience)
+- Tijuca Forest hike or jeep tour (experience)
+- Hang gliding or paragliding (experience)
+- Football at the Maracanã (experience)
+
+**Official URL not confirmed (19).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Copacabana Beach (landmark)
+- Ipanema Beach and Arpoador (landmark)
+- Santa Teresa and the Bonde tram (landmark)
+- Jardim Botânico (landmark)
+- Parque Lage (landmark)
+- Bar Luiz (restaurant)
+- Bar do Mineiro (restaurant)
+- Adega Pérola (restaurant)
+- Olympe (restaurant)
+- Cervantes (restaurant)
+- Aprazível (restaurant)
+- Armazém do Café (cafe)
+- Cafeína (cafe)
+- Sorvete Itália (cafe)
+- Feira Hippie de Ipanema (shopping)
+- SAARA (shopping)
+- Rio Sul Shopping (shopping)
+- Pedra do Sal (nightlife)
+- Ilha Grande (day trip)
+
+## Toronto
+
+**Coordinates not confirmed (10).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Distillery Historic District (landmark)
+- Dineen Coffee Co. (cafe)
+- Mink Chocolate (cafe)
+- Mercury Espresso Bar (cafe)
+- Yorkville Mink Mile (shopping)
+- CN Tower EdgeWalk (experience)
+- Toronto Islands cycling (experience)
+- Kensington Market food tour (experience)
+- NHL, NBA or MLB game (experience)
+- Niagara Falls day trip (experience)
+
+**Official URL not confirmed (16).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Toronto Islands (landmark)
+- Kensington Market (landmark)
+- Evergreen Brick Works (landmark)
+- Nathan Phillips Square and City Hall (landmark)
+- Carousel Bakery (restaurant)
+- Kinka Izakaya (restaurant)
+- Rodney's Oyster House (restaurant)
+- Canoe (restaurant)
+- Seven Lives Tacos (restaurant)
+- Sunset Grill (restaurant)
+- Balzac's Coffee Roasters (cafe)
+- Sam James Coffee Bar (cafe)
+- Kensington Market (shopping)
+- Cabana Pool Bar (nightlife)
+- Niagara Falls (day trip)
+- Elora Gorge (day trip)
+
+## San Francisco
+
+**Coordinates not confirmed (10).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Painted Ladies at Alamo Square (landmark)
+- Ferry Building Marketplace (landmark)
+- The Slanted Door (restaurant)
+- Ferry Building Marketplace (shopping)
+- Hayes Valley boutiques (shopping)
+- Alcatraz evening tour (experience)
+- Bike across the Golden Gate Bridge (experience)
+- Haight-Ashbury walking tour (experience)
+- Giants game at Oracle Park (experience)
+- Napa or Sonoma wine tasting (experience)
+
+**Official URL not confirmed (14).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Cable cars (landmark)
+- Fisherman's Wharf and Pier 39 (landmark)
+- Lombard Street (landmark)
+- Twin Peaks (landmark)
+- Hog Island Oyster Co. (restaurant)
+- Mister Jiu's (restaurant)
+- Foreign Cinema (restaurant)
+- Gary Danko (restaurant)
+- Liguria Bakery (cafe)
+- Blue Bottle Coffee (Ferry Building) (cafe)
+- Philz Coffee (cafe)
+- Union Square (shopping)
+- Haight Street (shopping)
+- Smuggler's Cove (nightlife)
+
+## Chicago
+
+**Coordinates not confirmed (11).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Pequod's Pizza (restaurant)
+- Al's #1 Italian Beef (restaurant)
+- Superdawg Drive-In (restaurant)
+- Wicker Park boutiques (shopping)
+- Green Mill Jazz Club (nightlife)
+- The Violet Hour (nightlife)
+- Chicago Architecture Center river cruise (experience)
+- Cubs game at Wrigley Field (experience)
+- Second City comedy show (experience)
+- Blues or jazz night (experience)
+- Lakefront bike ride (experience)
+
+**Official URL not confirmed (6).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Chicago Riverwalk and architecture cruise (landmark)
+- Do-Rite Donuts (cafe)
+- Sweet Mandy B's (cafe)
+- Magnificent Mile (shopping)
+- State Street (shopping)
+- Cindy's Rooftop (nightlife)
+
+## Miami
+
+**Coordinates not confirmed (13).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Española Way (landmark)
+- Phillip and Patricia Frost Museum of Science (landmark)
+- Little Havana's Domino Park (landmark)
+- KYU (restaurant)
+- Sanguich de Miami (restaurant)
+- Buena Vista Deli (cafe)
+- Wynwood galleries and boutiques (shopping)
+- LIV at Fontainebleau (nightlife)
+- Everglades airboat tour (experience)
+- Wynwood street art tour (experience)
+- Little Havana food and culture walk (experience)
+- Biscayne Bay boat tour (experience)
+- Salsa night in Little Havana (experience)
+
+**Official URL not confirmed (14).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- South Beach and the Art Deco Historic District (landmark)
+- Wynwood Walls (landmark)
+- Little Havana and Calle Ocho (landmark)
+- Vizcaya Museum and Gardens (landmark)
+- Versailles (restaurant)
+- El Palacio de los Jugos (restaurant)
+- Michael's Genuine Food & Drink (restaurant)
+- Stubborn Seed (restaurant)
+- Greenstreet Café (cafe)
+- Zak the Baker (cafe)
+- Ball & Chain (nightlife)
+- Mac's Club Deuce (nightlife)
+- Sweet Liberty (nightlife)
+- Florida Keys and Key West (day trip)
+
+## Kyoto
+
+**Coordinates not confirmed (9).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Honke Daiichi-asahi (restaurant)
+- Menbaka Fire Ramen (restaurant)
+- Yudofu Sagano (restaurant)
+- Omen Ginkakuji (restaurant)
+- Inoda Coffee Honten (cafe)
+- Kimono rental and stroll (experience)
+- Kaiseki dinner (experience)
+- Zen meditation at a temple (experience)
+- Arashiyama by bike and river boat (experience)
+
+**Official URL not confirmed (19).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Arashiyama Bamboo Grove (landmark)
+- Gion and Hanamikoji Street (landmark)
+- Nishiki Market (landmark)
+- Sanjusangendo (landmark)
+- Izuju (restaurant)
+- Katsukura (restaurant)
+- Tempura Endo Yasaka (restaurant)
+- Nishiki Market street food (restaurant)
+- Gogyo Kyoto (restaurant)
+- Pontocho yakitori izakaya (restaurant)
+- Gion Tsujiri (cafe)
+- % Arabica Higashiyama (cafe)
+- Smart Coffee (cafe)
+- Nishiki Market (shopping)
+- Teramachi and Shinkyogoku arcades (shopping)
+- Aritsugu (shopping)
+- Pontocho Alley (nightlife)
+- Kiyamachi Street (nightlife)
+- Tea ceremony (experience)
+
+## Osaka
+
+**Coordinates not confirmed (14).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Umeda Sky Building Floating Garden Observatory (landmark)
+- Hozenji Temple and Hozenji Yokocho (landmark)
+- Chibo Okonomiyaki (restaurant)
+- Zubora-ya (restaurant)
+- Rikuro Ojisan no Mise (cafe)
+- Pablo Cheese Tart (cafe)
+- Kissaten Americana (cafe)
+- Kuromon Market (shopping)
+- Club Joule (nightlife)
+- Dotonbori street-food crawl (experience)
+- Universal Studios Japan day (experience)
+- Cup Noodles Museum (experience)
+- Osaka Castle cruise (experience)
+- Yoshimoto comedy show (experience)
+
+**Official URL not confirmed (19).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Shitennoji (landmark)
+- Mizuno Okonomiyaki (restaurant)
+- Kushikatsu Daruma (restaurant)
+- Kani Doraku (restaurant)
+- Takoyaki Wanaka (restaurant)
+- Ichiran Dotonbori (restaurant)
+- Yakiniku M (restaurant)
+- Okonomiyaki Kiji (restaurant)
+- Kuromon Market street food (restaurant)
+- Yaekatsu (restaurant)
+- Meoto Zenzai (cafe)
+- Mel Coffee Roasters (cafe)
+- Café Kitahama Retro (cafe)
+- Shinsaibashi-suji Shopping Arcade (shopping)
+- Hozenji Yokocho (nightlife)
+- Amerikamura (nightlife)
+- Bar Nayuta (nightlife)
+- Umeda Sky Building night view (nightlife)
+- Koyasan (day trip)
+
+## Taipei
+
+**Coordinates not confirmed (13).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Beitou Thermal Valley and hot springs (landmark)
+- Bopiliao Old Street (landmark)
+- Jin Feng Braised Pork Rice (restaurant)
+- Fuzhou Shizu Pepper Buns (restaurant)
+- Shin Yeh Taiwanese Cuisine (restaurant)
+- Ten Ren Tea (cafe)
+- Eslite Bookstore Dunhua (shopping)
+- Ounce Taipei (nightlife)
+- Night-market crawl (experience)
+- Beitou hot-spring soak (experience)
+- Maokong tea tasting (experience)
+- Taipei 101 sunset (experience)
+- Taiwanese cooking class (experience)
+
+**Official URL not confirmed (24).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Longshan Temple (landmark)
+- Shilin Night Market (landmark)
+- Elephant Mountain (Xiangshan) (landmark)
+- Dihua Street (landmark)
+- Ximending (landmark)
+- 228 Peace Memorial Park (landmark)
+- Lin Dong Fang Beef Noodle (restaurant)
+- Ay-Chung Flour-Rice Noodle (restaurant)
+- Fuhang Soy Milk (restaurant)
+- Lan Jia Gua Bao (restaurant)
+- Addiction Aquatic Development (restaurant)
+- RAW (restaurant)
+- MUME (restaurant)
+- Smoothie House (cafe)
+- Ice Monster (cafe)
+- Chun Shui Tang (cafe)
+- Fong Da Coffee (cafe)
+- Dihua Street (shopping)
+- Ximending (shopping)
+- Draft Land (nightlife)
+- Ximending pedestrian zone (nightlife)
+- Huashan 1914 live music venues (nightlife)
+- Jiufen and Shifen (day trip)
+- Taroko Gorge (day trip)
+
+## Hanoi
+
+**Coordinates not confirmed (12).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Ho Chi Minh Mausoleum Complex (landmark)
+- Bun Cha Huong Lien (restaurant)
+- Highway4 (restaurant)
+- Cau Go Vietnamese Cuisine (restaurant)
+- Chim Sao (restaurant)
+- Cafe Dinh (cafe)
+- Bia Hoi Junction (nightlife)
+- Thang Long water puppet show (experience)
+- Dawn at Hoan Kiem Lake (experience)
+- Vietnamese cooking class (experience)
+- Ha Long Bay cruise (experience)
+- Bat Trang Pottery Village (day trip)
+
+**Official URL not confirmed (29).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Hoan Kiem Lake and Ngoc Son Temple (landmark)
+- Old Quarter (landmark)
+- Temple of Literature (landmark)
+- Imperial Citadel of Thang Long (landmark)
+- St. Joseph's Cathedral (landmark)
+- Long Bien Bridge (landmark)
+- Tran Quoc Pagoda (landmark)
+- Dong Xuan Market (landmark)
+- Hanoi Train Street (landmark)
+- Pho Gia Truyen (restaurant)
+- Pho Thin (restaurant)
+- Cha Ca Thang Long (restaurant)
+- Banh Mi 25 (restaurant)
+- Bun Bo Nam Bo (restaurant)
+- Xoi Yen (restaurant)
+- Madame Hien (restaurant)
+- Cong Caphe (cafe)
+- Cafe Pho Co (cafe)
+- The Note Coffee (cafe)
+- Hanoi Social Club (cafe)
+- Hang Gai (Silk Street) (shopping)
+- Dong Xuan Market (shopping)
+- Hanoi Weekend Night Market (shopping)
+- Craft Link (shopping)
+- Ta Hien Street (Beer Street) (nightlife)
+- Polite & Co (nightlife)
+- Top of Hanoi (nightlife)
+- Hanoi Rock City (nightlife)
+- Ninh Binh (Trang An and Tam Coc) (day trip)
+
+## Mumbai
+
+**Coordinates not confirmed (11).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Mani Bhavan Gandhi Museum (landmark)
+- Sardar Pav Bhaji (restaurant)
+- Kitab Khana Cafe (cafe)
+- Cafe Zoe (cafe)
+- AER Lounge (nightlife)
+- Bandra Social (nightlife)
+- Dabbawala lunch delivery tour (experience)
+- Fort and Kala Ghoda heritage walk (experience)
+- Mumbai street-food tour (experience)
+- Elephanta Caves ferry trip (experience)
+- Sunset on Marine Drive (experience)
+
+**Official URL not confirmed (29).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- Gateway of India (landmark)
+- Chhatrapati Shivaji Maharaj Terminus (CSMT) (landmark)
+- Marine Drive (landmark)
+- Elephanta Caves (landmark)
+- Dhobi Ghat (landmark)
+- Colaba Causeway (landmark)
+- Siddhivinayak Temple (landmark)
+- Banganga Tank (landmark)
+- Chowpatty Beach (landmark)
+- Bandra Fort and Bandstand (landmark)
+- Britannia & Co. (restaurant)
+- Trishna (restaurant)
+- Kyani & Co. (restaurant)
+- Swati Snacks (restaurant)
+- The Bombay Canteen (restaurant)
+- Masque (restaurant)
+- Soam (restaurant)
+- Cafe Madras (restaurant)
+- Aaswad (restaurant)
+- Jimmy Boy (restaurant)
+- Prithvi Cafe (cafe)
+- Theobroma (cafe)
+- Colaba Causeway (shopping)
+- Chor Bazaar (shopping)
+- Linking Road (shopping)
+- The Dome (nightlife)
+- Toto's Garage (nightlife)
+- Elephanta Island (day trip)
+- Alibaug (day trip)
+
+## Melbourne
+
+**Coordinates not confirmed (11).** No confident OpenStreetMap match inside the city area. Each stays undefined; the planner falls back to its neighborhood centre for distance estimates.
+
+- Hosier Lane and the laneways (landmark)
+- Hellenic Republic (restaurant)
+- Brother Baba Budan (cafe)
+- Bourke Street Mall and Block Arcade (shopping)
+- Bar Americano (nightlife)
+- Laneways street-art tour (experience)
+- AFL game at the MCG (experience)
+- Coffee tour (experience)
+- City Circle Tram (experience)
+- Rooftop cinema or bar (experience)
+- Phillip Island Penguin Parade (day trip)
+
+**Official URL not confirmed (12).** Located on the map, but neither OpenStreetMap nor Wikidata lists the venue's own website.
+
+- St Kilda Beach and Pier (landmark)
+- Royal Exhibition Building and Carlton Gardens (landmark)
+- Brighton Bathing Boxes (landmark)
+- Chin Chin (restaurant)
+- Cumulus Inc. (restaurant)
+- Supernormal (restaurant)
+- Pellegrini's Espresso Bar (restaurant)
+- Mamasita (restaurant)
+- Chapel Street (shopping)
+- Brunswick Street (shopping)
+- Great Ocean Road (day trip)
+- Yarra Valley (day trip)
 

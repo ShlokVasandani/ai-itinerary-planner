@@ -1,0 +1,828 @@
+{
+  "bbox": [
+    41.5756,
+    -88.0273,
+    42.1756,
+    -87.2215
+  ],
+  "places": {
+    "360-chicago": {
+      "coords": {
+        "lat": 41.89898,
+        "lng": -87.623176
+      },
+      "costCurrency": "USD",
+      "costMax": 40,
+      "costMin": 30,
+      "officialUrl": "https://360chicago.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2250380156"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "art-institute-of-chicago": {
+      "closedDays": [
+        2,
+        3
+      ],
+      "coords": {
+        "lat": 41.879605,
+        "lng": -87.623072
+      },
+      "costCurrency": "USD",
+      "costMax": 35,
+      "costMin": 32,
+      "officialUrl": "https://www.artic.edu/",
+      "openingHours": [
+        {
+          "days": "Mo,Fr-Su",
+          "open": "11:00",
+          "close": "17:00"
+        },
+        {
+          "days": "Th",
+          "open": "11:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/1870546",
+        "https://www.wikidata.org/wiki/Q239303"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-beatrix": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.891472,
+        "lng": -87.630726
+      },
+      "officialUrl": "http://beatrixrestaurants.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "08:00",
+          "close": "15:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5457123055"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-do-rite-donuts": {
+      "coords": {
+        "lat": 41.878439,
+        "lng": -87.635764
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/9294100631"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-intelligentsia-coffee": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.884355,
+        "lng": -87.625863
+      },
+      "officialUrl": "https://www.intelligentsiacoffee.com/millennium-park-coffeebar",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1308260687",
+        "https://www.wikidata.org/wiki/Q16997104"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-metropolis-coffee": {
+      "coords": {
+        "lat": 41.994444,
+        "lng": -87.657287
+      },
+      "officialUrl": "https://www.metropoliscoffee.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/1445764611"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-sweet-mandy-b-s": {
+      "coords": {
+        "lat": 41.893524,
+        "lng": -87.620745
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/9925194017"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-wormhole-coffee": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.908387,
+        "lng": -87.674623
+      },
+      "officialUrl": "https://www.thewormhole.us/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3080898768"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "chicago-cultural-center": {
+      "coords": {
+        "lat": 41.883863,
+        "lng": -87.624802
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.chicago.gov/city/en/depts/dca/supp_info/chicago_culturalcenter.html",
+      "sources": [
+        "https://www.openstreetmap.org/relation/15899437",
+        "https://www.wikidata.org/wiki/Q2398614"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "chicago-riverwalk-and-architecture-cruise": {
+      "coords": {
+        "lat": 41.8883,
+        "lng": -87.6218
+      },
+      "costCurrency": "USD",
+      "costMax": 55,
+      "costMin": 45,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q5095770"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "field-museum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.866222,
+        "lng": -87.616891
+      },
+      "costCurrency": "USD",
+      "costMax": 40,
+      "costMin": 30,
+      "officialUrl": "https://www.fieldmuseum.org/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/24825537",
+        "https://www.wikidata.org/wiki/Q1122595"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "frank-lloyd-wright-home-and-studio": {
+      "coords": {
+        "lat": 41.894051,
+        "lng": -87.799669
+      },
+      "costCurrency": "USD",
+      "costMax": 30,
+      "costMin": 25,
+      "officialUrl": "https://flwright.org/",
+      "sources": [
+        "https://www.openstreetmap.org/way/25885716",
+        "https://www.wikidata.org/wiki/Q3069681"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "garfield-park-conservatory": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.886827,
+        "lng": -87.718585
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://garfieldconservatory.org/",
+      "openingHours": [
+        {
+          "days": "Mo,Tu,Th-Su",
+          "open": "10:00",
+          "close": "17:00"
+        },
+        {
+          "days": "We",
+          "open": "10:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/163779324",
+        "https://www.wikidata.org/wiki/Q25247412"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "lincoln-park-zoo-and-conservatory": {
+      "coords": {
+        "lat": 41.921389,
+        "lng": -87.633889
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.lpzoo.org/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q3241309"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "millennium-park-and-cloud-gate": {
+      "coords": {
+        "lat": 41.8825,
+        "lng": -87.6225
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.chicago.gov/city/en/depts/dca/supp_info/millennium_park.html",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1130516"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "museum-of-science-and-industry": {
+      "coords": {
+        "lat": 41.790749,
+        "lng": -87.582931
+      },
+      "costCurrency": "USD",
+      "costMax": 30,
+      "costMin": 26,
+      "officialUrl": "https://www.msichicago.org/",
+      "sources": [
+        "https://www.openstreetmap.org/way/24826230",
+        "https://www.wikidata.org/wiki/Q1414079"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-buddy-guy-s-legends": {
+      "coords": {
+        "lat": 41.872962,
+        "lng": -87.626464
+      },
+      "officialUrl": "https://buddyguy.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/149372353",
+        "https://www.wikidata.org/wiki/Q16255715"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-cindy-s-rooftop": {
+      "coords": {
+        "lat": 41.881645,
+        "lng": -87.624797
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/8561339618"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-kingston-mines": {
+      "coords": {
+        "lat": 41.928708,
+        "lng": -87.649215
+      },
+      "officialUrl": "https://kingstonmines.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/210321648",
+        "https://www.wikidata.org/wiki/Q19864560"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "navy-pier": {
+      "coords": {
+        "lat": 41.8918,
+        "lng": -87.604145
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://navypier.org/",
+      "sources": [
+        "https://www.openstreetmap.org/way/24800238",
+        "https://www.wikidata.org/wiki/Q3337338"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-al-s-1-italian-beef": {
+      "costCurrency": "USD",
+      "costMax": 15,
+      "costMin": 10
+    },
+    "r-alinea": {
+      "coords": {
+        "lat": 41.913437,
+        "lng": -87.648199
+      },
+      "costCurrency": "USD",
+      "costMax": 400,
+      "costMin": 250,
+      "officialUrl": "https://www.alinearestaurant.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/3502294529",
+        "https://www.wikidata.org/wiki/Q4726773"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-au-cheval": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.884707,
+        "lng": -87.647601
+      },
+      "costCurrency": "USD",
+      "costMax": 40,
+      "costMin": 25,
+      "officialUrl": "http://auchevalchicago.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "23:15"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1504730667"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-billy-goat-tavern": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.785969,
+        "lng": -87.742136
+      },
+      "costCurrency": "USD",
+      "costMax": 20,
+      "costMin": 12,
+      "officialUrl": "https://www.billygoattavern.com/locations/midway/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "05:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6344848996"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-frontera-grill": {
+      "closedDays": [
+        0,
+        1
+      ],
+      "coords": {
+        "lat": 41.890537,
+        "lng": -87.630921
+      },
+      "costCurrency": "USD",
+      "costMax": 75,
+      "costMin": 45,
+      "officialUrl": "https://www.rickbayless.com/restaurants/frontera-grill/",
+      "openingHours": [
+        {
+          "days": "Tu-Th",
+          "open": "17:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Fr",
+          "open": "17:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Sa",
+          "open": "10:30",
+          "close": "14:00"
+        },
+        {
+          "days": "Sa",
+          "open": "17:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3575225597",
+        "https://www.wikidata.org/wiki/Q5505941"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-gene-and-georgetti": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 41.890913,
+        "lng": -87.635805
+      },
+      "costCurrency": "USD",
+      "costMax": 110,
+      "costMin": 70,
+      "officialUrl": "https://geneandgeorgetti.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "11:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "11:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/210680038"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-girl-and-the-goat": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.884111,
+        "lng": -87.647939
+      },
+      "costCurrency": "USD",
+      "costMax": 90,
+      "costMin": 60,
+      "officialUrl": "https://girlandthegoat.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "16:30",
+          "close": "23:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "16:30",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1504713099"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-lou-malnati-s-pizzeria": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.960718,
+        "lng": -87.683596
+      },
+      "costCurrency": "USD",
+      "costMax": 35,
+      "costMin": 20,
+      "officialUrl": "https://www.loumalnatis.com/chicago-lincoln-square-north-center",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "11:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "11:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Su",
+          "open": "11:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/35341584"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-pequod-s-pizza": {
+      "costCurrency": "USD",
+      "costMax": 30,
+      "costMin": 20
+    },
+    "r-portillo-s": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.870324,
+        "lng": -87.640165
+      },
+      "costCurrency": "USD",
+      "costMax": 20,
+      "costMin": 12,
+      "officialUrl": "https://www.portillos.com/locations/chicago-canal-taylor/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/558366726"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-superdawg-drive-in": {
+      "costCurrency": "USD",
+      "costMax": 18,
+      "costMin": 10
+    },
+    "r-the-publican": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.886615,
+        "lng": -87.648856
+      },
+      "costCurrency": "USD",
+      "costMax": 80,
+      "costMin": 50,
+      "officialUrl": "https://thepublicanrestaurant.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "11:00",
+          "close": "14:00"
+        },
+        {
+          "days": "Mo-Th",
+          "open": "16:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Fr",
+          "open": "11:00",
+          "close": "14:00"
+        },
+        {
+          "days": "Fr",
+          "open": "16:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Sa",
+          "open": "10:00",
+          "close": "14:00"
+        },
+        {
+          "days": "Sa",
+          "open": "16:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Su",
+          "open": "10:00",
+          "close": "14:00"
+        },
+        {
+          "days": "Su",
+          "open": "16:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4076939309"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-chicago-french-market": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 41.884019,
+        "lng": -87.640856
+      },
+      "officialUrl": "https://frenchmarketchicago.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Sa",
+          "open": "09:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1501510119"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-magnificent-mile": {
+      "coords": {
+        "lat": 41.894523,
+        "lng": -87.624228
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/153654226",
+        "https://www.wikidata.org/wiki/Q285218"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-state-street": {
+      "coords": {
+        "lat": 41.8821,
+        "lng": -87.6278
+      },
+      "sources": [
+        "https://www.wikidata.org/wiki/Q986343"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "shedd-aquarium": {
+      "coords": {
+        "lat": 41.867636,
+        "lng": -87.613679
+      },
+      "costCurrency": "USD",
+      "costMax": 45,
+      "costMin": 40,
+      "officialUrl": "https://www.sheddaquarium.org/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/17430414",
+        "https://www.wikidata.org/wiki/Q2166515"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-indiana-dunes-national-park": {
+      "coords": {
+        "lat": 41.615266,
+        "lng": -87.207262
+      },
+      "officialUrl": "https://www.nps.gov/indu/index.htm",
+      "sources": [
+        "https://www.openstreetmap.org/relation/6414018",
+        "https://www.wikidata.org/wiki/Q6023179"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-milwaukee": {
+      "coords": {
+        "lat": 43.038648,
+        "lng": -87.909075
+      },
+      "officialUrl": "https://city.milwaukee.gov/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/251075",
+        "https://www.wikidata.org/wiki/Q37836"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-oak-park": {
+      "coords": {
+        "lat": 41.887814,
+        "lng": -87.788762
+      },
+      "officialUrl": "https://www.oak-park.us/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/123128",
+        "https://www.wikidata.org/wiki/Q331397"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "willis-tower-skydeck": {
+      "coords": {
+        "lat": 41.878505,
+        "lng": -87.635887
+      },
+      "costCurrency": "USD",
+      "costMax": 40,
+      "costMin": 33,
+      "officialUrl": "https://theskydeck.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2311635030",
+        "https://www.wikidata.org/wiki/Q84047380"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "wrigley-field": {
+      "coords": {
+        "lat": 41.948185,
+        "lng": -87.655559
+      },
+      "costCurrency": "USD",
+      "costMax": 30,
+      "costMin": 30,
+      "officialUrl": "https://www.mlb.com/cubs/ballpark",
+      "sources": [
+        "https://www.openstreetmap.org/relation/17379974",
+        "https://www.wikidata.org/wiki/Q1052807"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-blues-or-jazz-night": {
+      "costCurrency": "USD",
+      "costMax": 30,
+      "costMin": 15
+    },
+    "x-chicago-architecture-center-river-cruise": {
+      "costCurrency": "USD",
+      "costMax": 55,
+      "costMin": 45
+    },
+    "x-cubs-game-at-wrigley-field": {
+      "costCurrency": "USD",
+      "costMax": 150,
+      "costMin": 30
+    },
+    "x-lakefront-bike-ride": {
+      "costCurrency": "USD",
+      "costMax": 25,
+      "costMin": 15
+    },
+    "x-second-city-comedy-show": {
+      "costCurrency": "USD",
+      "costMax": 50,
+      "costMin": 30
+    }
+  },
+  "neighborhoods": {
+    "hyde-park": {
+      "coords": {
+        "lat": 41.794446,
+        "lng": -87.593924
+      },
+      "radiusKm": 1.6
+    },
+    "lincoln-park": {
+      "coords": {
+        "lat": 41.932492,
+        "lng": -87.639195
+      },
+      "radiusKm": 0.4
+    },
+    "magnificent-mile-and-streeterville": {
+      "coords": {
+        "lat": 41.867818,
+        "lng": -87.648421
+      },
+      "radiusKm": 0.8
+    },
+    "pilsen": {
+      "coords": {
+        "lat": 41.85704,
+        "lng": -87.661883
+      },
+      "radiusKm": 1.38
+    },
+    "river-north-and-the-riverwalk": {
+      "coords": {
+        "lat": 41.897067,
+        "lng": -87.64283
+      },
+      "radiusKm": 0.8
+    },
+    "the-loop": {
+      "coords": {
+        "lat": 41.881609,
+        "lng": -87.629457
+      },
+      "radiusKm": 1.97
+    },
+    "west-loop": {
+      "coords": {
+        "lat": 41.882188,
+        "lng": -87.653064
+      },
+      "radiusKm": 1.38
+    },
+    "wicker-park-and-bucktown": {
+      "coords": {
+        "lat": 41.908387,
+        "lng": -87.674623
+      },
+      "radiusKm": 0.8
+    }
+  }
+}

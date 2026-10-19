@@ -1,0 +1,612 @@
+{
+  "bbox": [
+    -34.9096,
+    -58.7533,
+    -34.3096,
+    -58.0243
+  ],
+  "places": {
+    "bosques-de-palermo": {
+      "coords": {
+        "lat": -34.573333,
+        "lng": -58.414722
+      },
+      "costCurrency": "ARS",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/parque-tres-de-febrero",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1276582"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-margot": {
+      "coords": {
+        "lat": -34.623331,
+        "lng": -58.416471
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/11873625122"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-tortoni": {
+      "closedDays": [],
+      "coords": {
+        "lat": -34.608693,
+        "lng": -58.378143
+      },
+      "officialUrl": "https://www.cafetortoni.com.ar/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/340141702",
+        "https://www.wikidata.org/wiki/Q1025674"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-full-city-coffee-house": {
+      "coords": {
+        "lat": -34.588534,
+        "lng": -58.431638
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4581732390"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-la-biela": {
+      "closedDays": [],
+      "coords": {
+        "lat": -34.587873,
+        "lng": -58.390825
+      },
+      "officialUrl": "http://www.labiela.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "02:00"
+        },
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/668331794",
+        "https://www.wikidata.org/wiki/Q5017245"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "caminito-and-la-boca": {
+      "coords": {
+        "lat": -34.6393,
+        "lng": -58.3628
+      },
+      "costCurrency": "ARS",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1029566"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "costanera-sur-ecological-reserve": {
+      "coords": {
+        "lat": -34.603889,
+        "lng": -58.3525
+      },
+      "costCurrency": "ARS",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://buenosaires.gob.ar/vicejefatura/ambiente/reservasecologicas/reserva-ecologica-costanera-sur",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1034280"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "el-ateneo-grand-splendid": {
+      "closedDays": [],
+      "coords": {
+        "lat": -34.595983,
+        "lng": -58.394262
+      },
+      "costCurrency": "ARS",
+      "costMax": 0,
+      "costMin": 0,
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:00",
+          "close": "21:00"
+        },
+        {
+          "days": "Su",
+          "open": "12:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/341120136",
+        "https://www.wikidata.org/wiki/Q1323870"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "floralis-generica": {
+      "coords": {
+        "lat": -34.581689,
+        "lng": -58.394002
+      },
+      "costCurrency": "ARS",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/176336341",
+        "https://www.wikidata.org/wiki/Q5240318"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "la-bombonera": {
+      "coords": {
+        "lat": -34.635517,
+        "lng": -58.364916
+      },
+      "officialUrl": "https://www.bocajuniors.com.ar/la-bombonera",
+      "sources": [
+        "https://www.openstreetmap.org/way/248598885",
+        "https://www.wikidata.org/wiki/Q499855"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "malba-museum-of-latin-american-art": {
+      "closedDays": [
+        2
+      ],
+      "coords": {
+        "lat": -34.576882,
+        "lng": -58.403392
+      },
+      "officialUrl": "https://malba.org.ar/",
+      "openingHours": [
+        {
+          "days": "Mo,Th-Su",
+          "open": "12:00",
+          "close": "20:00"
+        },
+        {
+          "days": "We",
+          "open": "11:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/23621021",
+        "https://www.wikidata.org/wiki/Q1808336"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "metropolitan-cathedral": {
+      "closedDays": [],
+      "coords": {
+        "lat": -34.607474,
+        "lng": -58.373277
+      },
+      "costCurrency": "ARS",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.catedralbuenosaires.org.ar/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:30",
+          "close": "18:30"
+        },
+        {
+          "days": "Sa",
+          "open": "09:00",
+          "close": "17:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "18:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/265344159",
+        "https://www.wikidata.org/wiki/Q967929"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-bar-sur": {
+      "coords": {
+        "lat": -34.618346,
+        "lng": -58.370091
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/2722400019"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-floreria-atlantico": {
+      "coords": {
+        "lat": -34.591822,
+        "lng": -58.379343
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4279358190"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-frank-s-bar": {
+      "coords": {
+        "lat": -34.583239,
+        "lng": -58.442703
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/673432599"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-la-catedral-club": {
+      "closedDays": [
+        0,
+        1
+      ],
+      "coords": {
+        "lat": -34.60495,
+        "lng": -58.421972
+      },
+      "officialUrl": "https://www.lacatedralclub.com/",
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "18:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3830539280"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-rojo-tango": {
+      "coords": {
+        "lat": -34.613756,
+        "lng": -58.36176
+      },
+      "officialUrl": "https://rojotango.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/7247271785"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "obelisco": {
+      "coords": {
+        "lat": -34.603709,
+        "lng": -58.38163
+      },
+      "costCurrency": "ARS",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/1332861812",
+        "https://www.wikidata.org/wiki/Q831389"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "plaza-de-mayo-and-casa-rosada": {
+      "coords": {
+        "lat": -34.608861,
+        "lng": -58.370833
+      },
+      "costCurrency": "ARS",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q3232735"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "puente-de-la-mujer": {
+      "coords": {
+        "lat": -34.608016,
+        "lng": -58.365129
+      },
+      "costCurrency": "ARS",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/307155462",
+        "https://www.wikidata.org/wiki/Q2336867"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-aramburu": {},
+    "r-chan-chan": {
+      "coords": {
+        "lat": -34.610008,
+        "lng": -58.385887
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4608857099"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-cumana": {
+      "coords": {
+        "lat": -34.595533,
+        "lng": -58.39184
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/1490044721"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-don-julio": {
+      "coords": {
+        "lat": -34.586292,
+        "lng": -58.424277
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/3178674461",
+        "https://www.wikidata.org/wiki/Q131419956"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-el-obrero": {},
+    "r-el-preferido-de-palermo": {
+      "coords": {
+        "lat": -34.585443,
+        "lng": -58.425388
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5403368822",
+        "https://www.wikidata.org/wiki/Q5822943"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-el-sanjuanino": {
+      "closedDays": [],
+      "coords": {
+        "lat": -34.590336,
+        "lng": -58.408961
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "19:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/7143784286"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-la-brigada": {
+      "coords": {
+        "lat": -34.618444,
+        "lng": -58.372742
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/473834451"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-la-cabrera": {
+      "coords": {
+        "lat": -34.589358,
+        "lng": -58.432898
+      },
+      "officialUrl": "http://www.parrillalacabrera.com.ar/",
+      "sources": [
+        "https://www.openstreetmap.org/node/3182007435"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-parrilla-pena": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": -34.601173,
+        "lng": -58.391501
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "12:00",
+          "close": "16:00"
+        },
+        {
+          "days": "Mo-Sa",
+          "open": "20:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1134640853"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-pizzeria-guerrin": {
+      "coords": {
+        "lat": -34.60403,
+        "lng": -58.38575
+      },
+      "sources": [
+        "https://www.wikidata.org/wiki/Q5888023"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-sudestada": {
+      "coords": {
+        "lat": -34.580338,
+        "lng": -58.432174
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4319023517"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "recoleta-cemetery": {
+      "coords": {
+        "lat": -34.588056,
+        "lng": -58.393056
+      },
+      "costCurrency": "ARS",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q831322"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-galerias-pacifico": {
+      "closedDays": [],
+      "coords": {
+        "lat": -34.599244,
+        "lng": -58.374763
+      },
+      "officialUrl": "https://www.galeriaspacifico.com.ar/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/28263519"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "san-telmo-market-and-plaza-dorrego": {
+      "costCurrency": "ARS",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "t-colonia-del-sacramento": {
+      "coords": {
+        "lat": -34.469859,
+        "lng": -57.843368
+      },
+      "sources": [
+        "https://www.openstreetmap.org/relation/2862754",
+        "https://www.wikidata.org/wiki/Q56064"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-san-antonio-de-areco": {
+      "coords": {
+        "lat": -34.243729,
+        "lng": -59.473419
+      },
+      "officialUrl": "https://areco.gob.ar/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/5925990",
+        "https://www.wikidata.org/wiki/Q2501423"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-tigre-and-the-parana-delta": {
+      "coords": {
+        "lat": -34.416667,
+        "lng": -58.583333
+      },
+      "sources": [
+        "https://www.wikidata.org/wiki/Q54106"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "teatro-colon": {
+      "closedDays": [],
+      "coords": {
+        "lat": -34.601086,
+        "lng": -58.383187
+      },
+      "officialUrl": "https://www.teatrocolon.org.ar/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:00",
+          "close": "20:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/23633911",
+        "https://www.wikidata.org/wiki/Q827401"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-san-telmo-sunday-fair": {
+      "costCurrency": "ARS",
+      "costMax": 0,
+      "costMin": 0
+    }
+  },
+  "neighborhoods": {
+    "la-boca": {
+      "coords": {
+        "lat": -34.63351,
+        "lng": -58.359042
+      },
+      "radiusKm": 2.45
+    },
+    "microcentro-and-monserrat": {
+      "coords": {
+        "lat": -34.605137,
+        "lng": -58.375394
+      },
+      "radiusKm": 0.8
+    },
+    "palermo": {
+      "coords": {
+        "lat": -34.580336,
+        "lng": -58.424524
+      },
+      "radiusKm": 3
+    },
+    "puerto-madero": {
+      "coords": {
+        "lat": -34.610376,
+        "lng": -58.362207
+      },
+      "radiusKm": 2.15
+    },
+    "recoleta": {
+      "coords": {
+        "lat": -34.587358,
+        "lng": -58.39157
+      },
+      "radiusKm": 3
+    },
+    "retiro-and-congreso": {
+      "coords": {
+        "lat": -34.586759,
+        "lng": -58.40963
+      },
+      "radiusKm": 0.8
+    },
+    "san-telmo": {
+      "coords": {
+        "lat": -34.621401,
+        "lng": -58.37375
+      },
+      "radiusKm": 1.01
+    }
+  }
+}

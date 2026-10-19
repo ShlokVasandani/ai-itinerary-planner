@@ -1,0 +1,772 @@
+{
+  "bbox": [
+    45.1642,
+    8.7619,
+    45.7642,
+    9.6174
+  ],
+  "places": {
+    "basilica-of-sant-ambrogio": {
+      "closedDays": [],
+      "coords": {
+        "lat": 45.462375,
+        "lng": 9.175845
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.basilicasantambrogio.it/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "10:00",
+          "close": "12:00"
+        },
+        {
+          "days": "Mo-Sa",
+          "open": "14:30",
+          "close": "18:00"
+        },
+        {
+          "days": "Su",
+          "open": "15:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/37717",
+        "https://www.wikidata.org/wiki/Q1071570"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "bosco-verticale": {
+      "coords": {
+        "lat": 45.486737,
+        "lng": 9.191263
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/2456061019"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-caffe-cova": {
+      "coords": {
+        "lat": 45.468171,
+        "lng": 9.195458
+      },
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2932911"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-camparino-in-galleria": {
+      "coords": {
+        "lat": 45.46492,
+        "lng": 9.189878
+      },
+      "officialUrl": "https://www.camparino.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/13001337602",
+        "https://www.wikidata.org/wiki/Q3649588"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-gattullo": {
+      "coords": {
+        "lat": 45.452,
+        "lng": 9.185838
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/593503506"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-pasticceria-cucchi": {
+      "coords": {
+        "lat": 45.458481,
+        "lng": 9.177574
+      },
+      "officialUrl": "https://pasticceriacucchi.it/",
+      "sources": [
+        "https://www.openstreetmap.org/node/5393584732"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-pasticceria-marchesi-1824": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 45.465486,
+        "lng": 9.180653
+      },
+      "officialUrl": "https://www.pasticceriamarchesi.it/",
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "07:30",
+          "close": "18:00"
+        },
+        {
+          "days": "Su",
+          "open": "08:30",
+          "close": "13:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2409676030"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-pave": {
+      "closedDays": [
+        2
+      ],
+      "coords": {
+        "lat": 45.479106,
+        "lng": 9.202643
+      },
+      "officialUrl": "https://www.pavemilano.com/",
+      "openingHours": [
+        {
+          "days": "Mo,We-Su",
+          "open": "08:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3706949085"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "fondazione-prada": {
+      "closedDays": [
+        2
+      ],
+      "coords": {
+        "lat": 45.443922,
+        "lng": 9.204322
+      },
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 15,
+      "officialUrl": "https://www.fondazioneprada.org/",
+      "openingHours": [
+        {
+          "days": "Mo,We-Su",
+          "open": "10:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/425004880",
+        "https://www.wikidata.org/wiki/Q3747208"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "galleria-vittorio-emanuele-ii": {
+      "coords": {
+        "lat": 45.465642,
+        "lng": 9.190006
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/166623705",
+        "https://www.wikidata.org/wiki/Q51112"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "leonardo-da-vinci-national-museum-of-science-and-technology": {
+      "costCurrency": "EUR",
+      "costMax": 12,
+      "costMin": 12
+    },
+    "milan-cathedral-duomo-di-milano": {
+      "closedDays": [],
+      "coords": {
+        "lat": 45.464167,
+        "lng": 9.191612
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 10,
+      "officialUrl": "https://www.duomomilano.it/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/18017026",
+        "https://www.wikidata.org/wiki/Q18068"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "monumental-cemetery": {
+      "coords": {
+        "lat": 45.485768,
+        "lng": 9.179072
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://monumentale.comune.milano.it/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q608405"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "museo-del-novecento": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 45.463393,
+        "lng": 9.19023
+      },
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 10,
+      "officialUrl": "https://www.museodelnovecento.org/it/",
+      "openingHours": [
+        {
+          "days": "Tu,We,Fr-Su",
+          "open": "09:30",
+          "close": "19:30"
+        },
+        {
+          "days": "Th",
+          "open": "09:30",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1223091032",
+        "https://www.wikidata.org/wiki/Q261233"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-bar-basso": {
+      "coords": {
+        "lat": 45.476775,
+        "lng": 9.217579
+      },
+      "officialUrl": "http://www.barbasso.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/1652687562",
+        "https://www.wikidata.org/wiki/Q2404922"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-ceresio-7": {
+      "closedDays": [],
+      "coords": {
+        "lat": 45.483517,
+        "lng": 9.180311
+      },
+      "officialUrl": "https://www.ceresio7.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:30",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3049190340"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-frida": {
+      "coords": {
+        "lat": 45.457846,
+        "lng": 9.176218
+      },
+      "officialUrl": "https://fridas.it/negozio/fridas-milano-corso-genova/",
+      "sources": [
+        "https://www.openstreetmap.org/node/9079207227"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-mag-cafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 45.451297,
+        "lng": 9.173367
+      },
+      "officialUrl": "https://www.farmilygroup.com/locali/mag",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:30",
+          "close": "26:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4338037593"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-magazzini-generali": {
+      "coords": {
+        "lat": 45.444097,
+        "lng": 9.195262
+      },
+      "officialUrl": "https://www.magazzinigenerali.org/",
+      "sources": [
+        "https://www.openstreetmap.org/node/12072440574"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "navigli-canals": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "pinacoteca-di-brera": {
+      "coords": {
+        "lat": 45.472242,
+        "lng": 9.188407
+      },
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 15,
+      "officialUrl": "https://pinacotecabrera.org/",
+      "sources": [
+        "https://www.openstreetmap.org/node/1029667846",
+        "https://www.wikidata.org/wiki/Q150066"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-antica-trattoria-della-pesa": {
+      "coords": {
+        "lat": 45.481788,
+        "lng": 9.184079
+      },
+      "costCurrency": "EUR",
+      "costMax": 55,
+      "costMin": 35,
+      "officialUrl": "https://www.anticatrattoriadellapesa.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2947888053"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-da-giacomo": {
+      "closedDays": [],
+      "coords": {
+        "lat": 45.439601,
+        "lng": 9.223839
+      },
+      "costCurrency": "EUR",
+      "costMax": 80,
+      "costMin": 50,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "17:30",
+          "close": "25:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/13547154401"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-mercato-centrale-milano": {
+      "closedDays": [],
+      "coords": {
+        "lat": 45.48729,
+        "lng": 9.204061
+      },
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 12,
+      "officialUrl": "https://www.mercatocentrale.it/milano/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/9054003062"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-osteria-del-treno": {
+      "closedDays": [],
+      "coords": {
+        "lat": 45.481204,
+        "lng": 9.201219
+      },
+      "costCurrency": "EUR",
+      "costMax": 40,
+      "costMin": 25,
+      "officialUrl": "https://www.osteriadeltreno.it/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "12:30",
+          "close": "14:30"
+        },
+        {
+          "days": "Mo-Fr",
+          "open": "20:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "20:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3848624522"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-panzerotti-luini": {
+      "costCurrency": "EUR",
+      "costMax": 5,
+      "costMin": 3
+    },
+    "r-peck-italian-bar": {
+      "costCurrency": "EUR",
+      "costMax": 40,
+      "costMin": 20
+    },
+    "r-ratana": {
+      "coords": {
+        "lat": 45.485353,
+        "lng": 9.192909
+      },
+      "costCurrency": "EUR",
+      "costMax": 65,
+      "costMin": 45,
+      "officialUrl": "https://www.ratana.it/",
+      "sources": [
+        "https://www.openstreetmap.org/node/12335443659"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-ristorante-cracco": {
+      "costCurrency": "EUR",
+      "costMax": 180,
+      "costMin": 100
+    },
+    "r-savini": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 45.465691,
+        "lng": 9.190465
+      },
+      "costCurrency": "EUR",
+      "costMax": 120,
+      "costMin": 70,
+      "officialUrl": "https://savinimilano.it/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "12:00",
+          "close": "14:30"
+        },
+        {
+          "days": "Mo-Fr",
+          "open": "19:00",
+          "close": "22:30"
+        },
+        {
+          "days": "Sa",
+          "open": "19:00",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/13001760977",
+        "https://www.wikidata.org/wiki/Q29917621"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-spontini": {
+      "closedDays": [],
+      "coords": {
+        "lat": 45.483847,
+        "lng": 9.203753
+      },
+      "costCurrency": "EUR",
+      "costMax": 6,
+      "costMin": 4,
+      "officialUrl": "https://spontinimilano.com/pizzerie/MILANO-DUCA-D-AOSTA/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3848621997"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-trattoria-milanese": {
+      "coords": {
+        "lat": 45.46293,
+        "lng": 9.183676
+      },
+      "costCurrency": "EUR",
+      "costMax": 45,
+      "costMin": 30,
+      "sources": [
+        "https://www.openstreetmap.org/node/2476717585"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-trippa": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 45.452202,
+        "lng": 9.205517
+      },
+      "costCurrency": "EUR",
+      "costMax": 65,
+      "costMin": 45,
+      "officialUrl": "https://www.trippamilano.it/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "19:15",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4408019792"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-un-posto-a-milano": {
+      "coords": {
+        "lat": 45.451145,
+        "lng": 9.211678
+      },
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20,
+      "sources": [
+        "https://www.openstreetmap.org/node/10204129618"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-corso-buenos-aires": {
+      "coords": {
+        "lat": 45.482777,
+        "lng": 9.21335
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1221116379"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-galleria-vittorio-emanuele-ii": {
+      "coords": {
+        "lat": 45.465642,
+        "lng": 9.190006
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/166623705",
+        "https://www.wikidata.org/wiki/Q51112"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-quadrilatero-della-moda": {
+      "coords": {
+        "lat": 45.477595,
+        "lng": 9.184648
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/2838508879"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "sempione-park": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "sforza-castle": {
+      "coords": {
+        "lat": 45.470301,
+        "lng": 9.178091
+      },
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 5,
+      "officialUrl": "https://www.milanocastello.it/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/1918",
+        "https://www.wikidata.org/wiki/Q23354"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-bergamo": {
+      "coords": {
+        "lat": 45.756656,
+        "lng": 9.754219
+      },
+      "officialUrl": "http://www.provincia.bergamo.it/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/44996",
+        "https://www.wikidata.org/wiki/Q16137"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-lake-como": {
+      "coords": {
+        "lat": 45.991759,
+        "lng": 9.264881
+      },
+      "officialUrl": "https://www.lakecomo.is/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/541757",
+        "https://www.wikidata.org/wiki/Q15523"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-lake-maggiore-and-the-borromean-islands": {
+      "coords": {
+        "lat": 46.098056,
+        "lng": 8.714722
+      },
+      "sources": [
+        "https://www.wikidata.org/wiki/Q14379"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "teatro-alla-scala": {
+      "coords": {
+        "lat": 45.467604,
+        "lng": 9.189114
+      },
+      "costCurrency": "EUR",
+      "costMax": 12,
+      "costMin": 12,
+      "officialUrl": "https://www.teatroallascala.org/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/6552704",
+        "https://www.wikidata.org/wiki/Q5471"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "the-last-supper-cenacolo-vinciano": {
+      "coords": {
+        "lat": 45.466472,
+        "lng": 9.170873
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 15,
+      "officialUrl": "https://cenacolovinciano.org/",
+      "sources": [
+        "https://www.openstreetmap.org/node/304775593",
+        "https://www.wikidata.org/wiki/Q128910"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-aperitivo-in-navigli": {
+      "costCurrency": "EUR",
+      "costMax": 18,
+      "costMin": 10
+    },
+    "x-duomo-rooftop-walk": {
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 15
+    },
+    "x-fashion-walk-in-the-quadrilatero": {
+      "costCurrency": "EUR",
+      "costMax": 60,
+      "costMin": 0
+    },
+    "x-la-scala-opera-night": {
+      "costCurrency": "EUR",
+      "costMax": 250,
+      "costMin": 30
+    },
+    "x-last-supper-guided-visit": {
+      "costCurrency": "EUR",
+      "costMax": 45,
+      "costMin": 25
+    }
+  },
+  "neighborhoods": {
+    "brera": {
+      "coords": {
+        "lat": 45.471519,
+        "lng": 9.187735
+      },
+      "radiusKm": 1.19
+    },
+    "castello-and-sempione": {
+      "coords": {
+        "lat": 45.470301,
+        "lng": 9.178091
+      },
+      "radiusKm": 0.8
+    },
+    "duomo-and-centro": {
+      "coords": {
+        "lat": 45.465053,
+        "lng": 9.188404
+      },
+      "radiusKm": 0.8
+    },
+    "navigli": {
+      "coords": {
+        "lat": 45.450176,
+        "lng": 9.170897
+      },
+      "radiusKm": 1.24
+    },
+    "porta-nuova-and-isola": {
+      "coords": {
+        "lat": 45.479048,
+        "lng": 9.184956
+      },
+      "radiusKm": 0.8
+    },
+    "porta-romana-and-porta-venezia": {
+      "coords": {
+        "lat": 45.448673,
+        "lng": 9.200523
+      },
+      "radiusKm": 0.8
+    },
+    "quadrilatero-della-moda": {
+      "coords": {
+        "lat": 45.477595,
+        "lng": 9.184648
+      },
+      "radiusKm": 0.4
+    },
+    "sant-ambrogio": {
+      "coords": {
+        "lat": 45.462566,
+        "lng": 9.172918
+      },
+      "radiusKm": 0.68
+    }
+  }
+}

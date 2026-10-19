@@ -1,0 +1,804 @@
+{
+  "bbox": [
+    45.1372,
+    11.9071,
+    45.7372,
+    12.7621
+  ],
+  "places": {
+    "basilica-dei-frari": {
+      "closedDays": [],
+      "coords": {
+        "lat": 45.436872,
+        "lng": 12.326225
+      },
+      "costCurrency": "EUR",
+      "costMax": 8,
+      "costMin": 5,
+      "officialUrl": "https://www.basilicadeifrari.it/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Su",
+          "open": "13:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/138841819",
+        "https://www.wikidata.org/wiki/Q224961"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-caffe-del-doge": {
+      "closedDays": [],
+      "coords": {
+        "lat": 45.438304,
+        "lng": 12.334228
+      },
+      "officialUrl": "https://www.caffedeldoge.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5149222821"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-caffe-florian": {
+      "closedDays": [],
+      "coords": {
+        "lat": 45.433601,
+        "lng": 12.338283
+      },
+      "officialUrl": "https://www.caffeflorian.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/12453807859",
+        "https://www.wikidata.org/wiki/Q960610"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-pasticceria-rizzardini": {
+      "closedDays": [
+        2
+      ],
+      "coords": {
+        "lat": 45.437284,
+        "lng": 12.331195
+      },
+      "openingHours": [
+        {
+          "days": "Mo,We-Su",
+          "open": "07:00",
+          "close": "19:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4237129795"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-pasticceria-tonolo": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 45.435921,
+        "lng": 12.325179
+      },
+      "officialUrl": "https://www.pasticceria-tonolo-venezia.business.site/",
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "07:30",
+          "close": "19:00"
+        },
+        {
+          "days": "Su",
+          "open": "07:30",
+          "close": "13:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2165495951"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-torrefazione-cannaregio": {
+      "coords": {
+        "lat": 45.503776,
+        "lng": 12.339845
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4968963069"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "doge-s-palace": {
+      "coords": {
+        "lat": 45.434211,
+        "lng": 12.340592
+      },
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 30,
+      "officialUrl": "http://palazzoducale.visitmuve.it/",
+      "sources": [
+        "https://www.openstreetmap.org/way/138803915",
+        "https://www.wikidata.org/wiki/Q189883"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "gallerie-dell-accademia": {
+      "closedDays": [],
+      "coords": {
+        "lat": 45.431366,
+        "lng": 12.328092
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 15,
+      "officialUrl": "https://www.gallerieaccademia.it/en",
+      "openingHours": [
+        {
+          "days": "Tu-Su",
+          "open": "08:15",
+          "close": "19:15"
+        },
+        {
+          "days": "Mo",
+          "open": "08:15",
+          "close": "14:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/895805118",
+        "https://www.wikidata.org/wiki/Q338330"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "grand-canal": {
+      "coords": {
+        "lat": 45.437773,
+        "lng": 12.33559
+      },
+      "costCurrency": "EUR",
+      "costMax": 9.5,
+      "costMin": 9.5,
+      "sources": [
+        "https://www.openstreetmap.org/way/398987317",
+        "https://www.wikidata.org/wiki/Q309243"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "jewish-ghetto": {
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 0
+    },
+    "libreria-acqua-alta": {
+      "closedDays": [],
+      "coords": {
+        "lat": 45.438056,
+        "lng": 12.342269
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.libreriacqualta.it/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "19:10"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/676820117"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-harry-s-bar": {
+      "coords": {
+        "lat": 45.432405,
+        "lng": 12.337259
+      },
+      "officialUrl": "http://www.harrysbarvenezia.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2249980982",
+        "https://www.wikidata.org/wiki/Q1586965"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-paradiso-perduto": {
+      "coords": {
+        "lat": 45.444588,
+        "lng": 12.332064
+      },
+      "officialUrl": "https://ilparadisoperduto.wordpress.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4370761851"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-skyline-rooftop-bar": {
+      "coords": {
+        "lat": 45.427111,
+        "lng": 12.319648
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/7777660885"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-teatro-la-fenice": {
+      "coords": {
+        "lat": 45.43371,
+        "lng": 12.333857
+      },
+      "officialUrl": "https://www.teatrolafenice.it/",
+      "sources": [
+        "https://www.openstreetmap.org/node/251501878",
+        "https://www.wikidata.org/wiki/Q223942"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-venice-jazz-club": {
+      "coords": {
+        "lat": 45.433196,
+        "lng": 12.323733
+      },
+      "officialUrl": "https://www.venicejazzclub.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2250044078"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "peggy-guggenheim-collection": {
+      "coords": {
+        "lat": 45.430802,
+        "lng": 12.331541
+      },
+      "costCurrency": "EUR",
+      "costMax": 18,
+      "costMin": 16,
+      "officialUrl": "https://www.guggenheim-venice.it/",
+      "sources": [
+        "https://www.openstreetmap.org/node/5366368715",
+        "https://www.wikidata.org/wiki/Q1049033"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "piazza-san-marco-and-the-campanile": {
+      "coords": {
+        "lat": 45.434,
+        "lng": 12.338
+      },
+      "costCurrency": "EUR",
+      "costMax": 12,
+      "costMin": 10,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q217527"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-al-timon": {
+      "coords": {
+        "lat": 45.436835,
+        "lng": 12.325151
+      },
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 15,
+      "sources": [
+        "https://www.openstreetmap.org/node/12895725647"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-all-arco": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 45.438869,
+        "lng": 12.334052
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 10,
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "10:00",
+          "close": "14:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/12475214426"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-alla-vedova": {
+      "coords": {
+        "lat": 45.441372,
+        "lng": 12.334552
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 10,
+      "sources": [
+        "https://www.openstreetmap.org/node/4195423990"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-anice-stellato": {
+      "closedDays": [
+        1,
+        2
+      ],
+      "coords": {
+        "lat": 45.446363,
+        "lng": 12.328654
+      },
+      "costCurrency": "EUR",
+      "costMax": 45,
+      "costMin": 30,
+      "officialUrl": "https://www.osterianicestellato.com/",
+      "openingHours": [
+        {
+          "days": "We-Su",
+          "open": "10:30",
+          "close": "15:00"
+        },
+        {
+          "days": "We-Su",
+          "open": "18:30",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1403411864"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-antiche-carampane": {
+      "closedDays": [
+        0,
+        1
+      ],
+      "coords": {
+        "lat": 45.438671,
+        "lng": 12.331115
+      },
+      "costCurrency": "EUR",
+      "costMax": 70,
+      "costMin": 45,
+      "officialUrl": "https://www.antichecarampane.com/en/storia",
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "12:30",
+          "close": "14:30"
+        },
+        {
+          "days": "Tu-Sa",
+          "open": "19:30",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/228612578"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-cantina-do-mori": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 45.438956,
+        "lng": 12.333963
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 10,
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:00",
+          "close": "19:30"
+        },
+        {
+          "days": "Sa",
+          "open": "08:00",
+          "close": "15:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4492301499"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-dal-moro-s-fresh-pasta-to-go": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 45.436193,
+        "lng": 12.339795
+      },
+      "costCurrency": "EUR",
+      "costMax": 9,
+      "costMin": 6,
+      "officialUrl": "http://dalmorosfreshpastatogo.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "12:00",
+          "close": "20:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2400564302"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-la-zucca": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 45.44083,
+        "lng": 12.328518
+      },
+      "costCurrency": "EUR",
+      "costMax": 45,
+      "costMin": 30,
+      "officialUrl": "https://www.lazucca.it/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "12:30",
+          "close": "14:30"
+        },
+        {
+          "days": "Mo-Sa",
+          "open": "19:00",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/443122712"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-osteria-ai-promessi-sposi": {
+      "coords": {
+        "lat": 45.440746,
+        "lng": 12.335956
+      },
+      "costCurrency": "EUR",
+      "costMax": 45,
+      "costMin": 30,
+      "sources": [
+        "https://www.openstreetmap.org/node/4195426490"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-osteria-alle-testiere": {
+      "closedDays": [
+        0,
+        1
+      ],
+      "coords": {
+        "lat": 45.437119,
+        "lng": 12.340328
+      },
+      "costCurrency": "EUR",
+      "costMax": 80,
+      "costMin": 50,
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "12:00",
+          "close": "15:00"
+        },
+        {
+          "days": "Tu-Sa",
+          "open": "19:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4125458389"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-ristorante-quadri": {
+      "closedDays": [],
+      "coords": {
+        "lat": 45.434376,
+        "lng": 12.338052
+      },
+      "costCurrency": "EUR",
+      "costMax": 250,
+      "costMin": 150,
+      "officialUrl": "https://alajmo.it/pages/homepage-ristorante-quadri",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "19:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/12453807858",
+        "https://www.wikidata.org/wiki/Q2932926"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-trattoria-alla-madonna": {
+      "closedDays": [
+        3
+      ],
+      "coords": {
+        "lat": 45.438222,
+        "lng": 12.334551
+      },
+      "costCurrency": "EUR",
+      "costMax": 50,
+      "costMin": 30,
+      "officialUrl": "https://www.ristoranteallamadonna.com/",
+      "openingHours": [
+        {
+          "days": "Mo,Tu,Th-Su",
+          "open": "12:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2248601628"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "rialto-bridge": {
+      "coords": {
+        "lat": 45.438069,
+        "lng": 12.335655
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/527586724"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "rialto-market": {
+      "coords": {
+        "lat": 45.439637,
+        "lng": 12.334522
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/233887039",
+        "https://www.wikidata.org/wiki/Q1921148"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-paolo-olbi": {
+      "closedDays": [],
+      "coords": {
+        "lat": 45.434646,
+        "lng": 12.325862
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "15:30",
+          "close": "19:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/9441778204"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-venini": {
+      "coords": {
+        "lat": 45.452732,
+        "lng": 12.350834
+      },
+      "officialUrl": "https://www.venini.com/eu/en/",
+      "sources": [
+        "https://www.openstreetmap.org/node/9067808399"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "san-giorgio-maggiore-bell-tower": {
+      "costCurrency": "EUR",
+      "costMax": 8,
+      "costMin": 6
+    },
+    "santa-maria-della-salute": {
+      "coords": {
+        "lat": 45.430573,
+        "lng": 12.334732
+      },
+      "costCurrency": "EUR",
+      "costMax": 5,
+      "costMin": 0,
+      "officialUrl": "https://basilicasalutevenezia.it/",
+      "sources": [
+        "https://www.openstreetmap.org/way/138801509",
+        "https://www.wikidata.org/wiki/Q52531"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "scuola-grande-di-san-rocco": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 45.436542,
+        "lng": 12.325268
+      },
+      "costCurrency": "EUR",
+      "costMax": 12,
+      "costMin": 10,
+      "officialUrl": "http://www.scuolagrandesanrocco.it/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:30",
+          "close": "17:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/138843143",
+        "https://www.wikidata.org/wiki/Q1270723"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "st-mark-s-basilica": {
+      "coords": {
+        "lat": 45.434548,
+        "lng": 12.339822
+      },
+      "costCurrency": "EUR",
+      "costMax": 7,
+      "costMin": 0,
+      "officialUrl": "https://www.basilicasanmarco.it/",
+      "sources": [
+        "https://www.openstreetmap.org/way/138800932",
+        "https://www.wikidata.org/wiki/Q172988"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-padua": {
+      "coords": {
+        "lat": 45.398443,
+        "lng": 11.895683
+      },
+      "officialUrl": "https://www.comune.padova.it/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/44836",
+        "https://www.wikidata.org/wiki/Q617"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-verona": {
+      "coords": {
+        "lat": 45.442498,
+        "lng": 10.985738
+      },
+      "officialUrl": "https://web.provincia.vr.it/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/44107",
+        "https://www.wikidata.org/wiki/Q16314"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-cicchetti-and-wine-tour": {
+      "costCurrency": "EUR",
+      "costMax": 90,
+      "costMin": 60
+    },
+    "x-doge-s-palace-secret-itineraries-tour": {
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 30
+    },
+    "x-gondola-ride": {
+      "coords": {
+        "lat": 45.437203,
+        "lng": 12.337564
+      },
+      "costCurrency": "EUR",
+      "costMax": 110,
+      "costMin": 90,
+      "sources": [
+        "https://www.openstreetmap.org/node/11951742170"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-murano-glassblowing-demonstration": {
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 0
+    },
+    "x-vaporetto-along-the-grand-canal": {
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 9.5
+    }
+  },
+  "neighborhoods": {
+    "cannaregio": {
+      "coords": {
+        "lat": 45.443826,
+        "lng": 12.327037
+      },
+      "radiusKm": 1.28
+    },
+    "castello": {
+      "coords": {
+        "lat": 45.434701,
+        "lng": 12.350913
+      },
+      "radiusKm": 1.29
+    },
+    "dorsoduro": {
+      "coords": {
+        "lat": 45.433132,
+        "lng": 12.319034
+      },
+      "radiusKm": 1.2
+    },
+    "giudecca": {
+      "coords": {
+        "lat": 45.426082,
+        "lng": 12.318262
+      },
+      "radiusKm": 1.38
+    },
+    "lido": {
+      "coords": {
+        "lat": 45.416459,
+        "lng": 12.370612
+      },
+      "radiusKm": 3
+    },
+    "san-marco": {
+      "coords": {
+        "lat": 45.434829,
+        "lng": 12.334025
+      },
+      "radiusKm": 0.68
+    },
+    "san-polo-and-santa-croce": {
+      "coords": {
+        "lat": 45.438204,
+        "lng": 12.332424
+      },
+      "radiusKm": 0.8
+    }
+  }
+}

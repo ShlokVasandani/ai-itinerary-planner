@@ -1,0 +1,690 @@
+{
+  "bbox": [
+    20.7283,
+    105.5326,
+    21.3283,
+    106.1754
+  ],
+  "places": {
+    "c-cafe-dinh": {},
+    "c-cafe-giang": {
+      "coords": {
+        "lat": 21.033606,
+        "lng": 105.854622
+      },
+      "officialUrl": "https://www.giangcafehanoi.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4311854914"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-pho-co": {
+      "coords": {
+        "lat": 21.032236,
+        "lng": 105.851068
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5004266348"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cong-caphe": {
+      "coords": {
+        "lat": 21.021402,
+        "lng": 105.857147
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/7099271385"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-hanoi-social-club": {
+      "closedDays": [],
+      "coords": {
+        "lat": 21.029152,
+        "lng": 105.846191
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3678370944"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-the-note-coffee": {
+      "coords": {
+        "lat": 21.031621,
+        "lng": 105.850845
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4486254298"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "dong-xuan-market": {
+      "closedDays": [],
+      "coords": {
+        "lat": 21.038256,
+        "lng": 105.849671
+      },
+      "costCurrency": "VND",
+      "costMax": 0,
+      "costMin": 0,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "06:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1212230635",
+        "https://www.wikidata.org/wiki/Q1094375"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "hanoi-opera-house": {
+      "coords": {
+        "lat": 21.024202,
+        "lng": 105.857834
+      },
+      "costCurrency": "VND",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://hanoioperahouse.org.vn/",
+      "sources": [
+        "https://www.openstreetmap.org/way/37933050",
+        "https://www.wikidata.org/wiki/Q1186043"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "hanoi-train-street": {
+      "coords": {
+        "lat": 21.029582,
+        "lng": 105.843321
+      },
+      "costCurrency": "VND",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/1247135450",
+        "https://www.wikidata.org/wiki/Q85788921"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "ho-chi-minh-mausoleum-complex": {
+      "costCurrency": "VND",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "hoa-lo-prison": {
+      "closedDays": [],
+      "coords": {
+        "lat": 21.025422,
+        "lng": 105.846509
+      },
+      "costCurrency": "VND",
+      "costMax": 100000,
+      "costMin": 100000,
+      "officialUrl": "http://hoalo.vn/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/340128580",
+        "https://www.wikidata.org/wiki/Q1359941"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "hoan-kiem-lake-and-ngoc-son-temple": {
+      "coords": {
+        "lat": 21.028889,
+        "lng": 105.8525
+      },
+      "costCurrency": "VND",
+      "costMax": 30000,
+      "costMin": 30000,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1151254"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "imperial-citadel-of-thang-long": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 21.036262,
+        "lng": 105.840283
+      },
+      "costCurrency": "VND",
+      "costMax": 30000,
+      "costMin": 30000,
+      "openingHours": [
+        {
+          "days": "Tu-Su",
+          "open": "08:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/21425205",
+        "https://www.wikidata.org/wiki/Q206219"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "long-bien-bridge": {
+      "coords": {
+        "lat": 21.043065,
+        "lng": 105.858033
+      },
+      "costCurrency": "VND",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/163049860",
+        "https://www.wikidata.org/wiki/Q2670019"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-hanoi-rock-city": {
+      "coords": {
+        "lat": 21.069763,
+        "lng": 105.823556
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/6103464733"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-polite-and-co": {
+      "closedDays": [],
+      "coords": {
+        "lat": 21.030664,
+        "lng": 105.850388
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6732336485"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-ta-hien-street-beer-street": {
+      "coords": {
+        "lat": 21.035304,
+        "lng": 105.851985
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/765597030"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-top-of-hanoi": {
+      "coords": {
+        "lat": 21.032209,
+        "lng": 105.812702
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/6818210326"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "old-quarter": {
+      "coords": {
+        "lat": 21.035324,
+        "lng": 105.850039
+      },
+      "costCurrency": "VND",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/11090978626"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-banh-mi-25": {
+      "closedDays": [],
+      "coords": {
+        "lat": 21.03608,
+        "lng": 105.848693
+      },
+      "costCurrency": "VND",
+      "costMax": 50000,
+      "costMin": 30000,
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "07:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Su",
+          "open": "07:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3514125539"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-bun-bo-nam-bo": {
+      "coords": {
+        "lat": 21.034212,
+        "lng": 105.847431
+      },
+      "costCurrency": "VND",
+      "costMax": 90000,
+      "costMin": 60000,
+      "sources": [
+        "https://www.openstreetmap.org/node/6427431986"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-bun-cha-huong-lien": {
+      "costCurrency": "VND",
+      "costMax": 150000,
+      "costMin": 80000
+    },
+    "r-cau-go-vietnamese-cuisine": {
+      "costCurrency": "VND",
+      "costMax": 400000,
+      "costMin": 200000
+    },
+    "r-cha-ca-thang-long": {
+      "coords": {
+        "lat": 21.032965,
+        "lng": 105.846123
+      },
+      "costCurrency": "VND",
+      "costMax": 300000,
+      "costMin": 200000,
+      "sources": [
+        "https://www.openstreetmap.org/node/11491405059"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-chim-sao": {
+      "costCurrency": "VND",
+      "costMax": 450000,
+      "costMin": 250
+    },
+    "r-highway4": {
+      "costCurrency": "VND",
+      "costMax": 350000,
+      "costMin": 200000
+    },
+    "r-madame-hien": {
+      "coords": {
+        "lat": 21.030118,
+        "lng": 105.848142
+      },
+      "costCurrency": "VND",
+      "costMax": 1200000,
+      "costMin": 600000,
+      "sources": [
+        "https://www.openstreetmap.org/node/5267763122"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-pho-gia-truyen": {
+      "closedDays": [],
+      "coords": {
+        "lat": 21.033638,
+        "lng": 105.846379
+      },
+      "costCurrency": "VND",
+      "costMax": 90000,
+      "costMin": 60000,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "18:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5116302421"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-pho-thin": {
+      "closedDays": [],
+      "coords": {
+        "lat": 21.017035,
+        "lng": 105.855996
+      },
+      "costCurrency": "VND",
+      "costMax": 90000,
+      "costMin": 60000,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "06:00",
+          "close": "20:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4186819465"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-quan-an-ngon": {
+      "closedDays": [],
+      "coords": {
+        "lat": 21.02626,
+        "lng": 105.843304
+      },
+      "costCurrency": "VND",
+      "costMax": 300000,
+      "costMin": 150000,
+      "officialUrl": "https://ngonhanoi.com.vn/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "06:45",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/721836715"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-xoi-yen": {
+      "closedDays": [],
+      "coords": {
+        "lat": 21.033767,
+        "lng": 105.854536
+      },
+      "costCurrency": "VND",
+      "costMax": 70000,
+      "costMin": 40000,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4210706604"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-craft-link": {
+      "coords": {
+        "lat": 21.027813,
+        "lng": 105.836314
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/944839013"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-dong-xuan-market": {
+      "closedDays": [],
+      "coords": {
+        "lat": 21.038256,
+        "lng": 105.849671
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "06:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1212230635",
+        "https://www.wikidata.org/wiki/Q1094375"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-hang-gai-silk-street": {
+      "coords": {
+        "lat": 21.031766,
+        "lng": 105.849836
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/28102098"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-hanoi-weekend-night-market": {
+      "closedDays": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "coords": {
+        "lat": 21.033508,
+        "lng": 105.850957
+      },
+      "openingHours": [
+        {
+          "days": "Fr-Su",
+          "open": "18:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4489385889"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "st-joseph-s-cathedral": {
+      "coords": {
+        "lat": 21.028648,
+        "lng": 105.848857
+      },
+      "costCurrency": "VND",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/28912942",
+        "https://www.wikidata.org/wiki/Q1923783"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-ha-long-bay-and-lan-ha-bay": {
+      "coords": {
+        "lat": 20.9,
+        "lng": 107.2
+      },
+      "officialUrl": "http://www.halong.org.vn/index.asp?lan=en",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q190128"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-ninh-binh-trang-an-and-tam-coc": {
+      "coords": {
+        "lat": 20.242114,
+        "lng": 105.974621
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/936706346",
+        "https://www.wikidata.org/wiki/Q16877130"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "temple-of-literature": {
+      "coords": {
+        "lat": 21.02879,
+        "lng": 105.835953
+      },
+      "costCurrency": "VND",
+      "costMax": 70000,
+      "costMin": 70000,
+      "sources": [
+        "https://www.openstreetmap.org/relation/21422528",
+        "https://www.wikidata.org/wiki/Q1202019"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "tran-quoc-pagoda": {
+      "coords": {
+        "lat": 21.047884,
+        "lng": 105.836838
+      },
+      "costCurrency": "VND",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/220302249",
+        "https://www.wikidata.org/wiki/Q864770"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "vietnam-museum-of-ethnology": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 21.040077,
+        "lng": 105.79884
+      },
+      "costCurrency": "VND",
+      "costMax": 40000,
+      "costMin": 40000,
+      "officialUrl": "https://www.vme.org.vn/",
+      "openingHours": [
+        {
+          "days": "Tu-Su",
+          "open": "08:30",
+          "close": "17:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/339936730",
+        "https://www.wikidata.org/wiki/Q1048345"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "vietnam-women-s-museum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 21.023351,
+        "lng": 105.851596
+      },
+      "costCurrency": "VND",
+      "costMax": 40000,
+      "costMin": 40000,
+      "officialUrl": "https://www.baotangphunu.org.vn/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/704147278",
+        "https://www.wikidata.org/wiki/Q10743287"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-dawn-at-hoan-kiem-lake": {
+      "costCurrency": "VND",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-ha-long-bay-cruise": {
+      "costCurrency": "VND",
+      "costMax": 5000000,
+      "costMin": 1500000
+    },
+    "x-street-food-tour": {
+      "coords": {
+        "lat": 21.033999,
+        "lng": 105.852133
+      },
+      "costCurrency": "VND",
+      "costMax": 1500000,
+      "costMin": 800000,
+      "officialUrl": "https://www.hanoistreetfoodtour.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4697048190"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-thang-long-water-puppet-show": {
+      "costCurrency": "VND",
+      "costMax": 200000,
+      "costMin": 100000
+    },
+    "x-vietnamese-cooking-class": {
+      "costCurrency": "VND",
+      "costMax": 1200000,
+      "costMin": 700000
+    }
+  },
+  "neighborhoods": {
+    "ba-dinh": {
+      "coords": {
+        "lat": 21.039532,
+        "lng": 105.836423
+      },
+      "radiusKm": 1.74
+    },
+    "french-quarter": {
+      "coords": {
+        "lat": 21.024812,
+        "lng": 105.852171
+      },
+      "radiusKm": 0.8
+    },
+    "hoan-kiem-lake": {
+      "coords": {
+        "lat": 21.028831,
+        "lng": 105.852536
+      },
+      "radiusKm": 0.4
+    },
+    "long-bien-and-the-red-river": {
+      "coords": {
+        "lat": 21.043065,
+        "lng": 105.858033
+      },
+      "radiusKm": 0.8
+    },
+    "old-quarter": {
+      "coords": {
+        "lat": 21.035324,
+        "lng": 105.850039
+      },
+      "radiusKm": 1.52
+    },
+    "van-mieu-and-dong-da": {
+      "coords": {
+        "lat": 21.028301,
+        "lng": 105.836134
+      },
+      "radiusKm": 0.8
+    },
+    "west-lake-tay-ho": {
+      "coords": {
+        "lat": 21.058042,
+        "lng": 105.813965
+      },
+      "radiusKm": 2.35
+    }
+  }
+}

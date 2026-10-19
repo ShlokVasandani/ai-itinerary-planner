@@ -1,0 +1,719 @@
+{
+  "bbox": [
+    19.0208,
+    -99.4694,
+    19.6208,
+    -98.8336
+  ],
+  "places": {
+    "basilica-of-our-lady-of-guadalupe": {
+      "coords": {
+        "lat": 19.484858,
+        "lng": -99.117857
+      },
+      "costCurrency": "MXN",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.virgendeguadalupe.org.mx/",
+      "sources": [
+        "https://www.openstreetmap.org/way/120733641",
+        "https://www.wikidata.org/wiki/Q305419"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-avellaneda": {
+      "closedDays": [],
+      "coords": {
+        "lat": 19.34825,
+        "lng": -99.16069
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4348835091"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafebreria-el-pendulo": {
+      "coords": {
+        "lat": 19.410544,
+        "lng": -99.172978
+      },
+      "officialUrl": "https://www.pendulo.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2111449531"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-churreria-el-moro": {
+      "coords": {
+        "lat": 19.414248,
+        "lng": -99.164591
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/8238150017"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cielito-querido-cafe": {
+      "coords": {
+        "lat": 19.432116,
+        "lng": -99.134726
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/13274716524"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-panaderia-rosetta": {
+      "coords": {
+        "lat": 19.425281,
+        "lng": -99.16072
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4595815090"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-quentin-cafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 19.418498,
+        "lng": -99.157589
+      },
+      "officialUrl": "http://quentin.mx/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6281751989"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "chapultepec-castle": {
+      "coords": {
+        "lat": 19.420463,
+        "lng": -99.182087
+      },
+      "costCurrency": "MXN",
+      "costMax": 100,
+      "costMin": 95,
+      "officialUrl": "https://mnh.inah.gob.mx/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/17314437",
+        "https://www.wikidata.org/wiki/Q1072510"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "coyoacan-historic-centre": {
+      "costCurrency": "MXN",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "diego-rivera-mural-museum": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 19.4362,
+        "lng": -99.146809
+      },
+      "costCurrency": "MXN",
+      "costMax": 60,
+      "costMin": 50,
+      "openingHours": [
+        {
+          "days": "Tu-Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/217480502"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "frida-kahlo-museum-casa-azul": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 19.355141,
+        "lng": -99.162356
+      },
+      "costCurrency": "MXN",
+      "costMax": 320,
+      "costMin": 270,
+      "officialUrl": "http://www.museofridakahlo.org.mx/",
+      "openingHours": [
+        {
+          "days": "Tu,Th-Su",
+          "open": "10:00",
+          "close": "17:45"
+        },
+        {
+          "days": "We",
+          "open": "11:00",
+          "close": "17:45"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/176482295",
+        "https://www.wikidata.org/wiki/Q2663377"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "monument-to-the-revolution": {
+      "coords": {
+        "lat": 19.436179,
+        "lng": -99.154629
+      },
+      "costCurrency": "MXN",
+      "costMax": 130,
+      "costMin": 100,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1389520"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "museo-soumaya": {
+      "coords": {
+        "lat": 19.440782,
+        "lng": -99.204566
+      },
+      "costCurrency": "MXN",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.soumaya.com.mx/",
+      "sources": [
+        "https://www.openstreetmap.org/way/158035385"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-licoreria-limantour": {
+      "coords": {
+        "lat": 19.418131,
+        "lng": -99.159409
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/10685664005"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-mama-rumba": {
+      "coords": {
+        "lat": 19.413837,
+        "lng": -99.164962
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5539206222"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-pulqueria-las-duelistas": {
+      "coords": {
+        "lat": 19.430124,
+        "lng": -99.142752
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5172364521"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-zinco-jazz-club": {
+      "coords": {
+        "lat": 19.433875,
+        "lng": -99.13714
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/8236190017"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "national-museum-of-anthropology": {
+      "coords": {
+        "lat": 19.426111,
+        "lng": -99.186111
+      },
+      "costCurrency": "MXN",
+      "costMax": 100,
+      "costMin": 95,
+      "officialUrl": "https://mna.inah.gob.mx",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q524249"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "palacio-de-bellas-artes": {
+      "coords": {
+        "lat": 19.435501,
+        "lng": -99.141259
+      },
+      "costCurrency": "MXN",
+      "costMax": 100,
+      "costMin": 80,
+      "officialUrl": "https://palacio.inba.gob.mx/",
+      "sources": [
+        "https://www.openstreetmap.org/way/157051087",
+        "https://www.wikidata.org/wiki/Q1139081"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-cafe-de-tacuba": {
+      "closedDays": [],
+      "coords": {
+        "lat": 19.435718,
+        "lng": -99.137608
+      },
+      "costCurrency": "MXN",
+      "costMax": 450,
+      "costMin": 250,
+      "officialUrl": "https://cafedetacuba.mx/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4181864727"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-contramar": {
+      "closedDays": [],
+      "coords": {
+        "lat": 19.419611,
+        "lng": -99.167226
+      },
+      "costCurrency": "MXN",
+      "costMax": 1200,
+      "costMin": 700,
+      "officialUrl": "http://www.contramar.com.mx/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "12:00",
+          "close": "18:30"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "12:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4630628889"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-el-califa-de-leon": {
+      "coords": {
+        "lat": 19.441111,
+        "lng": -99.159167
+      },
+      "costCurrency": "MXN",
+      "costMax": 150,
+      "costMin": 80,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q125972447"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-el-cardenal": {
+      "coords": {
+        "lat": 19.433698,
+        "lng": -99.135268
+      },
+      "costCurrency": "MXN",
+      "costMax": 450,
+      "costMin": 250,
+      "officialUrl": "https://www.restauranteelcardenal.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4594598745"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-el-huequito": {
+      "coords": {
+        "lat": 19.430077,
+        "lng": -99.138745
+      },
+      "costCurrency": "MXN",
+      "costMax": 150,
+      "costMin": 80,
+      "sources": [
+        "https://www.openstreetmap.org/node/4533079389"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-maximo-bistrot": {
+      "coords": {
+        "lat": 19.415335,
+        "lng": -99.161985
+      },
+      "costCurrency": "MXN",
+      "costMax": 1200,
+      "costMin": 700,
+      "sources": [
+        "https://www.openstreetmap.org/node/4419232191"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-mercado-de-coyoacan": {
+      "closedDays": [],
+      "coords": {
+        "lat": 19.352794,
+        "lng": -99.161497
+      },
+      "costCurrency": "MXN",
+      "costMax": 150,
+      "costMin": 80,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/96972452"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-mercado-roma": {
+      "closedDays": [],
+      "coords": {
+        "lat": 19.414124,
+        "lng": -99.164591
+      },
+      "costCurrency": "MXN",
+      "costMax": 400,
+      "costMin": 200,
+      "officialUrl": "https://mr.mercadoroma.com/",
+      "openingHours": [
+        {
+          "days": "Mo,Tu",
+          "open": "12:00",
+          "close": "22:30"
+        },
+        {
+          "days": "We",
+          "open": "10:00",
+          "close": "22:30"
+        },
+        {
+          "days": "Th",
+          "open": "10:00",
+          "close": "12:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "10:00",
+          "close": "25:30"
+        },
+        {
+          "days": "Su",
+          "open": "10:00",
+          "close": "19:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3454364869",
+        "https://www.wikidata.org/wiki/Q17462409"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-pujol": {
+      "coords": {
+        "lat": 19.433633,
+        "lng": -99.18545
+      },
+      "costCurrency": "MXN",
+      "costMax": 4500,
+      "costMin": 3000,
+      "sources": [
+        "https://www.openstreetmap.org/node/4523472689"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-quintonil": {
+      "coords": {
+        "lat": 19.430818,
+        "lng": -99.191834
+      },
+      "costCurrency": "MXN",
+      "costMax": 3500,
+      "costMin": 2500,
+      "sources": [
+        "https://www.openstreetmap.org/node/5431225256"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-rosetta": {
+      "closedDays": [],
+      "coords": {
+        "lat": 19.419974,
+        "lng": -99.16061
+      },
+      "costCurrency": "MXN",
+      "costMax": 1000,
+      "costMin": 600,
+      "openingHours": [
+        {
+          "days": "Mo-We",
+          "open": "07:00",
+          "close": "21:00"
+        },
+        {
+          "days": "Th-Sa",
+          "open": "07:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Su",
+          "open": "07:30",
+          "close": "20:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1421204673"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-tacos-los-cocuyos": {
+      "costCurrency": "MXN",
+      "costMax": 120,
+      "costMin": 60
+    },
+    "s-bazar-del-sabado": {
+      "closedDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "coords": {
+        "lat": 19.345072,
+        "lng": -99.192869
+      },
+      "openingHours": [
+        {
+          "days": "Sa",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/1754696"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-mercado-de-jamaica": {
+      "coords": {
+        "lat": 19.408603,
+        "lng": -99.122704
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1164605686"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-puebla-and-cholula": {
+      "coords": {
+        "lat": 19.003611,
+        "lng": -97.888333
+      },
+      "officialUrl": "http://www.puebla.gob.mx/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q79923"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-teotihuacan": {
+      "coords": {
+        "lat": 19.693357,
+        "lng": -98.883126
+      },
+      "officialUrl": "https://teotihuacan.gob.mx/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/5606467",
+        "https://www.wikidata.org/wiki/Q3844591"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-tepoztlan": {
+      "coords": {
+        "lat": 18.991496,
+        "lng": -99.102545
+      },
+      "sources": [
+        "https://www.openstreetmap.org/relation/5606485",
+        "https://www.wikidata.org/wiki/Q20479308"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "templo-mayor": {
+      "coords": {
+        "lat": 19.435062,
+        "lng": -99.131432
+      },
+      "costCurrency": "MXN",
+      "costMax": 95,
+      "costMin": 95,
+      "officialUrl": "https://www.templomayor.inah.gob.mx/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1423783282",
+        "https://www.wikidata.org/wiki/Q774021"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "teotihuacan": {
+      "coords": {
+        "lat": 19.30325,
+        "lng": -99.167016
+      },
+      "costCurrency": "MXN",
+      "costMax": 100,
+      "costMin": 95,
+      "sources": [
+        "https://www.openstreetmap.org/way/382192064"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "torre-latinoamericana": {
+      "coords": {
+        "lat": 19.433866,
+        "lng": -99.140611
+      },
+      "costCurrency": "MXN",
+      "costMax": 250,
+      "costMin": 200,
+      "sources": [
+        "https://www.openstreetmap.org/way/1095452896"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-lucha-libre-night": {
+      "costCurrency": "MXN",
+      "costMax": 600,
+      "costMin": 250
+    },
+    "x-mexican-cooking-class-with-a-market-visit": {
+      "costCurrency": "MXN",
+      "costMax": 1600,
+      "costMin": 900
+    },
+    "x-mezcal-tasting": {
+      "costCurrency": "MXN",
+      "costMax": 900,
+      "costMin": 400
+    },
+    "x-sunday-cycling-on-reforma": {
+      "costCurrency": "MXN",
+      "costMax": 200,
+      "costMin": 0
+    },
+    "x-teotihuacan-at-opening-time": {
+      "costCurrency": "MXN",
+      "costMax": 100,
+      "costMin": 95
+    },
+    "x-xochimilco-trajinera-ride": {
+      "costCurrency": "MXN",
+      "costMax": 800,
+      "costMin": 600
+    },
+    "xochimilco": {
+      "coords": {
+        "lat": 19.263361,
+        "lng": -99.104738
+      },
+      "costCurrency": "MXN",
+      "costMax": 800,
+      "costMin": 600,
+      "officialUrl": "http://www.xochimilco.cdmx.gob.mx/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/5606640",
+        "https://www.wikidata.org/wiki/Q643026"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "zocalo-and-the-metropolitan-cathedral": {
+      "coords": {
+        "lat": 19.432778,
+        "lng": -99.133333
+      },
+      "costCurrency": "MXN",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1348507"
+      ],
+      "verifiedAt": "2026-10-19"
+    }
+  },
+  "neighborhoods": {
+    "centro-historico": {
+      "coords": {
+        "lat": 19.432994,
+        "lng": -99.131924
+      },
+      "radiusKm": 2.86
+    },
+    "chapultepec": {
+      "coords": {
+        "lat": 19.420702,
+        "lng": -99.176838
+      },
+      "radiusKm": 0.76
+    },
+    "condesa": {
+      "coords": {
+        "lat": 19.414864,
+        "lng": -99.176429
+      },
+      "radiusKm": 0.85
+    },
+    "coyoacan": {
+      "coords": {
+        "lat": 19.349861,
+        "lng": -99.161975
+      },
+      "radiusKm": 3
+    },
+    "polanco": {
+      "coords": {
+        "lat": 19.43353,
+        "lng": -99.190915
+      },
+      "radiusKm": 0.76
+    },
+    "roma-norte-and-roma-sur": {
+      "coords": {
+        "lat": 19.417259,
+        "lng": -99.163341
+      },
+      "radiusKm": 0.8
+    },
+    "san-angel": {
+      "coords": {
+        "lat": 19.344645,
+        "lng": -99.19241
+      },
+      "radiusKm": 3
+    }
+  }
+}

@@ -31,8 +31,8 @@ const nextDate = (iso: string, n: number) => {
 };
 
 describe("data catalog", () => {
-  it("has 20 destinations with the new meta", () => {
-    expect(destinations).toHaveLength(20);
+  it("has 50 destinations with the new meta", () => {
+    expect(destinations).toHaveLength(50);
     for (const d of destinations) {
       expect(d.currency).toMatch(/^[A-Z]{3}$/);
       expect(d.seasons).toHaveLength(12);

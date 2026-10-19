@@ -1,0 +1,921 @@
+{
+  "bbox": [
+    50.5467,
+    3.8774,
+    51.1467,
+    4.8276
+  ],
+  "places": {
+    "atomium": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.894921,
+        "lng": 4.341377
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 16,
+      "officialUrl": "https://www.atomium.be/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/19189218",
+        "https://www.wikidata.org/wiki/Q180901"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "belgian-comic-strip-center": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 50.851249,
+        "lng": 4.360178
+      },
+      "costCurrency": "EUR",
+      "costMax": 14,
+      "costMin": 14,
+      "officialUrl": "https://www.comicscenter.net/",
+      "openingHours": [
+        {
+          "days": "Tu-Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/87493075",
+        "https://www.wikidata.org/wiki/Q815542"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-capitale": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.846496,
+        "lng": 4.349835
+      },
+      "officialUrl": "https://www.blackpotioncoffee.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "08:30",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1037462990"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-frederic-blondeel": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.859835,
+        "lng": 4.329613
+      },
+      "officialUrl": "https://www.frederic-blondeel.be/",
+      "openingHours": [
+        {
+          "days": "Mo,Su",
+          "open": "12:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Tu-Sa",
+          "open": "09:30",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/8638051389"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-le-pain-quotidien": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.840066,
+        "lng": 4.355401
+      },
+      "officialUrl": "https://www.lepainquotidien.com/be/en/locations/Sablon/Rue-des-Sablons-11",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "07:30",
+          "close": "18:00"
+        },
+        {
+          "days": "Su",
+          "open": "08:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3682490784"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-maison-dandoy": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.846129,
+        "lng": 4.351983
+      },
+      "officialUrl": "https://maisondandoy.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/508833362"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-mary": {
+      "coords": {
+        "lat": 50.846666,
+        "lng": 4.353209
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4413803707"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-mokafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.848039,
+        "lng": 4.355313
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "07:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Su",
+          "open": "07:30",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/708490601",
+        "https://www.wikidata.org/wiki/Q130753115"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "cathedral-of-st-michael-and-st-gudula": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.847843,
+        "lng": 4.360061
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.cathedralisbruxellensis.be/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:30",
+          "close": "18:00"
+        },
+        {
+          "days": "Sa",
+          "open": "07:30",
+          "close": "15:30"
+        },
+        {
+          "days": "Su",
+          "open": "14:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/13431536",
+        "https://www.wikidata.org/wiki/Q269654"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "comic-strip-walk": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "grand-place": {
+      "coords": {
+        "lat": 50.846729,
+        "lng": 4.352408
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/991425177",
+        "https://www.wikidata.org/wiki/Q215429"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "horta-museum": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 50.824099,
+        "lng": 4.35538
+      },
+      "costCurrency": "EUR",
+      "costMax": 12,
+      "costMin": 12,
+      "officialUrl": "https://www.hortamuseum.be/",
+      "openingHours": [
+        {
+          "days": "Tu-Fr",
+          "open": "14:00",
+          "close": "17:30"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "11:00",
+          "close": "17:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/893622441",
+        "https://www.wikidata.org/wiki/Q1995367"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "manneken-pis": {
+      "coords": {
+        "lat": 50.844986,
+        "lng": 4.349993
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/240866019",
+        "https://www.wikidata.org/wiki/Q152072"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "mini-europe": {
+      "coords": {
+        "lat": 50.894164,
+        "lng": 4.338744
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 18,
+      "officialUrl": "https://www.minieurope.be/",
+      "sources": [
+        "https://www.openstreetmap.org/way/208501459",
+        "https://www.wikidata.org/wiki/Q1067006"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "museum-of-musical-instruments-mim": {
+      "coords": {
+        "lat": 50.842836,
+        "lng": 4.359096
+      },
+      "costCurrency": "EUR",
+      "costMax": 12,
+      "costMin": 10,
+      "officialUrl": "https://www.mim.be/",
+      "sources": [
+        "https://www.openstreetmap.org/way/31500439",
+        "https://www.wikidata.org/wiki/Q1131318"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-a-la-mort-subite": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.848624,
+        "lng": 4.356268
+      },
+      "officialUrl": "https://www.alamortsubite.com/en",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "11:00",
+          "close": "25:00"
+        },
+        {
+          "days": "Su",
+          "open": "12:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4480414658",
+        "https://www.wikidata.org/wiki/Q27643042"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-cafe-central": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.847707,
+        "lng": 4.347771
+      },
+      "officialUrl": "https://www.lecafecentral.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "02:00"
+        },
+        {
+          "days": "Mo-Su",
+          "open": "16:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/11390036402"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-delirium-cafe": {
+      "coords": {
+        "lat": 50.848445,
+        "lng": 4.353832
+      },
+      "officialUrl": "https://www.deliriumvillage.com/bar/delirium-cafe/",
+      "sources": [
+        "https://www.openstreetmap.org/way/306856244",
+        "https://www.wikidata.org/wiki/Q3467613"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-fuse": {
+      "coords": {
+        "lat": 50.835359,
+        "lng": 4.344763
+      },
+      "officialUrl": "https://fuse.be/",
+      "sources": [
+        "https://www.openstreetmap.org/node/12140099647",
+        "https://www.wikidata.org/wiki/Q3091103"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-moeder-lambic": {
+      "coords": {
+        "lat": 50.823896,
+        "lng": 4.344813
+      },
+      "officialUrl": "https://www.moederlambic.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/12628699504"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "palace-of-justice-and-place-poelaert": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "parc-du-cinquantenaire": {
+      "coords": {
+        "lat": 50.841037,
+        "lng": 4.393492
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://cinquantenaire.brussels/en/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/555230",
+        "https://www.wikidata.org/wiki/Q1101790"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "place-du-grand-sablon": {
+      "coords": {
+        "lat": 50.841179,
+        "lng": 4.354864
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/41698337"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-bia-mara": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.848656,
+        "lng": 4.350779
+      },
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 10,
+      "officialUrl": "https://www.biamara.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "12:00",
+          "close": "14:00"
+        },
+        {
+          "days": "Mo-Th",
+          "open": "18:00",
+          "close": "21:30"
+        },
+        {
+          "days": "Fr",
+          "open": "12:00",
+          "close": "14:00"
+        },
+        {
+          "days": "Fr",
+          "open": "18:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Sa",
+          "open": "12:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Su",
+          "open": "12:00",
+          "close": "15:00"
+        },
+        {
+          "days": "Su",
+          "open": "18:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3505027549"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-chez-leon": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.848158,
+        "lng": 4.35402
+      },
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20,
+      "officialUrl": "https://chezleon.be/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "12:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "12:00",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/10690834768",
+        "https://www.wikidata.org/wiki/Q2963171"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-comme-chez-soi": {
+      "coords": {
+        "lat": 50.842346,
+        "lng": 4.345814
+      },
+      "costCurrency": "EUR",
+      "costMax": 250,
+      "costMin": 150,
+      "officialUrl": "https://www.commechezsoi.be/",
+      "sources": [
+        "https://www.openstreetmap.org/node/12531627112",
+        "https://www.wikidata.org/wiki/Q2560211"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-fin-de-siecle": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.848928,
+        "lng": 4.347105
+      },
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 15,
+      "officialUrl": "https://findesiecle.be/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2522239865"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-fritland": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.84741,
+        "lng": 4.350626
+      },
+      "costCurrency": "EUR",
+      "costMax": 6,
+      "costMin": 4,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/863002072"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-la-roue-d-or": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.845638,
+        "lng": 4.352508
+      },
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:00",
+          "close": "24:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2333276420",
+        "https://www.wikidata.org/wiki/Q126014561"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-le-perroquet": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 50.839521,
+        "lng": 4.353631
+      },
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 15,
+      "openingHours": [
+        {
+          "days": "Tu,We,Su",
+          "open": "12:00",
+          "close": "22:30"
+        },
+        {
+          "days": "Th-Sa",
+          "open": "12:00",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3014396256"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-les-brigittines": {
+      "coords": {
+        "lat": 50.840708,
+        "lng": 4.348884
+      },
+      "costCurrency": "EUR",
+      "costMax": 60,
+      "costMin": 40,
+      "officialUrl": "https://www.brigittines.be/",
+      "sources": [
+        "https://www.openstreetmap.org/way/260917265",
+        "https://www.wikidata.org/wiki/Q108196482"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-maison-antoine": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.836814,
+        "lng": 4.381477
+      },
+      "costCurrency": "EUR",
+      "costMax": 6,
+      "costMin": 4,
+      "officialUrl": "http://www.maisonantoine.be/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "11:30",
+          "close": "25:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "11:30",
+          "close": "26:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/88289893",
+        "https://www.wikidata.org/wiki/Q110551085"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-mokafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.848039,
+        "lng": 4.355313
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 10,
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "07:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Su",
+          "open": "07:30",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/708490601",
+        "https://www.wikidata.org/wiki/Q130753115"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-noordzee-mer-du-nord": {
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 10
+    },
+    "r-nuetnigenough": {
+      "coords": {
+        "lat": 50.845836,
+        "lng": 4.349827
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 20,
+      "officialUrl": "http://www.nuetnigenough.be/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2824297378"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "royal-galleries-of-saint-hubert": {
+      "coords": {
+        "lat": 50.84778,
+        "lng": 4.355
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.grsh.be/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1491935"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "royal-museums-of-fine-arts-and-the-magritte-museum": {
+      "coords": {
+        "lat": 50.84168,
+        "lng": 4.358238
+      },
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 10,
+      "officialUrl": "http://www.fine-arts-museum.be",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q377500"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-marolles-flea-market": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.836986,
+        "lng": 4.345662
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "09:00",
+          "close": "14:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "09:00",
+          "close": "15:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/326040165",
+        "https://www.wikidata.org/wiki/Q108201056"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-royal-galleries-of-saint-hubert": {
+      "coords": {
+        "lat": 50.84778,
+        "lng": 4.355
+      },
+      "officialUrl": "https://www.grsh.be/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1491935"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-sablon-antiques-market": {
+      "closedDays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "coords": {
+        "lat": 50.840528,
+        "lng": 4.355751
+      },
+      "officialUrl": "https://sablonantiquesmarket.be/",
+      "openingHours": [
+        {
+          "days": "Sa",
+          "open": "09:00",
+          "close": "17:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "15:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/12291889903",
+        "https://www.wikidata.org/wiki/Q130702932"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-antwerp": {
+      "coords": {
+        "lat": 51.22111,
+        "lng": 4.399708
+      },
+      "officialUrl": "https://www.antwerpen.be/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/59518",
+        "https://www.wikidata.org/wiki/Q12892"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-bruges": {
+      "coords": {
+        "lat": 51.208553,
+        "lng": 3.226772
+      },
+      "officialUrl": "https://www.brugge.be/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/562654",
+        "https://www.wikidata.org/wiki/Q12994"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-ghent": {
+      "coords": {
+        "lat": 51.053829,
+        "lng": 3.725012
+      },
+      "officialUrl": "https://stad.gent/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/897671",
+        "https://www.wikidata.org/wiki/Q1296"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-belgian-beer-tasting": {
+      "costCurrency": "EUR",
+      "costMax": 60,
+      "costMin": 35
+    },
+    "x-chocolate-workshop": {
+      "costCurrency": "EUR",
+      "costMax": 80,
+      "costMin": 50
+    },
+    "x-comic-strip-walk": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-day-trip-to-bruges": {
+      "costCurrency": "EUR",
+      "costMax": 40,
+      "costMin": 20
+    },
+    "x-grand-place-at-night": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-marolles-flea-market": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    }
+  },
+  "neighborhoods": {
+    "european-quarter": {
+      "coords": {
+        "lat": 50.84235,
+        "lng": 4.383945
+      },
+      "radiusKm": 1.31
+    },
+    "grand-place-and-the-historic-centre": {
+      "coords": {
+        "lat": 50.848345,
+        "lng": 4.351944
+      },
+      "radiusKm": 0.8
+    },
+    "ixelles": {
+      "coords": {
+        "lat": 50.820633,
+        "lng": 4.388055
+      },
+      "radiusKm": 2.96
+    },
+    "laeken-and-heysel": {
+      "coords": {
+        "lat": 50.894543,
+        "lng": 4.34006
+      },
+      "radiusKm": 0.8
+    },
+    "mont-des-arts-and-royal-quarter": {
+      "coords": {
+        "lat": 50.842836,
+        "lng": 4.359096
+      },
+      "radiusKm": 0.8
+    },
+    "sablon-and-marolles": {
+      "coords": {
+        "lat": 50.839587,
+        "lng": 4.350596
+      },
+      "radiusKm": 0.8
+    },
+    "saint-gery-and-dansaert": {
+      "coords": {
+        "lat": 50.846772,
+        "lng": 4.348799
+      },
+      "radiusKm": 0.8
+    },
+    "saint-gilles": {
+      "coords": {
+        "lat": 50.830461,
+        "lng": 4.342249
+      },
+      "radiusKm": 1.58
+    }
+  }
+}

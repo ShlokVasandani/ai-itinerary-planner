@@ -1,0 +1,800 @@
+{
+  "bbox": [
+    40.1168,
+    -4.0975,
+    40.7168,
+    -3.3095
+  ],
+  "places": {
+    "almudena-cathedral": {
+      "coords": {
+        "lat": 40.415556,
+        "lng": -3.714444
+      },
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 1,
+      "officialUrl": "http://www.catedraldelaalmudena.es/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q849711"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-comercial": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.428709,
+        "lng": -3.701972
+      },
+      "officialUrl": "https://cafecomercialmadrid.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "08:30",
+          "close": "25:00"
+        },
+        {
+          "days": "Fr-Su",
+          "open": "08:30",
+          "close": "26:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/26065697",
+        "https://www.wikidata.org/wiki/Q5017237"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-de-oriente": {
+      "coords": {
+        "lat": 40.417675,
+        "lng": -3.711538
+      },
+      "officialUrl": "https://www.cafedeoriente.es/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2697589099",
+        "https://www.wikidata.org/wiki/Q1025684"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-gijon": {
+      "coords": {
+        "lat": 40.422207,
+        "lng": -3.692372
+      },
+      "officialUrl": "https://cafegijon.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/3426617375",
+        "https://www.wikidata.org/wiki/Q1025608"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-chocolateria-san-gines": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.416771,
+        "lng": -3.706803
+      },
+      "officialUrl": "https://chocolateriasangines.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/178821166",
+        "https://www.wikidata.org/wiki/Q5103675"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-federal-cafe": {
+      "coords": {
+        "lat": 40.429628,
+        "lng": -3.701468
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5370215786"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-hanso-cafe": {
+      "coords": {
+        "lat": 40.423588,
+        "lng": -3.702583
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/12902402678"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "el-rastro": {
+      "closedDays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "coords": {
+        "lat": 40.408633,
+        "lng": -3.70733
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "openingHours": [
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "15:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/12953502",
+        "https://www.wikidata.org/wiki/Q2916187"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "gran-via": {
+      "coords": {
+        "lat": 40.42204,
+        "lng": -3.708713
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/104799919",
+        "https://www.wikidata.org/wiki/Q1324163"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "mercado-de-san-miguel": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.415374,
+        "lng": -3.709015
+      },
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 10,
+      "officialUrl": "http://www.mercadodesanmiguel.es/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "10:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "10:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/4518846",
+        "https://www.wikidata.org/wiki/Q6770825"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-cafe-central": {
+      "coords": {
+        "lat": 40.414184,
+        "lng": -3.701874
+      },
+      "officialUrl": "https://www.cafecentralmadrid.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2261299371"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-kapital": {
+      "closedDays": [
+        1,
+        2
+      ],
+      "coords": {
+        "lat": 40.409774,
+        "lng": -3.693224
+      },
+      "officialUrl": "https://teatrokapital.com/",
+      "openingHours": [
+        {
+          "days": "We,Th,Su",
+          "open": "23:00",
+          "close": "29:30"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "23:00",
+          "close": "30:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/167302343"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-museo-chicote": {
+      "coords": {
+        "lat": 40.419676,
+        "lng": -3.698933
+      },
+      "officialUrl": "http://grupomercadodelareina.com/es/museo-chicote/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4736042046"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-plaza-dos-de-mayo": {
+      "coords": {
+        "lat": 40.426968,
+        "lng": -3.704092
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/4110831",
+        "https://www.wikidata.org/wiki/Q1531008"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "plaza-de-cibeles": {
+      "coords": {
+        "lat": 40.41942,
+        "lng": -3.692538
+      },
+      "costCurrency": "EUR",
+      "costMax": 4,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/27396510"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "plaza-mayor": {
+      "coords": {
+        "lat": 40.415395,
+        "lng": -3.706997
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/relation/16657232",
+        "https://www.wikidata.org/wiki/Q1123493"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "prado-museum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.413792,
+        "lng": -3.692041
+      },
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 15,
+      "officialUrl": "https://www.museodelprado.es/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "10:00",
+          "close": "20:00"
+        },
+        {
+          "days": "Su",
+          "open": "10:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/7726080",
+        "https://www.wikidata.org/wiki/Q160112"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "puerta-del-sol": {
+      "coords": {
+        "lat": 40.416863,
+        "lng": -3.703876
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/relation/7424032",
+        "https://www.wikidata.org/wiki/Q427163"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-bar-el-tigre": {
+      "coords": {
+        "lat": 40.420315,
+        "lng": -3.698522
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 10,
+      "sources": [
+        "https://www.openstreetmap.org/node/6804062485"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-bodega-de-la-ardosa": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.423769,
+        "lng": -3.701775
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 10,
+      "officialUrl": "http://www.laardosa.es/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:30",
+          "close": "26:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "11:45",
+          "close": "26:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2585147466",
+        "https://www.wikidata.org/wiki/Q30070624"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-casa-labra": {
+      "coords": {
+        "lat": 40.417156,
+        "lng": -3.704611
+      },
+      "costCurrency": "EUR",
+      "costMax": 12,
+      "costMin": 5,
+      "officialUrl": "http://www.casalabra.es/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4860765421",
+        "https://www.wikidata.org/wiki/Q5754287"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-casa-lucio": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.412092,
+        "lng": -3.709674
+      },
+      "costCurrency": "EUR",
+      "costMax": 60,
+      "costMin": 40,
+      "officialUrl": "http://casalucio.es/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "13:00",
+          "close": "16:00"
+        },
+        {
+          "days": "Mo-Su",
+          "open": "20:30",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4684485889",
+        "https://www.wikidata.org/wiki/Q5754310"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-casa-mingo": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.424971,
+        "lng": -3.725255
+      },
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 15,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/119181119",
+        "https://www.wikidata.org/wiki/Q5754349"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-casa-revuelta": {
+      "coords": {
+        "lat": 40.413922,
+        "lng": -3.707839
+      },
+      "costCurrency": "EUR",
+      "costMax": 12,
+      "costMin": 5,
+      "officialUrl": "https://www.casarevuelta.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/3387603971"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-corral-de-la-moreria": {
+      "coords": {
+        "lat": 40.412742,
+        "lng": -3.714155
+      },
+      "costCurrency": "EUR",
+      "costMax": 200,
+      "costMin": 130,
+      "officialUrl": "https://www.corraldelamoreria.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2697521933"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-diverxo": {
+      "costCurrency": "EUR",
+      "costMin": 300
+    },
+    "r-la-barraca": {
+      "coords": {
+        "lat": 40.419976,
+        "lng": -3.698733
+      },
+      "costCurrency": "EUR",
+      "costMax": 45,
+      "costMin": 30,
+      "officialUrl": "http://www.labarraca.es/",
+      "sources": [
+        "https://www.openstreetmap.org/node/3690989815"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-la-taberna-de-antonio-sanchez": {
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20
+    },
+    "r-mercado-de-san-anton": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.421941,
+        "lng": -3.697583
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 15,
+      "officialUrl": "https://www.mercadosananton.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/161858028",
+        "https://www.wikidata.org/wiki/Q6010567"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-sobrino-de-botin": {
+      "coords": {
+        "lat": 40.414211,
+        "lng": -3.708086
+      },
+      "costCurrency": "EUR",
+      "costMax": 70,
+      "costMin": 45,
+      "officialUrl": "http://www.botin.es",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2263744"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-taberna-la-bola": {
+      "costCurrency": "EUR",
+      "costMax": 45,
+      "costMin": 30
+    },
+    "reina-sofia-museum": {
+      "costCurrency": "EUR",
+      "costMax": 12,
+      "costMin": 12
+    },
+    "retiro-park": {
+      "coords": {
+        "lat": 40.414946,
+        "lng": -3.683285
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.esmadrid.com/informacion-turistica/parque-del-retiro",
+      "sources": [
+        "https://www.openstreetmap.org/relation/13616929",
+        "https://www.wikidata.org/wiki/Q1131807"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "royal-palace-of-madrid": {
+      "coords": {
+        "lat": 40.41674,
+        "lng": -3.713622
+      },
+      "costCurrency": "EUR",
+      "costMax": 14,
+      "costMin": 14,
+      "officialUrl": "https://www.patrimonionacional.es/real-sitio/palacio-real-de-madrid",
+      "sources": [
+        "https://www.openstreetmap.org/node/4451986389",
+        "https://www.wikidata.org/wiki/Q171517"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-calle-serrano": {
+      "coords": {
+        "lat": 40.453839,
+        "lng": -3.679054
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/13029189"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-el-corte-ingles-callao": {
+      "coords": {
+        "lat": 40.419596,
+        "lng": -3.705113
+      },
+      "officialUrl": "https://www.elcorteingles.es/",
+      "sources": [
+        "https://www.openstreetmap.org/way/112316375",
+        "https://www.wikidata.org/wiki/Q62937308"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-el-rastro": {
+      "closedDays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "coords": {
+        "lat": 40.408633,
+        "lng": -3.70733
+      },
+      "openingHours": [
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "15:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/12953502",
+        "https://www.wikidata.org/wiki/Q2916187"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-mercado-de-san-miguel": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.415374,
+        "lng": -3.709015
+      },
+      "officialUrl": "http://www.mercadodesanmiguel.es/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "10:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "10:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/4518846",
+        "https://www.wikidata.org/wiki/Q6770825"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "santiago-bernabeu-stadium": {
+      "coords": {
+        "lat": 40.453044,
+        "lng": -3.688197
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 25,
+      "officialUrl": "https://bernabeu.realmadrid.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1507411898",
+        "https://www.wikidata.org/wiki/Q164027"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-el-escorial": {
+      "coords": {
+        "lat": 40.583641,
+        "lng": -4.128143
+      },
+      "officialUrl": "http://www.elescorial.es/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/340937",
+        "https://www.wikidata.org/wiki/Q985269"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-segovia": {
+      "coords": {
+        "lat": 40.948119,
+        "lng": -4.11721
+      },
+      "officialUrl": "https://www.segovia.es/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/346134",
+        "https://www.wikidata.org/wiki/Q15684"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-toledo": {
+      "coords": {
+        "lat": 39.855891,
+        "lng": -4.024265
+      },
+      "officialUrl": "https://www.toledo.es/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/342999",
+        "https://www.wikidata.org/wiki/Q5836"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "temple-of-debod": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 40.424037,
+        "lng": -3.717725
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=13b432df1d51c010VgnVCM2000000c205a0aRCRD",
+      "sources": [
+        "https://www.openstreetmap.org/relation/6432785",
+        "https://www.wikidata.org/wiki/Q1140249"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "thyssen-bornemisza-museum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.416216,
+        "lng": -3.694932
+      },
+      "costCurrency": "EUR",
+      "costMax": 13,
+      "costMin": 13,
+      "officialUrl": "https://www.museothyssen.org/",
+      "openingHours": [
+        {
+          "days": "Tu-Su",
+          "open": "10:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Mo",
+          "open": "12:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/1869336",
+        "https://www.wikidata.org/wiki/Q176251"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-flamenco-show": {
+      "costCurrency": "EUR",
+      "costMax": 100,
+      "costMin": 40
+    },
+    "x-prado-museum-guided-tour": {
+      "costCurrency": "EUR",
+      "costMax": 70,
+      "costMin": 30
+    },
+    "x-rowing-boat-on-the-retiro-lake": {
+      "costCurrency": "EUR",
+      "costMax": 8,
+      "costMin": 6
+    },
+    "x-sunday-at-el-rastro": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-tapas-crawl-in-la-latina": {
+      "costCurrency": "EUR",
+      "costMax": 40,
+      "costMin": 20
+    }
+  },
+  "neighborhoods": {
+    "chueca": {
+      "coords": {
+        "lat": 40.422742,
+        "lng": -3.699327
+      },
+      "radiusKm": 1.4
+    },
+    "la-latina": {
+      "coords": {
+        "lat": 40.411291,
+        "lng": -3.708309
+      },
+      "radiusKm": 0.7
+    },
+    "las-letras-barrio-de-las-letras": {
+      "coords": {
+        "lat": 40.415269,
+        "lng": -3.700892
+      },
+      "radiusKm": 1.4
+    },
+    "lavapies": {
+      "coords": {
+        "lat": 40.408526,
+        "lng": -3.700929
+      },
+      "radiusKm": 0.4
+    },
+    "malasana": {
+      "coords": {
+        "lat": 40.426708,
+        "lng": -3.704231
+      },
+      "radiusKm": 1.4
+    },
+    "retiro-and-the-art-triangle": {
+      "coords": {
+        "lat": 40.414985,
+        "lng": -3.690086
+      },
+      "radiusKm": 0.8
+    },
+    "salamanca": {
+      "coords": {
+        "lat": 40.427045,
+        "lng": -3.680602
+      },
+      "radiusKm": 2.04
+    },
+    "sol-and-centro": {
+      "coords": {
+        "lat": 40.418299,
+        "lng": -3.706163
+      },
+      "radiusKm": 0.8
+    }
+  }
+}

@@ -1,0 +1,978 @@
+{
+  "bbox": [
+    59.0251,
+    17.483,
+    59.6251,
+    18.6591
+  ],
+  "places": {
+    "abba-the-museum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 59.324925,
+        "lng": 18.096583
+      },
+      "costCurrency": "SEK",
+      "costMax": 300,
+      "costMin": 270,
+      "officialUrl": "https://abbathemuseum.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/33275424",
+        "https://www.wikidata.org/wiki/Q2743819"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-saturnus": {
+      "closedDays": [],
+      "coords": {
+        "lat": 59.339572,
+        "lng": 18.068901
+      },
+      "officialUrl": "https://www.cafesaturnus.se/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "09:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1106123707"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-chokladfabriken": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 59.335739,
+        "lng": 18.067774
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "10:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Sa",
+          "open": "11:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/475902854"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-drop-coffee-roasters": {
+      "closedDays": [],
+      "coords": {
+        "lat": 59.316907,
+        "lng": 18.062814
+      },
+      "officialUrl": "https://www.dropcoffee.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "10:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2698629348"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-fabrique": {
+      "closedDays": [],
+      "coords": {
+        "lat": 59.33426,
+        "lng": 18.033109
+      },
+      "officialUrl": "https://www.fabrique.se/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "08:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/661084628"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-johan-and-nystrom": {
+      "closedDays": [],
+      "coords": {
+        "lat": 59.31631,
+        "lng": 18.064006
+      },
+      "officialUrl": "https://johanochnystrom.se/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Sa",
+          "open": "07:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Su",
+          "open": "08:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/747463330"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-vete-katten": {
+      "closedDays": [],
+      "coords": {
+        "lat": 59.334112,
+        "lng": 18.058346
+      },
+      "officialUrl": "https://vetekatten.se/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:30",
+          "close": "20:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "09:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/449884388",
+        "https://www.wikidata.org/wiki/Q10714690"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "drottningholm-palace": {
+      "coords": {
+        "lat": 59.321628,
+        "lng": 17.886892
+      },
+      "costCurrency": "SEK",
+      "costMax": 180,
+      "costMin": 140,
+      "officialUrl": "https://www.kungahuset.se/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/3182815",
+        "https://www.wikidata.org/wiki/Q208559"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "fotografiska": {
+      "closedDays": [],
+      "coords": {
+        "lat": 59.318004,
+        "lng": 18.084701
+      },
+      "costCurrency": "SEK",
+      "costMax": 290,
+      "costMin": 245,
+      "officialUrl": "https://www.fotografiska.com/sto/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/868261113",
+        "https://www.wikidata.org/wiki/Q1439649"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "gamla-stan": {
+      "coords": {
+        "lat": 59.323305,
+        "lng": 18.067002
+      },
+      "costCurrency": "SEK",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/4225502323",
+        "https://www.wikidata.org/wiki/Q1208392"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "moderna-museet": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 59.326349,
+        "lng": 18.084
+      },
+      "costCurrency": "SEK",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.modernamuseet.se/",
+      "openingHours": [
+        {
+          "days": "Tu,Fr",
+          "open": "10:00",
+          "close": "20:00"
+        },
+        {
+          "days": "We,Th,Sa,Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/29898032",
+        "https://www.wikidata.org/wiki/Q1274511"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "monteliusvagen": {
+      "coords": {
+        "lat": 59.320731,
+        "lng": 18.060456
+      },
+      "costCurrency": "SEK",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/144024295",
+        "https://www.wikidata.org/wiki/Q10588783"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-berns": {
+      "coords": {
+        "lat": 59.332177,
+        "lng": 18.073897
+      },
+      "officialUrl": "https://www.berns.se/",
+      "sources": [
+        "https://www.openstreetmap.org/node/369976808",
+        "https://www.wikidata.org/wiki/Q826740"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-debaser": {
+      "coords": {
+        "lat": 59.314459,
+        "lng": 18.032438
+      },
+      "officialUrl": "https://www.debaser.se/",
+      "sources": [
+        "https://www.openstreetmap.org/node/6863422794"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-sodra-teatern": {
+      "coords": {
+        "lat": 59.318421,
+        "lng": 18.074314
+      },
+      "officialUrl": "https://www.sodrateatern.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/27738885",
+        "https://www.wikidata.org/wiki/Q3825202"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-tjoget": {
+      "closedDays": [],
+      "coords": {
+        "lat": 59.316191,
+        "lng": 18.034937
+      },
+      "officialUrl": "https://tjoget.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "17:00",
+          "close": "25:00"
+        },
+        {
+          "days": "Fr",
+          "open": "16:00",
+          "close": "27:00"
+        },
+        {
+          "days": "Sa",
+          "open": "13:00",
+          "close": "27:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1913164880"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "nobel-prize-museum": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 59.325215,
+        "lng": 18.070831
+      },
+      "costCurrency": "SEK",
+      "costMax": 150,
+      "costMin": 140,
+      "officialUrl": "https://www.nobelprizemuseum.se/",
+      "sources": [
+        "https://www.openstreetmap.org/node/304603727",
+        "https://www.wikidata.org/wiki/Q1968711"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "ostermalms-saluhall": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 59.335909,
+        "lng": 18.07769
+      },
+      "costCurrency": "SEK",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.ostermalmshallen.se/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "09:30",
+          "close": "19:00"
+        },
+        {
+          "days": "Sa",
+          "open": "09:30",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/120023281",
+        "https://www.wikidata.org/wiki/Q298475"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-den-gyldene-freden": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 59.323103,
+        "lng": 18.073793
+      },
+      "costCurrency": "SEK",
+      "costMax": 800,
+      "costMin": 450,
+      "officialUrl": "https://www.gyldenefreden.se/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "12:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "12:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/418309200",
+        "https://www.wikidata.org/wiki/Q5256462"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-ekstedt": {
+      "closedDays": [
+        0,
+        1
+      ],
+      "coords": {
+        "lat": 59.336736,
+        "lng": 18.074844
+      },
+      "costCurrency": "SEK",
+      "costMax": 2500,
+      "costMin": 1800,
+      "officialUrl": "https://ekstedt.nu/",
+      "openingHours": [
+        {
+          "days": "Tu-Th",
+          "open": "17:30",
+          "close": "25:00"
+        },
+        {
+          "days": "Fr",
+          "open": "17:00",
+          "close": "25:00"
+        },
+        {
+          "days": "Sa",
+          "open": "15:30",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1962273874",
+        "https://www.wikidata.org/wiki/Q69319048"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-frantzen": {
+      "coords": {
+        "lat": 59.333891,
+        "lng": 18.058544
+      },
+      "costCurrency": "SEK",
+      "costMin": 4000,
+      "officialUrl": "https://www.restaurantfrantzen.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/6584506985",
+        "https://www.wikidata.org/wiki/Q5492658"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-hotorgshallen": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 59.334277,
+        "lng": 18.062535
+      },
+      "costCurrency": "SEK",
+      "costMax": 200,
+      "costMin": 100,
+      "officialUrl": "https://hotorgshallen.se/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "10:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Fr",
+          "open": "10:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Sa",
+          "open": "10:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3221643022",
+        "https://www.wikidata.org/wiki/Q1112984"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-kvarnen": {
+      "closedDays": [],
+      "coords": {
+        "lat": 59.314833,
+        "lng": 18.074229
+      },
+      "costCurrency": "SEK",
+      "costMax": 350,
+      "costMin": 200,
+      "officialUrl": "https://www.kvarnen.com/",
+      "openingHours": [
+        {
+          "days": "Mo,Tu",
+          "open": "11:00",
+          "close": "23:00"
+        },
+        {
+          "days": "We,Th",
+          "open": "11:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Fr",
+          "open": "11:00",
+          "close": "27:00"
+        },
+        {
+          "days": "Sa",
+          "open": "11:30",
+          "close": "27:00"
+        },
+        {
+          "days": "Su",
+          "open": "11:30",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/277145122",
+        "https://www.wikidata.org/wiki/Q10550905"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-lisa-elmqvist": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 59.335877,
+        "lng": 18.077491
+      },
+      "costCurrency": "SEK",
+      "costMax": 450,
+      "costMin": 250,
+      "officialUrl": "https://www.lisaelmqvist.se/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "09:30",
+          "close": "19:00"
+        },
+        {
+          "days": "Sa",
+          "open": "09:30",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/9802165697"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-meatballs-for-the-people": {
+      "closedDays": [],
+      "coords": {
+        "lat": 59.314599,
+        "lng": 18.081423
+      },
+      "costCurrency": "SEK",
+      "costMax": 300,
+      "costMin": 200,
+      "officialUrl": "https://www.meatball.se/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "11:00",
+          "close": "22:30"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "11:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3578674368"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-oaxen-slip": {
+      "costCurrency": "SEK",
+      "costMax": 900,
+      "costMin": 500
+    },
+    "r-operakallaren": {
+      "closedDays": [
+        0,
+        1
+      ],
+      "coords": {
+        "lat": 59.329703,
+        "lng": 18.071275
+      },
+      "costCurrency": "SEK",
+      "costMax": 1800,
+      "costMin": 900,
+      "officialUrl": "https://www.operakallaren.se/",
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "18:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/485959211",
+        "https://www.wikidata.org/wiki/Q10610464"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-pelikan": {
+      "closedDays": [],
+      "coords": {
+        "lat": 59.310569,
+        "lng": 18.076172
+      },
+      "costCurrency": "SEK",
+      "costMax": 350,
+      "costMin": 200,
+      "officialUrl": "https://www.pelikan.se/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:30",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/630743814",
+        "https://www.wikidata.org/wiki/Q10651265"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-restaurang-tradition": {
+      "closedDays": [],
+      "coords": {
+        "lat": 59.325933,
+        "lng": 18.073762
+      },
+      "costCurrency": "SEK",
+      "costMax": 400,
+      "costMin": 250,
+      "officialUrl": "https://www.restaurangtradition.se/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "11:30",
+          "close": "23:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "12:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3396035263"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-rosendals-tradgardskafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 59.327468,
+        "lng": 18.114835
+      },
+      "costCurrency": "SEK",
+      "costMax": 250,
+      "costMin": 150,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/408233436"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "rosendal-garden": {
+      "costCurrency": "SEK",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "royal-palace-kungliga-slottet": {
+      "coords": {
+        "lat": 59.326928,
+        "lng": 18.070165
+      },
+      "costCurrency": "SEK",
+      "costMax": 200,
+      "costMin": 180,
+      "officialUrl": "https://www.kungligaslotten.se/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/34394",
+        "https://www.wikidata.org/wiki/Q750444"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-drottninggatan": {
+      "coords": {
+        "lat": 59.331455,
+        "lng": 18.063815
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/386843880",
+        "https://www.wikidata.org/wiki/Q2066219"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-ostermalms-saluhall": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 59.335909,
+        "lng": 18.07769
+      },
+      "officialUrl": "https://www.ostermalmshallen.se/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "09:30",
+          "close": "19:00"
+        },
+        {
+          "days": "Sa",
+          "open": "09:30",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/120023281",
+        "https://www.wikidata.org/wiki/Q298475"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-sofo-south-of-folkungagatan": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 59.314241,
+        "lng": 18.079986
+      },
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "12:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Su",
+          "open": "12:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/11917628619"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "skansen": {
+      "closedDays": [],
+      "coords": {
+        "lat": 59.326623,
+        "lng": 18.105282
+      },
+      "costCurrency": "SEK",
+      "costMax": 230,
+      "costMin": 190,
+      "officialUrl": "https://www.skansen.se/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/377977591",
+        "https://www.wikidata.org/wiki/Q725108"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "stockholm-city-hall-stadshuset": {
+      "coords": {
+        "lat": 59.327494,
+        "lng": 18.054215
+      },
+      "costCurrency": "SEK",
+      "costMax": 180,
+      "costMin": 130,
+      "officialUrl": "https://stadshuset.stockholm/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/29368",
+        "https://www.wikidata.org/wiki/Q648483"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "storkyrkan": {
+      "coords": {
+        "lat": 59.32576,
+        "lng": 18.07039
+      },
+      "costCurrency": "SEK",
+      "costMax": 100,
+      "costMin": 90,
+      "officialUrl": "https://www.svenskakyrkan.se/stockholmsdomkyrkoforsamling/visitors",
+      "sources": [
+        "https://www.openstreetmap.org/way/8049504",
+        "https://www.wikidata.org/wiki/Q1133075"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-drottningholm-palace": {
+      "coords": {
+        "lat": 59.321628,
+        "lng": 17.886892
+      },
+      "officialUrl": "https://www.kungahuset.se/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/3182815",
+        "https://www.wikidata.org/wiki/Q208559"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-uppsala": {
+      "coords": {
+        "lat": 59.858613,
+        "lng": 17.638744
+      },
+      "officialUrl": "https://www.uppsala.se/",
+      "sources": [
+        "https://www.openstreetmap.org/node/25735371",
+        "https://www.wikidata.org/wiki/Q25286"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-vaxholm-and-the-archipelago": {
+      "coords": {
+        "lat": 59.4,
+        "lng": 18.283333
+      },
+      "officialUrl": "http://www.vaxholm.se",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q500090"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "vasa-museum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 59.328145,
+        "lng": 18.091368
+      },
+      "costCurrency": "SEK",
+      "costMax": 220,
+      "costMin": 190,
+      "officialUrl": "https://vasamuseet.se/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:30",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/27288534",
+        "https://www.wikidata.org/wiki/Q901371"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-archipelago-boat-trip": {
+      "costCurrency": "SEK",
+      "costMax": 400,
+      "costMin": 200
+    },
+    "x-fika-at-a-traditional-cafe": {
+      "costCurrency": "SEK",
+      "costMax": 180,
+      "costMin": 100
+    },
+    "x-gamla-stan-walking-tour": {
+      "costCurrency": "SEK",
+      "costMax": 400,
+      "costMin": 200
+    },
+    "x-metro-art-tour": {
+      "costCurrency": "SEK",
+      "costMax": 40,
+      "costMin": 40
+    },
+    "x-sauna-and-sea-dip": {
+      "costCurrency": "SEK",
+      "costMax": 400,
+      "costMin": 200
+    }
+  },
+  "neighborhoods": {
+    "djurgarden": {
+      "coords": {
+        "lat": 59.326673,
+        "lng": 18.115138
+      },
+      "radiusKm": 2.41
+    },
+    "gamla-stan": {
+      "coords": {
+        "lat": 59.323305,
+        "lng": 18.067002
+      },
+      "radiusKm": 0.62
+    },
+    "kungsholmen": {
+      "coords": {
+        "lat": 59.332742,
+        "lng": 18.023772
+      },
+      "radiusKm": 1.94
+    },
+    "ostermalm": {
+      "coords": {
+        "lat": 59.336723,
+        "lng": 18.085918
+      },
+      "radiusKm": 1.86
+    },
+    "skeppsholmen": {
+      "coords": {
+        "lat": 59.325356,
+        "lng": 18.085004
+      },
+      "radiusKm": 2.49
+    },
+    "sodermalm": {
+      "coords": {
+        "lat": 59.315945,
+        "lng": 18.077994
+      },
+      "radiusKm": 2.66
+    },
+    "vasastan": {
+      "coords": {
+        "lat": 59.34135,
+        "lng": 18.048947
+      },
+      "radiusKm": 1.64
+    }
+  }
+}

@@ -1,1 +1,452 @@
-{}
+{
+ "athens": {
+  "alt": "Athens: Acropolis in Athens, Greece",
+  "credit": "Thomas Wolf, www.foto-tw.de",
+  "license": "CC BY-SA 3.0 de",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AAkropolis_2015.jpg",
+  "commonsFilename": "Akropolis 2015.jpg",
+  "width": 1280,
+  "height": 741,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQBACdASoYAA4APtFUo0uoJKMhsAgBABoJaACdMoHaAAOPccfrPwQiMf4AAP6xdIU1edtU0Ar5tdALsQq9wsxMSLbsQOgtLMIFKm4XIbd7BgipfwIl8IDmYLP+8zd9wD7TTNtLwAA="
+ },
+ "berlin": {
+  "alt": "Berlin: Berlin Cityscape seen from Victory Column",
+  "credit": "Thomas Wolf, www.foto-tw.de",
+  "license": "CC BY-SA 3.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3ACityscape_Berlin.jpg",
+  "commonsFilename": "Cityscape Berlin.jpg",
+  "width": 1280,
+  "height": 655,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAwCdASoYAAwAPtFipk0oJiOiMAgBABoJQBOgBDrb+ZT2A5QhQgD+0vx550+ko/vTelQQ1sS61+5hvZibVH9OsfpWPCg8GIAAAA=="
+ },
+ "brussels": {
+  "alt": "Brussels: Brussels view from Mont des Arts, Brussels, Belgium",
+  "credit": "Ank Kumar",
+  "license": "CC BY-SA 4.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3ABrussels_view_from_Mont_des_Arts%2C_Brussels%2C_Belgium_(cropped).jpg",
+  "commonsFilename": "Brussels view from Mont des Arts, Brussels, Belgium (cropped).jpg",
+  "width": 1280,
+  "height": 769,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACQAwCdASoYAA4ALplotFoiqCgoCACYSyAE6coADlK9FIF9fFMAAP6uqdNYp08qU6APun2QbvHKO6eEgRlFQVVdqm1OZRpURaSLGmccYScAAA=="
+ },
+ "budapest": {
+  "alt": "Budapest: Budapest, Hungary",
+  "credit": "Thomas Depenbusch (Depi) from Cologne, Germany",
+  "license": "CC BY 2.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3ABudapest%2C_Hungary_(explored)_(14995308504).jpg",
+  "commonsFilename": "Budapest, Hungary (explored) (14995308504).jpg",
+  "width": 1280,
+  "height": 853,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAwCdASoYABAAPtFUpEuoJKOhsAgBABoJQBOgBDclL5Uas6dj6BaAAP6OfCoJJGDXhokiHYmMfxfsf4b0KCDF5SKkjUM2t/hEFZNF4PWlaY6ZhgAAAA=="
+ },
+ "buenos-aires": {
+  "alt": "Buenos Aires: Drone aerial view of Congress Square and its surroundings, Buenos Aires, Argentina",
+  "credit": "ProtoplasmaKid",
+  "license": "CC BY-SA 4.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AVista_a%C3%A9rea_de_la_Plaza_del_Congreso_10.jpg",
+  "commonsFilename": "Vista aérea de la Plaza del Congreso 10.jpg",
+  "width": 1280,
+  "height": 960,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwBQCdASoYABIAPsFMn0unpCKht/qoAPAYCUATpCDoX0uLz5L5ZpbBs3wn0nctq+CgeRSAAPx4D2qxIdy/Vg838DF/MOSK49miGxtp0y/3dDv023awoM//CQ8yEacGQfK242imgzRQdgxL+/rBZLA7Jxwesu13BoJZAOgAAAA="
+ },
+ "cairo": {
+  "alt": "Giza pyramids, Cairo",
+  "credit": "Ricardo Liberato",
+  "license": "CC BY-SA 2.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AAll_Gizah_Pyramids.jpg",
+  "commonsFilename": "All Gizah Pyramids.jpg",
+  "width": 1280,
+  "height": 851,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQBACdASoYABAALplotFoiqCgoCACYSyAE6ZQYwASaY+s+iUyuxq7kSAD+xXdkXQmQT2Dm9GnVabTLm7vRtm4B4J9ey83g1HgrNjuNIAh0zaLbb73LozoggAA="
+ },
+ "cape-town": {
+  "alt": "Cape Town: Cape Town viewed from Lion's Head, South Africa",
+  "credit": "Diego Delso",
+  "license": "CC BY-SA 4.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3ACiudad_del_Cabo_desde_Cabeza_de_Le%C3%B3n%2C_Sud%C3%A1frica%2C_2018-07-22%2C_DD_34.jpg",
+  "commonsFilename": "Ciudad del Cabo desde Cabeza de León, Sudáfrica, 2018-07-22, DD 34.jpg",
+  "width": 1280,
+  "height": 853,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBACdASoYABAAPtFYpkwoJSOiMAgBABoJagCdL0iBo0NcU0Zw6HsdMgDKrhd3YO+5KqGuXVti8z4iYd7jccpdffjB3vTsp2jI6Xmv+TQbnBmjftluS3Tcq2vL2bSR/nxYAA=="
+ },
+ "chicago": {
+  "alt": "Chicago: A Chicago River tour boat passes in front of Trump Tower",
+  "credit": "File:Chicago River ferry.jpg: John Picken derivative work: Georgfotoart",
+  "license": "CC BY 2.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AChicago_River_ferry_b.jpg",
+  "commonsFilename": "Chicago River ferry b.jpg",
+  "width": 1280,
+  "height": 905,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAACQBACdASoYABEAPtFYpEuoJSOhsAgBABoJZAC7My/Cs7kHVgXqiVKzHaTy/gAA/qekMso07Ejd+Yvhxvj/ny6D3DM3e0ITxUF5frHNiSc4rLTiG84sHBNYfI6wlPyJG6SEGI5DwjR4PmDG/N5ErA+Y+xwAAA=="
+ },
+ "dublin": {
+  "alt": "Ha'penny Bridge, Dublin",
+  "credit": "P. Hughes",
+  "license": "CC BY 4.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3ADubln_-_River_Liffey_with_Ha'Penny_Bridge_in_distance.jpg",
+  "commonsFilename": "Dubln - River Liffey with Ha'Penny Bridge in distance.jpg",
+  "width": 1280,
+  "height": 840,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAwCdASoYABAAPtFWpEuoJKOhsAgBABoJZQCdABuUv6dhOqbog6gIAP0ZUKnXio+CP/J3WAvB3PIIFztmS5a61MRZXq0Mj95mlBFbI82e8usLc4pAAA=="
+ },
+ "edinburgh": {
+  "alt": "Edinburgh Castle, Edinburgh",
+  "credit": "Saffron Blaze",
+  "license": "CC BY-SA 3.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AEdinburgh_Castle_Rock.jpg",
+  "commonsFilename": "Edinburgh Castle Rock.jpg",
+  "width": 1280,
+  "height": 852,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwBACdASoYABAAPtFapEwoJSOiMAgBABoJZQCw7CHHfCQ2axh5v6W6AgAA/I6JaxaSgBwNrGjQWA0Bhlz0wUHOahcS6lKklh8SP4NwknWrwzHIyWyAAA=="
+ },
+ "florence": {
+  "alt": "Florence: Firenze from Piazzale Michelangelo, Firenze, Italy",
+  "credit": "Giorgio Galeotti",
+  "license": "CC BY 4.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AFirenze_-_Piazzale_Michelangelo%2C_Firenze%2C_Italy_-_April_6%2C_2015_02.jpg",
+  "commonsFilename": "Firenze - Piazzale Michelangelo, Firenze, Italy - April 6, 2015 02.jpg",
+  "width": 1280,
+  "height": 855,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQBACdASoYABAAPtFUpEuoJKOhsAgBABoJYgCxC8ACtktSn5FCwxxZAAD8flWAf9JzdPYawZRf5E3uGKcUsMQqXmaWkR5xYxkMOwqmv/S+b9XGAAA="
+ },
+ "hanoi": {
+  "alt": "Hoan Kiem Lake, Hanoi",
+  "credit": "P. Hughes",
+  "license": "CC BY 4.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AHanoi_-_Turtle_Tower_(Th%C3%A1p_R%C3%B9a)%2C_Ho%C3%A0n_Ki%E1%BA%BFm_Lake.jpg",
+  "commonsFilename": "Hanoi - Turtle Tower (Tháp Rùa), Hoàn Kiếm Lake.jpg",
+  "width": 1280,
+  "height": 861,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAwCdASoYABAAPtFYpEuoJSOhsAgBABoJZQAAUoyMaDjUuQMOAAD+jxFNBqEKYGoXofdqeovQiPzn53HwiMkQaLXWXksf16KHPxlnLQ+AAA=="
+ },
+ "krakow": {
+  "alt": "Krakow: Panoramic view of Wawel This is a photo of a monument in Poland identified by the ID: A-7 z 28.03.1931",
+  "credit": "XEvansGambitx",
+  "license": "CC BY-SA 4.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AZamek_Kr%C3%B3lewski_na_Wawelu_(1).jpg",
+  "commonsFilename": "Zamek Królewski na Wawelu (1).jpg",
+  "width": 1280,
+  "height": 720,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwBACdASoYAA4APtFipk0oJiOiMAgBABoJYgCw7CICKLQcFwBjseCj7cAA/eHV+dC6GGBx9etxVnbXgDpTYDFBB2swj2kGsKyKZQuNb5nK/HcVLTXAAA=="
+ },
+ "kyoto": {
+  "alt": "Kyoto: Ninenzaka, pedestrian paved street, with paper umbrellas on a storefront and a couple walking, wearing a yukata. 3 Chome, Higashiyama-ku, Kyoto, Japan",
+  "credit": "Basile Morin",
+  "license": "CC BY-SA 4.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3APedestrian_road_with_pavements%2C_paper_umbrellas_and_people_in_yukata%2C_Higashiyama-ku%2C_Kyoto%2C_Japan.jpg",
+  "commonsFilename": "Pedestrian road with pavements, paper umbrellas and people in yukata, Higashiyama-ku, Kyoto, Japan.jpg",
+  "width": 1280,
+  "height": 853,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAwCdASoYABAAPtFWpUwoJKOiMAgBABoJYwCo9B4+5/2deKCqrfGQAP6jbm9CDyx7+ElzxHGVCrMOSIImsm6oALssi9MqtuAqc2/+fHYm5xZVunuvD2cKNmkPjt2Kn8GvZmAA"
+ },
+ "madrid": {
+  "alt": "Madrid: A nice view of numerous fine buildings with exterior balconies in Madrid, Spain",
+  "credit": "Dmitry Dzhus from London",
+  "license": "CC BY 2.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AMadrid_(38624991251).jpg",
+  "commonsFilename": "Madrid (38624991251).jpg",
+  "width": 1280,
+  "height": 960,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAwCdASoYABIAPtFWo0uoJKMhsAgBABoJYwC06CIfgCllPRFz18ngAP5ZiNA+Rw85aXw/iLjJVTMaK/Evdrj6Hw+gDqrFKRr0zfm+XXhO+ToMIXLPkkAA"
+ },
+ "marrakesh": {
+  "alt": "Jemaa el-Fnaa, Marrakesh",
+  "credit": "Carlitos0802",
+  "license": "CC BY-SA 3.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AVendedores_de_agua_en_su_vestimenta_t%C3%ADpica_en_la_Plaza_de_Yamaa_el_Fna.jpg",
+  "commonsFilename": "Vendedores de agua en su vestimenta típica en la Plaza de Yamaa el Fna.jpg",
+  "width": 1280,
+  "height": 1000,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwBACdASoYABMAPsVSpEunpSQhsAwA8BiJZAC2yCLdwS54V9pjRq/1uz24PfRvIoAA/reaichuhKJ6zzYxxxfPtOZ/V3v1T3HF6lPQaL+SGX+V5jJQDtU5zQL2I7jehoq+dzJdmt+2XubJs7K2g71225Wi9ffE+egxIg1f7ooNAAAA"
+ },
+ "melbourne": {
+  "alt": "Melbourne: Melbourne CBD and Ceremonial Avenue (in 2024) as seen from the rooftop of Shrine of Remembrance",
+  "credit": "Shkuru Afshar",
+  "license": "CC BY-SA 4.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AMelbourne_CBD_and_Ceremonial_Avenue_(in_2024)_as_seen_from_the_rooftop_of_Shrine_of_Remembrance.jpg",
+  "commonsFilename": "Melbourne CBD and Ceremonial Avenue (in 2024) as seen from the rooftop of Shrine of Remembrance.jpg",
+  "width": 1280,
+  "height": 721,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBACdASoYAA4APtFYpkwoJSOiMAgBABoJbACdIFzDAt4eAXPlFDmkgADxfwPezt03D0TI8Ql2GWP6U17LHb2+OFelyzce5Ss26dGSB2r8NZMaCgyY5mCF/zYs3dh7bgAAAA=="
+ },
+ "mexico-city": {
+  "alt": "Zócalo, Mexico City",
+  "credit": "Abraham P V",
+  "license": "CC BY 2.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AChristmas_tree_and_Metropolitan_Cathedral_at_Mexico's_City_z%C3%B3calo.jpg",
+  "commonsFilename": "Christmas tree and Metropolitan Cathedral at Mexico's City zócalo.jpg",
+  "width": 1280,
+  "height": 960,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQBQCdASoYABIAPtFYpU0oJKOiMBgIAQAaCUAVhloWZQMIa3dgot6Gg/5vWGK0yblAAP5ZxTTSSX3FtmsOMT8eNI41cjRlV+IfJLo8u67mrhI+2PLoMN8mGgblqCb1Ts4aNTMBC6EKNclDSDiTxm3XgAA="
+ },
+ "miami": {
+  "alt": "Miami skyline, Miami",
+  "credit": "joiseyshowaa from Freehold, NJ, USA",
+  "license": "CC BY-SA 2.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AEarly_morning_fireworks_over_Biscayne_Bay_-_July_4_(2636356801).jpg",
+  "commonsFilename": "Early morning fireworks over Biscayne Bay - July 4 (2636356801).jpg",
+  "width": 1280,
+  "height": 943,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQBQCdASoYABIAPtFcpE0oJSOiMBgIAQAaCWQAnTLHQRlud4mfB9mk3iBOc5tKlTAAAP0c2L3982pOFz9gmo+eVXu4/7zMwIzSsGTomkF5WWwtTlS9+trra+K8ugyj2ZT+sa63EAdnDi8CxnPTVcSCaCQdHkAA"
+ },
+ "milan": {
+  "alt": "Milan: Milan (Lombardy, Italy) – Milan Cathedral – view from the southwest over the Piazza del Duomo (Cathedral Square) with the triumphal arch of the historic ",
+  "credit": "Steffen Schmitz",
+  "license": "CC BY-SA 4.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AMilano%2C_Duomo_with_Milan_Cathedral_and_Galleria_Vittorio_Emanuele_II%2C_2016.jpg",
+  "commonsFilename": "Milano, Duomo with Milan Cathedral and Galleria Vittorio Emanuele II, 2016.jpg",
+  "width": 1280,
+  "height": 750,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQBACdASoYAA4APtFYpEuoJSOhsAgBABoJZQC7ACHZxfEsc7NWcTNiQAD+xWZYaihJpI6jXLRLfcmpvrtFQjZF23BWTulfAfCCkBCjVjzSOgvcCAA="
+ },
+ "mumbai": {
+  "alt": "Mumbai: The Bandra Worli Sea Link is an ubiquitous symbol of 21st century Mumbai. The 5.6-kilometre cable-stayed bridge is a remarkable technical feat, the firs",
+  "credit": "Rutiknatekar",
+  "license": "CC BY-SA 4.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AMumbai_Bandra-Worli_Sea_Link.jpg",
+  "commonsFilename": "Mumbai Bandra-Worli Sea Link.jpg",
+  "width": 1280,
+  "height": 959,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBACdASoYABIAPtFWo0uoJKMhsAgBABoJYwAASitvog+mtVNsR5lgAADdmvosngKuEw7H2BLxogngbZ7aqnIQAY8eOmkVE5LgESwLiK7RmuQ219ncOjhx5L843fzCOwAAAA=="
+ },
+ "munich": {
+  "alt": "Munich: Old Town of Munich (Germany): on the left the Frauenkirche and on the right the New Town Hall",
+  "credit": "Thomas Wolf, www.foto-tw.de",
+  "license": "CC BY-SA 3.0 de",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AStadtbild_M%C3%BCnchen.jpg",
+  "commonsFilename": "Stadtbild München.jpg",
+  "width": 1280,
+  "height": 865,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwBACdASoYABAAPtFUo0uoJKMhsAgBABoJYgCdGuAAWaHWHFvgjuztzGwA/d3uyS3c6EXRbPO+lb6EhsYp8GGakyCHumU11tQ7hYWHcHKudTCcOnKKJQAA"
+ },
+ "osaka": {
+  "alt": "Osaka: Osaka Castle in Chuo-ku, Osaka, Osaka prefecture, Japan",
+  "credit": "663highland",
+  "license": "CC BY 2.5",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AOsaka_Castle_03bs3200.jpg",
+  "commonsFilename": "Osaka Castle 03bs3200.jpg",
+  "width": 1280,
+  "height": 853,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQBACdASoYABAAPtFWpEuoJKOhsAgBABoJYwCdAB6HrAH0fwVwWO7TLd0AAP3/ZQii7EjZKk2S3UrbNpjs+Lc7KdjHyRsmoc78ZBQeKalRWJWlKjmmZNS2K+lpP7EAAAA="
+ },
+ "prague": {
+  "alt": "Prague: Views from Petřín, Prague",
+  "credit": "Deror_avi",
+  "license": "CC BY-SA 4.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3APet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG",
+  "commonsFilename": "Petřín Tower View IMG 3020.JPG",
+  "width": 1280,
+  "height": 853,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoYABAAPtFYpEuoJSOhsAgBABoJQBOgBDuNB92c8wh8fKcgAPxs+ZdbhCsCM2xvEgs3saEE4e7AGaFU+yZZGTMvulOp/87J7EIIoqsTKx7odpRAAAA="
+ },
+ "rio-de-janeiro": {
+  "alt": "Rio de Janeiro: Rio !",
+  "credit": "Rafael Rabello de Barros",
+  "license": "CC BY-SA 3.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3ACidade_Maravilhosa.jpg",
+  "commonsFilename": "Cidade Maravilhosa.jpg",
+  "width": 1280,
+  "height": 683,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwBACdASoYAA0APtFapEwoJSOiMAgBABoJQBOmUGSxiTIxBeKJh5mTbXoA/GrgJ5ciXukSl+MQ0bWwS9Cf0HH9jdcJTb/usQCe+KhKgWtcp9Jn66CAAA=="
+ },
+ "san-francisco": {
+  "alt": "San Francisco: San Francisco from the Marin Headlands on March 31, 2019 during California's Superbloom",
+  "credit": "Lightandtruth",
+  "license": "CC BY-SA 4.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3ASan_Francisco_from_the_Marin_Headlands_in_March_2019.jpg",
+  "commonsFilename": "San Francisco from the Marin Headlands in March 2019.jpg",
+  "width": 1280,
+  "height": 750,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwBACdASoYAA4APtFWpEuoJKOhsAgBABoJZACdMoR4GCm/2Ep/7J6RBgAA/tT4wpbnMYX7ly5nN6vVChhO4Bcs7bNnFq0tC5HM93RFKCjACqkpGKAoT33+AAA="
+ },
+ "stockholm": {
+  "alt": "Gamla Stan, Stockholm",
+  "credit": "Acediscovery",
+  "license": "CC BY 4.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AStockholm-Gamla-Stan-panorama.jpg",
+  "commonsFilename": "Stockholm-Gamla-Stan-panorama.jpg",
+  "width": 1280,
+  "height": 960,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABwBACdASoYABIAPtFaqU2oJSQiKAqpABoJQBdgAWhUP2FGA6YE1ljjc5SU4AD9HBTbMZ9PkEdBMjR3s//FDzUlUXZL828ixwRY3eDdW5cWBzT3gbWx1YwCgV8GLZFaOEVNIA9AAAA="
+ },
+ "taipei": {
+  "alt": "Taipei: Taipei, Taiwan Skyline viewed from Mount Elephant 20260204",
+  "credit": "Heeheemalu",
+  "license": "CC BY-SA 4.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3A20260204_Taipei%2C_Taiwan_Skyline.jpg",
+  "commonsFilename": "20260204 Taipei, Taiwan Skyline.jpg",
+  "width": 1280,
+  "height": 720,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwBACdASoYAA4APtFWpEuoJKOhsAgBABoJaACdL1ABn2efRY4KDcC93LAA/FqZ1swjNK34HTaJAjLYm3LLXMK7vWmR0+LGVF535k8/WrxZT2eu+bQEiuwFoeAUKeSzE2CCP5a39P+UkIAA"
+ },
+ "toronto": {
+  "alt": "Toronto: Picture of the Toronto skyline at sunset taken from the Snake Islands of the Toronto Islands. This is a crop of a larger panorama",
+  "credit": "Jchmrt",
+  "license": "CC BY-SA 4.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3ASunset_Toronto_Skyline_Panorama_Crop_from_Snake_Island.jpg",
+  "commonsFilename": "Sunset Toronto Skyline Panorama Crop from Snake Island.jpg",
+  "width": 1280,
+  "height": 568,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAwCdASoYAAsAPtFWpEuoJKOhsAgBABoJQBOmUABFVTMR1w5jFYAAvIMMmrr9cROye9xW/zDbXpWy5QEBMYaNZvDilmJic8nrGwyjFD2AAA=="
+ },
+ "venice": {
+  "alt": "Venice: Aerial view of Venice, railway station Santa Lucia and port, Canale della Giudecca, island Giudecca",
+  "credit": "kallerna",
+  "license": "CC BY-SA 4.0",
+  "sourcePage": "https://commons.wikimedia.org/wiki/File%3AVenezia_aerial_view.jpg",
+  "commonsFilename": "Venezia aerial view.jpg",
+  "width": 1280,
+  "height": 716,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAwCdASoYAA0APtFUpEuoJKOhsAgBABoJZgCdL46B3LH/naiG0FaAAP6OEtg4lMTiYuGmVrduLBVUfA6cGUHnBJdGUFitjd0ka8FAA2J4oGauAAA="
+ }
+}

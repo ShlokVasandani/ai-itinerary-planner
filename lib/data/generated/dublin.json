@@ -1,0 +1,894 @@
+{
+  "bbox": [
+    53.0494,
+    -6.7631,
+    53.6494,
+    -5.758
+  ],
+  "places": {
+    "c-3fe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 53.339949,
+        "lng": -6.241977
+      },
+      "officialUrl": "https://3fe.com/gcs",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:30",
+          "close": "15:30"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "09:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/111184757"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-brother-hubbard": {
+      "coords": {
+        "lat": 53.348638,
+        "lng": -6.263978
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4680376191"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-kaph": {
+      "closedDays": [],
+      "coords": {
+        "lat": 53.342592,
+        "lng": -6.263301
+      },
+      "officialUrl": "https://kaph.ie/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Su",
+          "open": "12:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4214067093"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-the-fumbally": {
+      "coords": {
+        "lat": 53.337063,
+        "lng": -6.272958
+      },
+      "officialUrl": "https://thefumbally.ie/",
+      "sources": [
+        "https://www.openstreetmap.org/way/256624411"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "chester-beatty-library": {
+      "closedDays": [],
+      "coords": {
+        "lat": 53.342202,
+        "lng": -6.267451
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://chesterbeatty.ie/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "10:00",
+          "close": "17:00"
+        },
+        {
+          "days": "Sa",
+          "open": "11:00",
+          "close": "17:00"
+        },
+        {
+          "days": "Su",
+          "open": "13:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/10020524598",
+        "https://www.wikidata.org/wiki/Q391976"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "christ-church-cathedral": {
+      "coords": {
+        "lat": 53.343408,
+        "lng": -6.271203
+      },
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 8,
+      "officialUrl": "https://christchurchcathedral.ie/",
+      "sources": [
+        "https://www.openstreetmap.org/way/27291101",
+        "https://www.wikidata.org/wiki/Q1067803"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "dublin-castle": {
+      "closedDays": [],
+      "coords": {
+        "lat": 53.342662,
+        "lng": -6.267004
+      },
+      "costCurrency": "EUR",
+      "costMax": 12,
+      "costMin": 8,
+      "officialUrl": "https://www.dublincastle.ie/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:45",
+          "close": "16:45"
+        },
+        {
+          "days": "Su",
+          "open": "12:00",
+          "close": "16:45"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/350242806",
+        "https://www.wikidata.org/wiki/Q742767"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "epic-the-irish-emigration-museum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 53.348265,
+        "lng": -6.247979
+      },
+      "costCurrency": "EUR",
+      "costMax": 22,
+      "costMin": 20,
+      "officialUrl": "https://epicchq.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "18:45"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4427119837",
+        "https://www.wikidata.org/wiki/Q29831711"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "guinness-storehouse": {
+      "closedDays": [],
+      "coords": {
+        "lat": 53.341933,
+        "lng": -6.28673
+      },
+      "costCurrency": "EUR",
+      "costMax": 40,
+      "costMin": 30,
+      "officialUrl": "https://www.guinness-storehouse.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:30",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/44597908",
+        "https://www.wikidata.org/wiki/Q261012"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "ha-penny-bridge": {
+      "closedDays": [],
+      "coords": {
+        "lat": 53.346327,
+        "lng": -6.263095
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/399007550",
+        "https://www.wikidata.org/wiki/Q1034624"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "jameson-distillery-bow-st": {
+      "coords": {
+        "lat": 53.348167,
+        "lng": -6.276807
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 27,
+      "officialUrl": "http://www.jamesonwhiskey.com/ie/tours/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q17104224"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "kilmainham-gaol": {
+      "coords": {
+        "lat": 53.341691,
+        "lng": -6.309565
+      },
+      "costCurrency": "EUR",
+      "costMax": 8,
+      "costMin": 8,
+      "officialUrl": "https://kilmainhamgaolmuseum.ie/",
+      "sources": [
+        "https://www.openstreetmap.org/way/41662413",
+        "https://www.wikidata.org/wiki/Q1049842"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-o-donoghue-s": {
+      "coords": {
+        "lat": 53.338172,
+        "lng": -6.254169
+      },
+      "officialUrl": "https://www.odonoghues.ie/",
+      "sources": [
+        "https://www.openstreetmap.org/way/279140841",
+        "https://www.wikidata.org/wiki/Q2005419"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-the-cobblestone": {
+      "closedDays": [],
+      "coords": {
+        "lat": 53.349848,
+        "lng": -6.27782
+      },
+      "officialUrl": "https://www.cobblestonepub.ie/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "16:00",
+          "close": "23:30"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "14:00",
+          "close": "24:30"
+        },
+        {
+          "days": "Su",
+          "open": "13:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1084218455"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-the-long-hall": {
+      "closedDays": [],
+      "coords": {
+        "lat": 53.341868,
+        "lng": -6.265331
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "12:30",
+          "close": "23:30"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "12:30",
+          "close": "24:30"
+        },
+        {
+          "days": "Su",
+          "open": "12:30",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/351409390"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-whelan-s": {
+      "coords": {
+        "lat": 53.336595,
+        "lng": -6.265875
+      },
+      "officialUrl": "https://www.whelanslive.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/154508547",
+        "https://www.wikidata.org/wiki/Q7992381"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-workman-s-club": {
+      "coords": {
+        "lat": 53.345388,
+        "lng": -6.266498
+      },
+      "officialUrl": "https://theworkmansclub.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/1494148993",
+        "https://www.wikidata.org/wiki/Q16901552"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "national-gallery-of-ireland": {
+      "closedDays": [],
+      "coords": {
+        "lat": 53.341121,
+        "lng": -6.252667
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.nationalgallery.ie/",
+      "openingHours": [
+        {
+          "days": "Mo,Su",
+          "open": "11:00",
+          "close": "17:30"
+        },
+        {
+          "days": "Tu,We,Fr,Sa",
+          "open": "09:15",
+          "close": "17:30"
+        },
+        {
+          "days": "Th",
+          "open": "09:15",
+          "close": "20:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/3101326",
+        "https://www.wikidata.org/wiki/Q2018379"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "national-museum-of-ireland-archaeology": {
+      "closedDays": [],
+      "coords": {
+        "lat": 53.340235,
+        "lng": -6.254964
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.museum.ie/en-IE/Museums/Archaeology",
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "10:00",
+          "close": "17:00"
+        },
+        {
+          "days": "Mo,Su",
+          "open": "13:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1029441205"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "phoenix-park": {
+      "coords": {
+        "lat": 53.358938,
+        "lng": -6.330711
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://phoenixpark.ie/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/4423275",
+        "https://www.wikidata.org/wiki/Q377937"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-bunsen": {
+      "closedDays": [],
+      "coords": {
+        "lat": 53.333662,
+        "lng": -6.243558
+      },
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 10,
+      "officialUrl": "https://bunsen.ie/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Sa",
+          "open": "08:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/84018109"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-chapter-one": {
+      "coords": {
+        "lat": 53.354376,
+        "lng": -6.263922
+      },
+      "costCurrency": "EUR",
+      "costMax": 150,
+      "costMin": 100,
+      "officialUrl": "http://www.chapteronerestaurant.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4419601490",
+        "https://www.wikidata.org/wiki/Q2129707"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-delahunt": {
+      "coords": {
+        "lat": 53.360899,
+        "lng": -6.273268
+      },
+      "costCurrency": "EUR",
+      "costMax": 55,
+      "costMin": 35,
+      "sources": [
+        "https://www.openstreetmap.org/node/8506753672"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-etto": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 53.338119,
+        "lng": -6.253927
+      },
+      "costCurrency": "EUR",
+      "costMax": 55,
+      "costMin": 35,
+      "officialUrl": "https://www.etto.ie/",
+      "openingHours": [
+        {
+          "days": "Mo-We",
+          "open": "12:00",
+          "close": "21:30"
+        },
+        {
+          "days": "Th,Fr",
+          "open": "12:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Sa",
+          "open": "12:30",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/279140838"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-gallagher-s-boxty-house": {
+      "coords": {
+        "lat": 53.345697,
+        "lng": -6.262128
+      },
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20,
+      "officialUrl": "https://www.boxtyhouse.ie/",
+      "sources": [
+        "https://www.openstreetmap.org/node/559485126"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-hawksmoor-dublin": {
+      "coords": {
+        "lat": 53.344058,
+        "lng": -6.260073
+      },
+      "costCurrency": "EUR",
+      "costMax": 100,
+      "costMin": 60,
+      "officialUrl": "https://www.hawksmoor.ie/",
+      "sources": [
+        "https://www.openstreetmap.org/way/251580558"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-klaw": {
+      "coords": {
+        "lat": 53.34494,
+        "lng": -6.263452
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 15,
+      "sources": [
+        "https://www.openstreetmap.org/node/9842346017"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-leo-burdock": {
+      "closedDays": [],
+      "coords": {
+        "lat": 53.345279,
+        "lng": -6.262728
+      },
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 10,
+      "officialUrl": "https://www.leoburdock.com/",
+      "openingHours": [
+        {
+          "days": "Mo-We",
+          "open": "11:30",
+          "close": "22:00"
+        },
+        {
+          "days": "Th-Sa",
+          "open": "11:30",
+          "close": "28:00"
+        },
+        {
+          "days": "Su",
+          "open": "12:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4163833954"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-the-brazen-head": {
+      "closedDays": [],
+      "coords": {
+        "lat": 53.344937,
+        "lng": -6.276311
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 15,
+      "officialUrl": "https://brazenhead.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "10:30",
+          "close": "23:30"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "10:30",
+          "close": "24:30"
+        },
+        {
+          "days": "Su",
+          "open": "12:30",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/10013398691",
+        "https://www.wikidata.org/wiki/Q17006015"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-the-pepper-pot-cafe": {
+      "coords": {
+        "lat": 53.342377,
+        "lng": -6.261907
+      },
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 10,
+      "officialUrl": "https://www.thepepperpot.ie/",
+      "sources": [
+        "https://www.openstreetmap.org/node/5044580421"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-the-winding-stair": {
+      "coords": {
+        "lat": 53.346644,
+        "lng": -6.263677
+      },
+      "costCurrency": "EUR",
+      "costMax": 55,
+      "costMin": 35,
+      "sources": [
+        "https://www.openstreetmap.org/way/660336977"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-the-woollen-mills": {
+      "coords": {
+        "lat": 53.346739,
+        "lng": -6.263528
+      },
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20,
+      "officialUrl": "https://www.thewoollenmills.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/1720988548"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-brown-thomas": {
+      "closedDays": [],
+      "coords": {
+        "lat": 53.342381,
+        "lng": -6.260092
+      },
+      "openingHours": [
+        {
+          "days": "Mo-We,Fr",
+          "open": "10:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Th",
+          "open": "10:00",
+          "close": "20:00"
+        },
+        {
+          "days": "Sa",
+          "open": "09:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Su",
+          "open": "11:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/271690098"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-grafton-street": {
+      "coords": {
+        "lat": 53.342087,
+        "lng": -6.259887
+      },
+      "officialUrl": "https://www.graftonstreet.ie/",
+      "sources": [
+        "https://www.openstreetmap.org/way/13988845"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-powerscourt-centre": {
+      "coords": {
+        "lat": 53.342254,
+        "lng": -6.261762
+      },
+      "officialUrl": "https://www.powerscourtcentre.ie/",
+      "sources": [
+        "https://www.openstreetmap.org/way/40716172",
+        "https://www.wikidata.org/wiki/Q30327821"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "st-patrick-s-cathedral": {
+      "closedDays": [],
+      "coords": {
+        "lat": 53.339564,
+        "lng": -6.271476
+      },
+      "costCurrency": "EUR",
+      "costMax": 9,
+      "costMin": 9,
+      "officialUrl": "https://www.stpatrickscathedral.ie/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "09:30",
+          "close": "17:00"
+        },
+        {
+          "days": "Sa",
+          "open": "09:00",
+          "close": "17:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "10:30"
+        },
+        {
+          "days": "Su",
+          "open": "13:00",
+          "close": "14:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/43981182",
+        "https://www.wikidata.org/wiki/Q846365"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "st-stephen-s-green": {
+      "coords": {
+        "lat": 53.338052,
+        "lng": -6.259023
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://ststephensgreenpark.ie/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/18631965",
+        "https://www.wikidata.org/wiki/Q1432605"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-glendalough": {
+      "coords": {
+        "lat": 53.010822,
+        "lng": -6.326335
+      },
+      "officialUrl": "https://glendalough.ie/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1523041047",
+        "https://www.wikidata.org/wiki/Q691153"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-howth": {
+      "coords": {
+        "lat": 53.385834,
+        "lng": -6.065119
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/52253160",
+        "https://www.wikidata.org/wiki/Q434165"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-newgrange-and-the-boyne-valley": {
+      "coords": {
+        "lat": 53.694725,
+        "lng": -6.475566
+      },
+      "officialUrl": "https://newgrange.com",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q339503"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "trinity-college-and-the-book-of-kells": {
+      "coords": {
+        "lat": 53.3444,
+        "lng": -6.2577
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 18,
+      "officialUrl": "https://www.tcd.ie/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q258464"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-guinness-storehouse-visit": {
+      "costCurrency": "EUR",
+      "costMax": 40,
+      "costMin": 30
+    },
+    "x-howth-cliff-walk": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-literary-pub-crawl": {
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 15
+    },
+    "x-traditional-music-session": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-whiskey-distillery-tour": {
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 25
+    }
+  },
+  "neighborhoods": {
+    "docklands": {
+      "coords": {
+        "lat": 53.35067,
+        "lng": -6.239326
+      },
+      "radiusKm": 0.65
+    },
+    "kilmainham-and-phoenix-park": {
+      "coords": {
+        "lat": 53.350314,
+        "lng": -6.320138
+      },
+      "radiusKm": 0.8
+    },
+    "liberties": {
+      "coords": {
+        "lat": 53.339993,
+        "lng": -6.277904
+      },
+      "radiusKm": 2.59
+    },
+    "smithfield-and-stoneybatter": {
+      "coords": {
+        "lat": 53.350954,
+        "lng": -6.268573
+      },
+      "radiusKm": 0.8
+    },
+    "st-stephen-s-green-and-georgian-dublin": {
+      "coords": {
+        "lat": 53.342466,
+        "lng": -6.259713
+      },
+      "radiusKm": 0.8
+    },
+    "temple-bar": {
+      "coords": {
+        "lat": 53.345496,
+        "lng": -6.263114
+      },
+      "radiusKm": 0.4
+    },
+    "trinity-and-grafton-street": {
+      "coords": {
+        "lat": 53.341722,
+        "lng": -6.260854
+      },
+      "radiusKm": 0.8
+    }
+  }
+}

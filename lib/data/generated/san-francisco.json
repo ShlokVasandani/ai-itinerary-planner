@@ -1,0 +1,803 @@
+{
+  "bbox": [
+    37.4879,
+    -122.7871,
+    38.0879,
+    -122.0279
+  ],
+  "places": {
+    "alcatraz-island": {
+      "coords": {
+        "lat": 37.826721,
+        "lng": -122.422759
+      },
+      "costCurrency": "USD",
+      "costMax": 50,
+      "costMin": 45,
+      "officialUrl": "https://www.nps.gov/alca/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/20197830",
+        "https://www.wikidata.org/wiki/Q131354"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-blue-bottle-coffee-ferry-building": {
+      "coords": {
+        "lat": 37.796003,
+        "lng": -122.393844
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1189071437"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-caffe-trieste": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.798673,
+        "lng": -122.407296
+      },
+      "officialUrl": "https://caffetrieste.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/331389010",
+        "https://www.wikidata.org/wiki/Q5017151"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-liguria-bakery": {
+      "coords": {
+        "lat": 37.801496,
+        "lng": -122.409285
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4833466622",
+        "https://www.wikidata.org/wiki/Q15242345"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-philz-coffee": {
+      "coords": {
+        "lat": 37.751141,
+        "lng": -122.438379
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/360450263"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-sightglass-coffee": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.777034,
+        "lng": -122.40844
+      },
+      "officialUrl": "https://sightglasscoffee.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "06:30",
+          "close": "17:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "07:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1700641974"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-tartine-bakery": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.761455,
+        "lng": -122.423945
+      },
+      "officialUrl": "https://tartinebakery.com/san-francisco/bakery",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:30",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2247590960",
+        "https://www.wikidata.org/wiki/Q7686852"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "cable-cars": {
+      "coords": {
+        "lat": 37.790316,
+        "lng": -122.422024
+      },
+      "costCurrency": "USD",
+      "costMax": 8,
+      "costMin": 8,
+      "sources": [
+        "https://www.openstreetmap.org/node/9465221527"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "chinatown": {
+      "coords": {
+        "lat": 37.794301,
+        "lng": -122.406376
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.sanfranciscochinatown.com/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/10967083",
+        "https://www.wikidata.org/wiki/Q1073644"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "coit-tower": {
+      "coords": {
+        "lat": 37.802379,
+        "lng": -122.405834
+      },
+      "costCurrency": "USD",
+      "costMax": 10,
+      "costMin": 10,
+      "officialUrl": "https://coittower.org/",
+      "sources": [
+        "https://www.openstreetmap.org/way/28824850",
+        "https://www.wikidata.org/wiki/Q1107297"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "exploratorium": {
+      "coords": {
+        "lat": 37.800898,
+        "lng": -122.398526
+      },
+      "costCurrency": "USD",
+      "costMax": 45,
+      "costMin": 40,
+      "officialUrl": "https://www.exploratorium.edu/",
+      "sources": [
+        "https://www.openstreetmap.org/node/621529017",
+        "https://www.wikidata.org/wiki/Q206518"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "ferry-building-marketplace": {
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "fisherman-s-wharf-and-pier-39": {
+      "coords": {
+        "lat": 37.808313,
+        "lng": -122.415673
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1324280"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "golden-gate-bridge": {
+      "coords": {
+        "lat": 37.81665,
+        "lng": -122.478252
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.goldengate.org/bridge/",
+      "sources": [
+        "https://www.openstreetmap.org/way/537838948",
+        "https://www.wikidata.org/wiki/Q44440"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "golden-gate-park": {
+      "coords": {
+        "lat": 37.769368,
+        "lng": -122.482184
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://sfrecpark.org/770/Golden-Gate-Park",
+      "sources": [
+        "https://www.openstreetmap.org/way/158602261",
+        "https://www.wikidata.org/wiki/Q635559"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "lombard-street": {
+      "coords": {
+        "lat": 37.802098,
+        "lng": -122.418799
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/402111597",
+        "https://www.wikidata.org/wiki/Q930276"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "mission-dolores-and-the-mission-murals": {
+      "coords": {
+        "lat": 37.7644,
+        "lng": -122.427
+      },
+      "costCurrency": "USD",
+      "costMax": 10,
+      "costMin": 10,
+      "officialUrl": "http://missiondolores.org/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1000321"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-buena-vista-cafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.806517,
+        "lng": -122.420774
+      },
+      "officialUrl": "http://www.thebuenavista.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "09:00",
+          "close": "26:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "08:00",
+          "close": "26:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/388205890",
+        "https://www.wikidata.org/wiki/Q4985436"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-smuggler-s-cove": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.7794,
+        "lng": -122.423343
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "17:00",
+          "close": "25:45"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1295101185"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-the-fillmore": {
+      "coords": {
+        "lat": 37.784084,
+        "lng": -122.433171
+      },
+      "officialUrl": "http://thefillmore.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/368171371",
+        "https://www.wikidata.org/wiki/Q1348537"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-tonga-room-and-hurricane-bar": {
+      "closedDays": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "coords": {
+        "lat": 37.792141,
+        "lng": -122.410008
+      },
+      "officialUrl": "https://www.fairmont.com/san-francisco/dining/tonga-room-hurricane-bar/",
+      "openingHours": [
+        {
+          "days": "Th",
+          "open": "17:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "17:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2071647991",
+        "https://www.wikidata.org/wiki/Q7820969"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-vesuvio-cafe": {
+      "coords": {
+        "lat": 37.797494,
+        "lng": -122.406449
+      },
+      "officialUrl": "http://www.vesuvio.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/35537202",
+        "https://www.wikidata.org/wiki/Q7923521"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "painted-ladies-at-alamo-square": {
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "palace-of-fine-arts": {
+      "coords": {
+        "lat": 37.802919,
+        "lng": -122.448403
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://palaceoffinearts.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/288371295",
+        "https://www.wikidata.org/wiki/Q966263"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-burma-superstar": {
+      "coords": {
+        "lat": 37.782913,
+        "lng": -122.462565
+      },
+      "costCurrency": "USD",
+      "costMax": 40,
+      "costMin": 25,
+      "officialUrl": "https://www.burmasuperstar.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/1769223515"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-foreign-cinema": {
+      "coords": {
+        "lat": 37.75642,
+        "lng": -122.419137
+      },
+      "costCurrency": "USD",
+      "costMax": 80,
+      "costMin": 50,
+      "sources": [
+        "https://www.openstreetmap.org/node/2338837948"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-gary-danko": {
+      "coords": {
+        "lat": 37.805813,
+        "lng": -122.420564
+      },
+      "costCurrency": "USD",
+      "costMax": 200,
+      "costMin": 150,
+      "sources": [
+        "https://www.openstreetmap.org/node/4400790593"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-hog-island-oyster-co": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.79593,
+        "lng": -122.393527
+      },
+      "costCurrency": "USD",
+      "costMax": 70,
+      "costMin": 40,
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "11:30",
+          "close": "20:00"
+        },
+        {
+          "days": "Fr-Su",
+          "open": "11:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1189071411"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-house-of-prime-rib": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.793391,
+        "lng": -122.422544
+      },
+      "costCurrency": "USD",
+      "costMax": 100,
+      "costMin": 70,
+      "officialUrl": "https://www.houseofprimerib.net/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "17:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "16:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/257802450"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-la-taqueria": {
+      "closedDays": [
+        1,
+        2
+      ],
+      "coords": {
+        "lat": 37.750874,
+        "lng": -122.418158
+      },
+      "costCurrency": "USD",
+      "costMax": 20,
+      "costMin": 12,
+      "officialUrl": "https://lataqueriasf.com/",
+      "openingHours": [
+        {
+          "days": "We-Sa",
+          "open": "11:00",
+          "close": "20:45"
+        },
+        {
+          "days": "Su",
+          "open": "11:00",
+          "close": "19:45"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3202476750"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-mister-jiu-s": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.793717,
+        "lng": -122.406662
+      },
+      "costCurrency": "USD",
+      "costMax": 150,
+      "costMin": 90,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "05:03",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4364025826"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-sotto-mare": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.799719,
+        "lng": -122.408321
+      },
+      "costCurrency": "USD",
+      "costMax": 70,
+      "costMin": 40,
+      "officialUrl": "https://www.sottomaresf.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "11:30",
+          "close": "21:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "11:30",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/440110077"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-swan-oyster-depot": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 37.790969,
+        "lng": -122.420918
+      },
+      "costCurrency": "USD",
+      "costMax": 60,
+      "costMin": 35,
+      "officialUrl": "https://swanoysterdepot.net/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "08:00",
+          "close": "14:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/825967002",
+        "https://www.wikidata.org/wiki/Q65090882"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-tadich-grill": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 37.79342,
+        "lng": -122.399472
+      },
+      "costCurrency": "USD",
+      "costMax": 70,
+      "costMin": 40,
+      "officialUrl": "https://tadichgrillsf.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "11:00",
+          "close": "21:30"
+        },
+        {
+          "days": "Sa",
+          "open": "16:00",
+          "close": "21:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1454042337",
+        "https://www.wikidata.org/wiki/Q7674616"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-the-slanted-door": {
+      "costCurrency": "USD",
+      "costMax": 75,
+      "costMin": 45
+    },
+    "r-zuni-cafe": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 37.773564,
+        "lng": -122.421646
+      },
+      "costCurrency": "USD",
+      "costMax": 75,
+      "costMin": 45,
+      "officialUrl": "https://zunicafe.com/",
+      "openingHours": [
+        {
+          "days": "Tu-Th",
+          "open": "17:00",
+          "close": "21:30"
+        },
+        {
+          "days": "Fr-Su",
+          "open": "11:00",
+          "close": "15:00"
+        },
+        {
+          "days": "Fr-Su",
+          "open": "17:00",
+          "close": "21:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/256730304",
+        "https://www.wikidata.org/wiki/Q8075291"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-haight-street": {
+      "coords": {
+        "lat": 37.772635,
+        "lng": -122.426352
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/44670365",
+        "https://www.wikidata.org/wiki/Q719317"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-union-square": {
+      "coords": {
+        "lat": 37.787936,
+        "lng": -122.407517
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/25278818",
+        "https://www.wikidata.org/wiki/Q49573226"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "sfmoma": {
+      "coords": {
+        "lat": 37.785915,
+        "lng": -122.400736
+      },
+      "costCurrency": "USD",
+      "costMax": 30,
+      "costMin": 30,
+      "officialUrl": "https://www.sfmoma.org/",
+      "sources": [
+        "https://www.openstreetmap.org/way/41692824",
+        "https://www.wikidata.org/wiki/Q913672"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-monterey-and-carmel": {
+      "coords": {
+        "lat": 36.60024,
+        "lng": -121.89468
+      },
+      "officialUrl": "https://monterey.gov/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q487315"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-muir-woods-and-sausalito": {
+      "coords": {
+        "lat": 37.8919,
+        "lng": -122.571
+      },
+      "officialUrl": "https://www.nps.gov/muwo",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1195839"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-napa-and-sonoma": {
+      "coords": {
+        "lat": 38.3,
+        "lng": -122.3
+      },
+      "officialUrl": "http://www.cityofnapa.org",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q60537"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "twin-peaks": {
+      "coords": {
+        "lat": 37.752415,
+        "lng": -122.447587
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/11778655699"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-alcatraz-evening-tour": {
+      "costCurrency": "USD",
+      "costMax": 60,
+      "costMin": 50
+    },
+    "x-bike-across-the-golden-gate-bridge": {
+      "costCurrency": "USD",
+      "costMax": 50,
+      "costMin": 14
+    },
+    "x-giants-game-at-oracle-park": {
+      "costCurrency": "USD",
+      "costMax": 150,
+      "costMin": 25
+    },
+    "x-haight-ashbury-walking-tour": {
+      "costCurrency": "USD",
+      "costMax": 30,
+      "costMin": 20
+    },
+    "x-napa-or-sonoma-wine-tasting": {
+      "costCurrency": "USD",
+      "costMax": 300,
+      "costMin": 150
+    }
+  },
+  "neighborhoods": {
+    "fisherman-s-wharf-and-the-embarcadero": {
+      "coords": {
+        "lat": 37.803615,
+        "lng": -122.407067
+      },
+      "radiusKm": 0.8
+    },
+    "golden-gate-park-and-the-richmond": {
+      "coords": {
+        "lat": 37.769368,
+        "lng": -122.482184
+      },
+      "radiusKm": 0.8
+    },
+    "haight-ashbury-and-the-castro": {
+      "coords": {
+        "lat": 37.779877,
+        "lng": -122.440696
+      },
+      "radiusKm": 0.8
+    },
+    "mission-district": {
+      "coords": {
+        "lat": 37.768905,
+        "lng": -122.419534
+      },
+      "radiusKm": 0.4
+    },
+    "nob-hill-and-russian-hill": {
+      "coords": {
+        "lat": 37.793783,
+        "lng": -122.418859
+      },
+      "radiusKm": 0.8
+    },
+    "north-beach-and-chinatown": {
+      "coords": {
+        "lat": 37.795591,
+        "lng": -122.404687
+      },
+      "radiusKm": 0.4
+    },
+    "presidio-and-marina": {
+      "coords": {
+        "lat": 37.790661,
+        "lng": -122.458081
+      },
+      "radiusKm": 0.8
+    },
+    "union-square-and-downtown": {
+      "coords": {
+        "lat": 37.787936,
+        "lng": -122.407517
+      },
+      "radiusKm": 0.4
+    }
+  }
+}

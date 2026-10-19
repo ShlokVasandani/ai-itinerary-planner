@@ -1,0 +1,622 @@
+{
+  "bbox": [
+    -23.211,
+    -43.5351,
+    -22.611,
+    -42.8837
+  ],
+  "places": {
+    "c-armazem-do-cafe": {
+      "coords": {
+        "lat": -23.003788,
+        "lng": -43.316939
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/8075645474"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-bibi-sucos": {},
+    "c-cafeina": {
+      "coords": {
+        "lat": -22.986137,
+        "lng": -43.22804
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/1343784873"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-confeitaria-colombo": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": -22.90517,
+        "lng": -43.178744
+      },
+      "officialUrl": "https://www.confeitariacolombo.com.br/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "09:00",
+          "close": "19:30"
+        },
+        {
+          "days": "Sa",
+          "open": "09:00",
+          "close": "17:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/338511051",
+        "https://www.wikidata.org/wiki/Q18479573"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-sorvete-italia": {
+      "coords": {
+        "lat": -22.984604,
+        "lng": -43.200982
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/9911749152"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "christ-the-redeemer-cristo-redentor": {
+      "coords": {
+        "lat": -22.951917,
+        "lng": -43.210459
+      },
+      "costCurrency": "BRL",
+      "costMax": 150,
+      "costMin": 100,
+      "officialUrl": "http://www.corcovado.com.br/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4919986733",
+        "https://www.wikidata.org/wiki/Q79961"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "confeitaria-colombo": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": -22.90517,
+        "lng": -43.178744
+      },
+      "costCurrency": "BRL",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.confeitariacolombo.com.br/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "09:00",
+          "close": "19:30"
+        },
+        {
+          "days": "Sa",
+          "open": "09:00",
+          "close": "17:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/338511051",
+        "https://www.wikidata.org/wiki/Q18479573"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "copacabana-beach": {
+      "coords": {
+        "lat": -22.9757,
+        "lng": -43.186616
+      },
+      "costCurrency": "BRL",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/relation/5514745",
+        "https://www.wikidata.org/wiki/Q63894"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "ipanema-beach-and-arpoador": {
+      "coords": {
+        "lat": -22.985,
+        "lng": -43.205
+      },
+      "costCurrency": "BRL",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q3390838"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "jardim-botanico": {
+      "coords": {
+        "lat": -22.963636,
+        "lng": -43.223346
+      },
+      "costCurrency": "BRL",
+      "costMax": 80,
+      "costMin": 70,
+      "sources": [
+        "https://www.openstreetmap.org/relation/5516241",
+        "https://www.wikidata.org/wiki/Q2383714"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "maracana-stadium": {
+      "coords": {
+        "lat": -22.912162,
+        "lng": -43.231186
+      },
+      "costCurrency": "BRL",
+      "costMax": 100,
+      "costMin": 70,
+      "officialUrl": "http://www.maracana.com/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/4587734",
+        "https://www.wikidata.org/wiki/Q155174"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "museum-of-tomorrow-museu-do-amanha": {
+      "closedDays": [
+        3
+      ],
+      "coords": {
+        "lat": -22.894068,
+        "lng": -43.179404
+      },
+      "costCurrency": "BRL",
+      "costMax": 40,
+      "costMin": 30,
+      "officialUrl": "https://museudoamanha.org.br/",
+      "openingHours": [
+        {
+          "days": "Mo,Tu,Th-Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/372720167",
+        "https://www.wikidata.org/wiki/Q10333874"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-baixo-gavea": {
+      "coords": {
+        "lat": -22.973085,
+        "lng": -43.225645
+      },
+      "officialUrl": "http://www.mobilicidade.com.br/bikerio.asp",
+      "sources": [
+        "https://www.openstreetmap.org/node/2014580269"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-carioca-da-gema": {
+      "coords": {
+        "lat": -22.913276,
+        "lng": -43.181911
+      },
+      "officialUrl": "https://www.barcariocadagema.com.br/bar.htm",
+      "sources": [
+        "https://www.openstreetmap.org/node/2262435854"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-pedra-do-sal": {
+      "coords": {
+        "lat": -22.898042,
+        "lng": -43.185406
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/209735593",
+        "https://www.wikidata.org/wiki/Q6543840"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-rio-scenarium": {
+      "coords": {
+        "lat": -22.908299,
+        "lng": -43.184107
+      },
+      "officialUrl": "https://www.rioscenarium.com.br/",
+      "sources": [
+        "https://www.openstreetmap.org/way/460250521"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "parque-lage": {
+      "closedDays": [],
+      "coords": {
+        "lat": -22.959415,
+        "lng": -43.211889
+      },
+      "costCurrency": "BRL",
+      "costMax": 0,
+      "costMin": 0,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/14917255",
+        "https://www.wikidata.org/wiki/Q7139641"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-adega-perola": {
+      "coords": {
+        "lat": -22.966183,
+        "lng": -43.187326
+      },
+      "costCurrency": "BRL",
+      "costMax": 110,
+      "costMin": 60,
+      "sources": [
+        "https://www.openstreetmap.org/node/3832775913",
+        "https://www.wikidata.org/wiki/Q61780362"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-aprazivel": {
+      "coords": {
+        "lat": -22.924908,
+        "lng": -43.187342
+      },
+      "costCurrency": "BRL",
+      "costMax": 250,
+      "costMin": 150,
+      "sources": [
+        "https://www.openstreetmap.org/way/92316038"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-bar-do-mineiro": {
+      "coords": {
+        "lat": -22.921097,
+        "lng": -43.186917
+      },
+      "costCurrency": "BRL",
+      "costMax": 140,
+      "costMin": 80,
+      "sources": [
+        "https://www.openstreetmap.org/node/914639094"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-bar-luiz": {
+      "coords": {
+        "lat": -22.8481,
+        "lng": -43.323777
+      },
+      "costCurrency": "BRL",
+      "costMax": 130,
+      "costMin": 70,
+      "sources": [
+        "https://www.openstreetmap.org/node/2460375967"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-bibi-sucos": {
+      "costCurrency": "BRL",
+      "costMax": 40,
+      "costMin": 20
+    },
+    "r-casa-da-feijoada": {
+      "closedDays": [],
+      "coords": {
+        "lat": -22.985689,
+        "lng": -43.19671
+      },
+      "costCurrency": "BRL",
+      "costMax": 150,
+      "costMin": 90,
+      "officialUrl": "http://www.cozinhatipica.com.br/?content=restaurantes",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:00",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2306258247"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-cervantes": {
+      "coords": {
+        "lat": -22.962503,
+        "lng": -43.175737
+      },
+      "costCurrency": "BRL",
+      "costMax": 80,
+      "costMin": 40,
+      "sources": [
+        "https://www.openstreetmap.org/node/2170287948"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-churrascaria-palace": {
+      "costCurrency": "BRL",
+      "costMax": 250,
+      "costMin": 150
+    },
+    "r-lamas": {
+      "coords": {
+        "lat": -22.933975,
+        "lng": -43.177415
+      },
+      "costCurrency": "BRL",
+      "costMax": 140,
+      "costMin": 80,
+      "officialUrl": "https://cafelamas.com.br/",
+      "sources": [
+        "https://www.openstreetmap.org/node/6597447940",
+        "https://www.wikidata.org/wiki/Q9672613"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-olympe": {
+      "coords": {
+        "lat": -22.961147,
+        "lng": -43.206555
+      },
+      "costCurrency": "BRL",
+      "costMax": 500,
+      "costMin": 300,
+      "sources": [
+        "https://www.openstreetmap.org/node/5613342653",
+        "https://www.wikidata.org/wiki/Q89925339"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-satyricon": {
+      "costCurrency": "BRL",
+      "costMax": 350,
+      "costMin": 200
+    },
+    "r-zaza-bistro-tropical": {
+      "costCurrency": "BRL",
+      "costMax": 220,
+      "costMin": 120
+    },
+    "s-feira-hippie-de-ipanema": {
+      "closedDays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "coords": {
+        "lat": -22.985427,
+        "lng": -43.198436
+      },
+      "openingHours": [
+        {
+          "days": "Su",
+          "open": "08:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1513985518"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-rio-sul-shopping": {
+      "coords": {
+        "lat": -22.957437,
+        "lng": -43.177157
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/743696156"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-saara": {
+      "coords": {
+        "lat": -22.903805,
+        "lng": -43.182551
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4538593331"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "santa-teresa-and-the-bonde-tram": {
+      "coords": {
+        "lat": -22.9175,
+        "lng": -43.188056
+      },
+      "costCurrency": "BRL",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q980992"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "selaron-steps": {
+      "costCurrency": "BRL",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "sugarloaf-mountain-pao-de-acucar": {
+      "coords": {
+        "lat": -22.949489,
+        "lng": -43.156157
+      },
+      "costCurrency": "BRL",
+      "costMax": 190,
+      "costMin": 150,
+      "officialUrl": "http://www.bondinho.com.br/",
+      "sources": [
+        "https://www.openstreetmap.org/node/34582421",
+        "https://www.wikidata.org/wiki/Q210722"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-ilha-grande": {
+      "coords": {
+        "lat": -23.133333,
+        "lng": -44.166667
+      },
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1369095"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-paraty": {
+      "coords": {
+        "lat": -23.219646,
+        "lng": -44.71542
+      },
+      "officialUrl": "http://www.paraty.com/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/1277591",
+        "https://www.wikidata.org/wiki/Q926729"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-petropolis": {
+      "coords": {
+        "lat": -22.505,
+        "lng": -43.178889
+      },
+      "officialUrl": "https://www.petropolis.rj.gov.br/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q189043"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "theatro-municipal": {
+      "coords": {
+        "lat": -22.908992,
+        "lng": -43.176677
+      },
+      "costCurrency": "BRL",
+      "costMax": 40,
+      "costMin": 20,
+      "officialUrl": "http://www.theatromunicipal.rj.gov.br/",
+      "sources": [
+        "https://www.openstreetmap.org/way/107748847",
+        "https://www.wikidata.org/wiki/Q1968538"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "tijuca-national-park": {
+      "closedDays": [],
+      "coords": {
+        "lat": -22.960648,
+        "lng": -43.250593
+      },
+      "costCurrency": "BRL",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.icmbio.gov.br/parnatijuca/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/1124490",
+        "https://www.wikidata.org/wiki/Q1974494"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-football-at-the-maracana": {
+      "costCurrency": "BRL",
+      "costMax": 300,
+      "costMin": 80
+    },
+    "x-hang-gliding-or-paragliding": {
+      "costCurrency": "BRL",
+      "costMax": 900,
+      "costMin": 600
+    },
+    "x-samba-night-in-lapa": {
+      "costCurrency": "BRL",
+      "costMax": 100,
+      "costMin": 40
+    },
+    "x-sunset-at-arpoador": {
+      "costCurrency": "BRL",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-tijuca-forest-hike-or-jeep-tour": {
+      "costCurrency": "BRL",
+      "costMax": 350,
+      "costMin": 200
+    }
+  },
+  "neighborhoods": {
+    "barra-da-tijuca": {
+      "coords": {
+        "lat": -22.99974,
+        "lng": -43.365993
+      },
+      "radiusKm": 3
+    },
+    "botafogo-and-urca": {
+      "coords": {
+        "lat": -22.956024,
+        "lng": -43.179956
+      },
+      "radiusKm": 0.8
+    },
+    "centro-and-lapa": {
+      "coords": {
+        "lat": -22.90189,
+        "lng": -43.194874
+      },
+      "radiusKm": 0.8
+    },
+    "copacabana": {
+      "coords": {
+        "lat": -22.971974,
+        "lng": -43.1843
+      },
+      "radiusKm": 2.23
+    },
+    "cosme-velho-and-corcovado": {
+      "coords": {
+        "lat": -22.957327,
+        "lng": -43.224314
+      },
+      "radiusKm": 0.8
+    },
+    "ipanema-and-leblon": {
+      "coords": {
+        "lat": -22.966799,
+        "lng": -43.20068
+      },
+      "radiusKm": 0.8
+    },
+    "santa-teresa": {
+      "coords": {
+        "lat": -22.921554,
+        "lng": -43.186027
+      },
+      "radiusKm": 3
+    }
+  }
+}

@@ -1,0 +1,848 @@
+{
+  "bbox": [
+    47.8371,
+    11.1258,
+    48.4371,
+    12.0249
+  ],
+  "places": {
+    "alte-pinakothek": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 48.148284,
+        "lng": 11.56998
+      },
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 7,
+      "officialUrl": "https://www.pinakothek.de/de/alte-pinakothek",
+      "openingHours": [
+        {
+          "days": "Tu,We",
+          "open": "10:00",
+          "close": "20:30"
+        },
+        {
+          "days": "Th-Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/4647135",
+        "https://www.wikidata.org/wiki/Q154568"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "asamkirche": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.13521,
+        "lng": 11.569523
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "openingHours": [
+        {
+          "days": "Mo-Th,Sa,Su",
+          "open": "09:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Fr",
+          "open": "13:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/47515468",
+        "https://www.wikidata.org/wiki/Q152973"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "bmw-museum-and-bmw-welt": {
+      "coords": {
+        "lat": 48.17667,
+        "lng": 11.55917
+      },
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 10,
+      "officialUrl": "http://www.bmw-welt.com/de/location/museum/concept.html",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q703212"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-luitpold": {
+      "coords": {
+        "lat": 48.142969,
+        "lng": 11.574757
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/307740749"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-reitschule": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.155391,
+        "lng": 11.588964
+      },
+      "officialUrl": "https://www.cafe-reitschule.de/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:00",
+          "close": "25:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/370744573"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-dallmayr": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 48.138318,
+        "lng": 11.577307
+      },
+      "officialUrl": "https://www.dallmayr.com/de/delikatessenhaus/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:30",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/242367321"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-man-versus-machine": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.149908,
+        "lng": 11.577609
+      },
+      "officialUrl": "https://mvsm.coffee/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "10:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/11143377602"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-rischart": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 48.139502,
+        "lng": 11.565875
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "06:00",
+          "close": "20:00"
+        },
+        {
+          "days": "Sa",
+          "open": "07:30",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/334551270"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "deutsches-museum": {
+      "coords": {
+        "lat": 48.130041,
+        "lng": 11.582909
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 15,
+      "officialUrl": "https://www.deutsches-museum.de/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/3866522",
+        "https://www.wikidata.org/wiki/Q131617"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "englischer-garten": {
+      "coords": {
+        "lat": 48.164861,
+        "lng": 11.606404
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.schloesser.bayern.de/deutsch/garten/objekte/mu_engl.htm",
+      "sources": [
+        "https://www.openstreetmap.org/way/159075298",
+        "https://www.wikidata.org/wiki/Q260223"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "frauenkirche": {
+      "coords": {
+        "lat": 48.138582,
+        "lng": 11.573592
+      },
+      "costCurrency": "EUR",
+      "costMax": 9,
+      "costMin": 0,
+      "officialUrl": "https://www.muenchner-dom.de/",
+      "sources": [
+        "https://www.openstreetmap.org/way/225698612",
+        "https://www.wikidata.org/wiki/Q167193"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "hofgarten": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.142677,
+        "lng": 11.580466
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.schloesser.bayern.de/deutsch/garten/objekte/mu_hofg.htm",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/150797532",
+        "https://www.wikidata.org/wiki/Q707673"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "marienplatz-and-the-neues-rathaus": {
+      "coords": {
+        "lat": 48.137222,
+        "lng": 11.575278
+      },
+      "costCurrency": "EUR",
+      "costMax": 8,
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q252648"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-bar-gabanyi": {
+      "closedDays": [
+        1,
+        2
+      ],
+      "coords": {
+        "lat": 48.132827,
+        "lng": 11.557618
+      },
+      "officialUrl": "http://www.bar-gabanyi.de/",
+      "openingHours": [
+        {
+          "days": "We,Th",
+          "open": "18:00",
+          "close": "27:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "20:00",
+          "close": "29:00"
+        },
+        {
+          "days": "Su",
+          "open": "20:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2255941559"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-hofbraukeller": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.134519,
+        "lng": 11.594886
+      },
+      "officialUrl": "http://www.hofbraeukeller.de/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/116555850",
+        "https://www.wikidata.org/wiki/Q880338"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-schumann-s-bar": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.143933,
+        "lng": 11.578618
+      },
+      "officialUrl": "https://schumanns.de/de/index.html",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "03:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/280151630"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "nymphenburg-palace": {
+      "coords": {
+        "lat": 48.158257,
+        "lng": 11.503297
+      },
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 10,
+      "officialUrl": "https://www.schloss-nymphenburg.de/",
+      "sources": [
+        "https://www.openstreetmap.org/node/3189375851",
+        "https://www.wikidata.org/wiki/Q131631"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "olympiapark-and-olympic-tower": {
+      "coords": {
+        "lat": 48.17,
+        "lng": 11.551667
+      },
+      "costCurrency": "EUR",
+      "costMax": 8,
+      "costMin": 0,
+      "officialUrl": "https://www.olympiapark.de/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q383296"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "pinakothek-der-moderne": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 48.14716,
+        "lng": 11.572227
+      },
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 10,
+      "officialUrl": "https://www.pinakothek-der-moderne.de/",
+      "openingHours": [
+        {
+          "days": "Tu,We,Fr-Su",
+          "open": "10:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Th",
+          "open": "10:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/10053440",
+        "https://www.wikidata.org/wiki/Q250195"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-augustiner-keller": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.143503,
+        "lng": 11.551566
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 18,
+      "officialUrl": "https://www.augustinerkeller.de/de",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:30",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/4609522",
+        "https://www.wikidata.org/wiki/Q19834972"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-bratwurst-glockl-am-dom": {
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 15
+    },
+    "r-cafe-schmalznudel-frischhut": {
+      "coords": {
+        "lat": 48.134888,
+        "lng": 11.574552
+      },
+      "costCurrency": "EUR",
+      "costMax": 8,
+      "costMin": 4,
+      "sources": [
+        "https://www.openstreetmap.org/node/343737746"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-der-pschorr": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.134751,
+        "lng": 11.575197
+      },
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20,
+      "officialUrl": "https://www.der-pschorr.de/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/358492740"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-haxnbauer-im-scholastikabrau": {
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20
+    },
+    "r-hofbrauhaus-munchen": {
+      "coords": {
+        "lat": 48.13767,
+        "lng": 11.57996
+      },
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20
+    },
+    "r-prinz-myshkin": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.135928,
+        "lng": 11.570822
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 18,
+      "officialUrl": "https://prinzmyshkin.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/417780985"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-schneider-brauhaus": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.136395,
+        "lng": 11.578422
+      },
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20,
+      "officialUrl": "https://www.weisses-brauhaus-tal.de/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "08:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "08:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6013457619"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-tantris": {
+      "closedDays": [
+        0,
+        1
+      ],
+      "coords": {
+        "lat": 48.16983,
+        "lng": 11.588357
+      },
+      "costCurrency": "EUR",
+      "costMax": 300,
+      "costMin": 200,
+      "officialUrl": "https://tantris.de/",
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "00:00",
+          "close": "01:00"
+        },
+        {
+          "days": "Tu-Sa",
+          "open": "12:00",
+          "close": "15:00"
+        },
+        {
+          "days": "Tu-Sa",
+          "open": "18:30",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/117589811",
+        "https://www.wikidata.org/wiki/Q876820"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-viktualienmarkt-stalls": {
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 8
+    },
+    "r-weisses-brauhaus": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.136395,
+        "lng": 11.578422
+      },
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20,
+      "officialUrl": "https://www.weisses-brauhaus-tal.de/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "08:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "08:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6013457619"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-wirtshaus-in-der-au": {
+      "coords": {
+        "lat": 48.129035,
+        "lng": 11.58657
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 18,
+      "officialUrl": "https://wirtshausinderau.de/",
+      "sources": [
+        "https://www.openstreetmap.org/node/1687060385"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-zum-durnbrau": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 48.136221,
+        "lng": 11.580107
+      },
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20,
+      "officialUrl": "https://www.zumduernbraeu.de/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "11:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/344500032"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "residenz": {
+      "coords": {
+        "lat": 48.141161,
+        "lng": 11.579045
+      },
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 10,
+      "officialUrl": "https://www.residenz-muenchen.de/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/7456359",
+        "https://www.wikidata.org/wiki/Q686548"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-kaufingerstra-e": {
+      "coords": {
+        "lat": 48.137751,
+        "lng": 11.572933
+      },
+      "sources": [
+        "https://www.openstreetmap.org/relation/4773563",
+        "https://www.wikidata.org/wiki/Q153656"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-maximilianstra-e": {
+      "coords": {
+        "lat": 48.136845,
+        "lng": 11.591368
+      },
+      "officialUrl": "http://www.muenchen.de/sehenswuerdigkeiten/orte/153202.html",
+      "sources": [
+        "https://www.openstreetmap.org/way/394139277",
+        "https://www.wikidata.org/wiki/Q315853"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-viktualienmarkt": {
+      "coords": {
+        "lat": 48.135478,
+        "lng": 11.576654
+      },
+      "officialUrl": "http://www.muenchen.de/sehenswuerdigkeiten/orte/120340.html",
+      "sources": [
+        "https://www.openstreetmap.org/way/240014255",
+        "https://www.wikidata.org/wiki/Q686629"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "st-peter-s-church-alter-peter": {
+      "coords": {
+        "lat": 48.136462,
+        "lng": 11.576031
+      },
+      "costCurrency": "EUR",
+      "costMax": 5,
+      "costMin": 5,
+      "officialUrl": "https://alterpeter.de/",
+      "sources": [
+        "https://www.openstreetmap.org/way/228534603",
+        "https://www.wikidata.org/wiki/Q707645"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-dachau-memorial-site": {
+      "coords": {
+        "lat": 48.270434,
+        "lng": 11.468295
+      },
+      "officialUrl": "https://www.kz-gedenkstaette-dachau.de/",
+      "sources": [
+        "https://www.openstreetmap.org/way/25503679",
+        "https://www.wikidata.org/wiki/Q1532094"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-garmisch-partenkirchen-and-the-zugspitze": {
+      "coords": {
+        "lat": 47.5,
+        "lng": 11.083333
+      },
+      "officialUrl": "https://www.gapa.de/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q127043"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-neuschwanstein-castle": {
+      "coords": {
+        "lat": 47.557552,
+        "lng": 10.749696
+      },
+      "officialUrl": "https://www.neuschwanstein.de/",
+      "sources": [
+        "https://www.openstreetmap.org/way/221601969",
+        "https://www.wikidata.org/wiki/Q4152"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-salzburg": {
+      "coords": {
+        "lat": 47.798135,
+        "lng": 13.046481
+      },
+      "officialUrl": "https://www.stadt-salzburg.at/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/86538",
+        "https://www.wikidata.org/wiki/Q34713"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "viktualienmarkt": {
+      "coords": {
+        "lat": 48.135478,
+        "lng": 11.576654
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.muenchen.de/sehenswuerdigkeiten/orte/120340.html",
+      "sources": [
+        "https://www.openstreetmap.org/way/240014255",
+        "https://www.wikidata.org/wiki/Q686629"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-bavarian-cooking-class": {
+      "costCurrency": "EUR",
+      "costMax": 110,
+      "costMin": 70
+    },
+    "x-beer-garden-afternoon": {
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 10
+    },
+    "x-eisbach-surfers": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-oktoberfest": {
+      "coords": {
+        "lat": 48.131489,
+        "lng": 11.549755
+      },
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 0,
+      "officialUrl": "https://www.oktoberfest.de/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1189205212",
+        "https://www.wikidata.org/wiki/Q102400"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-viktualienmarkt-tasting-walk": {
+      "costCurrency": "EUR",
+      "costMax": 80,
+      "costMin": 45
+    }
+  },
+  "neighborhoods": {
+    "altstadt": {
+      "coords": {
+        "lat": 48.137621,
+        "lng": 11.574688
+      },
+      "radiusKm": 1.05
+    },
+    "au-haidhausen-and-the-isar": {
+      "coords": {
+        "lat": 48.129538,
+        "lng": 11.58474
+      },
+      "radiusKm": 0.8
+    },
+    "glockenbachviertel": {
+      "coords": {
+        "lat": 48.127864,
+        "lng": 11.570614
+      },
+      "radiusKm": 1.33
+    },
+    "haidhausen": {
+      "coords": {
+        "lat": 48.132663,
+        "lng": 11.601122
+      },
+      "radiusKm": 2.67
+    },
+    "maxvorstadt": {
+      "coords": {
+        "lat": 48.151092,
+        "lng": 11.562418
+      },
+      "radiusKm": 2.08
+    },
+    "nymphenburg": {
+      "coords": {
+        "lat": 48.156226,
+        "lng": 11.494456
+      },
+      "radiusKm": 2.1
+    },
+    "olympiapark": {
+      "coords": {
+        "lat": 48.168706,
+        "lng": 11.550364
+      },
+      "radiusKm": 1.16
+    },
+    "schwabing": {
+      "coords": {
+        "lat": 48.168926,
+        "lng": 11.58995
+      },
+      "radiusKm": 2.67
+    }
+  }
+}

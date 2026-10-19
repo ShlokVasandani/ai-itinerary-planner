@@ -1,0 +1,666 @@
+{
+  "bbox": [
+    18.755,
+    72.5518,
+    19.355,
+    73.1866
+  ],
+  "places": {
+    "bandra-fort-and-bandstand": {
+      "coords": {
+        "lat": 19.04177,
+        "lng": 72.81858
+      },
+      "costCurrency": "INR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q5049681"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "banganga-tank": {
+      "coords": {
+        "lat": 18.945491,
+        "lng": 72.793643
+      },
+      "costCurrency": "INR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/38718204",
+        "https://www.wikidata.org/wiki/Q4855094"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-mondegar": {
+      "closedDays": [],
+      "coords": {
+        "lat": 18.924042,
+        "lng": 72.832179
+      },
+      "officialUrl": "https://www.cafemondegar.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/669259659"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-kala-ghoda-cafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 18.928482,
+        "lng": 72.832312
+      },
+      "officialUrl": "https://kgcafe.in/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "23:45"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3366405791"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-prithvi-cafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 19.106209,
+        "lng": 72.82572
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:30",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2391804809"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-theobroma": {
+      "coords": {
+        "lat": 18.919217,
+        "lng": 72.829227
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/1544430251"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "chhatrapati-shivaji-maharaj-terminus-csmt": {
+      "coords": {
+        "lat": 18.939856,
+        "lng": 72.835519
+      },
+      "costCurrency": "INR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/107441516",
+        "https://www.wikidata.org/wiki/Q235884"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "chhatrapati-shivaji-maharaj-vastu-sangrahalaya-csmvs": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 18.926927,
+        "lng": 72.83265
+      },
+      "costCurrency": "INR",
+      "costMax": 800,
+      "costMin": 800,
+      "officialUrl": "https://csmvs.in/",
+      "openingHours": [
+        {
+          "days": "Tu-Su",
+          "open": "10:15",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/206808196",
+        "https://www.wikidata.org/wiki/Q1071500"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "chowpatty-beach": {
+      "coords": {
+        "lat": 18.954359,
+        "lng": 72.812879
+      },
+      "costCurrency": "INR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/38718382"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "colaba-causeway": {
+      "coords": {
+        "lat": 18.920794,
+        "lng": 72.830579
+      },
+      "costCurrency": "INR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/1528037033"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "crawford-market": {
+      "coords": {
+        "lat": 18.94735,
+        "lng": 72.834511
+      },
+      "costCurrency": "INR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.crawford-market.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/49001325",
+        "https://www.wikidata.org/wiki/Q5182895"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "dhobi-ghat": {
+      "coords": {
+        "lat": 18.910838,
+        "lng": 72.817963
+      },
+      "costCurrency": "INR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/2663548200"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "elephanta-caves": {
+      "coords": {
+        "lat": 18.963333,
+        "lng": 72.931389
+      },
+      "costCurrency": "INR",
+      "costMax": 600,
+      "costMin": 260,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q649384"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "gateway-of-india": {
+      "coords": {
+        "lat": 18.921966,
+        "lng": 72.834566
+      },
+      "costCurrency": "INR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/28845634",
+        "https://www.wikidata.org/wiki/Q864862"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "haji-ali-dargah": {
+      "coords": {
+        "lat": 18.982823,
+        "lng": 72.808993
+      },
+      "costCurrency": "INR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.hajialidargah.in/",
+      "sources": [
+        "https://www.openstreetmap.org/node/674769829",
+        "https://www.wikidata.org/wiki/Q542756"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "mani-bhavan-gandhi-museum": {
+      "costCurrency": "INR",
+      "costMax": 50,
+      "costMin": 50
+    },
+    "marine-drive": {
+      "coords": {
+        "lat": 18.955728,
+        "lng": 72.812713
+      },
+      "costCurrency": "INR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/40444798"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-cafe-mondegar": {
+      "closedDays": [],
+      "coords": {
+        "lat": 18.924042,
+        "lng": 72.832179
+      },
+      "officialUrl": "https://www.cafemondegar.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/669259659"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-the-dome": {
+      "coords": {
+        "lat": 18.935069,
+        "lng": 72.824284
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/669577844"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-toto-s-garage": {
+      "coords": {
+        "lat": 19.062486,
+        "lng": 72.8298
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/2173095193"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-aaswad": {
+      "coords": {
+        "lat": 19.103851,
+        "lng": 72.851806
+      },
+      "costCurrency": "INR",
+      "costMax": 400,
+      "costMin": 200,
+      "sources": [
+        "https://www.openstreetmap.org/node/1579253699"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-bademiya": {
+      "coords": {
+        "lat": 18.92216,
+        "lng": 72.83198
+      },
+      "costCurrency": "INR",
+      "costMax": 600,
+      "costMin": 300,
+      "officialUrl": "http://bademiya.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/3408261570",
+        "https://www.wikidata.org/wiki/Q24895746"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-britannia-and-co": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 18.934473,
+        "lng": 72.840358
+      },
+      "costCurrency": "INR",
+      "costMax": 1000,
+      "costMin": 600,
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "11:30",
+          "close": "28:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4294810192"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-cafe-madras": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 19.027673,
+        "lng": 72.855047
+      },
+      "costCurrency": "INR",
+      "costMax": 400,
+      "costMin": 200,
+      "openingHours": [
+        {
+          "days": "Tu-Su",
+          "open": "07:00",
+          "close": "14:30"
+        },
+        {
+          "days": "Tu-Su",
+          "open": "16:00",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1977933168"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-jimmy-boy": {
+      "coords": {
+        "lat": 18.930808,
+        "lng": 72.835051
+      },
+      "costCurrency": "INR",
+      "costMax": 1500,
+      "costMin": 800,
+      "sources": [
+        "https://www.openstreetmap.org/node/1704905149"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-kyani-and-co": {
+      "coords": {
+        "lat": 18.944107,
+        "lng": 72.828789
+      },
+      "costCurrency": "INR",
+      "costMax": 400,
+      "costMin": 150,
+      "sources": [
+        "https://www.openstreetmap.org/node/9574663630"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-leopold-cafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 18.922711,
+        "lng": 72.831763
+      },
+      "costCurrency": "INR",
+      "costMax": 1500,
+      "costMin": 800,
+      "officialUrl": "http://www.leopoldcafe.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:30",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/40387597",
+        "https://www.wikidata.org/wiki/Q153072"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-masque": {
+      "coords": {
+        "lat": 18.989838,
+        "lng": 72.825682
+      },
+      "costCurrency": "INR",
+      "costMax": 12000,
+      "costMin": 8000,
+      "sources": [
+        "https://www.openstreetmap.org/node/12184157097"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-sardar-pav-bhaji": {
+      "costCurrency": "INR",
+      "costMax": 300,
+      "costMin": 150
+    },
+    "r-soam": {
+      "coords": {
+        "lat": 18.957468,
+        "lng": 72.808976
+      },
+      "costCurrency": "INR",
+      "costMax": 1000,
+      "costMin": 600,
+      "sources": [
+        "https://www.openstreetmap.org/node/6494986078"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-swati-snacks": {
+      "closedDays": [],
+      "coords": {
+        "lat": 18.96649,
+        "lng": 72.81342
+      },
+      "costCurrency": "INR",
+      "costMax": 700,
+      "costMin": 400,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:45",
+          "close": "22:45"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4657376591"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-the-bombay-canteen": {
+      "coords": {
+        "lat": 19.003234,
+        "lng": 72.827583
+      },
+      "costCurrency": "INR",
+      "costMax": 3000,
+      "costMin": 1800,
+      "sources": [
+        "https://www.openstreetmap.org/node/5664893622"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-trishna": {
+      "coords": {
+        "lat": 18.928658,
+        "lng": 72.832393
+      },
+      "costCurrency": "INR",
+      "costMax": 3500,
+      "costMin": 2000,
+      "sources": [
+        "https://www.openstreetmap.org/node/858938542"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-chor-bazaar": {
+      "coords": {
+        "lat": 18.959352,
+        "lng": 72.829914
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/559608210",
+        "https://www.wikidata.org/wiki/Q4596883"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-colaba-causeway": {
+      "coords": {
+        "lat": 18.920794,
+        "lng": 72.830579
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1528037033"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-crawford-market": {
+      "coords": {
+        "lat": 18.94735,
+        "lng": 72.834511
+      },
+      "officialUrl": "http://www.crawford-market.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/49001325",
+        "https://www.wikidata.org/wiki/Q5182895"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-linking-road": {
+      "coords": {
+        "lat": 19.088281,
+        "lng": 72.834264
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/236168392"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "siddhivinayak-temple": {
+      "coords": {
+        "lat": 19.081512,
+        "lng": 72.911962
+      },
+      "costCurrency": "INR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/1451903346"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-alibaug": {
+      "coords": {
+        "lat": 18.649843,
+        "lng": 72.876547
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/628932479",
+        "https://www.wikidata.org/wiki/Q385394"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-elephanta-island": {
+      "coords": {
+        "lat": 18.962297,
+        "lng": 72.931899
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/22825787",
+        "https://www.wikidata.org/wiki/Q175304"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-lonavala-and-the-karla-and-bhaja-caves": {
+      "coords": {
+        "lat": 18.748061,
+        "lng": 73.407219
+      },
+      "officialUrl": "https://www.lmc.org.in/EIPPROD/singleIndex.jsp?orgid=131",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1929511"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-dabbawala-lunch-delivery-tour": {
+      "costCurrency": "INR",
+      "costMax": 3000,
+      "costMin": 1500
+    },
+    "x-elephanta-caves-ferry-trip": {
+      "costCurrency": "INR",
+      "costMax": 600,
+      "costMin": 260
+    },
+    "x-fort-and-kala-ghoda-heritage-walk": {
+      "costCurrency": "INR",
+      "costMax": 2000,
+      "costMin": 800
+    },
+    "x-mumbai-street-food-tour": {
+      "costCurrency": "INR",
+      "costMax": 3000,
+      "costMin": 1500
+    },
+    "x-sunset-on-marine-drive": {
+      "costCurrency": "INR",
+      "costMax": 0,
+      "costMin": 0
+    }
+  },
+  "neighborhoods": {
+    "bandra": {
+      "coords": {
+        "lat": 19.054979,
+        "lng": 72.84022
+      },
+      "radiusKm": 0.76
+    },
+    "bhendi-bazaar-and-crawford-market": {
+      "coords": {
+        "lat": 18.951351,
+        "lng": 72.832979
+      },
+      "radiusKm": 0.8
+    },
+    "colaba": {
+      "coords": {
+        "lat": 18.915091,
+        "lng": 72.825969
+      },
+      "radiusKm": 3
+    },
+    "fort-and-kala-ghoda": {
+      "coords": {
+        "lat": 18.931534,
+        "lng": 72.834714
+      },
+      "radiusKm": 0.8
+    },
+    "juhu": {
+      "coords": {
+        "lat": 19.107021,
+        "lng": 72.827528
+      },
+      "radiusKm": 3
+    },
+    "lower-parel-and-worli": {
+      "coords": {
+        "lat": 18.996536,
+        "lng": 72.826633
+      },
+      "radiusKm": 0.8
+    },
+    "marine-drive-and-churchgate": {
+      "coords": {
+        "lat": 18.949346,
+        "lng": 72.817528
+      },
+      "radiusKm": 0.8
+    }
+  }
+}
