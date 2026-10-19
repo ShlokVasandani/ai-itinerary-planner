@@ -592,7 +592,8 @@ const TIER_KEY: Record<BudgetTier, "budget" | "midRange" | "luxury"> = {
 };
 
 export function computeBudgetFit(d: Destination, tier: BudgetTier, cost: CostRange, days: number): BudgetFit {
-  const text = d.quickFacts.averageDailyBudget[TIER_KEY[tier]];
+  const text = d.quickFacts.averageDailyBudget?.[TIER_KEY[tier]];
+  if (!text) return { status: "on-target", tier, comparable: false, tierCurrency: d.currency };
   const parsed = parseCost(text, d.currency);
   const comparable = parsed.min !== undefined && parsed.currency === d.currency;
   if (!comparable || parsed.min === undefined) {
@@ -760,6 +761,8 @@ function place(
   const start = fitOpening(e.rec as Verifiable, ctx.weekday, desired, duration, opts.maxWait ?? 60);
   if (start === null) return false;
   if (ctx.endLimit !== undefined && start + duration > ctx.endLimit) return false;
+  // Nothing should run past half past midnight (a late dinner plus a long evening activity used to).
+  if (start + duration > LATEST_END_MIN) return false;
   // Long unexplained gaps become explicit rest time instead of silent holes.
   if (st.prev && start - arrive >= 45 && opts.minStart !== undefined) {
     st.stops.push({
@@ -864,6 +867,18 @@ function placeMeal(env: Env, ctx: DayCtx, st: BuildState, meal: MealKind, forced
       if (place(env, ctx, st, c.entry, kind, { minStart, maxWait: 60, duration, fit: c.fit })) return true;
     }
   }
+  // Long trips can use up every restaurant in the catalog. Rather than leave a day without a meal,
+  // allow venues from earlier days again, never one already placed today.
+  // Only when nothing fresh is left at all (not merely closed or too far for this slot).
+  if (env.cat.restaurants.filter((r) => isAvailable(env, st.used, r)).length > 2) return false;
+  const today: Used = { ...st.used, ids: new Set(st.placed.map((e) => e.id)), names: new Set(st.placed.map((e) => e.norm)) };
+  for (const strict of [true, false]) {
+    const ranked = rankRestaurants(env, today, meal, near, near?.neighborhood, strict).slice(0, 8);
+    for (const c of ranked) {
+      const duration = meal === "breakfast" ? 50 : meal === "lunch" ? 70 : 90;
+      if (place(env, ctx, st, c.entry, kind, { minStart, maxWait: 60, duration, fit: c.fit })) return true;
+    }
+  }
   return false;
 }
 
@@ -931,6 +946,7 @@ function pickLandmarks(env: Env, ctx: DayCtx, used: Used, forced: Entry[]): Entr
   return chosen;
 }
 
+const LATEST_END_MIN = 24 * 60 + 30;
 const EVENING_HINT = /night|evening|sunset|show|cabaret|dinner|cruise|jazz|bar hop|market|lights|illuminat|rooftop|concert|opera|theatre|theater/i;
 
 function eveningWanted(inp: ResolvedInput, ctx: DayCtx): boolean {
@@ -959,7 +975,7 @@ function chooseEvening(env: Env, ctx: DayCtx, used: Used, near: Entry | undefine
   for (const e of env.cat.experiences) {
     if (!isAvailable(env, used, e) || !open(e)) continue;
     const rec = e.rec as Experience;
-    const evening = rec.interestTags.includes("nightlife") || EVENING_HINT.test(`${rec.name} ${rec.description}`);
+    const evening = rec.timeOfDay ? rec.timeOfDay === "evening" : rec.interestTags.includes("nightlife") || EVENING_HINT.test(`${rec.name} ${rec.description}`);
     if (!evening) continue;
     candidates.push({ e, s: scoreEntry(e, env.inp) + 5 + env.rng() * 3 });
   }
@@ -993,7 +1009,7 @@ function chooseDaytimeExperience(env: Env, ctx: DayCtx, used: Used, forced: Entr
       (e) =>
         isAvailable(env, used, e) &&
         !isClosedAllDay(e.rec as Verifiable, ctx.weekday) &&
-        !EVENING_HINT.test(`${e.name} ${(e.rec as Experience).description}`) &&
+        ((e.rec as Experience).timeOfDay ? (e.rec as Experience).timeOfDay === "day" : !EVENING_HINT.test(`${e.name} ${(e.rec as Experience).description}`)) &&
         e.durationMin <= 240 &&
         (e.rec as Experience).interestTags.some((t) => boosted.has(t))
     )
