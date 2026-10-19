@@ -1,6 +1,8 @@
 "use client";
 
 import { useId, useMemo } from "react";
+import CityField from "@/components/CityField";
+import DateRangeField from "@/components/DateRangeField";
 import type { Destination, DietaryNeed, Interest, TravelStyle } from "@/lib/types";
 import type { BudgetTier, Mobility, Pace } from "@/lib/itinerary-engine";
 import { MAX_TRIP_DAYS, PRESET_DURATIONS } from "@/lib/itinerary-engine";
@@ -37,7 +39,7 @@ export interface PlannerFormState {
 interface Props {
   state: PlannerFormState;
   onChange: (patch: Partial<PlannerFormState>) => void;
-  destinations: Destination[];
+  cities: { slug: string; city: string; country: string }[];
   destination: Destination;
   onSubmit: () => void;
   busy: boolean;
@@ -129,7 +131,7 @@ function Stepper({ label, value, min, max, onChange }: { label: string; value: n
   );
 }
 
-export default function PlannerForm({ state, onChange, destinations, destination, onSubmit, busy }: Props) {
+export default function PlannerForm({ state, onChange, cities, destination, onSubmit, busy }: Props) {
   const id = useId();
   const dateError = state.startDate && state.endDate && state.endDate < state.startDate ? "End date must be on or after the start date." : "";
   const datedLength = state.startDate && state.endDate && !dateError;
@@ -154,39 +156,14 @@ export default function PlannerForm({ state, onChange, destinations, destination
         if (!dateError) onSubmit();
       }}
     >
-      <div className="field">
-        <label htmlFor={`${id}-city`}>Destination</label>
-        <select id={`${id}-city`} value={state.slug} onChange={(e) => onChange({ slug: e.target.value, mustInclude: [], avoid: [] })}>
-          {destinations.map((d) => (
-            <option key={d.slug} value={d.slug}>
-              {d.city}, {d.country}
-            </option>
-          ))}
-        </select>
+      <div className="sf-stack">
+        <CityField
+          cities={cities}
+          value={state.slug}
+          onChange={(slug) => onChange({ slug, mustInclude: [], avoid: [] })}
+        />
+        <DateRangeField start={state.startDate} end={state.endDate} onChange={(a, b) => onChange({ startDate: a, endDate: b })} />
       </div>
-
-      <div className="field-row">
-        <div className="field">
-          <label htmlFor={`${id}-start`}>Start date</label>
-          <input id={`${id}-start`} type="date" value={state.startDate} onChange={(e) => onChange({ startDate: e.target.value })} />
-        </div>
-        <div className="field">
-          <label htmlFor={`${id}-end`}>End date</label>
-          <input
-            id={`${id}-end`}
-            type="date"
-            value={state.endDate}
-            min={state.startDate || undefined}
-            onChange={(e) => onChange({ endDate: e.target.value })}
-            aria-describedby={dateError ? `${id}-date-err` : undefined}
-          />
-        </div>
-      </div>
-      {dateError && (
-        <p className="field-error" id={`${id}-date-err`} role="alert">
-          {dateError}
-        </p>
-      )}
       <p className="field-hint">With dates, the plan avoids closed days and shows the weekday for each day.</p>
 
       {!datedLength && (

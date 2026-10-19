@@ -3,6 +3,8 @@ import { Outfit, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import ScrollFX from "@/components/ScrollFX";
+import { cityIndex } from "@/lib/data/catalog";
 import { SITE_NAME, jsonLd, siteUrl } from "@/lib/site";
 
 const display = Outfit({
@@ -21,9 +23,9 @@ const body = Source_Sans_3({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
-  title: { default: "Sekai: real itineraries for 20 cities", template: "%s | Sekai" },
+  title: { default: `Sekai: day-by-day itineraries for ${cityIndex.length} cities`, template: "%s | Sekai" },
   description:
-    "Day-by-day trips built from hand-verified places in 20 cities, with real dates, distances, opening hours and cost ranges. No invented venues.",
+    `Day-by-day trips for ${cityIndex.length} cities built from real places on Wikidata and OpenStreetMap, with real dates, distances and opening hours. No invented venues.`,
   applicationName: SITE_NAME,
   alternates: { canonical: "/" },
   openGraph: { type: "website", siteName: SITE_NAME, locale: "en_US" },
@@ -56,6 +58,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <a className="skip-link" href="#main">
           Skip to content
         </a>
+        <ScrollFX />
         <SiteHeader />
         <div id="main">{children}</div>
         <SiteFooter />

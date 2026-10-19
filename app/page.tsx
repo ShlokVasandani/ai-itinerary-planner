@@ -9,14 +9,15 @@ import HeroSearch from "@/components/HeroSearch";
 import PhotoExpand from "@/components/PhotoExpand";
 import Photo from "@/components/Photo";
 import StackedDays from "@/components/StackedDays";
-import { cityPhotos } from "@/lib/city-photo-urls";
+import { getPhotoCredit } from "@/lib/photos";
+import { cityIndex, curatedCount, openCount, totalPlaces as catalogPlaces } from "@/lib/data/catalog";
 
 const HERO_WORDS = ["Lisbon", "Tokyo", "Rome", "Seoul", "Paris", "Sydney"];
 
 export const metadata: Metadata = {
-  title: { absolute: "Sekai: real itineraries for 20 cities" },
+  title: { absolute: `Sekai: day-by-day itineraries for ${cityIndex.length} cities` },
   description:
-    "Plan a trip to Tokyo, Paris, Lisbon and 17 more cities with day-by-day itineraries built from verified places, real opening hours and walking times.",
+    `Plan a trip to Tokyo, Paris, Lisbon and ${cityIndex.length - 3} more cities with day-by-day itineraries built from real places, opening hours and walking times.`,
   alternates: { canonical: "/" },
 };
 
@@ -31,16 +32,21 @@ export default function Home() {
     pace: "balanced",
     seed: "landing",
   });
-  const totalPlaces = destinations.reduce(
+  const totalPlaces = catalogPlaces;
+  const curatedLocated = destinations.reduce(
+    (n, d) => n + [...d.landmarks, ...d.restaurants, ...d.cafes, ...d.nightlife, ...d.shopping].filter((p) => p.coords).length,
+    0
+  );
+  const curatedPlaces = destinations.reduce(
     (n, d) => n + d.landmarks.length + d.restaurants.length + d.cafes.length + d.nightlife.length + d.shopping.length,
     0
   );
-  const located = destinations.reduce(
-    (n, d) => n + [...d.landmarks, ...d.restaurants, ...d.cafes].filter((p) => p.coords).length,
-    0
-  );
-  const options = destinations.map((d) => ({ slug: d.slug, label: `${d.city}, ${d.country}` }));
+  // Every open-data place is built from coordinates, so all of them are located.
+  const located = curatedLocated + (catalogPlaces - curatedPlaces);
+  const options = cityIndex.map((d) => ({ slug: d.slug, city: d.city, country: d.country }));
+  const featured = destinations.slice(0, 12);
   const expandCity = destinations.find((d) => d.slug === "rome") ?? destinations[0];
+  const expandCredit = getPhotoCredit(expandCity.slug);
 
   return (
     <main>
@@ -66,8 +72,8 @@ export default function Home() {
       <section className="stats" aria-label="What is in the data">
         <ul>
           <li>
-            <strong>{destinations.length}</strong>
-            <span>cities, each hand-curated</span>
+            <strong>{cityIndex.length}</strong>
+            <span>{openCount ? `cities, ${curatedCount} hand-curated` : "cities, each hand-curated"}</span>
           </li>
           <li>
             <strong>{totalPlaces}</strong>
@@ -96,10 +102,10 @@ export default function Home() {
         >
           <Photo slug={expandCity.slug} city={expandCity.city} sizes="100vw" />
         </PhotoExpand>
-        {cityPhotos[expandCity.slug] && (
+        {expandCredit && (
           <p className="photo-credit">
-            Photo: {cityPhotos[expandCity.slug].credit}, {cityPhotos[expandCity.slug].license} ·{" "}
-            <a href={cityPhotos[expandCity.slug].sourcePage} target="_blank" rel="noopener noreferrer">
+            Photo: {expandCredit.credit}, {expandCredit.license} ·{" "}
+            <a href={expandCredit.sourcePage} target="_blank" rel="noopener noreferrer">
               Wikimedia Commons
             </a>
           </p>
@@ -128,10 +134,15 @@ export default function Home() {
           Where to next?
         </h2>
         <div className="dest-grid">
-          {destinations.map((d, i) => (
+          {featured.map((d, i) => (
             <DestinationCard key={d.slug} d={d} priority={i < 3} />
           ))}
         </div>
+        <p className="dest-more">
+          <Link href="/destinations" className="btn btn-ghost">
+            Browse all {cityIndex.length} cities →
+          </Link>
+        </p>
       </section>
 
       <section className="section dark" aria-labelledby="book-title">

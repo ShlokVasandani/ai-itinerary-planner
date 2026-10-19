@@ -1,25 +1,25 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { destinations, getDestinationBySlug } from "@/lib/data";
+import { cityIndex, loadDestination } from "@/lib/data/catalog";
+import type { Destination } from "@/lib/types";
 import DestinationTabs from "@/components/DestinationTabs";
 import Photo from "@/components/Photo";
-import { cityPhotos } from "@/lib/city-photo-urls";
-import { getPhoto } from "@/lib/photos";
+import { getPhoto, getPhotoCredit } from "@/lib/photos";
 import { jsonLd, siteUrl } from "@/lib/site";
 
 export function generateStaticParams() {
-  return destinations.map((d) => ({ slug: d.slug }));
+  return cityIndex.map((d) => ({ slug: d.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const d = getDestinationBySlug(slug);
+  const d = await loadDestination(slug);
   if (!d) return {};
   const photo = getPhoto(d.slug);
   const title = `${d.city} travel guide: where to go, eat and stay`;
   const description = `${d.tagline} ${d.landmarks.length} landmarks, ${d.restaurants.length} restaurants, ${d.neighborhoods.length} neighborhoods and a day-by-day ${d.city} itinerary planner.`;
-  const image = photo ? { url: `/images/destinations/${d.slug}.jpg`, width: photo.width, height: photo.height, alt: cityPhotos[d.slug]?.alt ?? d.city } : undefined;
+  const image = photo ? { url: `/images/destinations/${d.slug}.jpg`, width: photo.width, height: photo.height, alt: getPhotoCredit(d.slug)?.alt ?? d.city } : undefined;
   return {
     title,
     description,
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-function destinationJsonLd(d: NonNullable<ReturnType<typeof getDestinationBySlug>>) {
+function destinationJsonLd(d: Destination) {
   const base = siteUrl();
   const located = d.neighborhoods.map((n) => n.coords).filter(Boolean) as { lat: number; lng: number }[];
   const centre = located.length
@@ -59,7 +59,7 @@ function destinationJsonLd(d: NonNullable<ReturnType<typeof getDestinationBySlug
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Sekai", item: base },
-          { "@type": "ListItem", position: 2, name: "Destinations", item: `${base}/#destinations` },
+          { "@type": "ListItem", position: 2, name: "Destinations", item: `${base}/destinations` },
           { "@type": "ListItem", position: 3, name: d.city, item: `${base}/destinations/${d.slug}` },
         ],
       },
@@ -69,15 +69,15 @@ function destinationJsonLd(d: NonNullable<ReturnType<typeof getDestinationBySlug
 
 export default async function DestinationPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const d = getDestinationBySlug(slug);
+  const d = await loadDestination(slug);
   if (!d) return notFound();
-  const photo = cityPhotos[d.slug];
+  const photo = getPhotoCredit(d.slug);
 
   return (
     <main className="dest-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(destinationJsonLd(d)) }} />
       <section className="dest-hero">
-        <Link href="/#destinations" className="back-link">
+        <Link href="/destinations" className="back-link">
           ← All destinations
         </Link>
         <p className="eyebrow">{d.country}</p>
@@ -102,20 +102,20 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
 
       <section className="dest-facts" aria-label="Quick facts">
         <div>
-          <span>Ideal trip</span>
-          <strong>{d.quickFacts.idealTripLength}</strong>
-        </div>
-        <div>
           <span>Best months</span>
           <strong>{d.quickFacts.bestMonths.slice(0, 3).join(", ")}</strong>
         </div>
         <div>
-          <span>Mid-range budget</span>
-          <strong>{d.quickFacts.averageDailyBudget.midRange}/day</strong>
+          <span>Currency</span>
+          <strong>{d.currency}</strong>
         </div>
         <div>
-          <span>Getting around</span>
-          <strong>{d.transitCardInfo.name}</strong>
+          <span>{d.quickFacts.averageDailyBudget ? "Mid-range budget" : "Airports"}</span>
+          <strong>{d.quickFacts.averageDailyBudget ? `${d.quickFacts.averageDailyBudget.midRange}/day` : d.airportCodes.join(", ") || "n/a"}</strong>
+        </div>
+        <div>
+          <span>{d.transitCardInfo ? "Getting around" : "Landmarks"}</span>
+          <strong>{d.transitCardInfo ? d.transitCardInfo.name : d.landmarks.length}</strong>
         </div>
       </section>
 

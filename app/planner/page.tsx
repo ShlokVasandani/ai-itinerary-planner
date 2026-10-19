@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PlannerClient, { type PlannerInitial } from "@/components/PlannerClient";
+import { isKnownCity, loadDestination } from "@/lib/data/catalog";
 
 export const metadata: Metadata = {
   title: "Plan a trip: day-by-day itinerary builder",
@@ -20,8 +21,11 @@ export default async function PlannerPage({ searchParams }: { searchParams: Prom
     start: one(p.start),
     end: one(p.end),
     adults: one(p.adults),
+    children: one(p.children),
     go: one(p.go),
     origin: one(p.origin),
   };
-  return <PlannerClient initial={initial} />;
+  const slug = initial.city && isKnownCity(initial.city) ? initial.city : "tokyo";
+  const destination = (await loadDestination(slug))!;
+  return <PlannerClient initial={{ ...initial, city: slug }} initialDestination={destination} />;
 }

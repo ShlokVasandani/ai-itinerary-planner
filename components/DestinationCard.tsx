@@ -1,8 +1,8 @@
 import Link from "next/link";
-import type { Destination } from "@/lib/types";
+import type { CityIndexEntry } from "@/lib/data/catalog";
 import Photo from "@/components/Photo";
 
-export default function DestinationCard({ d, priority = false }: { d: Destination; priority?: boolean }) {
+export default function DestinationCard({ d, priority = false }: { d: Pick<CityIndexEntry, "slug" | "city" | "country" | "tagline">; priority?: boolean }) {
   return (
     <Link href={`/destinations/${d.slug}`} className="dest-card">
       <div className="dest-card-photo">

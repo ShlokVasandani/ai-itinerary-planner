@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { destinations, getDestinationBySlug } from "@/lib/data";
+import { cityIndex, isKnownCity, loadDestination } from "@/lib/data/catalog";
 import {
   generateItinerary,
   regenerateDay,
@@ -16,7 +16,7 @@ import BookTripPanel from "@/components/BookTripPanel";
 import Photo from "@/components/Photo";
 import PricesPanel from "@/components/PricesPanel";
 import type { TripLinkInput } from "@/lib/providers";
-import type { DietaryNeed, Interest } from "@/lib/types";
+import type { Destination, DietaryNeed, Interest } from "@/lib/types";
 
 const DEFAULTS: Omit<PlannerFormState, "slug"> = {
   startDate: "",
@@ -36,8 +36,7 @@ const DEFAULTS: Omit<PlannerFormState, "slug"> = {
   departureTime: "",
 };
 
-function toInput(f: PlannerFormState, seed: string): PlannerInput {
-  const destination = getDestinationBySlug(f.slug) ?? destinations[0];
+function toInput(f: PlannerFormState, destination: Destination, seed: string): PlannerInput {
   const dated = f.startDate && f.endDate && f.endDate >= f.startDate;
   return {
     destination,
@@ -71,15 +70,13 @@ export interface PlannerInitial {
   start?: string;
   end?: string;
   adults?: string;
+  children?: string;
   go?: string;
   origin?: string;
 }
 
-export default function PlannerClient({ initial }: { initial: PlannerInitial }) {
-  const initialSlug = (() => {
-    const c = initial.city;
-    return c && getDestinationBySlug(c) ? c : destinations[0].slug;
-  })();
+export default function PlannerClient({ initial, initialDestination }: { initial: PlannerInitial; initialDestination: Destination }) {
+  const initialSlug = initialDestination.slug;
 
   const [form, setForm] = useState<PlannerFormState>(() => ({
     ...DEFAULTS,
@@ -87,6 +84,7 @@ export default function PlannerClient({ initial }: { initial: PlannerInitial }) 
     startDate: /^\d{4}-\d{2}-\d{2}$/.test(initial.start ?? "") ? initial.start! : "",
     endDate: /^\d{4}-\d{2}-\d{2}$/.test(initial.end ?? "") ? initial.end! : "",
     adults: Math.min(12, Math.max(1, Number(initial.adults) || DEFAULTS.adults)),
+    children: Math.min(8, Math.max(0, Number(initial.children) || 0)),
   }));
   const [itinerary, setItinerary] = useState<GeneratedItinerary | null>(null);
   const [busy, setBusy] = useState(false);
@@ -95,7 +93,29 @@ export default function PlannerClient({ initial }: { initial: PlannerInitial }) 
   const regen = useRef(0);
   const resultsRef = useRef<HTMLDivElement>(null);
 
-  const destination = getDestinationBySlug(form.slug) ?? destinations[0];
+  const [destination, setDestination] = useState<Destination>(initialDestination);
+  const [loadingCity, setLoadingCity] = useState(false);
+  const [cityError, setCityError] = useState("");
+  const cities = useMemo(() => cityIndex.map((c) => ({ slug: c.slug, city: c.city, country: c.country })), []);
+
+  // Open-data cities are separate chunks; fetch the chosen one when the picker changes.
+  useEffect(() => {
+    if (form.slug === destination.slug) return;
+    let live = true;
+    setLoadingCity(true);
+    setCityError("");
+    loadDestination(form.slug)
+      .then((d) => {
+        if (!live) return;
+        if (d) setDestination(d);
+        else setCityError("That city could not be loaded.");
+      })
+      .catch(() => live && setCityError("That city could not be loaded. Check your connection and try again."))
+      .finally(() => live && setLoadingCity(false));
+    return () => {
+      live = false;
+    };
+  }, [form.slug, destination.slug]);
 
   const update = useCallback((patch: Partial<PlannerFormState>) => {
     setForm((f) => ({ ...f, ...patch }));
@@ -107,14 +127,14 @@ export default function PlannerClient({ initial }: { initial: PlannerInitial }) 
       setBusy(true);
       // Generation is instant; the short pause only lets the busy state register for assistive tech.
       window.setTimeout(() => {
-        setItinerary(generateItinerary(toInput(f, "sekai")));
+        setItinerary(generateItinerary(toInput(f, destination, "sekai")));
         regen.current = 0;
         setStale(false);
         setBusy(false);
         window.setTimeout(() => resultsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 50);
       }, 120);
     },
-    []
+    [destination]
   );
 
   // Arriving from the landing page search (?go=1): build straight away.
@@ -162,31 +182,36 @@ export default function PlannerClient({ initial }: { initial: PlannerInitial }) 
   const perDayLikely = itinerary ? itinerary.cost.likely / itinerary.duration : 0;
 
   return (
-    <main className="planner">
+    <main className="planner-page">
       <header className="planner-hero">
-        <div className="planner-hero-photo" aria-hidden="true">
-          <Photo slug={destination.slug} city={destination.city} sizes="120px" priority />
+        <div className="planner-hero-photo" aria-hidden="true" key={destination.slug}>
+          <Photo slug={destination.slug} city={destination.city} sizes="100vw" priority />
         </div>
-        <div>
-          <p className="eyebrow">Plan a trip</p>
+        <div className="planner-hero-text">
+          <p className="eyebrow">Plan a trip · {destination.country}</p>
           <h1>{destination.city}</h1>
           <p className="lede">{destination.tagline}</p>
         </div>
       </header>
 
-      <div className="planner-layout">
+      <div className="planner planner-layout">
         <aside className="planner-side" aria-label="Trip settings">
           <PlannerForm
             state={form}
             onChange={update}
-            destinations={destinations}
+            cities={cities}
             destination={destination}
             onSubmit={() => build(form)}
-            busy={busy}
+            busy={busy || loadingCity}
           />
         </aside>
 
         <div className="planner-main" ref={resultsRef}>
+          {cityError && (
+            <p className="stale-note" role="alert">
+              {cityError}
+            </p>
+          )}
           {!itinerary && !busy && (
             <div className="planner-empty">
               <h2>
@@ -248,7 +273,7 @@ export default function PlannerClient({ initial }: { initial: PlannerInitial }) 
                       </dd>
                     </div>
                   )}
-                  {fit && (
+                  {fit && itinerary.input.destination.quickFacts.averageDailyBudget && (
                     <div>
                       <dt>Budget fit</dt>
                       <dd>
@@ -268,8 +293,15 @@ export default function PlannerClient({ initial }: { initial: PlannerInitial }) 
                 </p>
                 {itinerary.season && (
                   <p className="muted summary-foot">
-                    Month check (editorial estimate, 1 to 5): crowds {itinerary.season.crowds}, weather {itinerary.season.weather},
-                    prices {itinerary.season.price}.
+                    Month check (1 to 5):{" "}
+                    {[
+                      itinerary.season.crowds !== undefined && `crowds ${itinerary.season.crowds}`,
+                      `weather ${itinerary.season.weather}`,
+                      itinerary.season.price !== undefined && `prices ${itinerary.season.price}`,
+                    ]
+                      .filter(Boolean)
+                      .join(", ")}
+                    . {itinerary.input.destination.tier === "open" ? "Weather is computed from climate averages." : "Editorial estimate."}
                   </p>
                 )}
                 {itinerary.warnings.length > 0 && (
@@ -300,8 +332,10 @@ export default function PlannerClient({ initial }: { initial: PlannerInitial }) 
                 </p>
               )}
 
-              <PricesPanel trip={trip} currency={itinerary.currency} origin={origin} onOriginChange={setOrigin} topActivities={topActivities} />
-              <BookTripPanel trip={trip} topActivities={topActivities} origin={origin} onOriginChange={setOrigin} />
+              <div className="tools-grid">
+                <PricesPanel trip={trip} currency={itinerary.currency} origin={origin} onOriginChange={setOrigin} topActivities={topActivities} />
+                <BookTripPanel trip={trip} topActivities={topActivities} origin={origin} onOriginChange={setOrigin} />
+              </div>
             </>
           )}
         </div>

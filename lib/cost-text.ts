@@ -10,6 +10,22 @@ export interface ParsedCost {
 
 const SYMBOLS: [RegExp, string][] = [
   [/US\$/, "USD"],
+  [/NT\$|TWD/, "TWD"],
+  [/R\$|BRL/, "BRL"],
+  [/C\$|CAD/, "CAD"],
+  [/NZ\$|NZD/, "NZD"],
+  [/₹|INR/, "INR"],
+  [/₫|VND/, "VND"],
+  [/CZK/, "CZK"],
+  [/PLN/, "PLN"],
+  [/HUF/, "HUF"],
+  [/SEK/, "SEK"],
+  [/NOK/, "NOK"],
+  [/MXN/, "MXN"],
+  [/ARS/, "ARS"],
+  [/ZAR/, "ZAR"],
+  [/EGP/, "EGP"],
+  [/MAD/, "MAD"],
   [/HK\$/, "HKD"],
   [/S\$/, "SGD"],
   [/A\$|AUD/, "AUD"],
@@ -28,7 +44,7 @@ const SYMBOLS: [RegExp, string][] = [
 ];
 
 const MONEY =
-  /(HK\$|S\$|A\$|US\$|€|£|¥|₩|₺|\$|THB|RM|AED|DKK|CHF|AUD|SGD|USD|EUR|GBP|JPY|KRW|TRY|MYR)\s?(\d[\d,]*(?:\.\d+)?)(?:\s?[–-]\s?(\d[\d,]*(?:\.\d+)?))?(\+)?/g;
+  /(HK\$|S\$|A\$|US\$|NT\$|R\$|C\$|NZ\$|€|£|¥|₩|₺|₹|₫|\$|THB|RM|AED|DKK|CHF|AUD|SGD|USD|EUR|GBP|JPY|KRW|TRY|MYR|TWD|BRL|CAD|NZD|INR|VND|CZK|PLN|HUF|SEK|NOK|MXN|ARS|ZAR|EGP|MAD)\s?(\d[\d,]*(?:\.\d+)?)(?:\s?[–-]\s?(\d[\d,]*(?:\.\d+)?))?(\+)?/g;
 
 function num(s: string): number {
   return Number(s.replace(/,/g, ""));
@@ -37,7 +53,7 @@ function num(s: string): number {
 function currencyOf(symbol: string, cityCurrency: string): { code: string; guessed: boolean } {
   for (const [re, code] of SYMBOLS) {
     if (re.test(symbol)) {
-      if (code === "$") return { code: ["USD", "AUD", "SGD", "HKD"].includes(cityCurrency) ? cityCurrency : "USD", guessed: true };
+      if (code === "$") return { code: ["USD", "AUD", "SGD", "HKD", "CAD", "NZD", "MXN", "ARS", "TWD"].includes(cityCurrency) ? cityCurrency : "USD", guessed: true };
       return { code, guessed: false };
     }
   }

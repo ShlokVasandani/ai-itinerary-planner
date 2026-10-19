@@ -9,7 +9,7 @@
  *        npx tsx scripts/verify-e2e.ts [baseUrl] [slug ...]
  */
 import { chromium } from "playwright-core";
-import { destinations } from "../lib/data";
+import { cityIndex } from "../lib/data/catalog";
 
 const BASE = process.argv[2] ?? "http://localhost:3000";
 const only = process.argv.slice(3);
@@ -21,7 +21,7 @@ async function main() {
   const problems: string[] = [];
   let totalLinks = 0;
   let totalClicks = 0;
-  for (const d of destinations.filter((x) => only.length === 0 || only.includes(x.slug))) {
+  for (const d of cityIndex.filter((x) => only.length === 0 || only.includes(x.slug))) {
     const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
     // Never hit third-party hosts: answer them with a stub page.
     await ctx.route("**/*", (route) => {

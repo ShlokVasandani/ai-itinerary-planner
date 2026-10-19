@@ -21,7 +21,7 @@ type TabId =
   | "transport"
   | "practical";
 
-const TABS: { id: TabId; label: string }[] = [
+const ALL_TABS: { id: TabId; label: string }[] = [
   { id: "overview", label: "Overview" },
   { id: "when", label: "When to go" },
   { id: "landmarks", label: "Places" },
@@ -65,33 +65,53 @@ function SeasonBars({ d }: { d: Destination }) {
     { key: "crowds", label: "Crowds", hint: "5 = busiest" },
     { key: "price", label: "Prices", hint: "5 = most expensive" },
   ];
+  const shown = rows.filter((r) => d.seasons?.some((s) => s[r.key] !== undefined));
+  const computed = d.tier === "open";
   return (
     <div className="seasons">
-      {rows.map((r) => (
+      {shown.map((r) => (
         <div key={r.key} className="season-row">
           <p className="season-label">
             {r.label} <span>{r.hint}</span>
           </p>
           <ol className="season-bars" aria-label={`${r.label} by month`}>
             {d.seasons.map((s, i) => (
-              <li key={i} style={{ ["--v" as string]: s[r.key] / 5 }}>
+              <li key={i} style={{ ["--v" as string]: (s[r.key] ?? 0) / 5 }}>
                 <span className="season-bar" aria-hidden="true" />
                 <span className="season-m">{MONTH_NAMES[i]}</span>
                 <span className="sr-only">
-                  {MONTH_NAMES[i]}: {s[r.key]} of 5
+                  {MONTH_NAMES[i]}: {s[r.key] ?? 0} of 5
                 </span>
               </li>
             ))}
           </ol>
         </div>
       ))}
-      <p className="muted">Monthly ratings are editorial estimates from published climate and tourism seasonality, not live data.</p>
+      <p className="muted">
+        {computed
+          ? "Weather ratings are computed from 2019–2023 daily temperature and rainfall (Open-Meteo): mild, dry months score highest. Crowd and price data are not available for this city."
+          : "Monthly ratings are editorial estimates from published climate and tourism seasonality, not live data."}
+      </p>
     </div>
   );
 }
 
 export default function DestinationTabs({ d }: { d: Destination }) {
   const [tab, setTab] = useState<TabId>("overview");
+  const present: Record<TabId, boolean> = {
+    overview: true,
+    when: !!d.seasons?.length,
+    landmarks: d.landmarks.length > 0,
+    food: d.restaurants.length + d.cafes.length + d.localFoods.length > 0,
+    neighborhoods: d.neighborhoods.length > 0,
+    shopping: d.shopping.length > 0,
+    nightlife: d.nightlife.length > 0,
+    experiences: d.experiences.length > 0,
+    "day-trips": d.dayTrips.length > 0,
+    transport: !!d.transitCardInfo || d.transportation.length > 0,
+    practical: true,
+  };
+  const TABS = ALL_TABS.filter((t) => present[t.id]);
 
   return (
     <div className="tabs-wrap">
@@ -118,12 +138,22 @@ export default function DestinationTabs({ d }: { d: Destination }) {
           <div className="panel-grid">
             <div className="panel-main">
               <p className="lede">{d.overview}</p>
-              <h3>Travel notes</h3>
-              <ul className="tip-list">
-                {d.travelTips.map((tip, i) => (
-                  <li key={i}>{tip}</li>
-                ))}
-              </ul>
+              {d.travelTips.length > 0 && (
+                <>
+                  <h3>Travel notes</h3>
+                  <ul className="tip-list">
+                    {d.travelTips.map((tip, i) => (
+                      <li key={i}>{tip}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              {d.tier === "open" && (
+                <p className="muted source-note">
+                  This guide is assembled from open data: place facts from Wikidata and OpenStreetMap, summaries from Wikipedia (CC BY-SA), climate from
+                  Open-Meteo. Venues are ranked by public data, not reviewed by us, so confirm hours and prices with the venue.
+                </p>
+              )}
             </div>
             <aside className="panel-aside">
               <h3>At a glance</h3>
@@ -144,18 +174,26 @@ export default function DestinationTabs({ d }: { d: Destination }) {
                     <dd>{d.quickFacts.avoidMonths}</dd>
                   </>
                 )}
-                <dt>Ideal trip length</dt>
-                <dd>{d.quickFacts.idealTripLength}</dd>
+                {d.quickFacts.idealTripLength && (
+                  <>
+                    <dt>Ideal trip length</dt>
+                    <dd>{d.quickFacts.idealTripLength}</dd>
+                  </>
+                )}
               </dl>
-              <h3>Daily budget</h3>
-              <dl className="fact-list">
-                <dt>Budget</dt>
-                <dd>{d.quickFacts.averageDailyBudget.budget}</dd>
-                <dt>Mid-range</dt>
-                <dd>{d.quickFacts.averageDailyBudget.midRange}</dd>
-                <dt>Luxury</dt>
-                <dd>{d.quickFacts.averageDailyBudget.luxury}</dd>
-              </dl>
+              {d.quickFacts.averageDailyBudget && (
+                <>
+                  <h3>Daily budget</h3>
+                  <dl className="fact-list">
+                    <dt>Budget</dt>
+                    <dd>{d.quickFacts.averageDailyBudget.budget}</dd>
+                    <dt>Mid-range</dt>
+                    <dd>{d.quickFacts.averageDailyBudget.midRange}</dd>
+                    <dt>Luxury</dt>
+                    <dd>{d.quickFacts.averageDailyBudget.luxury}</dd>
+                  </dl>
+                </>
+              )}
             </aside>
           </div>
         )}
@@ -199,7 +237,7 @@ export default function DestinationTabs({ d }: { d: Destination }) {
                   </div>
                   <p className="edit-item-meta">{l.neighborhood}</p>
                   <p className="edit-item-desc">{l.description}</p>
-                  <p className="edit-item-note">{l.whyGo}</p>
+                  {l.whyGo && <p className="edit-item-note">{l.whyGo}</p>}
                   <div className="edit-item-facts">
                     {l.approxCost && <span>{l.approxCost}</span>}
                     <span>
@@ -234,9 +272,11 @@ export default function DestinationTabs({ d }: { d: Destination }) {
                       {r.neighborhood} · {r.cuisine}
                     </p>
                     <p className="edit-item-desc">{r.description}</p>
-                    <p className="edit-item-note">
-                      <em>Try:</em> {r.signatureDishes.join(", ")}
-                    </p>
+                    {r.signatureDishes.length > 0 && (
+                      <p className="edit-item-note">
+                        <em>Try:</em> {r.signatureDishes.join(", ")}
+                      </p>
+                    )}
                     <div className="edit-item-facts">
                       {r.approxCost && <span>{r.approxCost}</span>}
                       <span>{r.mealFor.join(" / ")}</span>
@@ -261,16 +301,18 @@ export default function DestinationTabs({ d }: { d: Destination }) {
                     <h4>{c.name}</h4>
                     <p className="edit-item-meta">{c.neighborhood}</p>
                     <p className="edit-item-desc">{c.description}</p>
-                    <p className="edit-item-note">
-                      <em>Specialty:</em> {c.specialty}
-                    </p>
+                    {c.specialty && (
+                      <p className="edit-item-note">
+                        <em>Specialty:</em> {c.specialty}
+                      </p>
+                    )}
                     <Facts item={c} name={c.name} />
                   </div>
                 </article>
               ))}
             </div>
 
-            <h3 className="edit-section-label">Local foods to try</h3>
+            {d.localFoods.length > 0 && <h3 className="edit-section-label">Local foods to try</h3>}
             <div className="edit-list">
               {d.localFoods.map((f, i) => (
                 <article key={i} className="edit-item">
@@ -297,13 +339,17 @@ export default function DestinationTabs({ d }: { d: Destination }) {
                 <span className="edit-item-index">{num(i)}</span>
                 <div className="edit-item-body">
                   <h4>{n.name}</h4>
-                  <p className="edit-item-desc">{n.vibe}</p>
-                  <p className="edit-item-note">
-                    <em>Known for:</em> {n.knownFor.join(", ")}
-                  </p>
-                  <div className="edit-item-facts">
-                    <span>Best time: {n.bestTimeToVisit}</span>
-                  </div>
+                  {n.vibe && <p className="edit-item-desc">{n.vibe}</p>}
+                  {n.knownFor.length > 0 && (
+                    <p className="edit-item-note">
+                      <em>Known for:</em> {n.knownFor.join(", ")}
+                    </p>
+                  )}
+                  {n.bestTimeToVisit && (
+                    <div className="edit-item-facts">
+                      <span>Best time: {n.bestTimeToVisit}</span>
+                    </div>
+                  )}
                 </div>
               </article>
             ))}
@@ -418,11 +464,13 @@ export default function DestinationTabs({ d }: { d: Destination }) {
 
         {tab === "transport" && (
           <div>
-            <article className="callout">
-              <h3>{d.transitCardInfo.name}</h3>
-              <p>{d.transitCardInfo.description}</p>
-              <p className="muted">{d.transitCardInfo.where}</p>
-            </article>
+            {d.transitCardInfo && (
+              <article className="callout">
+                <h3>{d.transitCardInfo.name}</h3>
+                <p>{d.transitCardInfo.description}</p>
+                <p className="muted">{d.transitCardInfo.where}</p>
+              </article>
+            )}
             <div className="edit-list">
               {d.transportation.map((t, i) => (
                 <article key={i} className="edit-item">
@@ -441,33 +489,56 @@ export default function DestinationTabs({ d }: { d: Destination }) {
           </div>
         )}
 
-        {tab === "practical" && (
+        {tab === "practical" && !d.practicalInfo && (
+          <div className="panel-grid">
+            <div className="panel-main">
+              <h3>Currency</h3>
+              <p>{d.currency}</p>
+              {d.languages && d.languages.length > 0 && (
+                <>
+                  <h3>Languages</h3>
+                  <p>{d.languages.join(", ")}</p>
+                </>
+              )}
+              <h3>Timezone</h3>
+              <p>{d.quickFacts.timezone}</p>
+              <h3>Airports</h3>
+              <p>{d.airportCodes.length ? d.airportCodes.join(", ") : "See the city's main airport on your booking site."}</p>
+              <p className="muted">
+                Tipping, safety and etiquette notes are written by hand for our curated cities and are not generated here. Check your government&apos;s
+                travel advice before you go.
+              </p>
+            </div>
+          </div>
+        )}
+
+        {tab === "practical" && d.practicalInfo && (
           <div className="panel-grid">
             <div className="panel-main">
               <h3>Currency &amp; payments</h3>
               <p>
-                {d.practicalInfo.currency} · {d.practicalInfo.paymentNote}
+                {d.practicalInfo!.currency} · {d.practicalInfo!.paymentNote}
               </p>
               <h3>Tipping</h3>
-              <p>{d.practicalInfo.tipping}</p>
+              <p>{d.practicalInfo!.tipping}</p>
               <h3>Safety</h3>
-              <p>{d.practicalInfo.safety}</p>
+              <p>{d.practicalInfo!.safety}</p>
               <h3>Tourist traps to know about</h3>
               <ul className="tip-list">
-                {d.practicalInfo.touristTraps.map((t, i) => (
+                {d.practicalInfo!.touristTraps.map((t, i) => (
                   <li key={i}>{t}</li>
                 ))}
               </ul>
               <h3>Etiquette</h3>
               <ul className="tip-list">
-                {d.practicalInfo.etiquette.map((t, i) => (
+                {d.practicalInfo!.etiquette.map((t, i) => (
                   <li key={i}>{t}</li>
                 ))}
               </ul>
               <h3>Reservations</h3>
-              <p>{d.practicalInfo.reservationAdvice}</p>
+              <p>{d.practicalInfo!.reservationAdvice}</p>
               <h3>Weather</h3>
-              <p>{d.practicalInfo.weatherNote}</p>
+              <p>{d.practicalInfo!.weatherNote}</p>
               <h3>Eight useful phrases</h3>
               <ul className="phrase-list">
                 {d.localPhrases.map((p) => (
@@ -481,15 +552,15 @@ export default function DestinationTabs({ d }: { d: Destination }) {
             </div>
             <aside className="panel-aside">
               <h3>Languages</h3>
-              <p>{d.practicalInfo.language.join(", ")}</p>
+              <p>{d.practicalInfo!.language.join(", ")}</p>
               <h3>Useful apps</h3>
               <ul className="tip-list">
-                {d.practicalInfo.usefulApps.map((a, i) => (
+                {d.practicalInfo!.usefulApps.map((a, i) => (
                   <li key={i}>{a}</li>
                 ))}
               </ul>
               <h3>SIM / eSIM</h3>
-              <p>{d.practicalInfo.simEsim}</p>
+              <p>{d.practicalInfo!.simEsim}</p>
             </aside>
           </div>
         )}

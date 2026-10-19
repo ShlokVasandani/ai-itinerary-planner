@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { destinations } from "@/lib/data";
-import { cityPhotos } from "@/lib/city-photo-urls";
+import { cityIndex } from "@/lib/data/catalog";
+import { getPhotoCredit } from "@/lib/photos";
 
 export const metadata = {
   title: "Photo credits and data sources",
@@ -23,13 +23,25 @@ export default function CreditsPage() {
           <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">
             OpenStreetMap contributors
           </a>
-          .
+          . Open-data city guides also use text summaries from{" "}
+          <a href="https://en.wikipedia.org/" target="_blank" rel="noopener noreferrer">
+            Wikipedia
+          </a>{" "}
+          (CC BY-SA 4.0), facts from{" "}
+          <a href="https://www.wikidata.org/" target="_blank" rel="noopener noreferrer">
+            Wikidata
+          </a>{" "}
+          (CC0) and climate averages from{" "}
+          <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">
+            Open-Meteo
+          </a>{" "}
+          (CC BY 4.0). Each place links to its source page.
         </p>
       </section>
       <section className="section narrow">
         <ol className="credit-list">
-          {destinations.map((d) => {
-            const photo = cityPhotos[d.slug];
+          {cityIndex.map((d) => {
+            const photo = getPhotoCredit(d.slug);
             if (!photo) return null;
             return (
               <li key={d.slug}>

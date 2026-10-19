@@ -111,8 +111,8 @@ export interface Cafe extends Verifiable {
   name: string;
   neighborhood: string;
   description: string;
-  specialty: string;
-  priceLevel: PriceLevel;
+  specialty?: string;
+  priceLevel?: PriceLevel;
   priority: Priority;
   approxCost?: string;
 }
@@ -124,11 +124,12 @@ export interface Neighborhood {
   coords?: Coords;
   /** Rough radius used to cluster stops into one day. */
   radiusKm?: number;
-  vibe: string;
+  /** Hand-written for curated cities; omitted for open-data cities rather than invented. */
+  vibe?: string;
   knownFor: string[];
   bestFor: Interest[];
-  bestTimeToVisit: string;
-  walkable: boolean;
+  bestTimeToVisit?: string;
+  walkable?: boolean;
 }
 
 export interface LocalFood {
@@ -169,6 +170,8 @@ export interface Experience extends Verifiable {
   priority: Priority;
   interestTags: Interest[];
   bookingNote?: string;
+  /** When it happens. Absent = the planner guesses from the text (older cities). */
+  timeOfDay?: "day" | "evening";
 }
 
 export interface DayTrip extends Verifiable {
@@ -212,17 +215,18 @@ export interface QuickFacts {
   bestMonths: string[];
   avoidMonths?: string;
   airport: string;
-  averageDailyBudget: { budget: string; midRange: string; luxury: string };
-  idealTripLength: string;
+  /** Not available for open-data cities, so the planner skips the budget-fit check. */
+  averageDailyBudget?: { budget: string; midRange: string; luxury: string };
+  idealTripLength?: string;
 }
 
 export interface SeasonRating {
-  /** 1 (low) – 5 (high). Editorial estimates from published climate and tourism-board seasonality. */
-  crowds: 1 | 2 | 3 | 4 | 5;
-  /** 1 (poor) – 5 (ideal) for typical sightseeing weather. */
+  /** 1 (low) – 5 (high). Editorial estimates; absent for open-data cities. */
+  crowds?: 1 | 2 | 3 | 4 | 5;
+  /** 1 (poor) – 5 (ideal) for typical sightseeing weather. Computed from climate averages for open-data cities. */
   weather: 1 | 2 | 3 | 4 | 5;
-  /** 1 (cheap) – 5 (expensive) relative to the city's own year. */
-  price: 1 | 2 | 3 | 4 | 5;
+  /** 1 (cheap) – 5 (expensive) relative to the city's own year. Absent for open-data cities. */
+  price?: 1 | 2 | 3 | 4 | 5;
 }
 
 export interface CityEvent {
@@ -245,13 +249,25 @@ export interface TransitCardInfo {
   where: string;
 }
 
+/**
+ * "curated": hand-written and individually verified (the original 20 cities).
+ * "open": assembled by scripts/open from Wikidata, Wikipedia and OpenStreetMap, then machine-checked.
+ */
+export type DataTier = "curated" | "open";
+
 export interface Destination {
   slug: string;
+  tier?: DataTier;
+  region?: string;
+  /** Languages spoken in the country (Wikidata); open-data cities only. */
+  languages?: string[];
+  population?: number;
+  wikidataId?: string;
   /** ISO 4217 currency code, e.g. "EUR". */
   currency: string;
   /** IATA codes of the main international airports. */
   airportCodes: string[];
-  transitCardInfo: TransitCardInfo;
+  transitCardInfo?: TransitCardInfo;
   /** Exactly 12 entries, January first. */
   seasons: SeasonRating[];
   events?: CityEvent[];
@@ -279,7 +295,7 @@ export interface Destination {
   dayTrips: DayTrip[];
   transportation: TransportOption[];
   travelTips: string[];
-  practicalInfo: PracticalInfo;
+  practicalInfo?: PracticalInfo;
 }
 
 /** Fields supplied per city by lib/data/city-meta.ts rather than the city's own data file. */

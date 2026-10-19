@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { destinations } from "@/lib/data";
+import { cityIndex, curatedCount, openCount } from "@/lib/data/catalog";
 
 export default function SiteFooter() {
-  const featured = destinations.slice(0, 6);
+  const featured = cityIndex.slice(0, 6);
   return (
     <footer className="site-footer">
       <div className="footer-inner">
@@ -12,8 +12,11 @@ export default function SiteFooter() {
             Sekai
           </span>
           <p>
-            {destinations.length} cities, no invented places. Every trip is built from hand-verified landmarks,
-            restaurants and neighborhoods, with distances and opening hours from OpenStreetMap.
+            {cityIndex.length} cities, no invented places.{" "}
+            {openCount
+              ? `${curatedCount} guides are written and checked by hand; the rest are built from Wikidata, Wikipedia and OpenStreetMap and machine-checked.`
+              : "Every guide is written and checked by hand."}{" "}
+            Distances and opening hours come from OpenStreetMap.
           </p>
         </div>
         <nav className="footer-col" aria-label="Popular cities">
@@ -30,7 +33,7 @@ export default function SiteFooter() {
           <h2>Plan</h2>
           <ul>
             <li>
-              <Link href="/#destinations">All destinations</Link>
+              <Link href="/destinations">All destinations</Link>
             </li>
             <li>
               <Link href="/planner">Build an itinerary</Link>

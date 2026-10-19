@@ -1,6 +1,6 @@
 # Sekai
 
-A trip planner built on hand-verified real places in 20 cities. A deterministic engine turns them into day-by-day
+A trip planner built on hand-verified real places in 50 cities. A pipeline for adding further cities from open data lives in `scripts/open` (see `docs/OPEN-DATA.md`); none are published today. A deterministic engine turns them into day-by-day
 itineraries with real dates, distances, opening hours and cost ranges, and every stop links to the venue's own site,
 a map and booking providers. It runs with **zero API keys**.
 
@@ -8,7 +8,7 @@ a map and booking providers. It runs with **zero API keys**.
 
 ## Features
 
-- **20 cities**, each with at least 12 landmarks, 12 restaurants, 6 cafes, 6 neighborhoods, 5 experiences, 3 day trips
+- **50 hand-curated cities**, each with at least 12 landmarks, 12 restaurants, 6 cafes, 6 neighborhoods, 5 experiences, 3 day trips
   and 5 nightlife spots. No invented venues: coordinates, official URLs and opening hours come from OpenStreetMap and
   Wikidata, and anything unconfirmed is left empty and listed in [`data-gaps.md`](data-gaps.md).
 - **Itinerary engine v2** (`lib/itinerary-engine.ts`, pure and seeded): 1 to 14 days with real dates; days clustered by

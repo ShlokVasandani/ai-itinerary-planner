@@ -10,3 +10,4 @@ coverage
 scripts/.cache
 !.env.example
 !.env.example
+.next-verify

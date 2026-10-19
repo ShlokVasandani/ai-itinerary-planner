@@ -120,23 +120,24 @@ export default function PricesPanel({
 
   const hasOrigin = /^[A-Za-z]{3}$/.test(origin.trim());
   return (
-    <section className="prices-panel" aria-labelledby="prices-title" aria-busy={loading}>
-      <div className="prices-head">
-        <div>
-          <h2 id="prices-title">Compare prices</h2>
-          <p className="muted">
-            Up to three providers per item, cheapest highlighted. Prices change, so confirm on the provider&apos;s site. <AffiliateNote />
-          </p>
+    <section className="tool-card prices-panel" aria-labelledby="prices-title" aria-busy={loading}>
+      <header className="tool-head">
+        <p className="eyebrow">Prices</p>
+        <h2 id="prices-title">Compare prices</h2>
+        <p className="muted">
+          Up to three providers per item, cheapest highlighted. Prices change, so confirm on the provider&apos;s site. <AffiliateNote />
+        </p>
+      </header>
+      <div className="tool-form">
+        <div className="field field-inline">
+          <label htmlFor="price-origin">Flying from (3-letter airport code)</label>
+          <input id="price-origin" value={origin} maxLength={3} placeholder="e.g. JFK" onChange={(e) => onOriginChange(e.target.value.toUpperCase())} />
         </div>
         <button type="button" className="btn btn-primary" onClick={load} disabled={loading}>
-          {loading ? "Checking prices…" : "Check prices"}
+          {loading ? "Checking…" : "Check prices"}
         </button>
       </div>
-      <div className="field field-inline" style={{ maxWidth: 320, marginTop: 16 }}>
-        <label htmlFor="price-origin">Flying from (3-letter airport code)</label>
-        <input id="price-origin" value={origin} maxLength={3} placeholder="e.g. JFK" onChange={(e) => onOriginChange(e.target.value.toUpperCase())} />
-        {!hasOrigin && origin.length > 0 && <p className="field-hint">Enter a 3-letter code such as JFK or LHR.</p>}
-      </div>
+      {!hasOrigin && origin.length > 0 && <p className="field-hint">Enter a 3-letter code such as JFK or LHR.</p>}
       {loading && (
         <div role="status" aria-live="polite" className="price-block">
           <p className="sr-only">Loading prices</p>

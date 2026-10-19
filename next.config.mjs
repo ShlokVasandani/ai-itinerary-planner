@@ -38,6 +38,8 @@ const securityHeaders = [
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   outputFileTracingRoot: root,
+  // Lets the verification run build into its own folder without disturbing a running dev server.
+  distDir: process.env.NEXT_DIST_DIR || ".next",
   poweredByHeader: false,
   images: { formats: ["image/avif", "image/webp"] },
   async headers() {

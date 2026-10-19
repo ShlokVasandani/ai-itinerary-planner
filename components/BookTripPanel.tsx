@@ -53,15 +53,17 @@ export default function BookTripPanel({
   const links = useMemo(() => tripLinksSync({ ...trip, origin: origin || undefined }, topActivities), [trip, origin, topActivities]);
 
   return (
-    <section className="book-panel" aria-labelledby="book-trip-title">
-      <header>
+    <section className="tool-card book-panel" aria-labelledby="book-trip-title">
+      <header className="tool-head">
+        <p className="eyebrow">Booking</p>
         <h2 id="book-trip-title">Book this trip</h2>
         <p className="muted">
           Links open the provider with your dates and travellers filled in. Prices change, so confirm on the provider&apos;s
           site. <AffiliateNote />
         </p>
       </header>
-      <div className="field field-inline">
+      <div className="tool-form">
+        <div className="field field-inline">
         <label htmlFor="book-origin">Flying from (airport code or city)</label>
         <input
           id="book-origin"
@@ -70,6 +72,7 @@ export default function BookTripPanel({
           placeholder="e.g. JFK or London"
           onChange={(e) => onOriginChange(e.target.value)}
         />
+        </div>
       </div>
       <div className="book-grid">
         <Group title="Flights" offers={links.flights} />

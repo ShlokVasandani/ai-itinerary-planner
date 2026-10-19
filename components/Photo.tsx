@@ -1,6 +1,5 @@
 import DestinationArt from "@/components/DestinationArt";
-import { cityPhotos } from "@/lib/city-photo-urls";
-import { getPhoto, photoSrcSet } from "@/lib/photos";
+import { getPhoto, getPhotoCredit, photoSrcSet } from "@/lib/photos";
 
 interface Props {
   slug: string;
@@ -21,7 +20,7 @@ interface Props {
 export default function Photo({ slug, city, sizes = "(max-width: 700px) 100vw, 33vw", priority = false, className, focus }: Props) {
   const photo = getPhoto(slug);
   if (!photo) return <DestinationArt slug={slug} variant="card" />;
-  const alt = cityPhotos[slug]?.alt ?? city;
+  const alt = getPhotoCredit(slug)?.alt ?? city;
   return (
     <picture>
       <source type="image/avif" srcSet={photoSrcSet(slug, "avif", photo.widths)} sizes={sizes} />
