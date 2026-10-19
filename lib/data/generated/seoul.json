@@ -440,13 +440,13 @@
     },
     "t-dmz-panmunjom": {
       "coords": {
-        "lat": 37.518419,
-        "lng": -118.57262
+        "lat": 37.967751,
+        "lng": 126.74704
       },
       "sources": [
-        "https://www.openstreetmap.org/way/1383882840"
+        "https://www.wikidata.org/wiki/Q41691"
       ],
-      "verifiedAt": "2026-10-16"
+      "verifiedAt": "2026-10-19"
     },
     "t-nami-island-petite-france": {
       "coords": {

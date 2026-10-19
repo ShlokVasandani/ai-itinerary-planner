@@ -267,6 +267,17 @@
       ],
       "verifiedAt": "2026-10-16"
     },
+    "istanbul-archaeology-museums": {
+      "coords": {
+        "lat": 41.011669,
+        "lng": 28.981389
+      },
+      "officialUrl": "https://muze.gov.tr/muze-detay?SectionId=IAR01&DistId=IAR",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q636978"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
     "n-360-istanbul": {
       "coords": {
         "lat": 41.032744,
@@ -578,14 +589,14 @@
     },
     "t-princes-islands": {
       "coords": {
-        "lat": -34.177,
-        "lng": 172.043144
+        "lat": 40.8753,
+        "lng": 29.0944
       },
+      "officialUrl": "http://www.adalar.gov.tr",
       "sources": [
-        "https://www.openstreetmap.org/relation/8551652",
-        "https://www.wikidata.org/wiki/Q49296478"
+        "https://www.wikidata.org/wiki/Q1020668"
       ],
-      "verifiedAt": "2026-10-16"
+      "verifiedAt": "2026-10-19"
     },
     "topkapi-palace": {
       "coords": {

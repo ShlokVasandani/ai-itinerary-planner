@@ -111,14 +111,13 @@
     },
     "convento-do-carmo": {
       "coords": {
-        "lat": 38.79399,
-        "lng": -9.4438
+        "lat": 38.712222,
+        "lng": -9.14
       },
       "sources": [
-        "https://www.openstreetmap.org/relation/6742759",
-        "https://www.wikidata.org/wiki/Q66814463"
+        "https://www.wikidata.org/wiki/Q1470414"
       ],
-      "verifiedAt": "2026-10-16"
+      "verifiedAt": "2026-10-19"
     },
     "jeronimos-monastery": {
       "coords": {

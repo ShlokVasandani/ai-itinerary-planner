@@ -798,14 +798,13 @@
     },
     "t-the-hamptons": {
       "coords": {
-        "lat": 53.488085,
-        "lng": -113.675631
+        "lat": 40.884931,
+        "lng": -72.501061
       },
       "sources": [
-        "https://www.openstreetmap.org/relation/7825321",
-        "https://www.wikidata.org/wiki/Q7738696"
+        "https://www.wikidata.org/wiki/Q1574020"
       ],
-      "verifiedAt": "2026-10-16"
+      "verifiedAt": "2026-10-19"
     },
     "times-square": {
       "coords": {

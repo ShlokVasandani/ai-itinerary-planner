@@ -385,17 +385,9 @@
       "verifiedAt": "2026-10-16"
     },
     "r-can-solé": {
-      "coords": {
-        "lat": 41.680112,
-        "lng": 2.155855
-      },
       "costCurrency": "EUR",
       "costMax": 55,
-      "costMin": 35,
-      "sources": [
-        "https://www.openstreetmap.org/node/12090801471"
-      ],
-      "verifiedAt": "2026-10-16"
+      "costMin": 35
     },
     "r-disfrutar": {
       "closedDays": [
@@ -462,17 +454,9 @@
       "verifiedAt": "2026-10-16"
     },
     "r-granja-viader": {
-      "coords": {
-        "lat": 41.635155,
-        "lng": 2.35352
-      },
       "costCurrency": "EUR",
       "costMax": 6,
-      "costMin": 3,
-      "sources": [
-        "https://www.openstreetmap.org/node/1993737522"
-      ],
-      "verifiedAt": "2026-10-16"
+      "costMin": 3
     },
     "r-la-boqueria-stalls": {
       "costCurrency": "EUR",
@@ -581,14 +565,13 @@
     },
     "t-montserrat": {
       "coords": {
-        "lat": 16.741704,
-        "lng": -62.191684
+        "lat": 41.605376,
+        "lng": 1.811495
       },
       "sources": [
-        "https://www.openstreetmap.org/relation/537257",
-        "https://www.wikidata.org/wiki/Q13353"
+        "https://www.wikidata.org/wiki/Q732115"
       ],
-      "verifiedAt": "2026-10-16"
+      "verifiedAt": "2026-10-19"
     },
     "t-sitges": {
       "coords": {

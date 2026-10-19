@@ -76,9 +76,17 @@
       "costMin": 1
     },
     "dubai-fountain": {
+      "coords": {
+        "lat": 25.195186,
+        "lng": 55.275061
+      },
       "costCurrency": "AED",
       "costMax": 0,
-      "costMin": 0
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2384491"
+      ],
+      "verifiedAt": "2026-10-19"
     },
     "dubai-frame": {
       "closedDays": [],
@@ -261,9 +269,17 @@
       "verifiedAt": "2026-10-16"
     },
     "r-gold-souk-cafeteria": {
+      "coords": {
+        "lat": 25.266667,
+        "lng": 55.316667
+      },
       "costCurrency": "AED",
       "costMax": 20,
-      "costMin": 15
+      "costMin": 15,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q3021334"
+      ],
+      "verifiedAt": "2026-10-19"
     },
     "r-pierchic": {
       "closedDays": [],
@@ -441,17 +457,7 @@
       ],
       "verifiedAt": "2026-10-16"
     },
-    "t-hatta": {
-      "coords": {
-        "lat": 31.651535,
-        "lng": 34.741387
-      },
-      "sources": [
-        "https://www.openstreetmap.org/node/13482041134",
-        "https://www.wikidata.org/wiki/Q4166544"
-      ],
-      "verifiedAt": "2026-10-16"
-    },
+    "t-hatta": {},
     "t-sharjah": {
       "coords": {
         "lat": 25.269185,

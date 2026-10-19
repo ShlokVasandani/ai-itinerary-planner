@@ -41,6 +41,17 @@
       ],
       "verifiedAt": "2026-10-16"
     },
+    "c-antico-caffe-greco": {
+      "coords": {
+        "lat": 41.905558,
+        "lng": 12.481436
+      },
+      "officialUrl": "http://www.anticocaffegreco.eu/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q575012"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
     "c-barnum-cafe": {
       "closedDays": [],
       "coords": {
@@ -124,16 +135,7 @@
       ],
       "verifiedAt": "2026-10-16"
     },
-    "c-tazza-doro": {
-      "coords": {
-        "lat": 41.733521,
-        "lng": 12.276656
-      },
-      "sources": [
-        "https://www.openstreetmap.org/node/10717412204"
-      ],
-      "verifiedAt": "2026-10-16"
-    },
+    "c-tazza-doro": {},
     "capitoline-museums": {
       "coords": {
         "lat": 41.892666,
@@ -500,9 +502,18 @@
       "verifiedAt": "2026-10-16"
     },
     "st-peters-basilica": {
+      "coords": {
+        "lat": 41.902222,
+        "lng": 12.453417
+      },
       "costCurrency": "EUR",
       "costMax": 10,
-      "costMin": 0
+      "costMin": 0,
+      "officialUrl": "https://www.basilicasanpietro.va/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q12512"
+      ],
+      "verifiedAt": "2026-10-19"
     },
     "t-orvieto": {
       "coords": {
@@ -556,14 +567,32 @@
       "verifiedAt": "2026-10-16"
     },
     "vatican-museums": {
+      "coords": {
+        "lat": 41.906389,
+        "lng": 12.454444
+      },
       "costCurrency": "EUR",
       "costMax": 20,
-      "costMin": 20
+      "costMin": 20,
+      "officialUrl": "http://www.museivaticani.va",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q182955"
+      ],
+      "verifiedAt": "2026-10-19"
     },
     "villa-borghese-gardens": {
+      "coords": {
+        "lat": 41.913647,
+        "lng": 12.485104
+      },
       "costCurrency": "EUR",
       "costMax": 0,
-      "costMin": 0
+      "costMin": 0,
+      "officialUrl": "http://www.sovraintendenzaroma.it/i_luoghi/ville_e_parchi_storici/ville_dei_nobili/villa_borghese",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q678313"
+      ],
+      "verifiedAt": "2026-10-19"
     },
     "x-appian-way-bike-ride": {
       "costCurrency": "EUR",

@@ -93,16 +93,7 @@
       ],
       "verifiedAt": "2026-10-16"
     },
-    "c-gelato-messina": {
-      "coords": {
-        "lat": -33.731974,
-        "lng": 150.962171
-      },
-      "sources": [
-        "https://www.openstreetmap.org/node/13798119317"
-      ],
-      "verifiedAt": "2026-10-16"
-    },
+    "c-gelato-messina": {},
     "c-reuben-hills": {
       "closedDays": [],
       "coords": {
@@ -178,6 +169,17 @@
         "https://www.wikidata.org/wiki/Q6750626"
       ],
       "verifiedAt": "2026-10-16"
+    },
+    "museum-of-contemporary-art-australia": {
+      "coords": {
+        "lat": -33.86,
+        "lng": 151.208889
+      },
+      "officialUrl": "http://www.mca.com.au/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q690242"
+      ],
+      "verifiedAt": "2026-10-19"
     },
     "n-fortune-of-war": {
       "coords": {

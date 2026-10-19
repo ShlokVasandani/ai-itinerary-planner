@@ -293,18 +293,9 @@
       "verifiedAt": "2026-10-16"
     },
     "r-in-n-out": {
-      "coords": {
-        "lat": 34.275872,
-        "lng": -118.568048
-      },
       "costCurrency": "USD",
       "costMax": 12,
-      "costMin": 8,
-      "officialUrl": "https://locations.in-n-out.com/178",
-      "sources": [
-        "https://www.openstreetmap.org/way/51210057"
-      ],
-      "verifiedAt": "2026-10-16"
+      "costMin": 8
     },
     "r-kogi-truck": {
       "costCurrency": "USD",
