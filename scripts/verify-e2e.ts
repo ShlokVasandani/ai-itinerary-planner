@@ -13,15 +13,69 @@ import { chromium } from "playwright-core";
 import { cityIndex } from "../lib/data/catalog";
 
 const BASE = process.argv[2] ?? "http://localhost:3000";
-const only = process.argv.slice(3);
+const only = process.argv.slice(3).filter((a) => !a.startsWith("--"));
 /** A real 1x1 PNG, served for map tiles so "a tile loaded" can be checked without touching OpenStreetMap. */
 const TILE_PNG = Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==", "base64");
 const CHROME = process.env.CHROME_PATH ?? "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 const base = new URL(BASE);
 
+/**
+ * Planner interactions that the per-city loop doesn't exercise. Each returns the problems it found.
+ *  - Changing the city in the picker must leave "Build my itinerary" enabled and not busy, and the plan must be for
+ *    the new city. (A race in the city-loading effect once left it disabled for good.)
+ */
+async function checkInteractions(browser: import("playwright-core").Browser): Promise<string[]> {
+  const problems: string[] = [];
+  const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+  await ctx.route("**/*", (route) => {
+    const u = new URL(route.request().url());
+    if (u.host === base.host || u.protocol === "data:" || u.protocol === "blob:") return route.continue();
+    if (u.hostname.endsWith("tile.openstreetmap.org")) return route.fulfill({ status: 200, contentType: "image/png", body: TILE_PNG });
+    return route.fulfill({ status: 200, contentType: "text/html", body: "<title>stub</title>" });
+  });
+  const page = await ctx.newPage();
+  for (const target of ["Lisbon", "Kyoto"]) {
+    await page.goto(`${BASE}/planner?city=tokyo`, { waitUntil: "domcontentloaded" });
+    await page.waitForFunction(() => {
+      const b = document.querySelector(".planner-form button[type=submit]");
+      return !!b && Object.keys(b).some((k) => k.startsWith("__reactFiber"));
+    });
+    await page.locator(".sf-stack .sf-trigger", { hasText: "Where to" }).click();
+    const panel = page.locator(".sf-cities");
+    await panel.getByLabel("Search cities").fill(target);
+    await panel.getByRole("option").first().locator("button").click();
+    await page.locator(".planner-hero h1", { hasText: target }).waitFor({ timeout: 15000 });
+    const submit = page.locator(".planner-form button[type=submit]");
+    try {
+      await page.waitForFunction(() => {
+        const b = document.querySelector(".planner-form button[type=submit]") as HTMLButtonElement | null;
+        return !!b && !b.disabled && b.getAttribute("aria-busy") !== "true";
+      }, null, { timeout: 5000 });
+      await submit.click();
+      await page.waitForSelector(".day-card", { timeout: 15000 });
+      const heading = await page.locator(".trip-summary h2").innerText();
+      if (!heading.includes(target)) problems.push(`city switch to ${target}: plan heading is "${heading}"`);
+    } catch {
+      problems.push(`city switch to ${target}: "Build my itinerary" never became enabled and not busy after choosing the city`);
+    }
+  }
+
+  await ctx.close();
+  return problems;
+}
+
 async function main() {
   const browser = await chromium.launch({ executablePath: CHROME, headless: true });
-  const problems: string[] = [];
+  const problems: string[] = await checkInteractions(browser);
+  if (process.argv.includes("--ui-only")) {
+    await browser.close();
+    if (problems.length) {
+      console.error(`${problems.length} problem(s):\n` + problems.map((p) => " - " + p).join("\n"));
+      process.exit(1);
+    }
+    console.log("Interactions OK.");
+    return;
+  }
   let totalLinks = 0;
   let totalClicks = 0;
   let mapsChecked = 0;

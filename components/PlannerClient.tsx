@@ -101,15 +101,17 @@ export default function PlannerClient({ initial, initialDestination }: { initial
   const resultsRef = useRef<HTMLDivElement>(null);
 
   const [destination, setDestination] = useState<Destination>(initialDestination);
-  const [loadingCity, setLoadingCity] = useState(false);
   const [cityError, setCityError] = useState("");
   const cities = useMemo(() => cityIndex.map((c) => ({ slug: c.slug, city: c.city, country: c.country })), []);
+
+  // The picker moved to a city whose data has not arrived yet. Derived, not stored: a "loading" flag that an effect
+  // had to reset could be left set forever (its cleanup ran as soon as the new city landed, before it could clear it).
+  const loadingCity = form.slug !== destination.slug && !cityError;
 
   // Open-data cities are separate chunks; fetch the chosen one when the picker changes.
   useEffect(() => {
     if (form.slug === destination.slug) return;
     let live = true;
-    setLoadingCity(true);
     setCityError("");
     loadDestination(form.slug)
       .then((d) => {
@@ -117,8 +119,7 @@ export default function PlannerClient({ initial, initialDestination }: { initial
         if (d) setDestination(d);
         else setCityError("That city could not be loaded.");
       })
-      .catch(() => live && setCityError("That city could not be loaded. Check your connection and try again."))
-      .finally(() => live && setLoadingCity(false));
+      .catch(() => live && setCityError("That city could not be loaded. Check your connection and try again."));
     return () => {
       live = false;
     };
