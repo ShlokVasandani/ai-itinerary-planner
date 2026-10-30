@@ -7,6 +7,7 @@ import type { Destination, Interest } from "../../lib/types";
 import type { GeneratedItinerary, ItineraryDay, TimelineStop } from "../../lib/itinerary-engine";
 import { addDays, diffDays, windowsFor, weekdayOf } from "../../lib/engine/time";
 import { combinedDietFit } from "../../lib/engine/dietary";
+import { tripProblem } from "../../lib/trip-problem";
 import type { Restaurant } from "../../lib/types";
 import { cityCentre, km, pools, recordFor, type AnyRec } from "./data";
 import type { Failure, StressInput } from "./model";
@@ -208,5 +209,7 @@ export function checkPlan(input: StressInput, dest: Destination, it: GeneratedIt
       }
     }
   }
+  // A trip with no room for sightseeing is shown as a notice, and the interest guarantee does not apply to it.
+  if (tripProblem(it)) return { failures: f.filter((x) => !x.check.startsWith("interest.")), notes };
   return { failures: f, notes };
 }

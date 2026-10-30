@@ -2,6 +2,7 @@
 import type { Destination } from "../../lib/types";
 import { generateItinerary, type GeneratedItinerary } from "../../lib/itinerary-engine";
 import { checkPlan } from "./checks";
+import { tripProblem } from "../../lib/trip-problem";
 import { compare, scrape } from "./dom";
 import { Planner, Probe } from "./driver";
 import { toEngineInput, type Failure, type PlanResult, type StressInput } from "./model";
@@ -22,6 +23,17 @@ export const engineFor = (input: StressInput, dest: Destination): GeneratedItine
 export async function verifyScreen(env: Env, input: StressInput, it: GeneratedItinerary, origin = ""): Promise<{ failures: Failure[]; notes: string[] }> {
   const { planner, probe, dest } = env;
   const { failures, notes } = checkPlan(input, dest, it);
+  const problem = tripProblem(it);
+  if (problem) {
+    // A plan with no sightseeing is replaced by a notice: check the notice says what it should, and that the layout holds.
+    const text = await planner.page.locator('.planner-empty[role="status"]').innerText().catch(() => "");
+    if (!text.includes(problem.title)) failures.push({ check: "render.tight-notice", detail: `expected the notice "${problem.title}", page shows "${text.slice(0, 80)}"` });
+    for (const field of problem.change) if (!text.includes(field)) failures.push({ check: "render.tight-notice", detail: `notice does not name "${field}"` });
+    if ((await planner.page.locator(".day-card").count()) > 0) failures.push({ check: "render.tight-notice", detail: "day cards are shown next to the notice" });
+    notes.push("too tight for the flight times (notice shown)");
+    failures.push(...(await planner.overflow(1440)), ...(await planner.overflow(390)), ...probe.drain());
+    return { failures, notes };
+  }
   failures.push(...compare(await scrape(planner.page), it, input, env.origin ?? origin));
   failures.push(...(await planner.maps(it)).failures);
   if (env.shotPath) await screenshot(planner, env.shotPath);

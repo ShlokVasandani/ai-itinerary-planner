@@ -172,12 +172,18 @@ export class Planner {
     await this.page.getByLabel("Flight home, last day").fill(departure);
   }
 
-  /** Clicks Build and waits until a fresh plan, not the previous one, is on screen. */
-  async build() {
-    await this.page.evaluate(() => document.querySelectorAll(".trip-summary").forEach((e) => e.setAttribute("data-old", "1")));
+  /**
+   * Clicks Build and waits until a fresh result, not the previous one, is on screen: a plan (summary and day cards),
+   * or the "too tight for your flight times" notice that replaces a plan with no sightseeing in it.
+   */
+  async build(): Promise<"plan" | "tight"> {
+    await this.page.evaluate(() => document.querySelectorAll(".trip-summary, .planner-empty").forEach((e) => e.setAttribute("data-old", "1")));
     await this.page.locator(".planner-form button[type=submit]").click();
-    await this.page.waitForSelector(".trip-summary:not([data-old])", { timeout: 30000 });
+    const fresh = this.page.locator('.trip-summary:not([data-old]), .planner-empty[role="status"]:not([data-old])').first();
+    await fresh.waitFor({ timeout: 30000 });
+    if ((await this.page.locator(".trip-summary:not([data-old])").count()) === 0) return "tight";
     await this.page.waitForSelector(".day-card", { timeout: 15000 });
+    return "plan";
   }
 
   /** The Leaflet host for each day, scrolled into view (maps load lazily) and read back. */
