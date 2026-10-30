@@ -3094,3 +3094,63 @@ main {
   animation: rise-in 0.24s var(--ease-out) both;
   animation-delay: calc(var(--n, 0) * 40ms);
 }
+
+/* -------------------------------------------------------------------------
+   Route transitions (React <ViewTransition> + the View Transitions API).
+   Forward slides in from the right, back from the left, header links crossfade.
+   The old page leaves in 120ms, the new one arrives in 200ms. Ease-out, 24px of travel.
+   ------------------------------------------------------------------------- */
+::view-transition {
+  /* Clicks during a transition reach the live page, and a new navigation simply takes over. */
+  pointer-events: none;
+}
+/* The header is the fixed reference point: it doesn't move or flash. */
+::view-transition-group(site-header) {
+  animation: none;
+  z-index: 100;
+}
+::view-transition-old(site-header) {
+  display: none;
+}
+::view-transition-new(site-header) {
+  animation: none;
+}
+
+::view-transition-old(.nav-forward) {
+  --slide-offset: -24px;
+  animation: 120ms var(--ease-out) both vt-fade reverse, 300ms var(--ease-out) both vt-slide reverse;
+}
+::view-transition-new(.nav-forward) {
+  --slide-offset: 24px;
+  animation: 200ms var(--ease-out) 80ms both vt-fade, 300ms var(--ease-out) both vt-slide;
+}
+::view-transition-old(.nav-back) {
+  --slide-offset: 24px;
+  animation: 120ms var(--ease-out) both vt-fade reverse, 300ms var(--ease-out) both vt-slide reverse;
+}
+::view-transition-new(.nav-back) {
+  --slide-offset: -24px;
+  animation: 200ms var(--ease-out) 80ms both vt-fade, 300ms var(--ease-out) both vt-slide;
+}
+::view-transition-old(.nav-fade) {
+  animation: 120ms var(--ease-out) both vt-fade reverse;
+}
+::view-transition-new(.nav-fade) {
+  animation: 180ms var(--ease-out) 60ms both vt-fade;
+}
+@keyframes vt-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes vt-slide {
+  from {
+    translate: var(--slide-offset, 0px) 0;
+  }
+  to {
+    translate: 0 0;
+  }
+}

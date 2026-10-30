@@ -24,7 +24,7 @@ export default function SiteFooter() {
           <ul>
             {featured.map((d) => (
               <li key={d.slug}>
-                <Link href={`/destinations/${d.slug}`}>{d.city}</Link>
+                <Link href={`/destinations/${d.slug}`} transitionTypes={["nav-fade"]}>{d.city}</Link>
               </li>
             ))}
           </ul>
@@ -33,13 +33,13 @@ export default function SiteFooter() {
           <h2>Plan</h2>
           <ul>
             <li>
-              <Link href="/destinations">All destinations</Link>
+              <Link href="/destinations" transitionTypes={["nav-fade"]}>All destinations</Link>
             </li>
             <li>
-              <Link href="/planner">Build an itinerary</Link>
+              <Link href="/planner" transitionTypes={["nav-fade"]}>Build an itinerary</Link>
             </li>
             <li>
-              <Link href="/credits">Photo credits</Link>
+              <Link href="/credits" transitionTypes={["nav-fade"]}>Photo credits</Link>
             </li>
           </ul>
         </nav>
@@ -55,7 +55,7 @@ export default function SiteFooter() {
           <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">
             OpenStreetMap contributors
           </a>{" "}
-          · Photography via <Link href="/credits">Wikimedia Commons</Link>
+          · Photography via <Link href="/credits" transitionTypes={["nav-fade"]}>Wikimedia Commons</Link>
         </p>
       </div>
     </footer>

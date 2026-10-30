@@ -5,6 +5,7 @@ import { cityIndex, loadDestination } from "@/lib/data/catalog";
 import type { Destination } from "@/lib/types";
 import DestinationTabs from "@/components/DestinationTabs";
 import Photo from "@/components/Photo";
+import PageTransition from "@/components/PageTransition";
 import { getPhoto, getPhotoCredit } from "@/lib/photos";
 import { jsonLd, siteUrl } from "@/lib/site";
 
@@ -74,16 +75,17 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
   const photo = getPhotoCredit(d.slug);
 
   return (
+    <PageTransition>
     <main className="dest-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(destinationJsonLd(d)) }} />
       <section className="dest-hero">
-        <Link href="/destinations" className="back-link">
+        <Link href="/destinations" className="back-link" transitionTypes={["nav-back"]}>
           ← All destinations
         </Link>
         <p className="eyebrow">{d.country}</p>
         <h1>{d.city}</h1>
         <p className="lede">{d.tagline}</p>
-        <Link href={`/planner?city=${d.slug}`} className="btn btn-primary">
+        <Link href={`/planner?city=${d.slug}`} className="btn btn-primary" transitionTypes={["nav-forward"]}>
           Plan a trip to {d.city}
         </Link>
       </section>
@@ -123,5 +125,6 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
         <DestinationTabs d={d} />
       </section>
     </main>
+    </PageTransition>
   );
 }

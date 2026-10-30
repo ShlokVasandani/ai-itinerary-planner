@@ -35,22 +35,22 @@ export default function SiteHeader() {
   }, [open]);
 
   return (
-    <header className="topbar" data-scrolled={scrolled || undefined} data-open={open || undefined}>
+    <header className="topbar" data-scrolled={scrolled || undefined} data-open={open || undefined} style={{ viewTransitionName: "site-header" }}>
       <div className="topbar-inner">
-        <Link href="/" className="brand" aria-label="Sekai, home">
+        <Link href="/" className="brand" aria-label="Sekai, home" transitionTypes={["nav-fade"]}>
           <span className="brand-mark" aria-hidden="true" />
           Sekai
         </Link>
 
         <nav className="topbar-nav" aria-label="Primary">
           {LINKS.map((l) => (
-            <Link key={l.href} href={l.href} aria-current={pathname === l.href ? "page" : undefined}>
+            <Link key={l.href} href={l.href} aria-current={pathname === l.href ? "page" : undefined} transitionTypes={["nav-fade"]}>
               {l.label}
             </Link>
           ))}
         </nav>
 
-        <Link href="/planner" className="btn btn-primary topbar-cta">
+        <Link href="/planner" className="btn btn-primary topbar-cta" transitionTypes={["nav-fade"]}>
           Plan my trip
         </Link>
 
@@ -63,11 +63,11 @@ export default function SiteHeader() {
       <div id="mobile-menu" className="mobile-menu" hidden={!open}>
         <nav aria-label="Mobile">
           {LINKS.map((l) => (
-            <Link key={l.href} href={l.href}>
+            <Link key={l.href} href={l.href} transitionTypes={["nav-fade"]}>
               {l.label}
             </Link>
           ))}
-          <Link href="/planner" className="btn btn-primary">
+          <Link href="/planner" className="btn btn-primary" transitionTypes={["nav-fade"]}>
             Plan my trip
           </Link>
         </nav>

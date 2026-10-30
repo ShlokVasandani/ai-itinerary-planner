@@ -26,7 +26,7 @@ export default function HeroSearch({ cities }: { cities: CityOption[] }) {
     if (children) params.set("children", String(children));
     if (start) params.set("start", start);
     if (end) params.set("end", end);
-    startTransition(() => router.push(`/planner?${params}`));
+    startTransition(() => router.push(`/planner?${params}`, { transitionTypes: ["nav-forward"] }));
   }
 
   return (

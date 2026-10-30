@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { cityIndex } from "@/lib/data/catalog";
 import { getPhotoCredit } from "@/lib/photos";
+import PageTransition from "@/components/PageTransition";
 
 export const metadata = {
   title: "Photo credits and data sources",
@@ -10,9 +11,10 @@ export const metadata = {
 
 export default function CreditsPage() {
   return (
+    <PageTransition>
     <main className="prose-page">
       <section className="section narrow">
-        <Link href="/" className="back-link">
+        <Link href="/" className="back-link" transitionTypes={["nav-back"]}>
           ← Back home
         </Link>
         <p className="eyebrow">Attribution</p>
@@ -64,5 +66,6 @@ export default function CreditsPage() {
         </ol>
       </section>
     </main>
+    </PageTransition>
   );
 }

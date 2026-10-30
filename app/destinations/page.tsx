@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { cityIndex, curatedCount, openCount } from "@/lib/data/catalog";
 import CityBrowser from "@/components/CityBrowser";
+import PageTransition from "@/components/PageTransition";
 
 export const metadata: Metadata = {
   title: `All ${cityIndex.length} destinations`,
@@ -11,9 +12,10 @@ export const metadata: Metadata = {
 
 export default function DestinationsPage() {
   return (
+    <PageTransition>
     <main className="dest-index">
       <section className="section narrow">
-        <Link href="/" className="back-link">
+        <Link href="/" className="back-link" transitionTypes={["nav-back"]}>
           ← Back home
         </Link>
         <p className="eyebrow">Destinations</p>
@@ -28,5 +30,6 @@ export default function DestinationsPage() {
         <CityBrowser cities={cityIndex} />
       </section>
     </main>
+    </PageTransition>
   );
 }

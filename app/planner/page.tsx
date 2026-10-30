@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PlannerClient, { type PlannerInitial } from "@/components/PlannerClient";
+import PageTransition from "@/components/PageTransition";
 import { isKnownCity, loadDestination } from "@/lib/data/catalog";
 
 export const metadata: Metadata = {
@@ -27,5 +28,9 @@ export default async function PlannerPage({ searchParams }: { searchParams: Prom
   };
   const slug = initial.city && isKnownCity(initial.city) ? initial.city : "tokyo";
   const destination = (await loadDestination(slug))!;
-  return <PlannerClient initial={{ ...initial, city: slug }} initialDestination={destination} />;
+  return (
+    <PageTransition>
+      <PlannerClient initial={{ ...initial, city: slug }} initialDestination={destination} />
+    </PageTransition>
+  );
 }

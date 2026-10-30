@@ -9,6 +9,7 @@ import HeroSearch from "@/components/HeroSearch";
 import PhotoExpand from "@/components/PhotoExpand";
 import Photo from "@/components/Photo";
 import StackedDays from "@/components/StackedDays";
+import PageTransition from "@/components/PageTransition";
 import { getPhotoCredit } from "@/lib/photos";
 import { cityIndex, curatedCount, openCount, totalPlaces as catalogPlaces } from "@/lib/data/catalog";
 
@@ -49,6 +50,7 @@ export default function Home() {
   const expandCredit = getPhotoCredit(expandCity.slug);
 
   return (
+    <PageTransition>
     <main>
       <section className="hero">
         <HeroRoute />
@@ -122,7 +124,7 @@ export default function Home() {
             This is unedited engine output: stops grouped by neighborhood, ordered nearest-first, with walking and transit
             time between them. Set your dates and it will also dodge closed days.
           </p>
-          <Link href={`/planner?city=${lisbon.slug}&go=1`} className="btn btn-ghost">
+          <Link href={`/planner?city=${lisbon.slug}&go=1`} className="btn btn-ghost" transitionTypes={["nav-forward"]}>
             Build your own →
           </Link>
         </div>
@@ -139,7 +141,7 @@ export default function Home() {
           ))}
         </div>
         <p className="dest-more">
-          <Link href="/destinations" className="btn btn-ghost">
+          <Link href="/destinations" className="btn btn-ghost" transitionTypes={["nav-forward"]}>
             Browse all {cityIndex.length} cities →
           </Link>
         </p>
@@ -155,11 +157,12 @@ export default function Home() {
             Every stop links to the venue&apos;s own site and a map. Flights, stays and tours open on Google Flights,
             Skyscanner, Booking.com, Airbnb, Viator, GetYourGuide and Klook with your dates already filled in.
           </p>
-          <Link href="/planner" className="btn btn-primary">
+          <Link href="/planner" className="btn btn-primary" transitionTypes={["nav-forward"]}>
             Plan my trip
           </Link>
         </div>
       </section>
     </main>
+    </PageTransition>
   );
 }
