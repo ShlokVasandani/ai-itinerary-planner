@@ -163,7 +163,8 @@ export async function runPropagation(env: Env, slug: string): Promise<PlanResult
     (b, a) => [
       ...same("prop.travellers", sig(a), sig(b), "stops changed when only the party size changed"),
       ...same("prop.travellers", [a.cost.low, a.cost.likely, a.cost.high], [b.cost.low, b.cost.likely, b.cost.high], "per-person totals changed with party size"),
-      ...(a.groupLikely === a.cost.likely * 3 ? [] : [{ check: "prop.travellers", detail: `party total ${a.groupLikely}, expected ${a.cost.likely} x 3` }]),
+      // The party total is rounded; a per-person price can now be fractional (33.6), so allow for that rounding.
+      ...(Math.abs(a.groupLikely - a.cost.likely * 3) <= 1 ? [] : [{ check: "prop.travellers", detail: `party total ${a.groupLikely}, expected ${a.cost.likely} x 3` }]),
       // A plan with no priced stops has a party total of 0 whatever the party size.
       ...(b.groupLikely !== a.groupLikely || a.cost.likely === 0 ? [] : [{ check: "prop.travellers", detail: "party total did not change" }]),
     ],
