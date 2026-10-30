@@ -1099,8 +1099,19 @@ main {
   font-family: var(--font-display);
   font-weight: 500;
   color: var(--color-muted);
-  border-bottom: 3px solid transparent;
+  position: relative;
   margin-bottom: -1px;
+}
+.tab-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: var(--color-coral);
+  transform: scaleX(0);
+  transition: transform 0.24s var(--ease-out);
 }
 @media (hover: hover) and (pointer: fine) {
   .tab-btn:hover {
@@ -1109,7 +1120,14 @@ main {
 }
 .tab-btn.active {
   color: var(--color-text);
-  border-bottom-color: var(--color-coral);
+}
+.tab-btn.active::after {
+  transform: scaleX(1);
+}
+/* A new panel fades up a few pixels; the tab bar around it stays put. */
+.tab-panel {
+  --rise: 6px;
+  animation: rise-in 0.2s var(--ease-out) both;
 }
 .panel-grid {
   display: grid;
@@ -1480,7 +1498,21 @@ main {
   font-size: 0.92rem;
   font-weight: 600;
   white-space: nowrap;
-  transition: transform 0.14s var(--ease-out), background 0.16s var(--ease-out), color 0.16s;
+  position: relative;
+  isolation: isolate;
+  transition: transform 0.14s var(--ease-out), color 0.16s;
+}
+/* The selected fill and its shadow live on a layer that fades, so only opacity animates. */
+.seg-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: var(--color-surface);
+  box-shadow: 0 1px 2px rgba(22, 19, 15, 0.16), 0 0 0 1px var(--color-line);
+  opacity: 0;
+  transition: opacity 0.16s var(--ease-out);
 }
 @media (hover: hover) and (pointer: fine) {
   .seg-btn:hover {
@@ -1488,9 +1520,10 @@ main {
   }
 }
 .seg-btn.is-on {
-  background: var(--color-surface);
   color: var(--color-text);
-  box-shadow: 0 1px 2px rgba(22, 19, 15, 0.16), 0 0 0 1px var(--color-line);
+}
+.seg-btn.is-on::before {
+  opacity: 1;
 }
 /* Multi-select groups: independent toggles, not one connected control. */
 .seg.seg-wrap {
@@ -1514,11 +1547,14 @@ main {
     border-color: var(--color-text);
   }
 }
-.seg-wrap .seg-btn.is-on {
+.seg-wrap .seg-btn::before {
+  inset: -1px;
   background: var(--color-text);
+  box-shadow: none;
+}
+.seg-wrap .seg-btn.is-on {
   border-color: var(--color-text);
   color: var(--color-bg);
-  box-shadow: none;
 }
 .picker-row {
   display: flex;
@@ -1536,6 +1572,7 @@ main {
   gap: 6px;
 }
 .chips li {
+  transition: opacity 0.16s var(--ease-out), transform 0.16s var(--ease-out);
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -1583,6 +1620,8 @@ main {
   margin: 0 auto;
 }
 .stale-note {
+  --rise: 6px;
+  animation: rise-in 0.2s var(--ease-out) both;
   background: var(--color-yellow);
   padding: 10px 16px;
   border-radius: 12px;
@@ -2874,4 +2913,36 @@ main {
 .seg-btn:active:not(:disabled),
 .sf-trigger:active {
   transform: scale(var(--press));
+}
+
+/* A chip grows in from 95% rather than appearing; removal is instant so the list never lags behind a click. */
+@starting-style {
+  .chips li {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+/* Busy button: a spinning ring (transform) beside a label that fades in when it changes. */
+.btn[aria-busy="true"] {
+  opacity: 0.85;
+  cursor: progress;
+}
+.spinner {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.btn-label {
+  --rise: 4px;
+  animation: rise-in 0.16s var(--ease-out) both;
 }

@@ -132,7 +132,7 @@ export default function DestinationTabs({ d }: { d: Destination }) {
         ))}
       </div>
 
-      <div className="tab-panel" role="tabpanel" id={`panel-${tab}`} aria-labelledby={`tab-${tab}`} tabIndex={0}>
+      <div key={tab} className="tab-panel" role="tabpanel" id={`panel-${tab}`} aria-labelledby={`tab-${tab}`} tabIndex={0}>
         <h2 className="sr-only">{TABS.find((t) => t.id === tab)?.label}</h2>
         {tab === "overview" && (
           <div className="panel-grid">

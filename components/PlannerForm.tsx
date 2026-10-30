@@ -271,7 +271,10 @@ export default function PlannerForm({ state, onChange, cities, destination, onSu
       </details>
 
       <button type="submit" className="btn btn-primary btn-block" disabled={busy || !!dateError} aria-busy={busy}>
-        {busy ? "Building your plan…" : "Build my itinerary"}
+        {busy && <span className="spinner" aria-hidden="true" />}
+        <span key={busy ? "busy" : "idle"} className="btn-label">
+          {busy ? "Building your plan…" : "Build my itinerary"}
+        </span>
       </button>
     </form>
   );
