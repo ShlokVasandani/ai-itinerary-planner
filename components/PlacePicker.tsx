@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
+import { resolvePlace } from "@/lib/place-match";
 
 export interface PickerOption {
   id: string;
@@ -23,11 +24,10 @@ export default function PlacePicker({
 }) {
   const id = useId();
   const [text, setText] = useState("");
-  const byLabel = new Map(options.map((o) => [o.label.toLowerCase(), o]));
+  const match = resolvePlace(options, text);
   const selected = value.map((v) => options.find((o) => o.id === v)).filter(Boolean) as PickerOption[];
 
   function add() {
-    const match = byLabel.get(text.trim().toLowerCase());
     if (match && !value.includes(match.id)) onChange([...value, match.id]);
     if (match) setText("");
   }
@@ -55,7 +55,7 @@ export default function PlacePicker({
             <option key={o.id} value={o.label} />
           ))}
         </datalist>
-        <button type="button" className="btn btn-small" onClick={add} disabled={!byLabel.has(text.trim().toLowerCase())}>
+        <button type="button" className="btn btn-small" onClick={add} disabled={!match}>
           Add
         </button>
       </div>

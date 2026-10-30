@@ -17,6 +17,7 @@ import {
 } from "@/lib/format";
 import PlacePicker, { type PickerOption } from "@/components/PlacePicker";
 import PressButton from "@/components/PressButton";
+import { placeOptions } from "@/lib/place-match";
 
 export interface PlannerFormState {
   slug: string;
@@ -137,17 +138,7 @@ export default function PlannerForm({ state, onChange, cities, destination, onSu
   const dateError = state.startDate && state.endDate && state.endDate < state.startDate ? "End date must be on or after the start date." : "";
   const datedLength = state.startDate && state.endDate && !dateError;
 
-  const placeOptions: PickerOption[] = useMemo(() => {
-    const d = destination;
-    return [
-      ...d.landmarks.map((p) => ({ id: p.id, label: p.name })),
-      ...d.restaurants.map((p) => ({ id: p.id, label: p.name })),
-      ...d.cafes.map((p) => ({ id: p.id, label: p.name })),
-      ...d.experiences.map((p) => ({ id: p.id, label: p.name })),
-      ...d.nightlife.map((p) => ({ id: p.id, label: p.name })),
-      ...d.dayTrips.map((p) => ({ id: p.id, label: p.name })),
-    ].filter((o, i, all) => all.findIndex((x) => x.label === o.label) === i);
-  }, [destination]);
+  const options: PickerOption[] = useMemo(() => placeOptions(destination), [destination]);
 
   return (
     <form
@@ -246,14 +237,14 @@ export default function PlannerForm({ state, onChange, cities, destination, onSu
       <PlacePicker
         label="Must include"
         hint="Places that have to be in the plan."
-        options={placeOptions}
+        options={options}
         value={state.mustInclude}
         onChange={(mustInclude) => onChange({ mustInclude, avoid: state.avoid.filter((a) => !mustInclude.includes(a)) })}
       />
       <PlacePicker
         label="Skip these"
         hint="Places to leave out."
-        options={placeOptions}
+        options={options}
         value={state.avoid}
         onChange={(avoid) => onChange({ avoid, mustInclude: state.mustInclude.filter((m) => !avoid.includes(m)) })}
       />

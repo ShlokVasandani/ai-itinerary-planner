@@ -23,19 +23,7 @@ export function recordFor(d: Destination, category: StopCategory | undefined, id
   return pools(d)[category].find((r) => r.id === id);
 }
 
-/** The picker's options, in the exact order and with the same de-duplication as PlannerForm. */
-export function placeOptions(d: Destination): { id: string; label: string }[] {
-  return [
-    ...d.landmarks,
-    ...d.restaurants,
-    ...d.cafes,
-    ...d.experiences,
-    ...d.nightlife,
-    ...d.dayTrips,
-  ]
-    .map((p) => ({ id: p.id, label: p.name }))
-    .filter((o, i, all) => all.findIndex((x) => x.label === o.label) === i);
-}
+export { placeOptions } from "../../lib/place-match";
 
 /** Weekday on which the most records are closed all day (0 = Sunday), and how many. */
 export function busiestClosedWeekday(d: Destination): { weekday: number; closed: number } {
