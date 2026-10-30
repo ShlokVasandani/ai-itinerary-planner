@@ -1,6 +1,7 @@
 "use client";
 
 import SearchField from "@/components/SearchField";
+import PressButton from "@/components/PressButton";
 
 function Row({ title, hint, value, min, max, onChange }: { title: string; hint: string; value: number; min: number; max: number; onChange: (n: number) => void }) {
   return (
@@ -10,13 +11,13 @@ function Row({ title, hint, value, min, max, onChange }: { title: string; hint: 
         <span>{hint}</span>
       </div>
       <div className="stepper" role="group" aria-label={title}>
-        <button type="button" onClick={() => onChange(Math.max(min, value - 1))} disabled={value <= min} aria-label={`Fewer ${title.toLowerCase()}`}>
+        <PressButton onPress={() => onChange(Math.max(min, value - 1))} disabled={value <= min} aria-label={`Fewer ${title.toLowerCase()}`}>
           −
-        </button>
+        </PressButton>
         <output aria-live="polite">{value}</output>
-        <button type="button" onClick={() => onChange(Math.min(max, value + 1))} disabled={value >= max} aria-label={`More ${title.toLowerCase()}`}>
+        <PressButton onPress={() => onChange(Math.min(max, value + 1))} disabled={value >= max} aria-label={`More ${title.toLowerCase()}`}>
           +
-        </button>
+        </PressButton>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import type { Destination, Verifiable } from "@/lib/types";
 import NoteIcon from "@/components/NoteIcon";
 import PriorityIcon from "@/components/PriorityIcon";
 import OutboundLink from "@/components/OutboundLink";
+import PressButton from "@/components/PressButton";
 import { MONTH_NAMES, hoursSummary } from "@/lib/format";
 import { buildLinks } from "@/lib/providers";
 
@@ -117,18 +118,17 @@ export default function DestinationTabs({ d }: { d: Destination }) {
     <div className="tabs-wrap">
       <div className="tabs-nav" role="tablist" aria-label={`${d.city} information sections`}>
         {TABS.map((t) => (
-          <button
+          <PressButton
             key={t.id}
             id={`tab-${t.id}`}
             role="tab"
-            type="button"
             aria-selected={tab === t.id}
             aria-controls={`panel-${t.id}`}
             className={`tab-btn${tab === t.id ? " active" : ""}`}
-            onClick={() => setTab(t.id)}
+            onPress={() => setTab(t.id)}
           >
             {t.label}
-          </button>
+          </PressButton>
         ))}
       </div>
 

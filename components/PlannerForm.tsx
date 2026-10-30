@@ -16,6 +16,7 @@ import {
   TRAVEL_STYLE_LABELS,
 } from "@/lib/format";
 import PlacePicker, { type PickerOption } from "@/components/PlacePicker";
+import PressButton from "@/components/PressButton";
 
 export interface PlannerFormState {
   slug: string;
@@ -61,16 +62,15 @@ function Segmented<T extends string>({
       <legend>{legend}</legend>
       <div className="seg" role="radiogroup" aria-label={legend}>
         {options.map((o) => (
-          <button
+          <PressButton
             key={o.id}
-            type="button"
             role="radio"
             aria-checked={value === o.id}
             className={`seg-btn${value === o.id ? " is-on" : ""}`}
-            onClick={() => onChange(o.id)}
+            onPress={() => onChange(o.id)}
           >
             {o.label}
-          </button>
+          </PressButton>
         ))}
       </div>
     </fieldset>
@@ -95,15 +95,14 @@ function Toggles<T extends string>({
         {options.map((o) => {
           const on = value.includes(o.id);
           return (
-            <button
+            <PressButton
               key={o.id}
-              type="button"
               aria-pressed={on}
               className={`seg-btn${on ? " is-on" : ""}`}
-              onClick={() => onChange(on ? value.filter((v) => v !== o.id) : [...value, o.id])}
+              onPress={() => onChange(on ? value.filter((v) => v !== o.id) : [...value, o.id])}
             >
               {o.label}
-            </button>
+            </PressButton>
           );
         })}
       </div>
@@ -119,13 +118,13 @@ function Stepper({ label, value, min, max, onChange }: { label: string; value: n
         {label}
       </span>
       <div className="stepper" role="group" aria-labelledby={id}>
-        <button type="button" onClick={() => onChange(Math.max(min, value - 1))} aria-label={`Fewer: ${label}`}>
+        <PressButton onPress={() => onChange(Math.max(min, value - 1))} aria-label={`Fewer: ${label}`}>
           −
-        </button>
+        </PressButton>
         <output aria-live="polite">{value}</output>
-        <button type="button" onClick={() => onChange(Math.min(max, value + 1))} aria-label={`More: ${label}`}>
+        <PressButton onPress={() => onChange(Math.min(max, value + 1))} aria-label={`More: ${label}`}>
           +
-        </button>
+        </PressButton>
       </div>
     </div>
   );
@@ -171,15 +170,14 @@ export default function PlannerForm({ state, onChange, cities, destination, onSu
           <legend>Trip length</legend>
           <div className="seg seg-wrap" role="group" aria-label="Trip length presets">
             {PRESET_DURATIONS.map((n) => (
-              <button
+              <PressButton
                 key={n}
-                type="button"
                 aria-pressed={state.duration === n}
                 className={`seg-btn${state.duration === n ? " is-on" : ""}`}
-                onClick={() => onChange({ duration: n })}
+                onPress={() => onChange({ duration: n })}
               >
                 {n} days
-              </button>
+              </PressButton>
             ))}
           </div>
           <Stepper label="Days (1–14)" value={state.duration} min={1} max={MAX_TRIP_DAYS} onChange={(n) => onChange({ duration: n })} />

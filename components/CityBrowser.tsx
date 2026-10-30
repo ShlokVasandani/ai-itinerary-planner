@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import DestinationCard from "@/components/DestinationCard";
+import PressButton from "@/components/PressButton";
 import type { CityIndexEntry } from "@/lib/data/catalog";
 
 const REGIONS = ["All", "Europe", "Asia", "Americas", "Middle East", "Africa", "Oceania"] as const;
@@ -21,9 +22,9 @@ export default function CityBrowser({ cities }: { cities: CityIndexEntry[] }) {
         <input type="search" className="browser-search" placeholder="Search cities or countries" aria-label="Search cities" value={q} onChange={(e) => setQ(e.target.value)} />
         <div className="seg browser-regions" role="group" aria-label="Region">
           {REGIONS.map((r) => (
-            <button key={r} type="button" className={`seg-btn${region === r ? " is-on" : ""}`} aria-pressed={region === r} onClick={() => setRegion(r)}>
+            <PressButton key={r} className={`seg-btn${region === r ? " is-on" : ""}`} aria-pressed={region === r} onPress={() => setRegion(r)}>
               {r}
-            </button>
+            </PressButton>
           ))}
         </div>
       </div>

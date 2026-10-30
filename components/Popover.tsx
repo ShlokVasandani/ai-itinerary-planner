@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
+import { usePress } from "@/components/usePress";
 
 interface Props {
   /** Visible label of the trigger button. */
@@ -21,6 +22,10 @@ export default function Popover({ label, ariaLabel, children, className = "", on
   const rootRef = useRef<HTMLSpanElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
   const id = useId();
+  const press = usePress(() => {
+    if (!open) onOpen?.();
+    setOpen((v) => !v);
+  });
 
   useEffect(() => {
     if (!open) return;
@@ -62,10 +67,7 @@ export default function Popover({ label, ariaLabel, children, className = "", on
         aria-expanded={open}
         aria-controls={id}
         aria-label={ariaLabel}
-        onClick={() => {
-          if (!open) onOpen?.();
-          setOpen((v) => !v);
-        }}
+        {...press}
       >
         {label}
       </button>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
+import { usePress } from "@/components/usePress";
 
 interface Props {
   label: string;
@@ -18,6 +19,7 @@ export default function SearchField({ label, value, placeholder, children, class
   const [open, setOpen] = useState(false);
   const root = useRef<HTMLDivElement>(null);
   const id = useId();
+  const press = usePress(() => setOpen((v) => !v));
 
   useEffect(() => {
     if (!open) return;
@@ -42,7 +44,7 @@ export default function SearchField({ label, value, placeholder, children, class
 
   return (
     <div ref={root} className={`sf ${className}`} data-open={open || undefined}>
-      <button type="button" className="sf-trigger" aria-haspopup="dialog" aria-expanded={open} aria-controls={id} onClick={() => setOpen((v) => !v)}>
+      <button type="button" className="sf-trigger" aria-haspopup="dialog" aria-expanded={open} aria-controls={id} {...press}>
         <span className="sf-label">{label}</span>
         <span className={`sf-value${value ? "" : " is-empty"}`}>{value || placeholder}</span>
       </button>

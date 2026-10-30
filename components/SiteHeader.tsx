@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import PressButton from "@/components/PressButton";
 
 const LINKS = [
   { href: "/#destinations", label: "Destinations" },
@@ -53,16 +54,10 @@ export default function SiteHeader() {
           Plan my trip
         </Link>
 
-        <button
-          type="button"
-          className="menu-btn"
-          aria-expanded={open}
-          aria-controls="mobile-menu"
-          onClick={() => setOpen((v) => !v)}
-        >
+        <PressButton className="menu-btn" aria-expanded={open} aria-controls="mobile-menu" onPress={() => setOpen((v) => !v)}>
           <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
           <span className="menu-bars" aria-hidden="true" />
-        </button>
+        </PressButton>
       </div>
 
       <div id="mobile-menu" className="mobile-menu" hidden={!open}>
