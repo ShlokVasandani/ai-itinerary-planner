@@ -23,6 +23,7 @@ const base = new URL(BASE);
  * Planner interactions that the per-city loop doesn't exercise. Each returns the problems it found.
  *  - Changing the city in the picker must leave "Build my itinerary" enabled and not busy, and the plan must be for
  *    the new city. (A race in the city-loading effect once left it disabled for good.)
+ *  - A day trip must get a Book/Details menu even when it has no official or map URL of its own.
  */
 async function checkInteractions(browser: import("playwright-core").Browser): Promise<string[]> {
   const problems: string[] = [];
@@ -60,6 +61,23 @@ async function checkInteractions(browser: import("playwright-core").Browser): Pr
     }
   }
 
+  // Day trips: build 14 days in Tokyo, which includes "Depart for ..." rows.
+  await page.goto(`${BASE}/planner?city=tokyo`, { waitUntil: "domcontentloaded" });
+  const group = page.getByRole("group", { name: "Days (1–14)", exact: true });
+  for (let i = 0; i < 40; i++) {
+    const cur = Number((await group.locator("output").innerText()).trim());
+    if (cur === 14) break;
+    await group.getByRole("button", { name: "More: Days (1–14)", exact: true }).click();
+  }
+  await page.locator(".planner-form button[type=submit]").click();
+  await page.waitForSelector(".day-card", { timeout: 15000 });
+  const trips = page.locator(".stops > .stop", { hasText: "Depart for" });
+  const n = await trips.count();
+  if (n === 0) problems.push("day trips: a 14-day Tokyo plan has no day trip to check");
+  for (let i = 0; i < n; i++) {
+    const row = trips.nth(i);
+    if ((await row.locator(".popover > button").count()) === 0) problems.push(`day trips: "${((await row.locator("h4").textContent()) ?? "").trim()}" has no Book/Details menu`);
+  }
   await ctx.close();
   return problems;
 }

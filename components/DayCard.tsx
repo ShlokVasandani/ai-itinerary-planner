@@ -6,6 +6,7 @@ import type { GeneratedItinerary, ItineraryDay, SwapCandidate, TimelineStop } fr
 import { priorityLabel, swapStop } from "@/lib/itinerary-engine";
 import { STOP_KIND_LABELS, WEEKDAYS, formatDate, money, moneyRange, stopDotCategory } from "@/lib/format";
 import type { TripLinkInput } from "@/lib/providers";
+import { hasProviderOffers } from "@/lib/providers";
 import StopIcon from "@/components/StopIcon";
 import PriorityIcon from "@/components/PriorityIcon";
 import NoteIcon from "@/components/NoteIcon";
@@ -70,6 +71,8 @@ function StopRow({ stop, index, day, itinerary, trip, onSwap, late }: { stop: Ti
   const [fresh] = useState(late);
   const swappable = !!stop.refId && !!stop.category && stop.category !== "dayTrip" && stop.kind !== "transit" && stop.kind !== "free-time";
   const cost = stop.cost;
+  // A stop with a category can offer provider searches (tours, transfers) even with no official or map link of its own.
+  const bookable = !!stop.category && stop.kind !== "transit" && stop.kind !== "free-time";
   return (
     <li className={`stop stop-${stopDotCategory(stop.kind)}${fresh ? " stop-fresh" : ""}`} style={{ ["--n" as string]: Math.min(index, 7) }}>
       <div className="stop-time">
@@ -120,9 +123,9 @@ function StopRow({ stop, index, day, itinerary, trip, onSwap, late }: { stop: Ti
             {n}
           </p>
         ))}
-        {(swappable || stop.officialUrl || stop.mapsUrl) && (
+        {(swappable || stop.officialUrl || stop.mapsUrl || (bookable && hasProviderOffers(stop.category!))) && (
           <div className="stop-actions">
-            {stop.category && stop.kind !== "transit" && stop.kind !== "free-time" && <BookMenu stop={stop} trip={trip} />}
+            {bookable && <BookMenu stop={stop} trip={trip} />}
             {swappable && <SwapMenu itinerary={itinerary} day={day} index={index} onSwap={onSwap} />}
           </div>
         )}

@@ -7,6 +7,12 @@ export * from "./types";
 export { withAffiliate, outboundRel, activeAffiliates, AFFILIATE_ENV_VARS } from "./affiliateConfig";
 export { LINK_ADAPTERS, searchLinks, buildLinks } from "./links";
 
+type StopCategory = "landmark" | "restaurant" | "cafe" | "experience" | "shopping" | "nightlife" | "dayTrip";
+
+/** Stops of these kinds also get provider searches (tours, transfers) on top of their own official and map links. */
+export const hasProviderOffers = (category: StopCategory): boolean =>
+  category === "landmark" || category === "experience" || category === "dayTrip" || category === "nightlife";
+
 /** The first thing to show on any venue: its own booking or official page. */
 export function officialOffer(item: Verifiable & { name: string }): Offer | undefined {
   const url = item.bookingUrl ?? item.officialUrl;
@@ -79,7 +85,7 @@ export async function stopOffers(
   const offers: Offer[] = [];
   const official = officialOffer(item);
   if (official) offers.push(official);
-  if (category === "landmark" || category === "experience" || category === "dayTrip" || category === "nightlife") {
+  if (hasProviderOffers(category)) {
     offers.push(...(await searchLinks({ ...baseQuery(t, "activity"), text: item.name })));
   }
   if (category === "dayTrip") {
@@ -108,7 +114,7 @@ export function stopOffersSync(
   const offers: Offer[] = [];
   const official = officialOffer(item);
   if (official) offers.push(official);
-  if (category === "landmark" || category === "experience" || category === "dayTrip" || category === "nightlife") {
+  if (hasProviderOffers(category)) {
     offers.push(...buildLinks({ ...baseQuery(t, "activity"), text: item.name }));
   }
   if (category === "dayTrip") {
