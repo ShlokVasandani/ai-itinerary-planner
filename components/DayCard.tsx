@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { GeneratedItinerary, ItineraryDay, SwapCandidate, TimelineStop } from "@/lib/itinerary-engine";
 import { priorityLabel, swapStop } from "@/lib/itinerary-engine";
 import { STOP_KIND_LABELS, WEEKDAYS, formatDate, money, moneyRange, stopDotCategory } from "@/lib/format";
@@ -65,11 +65,13 @@ function SwapMenu({ itinerary, day, index, onSwap }: { itinerary: GeneratedItine
   );
 }
 
-function StopRow({ stop, index, day, itinerary, trip, onSwap }: { stop: TimelineStop; index: number; day: ItineraryDay; itinerary: GeneratedItinerary; trip: TripLinkInput; onSwap: Props["onSwap"] }) {
+function StopRow({ stop, index, day, itinerary, trip, onSwap, late }: { stop: TimelineStop; index: number; day: ItineraryDay; itinerary: GeneratedItinerary; trip: TripLinkInput; onSwap: Props["onSwap"]; late: boolean }) {
+  // A row that mounts after its card did (Shuffle, Swap) animates in; rows that survive the change stay still.
+  const [fresh] = useState(late);
   const swappable = !!stop.refId && !!stop.category && stop.category !== "dayTrip" && stop.kind !== "transit" && stop.kind !== "free-time";
   const cost = stop.cost;
   return (
-    <li className={`stop stop-${stopDotCategory(stop.kind)}`}>
+    <li className={`stop stop-${stopDotCategory(stop.kind)}${fresh ? " stop-fresh" : ""}`} style={{ ["--n" as string]: Math.min(index, 7) }}>
       <div className="stop-time">
         <span>{stop.time}</span>
         {stop.endTime && <span className="stop-time-end">{stop.endTime}</span>}
@@ -132,6 +134,10 @@ function StopRow({ stop, index, day, itinerary, trip, onSwap }: { stop: Timeline
 export default function DayCard({ day, itinerary, trip, onRegenerate, onSwap }: Props) {
   const currency = itinerary.currency;
   const hasCost = day.cost.high > 0;
+  const cardMounted = useRef(false);
+  useEffect(() => {
+    cardMounted.current = true;
+  }, []);
   return (
     <article className="day-card" id={`day-${day.dayNumber}`} aria-labelledby={`day-${day.dayNumber}-title`}>
       <header className="day-head">
@@ -175,7 +181,7 @@ export default function DayCard({ day, itinerary, trip, onRegenerate, onSwap }: 
       <div className="day-body">
         <ol className="stops">
           {day.stops.map((s, i) => (
-            <StopRow key={`${s.time}-${s.name}-${i}`} stop={s} index={i} day={day} itinerary={itinerary} trip={trip} onSwap={onSwap} />
+            <StopRow key={`${s.time}-${s.name}-${i}`} stop={s} index={i} day={day} itinerary={itinerary} trip={trip} onSwap={onSwap} late={cardMounted.current} />
           ))}
         </ol>
         <aside className="day-aside" aria-label={`Map and tools for day ${day.dayNumber}`}>

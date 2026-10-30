@@ -22,7 +22,7 @@ const REVEAL = [
 
 /**
  * Page-wide scroll behaviour. Elements matching REVEAL fade and rise once as they
- * scroll into view (staggered among siblings that arrive together), and `.stats`
+ * scroll into view (staggered 55ms apart among siblings that arrive together, up to five), and `.stats`
  * numbers count up. Only opacity/transform are animated, nothing runs for
  * prefers-reduced-motion, and content stays visible if this never mounts
  * (the hidden state is gated on `html.fx`).
@@ -32,6 +32,19 @@ export default function ScrollFX() {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const root = document.documentElement;
 
+    // A revealed element goes back to being an ordinary element once its transition is over. Left in place,
+    // [data-reveal] keeps its 550ms transition and the stagger delay, which would slow every later hover and press.
+    const timers = new Set<number>();
+    const settle = (el: HTMLElement, delay: number) => {
+      const t = window.setTimeout(() => {
+        timers.delete(t);
+        el.removeAttribute("data-reveal");
+        el.removeAttribute("data-in");
+        el.style.removeProperty("transition-delay");
+      }, delay + 1300);
+      timers.add(t);
+    };
+
     const io = new IntersectionObserver(
       (entries) => {
         let n = 0;
@@ -39,8 +52,10 @@ export default function ScrollFX() {
           // Also reveal anything already scrolled past (anchor links, fast jumps), so it is never stuck hidden.
           if (!e.isIntersecting && e.boundingClientRect.top >= 0) continue;
           const el = e.target as HTMLElement;
-          el.style.transitionDelay = `${Math.min(n++, 6) * 70}ms`;
+          const delay = Math.min(n++, 5) * 55;
+          el.style.transitionDelay = `${delay}ms`;
           el.setAttribute("data-in", "");
+          settle(el, delay);
           io.unobserve(el);
           if (el.matches(".stats li")) countUp(el.querySelector("strong"));
         }
@@ -78,6 +93,7 @@ export default function ScrollFX() {
       root.classList.remove("fx");
       mo.disconnect();
       io.disconnect();
+      timers.forEach((t) => window.clearTimeout(t));
       // Strict Mode mounts twice: clear our marks so the second pass re-observes everything.
       document.querySelectorAll("[data-reveal]").forEach((el) => {
         el.removeAttribute("data-reveal");

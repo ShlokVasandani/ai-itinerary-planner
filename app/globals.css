@@ -3072,3 +3072,25 @@ main {
 .day-map-canvas.leaflet-container {
   background: var(--color-soft);
 }
+
+/* -------------------------------------------------------------------------
+   Itinerary entrance: the card rises (ScrollFX), then its stops follow 40ms apart.
+   Rows that mount later (Shuffle, Swap) rise on their own; unchanged rows stay put.
+   ------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: no-preference) {
+  html.fx .day-card[data-reveal] .stop {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s var(--ease-out), transform 0.4s var(--ease-out);
+  }
+  html.fx .day-card[data-reveal][data-in] .stop {
+    opacity: 1;
+    transform: none;
+    transition-delay: calc(140ms + var(--n, 0) * 40ms);
+  }
+}
+.stop-fresh {
+  --rise: 8px;
+  animation: rise-in 0.24s var(--ease-out) both;
+  animation-delay: calc(var(--n, 0) * 40ms);
+}
