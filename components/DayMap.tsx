@@ -95,7 +95,10 @@ export default function DayMap({ stops, dayNumber, city }: Props) {
         ref={mapEl}
         role="img"
         aria-label={`Map of day ${dayNumber} in ${city} with ${located.length} located stops`}
-        className={`day-map-canvas${ready ? " is-ready" : ""}`}
+        // Leaflet adds leaflet-container and friends to this element. A className that changes would make React
+        // rewrite the attribute and wipe them, so it stays static and readiness is a data attribute.
+        className="day-map-canvas"
+        data-ready={ready || undefined}
       />
       {!visible && <p className="day-map-placeholder">Map loads as you scroll…</p>}
       {failed && <p className="day-map-placeholder">The map could not load. The stops still have Google Maps links.</p>}

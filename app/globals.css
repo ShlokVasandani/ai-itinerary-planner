@@ -3035,7 +3035,7 @@ main {
   opacity: 0;
   transition: opacity 0.3s var(--ease-out);
 }
-.day-map-canvas.is-ready {
+.day-map-canvas[data-ready] {
   opacity: 1;
 }
 .day-map-canvas.leaflet-container {
