@@ -19,6 +19,7 @@ export default function DayMap({ stops, dayNumber, city }: Props) {
   const mapEl = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
   const [failed, setFailed] = useState(false);
+  const [ready, setReady] = useState(false);
 
   const located = stops.filter((s) => s.coords && s.kind !== "free-time");
 
@@ -67,6 +68,8 @@ export default function DayMap({ stops, dayNumber, city }: Props) {
         if (pts.length > 1) L.polyline(pts, { color: "#C2371A", weight: 3, opacity: 0.8, dashArray: "2 8" }).addTo(map);
         if (pts.length === 1) map.setView(pts[0], 15);
         else map.fitBounds(L.latLngBounds(pts), { padding: [28, 28], maxZoom: 16 });
+        // Reveal the map once it has a view, so the shimmer hands off to the tiles rather than to a grey box.
+        requestAnimationFrame(() => !cancelled && setReady(true));
       } catch {
         setFailed(true);
       }
@@ -87,8 +90,13 @@ export default function DayMap({ stops, dayNumber, city }: Props) {
     );
   }
   return (
-    <div ref={wrapRef} className="day-map">
-      <div ref={mapEl} role="img" aria-label={`Map of day ${dayNumber} in ${city} with ${located.length} located stops`} className="day-map-canvas" />
+    <div ref={wrapRef} className={`day-map${ready || failed ? "" : " is-loading"}`}>
+      <div
+        ref={mapEl}
+        role="img"
+        aria-label={`Map of day ${dayNumber} in ${city} with ${located.length} located stops`}
+        className={`day-map-canvas${ready ? " is-ready" : ""}`}
+      />
       {!visible && <p className="day-map-placeholder">Map loads as you scroll…</p>}
       {failed && <p className="day-map-placeholder">The map could not load. The stops still have Google Maps links.</p>}
     </div>

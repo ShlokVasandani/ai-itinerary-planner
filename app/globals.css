@@ -2324,16 +2324,32 @@ main {
   margin-top: 14px;
 }
 .price-skeleton {
+  position: relative;
+  overflow: hidden;
   height: 84px;
   border-radius: var(--radius-m);
-  background: linear-gradient(90deg, var(--color-soft) 0%, #f8f3ea 50%, var(--color-soft) 100%);
-  background-size: 200% 100%;
-  animation: shimmer 1.4s linear infinite;
+  background: var(--color-soft);
 }
+.price-skeleton::after,
+.skel::after,
+.day-map.is-loading::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.65), transparent);
+  transform: translateX(-100%);
+  animation: shimmer 1.3s var(--ease-in-out) infinite;
+}
+/* The highlight sweeps across on transform, so the skeleton never repaints. */
 @keyframes shimmer {
   to {
-    background-position: -200% 0;
+    transform: translateX(100%);
   }
+}
+.price-card {
+  --rise: 8px;
+  animation: rise-in 0.28s var(--ease-out) both;
+  animation-delay: calc(var(--i, 0) * 40ms);
 }
 @media (max-width: 820px) {
   .tool-card {
@@ -2945,4 +2961,114 @@ main {
 .btn-label {
   --rise: 4px;
   animation: rise-in 0.16s var(--ease-out) both;
+}
+
+/* -------------------------------------------------------------------------
+   Skeletons: the same footprint as the content they stand in for
+   ------------------------------------------------------------------------- */
+.skel {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: var(--color-soft);
+  border-radius: var(--radius-s);
+}
+.skel-line {
+  height: 14px;
+}
+.skel-h24 { height: 24px; }
+.skel-h28 { height: 28px; }
+.skel-h56 { height: 56px; }
+.skel-w20 { width: 20%; }
+.skel-w30 { width: 30%; }
+.skel-w40 { width: 40%; }
+.skel-w50 { width: 50%; }
+.skel-w60 { width: 60%; }
+.skel-w70 { width: 70%; }
+.skel-w90 { width: 90%; }
+.skel-block {
+  height: 64px;
+  border-radius: var(--radius-m);
+}
+.skel-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+.skel-field {
+  height: 60px;
+  border-radius: var(--radius-m);
+}
+.skel-field.skel-h40 { height: 40px; }
+.skel-field.skel-h46 { height: 46px; }
+.skel-card {
+  display: grid;
+  gap: 14px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-l);
+  padding: 28px 32px;
+  margin-bottom: 20px;
+  animation: rise-in 0.3s var(--ease-out) both;
+  animation-delay: calc(var(--i, 0) * 60ms);
+}
+.skel-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+}
+.skel-stop {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  padding-top: 8px;
+}
+.skel-stop-lines {
+  display: grid;
+  gap: 10px;
+}
+.skel-form {
+  display: grid;
+  gap: 16px;
+}
+.planner-hero-loading .planner-hero-text {
+  display: grid;
+  gap: 14px;
+  width: min(520px, 100%);
+}
+.plan-skeleton {
+  min-height: 60svh;
+}
+/* While another city's data loads, the old plan stays put but steps back. */
+.planner-main {
+  transition: opacity 0.2s var(--ease-out);
+}
+.planner-main.is-loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.planner-main {
+  scroll-margin-top: calc(var(--header-h) + 16px);
+}
+@media (max-width: 820px) {
+  .skel-card {
+    padding: 20px;
+  }
+  .skel-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Map: shimmer while Leaflet loads, then the canvas fades in over it. */
+.day-map-canvas {
+  opacity: 0;
+  transition: opacity 0.3s var(--ease-out);
+}
+.day-map-canvas.is-ready {
+  opacity: 1;
+}
+.day-map-canvas.leaflet-container {
+  background: var(--color-soft);
 }

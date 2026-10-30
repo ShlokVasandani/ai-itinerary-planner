@@ -37,7 +37,7 @@ function Block({ title, data, error }: { title: string; data?: PriceResponse; er
       {data.mode === "fallback" && data.reason && <p className="muted">{data.reason} Use the links to see real prices.</p>}
       <ul className="price-list">
         {data.offers.slice(0, 3).map((o, i) => (
-          <li key={`${o.provider}-${i}`} className={`price-card${o === cheapest ? " is-cheapest" : ""}`}>
+          <li key={`${o.provider}-${i}`} className={`price-card${o === cheapest ? " is-cheapest" : ""}`} style={{ ["--i" as string]: i }}>
             {o === cheapest && <span className="price-badge">{o.isSample ? "Cheapest (sample)" : "Cheapest"}</span>}
             <span className="price-provider">{NAMES[o.provider] ?? o.provider}</span>
             {o.price ? (

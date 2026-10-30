@@ -43,6 +43,8 @@ interface Props {
   cities: { slug: string; city: string; country: string }[];
   destination: Destination;
   onSubmit: () => void;
+  /** Called when a city is hovered, focused or pressed, so its data can start loading early. */
+  onWarmCity?: (slug: string) => void;
   busy: boolean;
 }
 
@@ -130,7 +132,7 @@ function Stepper({ label, value, min, max, onChange }: { label: string; value: n
   );
 }
 
-export default function PlannerForm({ state, onChange, cities, destination, onSubmit, busy }: Props) {
+export default function PlannerForm({ state, onChange, cities, destination, onSubmit, onWarmCity, busy }: Props) {
   const id = useId();
   const dateError = state.startDate && state.endDate && state.endDate < state.startDate ? "End date must be on or after the start date." : "";
   const datedLength = state.startDate && state.endDate && !dateError;
@@ -160,6 +162,7 @@ export default function PlannerForm({ state, onChange, cities, destination, onSu
           cities={cities}
           value={state.slug}
           onChange={(slug) => onChange({ slug, mustInclude: [], avoid: [] })}
+          onWarm={onWarmCity}
         />
         <DateRangeField start={state.startDate} end={state.endDate} onChange={(a, b) => onChange({ startDate: a, endDate: b })} />
       </div>

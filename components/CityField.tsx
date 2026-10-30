@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import SearchField from "@/components/SearchField";
 import Photo from "@/components/Photo";
 
@@ -11,8 +11,22 @@ export interface CityOption {
 }
 
 /** Searchable destination list with a photo per city. */
-export default function CityField({ cities, value, onChange, className }: { cities: CityOption[]; value: string; onChange: (slug: string) => void; className?: string }) {
+export default function CityField({
+  cities,
+  value,
+  onChange,
+  onWarm,
+  className,
+}: {
+  cities: CityOption[];
+  value: string;
+  onChange: (slug: string) => void;
+  /** Optional hint that a city is about to be chosen (hover, focus or press). */
+  onWarm?: (slug: string) => void;
+  className?: string;
+}) {
   const [q, setQ] = useState("");
+  const hover = useRef<number>(0);
   const current = cities.find((c) => c.slug === value);
   const list = useMemo(() => {
     const n = q.trim().toLowerCase();
@@ -47,6 +61,14 @@ export default function CityField({ cities, value, onChange, className }: { citi
               <li key={c.slug} role="option" aria-selected={c.slug === value}>
                 <button
                   type="button"
+                  // A sweep across the list shouldn't fetch every city: hover waits 90ms, press and focus don't.
+                  onPointerEnter={() => {
+                    window.clearTimeout(hover.current);
+                    hover.current = window.setTimeout(() => onWarm?.(c.slug), 90);
+                  }}
+                  onPointerLeave={() => window.clearTimeout(hover.current)}
+                  onPointerDown={() => onWarm?.(c.slug)}
+                  onFocus={() => onWarm?.(c.slug)}
                   onClick={() => {
                     onChange(c.slug);
                     setQ("");

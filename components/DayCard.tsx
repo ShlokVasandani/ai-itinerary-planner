@@ -14,7 +14,7 @@ import Popover from "@/components/Popover";
 
 const DayMap = dynamic(() => import("@/components/DayMap"), {
   ssr: false,
-  loading: () => <div className="day-map"><p className="day-map-placeholder">Map loads as you scroll…</p></div>,
+  loading: () => <div className="day-map is-loading"><p className="day-map-placeholder">Map loads as you scroll…</p></div>,
 });
 
 interface Props {

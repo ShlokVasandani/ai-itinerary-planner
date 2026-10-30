@@ -15,6 +15,7 @@ import DayCard from "@/components/DayCard";
 import BookTripPanel from "@/components/BookTripPanel";
 import Photo from "@/components/Photo";
 import PricesPanel from "@/components/PricesPanel";
+import PlanSkeleton from "@/components/PlanSkeleton";
 import type { TripLinkInput } from "@/lib/providers";
 import type { Destination, DietaryNeed, Interest } from "@/lib/types";
 
@@ -59,6 +60,12 @@ function toInput(f: PlannerFormState, destination: Destination, seed: string): P
   };
 }
 
+/**
+ * Generation itself takes a few milliseconds. The skeleton is held for this long anyway: a loading
+ * state that flashes for 100ms reads as a glitch, one that settles in 300ms reads as the plan being built.
+ */
+const MIN_BUSY_MS = 300;
+
 const FIT_TEXT = {
   under: "Under your budget tier",
   "on-target": "On target for your budget tier",
@@ -92,6 +99,8 @@ export default function PlannerClient({ initial, initialDestination }: { initial
   const [origin, setOrigin] = useState(/^[A-Za-z]{3}$/.test(initial.origin ?? "") ? initial.origin!.toUpperCase() : "");
   const regen = useRef(0);
   const resultsRef = useRef<HTMLDivElement>(null);
+  const timers = useRef<number[]>([]);
+  useEffect(() => () => timers.current.forEach((t) => window.clearTimeout(t)), []);
 
   const [destination, setDestination] = useState<Destination>(initialDestination);
   const [loadingCity, setLoadingCity] = useState(false);
@@ -117,6 +126,11 @@ export default function PlannerClient({ initial, initialDestination }: { initial
     };
   }, [form.slug, destination.slug]);
 
+  // Start fetching an open-data city's chunk as soon as it is hovered or pressed, so the click lands on a warm cache.
+  const warmCity = useCallback((slug: string) => {
+    void loadDestination(slug).catch(() => undefined);
+  }, []);
+
   const update = useCallback((patch: Partial<PlannerFormState>) => {
     setForm((f) => ({ ...f, ...patch }));
     setStale(true);
@@ -125,14 +139,18 @@ export default function PlannerClient({ initial, initialDestination }: { initial
   const build = useCallback(
     (f: PlannerFormState) => {
       setBusy(true);
-      // Generation is instant; the short pause only lets the busy state register for assistive tech.
-      window.setTimeout(() => {
-        setItinerary(generateItinerary(toInput(f, destination, "sekai")));
-        regen.current = 0;
-        setStale(false);
-        setBusy(false);
-        window.setTimeout(() => resultsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 50);
-      }, 120);
+      timers.current.push(
+        window.setTimeout(() => {
+          setItinerary(generateItinerary(toInput(f, destination, "sekai")));
+          regen.current = 0;
+          setStale(false);
+          setBusy(false);
+          const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+          timers.current.push(
+            window.setTimeout(() => resultsRef.current?.scrollIntoView({ behavior: calm ? "auto" : "smooth", block: "start" }), 50)
+          );
+        }, MIN_BUSY_MS)
+      );
     },
     [destination]
   );
@@ -202,17 +220,18 @@ export default function PlannerClient({ initial, initialDestination }: { initial
             cities={cities}
             destination={destination}
             onSubmit={() => build(form)}
+            onWarmCity={warmCity}
             busy={busy || loadingCity}
           />
         </aside>
 
-        <div className="planner-main" ref={resultsRef}>
+        <div className={`planner-main${loadingCity && itinerary ? " is-loading" : ""}`} ref={resultsRef}>
           {cityError && (
             <p className="stale-note" role="alert">
               {cityError}
             </p>
           )}
-          {!itinerary && !busy && (
+          {!itinerary && !busy && !loadingCity && (
             <div className="planner-empty">
               <h2>
                 {form.startDate && form.endDate ? "Your dates are set" : `${form.duration} days in ${destination.city}`}, ready when you are
@@ -224,11 +243,8 @@ export default function PlannerClient({ initial, initialDestination }: { initial
             </div>
           )}
 
-          {busy && (
-            <div className="planner-empty" role="status" aria-live="polite">
-              <p>Building your plan for {destination.city}…</p>
-            </div>
-          )}
+          {busy && <PlanSkeleton label={`Building your plan for ${destination.city}`} />}
+          {!busy && loadingCity && !itinerary && <PlanSkeleton label="Loading city data" />}
 
           {itinerary && !busy && (
             <>
