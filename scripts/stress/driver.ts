@@ -65,6 +65,12 @@ export async function newContext(browser: import("playwright-core").Browser, bas
 }
 export const probeThirdParty: string[] = [];
 
+/**
+ * The regression check runs this same harness against an older build (383bdb2) that predates a few hooks the
+ * newer markup added: data-ready on the map host and data-state on the floating panels.
+ */
+export const flags = { legacy: false };
+
 const fieldset = (page: Page, legend: string) => page.locator("fieldset", { has: page.locator("legend", { hasText: new RegExp(`^${legend}$`) }) });
 
 export class Planner {
@@ -200,7 +206,7 @@ export class Planner {
       }
       const canvas = day.locator(".day-map-canvas");
       try {
-        await canvas.and(this.page.locator("[data-ready]")).waitFor({ timeout: 15000 });
+        if (!flags.legacy) await canvas.and(this.page.locator("[data-ready]")).waitFor({ timeout: 15000 });
         await canvas.locator(".leaflet-tile-loaded").first().waitFor({ state: "attached", timeout: 15000 });
         await this.page.waitForFunction(
           ([id, n]) => document.querySelectorAll(`#${id} .leaflet-marker-icon`).length === n,

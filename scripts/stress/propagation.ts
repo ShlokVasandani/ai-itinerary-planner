@@ -9,6 +9,7 @@ import { regenerateDay, swapStop, type GeneratedItinerary } from "../../lib/itin
 import { addDays } from "../../lib/engine/time";
 import { money } from "../../lib/format";
 import { engineFor, verifyScreen, type Env } from "./flow";
+import { flags } from "./driver";
 import { rng, with_, type Failure, type PlanResult, type StressInput } from "./model";
 import { topActivities } from "./dom";
 import { pools } from "./data";
@@ -20,7 +21,7 @@ const otherDays = (it: GeneratedItinerary, skip: number) => JSON.stringify(it.da
 async function setDates(page: Page, start: string, end: string) {
   const trigger = page.locator(".sf-stack .sf-trigger", { hasText: "Dates" });
   await trigger.click();
-  const panel = page.locator('.sf-calendar[data-state="open"]');
+  const panel = page.locator(flags.legacy ? ".sf-calendar" : '.sf-calendar[data-state="open"]');
   await panel.waitFor();
   const clear = panel.getByRole("button", { name: "Clear dates" });
   if (await clear.count()) await clear.click();
@@ -35,12 +36,12 @@ async function setDates(page: Page, start: string, end: string) {
       if (i === 17) throw new Error(`calendar never showed ${iso}`);
     }
   }
-  await page.locator('.sf-panel[data-state="open"]').waitFor({ state: "detached", timeout: 3000 }).catch(() => undefined);
+  if (!flags.legacy) await page.locator('.sf-panel[data-state="open"]').waitFor({ state: "detached", timeout: 3000 }).catch(() => undefined);
 }
 
 async function setCity(page: Page, city: string) {
   await page.locator(".sf-stack .sf-trigger", { hasText: "Where to" }).click();
-  const panel = page.locator('.sf-cities[data-state="open"]');
+  const panel = page.locator(flags.legacy ? ".sf-cities" : '.sf-cities[data-state="open"]');
   await panel.getByLabel("Search cities").fill(city);
   await panel.getByRole("option").first().locator("button").click();
 }
@@ -163,7 +164,8 @@ export async function runPropagation(env: Env, slug: string): Promise<PlanResult
       ...same("prop.travellers", sig(a), sig(b), "stops changed when only the party size changed"),
       ...same("prop.travellers", [a.cost.low, a.cost.likely, a.cost.high], [b.cost.low, b.cost.likely, b.cost.high], "per-person totals changed with party size"),
       ...(a.groupLikely === a.cost.likely * 3 ? [] : [{ check: "prop.travellers", detail: `party total ${a.groupLikely}, expected ${a.cost.likely} x 3` }]),
-      ...(b.groupLikely !== a.groupLikely ? [] : [{ check: "prop.travellers", detail: "party total did not change" }]),
+      // A plan with no priced stops has a party total of 0 whatever the party size.
+      ...(b.groupLikely !== a.groupLikely || a.cost.likely === 0 ? [] : [{ check: "prop.travellers", detail: "party total did not change" }]),
     ],
     async () => {
       const text = await planner.page.locator(".trip-total", { hasText: "Whole party (3)" }).innerText().catch(() => "");
