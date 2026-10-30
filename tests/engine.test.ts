@@ -201,6 +201,28 @@ describe("costs", () => {
   });
 });
 
+describe("price ranges", () => {
+  it("the likely price always lies between the minimum and the maximum", () => {
+    const bad: string[] = [];
+    for (const d of destinations) {
+      const it = generateItinerary({ ...base(d.slug), duration: 7 });
+      for (const day of it.days)
+        for (const s of day.stops)
+          if (s.cost?.known && !(s.cost.min <= s.cost.likely && s.cost.likely <= s.cost.max))
+            bad.push(`${d.slug} "${s.name}": ${s.cost.min} / ${s.cost.likely} / ${s.cost.max}`);
+    }
+    expect(bad).toEqual([]);
+  });
+
+  it("rounding a fractional price does not push it out of its own range", () => {
+    // London lists the Tower of London at 33.6 GBP (min = max): rounding the midpoint used to give 34.
+    const london = destinations.find((d) => d.slug === "london")!;
+    const it = generateItinerary({ ...base("london"), destination: london, duration: 3 });
+    const tower = it.days.flatMap((d) => d.stops).find((s) => s.name === "Tower of London");
+    expect(tower?.cost).toMatchObject({ min: 33.6, max: 33.6, likely: 33.6 });
+  });
+});
+
 describe("determinism", () => {
   it("same input gives identical output", () => {
     for (const slug of ["tokyo", "lisbon", "dubai"]) {

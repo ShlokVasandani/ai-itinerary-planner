@@ -551,7 +551,9 @@ function entryCost(e: Entry, currency: string): StopCost {
   const min = rec.costMin ?? rec.costMax ?? 0;
   // An open-ended "+" price has no max: assume up to 50% more for the high case.
   const max = rec.costMax ?? Math.round(min * 1.5);
-  return { min, max, likely: Math.round((min + max) / 2), currency: cur, known: true };
+  // Whole-number midpoint, kept inside [min, max]: a fractional price such as 33.6 used to round up to 34 > max.
+  const likely = Math.min(max, Math.max(min, Math.round((min + max) / 2)));
+  return { min, max, likely, currency: cur, known: true };
 }
 
 export function sumCosts(stops: { cost?: StopCost }[], currency: string): CostRange {
