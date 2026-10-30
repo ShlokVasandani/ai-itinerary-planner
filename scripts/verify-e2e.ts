@@ -3,7 +3,8 @@
  * city, opens every Book/Details menu, checks the attributes of every outbound
  * link and clicks each distinct link once. External hosts are stubbed, so no
  * third-party site is actually hit; we verify the click opens a new tab at the
- * expected URL.
+ * expected URL. Every day map is checked too: a .leaflet-container host, a loaded
+ * tile, one marker per located stop, and Leaflet's own (small) attribution text.
  *
  * Usage: npm run build && npm start   (other terminal)
  *        npx tsx scripts/verify-e2e.ts [baseUrl] [slug ...]
@@ -13,6 +14,8 @@ import { cityIndex } from "../lib/data/catalog";
 
 const BASE = process.argv[2] ?? "http://localhost:3000";
 const only = process.argv.slice(3);
+/** A real 1x1 PNG, served for map tiles so "a tile loaded" can be checked without touching OpenStreetMap. */
+const TILE_PNG = Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==", "base64");
 const CHROME = process.env.CHROME_PATH ?? "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 const base = new URL(BASE);
 
@@ -21,13 +24,14 @@ async function main() {
   const problems: string[] = [];
   let totalLinks = 0;
   let totalClicks = 0;
+  let mapsChecked = 0;
   for (const d of cityIndex.filter((x) => only.length === 0 || only.includes(x.slug))) {
     const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
     // Never hit third-party hosts: answer them with a stub page.
     await ctx.route("**/*", (route) => {
       const u = new URL(route.request().url());
       if (u.host === base.host || u.protocol === "data:" || u.protocol === "blob:") return route.continue();
-      if (u.hostname.endsWith("tile.openstreetmap.org")) return route.fulfill({ status: 204 });
+      if (u.hostname.endsWith("tile.openstreetmap.org")) return route.fulfill({ status: 200, contentType: "image/png", body: TILE_PNG });
       return route.fulfill({ status: 200, contentType: "text/html", body: "<title>stub</title>" });
     });
     const page = await ctx.newPage();
@@ -46,6 +50,49 @@ async function main() {
     if (days !== 5) problems.push(`${d.slug}: expected 5 days, got ${days}`);
     const stops = await page.locator(".stop").count();
     if (stops < 15) problems.push(`${d.slug}: only ${stops} stops`);
+
+    // Every day map must really render. Regression guard: a re-rendered className once wiped Leaflet's own
+    // classes, leaving markers on a blank grey box (no .leaflet-container, so no pane CSS, clipping or tile layout).
+    const mapsBefore = mapsChecked;
+    for (let i = 0; i < days; i++) {
+      const day = page.locator(".day-card").nth(i);
+      const where = `${d.slug} day ${i + 1}`;
+      // The map component is a lazy chunk: wait for it (or for the "no coordinates" note) before deciding.
+      const slot = day.locator(".day-map-canvas, .day-map-empty").first();
+      await slot.scrollIntoViewIfNeeded();
+      try {
+        await slot.waitFor({ timeout: 10000 });
+      } catch {
+        problems.push(`${where}: neither a map nor a "no map" note appeared`);
+        continue;
+      }
+      const canvas = day.locator(".day-map-canvas");
+      if ((await canvas.count()) === 0) continue; // a day with no located stops shows a note instead of a map
+      try {
+        await day.locator('.day-map-canvas[data-ready]').waitFor({ timeout: 10000 });
+        await day.locator(".leaflet-tile-loaded").first().waitFor({ state: "attached", timeout: 10000 });
+      } catch {
+        problems.push(`${where}: map never became ready with a loaded tile`);
+      }
+      const m = await canvas.evaluate((el) => {
+        const label = el.getAttribute("aria-label") ?? "";
+        const attr = el.querySelector(".leaflet-control-attribution");
+        return {
+          located: Number(/with (\d+) located stops/.exec(label)?.[1] ?? NaN),
+          container: el.classList.contains("leaflet-container"),
+          tiles: [...el.querySelectorAll<HTMLImageElement>(".leaflet-tile-loaded")].filter((t) => t.naturalWidth > 0).length,
+          markers: el.querySelectorAll(".leaflet-marker-icon").length,
+          attrFont: attr ? parseFloat(getComputedStyle(attr).fontSize) : NaN,
+        };
+      });
+      if (!m.container) problems.push(`${where}: map host lost its .leaflet-container class`);
+      if (m.tiles < 1) problems.push(`${where}: no loaded tile with naturalWidth > 0`);
+      if (m.markers !== m.located) problems.push(`${where}: ${m.markers} markers for ${m.located} located stops`);
+      if (!(m.attrFont <= 13)) problems.push(`${where}: attribution font-size ${m.attrFont}px (expected 13px or less)`);
+      mapsChecked++;
+    }
+
+    if (mapsChecked === mapsBefore) problems.push(`${d.slug}: no day map was checked`);
 
     // Open every Book/Details menu so its links are in the DOM.
     const triggers = page.locator(".stop-actions .popover > button[aria-haspopup]");
@@ -96,7 +143,7 @@ async function main() {
     await ctx.close();
   }
   await browser.close();
-  console.log(`\n${totalLinks} outbound links checked, ${totalClicks} distinct links clicked.`);
+  console.log(`\n${totalLinks} outbound links checked, ${totalClicks} distinct links clicked, ${mapsChecked} day maps checked.`);
   if (problems.length) {
     console.error(`${problems.length} problem(s):\n` + problems.slice(0, 60).map((p) => " - " + p).join("\n"));
     process.exit(1);
