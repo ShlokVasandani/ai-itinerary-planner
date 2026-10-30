@@ -24,6 +24,7 @@ const base = new URL(BASE);
  *  - Changing the city in the picker must leave "Build my itinerary" enabled and not busy, and the plan must be for
  *    the new city. (A race in the city-loading effect once left it disabled for good.)
  *  - A day trip must get a Book/Details menu even when it has no official or map URL of its own.
+ *  - The city-guide tabs follow the ARIA keyboard pattern.
  */
 async function checkInteractions(browser: import("playwright-core").Browser): Promise<string[]> {
   const problems: string[] = [];
@@ -78,6 +79,24 @@ async function checkInteractions(browser: import("playwright-core").Browser): Pr
     const row = trips.nth(i);
     if ((await row.locator(".popover > button").count()) === 0) problems.push(`day trips: "${((await row.locator("h4").textContent()) ?? "").trim()}" has no Book/Details menu`);
   }
+  // City-guide tabs: the ARIA keyboard pattern (arrows, Home/End, roving tabindex).
+  await page.goto(`${BASE}/destinations/lisbon`, { waitUntil: "domcontentloaded" });
+  await page.waitForFunction(() => {
+    const b = document.querySelector('[role="tab"]');
+    return !!b && Object.keys(b).some((k) => k.startsWith("__reactFiber"));
+  });
+  const tabs = page.locator('[role="tab"]');
+  const count = await tabs.count();
+  const selected = async () => page.evaluate(() => [...document.querySelectorAll('[role="tab"]')].findIndex((t) => t.getAttribute("aria-selected") === "true"));
+  const focused = async () => page.evaluate(() => [...document.querySelectorAll('[role="tab"]')].findIndex((t) => t === document.activeElement));
+  await tabs.first().focus();
+  for (const [key, want] of [["ArrowRight", 1], ["ArrowRight", 2], ["ArrowLeft", 1], ["End", count - 1], ["ArrowRight", 0], ["ArrowLeft", count - 1], ["Home", 0]] as const) {
+    await page.keyboard.press(key);
+    const [sel, foc] = [await selected(), await focused()];
+    if (sel !== want || foc !== want) problems.push(`tabs: after ${key} expected tab ${want} selected and focused, got selected ${sel}, focused ${foc}`);
+  }
+  const inOrder = await page.evaluate(() => [...document.querySelectorAll('[role="tab"]')].filter((t) => (t as HTMLElement).tabIndex === 0).length);
+  if (inOrder !== 1) problems.push(`tabs: ${inOrder} tabs are in the Tab order, expected 1`);
   await ctx.close();
   return problems;
 }

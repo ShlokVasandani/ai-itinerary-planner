@@ -1121,6 +1121,10 @@ main {
 .tab-btn.active {
   color: var(--color-text);
 }
+/* The tab bar scrolls sideways, which clips an outside focus ring; draw it inside the tab instead. */
+.tab-btn:focus-visible {
+  outline-offset: -3px;
+}
 .tab-btn.active::after {
   transform: scaleX(1);
 }
