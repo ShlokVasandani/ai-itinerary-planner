@@ -21,7 +21,9 @@
     "validate": "tsx scripts/validate-data.ts",
     "validate:offline": "tsx scripts/validate-data.ts --skip-urls",
     "enrich": "tsx scripts/enrich-geo.ts",
-    "parse-costs": "tsx scripts/parse-costs.ts"
+    "parse-costs": "tsx scripts/parse-costs.ts",
+    "stress": "tsx scripts/stress/run.ts",
+    "stress:dry": "tsx scripts/stress/dry.ts"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

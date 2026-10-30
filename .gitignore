@@ -11,3 +11,6 @@ scripts/.cache
 !.env.example
 !.env.example
 .next-verify
+
+# alternate build outputs (NEXT_DIST_DIR) used by verification runs
+/.next-*/
