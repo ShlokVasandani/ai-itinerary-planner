@@ -16,6 +16,8 @@ import BookTripPanel from "@/components/BookTripPanel";
 import Photo from "@/components/Photo";
 import PricesPanel from "@/components/PricesPanel";
 import PlanSkeleton from "@/components/PlanSkeleton";
+import TightTripNotice from "@/components/TightTripNotice";
+import { tripProblem } from "@/lib/trip-problem";
 import type { TripLinkInput } from "@/lib/providers";
 import type { Destination, DietaryNeed, Interest } from "@/lib/types";
 
@@ -193,6 +195,7 @@ export default function PlannerClient({ initial, initialDestination }: { initial
     if (!res.error) setItinerary(res.itinerary);
   };
 
+  const problem = itinerary ? tripProblem(itinerary) : undefined;
   const fit = itinerary?.budgetFit;
   const perDayLikely = itinerary ? itinerary.cost.likely / itinerary.duration : 0;
 
@@ -245,7 +248,18 @@ export default function PlannerClient({ initial, initialDestination }: { initial
           {busy && <PlanSkeleton label={`Building your plan for ${destination.city}`} />}
           {!busy && loadingCity && !itinerary && <PlanSkeleton label="Loading city data" />}
 
-          {itinerary && !busy && (
+          {itinerary && !busy && problem && (
+            <>
+              {stale && (
+                <p className="stale-note" role="status">
+                  Settings changed. Build again to update this plan.
+                </p>
+              )}
+              <TightTripNotice problem={problem} />
+            </>
+          )}
+
+          {itinerary && !busy && !problem && (
             <>
               {stale && (
                 <p className="stale-note" role="status">

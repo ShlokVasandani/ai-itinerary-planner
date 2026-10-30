@@ -1623,6 +1623,10 @@ main {
   max-width: 52ch;
   margin: 0 auto;
 }
+.tight-change {
+  margin-top: 14px;
+  color: var(--color-text);
+}
 .stale-note {
   --rise: 6px;
   animation: rise-in 0.2s var(--ease-out) both;
