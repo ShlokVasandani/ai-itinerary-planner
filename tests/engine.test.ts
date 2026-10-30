@@ -235,6 +235,41 @@ describe("arrival and departure", () => {
   });
 });
 
+const clock = (t: string) => Number(t.slice(0, 2)) * 60 + Number(t.slice(3));
+
+describe("flight times never put a stop outside the flight", () => {
+  it("a late landing is not given an arrival stop before the plane lands", () => {
+    for (const slug of ["tokyo", "lisbon", "new-york-city"]) {
+      const it = generateItinerary(base(slug, { duration: 2, arrivalFlightTime: "23:15" }));
+      const day1 = it.days[0].stops;
+      expect(day1, slug).toHaveLength(1);
+      expect(clock(day1[0].time), `${slug}: rest stop at ${day1[0].time}`).toBeGreaterThanOrEqual(clock("23:15"));
+    }
+  });
+
+  it("a landing in the small hours gets a rest day, not sightseeing at 3am", () => {
+    const it = generateItinerary(base("tokyo", { duration: 2, arrivalFlightTime: "00:40" }));
+    expect(it.days[0].stops).toHaveLength(1);
+    expect(it.days[0].stops[0].kind).toBe("free-time");
+    expect(clock(it.days[0].stops[0].time)).toBeGreaterThanOrEqual(clock("00:40"));
+  });
+
+  it("a flight too early for any sightseeing leaves nothing scheduled after the cutoff", () => {
+    for (const slug of ["tokyo", "lisbon", "paris"]) {
+      const it = generateItinerary(base(slug, { duration: 2, departureFlightTime: "07:30" }));
+      const last = it.days[1].stops;
+      const cutoff = clock("07:30") - 180;
+      expect(last.length, slug).toBeGreaterThan(0);
+      for (const s of last) expect(clock(s.endTime ?? s.time), `${slug}: "${s.name}" at ${s.time}`).toBeLessThanOrEqual(cutoff);
+    }
+  });
+
+  it("an ordinary flight time still gets a normal last day", () => {
+    const it = generateItinerary(base("tokyo", { duration: 2, departureFlightTime: "20:00" }));
+    expect(sightseeingStops(it.days[1]).length).toBeGreaterThan(0);
+  });
+});
+
 describe("editing", () => {
   it("regenerateDay changes only that day, deterministically", () => {
     const it = generateItinerary(base("barcelona", { duration: 5 }));

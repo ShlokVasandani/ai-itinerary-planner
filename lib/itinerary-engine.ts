@@ -1080,10 +1080,12 @@ function finishDay(env: Env, ctx: DayCtx, st: BuildState, title: string, mustIds
 
 function buildCityDay(env: Env, ctx: DayCtx, used: Used, forced: Entry[], titleIdx: number): ItineraryDay {
   const st: BuildState = { clock: ctx.startMin, stops: [], used, placed: [] };
-  if (ctx.startMin >= toMin("21:30")) {
-    // Landing very late: nothing sensible fits, so the first day is just arrival and rest.
+  // Landing very late (or in the small hours, when the buffered start would fall at 3am): nothing sensible fits,
+  // so the first day is just arrival and rest. The stop sits at the landing time itself, never before it.
+  const arrival = env.inp.arrivalFlightTime;
+  if (ctx.isFirst && (ctx.startMin >= toMin("21:30") || (arrival !== undefined && ctx.startMin < toMin("05:00")))) {
     st.stops.push({
-      time: fromMin(Math.min(ctx.startMin, 23 * 60)),
+      time: arrival !== undefined ? arrival : fromMin(Math.min(ctx.startMin, 23 * 60)),
       kind: "free-time",
       name: "Arrive, check in and rest",
       neighborhood: env.inp.destination.city,
@@ -1210,12 +1212,17 @@ function buildCityDay(env: Env, ctx: DayCtx, used: Used, forced: Entry[], titleI
   }
 
   if (st.stops.length === 0) {
+    // A flight that leaves before the day could even start (cutoff = departure minus 3 h) gets no sightseeing and
+    // no placeholder after the cutoff: the one stop is the trip to the airport, at the cutoff.
+    const tooEarly = ctx.endLimit !== undefined && ctx.endLimit <= ctx.startMin;
     st.stops.push({
-      time: fromMin(ctx.startMin),
+      time: fromMin(tooEarly ? Math.max(0, ctx.endLimit!) : ctx.startMin),
       kind: "free-time",
-      name: "Relaxed day",
+      name: tooEarly ? "Head to the airport" : "Relaxed day",
       neighborhood: env.inp.destination.city,
-      description: "Nothing fits comfortably today, so keep it open for rest or a favourite revisit.",
+      description: tooEarly
+        ? `Your ${env.inp.departureFlightTime} flight leaves too early for sightseeing; allow time to get to the airport.`
+        : "Nothing fits comfortably today, so keep it open for rest or a favourite revisit.",
       durationLabel: "open",
     });
   }

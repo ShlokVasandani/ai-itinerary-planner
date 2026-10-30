@@ -108,7 +108,9 @@ export function checkPlan(input: StressInput, dest: Destination, it: GeneratedIt
         fail("time.overlap", `${where(d, t.stop)} starts before "${prev!.stop.name}" ends at ${hm(prevEnd)}`);
       }
       const clock = t.start % 1440;
-      if ((clock > 30 && clock < 5 * 60) || t.start > 1440 + 30) fail("time.late-start", `${where(d, t.stop)} starts at ${t.stop.time} (after 00:30)`);
+      // The landing and the trip to the airport mark flights; they are not activities the 00:30 rule is about.
+      const landing = t.stop.kind === "free-time" && /^(arrive|head to the airport)/i.test(t.stop.name);
+      if (!landing && ((clock > 30 && clock < 5 * 60) || t.start > 1440 + 30)) fail("time.late-start", `${where(d, t.stop)} starts at ${t.stop.time} (after 00:30)`);
       const win = MEAL_WINDOWS[t.stop.kind];
       if (win && (clock < win[0] || clock > win[1])) fail("time.meal-window", `${where(d, t.stop)} is ${t.stop.kind} at ${t.stop.time}, expected ${hm(win[0])}-${hm(win[1])}`);
       prevEnd = t.end ?? t.start;
@@ -116,7 +118,12 @@ export function checkPlan(input: StressInput, dest: Destination, it: GeneratedIt
     }
     if (input.arrivalTime && d.dayNumber === 1) {
       const earliest = mins(input.arrivalTime) + 150;
-      for (const t of tl) if (t.start < earliest) fail("flight.arrival", `${where(d, t.stop)} starts ${t.stop.time}, before landing ${input.arrivalTime} + 2h30 = ${hm(earliest)}`);
+      for (const t of tl) {
+        // The arrival-and-rest stop marks the landing itself; everything else waits 2h30 for immigration and the transfer.
+        const landing = t.stop.kind === "free-time" && /^arrive/i.test(t.stop.name);
+        const min = landing ? mins(input.arrivalTime) : earliest;
+        if (t.start < min) fail("flight.arrival", `${where(d, t.stop)} starts ${t.stop.time}, before ${landing ? "landing" : "landing + 2h30"} ${hm(min)}`);
+      }
     }
     if (input.departureTime && d.dayNumber === it.days.length) {
       const latest = mins(input.departureTime) - 180;
