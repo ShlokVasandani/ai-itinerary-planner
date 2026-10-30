@@ -66,15 +66,20 @@ function SwapMenu({ itinerary, day, index, onSwap }: { itinerary: GeneratedItine
   );
 }
 
-function StopRow({ stop, index, day, itinerary, trip, onSwap, late }: { stop: TimelineStop; index: number; day: ItineraryDay; itinerary: GeneratedItinerary; trip: TripLinkInput; onSwap: Props["onSwap"]; late: boolean }) {
+function StopRow({ stop, index, day, itinerary, trip, onSwap, cardMounted }: { stop: TimelineStop; index: number; day: ItineraryDay; itinerary: GeneratedItinerary; trip: TripLinkInput; onSwap: Props["onSwap"]; cardMounted: React.RefObject<boolean> }) {
   // A row that mounts after its card did (Shuffle, Swap) animates in; rows that survive the change stay still.
-  const [fresh] = useState(late);
+  // Children's effects run before the parent's, so on the first render cardMounted is still false for every row.
+  // A data attribute, not className: nothing here may rewrite the class list.
+  const row = useRef<HTMLLIElement>(null);
+  useEffect(() => {
+    if (cardMounted.current) row.current?.setAttribute("data-fresh", "");
+  }, [cardMounted]);
   const swappable = !!stop.refId && !!stop.category && stop.category !== "dayTrip" && stop.kind !== "transit" && stop.kind !== "free-time";
   const cost = stop.cost;
   // A stop with a category can offer provider searches (tours, transfers) even with no official or map link of its own.
   const bookable = !!stop.category && stop.kind !== "transit" && stop.kind !== "free-time";
   return (
-    <li className={`stop stop-${stopDotCategory(stop.kind)}${fresh ? " stop-fresh" : ""}`} style={{ ["--n" as string]: Math.min(index, 7) }}>
+    <li ref={row} className={`stop stop-${stopDotCategory(stop.kind)}`} style={{ ["--n" as string]: Math.min(index, 7) }}>
       <div className="stop-time">
         <span>{stop.time}</span>
         {stop.endTime && <span className="stop-time-end">{stop.endTime}</span>}
@@ -184,7 +189,7 @@ export default function DayCard({ day, itinerary, trip, onRegenerate, onSwap }: 
       <div className="day-body">
         <ol className="stops">
           {day.stops.map((s, i) => (
-            <StopRow key={`${s.time}-${s.name}-${i}`} stop={s} index={i} day={day} itinerary={itinerary} trip={trip} onSwap={onSwap} late={cardMounted.current} />
+            <StopRow key={`${s.time}-${s.name}-${i}`} stop={s} index={i} day={day} itinerary={itinerary} trip={trip} onSwap={onSwap} cardMounted={cardMounted} />
           ))}
         </ol>
         <aside className="day-aside" aria-label={`Map and tools for day ${day.dayNumber}`}>

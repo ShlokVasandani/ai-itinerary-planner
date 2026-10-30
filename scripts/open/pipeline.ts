@@ -76,7 +76,7 @@ async function processSeed(seed: (typeof SEEDS)[number]): Promise<{ ok: boolean;
     const d = r.dest;
     const photos = readPhotos();
     const photo = await pickPhoto(d, r.city, r.landmarkImages ?? []);
-    let ph = "error" in photo ? undefined : photo;
+    const ph = "error" in photo ? undefined : photo;
     if ("error" in photo) log(`  ${d.slug}: ${photo.error}`);
     const dead = await dropDeadLinks(d);
     const findings = runAllChecks(d, ph);

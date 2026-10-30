@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { cityIndex, isKnownCity, loadDestination } from "@/lib/data/catalog";
+import { cityIndex, loadDestination } from "@/lib/data/catalog";
 import {
   generateItinerary,
   regenerateDay,
@@ -96,14 +96,17 @@ export default function PlannerClient({ initial, initialDestination }: { initial
     children: Math.min(8, Math.max(0, Number(initial.children) || 0)),
   }));
   const [itinerary, setItinerary] = useState<GeneratedItinerary | null>(null);
-  const [busy, setBusy] = useState(false);
+  // Arriving from the landing search (?go=1) builds straight away, so the skeleton is there from the first paint.
+  const [busy, setBusy] = useState(!!initial.go);
   const [stale, setStale] = useState(false);
   const [origin, setOrigin] = useState(/^[A-Za-z]{3}$/.test(initial.origin ?? "") ? initial.origin!.toUpperCase() : "");
   const regen = useRef(0);
   const resultsRef = useRef<HTMLDivElement>(null);
 
   const [destination, setDestination] = useState<Destination>(initialDestination);
-  const [cityError, setCityError] = useState("");
+  // A load error belongs to the city it happened for; choosing another city clears it without an effect.
+  const [loadError, setLoadError] = useState<{ slug: string; message: string } | null>(null);
+  const cityError = loadError && loadError.slug === form.slug ? loadError.message : "";
   const cities = useMemo(() => cityIndex.map((c) => ({ slug: c.slug, city: c.city, country: c.country })), []);
 
   // The picker moved to a city whose data has not arrived yet. Derived, not stored: a "loading" flag that an effect
@@ -114,14 +117,14 @@ export default function PlannerClient({ initial, initialDestination }: { initial
   useEffect(() => {
     if (form.slug === destination.slug) return;
     let live = true;
-    setCityError("");
-    loadDestination(form.slug)
+    const slug = form.slug;
+    loadDestination(slug)
       .then((d) => {
         if (!live) return;
         if (d) setDestination(d);
-        else setCityError("That city could not be loaded.");
+        else setLoadError({ slug, message: "That city could not be loaded." });
       })
-      .catch(() => live && setCityError("That city could not be loaded. Check your connection and try again."));
+      .catch(() => live && setLoadError({ slug, message: "That city could not be loaded. Check your connection and try again." }));
     return () => {
       live = false;
     };
@@ -137,11 +140,10 @@ export default function PlannerClient({ initial, initialDestination }: { initial
     setStale(true);
   }, []);
 
-  const build = useCallback(
+  // Schedules the build. Not cancelled on unmount: Strict Mode's simulated unmount in development would kill this
+  // timer, and the auto-build effect below never re-runs, leaving the skeleton up for good. Late updates are harmless.
+  const runBuild = useCallback(
     (f: PlannerFormState) => {
-      setBusy(true);
-      // Not cancelled on unmount: Strict Mode's simulated unmount in development would kill this timer, and the
-      // auto-build effect below never re-runs, leaving the skeleton up for good. Late state updates are harmless.
       window.setTimeout(() => {
         setItinerary(generateItinerary(toInput(f, destination, "sekai")));
         regen.current = 0;
@@ -153,13 +155,20 @@ export default function PlannerClient({ initial, initialDestination }: { initial
     },
     [destination]
   );
+  const build = useCallback(
+    (f: PlannerFormState) => {
+      setBusy(true);
+      runBuild(f);
+    },
+    [runBuild]
+  );
 
   // Arriving from the landing page search (?go=1): build straight away.
   const auto = useRef(false);
   useEffect(() => {
     if (auto.current) return;
     auto.current = true;
-    if (initial.go) build(form);
+    if (initial.go) runBuild(form); // busy is already true (see its initial value)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

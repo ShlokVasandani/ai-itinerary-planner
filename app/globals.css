@@ -891,15 +891,6 @@ main {
   color: var(--color-muted);
   margin-top: 8px;
 }
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
-}
-.reveal-visible {
-  opacity: 1;
-  transform: none;
-}
 @media (max-width: 700px) {
   .dest-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -3066,7 +3057,7 @@ main {
     transition-delay: calc(140ms + var(--n, 0) * 40ms);
   }
 }
-.stop-fresh {
+.stop[data-fresh] {
   --rise: 8px;
   animation: rise-in 0.24s var(--ease-out) both;
   animation-delay: calc(var(--n, 0) * 40ms);
@@ -3146,10 +3137,6 @@ main {
     --pop-y: 0px;
     --pop-scale: 1;
     --banner-scale: 1;
-  }
-  .reveal {
-    opacity: 1;
-    transform: none;
   }
   .expand-frame {
     transform: none !important;

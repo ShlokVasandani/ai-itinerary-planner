@@ -424,7 +424,7 @@ function buildCatalog(d: Destination): Catalog {
 
 export function resolveInput(input: PlannerInput): ResolvedInput {
   let duration = input.duration ?? 3;
-  let startDate = isIsoDate(input.startDate) ? input.startDate : undefined;
+  const startDate = isIsoDate(input.startDate) ? input.startDate : undefined;
   let endDate = isIsoDate(input.endDate) ? input.endDate : undefined;
   if (startDate && endDate) {
     const span = diffDays(startDate, endDate) + 1;
@@ -661,16 +661,6 @@ function legBetween(env: Env, prev: Entry | undefined, next: Entry): Leg | undef
   // Two stops that share the same fallback neighborhood centre are effectively in the same place.
   return travelLeg(km, env.inp.mobility, approximate);
 }
-
-const KIND_FOR_CAT: Record<StopCategory, StopKind> = {
-  landmark: "landmark",
-  restaurant: "lunch",
-  cafe: "coffee",
-  experience: "experience",
-  shopping: "shopping",
-  nightlife: "nightlife",
-  dayTrip: "day-trip",
-};
 
 interface BuildState {
   clock: number;

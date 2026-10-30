@@ -19,18 +19,18 @@ export default function SearchField({ label, value, placeholder, children, class
   const [open, setOpen] = useState(false);
   const root = useRef<HTMLDivElement>(null);
   const id = useId();
-  const press = usePress(() => setOpen((v) => !v));
-
   // Stay mounted for the exit (120ms) so the panel fades out instead of vanishing.
   const [present, setPresent] = useState(false);
   useEffect(() => {
-    if (open) {
-      setPresent(true);
-      return;
-    }
+    if (open) return;
     const t = window.setTimeout(() => setPresent(false), 140);
     return () => window.clearTimeout(t);
   }, [open]);
+
+  const press = usePress(() => {
+    if (!open) setPresent(true);
+    setOpen((v) => !v);
+  });
 
   useEffect(() => {
     if (!open) return;

@@ -25,7 +25,7 @@ export function classify(types: string[]): Classified {
   const a = accepted.join(" | ").toLowerCase();
   const interests = new Set<Interest>();
   let minutes = 60;
-  let kind = accepted[0];
+  const kind = accepted[0];
   const has = (re: RegExp) => re.test(a);
   if (has(/museum|gallery/)) {
     interests.add("art");

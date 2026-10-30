@@ -33,7 +33,7 @@ export default function HeroSearch({ cities }: { cities: CityOption[] }) {
     <form className="search-bar" onSubmit={submit} aria-label="Start planning a trip">
       <CityField cities={cities} value={city} onChange={setCity} />
       <DateRangeField start={start} end={end} onChange={(a, b) => (setStart(a), setEnd(b))} />
-      <TravellerField adults={adults} children={children} onChange={(a, c) => (setAdults(a), setChildren(c))} />
+      <TravellerField adults={adults} kids={children} onChange={(a, c) => (setAdults(a), setChildren(c))} />
       <button type="submit" className="btn btn-primary search-submit" aria-busy={pending}>
         {pending ? <span className="spinner" aria-hidden="true" /> : null}
         <span key={pending ? "p" : "i"} className="btn-label">
