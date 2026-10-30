@@ -492,6 +492,8 @@ interface DayCtx {
   maxStops: number;
   maxMinutes: number;
   radiusKm: number;
+  /** The day has no room for sightseeing at all (landing after 21:30, or a flight whose cutoff is before the day starts). */
+  noRoom: boolean;
 }
 
 function dayContext(inp: ResolvedInput, index: number): DayCtx {
@@ -523,6 +525,8 @@ function dayContext(inp: ResolvedInput, index: number): DayCtx {
     if (inp.departureFlightTime) endLimit = toMin(inp.departureFlightTime) - DEPARTURE_BUFFER_MIN;
   }
   const date = inp.startDate ? addDays(inp.startDate, index) : undefined;
+  const lateLanding = isFirst && (startMin >= toMin("21:30") || (inp.arrivalFlightTime !== undefined && startMin < toMin("05:00")));
+  const noRoom = lateLanding || (endLimit !== undefined && endLimit <= startMin);
   return {
     index,
     dayNumber: index + 1,
@@ -535,6 +539,7 @@ function dayContext(inp: ResolvedInput, index: number): DayCtx {
     maxStops,
     maxMinutes,
     radiusKm,
+    noRoom,
   };
 }
 
@@ -1352,7 +1357,8 @@ function assignForced(env: Env, ctxs: DayCtx[], tripDays: Set<number>): { byDay:
   const warnings: string[] = [];
   const tripPicks = new Map<number, Entry>();
   const load = (i: number) => (byDay.get(i)?.length ?? 0) + (ctxs[i].isFirst || ctxs[i].isLast ? 0.75 : 0);
-  const cityDays = ctxs.filter((c) => !tripDays.has(c.index));
+  // Days with no room for sightseeing would swallow a must-include without placing it.
+  const cityDays = ctxs.filter((c) => !tripDays.has(c.index) && !c.noRoom);
   const tripIdxs = [...tripDays];
 
   for (const id of env.inp.mustInclude) {
@@ -1448,8 +1454,86 @@ function collectUsedLandmarks(days: ItineraryDay[]): Set<string> {
   return s;
 }
 
+// ---------------------------------------------------------------------------
+// Interest coverage
+// ---------------------------------------------------------------------------
+
+/** Venues that count as "for" an interest: cafés for cafés, shops for shopping, tagged places for the rest. */
+function interestVenues(env: Env, interest: Interest): Entry[] {
+  const tagged = [...env.cat.landmarks, ...env.cat.experiences].filter((e) => (e.rec as { interestTags?: Interest[] }).interestTags?.includes(interest));
+  switch (interest) {
+    case "food":
+      return env.cat.restaurants;
+    case "cafes":
+      return env.cat.cafes;
+    case "shopping":
+      return env.cat.shopping;
+    case "nightlife":
+      return [...env.cat.nightlife, ...tagged];
+    default:
+      return tagged;
+  }
+}
+
+/** Selected interests that have venues in this city but no matching stop in the plan. */
+function missingInterests(env: Env, days: ItineraryDay[]): Interest[] {
+  const placed = new Set<string>();
+  for (const day of days) for (const s of day.stops) if (s.refId) placed.add(s.refId);
+  return [...new Set(env.inp.interests)].filter((i) => {
+    const venues = interestVenues(env, i);
+    return venues.length > 0 && !venues.some((v) => placed.has(v.id));
+  });
+}
+
+/** The best venue for an interest that the traveller has not excluded and that is open on at least one day of the trip. */
+function interestPick(env: Env, interest: Interest, taken: string[]): Entry | undefined {
+  const inp = env.inp;
+  const weekdays = Array.from({ length: inp.duration }, (_, i) => (inp.startDate ? weekdayOf(addDays(inp.startDate, i)) : undefined));
+  return interestVenues(env, interest)
+    .filter(
+      (e) =>
+        !env.avoid.has(e.id) &&
+        !taken.includes(e.id) &&
+        !inp.mustInclude.includes(e.id) &&
+        !(inp.mobility === "limited" && isStrenuous(e)) &&
+        (e.cat !== "restaurant" || combinedDietFit(e.rec as Restaurant, inp.dietary) !== "no") &&
+        weekdays.some((w) => !isClosedAllDay(e.rec as Verifiable, w))
+    )
+    .map((e) => ({ e, s: scoreEntry(e, inp) }))
+    .sort((a, b) => b.s - a.s || a.e.id.localeCompare(b.e.id))[0]?.e;
+}
+
+/**
+ * A plan is built from the traveller's input. If a selected interest has venues in the city but ended up with no
+ * matching stop, the best venue for it is added as a quiet must-include and the plan is rebuilt; the rebuild is kept
+ * only if it serves more of the interests. The returned plan always carries the traveller's own input, and warnings
+ * about the added venues (closed, no room) are dropped: they were never asked for.
+ */
 export function generateItinerary(input: PlannerInput): GeneratedItinerary {
   const inp = resolveInput(input);
+  const first = buildItinerary(inp);
+  const env = makeEnv(inp);
+  let best = first;
+  let missing = missingInterests(env, first.days);
+  const extra: string[] = [];
+  for (let round = 0; round < 2 && missing.length > 0; round++) {
+    for (const interest of missing) {
+      const pick = interestPick(env, interest, extra);
+      if (pick) extra.push(pick.id);
+    }
+    if (extra.length === 0) break;
+    const tried = buildItinerary({ ...inp, mustInclude: [...inp.mustInclude, ...extra] });
+    const still = missingInterests(env, tried.days);
+    if (still.length >= missing.length) break;
+    best = tried;
+    missing = still;
+  }
+  if (best === first) return first;
+  const quiet = extra.map((id) => env.cat.byId.get(id)!.name);
+  return { ...best, input: inp, warnings: best.warnings.filter((w) => !quiet.some((n) => w.startsWith(n))) };
+}
+
+function buildItinerary(inp: ResolvedInput): GeneratedItinerary {
   const env = makeEnv(inp);
   const ctxs = Array.from({ length: inp.duration }, (_, i) => dayContext(inp, i));
   const used: Used = { ids: new Set(), names: new Set() };

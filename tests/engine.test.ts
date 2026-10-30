@@ -223,6 +223,63 @@ describe("price ranges", () => {
   });
 });
 
+describe("selected interests are served", () => {
+  /** Ids of the venues that count as "for" an interest, read straight from the city data. */
+  const venuesFor = (d: (typeof destinations)[number], interest: string): Set<string> => {
+    const tagged = [...d.landmarks, ...d.experiences].filter((r) => (r.interestTags as string[] | undefined)?.includes(interest));
+    const ids =
+      interest === "cafes" ? d.cafes.map((r) => r.id)
+      : interest === "shopping" ? d.shopping.map((r) => r.id)
+      : interest === "nightlife" ? [...d.nightlife.map((r) => r.id), ...tagged.map((r) => r.id)]
+      : interest === "food" ? d.restaurants.map((r) => r.id)
+      : tagged.map((r) => r.id);
+    return new Set(ids);
+  };
+
+  it("when a city has venues for an interest, a plan with only that interest contains one", () => {
+    const missed: string[] = [];
+    for (const d of destinations) {
+      for (const interest of ["history", "food", "cafes", "shopping", "art", "nightlife", "photography", "beaches", "nature", "adventure", "culture", "luxury"] as const) {
+        const venues = venuesFor(d, interest);
+        if (venues.size === 0) continue;
+        const it = generateItinerary({ ...base(d.slug), startDate: undefined, duration: 2, interests: [interest] });
+        const placed = it.days.flatMap((day) => day.stops.map((s) => s.refId).filter(Boolean) as string[]);
+        if (!placed.some((id) => venues.has(id))) missed.push(`${d.slug}: ${interest}`);
+      }
+    }
+    expect(missed).toEqual([]);
+  });
+
+  it("holds for the planner's default interests on a 1-day and a 3-day trip", () => {
+    const missed: string[] = [];
+    for (const d of destinations) {
+      for (const duration of [1, 3]) {
+        const it = generateItinerary({ ...base(d.slug), startDate: undefined, duration, interests: ["food", "history", "photography"] });
+        const placed = new Set(it.days.flatMap((day) => day.stops.map((s) => s.refId).filter(Boolean) as string[]));
+        for (const interest of ["food", "history", "photography"]) {
+          const venues = venuesFor(d, interest);
+          if (venues.size && ![...placed].some((id) => venues.has(id))) missed.push(`${d.slug} ${duration}d: ${interest}`);
+        }
+      }
+    }
+    expect(missed).toEqual([]);
+  });
+
+  it("does not disturb a plan that already serves every interest", () => {
+    // Tokyo with history/food: nothing is missing, so the plan must equal what the engine produced before this rule.
+    const a = generateItinerary(base("tokyo", { duration: 3, interests: ["history", "food"] }));
+    const b = generateItinerary(base("tokyo", { duration: 3, interests: ["history", "food"] }));
+    expect(b.days.map((d) => d.stops.map((s) => s.name))).toEqual(a.days.map((d) => d.stops.map((s) => s.name)));
+    expect(a.warnings).toEqual([]);
+  });
+
+  it("keeps the traveller's own must-include list and warnings untouched", () => {
+    const it = generateItinerary(base("tokyo", { duration: 2, interests: ["nightlife"], mustInclude: [], avoid: [] }));
+    expect(it.input.mustInclude).toEqual([]);
+    expect(it.warnings).toEqual([]);
+  });
+});
+
 describe("determinism", () => {
   it("same input gives identical output", () => {
     for (const slug of ["tokyo", "lisbon", "dubai"]) {

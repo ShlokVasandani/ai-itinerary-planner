@@ -182,22 +182,19 @@ export function checkPlan(input: StressInput, dest: Destination, it: GeneratedIt
       if (rec && combinedDietFit(rec, input.dietary) === "no") fail("diet.mismatch", `"${s.name}" (${rec.cuisine}) is ruled out for ${input.dietary.join(" + ")}`);
     }
   }
-  if (input.interests.length > 0 && it.days.length >= 2) {
-    const sightseeing = all.filter((s) => ["landmark", "experience", "shopping", "nightlife"].includes(s.category ?? ""));
-    const served = (i: Interest): { wanted: boolean; got: boolean } => {
-      const p = pools(dest);
-      if (i === "cafes") return { wanted: p.cafe.length > 0, got: all.some((s) => s.category === "cafe") };
-      if (i === "food") return { wanted: p.restaurant.length > 0, got: all.some((s) => s.category === "restaurant") };
-      if (i === "shopping") return { wanted: p.shopping.length > 0, got: all.some((s) => s.category === "shopping") };
-      if (i === "nightlife") return { wanted: p.nightlife.length > 0, got: all.some((s) => s.category === "nightlife") };
-      const tagged = (r: AnyRec) => r.interestTags?.includes(i);
-      const pool = [...p.landmark, ...p.experience].filter(tagged);
-      return { wanted: pool.length >= 2, got: sightseeing.some((s) => tagged(recordFor(dest, s.category, s.refId) ?? ({} as AnyRec))) };
-    };
-    const results = input.interests.map((i) => ({ i, ...served(i) })).filter((r) => r.wanted);
-    if (input.interests.length === 1 && results[0] && !results[0].got) fail(`interest.${input.interests[0]}`, `only "${input.interests[0]}" selected, but no matching stop in ${it.days.length} days`);
-    if (input.interests.length > 1 && results.length && !results.some((r) => r.got)) fail("interest.combo", `none of ${input.interests.join(", ")} is represented`);
-    for (const r of results) if (!r.got && input.interests.length > 1) notes.push(`interest ${r.i} not represented`);
+  // The narrow rule: if the city has venues for a selected interest, the plan contains at least one matching stop.
+  // "For" means cafes for cafes, shops for shopping, nightlife spots (or evening experiences tagged nightlife) for
+  // nightlife, restaurants for food, and landmarks or experiences carrying the interest's tag for the rest.
+  {
+    const p = pools(dest);
+    const tagged = (i: string) => [...p.landmark, ...p.experience].filter((r) => r.interestTags?.includes(i));
+    const venues = (i: Interest): AnyRec[] =>
+      i === "cafes" ? p.cafe : i === "shopping" ? p.shopping : i === "food" ? p.restaurant.filter((r) => combinedDietFit(r as unknown as Restaurant, input.dietary) !== "no") : i === "nightlife" ? [...p.nightlife, ...tagged(i)] : tagged(i);
+    const placed = new Set(all.map((s) => s.refId));
+    for (const i of new Set(input.interests)) {
+      const v = venues(i);
+      if (v.length > 0 && !v.some((r) => placed.has(r.id))) fail(`interest.${i}`, `"${i}" selected and the city has ${v.length} venue(s) for it, but no matching stop in ${it.days.length} day(s)`);
+    }
   }
 
   // 5. Map data: every stop near the city, numbering follows stop order
