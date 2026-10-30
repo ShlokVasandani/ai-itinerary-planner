@@ -2375,37 +2375,6 @@ main {
   }
 }
 
-/* -------------------------------------------------------------------------
-   Reduced motion: every effect has a static fallback
-   ------------------------------------------------------------------------- */
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.001ms !important;
-  }
-  .reveal {
-    opacity: 1;
-    transform: none;
-  }
-  .expand-frame {
-    transform: none !important;
-  }
-  .expand-caption {
-    opacity: 1 !important;
-  }
-  .btn:hover,
-  .book-link:hover,
-  .dest-card:hover .dest-card-photo .photo {
-    transform: none;
-  }
-}
-
 .planner-loading {
   min-height: 100svh;
 }
@@ -3152,5 +3121,118 @@ main {
   }
   to {
     translate: 0 0;
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Reduced motion: gentler, not zero. Fades and colour changes stay because they say what changed;
+   distance, scale, slides and spinning go. Most of this works by zeroing the travel tokens in :root.
+   ------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  :root {
+    --press: 1;
+    --rise: 0px;
+    --pop-y: 0px;
+    --pop-scale: 1;
+    --banner-scale: 1;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .expand-frame {
+    transform: none !important;
+  }
+  .expand-caption {
+    opacity: 1 !important;
+  }
+  /* Press still answers, with a dimming instead of a shrink. */
+  .btn:active:not([disabled]),
+  .seg-btn:active:not(:disabled),
+  .sf-trigger:active,
+  .stepper button:active:not(:disabled),
+  .tab-btn:active,
+  .chips button:active,
+  .day-jump a:active,
+  .menu-btn:active,
+  .sf-list button:active,
+  .brand:active {
+    opacity: 0.75;
+  }
+  .dest-card:active,
+  .menu-link:active {
+    transform: none;
+  }
+  .dest-card:hover .dest-card-photo .photo {
+    transform: none;
+  }
+  .btn:hover {
+    transform: none;
+  }
+  /* Indicators that moved now just pulse or sit still. */
+  .spinner {
+    border-color: currentColor;
+    border-radius: 50%;
+    animation: pulse 1.2s var(--ease-in-out) infinite;
+  }
+  .skel::after,
+  .price-skeleton::after,
+  .day-map.is-loading::after {
+    animation: none;
+    opacity: 0;
+  }
+  .tab-btn::after {
+    transform: none;
+    opacity: 0;
+    transition: opacity 0.16s var(--ease-out);
+  }
+  .tab-btn.active::after {
+    opacity: 1;
+  }
+  .menu-bars,
+  .menu-bars::before,
+  .menu-bars::after,
+  .skip-link {
+    transition: none;
+  }
+  .mobile-menu {
+    transform: none;
+  }
+  @starting-style {
+    .chips li {
+      opacity: 0;
+      transform: none;
+    }
+  }
+  /* The map library brings its own zoom and fade animations. */
+  .leaflet-container *,
+  .leaflet-container *::before,
+  .leaflet-container *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+  /* Page transitions keep their crossfade and lose the slide. */
+  ::view-transition-old(.nav-forward),
+  ::view-transition-new(.nav-forward),
+  ::view-transition-old(.nav-back),
+  ::view-transition-new(.nav-back) {
+    --slide-offset: 0px;
+  }
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+/* Translucent chrome falls back to solid for people who ask for less transparency. */
+@media (prefers-reduced-transparency: reduce) {
+  .day-jump {
+    background: var(--color-bg);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
   }
 }
