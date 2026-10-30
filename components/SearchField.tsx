@@ -21,6 +21,17 @@ export default function SearchField({ label, value, placeholder, children, class
   const id = useId();
   const press = usePress(() => setOpen((v) => !v));
 
+  // Stay mounted for the exit (120ms) so the panel fades out instead of vanishing.
+  const [present, setPresent] = useState(false);
+  useEffect(() => {
+    if (open) {
+      setPresent(true);
+      return;
+    }
+    const t = window.setTimeout(() => setPresent(false), 140);
+    return () => window.clearTimeout(t);
+  }, [open]);
+
   useEffect(() => {
     if (!open) return;
     const down = (e: MouseEvent | TouchEvent) => {
@@ -48,8 +59,15 @@ export default function SearchField({ label, value, placeholder, children, class
         <span className="sf-label">{label}</span>
         <span className={`sf-value${value ? "" : " is-empty"}`}>{value || placeholder}</span>
       </button>
-      {open && (
-        <div id={id} className={`sf-panel sf-${align} ${panelClassName}`} role="dialog" aria-label={label}>
+      {(open || present) && (
+        <div
+          id={id}
+          className={`sf-panel sf-${align} ${panelClassName}`}
+          role="dialog"
+          aria-label={label}
+          data-state={open ? "open" : "closed"}
+          inert={!open}
+        >
           {children(() => setOpen(false))}
         </div>
       )}
