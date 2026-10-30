@@ -155,7 +155,7 @@ export function compare(scraped: ScrapedPlan, it: GeneratedItinerary, input: Str
       eq(`${sTag} time`, ss.time, s.time);
       eq(`${sTag} end-time`, ss.end, s.endTime ?? "");
       eq(`${sTag} name`, ss.name, s.name);
-      const kindWant = (STOP_KIND_LABELS[s.kind] ?? s.kind) + (s.priority ? ` ${priorityLabel(s.priority)}` : "");
+      const kindWant = (s.slotLabel ?? STOP_KIND_LABELS[s.kind] ?? s.kind) + (s.priority ? ` ${priorityLabel(s.priority)}` : "");
       eq(`${sTag} kind`, ss.kind, norm(kindWant));
       const c = s.cost;
       let whereWant = `${s.neighborhood} · ${s.durationLabel}`;

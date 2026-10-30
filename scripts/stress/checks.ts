@@ -112,7 +112,7 @@ export function checkPlan(input: StressInput, dest: Destination, it: GeneratedIt
       const landing = t.stop.kind === "free-time" && /^(arrive|head to the airport)/i.test(t.stop.name);
       if (!landing && ((clock > 30 && clock < 5 * 60) || t.start > 1440 + 30)) fail("time.late-start", `${where(d, t.stop)} starts at ${t.stop.time} (after 00:30)`);
       const win = MEAL_WINDOWS[t.stop.kind];
-      if (win && (clock < win[0] || clock > win[1])) fail("time.meal-window", `${where(d, t.stop)} is ${t.stop.kind} at ${t.stop.time}, expected ${hm(win[0])}-${hm(win[1])}`);
+      if (win && !t.stop.slotLabel && (clock < win[0] || clock > win[1])) fail("time.meal-window", `${where(d, t.stop)} is ${t.stop.kind} at ${t.stop.time}, expected ${hm(win[0])}-${hm(win[1])}`);
       prevEnd = t.end ?? t.start;
       prev = t;
     }

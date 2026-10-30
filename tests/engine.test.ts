@@ -280,6 +280,39 @@ describe("selected interests are served", () => {
   });
 });
 
+describe("meal slot labels tell the truth about the time", () => {
+  const mins = (t: string) => Number(t.slice(0, 2)) * 60 + Number(t.slice(3));
+  const WINDOW: Record<string, [number, number]> = {
+    breakfast: [6 * 60, 11 * 60],
+    lunch: [11 * 60 + 30, 15 * 60 + 30],
+    coffee: [14 * 60, 18 * 60 + 30],
+    dinner: [18 * 60, 23 * 60],
+  };
+
+  it("a meal outside its usual hours carries an honest label instead of the plain one", () => {
+    const wrong: string[] = [];
+    let relabelled = 0;
+    for (const d of destinations) {
+      for (const duration of [3, 7, 14]) {
+        const it = generateItinerary({ ...base(d.slug), startDate: undefined, duration, interests: ["food", "cafes", "history"] });
+        for (const day of it.days)
+          for (const s of day.stops) {
+            const w = WINDOW[s.kind];
+            if (!w) continue;
+            const t = mins(s.time);
+            const inside = t >= w[0] && t <= w[1];
+            const slotLabel = (s as { slotLabel?: string }).slotLabel;
+            if (!inside && !slotLabel) wrong.push(`${d.slug} day ${day.dayNumber}: ${s.kind} at ${s.time} "${s.name}"`);
+            if (inside && slotLabel) wrong.push(`${d.slug} day ${day.dayNumber}: ${s.kind} at ${s.time} is on time but labelled "${slotLabel}"`);
+            if (slotLabel) relabelled++;
+          }
+      }
+    }
+    expect(wrong).toEqual([]);
+    expect(relabelled, "the cases that motivated this should still occur, now relabelled").toBeGreaterThan(0);
+  });
+});
+
 describe("determinism", () => {
   it("same input gives identical output", () => {
     for (const slug of ["tokyo", "lisbon", "dubai"]) {

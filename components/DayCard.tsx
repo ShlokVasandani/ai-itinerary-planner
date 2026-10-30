@@ -85,7 +85,7 @@ function StopRow({ stop, index, day, itinerary, trip, onSwap, late }: { stop: Ti
       <div className="stop-body">
         {stop.transportNote && stop.kind !== "day-trip" && <p className="stop-transport">{stop.transportNote}</p>}
         <p className="stop-kind">
-          {STOP_KIND_LABELS[stop.kind] ?? stop.kind}
+          {stop.slotLabel ?? STOP_KIND_LABELS[stop.kind] ?? stop.kind}
           {stop.priority && (
             <span className="stop-priority">
               <PriorityIcon priority={stop.priority} /> {priorityLabel(stop.priority)}

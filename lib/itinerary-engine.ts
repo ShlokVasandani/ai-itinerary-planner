@@ -36,6 +36,7 @@ import { parseCost } from "./cost-text";
 import { centroid, defaultLeg, haversineKm, legNote, travelLeg, type Leg } from "./engine/geo";
 import { closedDaysLabel } from "./engine/days";
 import { combinedDietFit, dietNote, dietRank, type DietFit } from "./engine/dietary";
+import { mealSlotLabel } from "./engine/meals";
 import { seededRandom } from "./engine/rng";
 import {
   addDays,
@@ -123,6 +124,8 @@ export interface TimelineStop {
   time: string;
   endTime?: string;
   kind: StopKind;
+  /** Replaces the plain label for `kind` when the meal landed outside its usual hours ("Late lunch", "Evening drinks"). */
+  slotLabel?: string;
   name: string;
   neighborhood: string;
   description: string;
@@ -725,6 +728,7 @@ function entryToStop(
     time: fromMin(start),
     endTime: fromMin(start + duration),
     kind,
+    slotLabel: mealSlotLabel(kind, start),
     name: e.name,
     neighborhood: e.neighborhood || env.inp.destination.city,
     description,
