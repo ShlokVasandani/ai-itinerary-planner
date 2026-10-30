@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { cityIndex, loadDestination } from "@/lib/data/catalog";
+import { isIsoDate } from "@/lib/engine/time";
 import {
   generateItinerary,
   regenerateDay,
@@ -90,8 +91,8 @@ export default function PlannerClient({ initial, initialDestination }: { initial
   const [form, setForm] = useState<PlannerFormState>(() => ({
     ...DEFAULTS,
     slug: initialSlug,
-    startDate: /^\d{4}-\d{2}-\d{2}$/.test(initial.start ?? "") ? initial.start! : "",
-    endDate: /^\d{4}-\d{2}-\d{2}$/.test(initial.end ?? "") ? initial.end! : "",
+    startDate: isIsoDate(initial.start) ? initial.start : "",
+    endDate: isIsoDate(initial.end) ? initial.end : "",
     adults: Math.min(12, Math.max(1, Number(initial.adults) || DEFAULTS.adults)),
     children: Math.min(8, Math.max(0, Number(initial.children) || 0)),
   }));

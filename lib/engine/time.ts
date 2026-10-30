@@ -37,7 +37,20 @@ export function diffDays(a: string, b: string): number {
   return Math.round((Date.UTC(y2, m2 - 1, d2) - Date.UTC(y1, m1 - 1, d1)) / 86400000);
 }
 
-export const isIsoDate = (s: string | undefined): s is string => !!s && /^\d{4}-\d{2}-\d{2}$/.test(s);
+/** A real calendar date in YYYY-MM-DD form, within 1900-2200 (so 2027-02-31 and 9999-12-31 are not dates). */
+export function isIsoDate(s: string | undefined): s is string {
+  if (!s || !/^\d{4}-\d{2}-\d{2}$/.test(s)) return false;
+  const [y, m, d] = s.split("-").map(Number);
+  if (y < 1900 || y > 2200) return false;
+  const dt = new Date(Date.UTC(y, m - 1, d));
+  return dt.getUTCFullYear() === y && dt.getUTCMonth() === m - 1 && dt.getUTCDate() === d;
+}
+
+/** "H:MM" or "HH:MM" on a 24-hour clock. */
+export function isClockTime(s: string | undefined): s is string {
+  const m = /^(\d{1,2}):(\d{2})$/.exec(s ?? "");
+  return !!m && Number(m[1]) < 24 && Number(m[2]) < 60;
+}
 
 type Hours = Pick<Verifiable, "openingHours" | "closedDays">;
 

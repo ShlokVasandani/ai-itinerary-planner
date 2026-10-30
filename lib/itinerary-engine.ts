@@ -45,6 +45,7 @@ import {
   fitOpening,
   fromMin,
   isClosedAllDay,
+  isClockTime,
   isIsoDate,
   toMin,
   weekdayOf,
@@ -423,7 +424,7 @@ function buildCatalog(d: Destination): Catalog {
 // ---------------------------------------------------------------------------
 
 export function resolveInput(input: PlannerInput): ResolvedInput {
-  let duration = input.duration ?? 3;
+  let duration = Number.isFinite(input.duration) ? (input.duration as number) : 3;
   const startDate = isIsoDate(input.startDate) ? input.startDate : undefined;
   let endDate = isIsoDate(input.endDate) ? input.endDate : undefined;
   if (startDate && endDate) {
@@ -442,14 +443,14 @@ export function resolveInput(input: PlannerInput): ResolvedInput {
     startDate,
     endDate,
     pace: input.pace ?? "balanced",
-    groupSize: Math.max(1, Math.round(input.groupSize ?? 1)),
+    groupSize: Number.isFinite(input.groupSize) ? Math.max(1, Math.round(input.groupSize as number)) : 1,
     hasKids: !!input.hasKids,
     mobility: input.mobility ?? "standard",
     dietary: [...new Set(input.dietary ?? [])],
     mustInclude: [...new Set(input.mustInclude ?? [])],
     avoid: [...new Set(input.avoid ?? [])],
-    arrivalFlightTime: /^\d{1,2}:\d{2}$/.test(input.arrivalFlightTime ?? "") ? input.arrivalFlightTime : undefined,
-    departureFlightTime: /^\d{1,2}:\d{2}$/.test(input.departureFlightTime ?? "") ? input.departureFlightTime : undefined,
+    arrivalFlightTime: isClockTime(input.arrivalFlightTime) ? input.arrivalFlightTime : undefined,
+    departureFlightTime: isClockTime(input.departureFlightTime) ? input.departureFlightTime : undefined,
     seed: String(input.seed ?? "sekai"),
   };
 }

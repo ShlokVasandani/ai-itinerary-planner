@@ -436,3 +436,38 @@ describe("late arrival", () => {
     expect(findClosedStops(it)).toEqual([]);
   });
 });
+
+describe("input validation", () => {
+  const lisbon = () => destinations.find((d) => d.slug === "lisbon")!;
+  const plan = (extra: Partial<PlannerInput>) =>
+    generateItinerary({ destination: lisbon(), duration: 3, budget: "mid-range", travelStyle: "first-time", interests: ["history"], ...extra });
+
+  it("treats dates that are not real calendar dates, or absurdly far away, as no dates", () => {
+    for (const bad of ["2027-02-31", "2027-13-01", "2027-00-10", "0000-01-01", "9999-12-31", "1800-06-01", "2027-1-1", "abcd-ef-gh"]) {
+      const it = plan({ startDate: bad, endDate: bad });
+      expect(it.startDate, bad).toBeUndefined();
+      expect(it.days.every((d) => d.date === undefined), bad).toBe(true);
+      expect(it.days).toHaveLength(3);
+    }
+  });
+
+  it("still accepts real dates, including a leap day", () => {
+    expect(plan({ startDate: "2028-02-29", endDate: "2028-03-02" }).days.map((d) => d.date)).toEqual(["2028-02-29", "2028-03-01", "2028-03-02"]);
+  });
+
+  it("ignores flight times that are not clock times", () => {
+    for (const bad of ["99:99", "24:30", "12:60", "7pm", "-1:00", "1:5"]) {
+      const it = plan({ arrivalFlightTime: bad, departureFlightTime: bad });
+      expect(it.input.arrivalFlightTime, bad).toBeUndefined();
+      expect(it.input.departureFlightTime, bad).toBeUndefined();
+    }
+    expect(plan({ arrivalFlightTime: "9:05" }).input.arrivalFlightTime).toBe("9:05");
+  });
+
+  it("clamps trip length and party size to sane bounds", () => {
+    expect(plan({ duration: 500 }).days).toHaveLength(14);
+    expect(plan({ duration: -4 }).days).toHaveLength(1);
+    expect(plan({ duration: Number.NaN }).days.length).toBeGreaterThanOrEqual(1);
+    expect(plan({ groupSize: 0 }).input.groupSize).toBe(1);
+  });
+});
