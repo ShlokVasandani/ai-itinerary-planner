@@ -114,6 +114,6 @@ On the host: set `NEXT_PUBLIC_SITE_URL` to the real origin (otherwise canonical 
 - **Majors:** upgrade react-day-picker to 10, TypeScript to 7, @types/node to 26? Each can break; I did not touch them.
 - **`SECURITY.md` contact:** no email address is published anywhere in the repository, so the policy points to GitHub's private vulnerability reporting. Do you want a contact email added?
 - **Rate limit trust:** the price API keys its limit on `x-forwarded-for` / `x-real-ip`. Behind Vercel or another proxy that overwrites it, that is right; if the app is ever served directly, a caller can rotate the header to dodge the limit. Say if you want it keyed on the socket address instead (it would also stop the stress test giving each worker its own key).
-- **HSTS `includeSubDomains; preload`:** this was already the policy and I kept it. It is correct only if every subdomain of your domain will be HTTPS for good, and `preload` matters only if you submit the domain to the browser preload list. Decide before you do.
+- **HSTS:** decided. `includeSubDomains` and `preload` removed; only `max-age=63072000` remains, so it covers this host and nothing else on the domain.
 - **CSP strictness:** replacing `'unsafe-inline'` for scripts with nonces means rendering every page dynamically (slower, no static HTML). I recommend leaving it.
 - **Packing the repo:** `git gc` is safe and shrinks `.git`; I did not run it.

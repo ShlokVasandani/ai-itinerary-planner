@@ -10,6 +10,12 @@ describe("security headers", () => {
     expect(headersFor(false)["strict-transport-security"]).toBeUndefined();
   });
 
+  it("keeps HSTS to this host: no includeSubDomains, no preload", () => {
+    const hsts = headersFor(true)["strict-transport-security"];
+    expect(hsts).not.toMatch(/includeSubDomains/i);
+    expect(hsts).not.toMatch(/preload/i);
+  });
+
   it("always sends the basic hardening headers", () => {
     for (const prod of [true, false]) {
       const h = headersFor(prod);

@@ -162,7 +162,8 @@ and `tests/security-headers.test.ts` keep the credits and header policies true.
 ## Security
 
 See [`SECURITY.md`](SECURITY.md) for how to report a vulnerability. Security headers (CSP, HSTS in production,
-frame and referrer policies) are set in `next.config.mjs`; the price API routes validate input and rate-limit.
+frame and referrer policies) are set in `next.config.mjs`. HSTS is `max-age` only, with no `includeSubDomains` or
+`preload`, so it pins this host and nothing else on your domain; the price API routes validate input and rate-limit.
 
 ## License
 
