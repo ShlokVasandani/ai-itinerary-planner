@@ -24,6 +24,7 @@ const base = new URL(BASE);
  *  - Changing the city in the picker must leave "Build my itinerary" enabled and not busy, and the plan must be for
  *    the new city. (A race in the city-loading effect once left it disabled for good.)
  *  - A day trip must get a Book/Details menu even when it has no official or map URL of its own.
+ *  - A trip with no room for sightseeing shows the "too tight for your flight times" notice instead of a plan.
  *  - The city-guide tabs follow the ARIA keyboard pattern.
  */
 async function checkInteractions(browser: import("playwright-core").Browser): Promise<string[]> {
@@ -79,6 +80,32 @@ async function checkInteractions(browser: import("playwright-core").Browser): Pr
     const row = trips.nth(i);
     if ((await row.locator(".popover > button").count()) === 0) problems.push(`day trips: "${((await row.locator("h4").textContent()) ?? "").trim()}" has no Book/Details menu`);
   }
+  // A trip with no room for sightseeing shows a friendly notice naming the fields to change, not an empty plan.
+  await page.goto(`${BASE}/planner?city=lisbon`, { waitUntil: "domcontentloaded" });
+  await page.waitForFunction(() => {
+    const b = document.querySelector(".planner-form button[type=submit]");
+    return !!b && Object.keys(b).some((k) => k.startsWith("__reactFiber"));
+  });
+  const tightDays = page.getByRole("group", { name: "Days (1–14)", exact: true });
+  for (let i = 0; i < 20 && Number((await tightDays.locator("output").innerText()).trim()) !== 1; i++) {
+    await tightDays.getByRole("button", { name: "Fewer: Days (1–14)", exact: true }).click();
+  }
+  await page.locator("details.field-details summary").click();
+  await page.getByLabel("Landing on day 1").fill("14:00");
+  await page.getByLabel("Flight home, last day").fill("18:00");
+  await page.locator(".planner-form button[type=submit]").click();
+  const notice = page.locator('.planner-empty[role="status"]');
+  try {
+    await notice.waitFor({ timeout: 10000 });
+    const text = await notice.innerText();
+    for (const want of ["too tight for your flight times", "14:00", "18:00", "Trip length", "Landing on day 1", "Flight home, last day"]) {
+      if (!text.includes(want)) problems.push(`too-tight notice does not mention "${want}": ${text.replace(/\s+/g, " ").slice(0, 120)}`);
+    }
+    if ((await page.locator(".day-card").count()) > 0) problems.push("too-tight notice: day cards are shown next to it");
+  } catch {
+    problems.push("a 1-day trip landing 14:00 with a flight home at 18:00 did not show the too-tight notice");
+  }
+
   // City-guide tabs: the ARIA keyboard pattern (arrows, Home/End, roving tabindex).
   await page.goto(`${BASE}/destinations/lisbon`, { waitUntil: "domcontentloaded" });
   await page.waitForFunction(() => {

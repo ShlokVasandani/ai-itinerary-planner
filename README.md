@@ -50,7 +50,7 @@ guides are in `node_modules/next/dist/docs/`.
 | Stress test: ~58 plans per city across all 50 cities in a real browser, checked against the raw data | `npm run stress -- --base http://localhost:3000` (`--cities a,b`, `--groups A,B,I`, `--no-tiles`); `npm run stress:dry` is the engine-only pass, no browser | a running production server and Chrome |
 
 The stress test writes `reports/stress-test.md`; its screenshots and raw JSON are generated, not committed.
-`scripts/stress/regress.ts` replays the failing scenarios on an older build to tell regressions from old bugs.
+`scripts/stress/regress.ts` replays the failing scenarios on an older build to tell regressions from old bugs. If a busy machine makes a few steps time out in a parallel run (a timeout throws a city's chain out of step and inflates the counts), re-run just those cities with `--jobs 1` and combine with `npx tsx scripts/stress/merge.ts <full.json> <rerun.json>`. `scripts/verify-browser.ts` is a person's-eye check of the main flow with real tiles (one at a time, hard-capped) for Tokyo and Lisbon.
 Map tiles are answered with a 1x1 PNG in every bulk run: **never point a bulk run at `tile.openstreetmap.org`**, it is a
 free community service. The real-tile check covers three cities, one request at a time. Run it against a production
 build (`npm run build && npm start`); `next dev` cannot download Google Fonts offline.
