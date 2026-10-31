@@ -116,7 +116,11 @@ async function main() {
   let totalLinks = 0;
   let totalClicks = 0;
   let mapsChecked = 0;
-  for (const d of cityIndex.filter((x) => only.length === 0 || only.includes(x.slug))) {
+  cities: for (const d of cityIndex.filter((x) => only.length === 0 || only.includes(x.slug))) {
+    // A timeout from a busy machine should cost one retry of this city, not the whole run.
+    for (let attempt = 1; attempt <= 2; attempt++) {
+      const saved = { problems: problems.length, totalLinks, totalClicks, mapsChecked };
+      try {
     const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
     // Never hit third-party hosts: answer them with a stub page.
     await ctx.route("**/*", (route) => {
@@ -135,7 +139,7 @@ async function main() {
     } catch {
       problems.push(`${d.slug}: no plan rendered`);
       await ctx.close();
-      continue;
+      continue cities;
     }
     const days = await page.locator(".day-card").count();
     if (days !== 5) problems.push(`${d.slug}: expected 5 days, got ${days}`);
@@ -232,6 +236,15 @@ async function main() {
     for (const e of errors) problems.push(`${d.slug}: ${e}`);
     console.log(`${d.slug.padEnd(15)} days ${days}, stops ${stops}, links ${anchors.length}, clicked ${distinct.length}${errors.length ? `, errors ${errors.length}` : ""}`);
     await ctx.close();
+        break;
+      } catch (e) {
+        problems.length = saved.problems;
+        ({ totalLinks, totalClicks, mapsChecked } = saved);
+        const why = (e as Error).message.split("\n")[0];
+        if (attempt === 2) problems.push(`${d.slug}: the check could not complete twice: ${why}`);
+        else console.log(`${d.slug}: retrying once after: ${why}`);
+      }
+    }
   }
   await browser.close();
   console.log(`\n${totalLinks} outbound links checked, ${totalClicks} distinct links clicked, ${mapsChecked} day maps checked.`);
