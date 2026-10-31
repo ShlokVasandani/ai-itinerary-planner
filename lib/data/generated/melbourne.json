@@ -1,0 +1,785 @@
+{
+  "bbox": [
+    -38.1142,
+    144.5834,
+    -37.5142,
+    145.3429
+  ],
+  "places": {
+    "acmi-australian-centre-for-the-moving-image": {
+      "coords": {
+        "lat": -37.817436,
+        "lng": 144.969068
+      },
+      "costCurrency": "AUD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.acmi.net.au/",
+      "sources": [
+        "https://www.openstreetmap.org/way/22963244",
+        "https://www.wikidata.org/wiki/Q4823962"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "brighton-bathing-boxes": {
+      "coords": {
+        "lat": -37.918512,
+        "lng": 144.987163
+      },
+      "costCurrency": "AUD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/10744721105",
+        "https://www.wikidata.org/wiki/Q113714856"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-hardware-societe": {
+      "coords": {
+        "lat": -37.820094,
+        "lng": 144.956609
+      },
+      "officialUrl": "https://hardwaresociete.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/6424366485"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-lune-croissanterie": {
+      "closedDays": [],
+      "coords": {
+        "lat": -37.814698,
+        "lng": 144.952691
+      },
+      "officialUrl": "https://lunecroissanterie.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:30",
+          "close": "17:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "08:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/14212267801"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-market-lane-coffee": {
+      "closedDays": [],
+      "coords": {
+        "lat": -37.768359,
+        "lng": 144.961765
+      },
+      "officialUrl": "https://marketlane.com.au/pages/brunswick-sydney-road-cafe",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6919633713"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-patricia-coffee-brewers": {
+      "closedDays": [
+        0,
+        6
+      ],
+      "coords": {
+        "lat": -37.814703,
+        "lng": 144.958293
+      },
+      "officialUrl": "https://www.patriciacoffee.com.au/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6806660958"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-seven-seeds": {
+      "closedDays": [],
+      "coords": {
+        "lat": -37.802835,
+        "lng": 144.959035
+      },
+      "officialUrl": "https://sevenseeds.com.au/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:00",
+          "close": "17:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "08:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/457308112"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "eureka-skydeck": {
+      "closedDays": [],
+      "coords": {
+        "lat": -37.821691,
+        "lng": 144.964525
+      },
+      "costCurrency": "AUD",
+      "costMax": 40,
+      "costMin": 30,
+      "officialUrl": "https://www.eurekaskydeck.com.au/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2776602131"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "federation-square": {
+      "closedDays": [],
+      "coords": {
+        "lat": -37.81774,
+        "lng": 144.969156
+      },
+      "costCurrency": "AUD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://fedsquare.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1098427843",
+        "https://www.wikidata.org/wiki/Q923304"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "flinders-street-station": {
+      "closedDays": [],
+      "coords": {
+        "lat": -37.818416,
+        "lng": 144.966478
+      },
+      "costCurrency": "AUD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.ptv.vic.gov.au/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4936370201",
+        "https://www.wikidata.org/wiki/Q260986"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "hosier-lane-and-the-laneways": {
+      "costCurrency": "AUD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "melbourne-cricket-ground-mcg": {
+      "coords": {
+        "lat": -37.819909,
+        "lng": 144.983225
+      },
+      "costCurrency": "AUD",
+      "costMax": 30,
+      "costMin": 30,
+      "officialUrl": "https://www.mcg.org.au/",
+      "sources": [
+        "https://www.openstreetmap.org/way/210337258",
+        "https://www.wikidata.org/wiki/Q330136"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-black-pearl": {
+      "closedDays": [],
+      "coords": {
+        "lat": -37.798073,
+        "lng": 144.978746
+      },
+      "officialUrl": "https://www.blackpearlbar.com.au/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "17:00",
+          "close": "27:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/982408032"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-cherry-bar": {
+      "coords": {
+        "lat": -37.81286,
+        "lng": 144.971342
+      },
+      "officialUrl": "http://cherrybar.com.au/",
+      "sources": [
+        "https://www.openstreetmap.org/node/660120300",
+        "https://www.wikidata.org/wiki/Q5092279"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-eau-de-vie": {
+      "coords": {
+        "lat": -37.815796,
+        "lng": 144.971587
+      },
+      "officialUrl": "https://eaudevie.com.au/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4795892997"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-section-8": {
+      "coords": {
+        "lat": -37.811746,
+        "lng": 144.965405
+      },
+      "officialUrl": "http://www.section8.com.au/",
+      "sources": [
+        "https://www.openstreetmap.org/node/600744881"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "ngv-international": {
+      "closedDays": [],
+      "coords": {
+        "lat": -37.822912,
+        "lng": 144.968655
+      },
+      "costCurrency": "AUD",
+      "costMax": 35,
+      "costMin": 0,
+      "officialUrl": "https://www.ngv.vic.gov.au/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/23764181",
+        "https://www.wikidata.org/wiki/Q1464509"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "old-melbourne-gaol": {
+      "coords": {
+        "lat": -37.807819,
+        "lng": 144.965268
+      },
+      "costCurrency": "AUD",
+      "costMax": 35,
+      "costMin": 35,
+      "officialUrl": "https://www.oldmelbournegaol.com.au/",
+      "sources": [
+        "https://www.openstreetmap.org/way/26564392",
+        "https://www.wikidata.org/wiki/Q2018436"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "queen-victoria-market": {
+      "closedDays": [
+        1,
+        3
+      ],
+      "coords": {
+        "lat": -37.807388,
+        "lng": 144.957392
+      },
+      "costCurrency": "AUD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://qvm.com.au/",
+      "openingHours": [
+        {
+          "days": "Tu,Th",
+          "open": "06:00",
+          "close": "14:00"
+        },
+        {
+          "days": "Fr",
+          "open": "06:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Sa",
+          "open": "06:00",
+          "close": "15:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/113434071",
+        "https://www.wikidata.org/wiki/Q860621"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-attica": {
+      "coords": {
+        "lat": -37.877032,
+        "lng": 144.997312
+      },
+      "costCurrency": "AUD",
+      "costMax": 500,
+      "costMin": 300,
+      "officialUrl": "http://www.attica.com.au/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1414212805",
+        "https://www.wikidata.org/wiki/Q25184541"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-chin-chin": {
+      "coords": {
+        "lat": -37.815584,
+        "lng": 144.970342
+      },
+      "costCurrency": "AUD",
+      "costMax": 90,
+      "costMin": 60,
+      "sources": [
+        "https://www.openstreetmap.org/node/5180978121"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-cumulus-inc": {
+      "coords": {
+        "lat": -37.814815,
+        "lng": 144.973027
+      },
+      "costCurrency": "AUD",
+      "costMax": 90,
+      "costMin": 50,
+      "sources": [
+        "https://www.openstreetmap.org/node/4302895907"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-d-o-c-pizza-and-mozzarella-bar": {
+      "coords": {
+        "lat": -37.82105,
+        "lng": 144.963798
+      },
+      "costCurrency": "AUD",
+      "costMax": 50,
+      "costMin": 30,
+      "officialUrl": "https://docgroup.net/",
+      "sources": [
+        "https://www.openstreetmap.org/node/9301704740"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-flower-drum": {
+      "coords": {
+        "lat": -37.811867,
+        "lng": 144.969217
+      },
+      "costCurrency": "AUD",
+      "costMax": 200,
+      "costMin": 120,
+      "officialUrl": "http://www.flower-drum.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/597923767"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-hellenic-republic": {
+      "costCurrency": "AUD",
+      "costMax": 80,
+      "costMin": 50
+    },
+    "r-mamasita": {
+      "coords": {
+        "lat": -37.813698,
+        "lng": 144.973356
+      },
+      "costCurrency": "AUD",
+      "costMax": 70,
+      "costMin": 40,
+      "sources": [
+        "https://www.openstreetmap.org/node/3424227693"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-movida": {
+      "closedDays": [],
+      "coords": {
+        "lat": -37.816589,
+        "lng": 144.969159
+      },
+      "costCurrency": "AUD",
+      "costMax": 90,
+      "costMin": 50,
+      "officialUrl": "https://www.movida.com.au/",
+      "openingHours": [
+        {
+          "days": "Mo,Tu",
+          "open": "12:00",
+          "close": "22:00"
+        },
+        {
+          "days": "We-Su",
+          "open": "12:00",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4936374478"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-pellegrini-s-espresso-bar": {
+      "coords": {
+        "lat": -37.811722,
+        "lng": 144.971194
+      },
+      "costCurrency": "AUD",
+      "costMax": 40,
+      "costMin": 20,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q58481453"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-rice-paper-scissors": {
+      "coords": {
+        "lat": -37.797845,
+        "lng": 144.978284
+      },
+      "costCurrency": "AUD",
+      "costMax": 60,
+      "costMin": 35,
+      "officialUrl": "https://ricepaperscissors.com.au/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1208963043"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-supernormal": {
+      "coords": {
+        "lat": -37.815959,
+        "lng": 144.968326
+      },
+      "costCurrency": "AUD",
+      "costMax": 90,
+      "costMin": 50,
+      "sources": [
+        "https://www.openstreetmap.org/node/4162603500"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-tipo-00": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": -37.813546,
+        "lng": 144.961987
+      },
+      "costCurrency": "AUD",
+      "costMax": 80,
+      "costMin": 50,
+      "officialUrl": "https://tipo00.com.au/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "11:30",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4165983489"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "royal-botanic-gardens-victoria": {
+      "coords": {
+        "lat": -37.829456,
+        "lng": 144.981315
+      },
+      "costCurrency": "AUD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.rbg.vic.gov.au/",
+      "sources": [
+        "https://www.openstreetmap.org/way/45422277",
+        "https://www.wikidata.org/wiki/Q101433843"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "royal-exhibition-building-and-carlton-gardens": {
+      "coords": {
+        "lat": -37.806258,
+        "lng": 144.971233
+      },
+      "costCurrency": "AUD",
+      "costMax": 18,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/relation/6623509"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-brunswick-street": {
+      "coords": {
+        "lat": -37.797054,
+        "lng": 144.97869
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1029898634"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-chapel-street": {
+      "coords": {
+        "lat": -37.862657,
+        "lng": 144.991391
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1253159372",
+        "https://www.wikidata.org/wiki/Q5073052"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-queen-victoria-market": {
+      "closedDays": [
+        1,
+        3
+      ],
+      "coords": {
+        "lat": -37.807388,
+        "lng": 144.957392
+      },
+      "officialUrl": "https://qvm.com.au/",
+      "openingHours": [
+        {
+          "days": "Tu,Th",
+          "open": "06:00",
+          "close": "14:00"
+        },
+        {
+          "days": "Fr",
+          "open": "06:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Sa",
+          "open": "06:00",
+          "close": "15:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/113434071",
+        "https://www.wikidata.org/wiki/Q860621"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-south-melbourne-market": {
+      "closedDays": [
+        1,
+        2,
+        4
+      ],
+      "coords": {
+        "lat": -37.832173,
+        "lng": 144.956488
+      },
+      "officialUrl": "https://www.southmelbournemarket.com.au/",
+      "openingHours": [
+        {
+          "days": "We,Sa,Su",
+          "open": "08:00",
+          "close": "16:00"
+        },
+        {
+          "days": "Fr",
+          "open": "08:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/26104523",
+        "https://www.wikidata.org/wiki/Q7567936"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "shrine-of-remembrance": {
+      "coords": {
+        "lat": -37.830531,
+        "lng": 144.973447
+      },
+      "costCurrency": "AUD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.shrine.org.au/Home",
+      "sources": [
+        "https://www.openstreetmap.org/way/24590190",
+        "https://www.wikidata.org/wiki/Q1369544"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "st-kilda-beach-and-pier": {
+      "coords": {
+        "lat": -37.867839,
+        "lng": 144.973971
+      },
+      "costCurrency": "AUD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q7593902"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-great-ocean-road": {
+      "coords": {
+        "lat": -38.461365,
+        "lng": 144.105904
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/724638789"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-yarra-valley": {
+      "coords": {
+        "lat": -37.754985,
+        "lng": 145.522537
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/10939118619",
+        "https://www.wikidata.org/wiki/Q1400563"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-afl-game-at-the-mcg": {
+      "costCurrency": "AUD",
+      "costMax": 100,
+      "costMin": 30
+    },
+    "x-city-circle-tram": {
+      "costCurrency": "AUD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-coffee-tour": {
+      "costCurrency": "AUD",
+      "costMax": 90,
+      "costMin": 60
+    },
+    "x-laneways-street-art-tour": {
+      "costCurrency": "AUD",
+      "costMax": 60,
+      "costMin": 30
+    },
+    "x-rooftop-cinema-or-bar": {
+      "costCurrency": "AUD",
+      "costMax": 35,
+      "costMin": 20
+    }
+  },
+  "neighborhoods": {
+    "brighton": {
+      "coords": {
+        "lat": -37.908196,
+        "lng": 144.995799
+      },
+      "radiusKm": 3
+    },
+    "carlton": {
+      "coords": {
+        "lat": -37.800423,
+        "lng": 144.968434
+      },
+      "radiusKm": 1.15
+    },
+    "cbd-and-the-laneways": {
+      "coords": {
+        "lat": -37.810248,
+        "lng": 144.966402
+      },
+      "radiusKm": 0.8
+    },
+    "fitzroy-and-collingwood": {
+      "coords": {
+        "lat": -37.803275,
+        "lng": 144.970042
+      },
+      "radiusKm": 0.8
+    },
+    "richmond-and-abbotsford": {
+      "coords": {
+        "lat": -37.819909,
+        "lng": 144.983225
+      },
+      "radiusKm": 0.8
+    },
+    "south-yarra-and-prahran": {
+      "coords": {
+        "lat": -37.840881,
+        "lng": 144.982051
+      },
+      "radiusKm": 0.8
+    },
+    "southbank-and-federation-square": {
+      "coords": {
+        "lat": -37.819945,
+        "lng": 144.967851
+      },
+      "radiusKm": 0.8
+    },
+    "st-kilda": {
+      "coords": {
+        "lat": -37.863826,
+        "lng": 144.981637
+      },
+      "radiusKm": 1.66
+    }
+  }
+}

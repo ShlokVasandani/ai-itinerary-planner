@@ -1,0 +1,625 @@
+{
+  "bbox": [
+    37.6756,
+    23.3543,
+    38.2756,
+    24.1154
+  ],
+  "places": {
+    "acropolis-and-the-parthenon": {
+      "coords": {
+        "lat": 37.971667,
+        "lng": 23.726111
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 30,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q131013"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "acropolis-museum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.968533,
+        "lng": 23.728471
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 20,
+      "officialUrl": "https://www.theacropolismuseum.gr/",
+      "openingHours": [
+        {
+          "days": "Mo",
+          "open": "08:00",
+          "close": "16:00"
+        },
+        {
+          "days": "Tu-Th,Sa,Su",
+          "open": "08:00",
+          "close": "20:00"
+        },
+        {
+          "days": "Fr",
+          "open": "08:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/983921252",
+        "https://www.wikidata.org/wiki/Q421084"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "ancient-agora-and-the-temple-of-hephaestus": {
+      "coords": {
+        "lat": 37.975,
+        "lng": 23.7225
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 10,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q395367"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "benaki-museum-of-greek-culture": {
+      "coords": {
+        "lat": 37.975939,
+        "lng": 23.740408
+      },
+      "costCurrency": "EUR",
+      "costMax": 12,
+      "costMin": 12,
+      "officialUrl": "https://www.benaki.org/index.php?lang=en",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q816669"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-ariston": {
+      "coords": {
+        "lat": 37.995273,
+        "lng": 23.72546
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/1628420241"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-lukumades": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.976948,
+        "lng": 23.727576
+      },
+      "officialUrl": "https://lukumades.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "08:00",
+          "close": "25:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "08:00",
+          "close": "26:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/9675835944"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-zonar-s": {
+      "coords": {
+        "lat": 37.969432,
+        "lng": 23.722365
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/303308728"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "changing-of-the-guard-at-syntagma": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "filopappou-hill": {
+      "coords": {
+        "lat": 37.96957,
+        "lng": 23.719261
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/31621183"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "hadrian-s-library": {
+      "coords": {
+        "lat": 37.975399,
+        "lng": 23.726571
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 10,
+      "sources": [
+        "https://www.openstreetmap.org/way/729674865",
+        "https://www.wikidata.org/wiki/Q1455447"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "lycabettus-hill": {
+      "coords": {
+        "lat": 37.980316,
+        "lng": 23.744006
+      },
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/421626322"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "monastiraki-flea-market-and-square": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "n-a-for-athens": {
+      "coords": {
+        "lat": 37.976883,
+        "lng": 23.725856
+      },
+      "officialUrl": "https://aforathens.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/251787098",
+        "https://www.wikidata.org/wiki/Q111400843"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-brettos": {
+      "coords": {
+        "lat": 37.971709,
+        "lng": 23.730525
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/9101420017"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-couleur-locale": {
+      "coords": {
+        "lat": 37.976578,
+        "lng": 23.724416
+      },
+      "officialUrl": "https://couleurlocaleathens.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4335800498"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-gazarte": {
+      "coords": {
+        "lat": 37.979022,
+        "lng": 23.712392
+      },
+      "officialUrl": "https://gazarte.gr/",
+      "sources": [
+        "https://www.openstreetmap.org/way/456415687"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "national-archaeological-museum": {
+      "coords": {
+        "lat": 37.989012,
+        "lng": 23.732958
+      },
+      "costCurrency": "EUR",
+      "costMax": 12,
+      "costMin": 12,
+      "officialUrl": "https://namuseum.gr/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/2828",
+        "https://www.wikidata.org/wiki/Q637187"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "panathenaic-stadium": {
+      "coords": {
+        "lat": 37.968436,
+        "lng": 23.740945
+      },
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 10,
+      "sources": [
+        "https://www.openstreetmap.org/relation/19023844",
+        "https://www.wikidata.org/wiki/Q208811"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "plaka-and-anafiotika": {
+      "coords": {
+        "lat": 37.972222,
+        "lng": 23.730556
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.cityofathens.gr",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1231816"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-bairaktaris": {
+      "coords": {
+        "lat": 37.976141,
+        "lng": 23.726692
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 12,
+      "officialUrl": "https://www.bairaktaris.gr/",
+      "sources": [
+        "https://www.openstreetmap.org/node/6864850185"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-cafe-avissinia": {
+      "coords": {
+        "lat": 37.976692,
+        "lng": 23.723657
+      },
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20,
+      "sources": [
+        "https://www.openstreetmap.org/node/2056022729"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-diporto-agoras": {
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 10
+    },
+    "r-karamanlidika-tou-fani": {
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20
+    },
+    "r-kuzina": {
+      "coords": {
+        "lat": 37.976437,
+        "lng": 23.722062
+      },
+      "costCurrency": "EUR",
+      "costMax": 55,
+      "costMin": 35,
+      "sources": [
+        "https://www.openstreetmap.org/node/2836966900"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-mani-mani": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.901413,
+        "lng": 23.750062
+      },
+      "costCurrency": "EUR",
+      "costMax": 45,
+      "costMin": 30,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "13:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/714788132"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-oikonomou": {
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 15
+    },
+    "r-spondi": {
+      "coords": {
+        "lat": 37.965029,
+        "lng": 23.74304
+      },
+      "costCurrency": "EUR",
+      "costMax": 250,
+      "costMin": 180,
+      "sources": [
+        "https://www.openstreetmap.org/node/2651969795",
+        "https://www.wikidata.org/wiki/Q88396443"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-strofi": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 37.969113,
+        "lng": 23.724523
+      },
+      "costCurrency": "EUR",
+      "costMax": 40,
+      "costMin": 25,
+      "officialUrl": "https://www.strofi.gr/",
+      "openingHours": [
+        {
+          "days": "Tu-Su",
+          "open": "12:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2793051304"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-taverna-psaras": {
+      "costCurrency": "EUR",
+      "costMax": 40,
+      "costMin": 25
+    },
+    "r-thanasis": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.976264,
+        "lng": 23.726356
+      },
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 5,
+      "officialUrl": "https://souvlaki-othanasis.gr/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "26:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2475212272"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-tzitzikas-kai-mermigas": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.975332,
+        "lng": 23.732682
+      },
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20,
+      "officialUrl": "https://www.tzitzikasmermigas.gr/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:30",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3351767296"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "roman-agora-and-the-tower-of-the-winds": {
+      "coords": {
+        "lat": 37.974167,
+        "lng": 23.726111
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 10,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1435551"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-athens-central-market-varvakios": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 37.980373,
+        "lng": 23.727624
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "07:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/152257802",
+        "https://www.wikidata.org/wiki/Q755345"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-ermou-street": {
+      "coords": {
+        "lat": 37.976639,
+        "lng": 23.725722
+      },
+      "sources": [
+        "https://www.wikidata.org/wiki/Q11112815"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-monastiraki-flea-market": {
+      "coords": {
+        "lat": 37.976179,
+        "lng": 23.724748
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5605331222"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-aegina": {
+      "coords": {
+        "lat": 37.724369,
+        "lng": 23.493811
+      },
+      "officialUrl": "http://www.discoveraegina.gr/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/543490",
+        "https://www.wikidata.org/wiki/Q191082"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-cape-sounion": {
+      "coords": {
+        "lat": 37.650107,
+        "lng": 24.026282
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4594305300",
+        "https://www.wikidata.org/wiki/Q1136637"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-delphi": {
+      "coords": {
+        "lat": 38.481154,
+        "lng": 22.500549
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/145690044",
+        "https://www.wikidata.org/wiki/Q75459"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "temple-of-olympian-zeus": {
+      "closedDays": [],
+      "coords": {
+        "lat": 37.969437,
+        "lng": 23.733096
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 10,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "18:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/63765671",
+        "https://www.wikidata.org/wiki/Q1123019"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-acropolis-at-opening-time": {
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 30
+    },
+    "x-athens-street-food-tour": {
+      "costCurrency": "EUR",
+      "costMax": 90,
+      "costMin": 60
+    },
+    "x-greek-cooking-class": {
+      "costCurrency": "EUR",
+      "costMax": 100,
+      "costMin": 60
+    },
+    "x-rooftop-drinks-in-monastiraki": {
+      "costCurrency": "EUR",
+      "costMax": 18,
+      "costMin": 10
+    },
+    "x-sunset-at-lycabettus": {
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 10
+    }
+  },
+  "neighborhoods": {
+    "exarchia": {
+      "coords": {
+        "lat": 37.986705,
+        "lng": 23.734873
+      },
+      "radiusKm": 0.59
+    },
+    "kolonaki": {
+      "coords": {
+        "lat": 37.976914,
+        "lng": 23.7408
+      },
+      "radiusKm": 0.4
+    },
+    "koukaki-and-makrygianni": {
+      "coords": {
+        "lat": 37.952157,
+        "lng": 23.730579
+      },
+      "radiusKm": 0.8
+    },
+    "monastiraki": {
+      "coords": {
+        "lat": 37.976431,
+        "lng": 23.725905
+      },
+      "radiusKm": 0.44
+    },
+    "plaka-and-anafiotika": {
+      "coords": {
+        "lat": 37.971709,
+        "lng": 23.730525
+      },
+      "radiusKm": 0.8
+    },
+    "psyrri": {
+      "coords": {
+        "lat": 37.978421,
+        "lng": 23.724942
+      },
+      "radiusKm": 0.4
+    },
+    "syntagma": {
+      "coords": {
+        "lat": 37.975495,
+        "lng": 23.735668
+      },
+      "radiusKm": 0.71
+    },
+    "thissio-and-kerameikos": {
+      "coords": {
+        "lat": 37.976437,
+        "lng": 23.722062
+      },
+      "radiusKm": 0.8
+    }
+  }
+}

@@ -1,0 +1,561 @@
+{
+  "bbox": [
+    24.7743,
+    54.8573,
+    25.3743,
+    55.5198
+  ],
+  "places": {
+    "al-fahidi-neighbourhood": {
+      "coords": {
+        "lat": 25.26423,
+        "lng": 55.30017
+      },
+      "costCurrency": "AED",
+      "costMax": 30,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/542042595",
+        "https://www.wikidata.org/wiki/Q2094764"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "burj-khalifa": {
+      "coords": {
+        "lat": 25.197034,
+        "lng": 55.274133
+      },
+      "costCurrency": "AED",
+      "costMax": 500,
+      "costMin": 169,
+      "officialUrl": "https://www.burjkhalifa.ae/",
+      "sources": [
+        "https://www.openstreetmap.org/way/446646206",
+        "https://www.wikidata.org/wiki/Q12495"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-cafe-bateel": {
+      "coords": {
+        "lat": 25.113602,
+        "lng": 55.139539
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/14049494536"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-karak-house": {
+      "coords": {
+        "lat": 25.191001,
+        "lng": 55.276702
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/499993699"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-tashas": {
+      "coords": {
+        "lat": 25.13051,
+        "lng": 55.196559
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/10183349276"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "desert-safari": {
+      "costCurrency": "AED",
+      "costMax": 450,
+      "costMin": 250
+    },
+    "dubai-creek-abra": {
+      "costCurrency": "AED",
+      "costMax": 1,
+      "costMin": 1
+    },
+    "dubai-fountain": {
+      "coords": {
+        "lat": 25.195186,
+        "lng": 55.275061
+      },
+      "costCurrency": "AED",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2384491"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "dubai-frame": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.235456,
+        "lng": 55.300367
+      },
+      "officialUrl": "https://www.thedubaiframe.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/386649647",
+        "https://www.wikidata.org/wiki/Q20386392"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "gold-souk": {
+      "coords": {
+        "lat": 25.26998,
+        "lng": 55.298125
+      },
+      "costCurrency": "AED",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/28703068"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "jumeirah-mosque": {
+      "closedDays": [
+        5
+      ],
+      "coords": {
+        "lat": 25.234063,
+        "lng": 55.265482
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Th,Sa,Su",
+          "open": "09:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/217936544"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "museum-of-the-future": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.219154,
+        "lng": 55.281875
+      },
+      "costCurrency": "AED",
+      "costMax": 149,
+      "costMin": 149,
+      "officialUrl": "https://museumofthefuture.ae/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "21:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1054289435",
+        "https://www.wikidata.org/wiki/Q22948398"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-skyview-bar": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.141433,
+        "lng": 55.18515
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "18:30",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1173799867"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "palm-jumeirah-view": {
+      "coords": {
+        "lat": 25.117327,
+        "lng": 55.135097
+      },
+      "costCurrency": "AED",
+      "costMax": 150,
+      "costMin": 100,
+      "sources": [
+        "https://www.openstreetmap.org/way/874795235",
+        "https://www.wikidata.org/wiki/Q277294"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-al-fanar": {
+      "coords": {
+        "lat": 25.215301,
+        "lng": 55.251111
+      },
+      "costCurrency": "AED",
+      "costMax": 150,
+      "costMin": 100,
+      "sources": [
+        "https://www.openstreetmap.org/node/5445758321"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-al-mallah": {
+      "coords": {
+        "lat": 25.236703,
+        "lng": 55.276939
+      },
+      "costCurrency": "AED",
+      "costMax": 25,
+      "costMin": 15,
+      "sources": [
+        "https://www.openstreetmap.org/node/4904955745"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-al-safadi": {
+      "coords": {
+        "lat": 25.207551,
+        "lng": 55.27368
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4725421661"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-al-ustad-special-kabab": {
+      "coords": {
+        "lat": 25.259801,
+        "lng": 55.298833
+      },
+      "costCurrency": "AED",
+      "costMax": 50,
+      "costMin": 30,
+      "sources": [
+        "https://www.openstreetmap.org/node/7025822785"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-arabian-tea-house": {
+      "coords": {
+        "lat": 25.26336,
+        "lng": 55.299719
+      },
+      "costCurrency": "AED",
+      "costMax": 90,
+      "costMin": 60,
+      "sources": [
+        "https://www.openstreetmap.org/way/260895322"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-bu-qtair": {
+      "coords": {
+        "lat": 25.151509,
+        "lng": 55.197167
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4219382992"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-gold-souk-cafeteria": {
+      "coords": {
+        "lat": 25.266667,
+        "lng": 55.316667
+      },
+      "costCurrency": "AED",
+      "costMax": 20,
+      "costMin": 15,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q3021334"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-pierchic": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.134324,
+        "lng": 55.181112
+      },
+      "costCurrency": "AED",
+      "costMin": 500,
+      "officialUrl": "https://www.jumeirah.com/en/dine/dubai/al-qasr-pierchic",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "13:00",
+          "close": "14:30"
+        },
+        {
+          "days": "Mo-Su",
+          "open": "18:30",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/128677654"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-ravi": {
+      "coords": {
+        "lat": 25.286722,
+        "lng": 55.370351
+      },
+      "costCurrency": "AED",
+      "costMax": 35,
+      "costMin": 20,
+      "sources": [
+        "https://www.openstreetmap.org/node/11827111822"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-sikka-cafe": {
+      "coords": {
+        "lat": 25.227531,
+        "lng": 55.257377
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/7279291487"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-zaroob": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.213508,
+        "lng": 55.277677
+      },
+      "officialUrl": "https://www.zaroob.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5273490734"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-zheng-he": {
+      "costCurrency": "AED",
+      "costMax": 350,
+      "costMin": 250
+    },
+    "s-gold-souk": {
+      "coords": {
+        "lat": 25.26998,
+        "lng": 55.298125
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/28703068"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-mall-of-the-emirates": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.117982,
+        "lng": 55.200375
+      },
+      "officialUrl": "http://www.malloftheemirates.com/",
+      "openingHours": [
+        {
+          "days": "Th,Fr",
+          "open": "10:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Mo-We,Sa,Su",
+          "open": "10:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/175115425",
+        "https://www.wikidata.org/wiki/Q1066448"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-souk-madinat-jumeirah": {
+      "coords": {
+        "lat": 25.133424,
+        "lng": 55.185786
+      },
+      "officialUrl": "https://www.jumeirah.com/en/hotels-resorts/dubai/madinat-jumeirah/facilities/souk-madinat-jumeirah/",
+      "sources": [
+        "https://www.openstreetmap.org/way/202638341"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-spice-souk": {
+      "coords": {
+        "lat": 25.267493,
+        "lng": 55.297076
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/542042596",
+        "https://www.wikidata.org/wiki/Q5310610"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-the-dubai-mall": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.197044,
+        "lng": 55.278952
+      },
+      "officialUrl": "https://www.thedubaimall.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "26:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/18195959",
+        "https://www.wikidata.org/wiki/Q1133309"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "spice-souk-deira": {
+      "coords": {
+        "lat": 25.267493,
+        "lng": 55.297076
+      },
+      "costCurrency": "AED",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/542042596",
+        "https://www.wikidata.org/wiki/Q5310610"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-abu-dhabi": {
+      "coords": {
+        "lat": 24.453835,
+        "lng": 54.377401
+      },
+      "officialUrl": "https://www.tamm.abudhabi/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/4479763",
+        "https://www.wikidata.org/wiki/Q1519"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-hatta": {},
+    "t-sharjah": {
+      "coords": {
+        "lat": 25.269185,
+        "lng": 55.693481
+      },
+      "officialUrl": "https://www.sharjah.ae/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/3766486",
+        "https://www.wikidata.org/wiki/Q188810"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "the-dubai-mall-dubai-aquarium": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.197044,
+        "lng": 55.278952
+      },
+      "officialUrl": "https://www.thedubaimall.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "26:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/18195959",
+        "https://www.wikidata.org/wiki/Q1133309"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-alserkal-avenue-gallery-walk": {
+      "costCurrency": "AED",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-burj-al-arab-afternoon-tea": {
+      "costCurrency": "AED",
+      "costMin": 595
+    },
+    "x-desert-safari-and-bedouin-camp-dinner": {
+      "costCurrency": "AED",
+      "costMax": 450,
+      "costMin": 250
+    },
+    "x-dhow-dinner-cruise-on-the-marina-or-creek": {
+      "costCurrency": "AED",
+      "costMax": 250,
+      "costMin": 150
+    },
+    "x-ski-dubai-indoor-snow-park": {
+      "costCurrency": "AED",
+      "costMin": 220
+    }
+  },
+  "neighborhoods": {
+    "al-fahidi": {
+      "coords": {
+        "lat": 25.26423,
+        "lng": 55.30017
+      },
+      "radiusKm": 0.4
+    },
+    "alserkal": {
+      "coords": {
+        "lat": 25.235456,
+        "lng": 55.300367
+      },
+      "radiusKm": 0.8
+    },
+    "deira": {
+      "coords": {
+        "lat": 25.237522,
+        "lng": 55.285378
+      },
+      "radiusKm": 0.8
+    },
+    "downtown-dubai": {
+      "coords": {
+        "lat": 25.194843,
+        "lng": 55.278195
+      },
+      "radiusKm": 1.57
+    },
+    "dubai-marina": {
+      "coords": {
+        "lat": 25.078641,
+        "lng": 55.135252
+      },
+      "radiusKm": 2.33
+    },
+    "jumeirah": {
+      "coords": {
+        "lat": 25.199693,
+        "lng": 55.246775
+      },
+      "radiusKm": 0.8
+    }
+  }
+}

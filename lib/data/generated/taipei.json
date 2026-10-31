@@ -1,0 +1,636 @@
+{
+  "bbox": [
+    24.7375,
+    121.2326,
+    25.3375,
+    121.8948
+  ],
+  "places": {
+    "228-peace-memorial-park": {
+      "coords": {
+        "lat": 25.042337,
+        "lng": 121.512325
+      },
+      "costCurrency": "TWD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/2702182552"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "beitou-thermal-valley-and-hot-springs": {
+      "costCurrency": "TWD",
+      "costMax": 800,
+      "costMin": 150
+    },
+    "bopiliao-old-street": {
+      "costCurrency": "TWD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "c-chun-shui-tang": {
+      "coords": {
+        "lat": 25.044622,
+        "lng": 121.560952
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/7836896786"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-fong-da-coffee": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.042557,
+        "lng": 121.506344
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4569821975"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-ice-monster": {
+      "coords": {
+        "lat": 25.038283,
+        "lng": 121.567241
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4842666124"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-smoothie-house": {
+      "coords": {
+        "lat": 25.032526,
+        "lng": 121.52982
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/3785976828"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-wistaria-tea-house": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.024629,
+        "lng": 121.534247
+      },
+      "officialUrl": "http://www.wistariateahouse.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/360117687",
+        "https://www.wikidata.org/wiki/Q8027740"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "chiang-kai-shek-memorial-hall": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.034576,
+        "lng": 121.521781
+      },
+      "costCurrency": "TWD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.cksmh.gov.tw/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1052759757",
+        "https://www.wikidata.org/wiki/Q540794"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "dihua-street": {
+      "coords": {
+        "lat": 25.056173,
+        "lng": 121.510216
+      },
+      "costCurrency": "TWD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/relation/7362354"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "elephant-mountain-xiangshan": {
+      "coords": {
+        "lat": 25.026541,
+        "lng": 121.575542
+      },
+      "costCurrency": "TWD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/274937904",
+        "https://www.wikidata.org/wiki/Q15919621"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "huashan-1914-creative-park": {
+      "coords": {
+        "lat": 25.044609,
+        "lng": 121.529183
+      },
+      "costCurrency": "TWD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.huashan1914.com/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/5177809",
+        "https://www.wikidata.org/wiki/Q14594864"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "longshan-temple": {
+      "coords": {
+        "lat": 25.035284,
+        "lng": 121.499581
+      },
+      "costCurrency": "TWD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/3639530981",
+        "https://www.wikidata.org/wiki/Q698620"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "maokong-gondola-and-tea-houses": {
+      "coords": {
+        "lat": 24.995833,
+        "lng": 121.576111
+      },
+      "costCurrency": "TWD",
+      "costMax": 120,
+      "costMin": 70,
+      "officialUrl": "https://www.gondola.taipei",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q710925"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-draft-land": {
+      "coords": {
+        "lat": 25.0411,
+        "lng": 121.554041
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5775180155"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-huashan-1914-live-music-venues": {
+      "coords": {
+        "lat": 25.0442,
+        "lng": 121.5294
+      }
+    },
+    "n-revolver-taipei": {
+      "coords": {
+        "lat": 25.034266,
+        "lng": 121.517438
+      },
+      "officialUrl": "https://www.revolver.tw/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4637537195"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-ximending-pedestrian-zone": {
+      "coords": {
+        "lat": 25.0421,
+        "lng": 121.5081
+      }
+    },
+    "national-palace-museum": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 25.101574,
+        "lng": 121.548862
+      },
+      "costCurrency": "TWD",
+      "costMax": 350,
+      "costMin": 350,
+      "officialUrl": "https://www.npm.gov.tw/",
+      "openingHours": [
+        {
+          "days": "Tu-Su",
+          "open": "09:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/827791918",
+        "https://www.wikidata.org/wiki/Q540668"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-addiction-aquatic-development": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.066694,
+        "lng": 121.536934
+      },
+      "costCurrency": "TWD",
+      "costMax": 800,
+      "costMin": 400,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4264711889"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-ay-chung-flour-rice-noodle": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.043318,
+        "lng": 121.507686
+      },
+      "costCurrency": "TWD",
+      "costMax": 100,
+      "costMin": 65,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2572568042"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-din-tai-fung-xinyi-road": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.039713,
+        "lng": 121.566349
+      },
+      "costCurrency": "TWD",
+      "costMax": 700,
+      "costMin": 400,
+      "officialUrl": "https://www.dintaifung.com.tw/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:00",
+          "close": "21:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4111818890"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-fuhang-soy-milk": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.044206,
+        "lng": 121.524774
+      },
+      "costCurrency": "TWD",
+      "costMax": 150,
+      "costMin": 80,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "05:30",
+          "close": "12:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2861307508"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-fuzhou-shizu-pepper-buns": {
+      "costCurrency": "TWD",
+      "costMax": 100,
+      "costMin": 60
+    },
+    "r-jin-feng-braised-pork-rice": {
+      "costCurrency": "TWD",
+      "costMax": 150,
+      "costMin": 80
+    },
+    "r-lan-jia-gua-bao": {
+      "coords": {
+        "lat": 25.015695,
+        "lng": 121.532575
+      },
+      "costCurrency": "TWD",
+      "costMax": 120,
+      "costMin": 60,
+      "sources": [
+        "https://www.openstreetmap.org/node/3867798199"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-lin-dong-fang-beef-noodle": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 25.047221,
+        "lng": 121.543048
+      },
+      "costCurrency": "TWD",
+      "costMax": 350,
+      "costMin": 200,
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "11:00",
+          "close": "27:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6316855688"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-mume": {
+      "coords": {
+        "lat": 25.036302,
+        "lng": 121.54804
+      },
+      "costCurrency": "TWD",
+      "costMax": 5000,
+      "costMin": 3000,
+      "sources": [
+        "https://www.openstreetmap.org/node/8145680565"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-raw": {
+      "coords": {
+        "lat": 25.08281,
+        "lng": 121.559455
+      },
+      "costCurrency": "TWD",
+      "costMax": 5000,
+      "costMin": 3000,
+      "sources": [
+        "https://www.openstreetmap.org/node/5477790364"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-shin-yeh-taiwanese-cuisine": {
+      "costCurrency": "TWD",
+      "costMax": 1200,
+      "costMin": 600
+    },
+    "r-yong-kang-beef-noodle": {
+      "coords": {
+        "lat": 25.03292,
+        "lng": 121.528083
+      },
+      "costCurrency": "TWD",
+      "costMax": 400,
+      "costMin": 250,
+      "officialUrl": "https://beefnoodle-master.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/3656220731"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-dihua-street": {
+      "coords": {
+        "lat": 25.056173,
+        "lng": 121.510216
+      },
+      "sources": [
+        "https://www.openstreetmap.org/relation/7362354"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-guanghua-digital-plaza": {
+      "coords": {
+        "lat": 25.045243,
+        "lng": 121.532156
+      },
+      "officialUrl": "https://www.gh3c.com.tw/",
+      "sources": [
+        "https://www.openstreetmap.org/way/829224938",
+        "https://www.wikidata.org/wiki/Q697187"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-ximending": {
+      "coords": {
+        "lat": 25.045199,
+        "lng": 121.505741
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/232678748"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "shilin-night-market": {
+      "coords": {
+        "lat": 25.088389,
+        "lng": 121.524299
+      },
+      "costCurrency": "TWD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/262526188"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-jiufen-and-shifen": {
+      "coords": {
+        "lat": 25.107,
+        "lng": 121.843
+      },
+      "sources": [
+        "https://www.wikidata.org/wiki/Q31093"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-tamsui": {
+      "coords": {
+        "lat": 25.181304,
+        "lng": 121.453148
+      },
+      "officialUrl": "https://www.tamsui.ntpc.gov.tw/home.jsp?id=fc3450f721db03e1",
+      "sources": [
+        "https://www.openstreetmap.org/relation/1296139",
+        "https://www.wikidata.org/wiki/Q570509"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-taroko-gorge": {
+      "coords": {
+        "lat": 24.177,
+        "lng": 121.5195
+      },
+      "sources": [
+        "https://www.wikidata.org/wiki/Q101217786"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-yangmingshan-national-park": {
+      "coords": {
+        "lat": 25.180567,
+        "lng": 121.552701
+      },
+      "officialUrl": "https://www.ymsnp.gov.tw/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/3518719",
+        "https://www.wikidata.org/wiki/Q709029"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "taipei-101": {
+      "coords": {
+        "lat": 25.033835,
+        "lng": 121.564499
+      },
+      "costCurrency": "TWD",
+      "costMax": 700,
+      "costMin": 600,
+      "officialUrl": "https://www.taipei-101.com.tw/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1159328965",
+        "https://www.wikidata.org/wiki/Q83101"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-beitou-hot-spring-soak": {
+      "costCurrency": "TWD",
+      "costMax": 800,
+      "costMin": 150
+    },
+    "x-maokong-tea-tasting": {
+      "costCurrency": "TWD",
+      "costMax": 800,
+      "costMin": 300
+    },
+    "x-night-market-crawl": {
+      "costCurrency": "TWD",
+      "costMax": 600,
+      "costMin": 300
+    },
+    "x-taipei-101-sunset": {
+      "costCurrency": "TWD",
+      "costMax": 700,
+      "costMin": 600
+    },
+    "x-taiwanese-cooking-class": {
+      "costCurrency": "TWD",
+      "costMax": 2500,
+      "costMin": 1500
+    },
+    "xiahai-city-god-temple": {
+      "coords": {
+        "lat": 25.055626,
+        "lng": 121.51021
+      },
+      "costCurrency": "TWD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.tpecitygod.org/",
+      "sources": [
+        "https://www.openstreetmap.org/way/201280869",
+        "https://www.wikidata.org/wiki/Q10937179"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "ximending": {
+      "coords": {
+        "lat": 25.045199,
+        "lng": 121.505741
+      },
+      "costCurrency": "TWD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/232678748"
+      ],
+      "verifiedAt": "2026-10-19"
+    }
+  },
+  "neighborhoods": {
+    "beitou": {
+      "coords": {
+        "lat": 25.132419,
+        "lng": 121.501379
+      },
+      "radiusKm": 3
+    },
+    "da-an-and-yongkang": {
+      "coords": {
+        "lat": 25.032646,
+        "lng": 121.545049
+      },
+      "radiusKm": 0.8
+    },
+    "datong-and-dadaocheng": {
+      "coords": {
+        "lat": 25.055991,
+        "lng": 121.510214
+      },
+      "radiusKm": 0.8
+    },
+    "shilin": {
+      "coords": {
+        "lat": 25.09184,
+        "lng": 121.524207
+      },
+      "radiusKm": 3
+    },
+    "wanhua-and-ximending": {
+      "coords": {
+        "lat": 25.042311,
+        "lng": 121.505019
+      },
+      "radiusKm": 0.8
+    },
+    "xinyi": {
+      "coords": {
+        "lat": 25.033345,
+        "lng": 121.566896
+      },
+      "radiusKm": 3
+    },
+    "zhongzheng-old-town": {
+      "coords": {
+        "lat": 25.032361,
+        "lng": 121.518267
+      },
+      "radiusKm": 2.83
+    }
+  }
+}

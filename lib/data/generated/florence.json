@@ -1,0 +1,733 @@
+{
+  "bbox": [
+    43.4698,
+    10.8402,
+    44.0698,
+    11.6711
+  ],
+  "places": {
+    "accademia-gallery-michelangelo-s-david": {
+      "coords": {
+        "lat": 43.776944,
+        "lng": 11.258889
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 16,
+      "officialUrl": "https://www.galleriaaccademiafirenze.it/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q10855544"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "bargello-national-museum": {
+      "coords": {
+        "lat": 43.770398,
+        "lng": 11.258008
+      },
+      "costCurrency": "EUR",
+      "costMax": 9,
+      "costMin": 9,
+      "officialUrl": "https://bargellomusei.it./en/museum/museo-nazionale-del-bargello",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q388448"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "basilica-of-san-miniato-al-monte": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "c-caffe-gilli": {
+      "coords": {
+        "lat": 43.771945,
+        "lng": 11.254283
+      },
+      "officialUrl": "https://www.caffegilli.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/946018422",
+        "https://www.wikidata.org/wiki/Q2932914"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-caffe-santo-spirito": {
+      "coords": {
+        "lat": 43.76838,
+        "lng": 11.248876
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/3519958955"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-ditta-artigianale": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.766915,
+        "lng": 11.250903
+      },
+      "officialUrl": "https://www.menudittaartigianale.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:00",
+          "close": "23:55"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "09:00",
+          "close": "23:55"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4261578033"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-gelateria-dei-neri": {
+      "closedDays": [
+        2
+      ],
+      "coords": {
+        "lat": 43.767778,
+        "lng": 11.25906
+      },
+      "officialUrl": "https://gelateriadeineri.it/",
+      "openingHours": [
+        {
+          "days": "Mo,We,Th,Su",
+          "open": "10:30",
+          "close": "24:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "10:30",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3740621394"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-rivoire": {
+      "coords": {
+        "lat": 43.769549,
+        "lng": 11.255047
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5901394475"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "florence-cathedral-and-brunelleschi-s-dome": {
+      "coords": {
+        "lat": 43.773056,
+        "lng": 11.256944
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 30,
+      "officialUrl": "https://www.duomofirenze.it/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q191739"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "giotto-s-bell-tower": {
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 15
+    },
+    "medici-chapels": {
+      "coords": {
+        "lat": 43.775204,
+        "lng": 11.253117
+      },
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 9,
+      "officialUrl": "https://bargellomusei.it/musei/cappelle-medicee/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1357573"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "mercato-centrale": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.776585,
+        "lng": 11.253209
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.mercatocentrale.it/firenze/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/480015428",
+        "https://www.wikidata.org/wiki/Q3854843"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-santarosa-bistrot": {
+      "coords": {
+        "lat": 43.77162,
+        "lng": 11.240371
+      },
+      "officialUrl": "https://www.santarosabistrot.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4885756121"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-space-club": {
+      "coords": {
+        "lat": 43.773685,
+        "lng": 11.246319
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/2361840368"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "piazza-della-signoria-and-palazzo-vecchio": {
+      "coords": {
+        "lat": 43.769722,
+        "lng": 11.255556
+      },
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 12,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q849846"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "piazzale-michelangelo": {
+      "coords": {
+        "lat": 43.762828,
+        "lng": 11.264993
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/233265215",
+        "https://www.wikidata.org/wiki/Q1348158"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "pitti-palace-and-boboli-gardens": {
+      "coords": {
+        "lat": 43.765153,
+        "lng": 11.250008
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 16,
+      "officialUrl": "https://www.uffizi.it/palazzo-pitti",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q29286"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "ponte-vecchio": {
+      "coords": {
+        "lat": 43.768025,
+        "lng": 11.253158
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/relation/5342094",
+        "https://www.wikidata.org/wiki/Q208633"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-all-antico-vinaio": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.776377,
+        "lng": 11.248222
+      },
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 7,
+      "officialUrl": "https://www.allanticovinaio.com/firenze-stazione/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1153231363"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-buca-lapi": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 43.772864,
+        "lng": 11.251282
+      },
+      "costCurrency": "EUR",
+      "costMax": 60,
+      "costMin": 40,
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "19:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2361643750"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-il-latini": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 43.771604,
+        "lng": 11.249303
+      },
+      "costCurrency": "EUR",
+      "costMax": 60,
+      "costMin": 40,
+      "officialUrl": "https://www.illatini.com/",
+      "openingHours": [
+        {
+          "days": "Tu-Fr",
+          "open": "19:30",
+          "close": "22:30"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "12:30",
+          "close": "14:30"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "19:30",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1283622346"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-l-antico-trippaio": {
+      "coords": {
+        "lat": 43.770945,
+        "lng": 11.25621
+      },
+      "costCurrency": "EUR",
+      "costMax": 6,
+      "costMin": 5,
+      "sources": [
+        "https://www.openstreetmap.org/node/6515514919"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-la-giostra": {
+      "coords": {
+        "lat": 43.771994,
+        "lng": 11.261995
+      },
+      "costCurrency": "EUR",
+      "costMax": 60,
+      "costMin": 40,
+      "officialUrl": "https://ristorantelagiostra.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4162418589"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-mercato-di-sant-ambrogio": {
+      "coords": {
+        "lat": 43.770482,
+        "lng": 11.266782
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 10,
+      "officialUrl": "http://www.mercatosantambrogio.it/",
+      "sources": [
+        "https://www.openstreetmap.org/way/25025766",
+        "https://www.wikidata.org/wiki/Q3854857"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-ora-d-aria": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 43.768438,
+        "lng": 11.254826
+      },
+      "costCurrency": "EUR",
+      "costMax": 150,
+      "costMin": 100,
+      "officialUrl": "https://www.oradariaristorante.com/",
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "12:30",
+          "close": "14:30"
+        },
+        {
+          "days": "Tu-Sa",
+          "open": "19:30",
+          "close": "22:00"
+        },
+        {
+          "days": "Mo",
+          "open": "19:30",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2361658358"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-osteria-dell-enoteca": {
+      "coords": {
+        "lat": 43.764025,
+        "lng": 11.245861
+      },
+      "costCurrency": "EUR",
+      "costMax": 40,
+      "costMin": 25,
+      "sources": [
+        "https://www.openstreetmap.org/node/2361919717"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-osteria-santo-spirito": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.766564,
+        "lng": 11.246822
+      },
+      "costCurrency": "EUR",
+      "costMax": 40,
+      "costMin": 25,
+      "officialUrl": "https://www.osteriasantospirito.it/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:00",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4307399393"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-trattoria-cammillo": {
+      "coords": {
+        "lat": 43.768108,
+        "lng": 11.250023
+      },
+      "costCurrency": "EUR",
+      "costMax": 60,
+      "costMin": 40,
+      "sources": [
+        "https://www.openstreetmap.org/node/2361893449"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-trattoria-mario": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 43.776567,
+        "lng": 11.254545
+      },
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 15,
+      "officialUrl": "http://trattoriamario.com/",
+      "openingHours": [
+        {
+          "days": "Mo,Tu",
+          "open": "12:00",
+          "close": "15:00"
+        },
+        {
+          "days": "We-Sa",
+          "open": "12:00",
+          "close": "15:00"
+        },
+        {
+          "days": "We-Sa",
+          "open": "19:45",
+          "close": "22:45"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1575619311"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-trattoria-sostanza": {
+      "coords": {
+        "lat": 43.772674,
+        "lng": 11.24715
+      },
+      "costCurrency": "EUR",
+      "costMax": 60,
+      "costMin": 40,
+      "sources": [
+        "https://www.openstreetmap.org/node/2361764708"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-trattoria-za-za": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.776527,
+        "lng": 11.254514
+      },
+      "costCurrency": "EUR",
+      "costMax": 40,
+      "costMin": 25,
+      "officialUrl": "https://www.trattoriazaza.it/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3909378477"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-mercato-di-san-lorenzo": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.776585,
+        "lng": 11.253209
+      },
+      "officialUrl": "https://www.mercatocentrale.it/firenze/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/480015428",
+        "https://www.wikidata.org/wiki/Q3854843"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-officina-profumo-farmaceutica-di-santa-maria-novella": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.774139,
+        "lng": 11.247779
+      },
+      "officialUrl": "http://www.smnovella.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5883143685",
+        "https://www.wikidata.org/wiki/Q2517185"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-scuola-del-cuoio": {
+      "coords": {
+        "lat": 43.76841,
+        "lng": 11.263682
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5191002621"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-via-de-tornabuoni": {
+      "coords": {
+        "lat": 43.770743,
+        "lng": 11.251372
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/759622248",
+        "https://www.wikidata.org/wiki/Q4010786"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "santa-croce-basilica": {
+      "coords": {
+        "lat": 43.768365,
+        "lng": 11.26302
+      },
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 8,
+      "officialUrl": "https://www.santacroceopera.it/",
+      "sources": [
+        "https://www.openstreetmap.org/way/777563049",
+        "https://www.wikidata.org/wiki/Q51177"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "santa-maria-novella": {
+      "coords": {
+        "lat": 43.77336,
+        "lng": 11.250076
+      },
+      "costCurrency": "EUR",
+      "costMax": 7,
+      "costMin": 7,
+      "sources": [
+        "https://www.openstreetmap.org/node/4434723258",
+        "https://www.wikidata.org/wiki/Q111412548"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-pisa": {
+      "coords": {
+        "lat": 43.471472,
+        "lng": 10.679791
+      },
+      "officialUrl": "http://www.provincia.pisa.it/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/42338",
+        "https://www.wikidata.org/wiki/Q16244"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-siena": {
+      "coords": {
+        "lat": 43.167206,
+        "lng": 11.467561
+      },
+      "officialUrl": "https://www.provincia.siena.it/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/42172",
+        "https://www.wikidata.org/wiki/Q16275"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "uffizi-gallery": {
+      "coords": {
+        "lat": 43.768333,
+        "lng": 11.255278
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 25,
+      "officialUrl": "https://www.uffizi.it/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q51252"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-brunelleschi-s-dome-climb": {
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 30
+    },
+    "x-chianti-wine-tasting-afternoon": {
+      "costCurrency": "EUR",
+      "costMax": 120,
+      "costMin": 60
+    },
+    "x-sunset-at-piazzale-michelangelo": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-tuscan-cooking-class": {
+      "costCurrency": "EUR",
+      "costMax": 100,
+      "costMin": 60
+    },
+    "x-uffizi-guided-tour": {
+      "costCurrency": "EUR",
+      "costMax": 70,
+      "costMin": 40
+    }
+  },
+  "neighborhoods": {
+    "duomo-and-centro-storico": {
+      "coords": {
+        "lat": 43.769926,
+        "lng": 11.250948
+      },
+      "radiusKm": 0.8
+    },
+    "oltrarno": {
+      "coords": {
+        "lat": 43.766103,
+        "lng": 11.250474
+      },
+      "radiusKm": 1.37
+    },
+    "san-lorenzo": {
+      "coords": {
+        "lat": 43.820765,
+        "lng": 11.127133
+      },
+      "radiusKm": 2.74
+    },
+    "san-marco": {
+      "coords": {
+        "lat": 43.791892,
+        "lng": 11.222437
+      },
+      "radiusKm": 0.4
+    },
+    "san-niccolo-and-piazzale-michelangelo": {
+      "coords": {
+        "lat": 43.762828,
+        "lng": 11.264993
+      },
+      "radiusKm": 0.8
+    },
+    "santa-croce": {
+      "coords": {
+        "lat": 43.749506,
+        "lng": 11.01376
+      },
+      "radiusKm": 1.37
+    },
+    "santa-maria-novella": {
+      "coords": {
+        "lat": 43.77336,
+        "lng": 11.250076
+      },
+      "radiusKm": 0.4
+    }
+  }
+}

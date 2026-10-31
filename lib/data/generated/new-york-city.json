@@ -1,0 +1,932 @@
+{
+  "bbox": [
+    40.4127,
+    -74.4018,
+    41.0127,
+    -73.6102
+  ],
+  "places": {
+    "911-memorial": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.711453,
+        "lng": -74.01267
+      },
+      "costCurrency": "USD",
+      "costMax": 33,
+      "costMin": 33,
+      "officialUrl": "https://www.911memorial.org/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "09:00",
+          "close": "20:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "09:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/278033604",
+        "https://www.wikidata.org/wiki/Q10806"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "american-museum-of-natural-history": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.781101,
+        "lng": -73.974236
+      },
+      "officialUrl": "https://www.amnh.org/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "17:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/388436810",
+        "https://www.wikidata.org/wiki/Q217717"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "brooklyn-bridge": {
+      "coords": {
+        "lat": 40.706218,
+        "lng": -73.997021
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.nyc.gov/html/dot/html/infrastructure/brooklyn-bridge.shtml",
+      "sources": [
+        "https://www.openstreetmap.org/way/375157262",
+        "https://www.wikidata.org/wiki/Q125006"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-blue-bottle-nyc": {
+      "coords": {
+        "lat": 40.706544,
+        "lng": -74.011237
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/11172400856"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-caffe-reggio": {
+      "coords": {
+        "lat": 40.730322,
+        "lng": -74.000362
+      },
+      "officialUrl": "http://www.cafereggio.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/3506087030",
+        "https://www.wikidata.org/wiki/Q5017150"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-devocion": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.714757,
+        "lng": -73.962235
+      },
+      "officialUrl": "https://www.devocion.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "07:30",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4334482651"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-doughnut-plant": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.742791,
+        "lng": -73.935214
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4757307022"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-levain-bakery": {
+      "coords": {
+        "lat": 40.738654,
+        "lng": -73.992499
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/13173866301"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-magnolia-bakery": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.735888,
+        "lng": -74.005
+      },
+      "officialUrl": "https://www.magnoliabakery.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "11:00",
+          "close": "20:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "11:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2569259857",
+        "https://www.wikidata.org/wiki/Q6731861"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "central-park": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.782773,
+        "lng": -73.965363
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.centralparknyc.org/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "06:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/427818536",
+        "https://www.wikidata.org/wiki/Q160409"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "grand-central-terminal": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.752694,
+        "lng": -73.977253
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.grandcentralterminal.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "05:30",
+          "close": "26:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/265947358",
+        "https://www.wikidata.org/wiki/Q11290"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "high-line": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.747704,
+        "lng": -74.004891
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.thehighline.org/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/7141751",
+        "https://www.wikidata.org/wiki/Q843869"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "met-museum": {
+      "closedDays": [
+        3
+      ],
+      "coords": {
+        "lat": 40.77944,
+        "lng": -73.963382
+      },
+      "costCurrency": "USD",
+      "costMax": 30,
+      "costMin": 30,
+      "officialUrl": "https://www.metmuseum.org/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/3698894",
+        "https://www.wikidata.org/wiki/Q160236"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "moma": {
+      "coords": {
+        "lat": 40.761612,
+        "lng": -73.977499
+      },
+      "costCurrency": "USD",
+      "costMax": 30,
+      "costMin": 30,
+      "officialUrl": "https://www.moma.org/",
+      "sources": [
+        "https://www.openstreetmap.org/way/278346578",
+        "https://www.wikidata.org/wiki/Q188740"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-house-of-yes": {
+      "closedDays": [
+        0,
+        1,
+        2
+      ],
+      "coords": {
+        "lat": 40.706783,
+        "lng": -73.923582
+      },
+      "officialUrl": "https://houseofyes.org/",
+      "openingHours": [
+        {
+          "days": "We-Sa",
+          "open": "19:00",
+          "close": "28:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/250424771"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-mcsorley-s-old-ale-house": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.728761,
+        "lng": -73.989702
+      },
+      "officialUrl": "https://mcsorleysoldalehouse.nyc/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "11:00",
+          "close": "25:00"
+        },
+        {
+          "days": "Su",
+          "open": "13:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/9036389119",
+        "https://www.wikidata.org/wiki/Q4276394"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-please-don-t-tell-pdt": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.727121,
+        "lng": -73.983769
+      },
+      "officialUrl": "https://www.pdtnyc.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "18:00",
+          "close": "26:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "18:00",
+          "close": "27:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4146358992"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-village-vanguard": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.73602,
+        "lng": -74.001639
+      },
+      "officialUrl": "https://www.villagevanguard.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "19:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4216669489",
+        "https://www.wikidata.org/wiki/Q670623"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-ess-a-bagel": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.748632,
+        "lng": -73.989349
+      },
+      "officialUrl": "https://www.ess-a-bagel32.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "06:00",
+          "close": "21:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "06:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6407817393"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-joes-pizza": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.730547,
+        "lng": -74.002063
+      },
+      "costCurrency": "USD",
+      "costMax": 6,
+      "costMin": 4,
+      "officialUrl": "https://www.joespizzanyc.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "10:00",
+          "close": "28:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "10:00",
+          "close": "29:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/931799207",
+        "https://www.wikidata.org/wiki/Q20979290"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-katzs-deli": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.722343,
+        "lng": -73.987353
+      },
+      "costCurrency": "USD",
+      "costMax": 30,
+      "costMin": 25,
+      "officialUrl": "https://www.katzsdelicatessen.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "08:00",
+          "close": "22:15"
+        },
+        {
+          "days": "Fr",
+          "open": "08:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Sa",
+          "open": "00:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Su",
+          "open": "00:00",
+          "close": "22:15"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1915398676",
+        "https://www.wikidata.org/wiki/Q2611788"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-le-bernardin": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 40.761395,
+        "lng": -73.981691
+      },
+      "costCurrency": "USD",
+      "costMin": 200,
+      "officialUrl": "https://www.le-bernardin.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "12:00",
+          "close": "14:30"
+        },
+        {
+          "days": "Mo-Th",
+          "open": "17:15",
+          "close": "22:30"
+        },
+        {
+          "days": "Fr",
+          "open": "12:00",
+          "close": "14:30"
+        },
+        {
+          "days": "Fr",
+          "open": "17:15",
+          "close": "23:00"
+        },
+        {
+          "days": "Sa",
+          "open": "17:15",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3932353663",
+        "https://www.wikidata.org/wiki/Q6506539"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-lombardis": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.721593,
+        "lng": -73.995615
+      },
+      "costCurrency": "USD",
+      "costMax": 35,
+      "costMin": 20,
+      "officialUrl": "https://www.firstpizza.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "12:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "12:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1002880708",
+        "https://www.wikidata.org/wiki/Q564293"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-los-tacos-no-1": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.754706,
+        "lng": -74.000056
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/12854312940"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-peter-luger": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.709866,
+        "lng": -73.962556
+      },
+      "costCurrency": "USD",
+      "costMax": 150,
+      "costMin": 100,
+      "officialUrl": "https://peterluger.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "11:45",
+          "close": "21:45"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "11:45",
+          "close": "22:45"
+        },
+        {
+          "days": "Su",
+          "open": "12:45",
+          "close": "21:45"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2483716076",
+        "https://www.wikidata.org/wiki/Q586599"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-prince-street-pizza": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.682622,
+        "lng": -73.993105
+      },
+      "officialUrl": "https://locations.princestreetpizza.com/brooklyn",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "11:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "11:00",
+          "close": "27:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5990552322"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-russ-daughters": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.722583,
+        "lng": -73.988192
+      },
+      "costCurrency": "USD",
+      "costMax": 25,
+      "costMin": 15,
+      "officialUrl": "https://shop.russanddaughters.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2486570143",
+        "https://www.wikidata.org/wiki/Q7381088"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-smorgasburg": {
+      "closedDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "coords": {
+        "lat": 40.720953,
+        "lng": -73.962245
+      },
+      "costCurrency": "USD",
+      "costMax": 20,
+      "costMin": 10,
+      "officialUrl": "https://www.smorgasburg.com/",
+      "openingHours": [
+        {
+          "days": "Sa",
+          "open": "11:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4317300192"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-the-halal-guys": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.732288,
+        "lng": -73.984423
+      },
+      "officialUrl": "https://east14thstreetny.thehalalguys.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "28:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3676953898"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-xian-famous-foods": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.747514,
+        "lng": -73.941754
+      },
+      "costCurrency": "USD",
+      "costMax": 16,
+      "costMin": 12,
+      "officialUrl": "https://www.xianfoods.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/9371453786"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-brooklyn-flea": {
+      "closedDays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "coords": {
+        "lat": 40.703102,
+        "lng": -73.987862
+      },
+      "officialUrl": "https://www.brooklynflea.com/dumboflea",
+      "openingHours": [
+        {
+          "days": "Sa,Su",
+          "open": "10:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/552255010"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-century-21": {
+      "coords": {
+        "lat": 40.598305,
+        "lng": -74.082038
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/13186742825"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-chelsea-market": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.742051,
+        "lng": -74.004897
+      },
+      "officialUrl": "https://www.chelseamarket.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1272608999",
+        "https://www.wikidata.org/wiki/Q5090112"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-fifth-avenue": {
+      "coords": {
+        "lat": 40.802161,
+        "lng": -73.945369
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1271518873",
+        "https://www.wikidata.org/wiki/Q109858"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "statue-of-liberty": {
+      "coords": {
+        "lat": 40.689253,
+        "lng": -74.044548
+      },
+      "costCurrency": "USD",
+      "costMax": 24.5,
+      "costMin": 24.5,
+      "officialUrl": "https://www.nps.gov/stli/index.htm",
+      "sources": [
+        "https://www.openstreetmap.org/way/32965412",
+        "https://www.wikidata.org/wiki/Q9202"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-hudson-valley-sleepy-hollow-storm-king": {
+      "coords": {
+        "lat": 42.250303,
+        "lng": -73.631975
+      },
+      "sources": [
+        "https://www.openstreetmap.org/relation/20410509",
+        "https://www.wikidata.org/wiki/Q1140235"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-philadelphia": {
+      "coords": {
+        "lat": 39.952724,
+        "lng": -75.163526
+      },
+      "officialUrl": "https://www.phila.gov/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/188022",
+        "https://www.wikidata.org/wiki/Q1345"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-the-hamptons": {
+      "coords": {
+        "lat": 40.884931,
+        "lng": -72.501061
+      },
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1574020"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "times-square": {
+      "coords": {
+        "lat": 40.75701,
+        "lng": -73.985972
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.timessquarenyc.org/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/14942838",
+        "https://www.wikidata.org/wiki/Q11259"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "top-of-the-rock": {
+      "coords": {
+        "lat": 40.759034,
+        "lng": -73.979395
+      },
+      "costCurrency": "USD",
+      "costMin": 40,
+      "officialUrl": "https://www.topoftherocknyc.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/5844051585",
+        "https://www.wikidata.org/wiki/Q66722774"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "washington-square-park": {
+      "coords": {
+        "lat": 40.730896,
+        "lng": -73.9976
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.nycgovparks.org/parks/washington-square-park",
+      "sources": [
+        "https://www.openstreetmap.org/way/22899302",
+        "https://www.wikidata.org/wiki/Q909592"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-broadway-show": {
+      "coords": {
+        "lat": 40.764444,
+        "lng": -73.985747
+      },
+      "costCurrency": "USD",
+      "costMax": 250,
+      "costMin": 60,
+      "officialUrl": "https://broadwaymagichour.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/13475394019"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-brooklyn-bridge-to-dumbo-walk": {
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-jazz-set-in-harlem-or-the-village": {
+      "costCurrency": "USD",
+      "costMax": 50,
+      "costMin": 30
+    },
+    "x-staten-island-ferry": {
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-top-of-the-rock-at-sunset": {
+      "costCurrency": "USD",
+      "costMax": 65,
+      "costMin": 40
+    }
+  },
+  "neighborhoods": {
+    "harlem": {
+      "coords": {
+        "lat": 40.807858,
+        "lng": -73.945467
+      },
+      "radiusKm": 1.39
+    },
+    "les": {
+      "coords": {
+        "lat": 40.715936,
+        "lng": -73.986806
+      },
+      "radiusKm": 1.39
+    },
+    "midtown-manhattan": {
+      "coords": {
+        "lat": 40.747656,
+        "lng": -73.984249
+      },
+      "radiusKm": 0.8
+    },
+    "soho": {
+      "coords": {
+        "lat": 40.682622,
+        "lng": -73.993105
+      },
+      "radiusKm": 0.8
+    },
+    "west-village": {
+      "coords": {
+        "lat": 40.730609,
+        "lng": -73.998981
+      },
+      "radiusKm": 0.8
+    },
+    "williamsburg": {
+      "coords": {
+        "lat": 40.714622,
+        "lng": -73.95345
+      },
+      "radiusKm": 1.39
+    }
+  }
+}

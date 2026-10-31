@@ -1,0 +1,608 @@
+{
+  "bbox": [
+    2.8517,
+    101.3938,
+    3.4517,
+    101.9947
+  ],
+  "places": {
+    "batu-caves": {
+      "coords": {
+        "lat": 3.230155,
+        "lng": 101.672124
+      },
+      "costCurrency": "MYR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/144373056"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-chocha-foodstore": {
+      "closedDays": [],
+      "coords": {
+        "lat": 3.140856,
+        "lng": 101.698097
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4359530789"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-limapulo": {
+      "coords": {
+        "lat": 3.145198,
+        "lng": 101.706617
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/13670575563"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-merchants-lane": {
+      "coords": {
+        "lat": 3.141045,
+        "lng": 101.698096
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4437315492"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-old-town-white-coffee": {
+      "closedDays": [],
+      "coords": {
+        "lat": 3.119708,
+        "lng": 101.674166
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:00",
+          "close": "20:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "09:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/10701993368"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-vcr-kl": {
+      "closedDays": [],
+      "coords": {
+        "lat": 3.143253,
+        "lng": 101.705448
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:30",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2582028959"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "central-market": {
+      "closedDays": [],
+      "coords": {
+        "lat": 3.14584,
+        "lng": 101.695506
+      },
+      "costCurrency": "MYR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://centralmarket.com.my/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/23768012",
+        "https://www.wikidata.org/wiki/Q1041262"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "islamic-arts-museum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 3.141453,
+        "lng": 101.689871
+      },
+      "costCurrency": "MYR",
+      "costMax": 20,
+      "costMin": 20,
+      "officialUrl": "https://www.iamm.org.my/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/659878360",
+        "https://www.wikidata.org/wiki/Q3330187"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "jalan-alor": {
+      "costCurrency": "MYR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "kl-bird-park": {
+      "coords": {
+        "lat": 3.143296,
+        "lng": 101.687958
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5151092521"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "klcc-park": {
+      "coords": {
+        "lat": 3.155357,
+        "lng": 101.712141
+      },
+      "costCurrency": "MYR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/5151330821"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "masjid-negara-national-mosque": {
+      "coords": {
+        "lat": 3.142054,
+        "lng": 101.691793
+      },
+      "costCurrency": "MYR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://masjidnegara.gov.my/ms/",
+      "sources": [
+        "https://www.openstreetmap.org/way/585264338",
+        "https://www.wikidata.org/wiki/Q1356818"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "menara-kl": {
+      "closedDays": [],
+      "coords": {
+        "lat": 3.152859,
+        "lng": 101.70376
+      },
+      "costCurrency": "MYR",
+      "costMax": 63,
+      "costMin": 63,
+      "officialUrl": "https://www.menarakl.com.my/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5839389988",
+        "https://www.wikidata.org/wiki/Q745016"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "merdeka-square-dataran-merdeka": {
+      "coords": {
+        "lat": 3.147863,
+        "lng": 101.693946
+      },
+      "costCurrency": "MYR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/14127971001"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-changkat-bukit-bintang": {
+      "coords": {
+        "lat": 3.146717,
+        "lng": 101.709442
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/4579536",
+        "https://www.wikidata.org/wiki/Q18657751"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-trec-the-row-extreme-clubbing": {
+      "coords": {
+        "lat": 3.140506,
+        "lng": 101.721142
+      },
+      "officialUrl": "http://www.trec.com.my/",
+      "sources": [
+        "https://www.openstreetmap.org/way/511238204"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "petronas-towers": {
+      "coords": {
+        "lat": 3.157968,
+        "lng": 101.711205
+      },
+      "costCurrency": "MYR",
+      "costMax": 98,
+      "costMin": 98,
+      "officialUrl": "https://www.petronastwintowers.com.my/",
+      "sources": [
+        "https://www.openstreetmap.org/way/279944536",
+        "https://www.wikidata.org/wiki/Q83063"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-brickfields-banana-leaf": {
+      "coords": {
+        "lat": 3.128857,
+        "lng": 101.684553
+      },
+      "costCurrency": "MYR",
+      "costMax": 18,
+      "costMin": 10,
+      "sources": [
+        "https://www.openstreetmap.org/relation/14402570",
+        "https://www.wikidata.org/wiki/Q8280759"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-dewakan": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 3.154719,
+        "lng": 101.718505
+      },
+      "costCurrency": "MYR",
+      "costMin": 500,
+      "officialUrl": "https://www.dewakan.my/#/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "18:00",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/11367154361"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-jalan-alor-stalls": {
+      "costCurrency": "MYR",
+      "costMax": 40,
+      "costMin": 15
+    },
+    "r-kim-lian-kee": {
+      "coords": {
+        "lat": 3.144342,
+        "lng": 101.697503
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4791591624"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-lot-10-hutong": {
+      "coords": {
+        "lat": 3.146929,
+        "lng": 101.711855
+      },
+      "costCurrency": "MYR",
+      "costMax": 25,
+      "costMin": 15,
+      "officialUrl": "https://lot10hutong.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2917405999"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-nasi-kandar-pelita": {
+      "closedDays": [],
+      "coords": {
+        "lat": 3.157898,
+        "lng": 101.708372
+      },
+      "costCurrency": "MYR",
+      "costMax": 20,
+      "costMin": 12,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/256337920"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-nasi-lemak-tanglin": {
+      "coords": {
+        "lat": 3.144078,
+        "lng": 101.690677
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/886438947"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-petaling-street-food": {
+      "costCurrency": "MYR",
+      "costMax": 20,
+      "costMin": 10
+    },
+    "r-restoran-yut-kee": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 3.156483,
+        "lng": 101.700302
+      },
+      "costCurrency": "MYR",
+      "costMax": 18,
+      "costMin": 10,
+      "officialUrl": "https://yutkeerestaurant.beepit.com/",
+      "openingHours": [
+        {
+          "days": "Tu-Su",
+          "open": "08:00",
+          "close": "16:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4217208789"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-soong-kee-beef-noodles": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 3.147277,
+        "lng": 101.696792
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "11:00",
+          "close": "21:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5323174521"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-village-park": {
+      "costCurrency": "MYR",
+      "costMax": 20,
+      "costMin": 12
+    },
+    "s-central-market": {
+      "closedDays": [],
+      "coords": {
+        "lat": 3.14584,
+        "lng": 101.695506
+      },
+      "officialUrl": "https://centralmarket.com.my/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/23768012",
+        "https://www.wikidata.org/wiki/Q1041262"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-chow-kit-market": {
+      "closedDays": [],
+      "coords": {
+        "lat": 3.164385,
+        "lng": 101.699454
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "06:00",
+          "close": "14:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1365508598",
+        "https://www.wikidata.org/wiki/Q96072504"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-suria-klcc": {
+      "closedDays": [],
+      "coords": {
+        "lat": 3.157375,
+        "lng": 101.71238
+      },
+      "officialUrl": "https://www.suriaklcc.com.my/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/23034336",
+        "https://www.wikidata.org/wiki/Q1306924"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "sri-mahamariamman": {
+      "coords": {
+        "lat": 3.143438,
+        "lng": 101.696261
+      },
+      "costCurrency": "MYR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.kuala-lumpur.ws/attractions/sri-mahamariamman-temple.htm",
+      "sources": [
+        "https://www.openstreetmap.org/way/1248817862",
+        "https://www.wikidata.org/wiki/Q7586152"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-batu-caves": {
+      "coords": {
+        "lat": 3.237796,
+        "lng": 101.681376
+      },
+      "officialUrl": "https://mrt.com.my/komuter/Batu_Caves.htm",
+      "sources": [
+        "https://www.openstreetmap.org/way/1081572645",
+        "https://www.wikidata.org/wiki/Q4381531"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-cameron-highlands": {
+      "coords": {
+        "lat": 4.471079,
+        "lng": 101.375173
+      },
+      "officialUrl": "http://cameronhighlands.com/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/10744325",
+        "https://www.wikidata.org/wiki/Q1028741"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-malacca-melaka": {
+      "coords": {
+        "lat": 2.329374,
+        "lng": 102.288096
+      },
+      "officialUrl": "http://www.melaka.gov.my/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/2939673",
+        "https://www.wikidata.org/wiki/Q185221"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "thean-hou-temple": {
+      "coords": {
+        "lat": 3.121843,
+        "lng": 101.687645
+      },
+      "costCurrency": "MYR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/453802547",
+        "https://www.wikidata.org/wiki/Q2639733"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-batu-caves-and-surrounding-markets": {
+      "costCurrency": "MYR",
+      "costMax": 2.6,
+      "costMin": 0
+    },
+    "x-cameron-highlands-tea-plantation-visit-extended": {
+      "costCurrency": "MYR",
+      "costMax": 200,
+      "costMin": 100
+    },
+    "x-jalan-alor-night-food-crawl": {
+      "costCurrency": "MYR",
+      "costMax": 80,
+      "costMin": 50
+    },
+    "x-malaysian-cooking-class": {
+      "costCurrency": "MYR",
+      "costMax": 250,
+      "costMin": 150
+    },
+    "x-petronas-towers-skybridge-and-observation-deck": {
+      "costCurrency": "MYR",
+      "costMax": 98,
+      "costMin": 98
+    }
+  },
+  "neighborhoods": {
+    "bangsar": {
+      "coords": {
+        "lat": 3.127612,
+        "lng": 101.679099
+      },
+      "radiusKm": 0.4
+    },
+    "brickfields": {
+      "coords": {
+        "lat": 3.128857,
+        "lng": 101.684553
+      },
+      "radiusKm": 1.26
+    },
+    "bukit-bintang": {
+      "coords": {
+        "lat": 3.146095,
+        "lng": 101.711476
+      },
+      "radiusKm": 0.4
+    },
+    "chinatown-kl": {
+      "coords": {
+        "lat": 3.14347,
+        "lng": 101.697738
+      },
+      "radiusKm": 0.4
+    },
+    "kampung-baru": {
+      "coords": {
+        "lat": 3.161326,
+        "lng": 101.706597
+      },
+      "radiusKm": 0.4
+    },
+    "klcc": {
+      "coords": {
+        "lat": 3.159163,
+        "lng": 101.713361
+      },
+      "radiusKm": 0.4
+    }
+  }
+}

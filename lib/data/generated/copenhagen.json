@@ -1,0 +1,691 @@
+{
+  "bbox": [
+    55.3867,
+    12.0379,
+    55.9867,
+    13.1023
+  ],
+  "places": {
+    "amalienborg": {
+      "costCurrency": "DKK",
+      "costMax": 95,
+      "costMin": 0
+    },
+    "c-conditori-la-glace": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.678593,
+        "lng": 12.573637
+      },
+      "officialUrl": "https://laglace.dk/en/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:30",
+          "close": "18:00"
+        },
+        {
+          "days": "Sa",
+          "open": "09:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/898977596"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-democratic-coffee": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.680835,
+        "lng": 12.573416
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:30",
+          "close": "17:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "09:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/894402369"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-granola": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.673402,
+        "lng": 12.549813
+      },
+      "officialUrl": "http://www.granola.dk/",
+      "openingHours": [
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "16:00"
+        },
+        {
+          "days": "Mo-Fr",
+          "open": "07:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Sa",
+          "open": "09:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4011872491"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-lagkagehuset": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.687673,
+        "lng": 12.592092
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6766572590"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-the-coffee-collective": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.680027,
+        "lng": 12.58245
+      },
+      "officialUrl": "https://coffeecollective.dk/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "08:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5118372733"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "christiania": {
+      "coords": {
+        "lat": 55.677211,
+        "lng": 12.610452
+      },
+      "costCurrency": "DKK",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.christiania.org/",
+      "sources": [
+        "https://www.openstreetmap.org/way/250989045",
+        "https://www.wikidata.org/wiki/Q202206"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "christiansborg": {
+      "coords": {
+        "lat": 55.675651,
+        "lng": 12.580041
+      },
+      "costCurrency": "DKK",
+      "costMax": 100,
+      "costMin": 100,
+      "officialUrl": "https://denkongeligesamling.dk/christiansborg-slot/",
+      "sources": [
+        "https://www.openstreetmap.org/way/25992657",
+        "https://www.wikidata.org/wiki/Q940733"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "designmuseum-danmark": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 55.686374,
+        "lng": 12.594408
+      },
+      "officialUrl": "https://designmuseum.dk/",
+      "openingHours": [
+        {
+          "days": "Tu,We,Fr-Su",
+          "open": "10:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Th",
+          "open": "10:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/5693118",
+        "https://www.wikidata.org/wiki/Q834603"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "kastellet": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.691383,
+        "lng": 12.593745
+      },
+      "costCurrency": "DKK",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.forsvaret.dk/da/side/kastellet/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "06:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/175208408",
+        "https://www.wikidata.org/wiki/Q221812"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "little-mermaid": {
+      "costCurrency": "DKK",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "n-culture-box": {
+      "coords": {
+        "lat": 55.686481,
+        "lng": 12.583977
+      },
+      "officialUrl": "https://culture-box.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/8206006777"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-kdbyen-meatpacking-district-bars": {
+      "coords": {
+        "lat": 55.667044,
+        "lng": 12.55716
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/8130361811"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-ruby": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.676693,
+        "lng": 12.576619
+      },
+      "officialUrl": "https://rby.dk/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "16:00",
+          "close": "26:00"
+        },
+        {
+          "days": "Su",
+          "open": "18:00",
+          "close": "26:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2599935006"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "nyhavn": {
+      "coords": {
+        "lat": 55.679736,
+        "lng": 12.590886
+      },
+      "costCurrency": "DKK",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/relation/6476337",
+        "https://www.wikidata.org/wiki/Q943946"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "nyhavn-canal-tour": {
+      "costCurrency": "DKK",
+      "costMax": 150,
+      "costMin": 100
+    },
+    "r-aamanns": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.68021,
+        "lng": 12.57594
+      },
+      "costCurrency": "DKK",
+      "costMax": 350,
+      "costMin": 200,
+      "officialUrl": "https://aamanns.dk/aamanns-1921/",
+      "openingHours": [
+        {
+          "days": "Mo,Su",
+          "open": "11:30",
+          "close": "16:00"
+        },
+        {
+          "days": "Tu-Sa",
+          "open": "11:30",
+          "close": "16:00"
+        },
+        {
+          "days": "Tu-Sa",
+          "open": "18:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5120378538"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-gasoline-grill": {
+      "coords": {
+        "lat": 55.666948,
+        "lng": 12.532685
+      },
+      "costCurrency": "DKK",
+      "costMax": 130,
+      "costMin": 90,
+      "sources": [
+        "https://www.openstreetmap.org/node/6698064583"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-hot-dog-stand": {
+      "coords": {
+        "lat": 55.672139,
+        "lng": 12.591507
+      },
+      "costCurrency": "DKK",
+      "costMax": 60,
+      "costMin": 40,
+      "sources": [
+        "https://www.openstreetmap.org/node/2087739937"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-mother": {
+      "coords": {
+        "lat": 55.681361,
+        "lng": 12.582802
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/12823319101"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-noma": {
+      "closedDays": [
+        0,
+        1,
+        6
+      ],
+      "coords": {
+        "lat": 55.68251,
+        "lng": 12.610789
+      },
+      "costCurrency": "DKK",
+      "costMin": 3000,
+      "officialUrl": "https://noma.dk/",
+      "openingHours": [
+        {
+          "days": "Tu-Th",
+          "open": "17:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Fr",
+          "open": "12:30",
+          "close": "17:30"
+        },
+        {
+          "days": "Fr",
+          "open": "18:00",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5416925514",
+        "https://www.wikidata.org/wiki/Q48592"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-reffen": {
+      "costCurrency": "DKK",
+      "costMax": 150,
+      "costMin": 80
+    },
+    "r-restaurant-barr": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.677903,
+        "lng": 12.596267
+      },
+      "costCurrency": "DKK",
+      "costMax": 900,
+      "costMin": 600,
+      "officialUrl": "https://restaurantbarr.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "16:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Fr-Su",
+          "open": "12:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5017218129"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-restaurant-kadeau": {
+      "coords": {
+        "lat": 55.672255,
+        "lng": 12.588855
+      },
+      "costCurrency": "DKK",
+      "costMin": 2200,
+      "officialUrl": "https://www.kadeau.dk/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2713759585",
+        "https://www.wikidata.org/wiki/Q23010103"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-restaurant-schnnemann": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.682815,
+        "lng": 12.576023
+      },
+      "officialUrl": "https://www.restaurantschonnemann.dk/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:30",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1628944947",
+        "https://www.wikidata.org/wiki/Q63456099"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-torvehallerne": {
+      "costCurrency": "DKK",
+      "costMax": 150,
+      "costMin": 80
+    },
+    "rosenborg-castle": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.685693,
+        "lng": 12.57742
+      },
+      "costCurrency": "DKK",
+      "costMax": 130,
+      "costMin": 130,
+      "officialUrl": "https://www.kongernessamling.dk/rosenborg/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/25524592",
+        "https://www.wikidata.org/wiki/Q206101"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "rundetaarn": {
+      "coords": {
+        "lat": 55.681358,
+        "lng": 12.575794
+      },
+      "officialUrl": "https://www.rundetaarn.dk/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1011492033",
+        "https://www.wikidata.org/wiki/Q1140534"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-illums-bolighus": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.67889,
+        "lng": 12.578573
+      },
+      "officialUrl": "https://www.illumsbolighus.dk/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "10:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Su",
+          "open": "11:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1591026082",
+        "https://www.wikidata.org/wiki/Q3148745"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-jgersborggade": {
+      "coords": {
+        "lat": 55.692706,
+        "lng": 12.543952
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1911064",
+        "https://www.wikidata.org/wiki/Q12320684"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-torvehallerne": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.683867,
+        "lng": 12.569551
+      },
+      "officialUrl": "https://torvehallernekbh.dk/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "10:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Fr",
+          "open": "10:00",
+          "close": "20:00"
+        },
+        {
+          "days": "Sa",
+          "open": "10:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Su",
+          "open": "11:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/77037963",
+        "https://www.wikidata.org/wiki/Q19409991"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-kronborg-castle-helsingr": {
+      "coords": {
+        "lat": 56.039052,
+        "lng": 12.621207
+      },
+      "officialUrl": "https://www.kronborg.dk/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/1588209",
+        "https://www.wikidata.org/wiki/Q189358"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-louisiana-museum-of-modern-art": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 55.969352,
+        "lng": 12.543157
+      },
+      "officialUrl": "https://www.louisiana.dk/",
+      "openingHours": [
+        {
+          "days": "Tu-Fr",
+          "open": "11:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "11:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/436227052",
+        "https://www.wikidata.org/wiki/Q1410617"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "tivoli-gardens": {
+      "coords": {
+        "lat": 55.673416,
+        "lng": 12.569182
+      },
+      "costCurrency": "DKK",
+      "costMax": 145,
+      "costMin": 145,
+      "officialUrl": "https://www.tivoli.dk/",
+      "sources": [
+        "https://www.openstreetmap.org/way/314752241",
+        "https://www.wikidata.org/wiki/Q110289"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-canal-tour-past-the-opera-house-and-little-merma": {
+      "costCurrency": "DKK",
+      "costMax": 150,
+      "costMin": 100
+    },
+    "x-copenhagen-by-bike": {
+      "costCurrency": "DKK",
+      "costMax": 200,
+      "costMin": 100
+    },
+    "x-harbor-bath-swim": {
+      "costCurrency": "DKK",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-new-nordic-cooking-class": {
+      "costCurrency": "DKK",
+      "costMax": 1200,
+      "costMin": 800
+    },
+    "x-tivoli-gardens-at-night": {
+      "costCurrency": "DKK",
+      "costMax": 145,
+      "costMin": 145
+    }
+  },
+  "neighborhoods": {
+    "christianshavn": {
+      "coords": {
+        "lat": 55.672374,
+        "lng": 12.588578
+      },
+      "radiusKm": 2.55
+    },
+    "frederiksberg": {
+      "coords": {
+        "lat": 55.672676,
+        "lng": 12.549706
+      },
+      "radiusKm": 0.4
+    },
+    "frederiksstaden": {
+      "coords": {
+        "lat": 55.685649,
+        "lng": 12.59345
+      },
+      "radiusKm": 1.27
+    },
+    "indre-by": {
+      "coords": {
+        "lat": 55.683087,
+        "lng": 12.583001
+      },
+      "radiusKm": 2.55
+    },
+    "norrebro": {
+      "coords": {
+        "lat": 55.700681,
+        "lng": 12.537804
+      },
+      "radiusKm": 0.4
+    },
+    "vesterbro": {
+      "coords": {
+        "lat": 55.666033,
+        "lng": 12.552312
+      },
+      "radiusKm": 2.55
+    }
+  }
+}

@@ -1,289 +1,384 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { useSearchParams } from "next/navigation";
-import { destinations, getDestinationBySlug } from "@/lib/data";
-import ClientDestinationMedia from "@/components/ClientDestinationMedia";
-import StopIcon from "@/components/StopIcon";
-import NoteIcon from "@/components/NoteIcon";
-import PriorityIcon from "@/components/PriorityIcon";
-import { generateItinerary, priorityLabel, type TripDuration } from "@/lib/itinerary-engine";
-import type { Interest, TravelStyle } from "@/lib/types";
-import { ALL_INTERESTS, ALL_TRAVEL_STYLES, INTEREST_LABELS, TRAVEL_STYLE_LABELS, STOP_KIND_LABELS, stopDotCategory } from "@/lib/format";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { cityIndex, loadDestination } from "@/lib/data/catalog";
+import { isIsoDate } from "@/lib/engine/time";
+import {
+  generateItinerary,
+  regenerateDay,
+  swapStop,
+  type GeneratedItinerary,
+  type PlannerInput,
+} from "@/lib/itinerary-engine";
+import { BUDGET_LABELS, INTEREST_LABELS, PACE_LABELS, TRAVEL_STYLE_LABELS, formatDate, money, moneyRange } from "@/lib/format";
+import PlannerForm, { type PlannerFormState } from "@/components/PlannerForm";
+import DayCard from "@/components/DayCard";
+import BookTripPanel from "@/components/BookTripPanel";
+import Photo from "@/components/Photo";
+import PricesPanel from "@/components/PricesPanel";
+import PlanSkeleton from "@/components/PlanSkeleton";
+import TightTripNotice from "@/components/TightTripNotice";
+import { tripProblem } from "@/lib/trip-problem";
+import type { TripLinkInput } from "@/lib/providers";
+import type { Destination, DietaryNeed, Interest } from "@/lib/types";
 
-const BUDGETS: { id: "budget" | "mid-range" | "luxury"; label: string }[] = [
-  { id: "budget", label: "Budget" },
-  { id: "mid-range", label: "Mid-range" },
-  { id: "luxury", label: "Luxury" },
-];
+const DEFAULTS: Omit<PlannerFormState, "slug"> = {
+  startDate: "",
+  endDate: "",
+  duration: 5,
+  adults: 2,
+  children: 0,
+  budget: "mid-range",
+  travelStyle: "first-time",
+  interests: ["food", "history", "photography"],
+  pace: "balanced",
+  mobility: "standard",
+  dietary: [],
+  mustInclude: [],
+  avoid: [],
+  arrivalTime: "",
+  departureTime: "",
+};
 
-const DURATIONS: TripDuration[] = [3, 5, 7];
+function toInput(f: PlannerFormState, destination: Destination, seed: string): PlannerInput {
+  const dated = f.startDate && f.endDate && f.endDate >= f.startDate;
+  return {
+    destination,
+    duration: f.duration,
+    startDate: f.startDate || undefined,
+    endDate: dated ? f.endDate : undefined,
+    budget: f.budget,
+    travelStyle: f.travelStyle,
+    interests: f.interests,
+    pace: f.pace,
+    groupSize: f.adults + f.children,
+    hasKids: f.children > 0,
+    mobility: f.mobility,
+    dietary: f.dietary as DietaryNeed[],
+    mustInclude: f.mustInclude,
+    avoid: f.avoid,
+    arrivalFlightTime: f.arrivalTime || undefined,
+    departureFlightTime: f.departureTime || undefined,
+    seed,
+  };
+}
 
-export default function PlannerClient() {
-  const searchParams = useSearchParams();
-  const preselected = searchParams.get("city");
+/**
+ * Generation itself takes a few milliseconds. The skeleton is held for this long anyway: a loading
+ * state that flashes for 100ms reads as a glitch, one that settles in 300ms reads as the plan being built.
+ */
+const MIN_BUSY_MS = 300;
 
-  const [slug, setSlug] = useState(preselected && getDestinationBySlug(preselected) ? preselected : destinations[0].slug);
-  const [duration, setDuration] = useState<TripDuration>(5);
-  const [budget, setBudget] = useState<"budget" | "mid-range" | "luxury">("mid-range");
-  const [travelStyle, setTravelStyle] = useState<TravelStyle>("first-time");
-  const [interests, setInterests] = useState<Interest[]>(["food", "history", "photography"]);
-  const [hasGenerated, setHasGenerated] = useState(false);
-  const [isGenerating, setIsGenerating] = useState(false);
-  const [activeDay, setActiveDay] = useState(1);
+const FIT_TEXT = {
+  under: "Under your budget tier",
+  "on-target": "On target for your budget tier",
+  over: "Over your budget tier",
+} as const;
 
-  const destination = getDestinationBySlug(slug) ?? destinations[0];
+export interface PlannerInitial {
+  city?: string;
+  start?: string;
+  end?: string;
+  adults?: string;
+  children?: string;
+  go?: string;
+  origin?: string;
+}
 
-  const itinerary = useMemo(() => {
-    if (!hasGenerated) return null;
-    return generateItinerary({ destination, duration, budget, travelStyle, interests });
-  }, [hasGenerated, destination, duration, budget, travelStyle, interests]);
+export default function PlannerClient({ initial, initialDestination }: { initial: PlannerInitial; initialDestination: Destination }) {
+  const initialSlug = initialDestination.slug;
 
-  function toggleInterest(i: Interest) {
-    setInterests((prev) => (prev.includes(i) ? prev.filter((x) => x !== i) : [...prev, i]));
-  }
+  const [form, setForm] = useState<PlannerFormState>(() => ({
+    ...DEFAULTS,
+    slug: initialSlug,
+    startDate: isIsoDate(initial.start) ? initial.start : "",
+    endDate: isIsoDate(initial.end) ? initial.end : "",
+    adults: Math.min(12, Math.max(1, Number(initial.adults) || DEFAULTS.adults)),
+    children: Math.min(8, Math.max(0, Number(initial.children) || 0)),
+  }));
+  const [itinerary, setItinerary] = useState<GeneratedItinerary | null>(null);
+  // Arriving from the landing search (?go=1) builds straight away, so the skeleton is there from the first paint.
+  const [busy, setBusy] = useState(!!initial.go);
+  const [stale, setStale] = useState(false);
+  const [origin, setOrigin] = useState(/^[A-Za-z]{3}$/.test(initial.origin ?? "") ? initial.origin!.toUpperCase() : "");
+  const regen = useRef(0);
+  const resultsRef = useRef<HTMLDivElement>(null);
 
-  /** Any control change invalidates the current result and resets the view
-   * back to day one, so the next generation always starts from a clean slate. */
-  function resetResult() {
-    setHasGenerated(false);
-    setActiveDay(1);
-  }
+  const [destination, setDestination] = useState<Destination>(initialDestination);
+  // A load error belongs to the city it happened for; choosing another city clears it without an effect.
+  const [loadError, setLoadError] = useState<{ slug: string; message: string } | null>(null);
+  const cityError = loadError && loadError.slug === form.slug ? loadError.message : "";
+  const cities = useMemo(() => cityIndex.map((c) => ({ slug: c.slug, city: c.city, country: c.country })), []);
+
+  // The picker moved to a city whose data has not arrived yet. Derived, not stored: a "loading" flag that an effect
+  // had to reset could be left set forever (its cleanup ran as soon as the new city landed, before it could clear it).
+  const loadingCity = form.slug !== destination.slug && !cityError;
+
+  // Open-data cities are separate chunks; fetch the chosen one when the picker changes.
+  useEffect(() => {
+    if (form.slug === destination.slug) return;
+    let live = true;
+    const slug = form.slug;
+    loadDestination(slug)
+      .then((d) => {
+        if (!live) return;
+        if (d) setDestination(d);
+        else setLoadError({ slug, message: "That city could not be loaded." });
+      })
+      .catch(() => live && setLoadError({ slug, message: "That city could not be loaded. Check your connection and try again." }));
+    return () => {
+      live = false;
+    };
+  }, [form.slug, destination.slug]);
+
+  // Start fetching an open-data city's chunk as soon as it is hovered or pressed, so the click lands on a warm cache.
+  const warmCity = useCallback((slug: string) => {
+    void loadDestination(slug).catch(() => undefined);
+  }, []);
+
+  const update = useCallback((patch: Partial<PlannerFormState>) => {
+    setForm((f) => ({ ...f, ...patch }));
+    setStale(true);
+  }, []);
+
+  // Schedules the build. Not cancelled on unmount: Strict Mode's simulated unmount in development would kill this
+  // timer, and the auto-build effect below never re-runs, leaving the skeleton up for good. Late updates are harmless.
+  const runBuild = useCallback(
+    (f: PlannerFormState) => {
+      window.setTimeout(() => {
+        setItinerary(generateItinerary(toInput(f, destination, "sekai")));
+        regen.current = 0;
+        setStale(false);
+        setBusy(false);
+        const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        window.setTimeout(() => resultsRef.current?.scrollIntoView({ behavior: calm ? "auto" : "smooth", block: "start" }), 50);
+      }, MIN_BUSY_MS);
+    },
+    [destination]
+  );
+  const build = useCallback(
+    (f: PlannerFormState) => {
+      setBusy(true);
+      runBuild(f);
+    },
+    [runBuild]
+  );
+
+  // Arriving from the landing page search (?go=1): build straight away.
+  const auto = useRef(false);
+  useEffect(() => {
+    if (auto.current) return;
+    auto.current = true;
+    if (initial.go) runBuild(form); // busy is already true (see its initial value)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const trip: TripLinkInput = useMemo(
+    () => ({
+      destination: itinerary?.input.destination ?? destination,
+      origin: origin || undefined,
+      startDate: itinerary?.startDate,
+      endDate: itinerary?.endDate,
+      adults: form.adults,
+      children: form.children,
+    }),
+    [destination, itinerary?.input.destination, origin, itinerary?.startDate, itinerary?.endDate, form.adults, form.children]
+  );
+
+  const topActivities = useMemo(() => {
+    if (!itinerary) return [];
+    const names: string[] = [];
+    for (const day of itinerary.days)
+      for (const s of day.stops)
+        if ((s.category === "landmark" || s.category === "experience") && s.priority === "must-see" && !names.includes(s.name)) names.push(s.name);
+    return names.slice(0, 3);
+  }, [itinerary]);
+
+  const onRegenerate = (dayNumber: number) => {
+    if (!itinerary) return;
+    regen.current += 1;
+    setItinerary(regenerateDay(itinerary, dayNumber, `shuffle-${regen.current}`));
+  };
+  const onSwap = (dayNumber: number, stopIndex: number, alternativeId: string) => {
+    if (!itinerary) return;
+    const res = swapStop(itinerary, dayNumber, stopIndex, alternativeId);
+    if (!res.error) setItinerary(res.itinerary);
+  };
+
+  const problem = itinerary ? tripProblem(itinerary) : undefined;
+  const fit = itinerary?.budgetFit;
+  const perDayLikely = itinerary ? itinerary.cost.likely / itinerary.duration : 0;
 
   return (
-    <main className="journal">
-      <p className="journal-eyebrow">Curated Itineraries</p>
-
-      <section className="journal-spread">
-        {/* ============== LEFT: destination feature ============== */}
-        <div className="feature">
-          <div className="feature-photo" key={slug}>
-            <ClientDestinationMedia slug={destination.slug} city={destination.city} variant="hero" />
-          </div>
-
-          <div className="feature-heading">
-            <p className="feature-country">{destination.country}</p>
-            <h1 className="feature-city">{destination.city}</h1>
-            <p className="feature-tagline">{destination.tagline}</p>
-
-            <label htmlFor="city-select" className="sr-only">Choose a destination</label>
-            <div className="feature-switcher">
-              <span>Now touring</span>
-              <select id="city-select" value={slug} onChange={(e) => { setSlug(e.target.value); resetResult(); }}>
-                {destinations.map((d) => (
-                  <option key={d.slug} value={d.slug}>
-                    {d.city}, {d.country}
-                  </option>
-                ))}
-              </select>
-            </div>
-          </div>
-
-          <form
-            className="prefs"
-            onSubmit={(e) => {
-              e.preventDefault();
-              setActiveDay(1);
-              setIsGenerating(true);
-              // A short, honest pause — long enough for the transition to read
-              // as intentional, short enough to never feel like a real wait.
-              // No fake progress claims: this is instant deterministic work.
-              window.setTimeout(() => {
-                setHasGenerated(true);
-                setIsGenerating(false);
-              }, 380);
-            }}
-          >
-            <div className="pref-row">
-              <span className="pref-label">Trip length</span>
-              <div className="pref-options" role="group" aria-label="Trip length">
-                {DURATIONS.map((d) => (
-                  <button
-                    type="button"
-                    key={d}
-                    className={`pref-option${duration === d ? " active" : ""}`}
-                    aria-pressed={duration === d}
-                    onClick={() => { setDuration(d); resetResult(); }}
-                  >
-                    {d} days
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <div className="pref-row">
-              <span className="pref-label">Budget</span>
-              <div className="pref-options" role="group" aria-label="Budget">
-                {BUDGETS.map((b) => (
-                  <button
-                    type="button"
-                    key={b.id}
-                    className={`pref-option${budget === b.id ? " active" : ""}`}
-                    aria-pressed={budget === b.id}
-                    onClick={() => { setBudget(b.id); resetResult(); }}
-                  >
-                    {b.label}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <div className="pref-row">
-              <span className="pref-label">Travel style</span>
-              <div className="pref-options" role="group" aria-label="Travel style">
-                {ALL_TRAVEL_STYLES.map((s) => (
-                  <button
-                    type="button"
-                    key={s}
-                    className={`pref-option${travelStyle === s ? " active" : ""}`}
-                    aria-pressed={travelStyle === s}
-                    onClick={() => { setTravelStyle(s); resetResult(); }}
-                  >
-                    {TRAVEL_STYLE_LABELS[s]}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <div className="pref-row">
-              <span className="pref-label">Interests</span>
-              <div className="pref-options" role="group" aria-label="Interests">
-                {ALL_INTERESTS.map((i) => (
-                  <button
-                    type="button"
-                    key={i}
-                    className={`pref-option${interests.includes(i) ? " active" : ""}`}
-                    aria-pressed={interests.includes(i)}
-                    onClick={() => { toggleInterest(i); resetResult(); }}
-                  >
-                    {INTEREST_LABELS[i]}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <button type="submit" className="feature-cta" disabled={isGenerating} aria-busy={isGenerating}>
-              {isGenerating ? "Building itinerary…" : "Build my itinerary →"}
-            </button>
-          </form>
+    <main className="planner-page">
+      <header className="planner-hero">
+        <div className="planner-hero-photo" aria-hidden="true" key={destination.slug}>
+          <Photo slug={destination.slug} city={destination.city} sizes="100vw" priority />
         </div>
+        <div className="planner-hero-text">
+          <p className="eyebrow">Plan a trip · {destination.country}</p>
+          <h1>{destination.city}</h1>
+          <p className="lede">{destination.tagline}</p>
+        </div>
+      </header>
 
-        {/* ============== RIGHT: the itinerary, as a journal page ============== */}
-        <div className="journal-page">
-          {!itinerary && !isGenerating && (
-            <div className="journal-empty">
-              <p className="journal-empty-lead">
-                {duration} days in {destination.city}, arranged for you.
-              </p>
-              <p className="muted-small">
-                Real neighborhoods, real timing, no backtracking across town for a view.
-                Adjust anything at left — the plan updates the moment you build it.
-              </p>
-            </div>
+      <div className="planner planner-layout">
+        <aside className="planner-side" aria-label="Trip settings">
+          <PlannerForm
+            state={form}
+            onChange={update}
+            cities={cities}
+            destination={destination}
+            onSubmit={() => build(form)}
+            onWarmCity={warmCity}
+            busy={busy || loadingCity}
+          />
+        </aside>
+
+        <div className={`planner-main${loadingCity && itinerary ? " is-loading" : ""}`} ref={resultsRef}>
+          {cityError && (
+            <p className="stale-note" role="alert">
+              {cityError}
+            </p>
           )}
-
-          {isGenerating && (
-            <div className="journal-loading" role="status" aria-live="polite">
-              <span className="journal-loading-mark" aria-hidden="true" />
-              <p>Building your {duration}-day itinerary for {destination.city}…</p>
-            </div>
-          )}
-
-          {itinerary && !isGenerating && (
-            <div className="journal-result">
-              <h2 className="journal-title">
-                {duration} days in {destination.city}
+          {!itinerary && !busy && !loadingCity && (
+            // ScrollFX tags this with data-reveal as soon as it mounts, which can land before this subtree hydrates
+            // (the route's loading boundary hydrates separately). The attribute is deliberately client-only.
+            <div className="planner-empty" suppressHydrationWarning>
+              <h2>
+                {form.startDate && form.endDate ? "Your dates are set" : `${form.duration} days in ${destination.city}`}, ready when you are
               </h2>
-              <p className="journal-subtitle">
-                {TRAVEL_STYLE_LABELS[travelStyle]} · {BUDGETS.find((b) => b.id === budget)?.label} ·{" "}
-                {interests.map((i) => INTEREST_LABELS[i]).join(", ") || "no interests selected"}
+              <p>
+                Choose how you travel on the left and build your plan. Stops are grouped by neighborhood, ordered nearest
+                first, and checked against opening hours for your dates.
               </p>
+            </div>
+          )}
 
-              {itinerary.days.length > 1 && (
-                <nav className="journal-days" role="tablist" aria-label="Itinerary days">
-                  {itinerary.days.map((day) => (
-                    <button
-                      key={day.dayNumber}
-                      type="button"
-                      role="tab"
-                      id={`daytab-${day.dayNumber}`}
-                      aria-selected={activeDay === day.dayNumber}
-                      aria-controls={`daypanel-${day.dayNumber}`}
-                      className={`journal-day-btn${activeDay === day.dayNumber ? " active" : ""}`}
-                      onClick={() => setActiveDay(day.dayNumber)}
-                    >
-                      {String(day.dayNumber).padStart(2, "0")}
-                    </button>
-                  ))}
-                </nav>
+          {busy && <PlanSkeleton label={`Building your plan for ${destination.city}`} />}
+          {!busy && loadingCity && !itinerary && <PlanSkeleton label="Loading city data" />}
+
+          {itinerary && !busy && problem && (
+            <>
+              {stale && (
+                <p className="stale-note" role="status">
+                  Settings changed. Build again to update this plan.
+                </p>
               )}
+              <TightTripNotice problem={problem} />
+            </>
+          )}
 
-              {itinerary.days
-                .filter((day) => day.dayNumber === activeDay)
-                .map((day) => (
-                <article
-                  className="journal-day"
-                  role="tabpanel"
-                  id={`daypanel-${day.dayNumber}`}
-                  aria-labelledby={`daytab-${day.dayNumber}`}
-                  tabIndex={0}
-                  key={day.dayNumber}
-                >
-                  <header className="journal-day-head">
-                    <h3>{day.title}</h3>
-                    <p>Day {day.dayNumber} · Focus on {day.neighborhoodFocus}</p>
-                  </header>
-
-                  <div className="journal-stops">
-                    {day.stops.map((stop, i) => (
-                      <div className="journal-stop" style={{ animationDelay: `${Math.min(i, 8) * 45}ms` }} key={i}>
-                        <div className="journal-stop-time">
-                          <span>{stop.time}</span>
-                          {stop.endTime && <span className="journal-stop-time-end">–{stop.endTime}</span>}
-                        </div>
-                        <div className="journal-stop-rule" aria-hidden="true" />
-                        <div className="journal-stop-body">
-                          <div className="journal-stop-meta">
-                            <StopIcon kind={stop.kind} className={`dot-${stopDotCategory(stop.kind)}`} />
-                            <span>{STOP_KIND_LABELS[stop.kind] ?? stop.kind}</span>
-                            {stop.priority && (
-                              <span className="journal-stop-priority">
-                                <PriorityIcon priority={stop.priority} /> {priorityLabel(stop.priority)}
-                              </span>
-                            )}
-                          </div>
-                          <h4>{stop.name}</h4>
-                          <p className="journal-stop-location">{stop.neighborhood} · {stop.durationLabel}</p>
-                          <p className="journal-stop-desc">{stop.description}</p>
-                          {stop.whyGo && <p className="journal-stop-why">{stop.whyGo}</p>}
-                          <div className="journal-stop-facts">
-                            {stop.approxCost && <span>{stop.approxCost}</span>}
-                            {stop.transportNote && <span>{stop.transportNote}</span>}
-                          </div>
-                          {stop.reservationNote && (
-                            <p className="reservation-note">
-                              <NoteIcon /> {stop.reservationNote}
-                            </p>
-                          )}
-                        </div>
-                      </div>
-                    ))}
+          {itinerary && !busy && !problem && (
+            <>
+              {stale && (
+                <p className="stale-note" role="status">
+                  Settings changed. Build again to update this plan.
+                </p>
+              )}
+              <section className="trip-summary" aria-label="Trip summary">
+                <div>
+                  <h2>
+                    {itinerary.duration} {itinerary.duration === 1 ? "day" : "days"} in {itinerary.destination}
+                  </h2>
+                  <p className="muted">
+                    {TRAVEL_STYLE_LABELS[itinerary.input.travelStyle]} · {BUDGET_LABELS[itinerary.input.budget]} ·{" "}
+                    {PACE_LABELS[itinerary.input.pace]}
+                    {itinerary.startDate && (
+                      <>
+                        {" · "}
+                        {formatDate(itinerary.startDate)} to {formatDate(itinerary.endDate)}
+                      </>
+                    )}
+                    {itinerary.input.interests.length > 0 && (
+                      <> · {itinerary.input.interests.map((i: Interest) => INTEREST_LABELS[i]).join(", ")}</>
+                    )}
+                  </p>
+                </div>
+                <dl className="trip-total">
+                  <div>
+                    <dt>Planned entries and meals, per person</dt>
+                    <dd>
+                      <strong>{moneyRange(itinerary.cost.low, itinerary.cost.high, itinerary.currency)}</strong>
+                      <span>likely {money(itinerary.cost.likely, itinerary.currency)}</span>
+                    </dd>
                   </div>
-                </article>
+                  {itinerary.input.groupSize > 1 && (
+                    <div>
+                      <dt>Whole party ({itinerary.input.groupSize})</dt>
+                      <dd>
+                        <strong>{money(itinerary.groupLikely, itinerary.currency)}</strong>
+                        <span>children may pay less</span>
+                      </dd>
+                    </div>
+                  )}
+                  {fit && itinerary.input.destination.quickFacts.averageDailyBudget && (
+                    <div>
+                      <dt>Budget fit</dt>
+                      <dd>
+                        <strong className={`fit fit-${fit.status}`}>{fit.comparable ? FIT_TEXT[fit.status] : "Not comparable"}</strong>
+                        <span>
+                          {fit.comparable
+                            ? `${money(Math.round(perDayLikely), itinerary.currency)} per day vs ${fit.tierDailyMin !== undefined ? money(fit.tierDailyMin, itinerary.currency) : ""}${fit.tierDailyMax ? `–${money(fit.tierDailyMax, itinerary.currency).replace(/^[^\d]*/, "")}` : "+"} total daily budget`
+                            : "Tier budget is in another currency"}
+                        </span>
+                      </dd>
+                    </div>
+                  )}
+                </dl>
+                <p className="muted summary-foot">
+                  Excludes lodging and transport. Ranges come from listed prices; {itinerary.cost.unknownItems} stop(s) have none
+                  and count as zero.
+                </p>
+                {itinerary.season && (
+                  <p className="muted summary-foot">
+                    Month check (1 to 5):{" "}
+                    {[
+                      itinerary.season.crowds !== undefined && `crowds ${itinerary.season.crowds}`,
+                      `weather ${itinerary.season.weather}`,
+                      itinerary.season.price !== undefined && `prices ${itinerary.season.price}`,
+                    ]
+                      .filter(Boolean)
+                      .join(", ")}
+                    . {itinerary.input.destination.tier === "open" ? "Weather is computed from climate averages." : "Editorial estimate."}
+                  </p>
+                )}
+                {itinerary.warnings.length > 0 && (
+                  <ul className="warn-list" role="status">
+                    {itinerary.warnings.map((w, i) => (
+                      <li key={i}>{w}</li>
+                    ))}
+                  </ul>
+                )}
+              </section>
+
+              <nav className="day-jump" aria-label="Jump to a day">
+                {itinerary.days.map((d) => (
+                  <a key={d.dayNumber} href={`#day-${d.dayNumber}`}>
+                    {d.dayNumber}
+                  </a>
+                ))}
+              </nav>
+
+              {itinerary.days.map((day) => (
+                <DayCard key={day.dayNumber} day={day} itinerary={itinerary} trip={trip} onRegenerate={onRegenerate} onSwap={onSwap} />
               ))}
 
               {itinerary.unusedHighlights.length > 0 && (
-                <div className="journal-footnote">
-                  <p className="pref-label">Didn't make the cut this trip</p>
-                  <p className="muted-small">
-                    Worth considering on a longer visit or a return trip: {itinerary.unusedHighlights.join(", ")}.
-                  </p>
-                </div>
+                <p className="footnote">
+                  <strong>Didn&apos;t make the cut:</strong> {itinerary.unusedHighlights.join(", ")}. Worth a longer visit, or use
+                  &ldquo;Must include&rdquo;.
+                </p>
               )}
-            </div>
+
+              <div className="tools-grid">
+                <PricesPanel trip={trip} currency={itinerary.currency} origin={origin} onOriginChange={setOrigin} topActivities={topActivities} />
+                <BookTripPanel trip={trip} topActivities={topActivities} origin={origin} onOriginChange={setOrigin} />
+              </div>
+            </>
           )}
         </div>
-      </section>
+      </div>
     </main>
   );
 }

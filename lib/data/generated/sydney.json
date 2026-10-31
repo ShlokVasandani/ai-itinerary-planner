@@ -1,0 +1,629 @@
+{
+  "bbox": [
+    -34.1698,
+    150.847,
+    -33.5698,
+    151.5696
+  ],
+  "places": {
+    "art-gallery-nsw": {
+      "closedDays": [],
+      "coords": {
+        "lat": -33.868607,
+        "lng": 151.217418
+      },
+      "costCurrency": "AUD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.artgallery.nsw.gov.au/",
+      "openingHours": [
+        {
+          "days": "Mo,Tu,Th-Su",
+          "open": "10:00",
+          "close": "17:00"
+        },
+        {
+          "days": "We",
+          "open": "10:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1265404795",
+        "https://www.wikidata.org/wiki/Q705551"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "barangaroo-reserve": {
+      "coords": {
+        "lat": -33.858489,
+        "lng": 151.201165
+      },
+      "costCurrency": "AUD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.barangaroo.com/precincts/barangaroo-reserve",
+      "sources": [
+        "https://www.openstreetmap.org/relation/17039613",
+        "https://www.wikidata.org/wiki/Q30435452"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "bondi-coogee-walk": {
+      "costCurrency": "AUD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "c-black-star-pastry": {
+      "closedDays": [],
+      "coords": {
+        "lat": -33.917573,
+        "lng": 151.202222
+      },
+      "officialUrl": "https://www.blackstarpastry.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:30",
+          "close": "16:00"
+        },
+        {
+          "days": "Sa",
+          "open": "07:30",
+          "close": "17:00"
+        },
+        {
+          "days": "Su",
+          "open": "07:30",
+          "close": "16:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/683851397"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-campos-coffee": {
+      "coords": {
+        "lat": -33.904399,
+        "lng": 151.143318
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4222916989"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-gelato-messina": {},
+    "c-reuben-hills": {
+      "closedDays": [],
+      "coords": {
+        "lat": -33.882901,
+        "lng": 151.21099
+      },
+      "officialUrl": "https://www.reubenhills.com.au/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:00",
+          "close": "15:30"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "07:30",
+          "close": "15:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/10679626485"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-single-o": {
+      "closedDays": [],
+      "coords": {
+        "lat": -33.88118,
+        "lng": 151.209681
+      },
+      "officialUrl": "http://www.singleorigin.com.au/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:00",
+          "close": "15:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "08:00",
+          "close": "15:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/594438630"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "harbour-bridge": {
+      "coords": {
+        "lat": -33.852117,
+        "lng": 151.210781
+      },
+      "costCurrency": "AUD",
+      "costMax": 300,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/relation/3178788",
+        "https://www.wikidata.org/wiki/Q54495"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "manly-ferry": {
+      "coords": {
+        "lat": -33.800096,
+        "lng": 151.284915
+      },
+      "costCurrency": "AUD",
+      "costMax": 9.18,
+      "costMin": 9.18,
+      "sources": [
+        "https://www.openstreetmap.org/way/7981564",
+        "https://www.wikidata.org/wiki/Q6750626"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "museum-of-contemporary-art-australia": {
+      "coords": {
+        "lat": -33.86,
+        "lng": 151.208889
+      },
+      "officialUrl": "http://www.mca.com.au/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q690242"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-fortune-of-war": {
+      "coords": {
+        "lat": -33.860368,
+        "lng": 151.20841
+      },
+      "officialUrl": "https://www.fortuneofwar.com.au/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4242650061",
+        "https://www.wikidata.org/wiki/Q58205259"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-opera-bar": {
+      "closedDays": [],
+      "coords": {
+        "lat": -33.858334,
+        "lng": 151.213847
+      },
+      "officialUrl": "https://operabar.com.au/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:30",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1263141006"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-the-old-fitzroy-hotel": {
+      "coords": {
+        "lat": -33.873132,
+        "lng": 151.22063
+      },
+      "officialUrl": "https://oldfitzroy.com.au/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2460131471"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "opera-house": {
+      "coords": {
+        "lat": -33.857198,
+        "lng": 151.215123
+      },
+      "costCurrency": "AUD",
+      "costMax": 45,
+      "costMin": 0,
+      "officialUrl": "https://www.sydneyoperahouse.com/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/9596872",
+        "https://www.wikidata.org/wiki/Q45178"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "queen-victoria-building": {
+      "coords": {
+        "lat": -33.871435,
+        "lng": 151.206669
+      },
+      "costCurrency": "AUD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.qvb.com.au/",
+      "sources": [
+        "https://www.openstreetmap.org/way/40717424",
+        "https://www.wikidata.org/wiki/Q54518"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-bourke-street-bakery": {
+      "coords": {
+        "lat": -33.830188,
+        "lng": 151.220777
+      },
+      "costCurrency": "AUD",
+      "costMax": 15,
+      "costMin": 8,
+      "sources": [
+        "https://www.openstreetmap.org/node/2520443576"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-chat-thai": {
+      "coords": {
+        "lat": -33.795101,
+        "lng": 151.188061
+      },
+      "costCurrency": "AUD",
+      "costMax": 40,
+      "costMin": 25,
+      "officialUrl": "https://www.chatthai.com.au/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1158335090"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-doyles-on-the-beach": {
+      "coords": {
+        "lat": -33.842867,
+        "lng": 151.28192
+      },
+      "officialUrl": "https://www.doyles.com.au/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1034473941",
+        "https://www.wikidata.org/wiki/Q104902160"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-fish-market": {
+      "coords": {
+        "lat": -33.87438,
+        "lng": 151.190668
+      },
+      "costCurrency": "AUD",
+      "costMax": 45,
+      "costMin": 25,
+      "officialUrl": "https://sydneyfishmarket.com.au/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1361888445",
+        "https://www.wikidata.org/wiki/Q7659930"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-harry-s-cafe-de-wheels": {
+      "coords": {
+        "lat": -33.874729,
+        "lng": 151.201614
+      },
+      "officialUrl": "https://www.harryscafedewheels.com.au/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1136063020"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-icebergs": {
+      "costCurrency": "AUD",
+      "costMax": 180,
+      "costMin": 120
+    },
+    "r-mamak": {
+      "closedDays": [],
+      "coords": {
+        "lat": -33.877718,
+        "lng": 151.204228
+      },
+      "officialUrl": "https://www.mamak.com.au/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "17:30",
+          "close": "22:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "17:30",
+          "close": "26:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4242643119"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-mimis": {
+      "coords": {
+        "lat": -33.944938,
+        "lng": 151.140119
+      },
+      "costCurrency": "AUD",
+      "costMax": 120,
+      "costMin": 80,
+      "sources": [
+        "https://www.openstreetmap.org/way/616191348"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-mr-crackles": {
+      "costCurrency": "AUD",
+      "costMax": 16,
+      "costMin": 12
+    },
+    "r-quay": {
+      "coords": {
+        "lat": -33.861359,
+        "lng": 151.210719
+      },
+      "costCurrency": "AUD",
+      "costMin": 300,
+      "sources": [
+        "https://www.openstreetmap.org/node/1692720118",
+        "https://www.wikidata.org/wiki/Q5121652"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-spice-alley": {
+      "closedDays": [],
+      "coords": {
+        "lat": -33.885166,
+        "lng": 151.201947
+      },
+      "costCurrency": "AUD",
+      "costMax": 20,
+      "costMin": 12,
+      "officialUrl": "https://spicealley.com.au/",
+      "openingHours": [
+        {
+          "days": "Mo-We,Su",
+          "open": "11:00",
+          "close": "21:30"
+        },
+        {
+          "days": "Th-Sa",
+          "open": "11:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1125514390"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "royal-botanic-garden": {
+      "coords": {
+        "lat": -33.862769,
+        "lng": 151.215711
+      },
+      "costCurrency": "AUD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.botanicgardens.org.au/royal-botanic-garden-sydney",
+      "sources": [
+        "https://www.openstreetmap.org/relation/3744999",
+        "https://www.wikidata.org/wiki/Q54489"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-carriageworks-farmers-market": {
+      "closedDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "coords": {
+        "lat": -33.893629,
+        "lng": 151.191239
+      },
+      "officialUrl": "https://carriageworks.com.au/events/carriageworks-farmers-market/",
+      "openingHours": [
+        {
+          "days": "Sa",
+          "open": "08:00",
+          "close": "13:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/245305679"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-paddington-markets": {
+      "closedDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "coords": {
+        "lat": -33.887264,
+        "lng": 151.22997
+      },
+      "officialUrl": "https://www.paddingtonmarkets.com.au/",
+      "openingHours": [
+        {
+          "days": "Sa",
+          "open": "10:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/12967407669"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-pitt-street-mall": {
+      "coords": {
+        "lat": -33.86978,
+        "lng": 151.208274
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/353552750"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-queen-victoria-building-qvb": {
+      "coords": {
+        "lat": -33.871435,
+        "lng": 151.206669
+      },
+      "officialUrl": "https://www.qvb.com.au/",
+      "sources": [
+        "https://www.openstreetmap.org/way/40717424",
+        "https://www.wikidata.org/wiki/Q54518"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-blue-mountains": {
+      "coords": {
+        "lat": -33.609741,
+        "lng": 150.405224
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/889118010",
+        "https://www.wikidata.org/wiki/Q667529"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-hunter-valley": {
+      "coords": {
+        "lat": -32.450678,
+        "lng": 150.926241
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1390603808",
+        "https://www.wikidata.org/wiki/Q1638164"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-royal-national-park": {
+      "coords": {
+        "lat": -34.1122,
+        "lng": 151.026727
+      },
+      "officialUrl": "http://www.nationalparks.nsw.gov.au/visit-a-park/parks/Royal-National-Park",
+      "sources": [
+        "https://www.openstreetmap.org/relation/285416",
+        "https://www.wikidata.org/wiki/Q113523"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "taronga-zoo": {
+      "coords": {
+        "lat": -33.843832,
+        "lng": 151.241375
+      },
+      "costCurrency": "AUD",
+      "costMax": 51,
+      "costMin": 51,
+      "officialUrl": "https://taronga.org.au/taronga-zoo",
+      "sources": [
+        "https://www.openstreetmap.org/way/4354532",
+        "https://www.wikidata.org/wiki/Q1064813"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "the-rocks": {
+      "coords": {
+        "lat": -33.859992,
+        "lng": 151.208322
+      },
+      "costCurrency": "AUD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/relation/5729505",
+        "https://www.wikidata.org/wiki/Q14210737"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "watsons-bay": {
+      "coords": {
+        "lat": -33.843274,
+        "lng": 151.282574
+      },
+      "sources": [
+        "https://www.openstreetmap.org/relation/5710430",
+        "https://www.wikidata.org/wiki/Q1002650"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-blue-mountains-day-trip": {
+      "costCurrency": "AUD",
+      "costMax": 20,
+      "costMin": 20
+    },
+    "x-bondi-to-coogee-coastal-walk": {
+      "costCurrency": "AUD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-bridgeclimb-sydney": {
+      "coords": {
+        "lat": -33.857356,
+        "lng": 151.207814
+      },
+      "costCurrency": "AUD",
+      "costMax": 400,
+      "costMin": 300,
+      "officialUrl": "https://www.bridgeclimb.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/5042081721"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-sydney-harbour-ferry-hopping": {
+      "costCurrency": "AUD",
+      "costMax": 30,
+      "costMin": 20
+    },
+    "x-sydney-opera-house-guided-tour": {
+      "costCurrency": "AUD",
+      "costMax": 45,
+      "costMin": 45
+    }
+  },
+  "neighborhoods": {
+    "manly": {
+      "coords": {
+        "lat": -33.797742,
+        "lng": 151.28894
+      },
+      "radiusKm": 0.4
+    },
+    "newtown": {
+      "coords": {
+        "lat": -33.896113,
+        "lng": 151.180189
+      },
+      "radiusKm": 1.3
+    },
+    "surry-hills": {
+      "coords": {
+        "lat": -33.884512,
+        "lng": 151.21003
+      },
+      "radiusKm": 1.13
+    }
+  }
+}

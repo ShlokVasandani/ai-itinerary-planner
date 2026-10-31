@@ -1,113 +1,168 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { destinations } from "@/lib/data";
+import { generateItinerary } from "@/lib/itinerary-engine";
 import DestinationCard from "@/components/DestinationCard";
-import Reveal from "@/components/Reveal";
-import CountUp from "@/components/CountUp";
-import { getCityPhotoUrl, cityPhotos } from "@/lib/city-photo-urls";
+import DecryptWord from "@/components/DecryptWord";
+import HeroRoute from "@/components/HeroRoute";
+import HeroSearch from "@/components/HeroSearch";
+import PhotoExpand from "@/components/PhotoExpand";
+import Photo from "@/components/Photo";
+import StackedDays from "@/components/StackedDays";
+import PageTransition from "@/components/PageTransition";
+import { getPhotoCredit } from "@/lib/photos";
+import { cityIndex, curatedCount, openCount, totalPlaces as catalogPlaces } from "@/lib/data/catalog";
+
+const HERO_WORDS = ["Lisbon", "Tokyo", "Rome", "Seoul", "Paris", "Sydney"];
+
+export const metadata: Metadata = {
+  title: { absolute: `Sekai: day-by-day itineraries for ${cityIndex.length} cities` },
+  description:
+    `Plan a trip to Tokyo, Paris, Lisbon and ${cityIndex.length - 3} more cities with day-by-day itineraries built from real places, opening hours and walking times.`,
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
-  const feature = destinations[0]; // Tokyo — this edition's featured cover story
-  const featurePhoto = getCityPhotoUrl(feature.slug);
-  const totalPlaces = destinations.reduce(
-    (sum, d) => sum + d.landmarks.length + d.restaurants.length + d.cafes.length,
+  const lisbon = destinations.find((d) => d.slug === "lisbon") ?? destinations[0];
+  const sample = generateItinerary({
+    destination: lisbon,
+    duration: 3,
+    budget: "mid-range",
+    travelStyle: "first-time",
+    interests: ["history", "food", "photography"],
+    pace: "balanced",
+    seed: "landing",
+  });
+  const totalPlaces = catalogPlaces;
+  const curatedLocated = destinations.reduce(
+    (n, d) => n + [...d.landmarks, ...d.restaurants, ...d.cafes, ...d.nightlife, ...d.shopping].filter((p) => p.coords).length,
     0
   );
+  const curatedPlaces = destinations.reduce(
+    (n, d) => n + d.landmarks.length + d.restaurants.length + d.cafes.length + d.nightlife.length + d.shopping.length,
+    0
+  );
+  // Every open-data place is built from coordinates, so all of them are located.
+  const located = curatedLocated + (catalogPlaces - curatedPlaces);
+  const options = cityIndex.map((d) => ({ slug: d.slug, city: d.city, country: d.country }));
+  const featured = destinations.slice(0, 12);
+  const expandCity = destinations.find((d) => d.slug === "rome") ?? destinations[0];
+  const expandCredit = getPhotoCredit(expandCity.slug);
 
   return (
+    <PageTransition>
     <main>
       <section className="hero">
-        <div className="hero-photo">
-          {featurePhoto && (
-            <img src={featurePhoto} alt={cityPhotos[feature.slug]?.alt ?? feature.city} className="city-photo" />
-          )}
-          <div className="hero-scrim" aria-hidden="true" />
-        </div>
-
-        <div className="hero-body">
-          <p className="eyebrow">Issue No. 01 — {destinations.length} Cities</p>
-          <h1>
-            Trips built around <em>the way you travel</em>.
+        <HeroRoute />
+        <div className="hero-inner">
+          <p className="eyebrow">Itineraries from real, verified places</p>
+          <h1 aria-label="Plan your next trip to a city you'll actually enjoy">
+            <span aria-hidden="true">
+              Plan your next
+              <br />
+              trip to <DecryptWord words={HERO_WORDS} />
+            </span>
           </h1>
-          <p className="hero-lede">
-            Sekai plans real, geographically sensible itineraries from a hand-curated
-            dataset of landmarks, restaurants, and neighborhoods — no invented venues,
-            no generic filler.
+          <p className="lede">
+            Real places, real opening hours, real distances. Pick a city and your dates and get a day-by-day plan you
+            can book from.
           </p>
-          <div className="hero-actions">
-            <Link href="/planner" className="hero-cta-link">
-              Start planning a trip →
-            </Link>
-            <a href="#destinations" className="hero-secondary-link">
-              Browse the {destinations.length} destinations
-            </a>
-          </div>
+          <HeroSearch cities={options} />
         </div>
-
-        <div className="hero-figure">
-          <span className="hero-figure-label">Featured this edition</span>
-          <span className="hero-figure-city">{feature.city}</span>
-          <span className="hero-figure-tagline">{feature.tagline}</span>
-        </div>
-
-        <div className="hero-stat-strip">
-          <span><strong><CountUp value={destinations.length} /></strong> curated destinations</span>
-          <span><strong><CountUp value={totalPlaces} suffix="+" /></strong> real places catalogued</span>
-          <span><strong>3 / 5 / 7</strong> day itineraries, every city</span>
-        </div>
-
-        <a href="#destinations" className="hero-scroll-cue" aria-label="Scroll to destinations">
-          <span>Scroll</span>
-          <span className="hero-scroll-chevron" aria-hidden="true" />
-        </a>
       </section>
 
-      <section className="destinations" id="destinations">
-        <Reveal>
-          <div className="section-heading">
-            <div>
-              <p className="eyebrow">The Destination Hub</p>
-              <h2>Where to next?</h2>
-            </div>
-            <p>Pick a city to explore its landmarks, food scene, and neighborhoods in depth.</p>
-          </div>
-        </Reveal>
+      <section className="stats" aria-label="What is in the data">
+        <ul>
+          <li>
+            <strong>{cityIndex.length}</strong>
+            <span>{openCount ? `cities, ${curatedCount} hand-curated` : "cities, each hand-curated"}</span>
+          </li>
+          <li>
+            <strong>{totalPlaces}</strong>
+            <span>real places catalogued</span>
+          </li>
+          <li>
+            <strong>{located}</strong>
+            <span>pinned to OpenStreetMap coordinates</span>
+          </li>
+          <li>
+            <strong>1–14</strong>
+            <span>day trips, with real dates</span>
+          </li>
+        </ul>
+      </section>
+
+      <section className="expand-section" aria-labelledby="expand-title">
+        <PhotoExpand
+          caption={
+            <>
+              <p className="eyebrow eyebrow-on-dark">{expandCity.country}</p>
+              <h2 id="expand-title">{expandCity.city}</h2>
+              <p>{expandCity.tagline}</p>
+            </>
+          }
+        >
+          <Photo slug={expandCity.slug} city={expandCity.city} sizes="100vw" />
+        </PhotoExpand>
+        {expandCredit && (
+          <p className="photo-credit">
+            Photo: {expandCredit.credit}, {expandCredit.license} ·{" "}
+            <a href={expandCredit.sourcePage} target="_blank" rel="noopener noreferrer">
+              Wikimedia Commons
+            </a>
+          </p>
+        )}
+      </section>
+
+      <section className="section stack-section" id="how" aria-labelledby="how-title">
+        <div className="stack-intro">
+          <p className="eyebrow">A sample plan</p>
+          <h2 id="how-title" className="section-title">
+            Three days in {lisbon.city}, straight from the planner
+          </h2>
+          <p className="lede">
+            This is unedited engine output: stops grouped by neighborhood, ordered nearest-first, with walking and transit
+            time between them. Set your dates and it will also dodge closed days.
+          </p>
+          <Link href={`/planner?city=${lisbon.slug}&go=1`} className="btn btn-ghost" transitionTypes={["nav-forward"]}>
+            Build your own →
+          </Link>
+        </div>
+        <StackedDays itinerary={sample} />
+      </section>
+
+      <section className="section" id="destinations" aria-labelledby="dest-title">
+        <h2 id="dest-title" className="section-title">
+          Where to next?
+        </h2>
         <div className="dest-grid">
-          {destinations.map((d, i) => (
-            <Reveal key={d.slug} delay={(i % 4) * 90} className={i < 2 ? "dest-card-featured-slot" : undefined}>
-              <DestinationCard d={d} index={i} featured={i < 2} secondary={[3, 7, 12, 16].includes(i)} />
-            </Reveal>
+          {featured.map((d, i) => (
+            <DestinationCard key={d.slug} d={d} priority={i < 3} />
           ))}
         </div>
+        <p className="dest-more">
+          <Link href="/destinations" className="btn btn-ghost" transitionTypes={["nav-forward"]}>
+            Browse all {cityIndex.length} cities →
+          </Link>
+        </p>
       </section>
 
-      <section className="how">
-        <Reveal>
-          <p className="eyebrow">How It Works</p>
-        </Reveal>
-        <div className="steps">
-          <Reveal delay={0}>
-            <article>
-              <span>01</span>
-              <h3>Pick a city &amp; trip length</h3>
-              <p>Choose from 20 richly documented destinations and a 3, 5, or 7-day trip.</p>
-            </article>
-          </Reveal>
-          <Reveal delay={100}>
-            <article>
-              <span>02</span>
-              <h3>Tell us your style</h3>
-              <p>Budget, travel style, and interests shape which places make the cut.</p>
-            </article>
-          </Reveal>
-          <Reveal delay={200}>
-            <article>
-              <span>03</span>
-              <h3>Get a real day-by-day plan</h3>
-              <p>Geographically clustered stops, realistic timing, and paced meals — no backtracking.</p>
-            </article>
-          </Reveal>
+      <section className="section dark" aria-labelledby="book-title">
+        <div className="dark-inner">
+          <p className="eyebrow eyebrow-on-dark">From plan to booked</p>
+          <h2 id="book-title" className="section-title on-dark">
+            Official sites first, then the booking sites you already use
+          </h2>
+          <p className="lede on-dark">
+            Every stop links to the venue&apos;s own site and a map. Flights, stays and tours open on Google Flights,
+            Skyscanner, Booking.com, Airbnb, Viator, GetYourGuide and Klook with your dates already filled in.
+          </p>
+          <Link href="/planner" className="btn btn-primary" transitionTypes={["nav-forward"]}>
+            Plan my trip
+          </Link>
         </div>
       </section>
     </main>
+    </PageTransition>
   );
 }

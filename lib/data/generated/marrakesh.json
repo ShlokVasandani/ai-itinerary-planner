@@ -1,0 +1,685 @@
+{
+  "bbox": [
+    31.3258,
+    -8.3415,
+    31.9258,
+    -7.6368
+  ],
+  "places": {
+    "bahia-palace": {
+      "closedDays": [],
+      "coords": {
+        "lat": 31.621633,
+        "lng": -7.981938
+      },
+      "costCurrency": "MAD",
+      "costMax": 70,
+      "costMin": 70,
+      "officialUrl": "https://e-services.minculture.gov.ma/fr/tickets/palais-bahia",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/7117612"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "ben-youssef-madrasa": {
+      "coords": {
+        "lat": 31.631984,
+        "lng": -7.986036
+      },
+      "costCurrency": "MAD",
+      "costMax": 50,
+      "costMin": 50,
+      "officialUrl": "https://www.medersabenyoussef.ma/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/1770461",
+        "https://www.wikidata.org/wiki/Q1560540"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-bacha-coffee": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 31.631521,
+        "lng": -7.992561
+      },
+      "officialUrl": "https://bachacoffee.com/",
+      "openingHours": [
+        {
+          "days": "Tu-Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/8388525617"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-arabe": {
+      "coords": {
+        "lat": 31.630788,
+        "lng": -7.989348
+      },
+      "officialUrl": "https://www.cafearabe.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/660578138"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-atay": {
+      "coords": {
+        "lat": 31.632625,
+        "lng": -7.988456
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4159086789"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-du-livre": {
+      "coords": {
+        "lat": 31.635347,
+        "lng": -8.010814
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5280718021"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-henna-art-cafe": {
+      "coords": {
+        "lat": 31.623731,
+        "lng": -7.987083
+      },
+      "officialUrl": "http://www.marrakechhennaartcafe.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4379055590"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-patisserie-des-princes": {
+      "coords": {
+        "lat": 31.624041,
+        "lng": -7.989158
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/1928934821"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "el-badi-palace": {
+      "closedDays": [],
+      "coords": {
+        "lat": 31.618179,
+        "lng": -7.986486
+      },
+      "costCurrency": "MAD",
+      "costMax": 70,
+      "costMin": 70,
+      "officialUrl": "https://badipalace.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/3241554",
+        "https://www.wikidata.org/wiki/Q1277747"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "jemaa-el-fnaa": {
+      "coords": {
+        "lat": 31.625781,
+        "lng": -7.988904
+      },
+      "costCurrency": "MAD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/13304462701"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "koutoubia-mosque": {
+      "coords": {
+        "lat": 31.623751,
+        "lng": -7.993358
+      },
+      "costCurrency": "MAD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/relation/12255861",
+        "https://www.wikidata.org/wiki/Q1137533"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "le-jardin-secret": {
+      "closedDays": [],
+      "coords": {
+        "lat": 31.630875,
+        "lng": -7.990053
+      },
+      "costCurrency": "MAD",
+      "costMax": 100,
+      "costMin": 80,
+      "officialUrl": "https://www.lejardinsecretmarrakech.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:30",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/448190360"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "maison-de-la-photographie": {
+      "closedDays": [],
+      "coords": {
+        "lat": 31.631986,
+        "lng": -7.984367
+      },
+      "costCurrency": "MAD",
+      "costMax": 50,
+      "costMin": 50,
+      "officialUrl": "https://www.maisondelaphotographie.ma/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:30",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4838054203"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "majorelle-garden": {
+      "coords": {
+        "lat": 31.641475,
+        "lng": -8.002908
+      },
+      "costCurrency": "MAD",
+      "costMax": 200,
+      "costMin": 150,
+      "officialUrl": "https://www.jardinmajorelle.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/41922120",
+        "https://www.wikidata.org/wiki/Q1395431"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "menara-gardens": {
+      "closedDays": [],
+      "coords": {
+        "lat": 31.614106,
+        "lng": -8.01917
+      },
+      "costCurrency": "MAD",
+      "costMax": 70,
+      "costMin": 10,
+      "officialUrl": "http://www.jardin-menara.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "05:30",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/26724062"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "musee-de-marrakech": {
+      "closedDays": [],
+      "coords": {
+        "lat": 31.631566,
+        "lng": -7.985969
+      },
+      "costCurrency": "MAD",
+      "costMax": 70,
+      "costMin": 70,
+      "officialUrl": "https://marrakechmuseum.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "18:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/4627685",
+        "https://www.wikidata.org/wiki/Q3090631"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-jemaa-el-fnaa-at-night": {
+      "coords": {
+        "lat": 31.6258,
+        "lng": -7.9891
+      }
+    },
+    "n-theatro": {
+      "coords": {
+        "lat": 31.621616,
+        "lng": -8.004871
+      },
+      "officialUrl": "https://www.theatromarrakech.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/3266218588"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "place-des-epices-and-the-mellah-spice-market": {
+      "costCurrency": "MAD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "r-al-fassia": {
+      "coords": {
+        "lat": 31.635992,
+        "lng": -8.013364
+      },
+      "costCurrency": "MAD",
+      "costMax": 300,
+      "costMin": 150,
+      "sources": [
+        "https://www.openstreetmap.org/node/519144892"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-cafe-clock": {
+      "closedDays": [],
+      "coords": {
+        "lat": 31.613028,
+        "lng": -7.987289
+      },
+      "costCurrency": "MAD",
+      "costMax": 200,
+      "costMin": 100,
+      "officialUrl": "https://www.cafeclock.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4312385398"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-cafe-des-epices": {
+      "closedDays": [],
+      "coords": {
+        "lat": 31.629045,
+        "lng": -7.987319
+      },
+      "costCurrency": "MAD",
+      "costMax": 200,
+      "costMin": 100,
+      "officialUrl": "https://cafedesepices.ma/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/491675486"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-chez-lamine-hajj-mustapha": {
+      "coords": {
+        "lat": 31.638459,
+        "lng": -8.016469
+      },
+      "costCurrency": "MAD",
+      "costMax": 100,
+      "costMin": 60,
+      "sources": [
+        "https://www.openstreetmap.org/node/13703170603"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-dar-zellij": {
+      "coords": {
+        "lat": 31.637446,
+        "lng": -7.992265
+      },
+      "costCurrency": "MAD",
+      "costMax": 500,
+      "costMin": 300,
+      "sources": [
+        "https://www.openstreetmap.org/node/4598854191"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-jemaa-el-fnaa-food-stalls": {
+      "coords": {
+        "lat": 31.6258,
+        "lng": -7.9891
+      },
+      "costCurrency": "MAD",
+      "costMax": 100,
+      "costMin": 50
+    },
+    "r-la-famille": {
+      "coords": {
+        "lat": 31.632825,
+        "lng": -7.993243
+      },
+      "costCurrency": "MAD",
+      "costMax": 200,
+      "costMin": 120,
+      "sources": [
+        "https://www.openstreetmap.org/node/13948536418"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-le-jardin": {
+      "coords": {
+        "lat": 31.671222,
+        "lng": -7.985007
+      },
+      "costCurrency": "MAD",
+      "costMax": 250,
+      "costMin": 150,
+      "sources": [
+        "https://www.openstreetmap.org/way/366321873"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-le-salama": {
+      "coords": {
+        "lat": 31.626268,
+        "lng": -7.98675
+      },
+      "costCurrency": "MAD",
+      "costMax": 250,
+      "costMin": 150,
+      "sources": [
+        "https://www.openstreetmap.org/node/3370583725"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-naranj": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 31.624537,
+        "lng": -7.985213
+      },
+      "costCurrency": "MAD",
+      "costMax": 250,
+      "costMin": 150,
+      "officialUrl": "https://naranj.ma/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "12:30",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5640112829"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-nomad": {
+      "closedDays": [],
+      "coords": {
+        "lat": 31.628678,
+        "lng": -7.987438
+      },
+      "costCurrency": "MAD",
+      "costMax": 400,
+      "costMin": 200,
+      "officialUrl": "https://nomadmarrakech.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4565739715"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-terrasse-des-epices": {
+      "closedDays": [],
+      "coords": {
+        "lat": 31.631067,
+        "lng": -7.988876
+      },
+      "costCurrency": "MAD",
+      "costMax": 250,
+      "costMin": 150,
+      "officialUrl": "https://www.terrassedesepices.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2278835023"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-ensemble-artisanal": {
+      "coords": {
+        "lat": 31.627207,
+        "lng": -7.996469
+      },
+      "sources": [
+        "https://www.openstreetmap.org/relation/7501122"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-souk-des-teinturiers-dyers-souk": {
+      "coords": {
+        "lat": 31.630212,
+        "lng": -7.988606
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/32868816"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-souk-semmarine": {
+      "coords": {
+        "lat": 31.627915,
+        "lng": -7.988092
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/47205589"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "saadian-tombs": {
+      "closedDays": [],
+      "coords": {
+        "lat": 31.617259,
+        "lng": -7.988555
+      },
+      "costCurrency": "MAD",
+      "costMax": 70,
+      "costMin": 70,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/15662474",
+        "https://www.wikidata.org/wiki/Q2152745"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "souk-semmarine-and-the-medina-souks": {
+      "costCurrency": "MAD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "t-ait-benhaddou-and-ouarzazate": {
+      "coords": {
+        "lat": 31.05,
+        "lng": -7.133333
+      },
+      "officialUrl": "http://www.ait-ben-haddou.net:80/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q309436"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-essaouira": {
+      "coords": {
+        "lat": 31.511828,
+        "lng": -9.76209
+      },
+      "officialUrl": "http://essaouira.org/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/2821038",
+        "https://www.wikidata.org/wiki/Q216939"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-ourika-valley-and-the-high-atlas": {
+      "coords": {
+        "lat": 31.34361,
+        "lng": -7.75131
+      },
+      "sources": [
+        "https://www.wikidata.org/wiki/Q15058332"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-agafay-desert-sunset-and-dinner": {
+      "costCurrency": "MAD",
+      "costMax": 900,
+      "costMin": 500
+    },
+    "x-hammam-and-spa": {
+      "costCurrency": "MAD",
+      "costMax": 600,
+      "costMin": 150
+    },
+    "x-hot-air-balloon-over-the-palmeraie": {
+      "costCurrency": "MAD",
+      "costMax": 2500,
+      "costMin": 1800
+    },
+    "x-moroccan-cooking-class": {
+      "costCurrency": "MAD",
+      "costMax": 700,
+      "costMin": 400
+    },
+    "x-souk-guided-walk": {
+      "costCurrency": "MAD",
+      "costMax": 400,
+      "costMin": 200
+    },
+    "yves-saint-laurent-museum": {
+      "closedDays": [
+        3
+      ],
+      "coords": {
+        "lat": 31.642543,
+        "lng": -8.003419
+      },
+      "costCurrency": "MAD",
+      "costMax": 130,
+      "costMin": 130,
+      "officialUrl": "https://www.museeyslmarrakech.com/",
+      "openingHours": [
+        {
+          "days": "Mo,Tu,Th-Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/672043449"
+      ],
+      "verifiedAt": "2026-10-19"
+    }
+  },
+  "neighborhoods": {
+    "gueliz": {
+      "coords": {
+        "lat": 31.632188,
+        "lng": -8.010813
+      },
+      "radiusKm": 2.92
+    },
+    "jemaa-el-fnaa-and-the-souks": {
+      "coords": {
+        "lat": 31.62902,
+        "lng": -7.991757
+      },
+      "radiusKm": 0.8
+    },
+    "kasbah": {
+      "coords": {
+        "lat": 31.623957,
+        "lng": -7.987207
+      },
+      "radiusKm": 1.46
+    },
+    "majorelle-and-hivernage": {
+      "coords": {
+        "lat": 31.629935,
+        "lng": -8.007592
+      },
+      "radiusKm": 0.8
+    },
+    "medina-mouassine-and-ben-youssef": {
+      "coords": {
+        "lat": 31.632977,
+        "lng": -7.988491
+      },
+      "radiusKm": 2.92
+    },
+    "mellah": {
+      "coords": {
+        "lat": 31.621019,
+        "lng": -7.984236
+      },
+      "radiusKm": 0.4
+    },
+    "palmeraie": {
+      "coords": {
+        "lat": 31.674763,
+        "lng": -7.982627
+      },
+      "radiusKm": 0.4
+    }
+  }
+}

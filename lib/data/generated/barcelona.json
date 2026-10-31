@@ -1,0 +1,658 @@
+{
+  "bbox": [
+    41.0826,
+    1.7772,
+    41.6826,
+    2.5769
+  ],
+  "places": {
+    "boqueria-market": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "bunkers-del-carmel": {
+      "coords": {
+        "lat": 41.419392,
+        "lng": 2.161697
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.barcelona.cat/museuhistoria/es/patrimonios/los-espacios-del-muhba/muhba-turo-de-la-rovira",
+      "sources": [
+        "https://www.openstreetmap.org/way/142894789",
+        "https://www.wikidata.org/wiki/Q99463635"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-caelum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.383052,
+        "lng": 2.174437
+      },
+      "officialUrl": "https://www.caelumbarcelona.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2056517879"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-escriba": {
+      "coords": {
+        "lat": 41.383039,
+        "lng": 2.160246
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/2560085755"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-federal-cafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.376898,
+        "lng": 2.162888
+      },
+      "officialUrl": "https://federalcafe.es/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3215463122"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-syra-coffee": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.399232,
+        "lng": 2.204509
+      },
+      "officialUrl": "https://syra.coffee/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/11236462036"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "casa-batllo": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.391545,
+        "lng": 2.164696
+      },
+      "costCurrency": "EUR",
+      "costMax": 45,
+      "costMin": 35,
+      "officialUrl": "https://www.casabatllo.es/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/9427554",
+        "https://www.wikidata.org/wiki/Q461371"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "casa-mila": {
+      "coords": {
+        "lat": 41.3954,
+        "lng": 2.161762
+      },
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 25,
+      "officialUrl": "https://www.lapedrera.com/ca/home",
+      "sources": [
+        "https://www.openstreetmap.org/relation/8974896",
+        "https://www.wikidata.org/wiki/Q207870"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "casa-vicens": {
+      "coords": {
+        "lat": 41.403506,
+        "lng": 2.150625
+      },
+      "officialUrl": "https://casavicens.org/",
+      "sources": [
+        "https://www.openstreetmap.org/way/132514125",
+        "https://www.wikidata.org/wiki/Q746333"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "gothic-cathedral": {
+      "coords": {
+        "lat": 41.38393,
+        "lng": 2.176554
+      },
+      "costCurrency": "EUR",
+      "costMax": 9,
+      "costMin": 0,
+      "officialUrl": "https://www.catedralbcn.org/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/3298476",
+        "https://www.wikidata.org/wiki/Q17155"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "hospital-de-sant-pau": {
+      "coords": {
+        "lat": 41.413976,
+        "lng": 2.175547
+      },
+      "officialUrl": "https://www.santpaubarcelona.org/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/7422813",
+        "https://www.wikidata.org/wiki/Q507282"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "montjuic": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "n-el-xampanyet-el-born-bars": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 41.384509,
+        "lng": 2.181675
+      },
+      "officialUrl": "https://www.elxampanyet.com/",
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "12:00",
+          "close": "15:30"
+        },
+        {
+          "days": "Tu-Sa",
+          "open": "19:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Su",
+          "open": "12:00",
+          "close": "15:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1192709211"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-la-terrrazza": {
+      "coords": {
+        "lat": 41.368926,
+        "lng": 2.149236
+      },
+      "officialUrl": "https://laterrrazza.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/5663251369"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-opium-barcelona": {
+      "coords": {
+        "lat": 41.385278,
+        "lng": 2.19671
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/2910255827"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "palau-de-la-musica-catalana": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.387584,
+        "lng": 2.175232
+      },
+      "officialUrl": "https://www.palaumusica.cat/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "15:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/377216661",
+        "https://www.wikidata.org/wiki/Q327940"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "park-guell": {
+      "coords": {
+        "lat": 41.414235,
+        "lng": 2.152458
+      },
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 10,
+      "officialUrl": "https://www.parkguell.cat/",
+      "sources": [
+        "https://www.openstreetmap.org/way/66713401",
+        "https://www.wikidata.org/wiki/Q212867"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "picasso-museum": {
+      "coords": {
+        "lat": 41.385104,
+        "lng": 2.181201
+      },
+      "costCurrency": "EUR",
+      "costMax": 12,
+      "costMin": 12,
+      "officialUrl": "https://museupicassobcn.cat/",
+      "sources": [
+        "https://www.openstreetmap.org/way/188938001",
+        "https://www.wikidata.org/wiki/Q1050032"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-bar-canigo": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 41.402972,
+        "lng": 2.157919
+      },
+      "officialUrl": "http://www.barcanigo.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "10:00",
+          "close": "26:00"
+        },
+        {
+          "days": "Fr",
+          "open": "10:00",
+          "close": "27:00"
+        },
+        {
+          "days": "Sa",
+          "open": "20:00",
+          "close": "27:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3517276245"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-bar-del-pla": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 41.385604,
+        "lng": 2.180022
+      },
+      "officialUrl": "https://www.bardelpla.cat/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "12:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "12:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3491476947"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-bar-mut": {
+      "closedDays": [
+        0,
+        1
+      ],
+      "coords": {
+        "lat": 41.3973,
+        "lng": 2.161278
+      },
+      "costCurrency": "EUR",
+      "costMax": 60,
+      "costMin": 40,
+      "officialUrl": "https://barmut.com/",
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "13:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/10759351326"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-cal-pep": {
+      "coords": {
+        "lat": 41.396154,
+        "lng": 2.148923
+      },
+      "costCurrency": "EUR",
+      "costMax": 50,
+      "costMin": 35,
+      "sources": [
+        "https://www.openstreetmap.org/node/6477251387"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-can-culleretes": {
+      "coords": {
+        "lat": 41.381215,
+        "lng": 2.174418
+      },
+      "officialUrl": "https://www.culleretes.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2412873943",
+        "https://www.wikidata.org/wiki/Q98636645"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-can-solé": {
+      "costCurrency": "EUR",
+      "costMax": 55,
+      "costMin": 35
+    },
+    "r-disfrutar": {
+      "closedDays": [
+        0,
+        1
+      ],
+      "coords": {
+        "lat": 41.387762,
+        "lng": 2.153172
+      },
+      "costCurrency": "EUR",
+      "costMin": 290,
+      "officialUrl": "https://www.disfrutarbarcelona.com/",
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "13:00",
+          "close": "15:00"
+        },
+        {
+          "days": "Tu-Sa",
+          "open": "20:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4212026489",
+        "https://www.wikidata.org/wiki/Q113148243"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-el-xampanyet": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 41.384509,
+        "lng": 2.181675
+      },
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 15,
+      "officialUrl": "https://www.elxampanyet.com/",
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "12:00",
+          "close": "15:30"
+        },
+        {
+          "days": "Tu-Sa",
+          "open": "19:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Su",
+          "open": "12:00",
+          "close": "15:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1192709211"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-granja-viader": {
+      "costCurrency": "EUR",
+      "costMax": 6,
+      "costMin": 3
+    },
+    "r-la-boqueria-stalls": {
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 15
+    },
+    "r-la-cova-fumada": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 41.379298,
+        "lng": 2.189194
+      },
+      "officialUrl": "https://www.lacovafumada.com/",
+      "openingHours": [
+        {
+          "days": "Mo-We",
+          "open": "09:00",
+          "close": "15:15"
+        },
+        {
+          "days": "Th,Fr",
+          "open": "09:00",
+          "close": "15:15"
+        },
+        {
+          "days": "Th,Fr",
+          "open": "18:00",
+          "close": "20:15"
+        },
+        {
+          "days": "Sa",
+          "open": "09:00",
+          "close": "13:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3815929010",
+        "https://www.wikidata.org/wiki/Q118765953"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-quimet-quimet": {
+      "coords": {
+        "lat": 41.374222,
+        "lng": 2.165739
+      },
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20,
+      "officialUrl": "https://www.quimetquimet.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/6634324686"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-passeig-de-gracia": {
+      "coords": {
+        "lat": 41.388499,
+        "lng": 2.169058
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/126304897",
+        "https://www.wikidata.org/wiki/Q1419892"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-portal-de-l-angel": {
+      "coords": {
+        "lat": 41.385711,
+        "lng": 2.172926
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/201797772",
+        "https://www.wikidata.org/wiki/Q2873850"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "sagrada-familia": {
+      "coords": {
+        "lat": 41.403505,
+        "lng": 2.174428
+      },
+      "costCurrency": "EUR",
+      "costMax": 40,
+      "costMin": 26,
+      "officialUrl": "https://sagradafamilia.org/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/9194723",
+        "https://www.wikidata.org/wiki/Q48435"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-girona": {
+      "coords": {
+        "lat": 41.979301,
+        "lng": 2.819944
+      },
+      "officialUrl": "https://www.girona.cat/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/343535",
+        "https://www.wikidata.org/wiki/Q7038"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-montserrat": {
+      "coords": {
+        "lat": 41.605376,
+        "lng": 1.811495
+      },
+      "sources": [
+        "https://www.wikidata.org/wiki/Q732115"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-sitges": {
+      "coords": {
+        "lat": 41.23536,
+        "lng": 1.81141
+      },
+      "officialUrl": "https://www.sitges.cat/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/342217",
+        "https://www.wikidata.org/wiki/Q15551"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-beach-afternoon-at-barceloneta": {
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 0
+    },
+    "x-flamenco-show-at-palau-dalmases": {
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 25
+    },
+    "x-montjuic-cable-car-and-castle": {
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 12
+    },
+    "x-sagrada-familia-guided-tour-with-tower-access": {
+      "costCurrency": "EUR",
+      "costMax": 50,
+      "costMin": 40
+    },
+    "x-tapas-crawl-through-el-born-and-gothic-quarter": {
+      "costCurrency": "EUR",
+      "costMax": 60,
+      "costMin": 40
+    }
+  },
+  "neighborhoods": {
+    "barceloneta": {
+      "coords": {
+        "lat": 41.38209,
+        "lng": 2.185515
+      },
+      "radiusKm": 0.69
+    },
+    "eixample": {
+      "coords": {
+        "lat": 41.488169,
+        "lng": 2.293254
+      },
+      "radiusKm": 1.39
+    },
+    "el-born": {
+      "coords": {
+        "lat": 41.384843,
+        "lng": 2.182875
+      },
+      "radiusKm": 1.39
+    },
+    "gothic-quarter": {
+      "coords": {
+        "lat": 41.38384,
+        "lng": 2.174512
+      },
+      "radiusKm": 1.01
+    },
+    "gracia": {
+      "coords": {
+        "lat": 41.406577,
+        "lng": 2.158281
+      },
+      "radiusKm": 2.4
+    },
+    "poble-sec": {
+      "coords": {
+        "lat": 41.242227,
+        "lng": 1.811843
+      },
+      "radiusKm": 1.39
+    }
+  }
+}

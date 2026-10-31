@@ -1,0 +1,860 @@
+{
+  "bbox": [
+    49.7875,
+    13.9537,
+    50.3875,
+    14.8888
+  ],
+  "places": {
+    "c-cafe-imperial": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.089818,
+        "lng": 14.43265
+      },
+      "officialUrl": "https://www.cafeimperial.cz/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3538093404",
+        "https://www.wikidata.org/wiki/Q12879008"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-savoy": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.080926,
+        "lng": 14.407216
+      },
+      "officialUrl": "https://cafesavoy.ambi.cz/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "09:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/332442885"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-slavia": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.081541,
+        "lng": 14.413244
+      },
+      "officialUrl": "https://www.cafeslavia.cz/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "10:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Sa",
+          "open": "09:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/305282765",
+        "https://www.wikidata.org/wiki/Q521045"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-grand-cafe-orient": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.087004,
+        "lng": 14.425517
+      },
+      "officialUrl": "https://www.grandcafeorient.cz/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "09:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "10:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2486520771",
+        "https://www.wikidata.org/wiki/Q123240113"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-kavarna-obecni-dum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.087487,
+        "lng": 14.428013
+      },
+      "officialUrl": "https://www.kavarnaod.cz/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1412851100"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-muj-salek-kavy": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.093518,
+        "lng": 14.455158
+      },
+      "officialUrl": "https://mujsalekkavy.cz/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:00",
+          "close": "21:00"
+        },
+        {
+          "days": "Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1317088234"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "charles-bridge": {
+      "coords": {
+        "lat": 50.086626,
+        "lng": 14.410149
+      },
+      "costCurrency": "CZK",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/119016167",
+        "https://www.wikidata.org/wiki/Q204871"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "dancing-house": {
+      "coords": {
+        "lat": 50.075426,
+        "lng": 14.414172
+      },
+      "costCurrency": "CZK",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://tadu.cz/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/6751056",
+        "https://www.wikidata.org/wiki/Q244816"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "jewish-quarter-josefov": {
+      "coords": {
+        "lat": 50.089755,
+        "lng": 14.418096
+      },
+      "costCurrency": "CZK",
+      "costMax": 550,
+      "costMin": 400,
+      "sources": [
+        "https://www.openstreetmap.org/relation/428844",
+        "https://www.wikidata.org/wiki/Q753292"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "kampa-island-and-the-lennon-wall": {
+      "coords": {
+        "lat": 50.087222,
+        "lng": 14.408611
+      },
+      "costCurrency": "CZK",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q3501077"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "mucha-museum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.084176,
+        "lng": 14.42772
+      },
+      "costCurrency": "CZK",
+      "costMax": 300,
+      "costMin": 300,
+      "officialUrl": "https://www.mucha.cz/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3270484912",
+        "https://www.wikidata.org/wiki/Q959038"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "municipal-house": {
+      "coords": {
+        "lat": 50.087756,
+        "lng": 14.427764
+      },
+      "costCurrency": "CZK",
+      "costMax": 350,
+      "costMin": 350,
+      "officialUrl": "https://www.obecnidum.cz/",
+      "sources": [
+        "https://www.openstreetmap.org/way/27124435",
+        "https://www.wikidata.org/wiki/Q2334312"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-cross-club": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.108293,
+        "lng": 14.443228
+      },
+      "officialUrl": "http://www.crossclub.cz/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "00:00",
+          "close": "05:00"
+        },
+        {
+          "days": "Mo-Th,Su",
+          "open": "18:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "00:00",
+          "close": "07:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "18:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/475379711",
+        "https://www.wikidata.org/wiki/Q19902165"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-hemingway-bar": {
+      "coords": {
+        "lat": 50.08401,
+        "lng": 14.414321
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/3621362829"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-u-zlateho-tygra": {
+      "coords": {
+        "lat": 50.08579,
+        "lng": 14.417908
+      },
+      "officialUrl": "https://www.uzlatehotygra.cz/",
+      "sources": [
+        "https://www.openstreetmap.org/way/173673282",
+        "https://www.wikidata.org/wiki/Q776004"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "national-museum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.078919,
+        "lng": 14.430968
+      },
+      "costCurrency": "CZK",
+      "costMax": 330,
+      "costMin": 280,
+      "officialUrl": "http://www.nm.cz/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/85291",
+        "https://www.wikidata.org/wiki/Q188112"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "old-town-square-and-the-astronomical-clock": {
+      "coords": {
+        "lat": 50.0875,
+        "lng": 14.421389
+      },
+      "costCurrency": "CZK",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q421678"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "petrin-hill-and-lookout-tower": {
+      "costCurrency": "CZK",
+      "costMax": 250,
+      "costMin": 150
+    },
+    "prague-castle": {
+      "coords": {
+        "lat": 50.090811,
+        "lng": 14.400522
+      },
+      "costCurrency": "CZK",
+      "costMax": 450,
+      "costMin": 250,
+      "officialUrl": "https://www.hrad.cz/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1568419131",
+        "https://www.wikidata.org/wiki/Q193369"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-cafe-louvre": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.082067,
+        "lng": 14.418731
+      },
+      "costCurrency": "CZK",
+      "costMax": 500,
+      "costMin": 300,
+      "officialUrl": "https://www.cafelouvre.cz/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:00",
+          "close": "23:30"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "09:00",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/355011255",
+        "https://www.wikidata.org/wiki/Q12879009"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-eska": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.100966,
+        "lng": 14.425948
+      },
+      "costCurrency": "CZK",
+      "costMax": 700,
+      "costMin": 400,
+      "officialUrl": "https://www.eskaletna.cz/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:30",
+          "close": "19:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "09:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/12593681501"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-field": {
+      "costCurrency": "CZK",
+      "costMax": 4000,
+      "costMin": 2500
+    },
+    "r-havelska-koruna": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.085525,
+        "lng": 14.421665
+      },
+      "costCurrency": "CZK",
+      "costMax": 250,
+      "costMin": 150,
+      "officialUrl": "https://www.havelska-koruna.cz/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2504036065"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-kantyna": {
+      "closedDays": [
+        0,
+        6
+      ],
+      "coords": {
+        "lat": 50.040188,
+        "lng": 14.440203
+      },
+      "costCurrency": "CZK",
+      "costMax": 700,
+      "costMin": 400,
+      "officialUrl": "https://www.prague-catering.cz/provozovny/kantyna-ceska-sporitelna-antal/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "11:00",
+          "close": "15:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/9586308238"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-la-degustation-boheme-bourgeoise": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.091032,
+        "lng": 14.425106
+      },
+      "costCurrency": "CZK",
+      "costMax": 5000,
+      "costMin": 3000,
+      "officialUrl": "https://www.ladegustation.cz/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "18:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Mo-Su",
+          "open": "11:30",
+          "close": "15:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3394024949",
+        "https://www.wikidata.org/wiki/Q6462192"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-lokal-dlouhaaa": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.090696,
+        "lng": 14.425758
+      },
+      "costCurrency": "CZK",
+      "costMax": 500,
+      "costMin": 300,
+      "officialUrl": "https://lokal-dlouha.ambi.cz/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "11:00",
+          "close": "25:00"
+        },
+        {
+          "days": "Su",
+          "open": "11:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/529129402"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-maitrea": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.088341,
+        "lng": 14.422479
+      },
+      "costCurrency": "CZK",
+      "costMax": 450,
+      "costMin": 300,
+      "officialUrl": "https://www.restaurace-maitrea.cz/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "11:30",
+          "close": "23:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "12:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1258869798"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-sisters-bistro": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 50.080977,
+        "lng": 14.419868
+      },
+      "costCurrency": "CZK",
+      "costMax": 200,
+      "costMin": 100,
+      "officialUrl": "https://www.sistersbistro.cz/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:00",
+          "close": "20:00"
+        },
+        {
+          "days": "Sa",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/12069775848"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-u-cerneho-vola": {
+      "coords": {
+        "lat": 50.088135,
+        "lng": 14.391853
+      },
+      "costCurrency": "CZK",
+      "costMax": 400,
+      "costMin": 200,
+      "sources": [
+        "https://www.openstreetmap.org/way/34724822",
+        "https://www.wikidata.org/wiki/Q31825916"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-u-fleku": {
+      "coords": {
+        "lat": 50.078744,
+        "lng": 14.417018
+      },
+      "costCurrency": "CZK",
+      "costMax": 600,
+      "costMin": 400,
+      "officialUrl": "http://www.ufleku.cz/",
+      "sources": [
+        "https://www.openstreetmap.org/way/31926751",
+        "https://www.wikidata.org/wiki/Q1581385"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-u-pinkasu": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.083205,
+        "lng": 14.423408
+      },
+      "costCurrency": "CZK",
+      "costMax": 500,
+      "costMin": 300,
+      "officialUrl": "http://www.upinkasu.cz/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/366277840",
+        "https://www.wikidata.org/wiki/Q12049267"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-havelske-trziste": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.084772,
+        "lng": 14.420993
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/127055677",
+        "https://www.wikidata.org/wiki/Q31519093"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-palladium": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.089427,
+        "lng": 14.429638
+      },
+      "officialUrl": "https://www.palladiumpraha.cz/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/546134551",
+        "https://www.wikidata.org/wiki/Q3507490"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "st-vitus-cathedral": {
+      "coords": {
+        "lat": 50.090864,
+        "lng": 14.400571
+      },
+      "officialUrl": "https://www.katedralasvatehovita.cz/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1568419039",
+        "https://www.wikidata.org/wiki/Q5949"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "strahov-monastery-and-library": {
+      "coords": {
+        "lat": 50.085963,
+        "lng": 14.389282
+      },
+      "costCurrency": "CZK",
+      "costMax": 300,
+      "costMin": 150,
+      "officialUrl": "https://www.strahovskyklaster.cz/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q969482"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-cesky-krumlov": {
+      "coords": {
+        "lat": 48.810653,
+        "lng": 14.315059
+      },
+      "officialUrl": "http://www.mu.ckrumlov.cz/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/438508",
+        "https://www.wikidata.org/wiki/Q188082"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-karlstejn-castle": {
+      "coords": {
+        "lat": 49.93955,
+        "lng": 14.187933
+      },
+      "officialUrl": "https://www.hrad-karlstejn.cz/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q266698"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-kutna-hora": {
+      "coords": {
+        "lat": 49.948656,
+        "lng": 15.268112
+      },
+      "officialUrl": "https://www.kutnahora.cz/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/441804",
+        "https://www.wikidata.org/wiki/Q155975"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-terezin": {
+      "coords": {
+        "lat": 50.510716,
+        "lng": 14.149717
+      },
+      "officialUrl": "http://www.terezin.cz/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/439230",
+        "https://www.wikidata.org/wiki/Q523489"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "vysehrad": {
+      "coords": {
+        "lat": 50.064215,
+        "lng": 14.419447
+      },
+      "costCurrency": "CZK",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.praha-vysehrad.cz/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/8001448",
+        "https://www.wikidata.org/wiki/Q616334"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "wenceslas-square": {
+      "coords": {
+        "lat": 50.081587,
+        "lng": 14.42717
+      },
+      "costCurrency": "CZK",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/relation/3366641",
+        "https://www.wikidata.org/wiki/Q847613"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-classical-concert": {
+      "costCurrency": "CZK",
+      "costMax": 1500,
+      "costMin": 500
+    },
+    "x-czech-beer-tasting": {
+      "costCurrency": "CZK",
+      "costMax": 1500,
+      "costMin": 800
+    },
+    "x-jewish-quarter-guided-tour": {
+      "costCurrency": "CZK",
+      "costMax": 900,
+      "costMin": 500
+    },
+    "x-petrin-funicular-and-rose-garden-walk": {
+      "costCurrency": "CZK",
+      "costMax": 60,
+      "costMin": 60
+    },
+    "x-vltava-river-cruise": {
+      "costCurrency": "CZK",
+      "costMax": 500,
+      "costMin": 350
+    },
+    "zizkov-television-tower": {
+      "coords": {
+        "lat": 50.081022,
+        "lng": 14.451058
+      },
+      "costCurrency": "CZK",
+      "costMax": 300,
+      "costMin": 300,
+      "sources": [
+        "https://www.openstreetmap.org/way/457404360",
+        "https://www.wikidata.org/wiki/Q1413217"
+      ],
+      "verifiedAt": "2026-10-19"
+    }
+  },
+  "neighborhoods": {
+    "hradcany-castle-district": {
+      "coords": {
+        "lat": 50.088794,
+        "lng": 14.391601
+      },
+      "radiusKm": 1.39
+    },
+    "josefov-jewish-quarter": {
+      "coords": {
+        "lat": 50.089755,
+        "lng": 14.418096
+      },
+      "radiusKm": 0.4
+    },
+    "lesser-town-mala-strana": {
+      "coords": {
+        "lat": 50.086463,
+        "lng": 14.402272
+      },
+      "radiusKm": 1.11
+    },
+    "new-town-nove-mesto": {
+      "coords": {
+        "lat": 50.080215,
+        "lng": 14.421473
+      },
+      "radiusKm": 1.97
+    },
+    "old-town-stare-mesto": {
+      "coords": {
+        "lat": 50.086115,
+        "lng": 14.418782
+      },
+      "radiusKm": 1.11
+    },
+    "vinohrady": {
+      "coords": {
+        "lat": 50.07602,
+        "lng": 14.458193
+      },
+      "radiusKm": 2.54
+    },
+    "vysehrad": {
+      "coords": {
+        "lat": 50.064215,
+        "lng": 14.419447
+      },
+      "radiusKm": 0.4
+    }
+  }
+}

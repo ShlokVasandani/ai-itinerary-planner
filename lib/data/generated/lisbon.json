@@ -1,0 +1,710 @@
+{
+  "bbox": [
+    38.4078,
+    -9.521,
+    39.0078,
+    -8.7521
+  ],
+  "places": {
+    "belem-tower": {
+      "coords": {
+        "lat": 38.691586,
+        "lng": -9.215929
+      },
+      "costCurrency": "EUR",
+      "costMax": 6,
+      "costMin": 6,
+      "officialUrl": "http://www.patrimoniocultural.gov.pt/pt/museus-e-monumentos/dgpc/m/torre-de-belem/",
+      "sources": [
+        "https://www.openstreetmap.org/way/24341353",
+        "https://www.wikidata.org/wiki/Q215003"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-a-brasileira": {
+      "closedDays": [],
+      "coords": {
+        "lat": 38.710682,
+        "lng": -9.142012
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "26:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/489736332",
+        "https://www.wikidata.org/wiki/Q2547006"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-copenhagen-coffee-lab": {
+      "coords": {
+        "lat": 38.706836,
+        "lng": -9.153912
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/11836187240"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-fabrica-coffee-roasters": {
+      "coords": {
+        "lat": 38.7094,
+        "lng": -9.14364
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4492931790"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-landeau": {
+      "closedDays": [],
+      "coords": {
+        "lat": 38.709146,
+        "lng": -9.143467
+      },
+      "officialUrl": "https://www.landeau.pt/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4569899996"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-manteigaria-cafe": {
+      "coords": {
+        "lat": 38.717755,
+        "lng": -9.164716
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/11421508569"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-pastelaria-versailles": {
+      "closedDays": [],
+      "coords": {
+        "lat": 38.735531,
+        "lng": -9.145665
+      },
+      "officialUrl": "https://grupoversailles.pt/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:15",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5984944787",
+        "https://www.wikidata.org/wiki/Q2056224"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "convento-do-carmo": {
+      "coords": {
+        "lat": 38.712222,
+        "lng": -9.14
+      },
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1470414"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "jeronimos-monastery": {
+      "coords": {
+        "lat": 38.697753,
+        "lng": -9.205591
+      },
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 10,
+      "officialUrl": "http://www.mosteirojeronimos.pt/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/3258300",
+        "https://www.wikidata.org/wiki/Q272781"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "lx-factory": {
+      "coords": {
+        "lat": 38.7026,
+        "lng": -9.178662
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.lxfactory.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/221960606",
+        "https://www.wikidata.org/wiki/Q112628482"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "maat-museum-of-art-architecture-and-technology": {
+      "closedDays": [
+        2
+      ],
+      "coords": {
+        "lat": 38.695934,
+        "lng": -9.193624
+      },
+      "sources": [
+        "https://www.openstreetmap.org/relation/11381632",
+        "https://www.wikidata.org/wiki/Q27522479"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "miradouros": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "museu-nacional-do-azulejo": {
+      "coords": {
+        "lat": 38.724724,
+        "lng": -9.113914
+      },
+      "officialUrl": "https://museunacionaldoazulejo.gov.pt/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1451054092",
+        "https://www.wikidata.org/wiki/Q2313815"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-lux-fragil": {
+      "coords": {
+        "lat": 38.714994,
+        "lng": -9.120618
+      },
+      "officialUrl": "https://www.luxfragil.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/96497162"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-park-rooftop-bar": {
+      "closedDays": [],
+      "coords": {
+        "lat": 38.726422,
+        "lng": -9.147047
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "13:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/10314947209"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-pensao-amor": {
+      "coords": {
+        "lat": 38.70731,
+        "lng": -9.143535
+      },
+      "officialUrl": "https://lisboacool.com/en/go-out/pensao-amor-amor-cest-lamour-lisbonne",
+      "sources": [
+        "https://www.openstreetmap.org/node/4418246289"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "oceanario-de-lisboa": {
+      "coords": {
+        "lat": 38.76352,
+        "lng": -9.093716
+      },
+      "officialUrl": "https://oceanario.pt/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1016189633",
+        "https://www.wikidata.org/wiki/Q652806"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "praca-do-comercio": {
+      "coords": {
+        "lat": 38.707715,
+        "lng": -9.136524
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/677181958",
+        "https://www.wikidata.org/wiki/Q999002"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-a-cevicheria": {
+      "closedDays": [],
+      "coords": {
+        "lat": 38.715963,
+        "lng": -9.147495
+      },
+      "costCurrency": "EUR",
+      "costMax": 45,
+      "costMin": 30,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:30",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1952693681"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-belcanto": {
+      "coords": {
+        "lat": 38.710061,
+        "lng": -9.141488
+      },
+      "costCurrency": "EUR",
+      "costMin": 200,
+      "officialUrl": "https://www.belcanto.pt/",
+      "sources": [
+        "https://www.openstreetmap.org/node/11866440783",
+        "https://www.wikidata.org/wiki/Q88691990"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-cantinho-do-aziz": {
+      "coords": {
+        "lat": 38.714169,
+        "lng": -9.13559
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/6068003986"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-cervejaria-ramiro": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 38.720198,
+        "lng": -9.135706
+      },
+      "costCurrency": "EUR",
+      "costMax": 55,
+      "costMin": 35,
+      "officialUrl": "https://www.cervejariaramiro.pt/",
+      "openingHours": [
+        {
+          "days": "Tu-Su",
+          "open": "12:00",
+          "close": "24:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2503432815"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-cervejaria-trindade": {
+      "coords": {
+        "lat": 38.712445,
+        "lng": -9.142412
+      },
+      "officialUrl": "https://www.cervejariatrindade.pt/",
+      "sources": [
+        "https://www.openstreetmap.org/node/3435703642"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-manteigaria": {
+      "coords": {
+        "lat": 38.717755,
+        "lng": -9.164716
+      },
+      "costCurrency": "EUR",
+      "costMax": 2.5,
+      "costMin": 1.3,
+      "sources": [
+        "https://www.openstreetmap.org/node/11421508569"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-pasteis-de-belem": {
+      "closedDays": [],
+      "coords": {
+        "lat": 38.69748,
+        "lng": -9.20332
+      },
+      "costCurrency": "EUR",
+      "costMax": 3,
+      "costMin": 1.5,
+      "officialUrl": "https://pasteisdebelem.pt/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/398922337",
+        "https://www.wikidata.org/wiki/Q3091352"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-restaurante-tasca": {
+      "costCurrency": "EUR",
+      "costMax": 18,
+      "costMin": 10
+    },
+    "r-solar-dos-presuntos": {
+      "closedDays": [],
+      "coords": {
+        "lat": 38.717744,
+        "lng": -9.141728
+      },
+      "officialUrl": "https://www.solardospresuntos.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:00",
+          "close": "15:30"
+        },
+        {
+          "days": "Mo-Su",
+          "open": "19:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1918975684"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-taberna-da-rua-das-flores": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 38.710139,
+        "lng": -9.143587
+      },
+      "costCurrency": "EUR",
+      "costMax": 40,
+      "costMin": 25,
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "12:00",
+          "close": "23:30"
+        },
+        {
+          "days": "Sa",
+          "open": "18:00",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4213522792"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-time-out-market": {
+      "closedDays": [],
+      "coords": {
+        "lat": 38.707093,
+        "lng": -9.145897
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 10,
+      "officialUrl": "https://www.timeoutmarket.com/lisboa/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1286260412",
+        "https://www.wikidata.org/wiki/Q28226115"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-ze-da-mouraria": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 38.716104,
+        "lng": -9.134939
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "12:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4712351890"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-embaixada": {
+      "closedDays": [],
+      "coords": {
+        "lat": 38.716885,
+        "lng": -9.14831
+      },
+      "officialUrl": "https://embaixadalx.pt/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4378846591"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-feira-da-ladra": {
+      "closedDays": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "coords": {
+        "lat": 38.715393,
+        "lng": -9.125929
+      },
+      "officialUrl": "http://www.cm-lisboa.pt/equipamentos/equipamento/info/feira-da-ladra",
+      "openingHours": [
+        {
+          "days": "Tu,Sa",
+          "open": "09:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3827472183"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-lx-factory": {
+      "coords": {
+        "lat": 38.7026,
+        "lng": -9.178662
+      },
+      "officialUrl": "https://www.lxfactory.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/221960606",
+        "https://www.wikidata.org/wiki/Q112628482"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-mercado-da-ribeira-time-out-market": {
+      "closedDays": [],
+      "coords": {
+        "lat": 38.706994,
+        "lng": -9.145693
+      },
+      "openingHours": [
+        {
+          "days": "Mo-We",
+          "open": "10:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Th-Sa",
+          "open": "10:00",
+          "close": "26:00"
+        },
+        {
+          "days": "Su",
+          "open": "10:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/39729235",
+        "https://www.wikidata.org/wiki/Q1517035"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-rua-augusta": {
+      "coords": {
+        "lat": 38.711316,
+        "lng": -9.137935
+      },
+      "officialUrl": "https://revelar.lisboa.pt/explorar/toponimia/detalhe?tx_toponimia_pi1%5Baction%5D=show&tx_toponimia_pi1%5Bcontroller%5D=Toponimia&tx_toponimia_pi1%5Btopid%5D=2527",
+      "sources": [
+        "https://www.openstreetmap.org/way/689384704",
+        "https://www.wikidata.org/wiki/Q2304451"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "santa-justa-lift": {
+      "coords": {
+        "lat": 38.712117,
+        "lng": -9.139375
+      },
+      "costCurrency": "EUR",
+      "costMax": 5.3,
+      "costMin": 5.3,
+      "sources": [
+        "https://www.openstreetmap.org/way/115238861",
+        "https://www.wikidata.org/wiki/Q168001"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "sao-jorge-castle": {
+      "closedDays": [],
+      "coords": {
+        "lat": 38.713926,
+        "lng": -9.133483
+      },
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 15,
+      "officialUrl": "https://www.castelodesaojorge.pt/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1382432568",
+        "https://www.wikidata.org/wiki/Q636780"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-cascais-estoril": {
+      "coords": {
+        "lat": 38.696892,
+        "lng": -9.42045
+      },
+      "officialUrl": "http://cm-cascais.pt/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/5400889",
+        "https://www.wikidata.org/wiki/Q273059"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-obidos": {
+      "coords": {
+        "lat": 39.361951,
+        "lng": -9.157153
+      },
+      "officialUrl": "https://www.cm-obidos.pt/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/3991130",
+        "https://www.wikidata.org/wiki/Q275862"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-sintra": {
+      "coords": {
+        "lat": 38.835545,
+        "lng": -9.352237
+      },
+      "officialUrl": "https://cm-sintra.pt/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/5400893",
+        "https://www.wikidata.org/wiki/Q190187"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "tram-28": {
+      "costCurrency": "EUR",
+      "costMax": 3,
+      "costMin": 3
+    },
+    "x-day-trip-to-sintra": {
+      "costCurrency": "EUR",
+      "costMax": 5,
+      "costMin": 5
+    },
+    "x-fado-performance-in-alfama": {
+      "costCurrency": "EUR",
+      "costMax": 45,
+      "costMin": 25
+    },
+    "x-portuguese-wine-tasting": {
+      "costCurrency": "EUR",
+      "costMax": 45,
+      "costMin": 25
+    },
+    "x-sunset-at-a-miradouro": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-tram-28-ride-at-opening-time": {
+      "costCurrency": "EUR",
+      "costMax": 3,
+      "costMin": 3
+    }
+  },
+  "neighborhoods": {
+    "alfama": {
+      "coords": {
+        "lat": 38.71177,
+        "lng": -9.12838
+      },
+      "radiusKm": 1.41
+    },
+    "bairro-alto": {
+      "coords": {
+        "lat": 38.713392,
+        "lng": -9.145552
+      },
+      "radiusKm": 0.4
+    },
+    "baixa-chiado": {
+      "coords": {
+        "lat": 38.710341,
+        "lng": -9.140161
+      },
+      "radiusKm": 0.4
+    },
+    "belem": {
+      "coords": {
+        "lat": 38.705542,
+        "lng": -9.213226
+      },
+      "radiusKm": 2.41
+    },
+    "graca": {
+      "coords": {
+        "lat": 38.718822,
+        "lng": -9.129191
+      },
+      "radiusKm": 0.65
+    },
+    "principe-real": {
+      "coords": {
+        "lat": 38.716555,
+        "lng": -9.148107
+      },
+      "radiusKm": 0.4
+    }
+  }
+}

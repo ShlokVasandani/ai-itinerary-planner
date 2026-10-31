@@ -1,0 +1,616 @@
+{
+  "bbox": [
+    34.3938,
+    135.1366,
+    34.9938,
+    135.8663
+  ],
+  "places": {
+    "abeno-harukas": {
+      "closedDays": [],
+      "coords": {
+        "lat": 34.645769,
+        "lng": 135.514007
+      },
+      "costCurrency": "JPY",
+      "costMax": 2000,
+      "costMin": 1800,
+      "officialUrl": "https://www.abenoharukas-300.jp/index.html",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/187296989",
+        "https://www.wikidata.org/wiki/Q16318627"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-kitahama-retro": {
+      "closedDays": [],
+      "coords": {
+        "lat": 34.691717,
+        "lng": 135.507487
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "11:00",
+          "close": "21:30"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "11:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4572488590"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-mel-coffee-roasters": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 34.676816,
+        "lng": 135.495867
+      },
+      "openingHours": [
+        {
+          "days": "Sa,Su",
+          "open": "11:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Tu-Fr",
+          "open": "09:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4662980389"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-meoto-zenzai": {
+      "closedDays": [],
+      "coords": {
+        "lat": 34.667785,
+        "lng": 135.502398
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2312836108"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "dotonbori": {
+      "coords": {
+        "lat": 34.669031,
+        "lng": 135.501572
+      },
+      "costCurrency": "JPY",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.dotonbori.or.jp/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4029007869",
+        "https://www.wikidata.org/wiki/Q964876"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "hozenji-temple-and-hozenji-yokocho": {
+      "costCurrency": "JPY",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "kuromon-ichiba-market": {
+      "coords": {
+        "lat": 34.665795,
+        "lng": 135.507015
+      },
+      "costCurrency": "JPY",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.kuromon.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1152292656",
+        "https://www.wikidata.org/wiki/Q10855506"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-amerikamura": {
+      "coords": {
+        "lat": 34.672085,
+        "lng": 135.497947
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4586410090",
+        "https://www.wikidata.org/wiki/Q4745722"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-bar-nayuta": {
+      "coords": {
+        "lat": 34.672043,
+        "lng": 135.498346
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/12985617101"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-hozenji-yokocho": {
+      "coords": {
+        "lat": 34.667965,
+        "lng": 135.503318
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4190280889"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-umeda-sky-building-night-view": {
+      "coords": {
+        "lat": 34.7053,
+        "lng": 135.4903
+      }
+    },
+    "nakanoshima-park-and-rose-garden": {
+      "coords": {
+        "lat": 34.693056,
+        "lng": 135.506431
+      },
+      "costCurrency": "JPY",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.osakapark.osgf.or.jp/nakanoshima/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q6960289"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "namba-yasaka-shrine": {
+      "closedDays": [],
+      "coords": {
+        "lat": 34.661482,
+        "lng": 135.496733
+      },
+      "costCurrency": "JPY",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://nambayasaka.jp/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "06:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/637023828",
+        "https://www.wikidata.org/wiki/Q11659527"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "osaka-aquarium-kaiyukan": {
+      "coords": {
+        "lat": 34.654472,
+        "lng": 135.428889
+      },
+      "costCurrency": "JPY",
+      "costMax": 2700,
+      "costMin": 2700,
+      "officialUrl": "https://www.kaiyukan.com/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1191885"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "osaka-castle": {
+      "coords": {
+        "lat": 34.687183,
+        "lng": 135.525396
+      },
+      "costCurrency": "JPY",
+      "costMax": 1200,
+      "costMin": 600,
+      "officialUrl": "https://www.osakacastle.net/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1550234049",
+        "https://www.wikidata.org/wiki/Q321242"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-chibo-okonomiyaki": {
+      "costCurrency": "JPY",
+      "costMax": 2500,
+      "costMin": 1500
+    },
+    "r-hanamaruken": {
+      "closedDays": [],
+      "coords": {
+        "lat": 34.667901,
+        "lng": 135.503071
+      },
+      "costCurrency": "JPY",
+      "costMax": 2500,
+      "costMin": 1500,
+      "officialUrl": "http://arakawapork.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6349557886"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-ichiran-dotonbori": {
+      "coords": {
+        "lat": 34.668449,
+        "lng": 135.503214
+      },
+      "costCurrency": "JPY",
+      "costMax": 1800,
+      "costMin": 1200,
+      "sources": [
+        "https://www.openstreetmap.org/node/4488318892"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-kani-doraku": {
+      "coords": {
+        "lat": 34.668784,
+        "lng": 135.503152
+      },
+      "costCurrency": "JPY",
+      "costMax": 10000,
+      "costMin": 4000,
+      "sources": [
+        "https://www.openstreetmap.org/node/2326956816"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-kuromon-market-street-food": {
+      "coords": {
+        "lat": 34.6627,
+        "lng": 135.5063
+      },
+      "costCurrency": "JPY",
+      "costMax": 3500,
+      "costMin": 1500
+    },
+    "r-kushikatsu-daruma": {
+      "closedDays": [],
+      "coords": {
+        "lat": 34.668848,
+        "lng": 135.503075
+      },
+      "costCurrency": "JPY",
+      "costMax": 3000,
+      "costMin": 1500,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:30",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/223928659"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-mizuno-okonomiyaki": {
+      "coords": {
+        "lat": 34.668453,
+        "lng": 135.503069
+      },
+      "costCurrency": "JPY",
+      "costMax": 2500,
+      "costMin": 1500,
+      "sources": [
+        "https://www.openstreetmap.org/node/6410952187"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-okonomiyaki-kiji": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 34.703512,
+        "lng": 135.497915
+      },
+      "costCurrency": "JPY",
+      "costMax": 2500,
+      "costMin": 1500,
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "11:30",
+          "close": "21:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4574423289"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-takoyaki-wanaka": {
+      "coords": {
+        "lat": 34.66521,
+        "lng": 135.503401
+      },
+      "costCurrency": "JPY",
+      "costMax": 1000,
+      "costMin": 600,
+      "sources": [
+        "https://www.openstreetmap.org/way/180244952"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-yaekatsu": {
+      "closedDays": [
+        4
+      ],
+      "coords": {
+        "lat": 34.64968,
+        "lng": 135.505997
+      },
+      "costCurrency": "JPY",
+      "costMax": 3000,
+      "costMin": 1500,
+      "openingHours": [
+        {
+          "days": "Mo-We,Fr-Su",
+          "open": "10:30",
+          "close": "20:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4920628921"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-yakiniku-m": {
+      "coords": {
+        "lat": 34.698554,
+        "lng": 135.487362
+      },
+      "costCurrency": "JPY",
+      "costMax": 15000,
+      "costMin": 8000,
+      "sources": [
+        "https://www.openstreetmap.org/node/4927025025"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-zubora-ya": {
+      "costCurrency": "JPY",
+      "costMax": 10000,
+      "costMin": 5000
+    },
+    "s-den-den-town": {
+      "coords": {
+        "lat": 34.659215,
+        "lng": 135.505824
+      },
+      "officialUrl": "https://www.nippombashi.jp/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4584822193",
+        "https://www.wikidata.org/wiki/Q11234481"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-grand-front-osaka": {
+      "coords": {
+        "lat": 34.703964,
+        "lng": 135.494745
+      },
+      "officialUrl": "https://www.grandfront-osaka.jp/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/13166723",
+        "https://www.wikidata.org/wiki/Q24899387"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-shinsaibashi-suji-shopping-arcade": {
+      "coords": {
+        "lat": 34.675971,
+        "lng": 135.501385
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4698067490"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "shinsekai-and-tsutenkaku-tower": {
+      "coords": {
+        "lat": 34.652222,
+        "lng": 135.506111
+      },
+      "costCurrency": "JPY",
+      "costMax": 900,
+      "costMin": 0,
+      "officialUrl": "https://shinsekai.jp/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1049117"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "shitennoji": {
+      "coords": {
+        "lat": 34.653061,
+        "lng": 135.51281
+      },
+      "costCurrency": "JPY",
+      "costMax": 300,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/14089097805"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "sumiyoshi-taisha": {
+      "coords": {
+        "lat": 34.613003,
+        "lng": 135.493101
+      },
+      "costCurrency": "JPY",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.sumiyoshitaisha.net/",
+      "sources": [
+        "https://www.openstreetmap.org/way/186423245",
+        "https://www.wikidata.org/wiki/Q705949"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-himeji-castle": {
+      "coords": {
+        "lat": 34.839331,
+        "lng": 134.69402
+      },
+      "officialUrl": "https://www.himejicastle.jp/",
+      "sources": [
+        "https://www.openstreetmap.org/way/23707900",
+        "https://www.wikidata.org/wiki/Q188754"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-koyasan": {
+      "coords": {
+        "lat": 34.212105,
+        "lng": 135.582004
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/8735601530",
+        "https://www.wikidata.org/wiki/Q535065"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-nara": {
+      "coords": {
+        "lat": 34.685,
+        "lng": 135.804778
+      },
+      "officialUrl": "http://www.city.nara.lg.jp/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q169134"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "umeda-sky-building-floating-garden-observatory": {
+      "costCurrency": "JPY",
+      "costMax": 2000,
+      "costMin": 1500
+    },
+    "universal-studios-japan": {
+      "coords": {
+        "lat": 34.665639,
+        "lng": 135.432453
+      },
+      "costCurrency": "JPY",
+      "costMax": 11900,
+      "costMin": 8600,
+      "officialUrl": "https://www.usj.co.jp/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/5695002",
+        "https://www.wikidata.org/wiki/Q1375103"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-cup-noodles-museum": {
+      "costCurrency": "JPY",
+      "costMax": 1000,
+      "costMin": 500
+    },
+    "x-dotonbori-street-food-crawl": {
+      "costCurrency": "JPY",
+      "costMax": 6000,
+      "costMin": 3000
+    },
+    "x-osaka-castle-cruise": {
+      "costCurrency": "JPY",
+      "costMax": 2000,
+      "costMin": 1500
+    },
+    "x-universal-studios-japan-day": {
+      "costCurrency": "JPY",
+      "costMax": 11900,
+      "costMin": 8600
+    },
+    "x-yoshimoto-comedy-show": {
+      "costCurrency": "JPY",
+      "costMax": 5000,
+      "costMin": 3000
+    }
+  },
+  "neighborhoods": {
+    "dotonbori-and-namba": {
+      "coords": {
+        "lat": 34.669282,
+        "lng": 135.501421
+      },
+      "radiusKm": 0.8
+    },
+    "nakanoshima": {
+      "coords": {
+        "lat": 34.68991,
+        "lng": 135.488105
+      },
+      "radiusKm": 1.5
+    },
+    "osaka-castle-and-chuo": {
+      "coords": {
+        "lat": 34.687183,
+        "lng": 135.525396
+      },
+      "radiusKm": 0.8
+    },
+    "shinsaibashi-and-amerikamura": {
+      "coords": {
+        "lat": 34.674028,
+        "lng": 135.499666
+      },
+      "radiusKm": 0.8
+    },
+    "shinsekai-and-tennoji": {
+      "coords": {
+        "lat": 34.654339,
+        "lng": 135.508972
+      },
+      "radiusKm": 0.8
+    },
+    "umeda-kita": {
+      "coords": {
+        "lat": 34.703417,
+        "lng": 135.497614
+      },
+      "radiusKm": 0.4
+    },
+    "universal-city-and-the-bay": {
+      "coords": {
+        "lat": 34.665639,
+        "lng": 135.432453
+      },
+      "radiusKm": 0.8
+    }
+  }
+}

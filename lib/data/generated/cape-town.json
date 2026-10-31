@@ -1,0 +1,711 @@
+{
+  "bbox": [
+    -34.2288,
+    18.0557,
+    -33.6288,
+    18.7788
+  ],
+  "places": {
+    "bo-kaap": {
+      "coords": {
+        "lat": -33.920561,
+        "lng": 18.412881
+      },
+      "costCurrency": "ZAR",
+      "costMax": 40,
+      "costMin": 0,
+      "officialUrl": "http://www.museums.org.za/bokaap/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/2034623",
+        "https://www.wikidata.org/wiki/Q2418250"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "boulders-beach-penguin-colony": {
+      "costCurrency": "ZAR",
+      "costMax": 250,
+      "costMin": 190
+    },
+    "c-bootlegger-coffee-company": {
+      "coords": {
+        "lat": -33.91465,
+        "lng": 18.481881
+      },
+      "officialUrl": "https://www.bootlegger.coffee/",
+      "sources": [
+        "https://www.openstreetmap.org/node/13031535449"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-charly-s-bakery": {
+      "closedDays": [
+        0,
+        1
+      ],
+      "coords": {
+        "lat": -33.928362,
+        "lng": 18.424726
+      },
+      "officialUrl": "https://charlysbakery.co.za/",
+      "openingHours": [
+        {
+          "days": "Tu-Fr",
+          "open": "08:00",
+          "close": "17:00"
+        },
+        {
+          "days": "Sa",
+          "open": "08:00",
+          "close": "14:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1033883086",
+        "https://www.wikidata.org/wiki/Q55637331"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-jason-bakery": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": -33.90835,
+        "lng": 18.410804
+      },
+      "officialUrl": "https://www.jasonbakery.co.za/",
+      "openingHours": [
+        {
+          "days": "Tu-Fr",
+          "open": "07:00",
+          "close": "15:00"
+        },
+        {
+          "days": "Sa",
+          "open": "07:00",
+          "close": "14:00"
+        },
+        {
+          "days": "Su",
+          "open": "07:30",
+          "close": "14:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2940306335"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-truth-coffee": {
+      "coords": {
+        "lat": -33.928227,
+        "lng": 18.422733
+      },
+      "officialUrl": "http://truthcoffee.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/3733793199"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "camps-bay-beach": {
+      "coords": {
+        "lat": -33.950909,
+        "lng": 18.377722
+      },
+      "costCurrency": "ZAR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/5087973"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "castle-of-good-hope": {
+      "closedDays": [],
+      "coords": {
+        "lat": -33.925851,
+        "lng": 18.426726
+      },
+      "costCurrency": "ZAR",
+      "costMax": 120,
+      "costMin": 100,
+      "officialUrl": "https://www.castleofgoodhope.co.za/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/57263",
+        "https://www.wikidata.org/wiki/Q1049562"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "chapman-s-peak-drive": {
+      "coords": {
+        "lat": -34.072208,
+        "lng": 18.368687
+      },
+      "costCurrency": "ZAR",
+      "costMax": 60,
+      "costMin": 60,
+      "sources": [
+        "https://www.openstreetmap.org/way/755009828"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "company-s-garden": {
+      "coords": {
+        "lat": -33.927215,
+        "lng": 18.417334
+      },
+      "costCurrency": "ZAR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.capetown.gov.za/Family%20and%20home/see-all-city-facilities/our-recreational-facilities/District%20parks/The%20Company%27s%20Garden",
+      "sources": [
+        "https://www.openstreetmap.org/way/8035472",
+        "https://www.wikidata.org/wiki/Q590259"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "district-six-museum": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": -33.927816,
+        "lng": 18.423752
+      },
+      "costCurrency": "ZAR",
+      "costMax": 100,
+      "costMin": 60,
+      "officialUrl": "https://www.districtsix.co.za/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/250299433",
+        "https://www.wikidata.org/wiki/Q2616757"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "groot-constantia": {
+      "closedDays": [],
+      "coords": {
+        "lat": -34.030377,
+        "lng": 18.417646
+      },
+      "costCurrency": "ZAR",
+      "costMax": 250,
+      "costMin": 100,
+      "officialUrl": "https://grootconstantia.co.za/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/12537802201",
+        "https://www.wikidata.org/wiki/Q2487774"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "kirstenbosch-national-botanical-garden": {
+      "coords": {
+        "lat": -33.985611,
+        "lng": 18.430142
+      },
+      "costCurrency": "ZAR",
+      "costMax": 250,
+      "costMin": 250,
+      "officialUrl": "https://www.sanbi.org/gardens/kirstenbosch/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/2034100",
+        "https://www.wikidata.org/wiki/Q289277"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-the-gin-bar": {
+      "coords": {
+        "lat": -33.922603,
+        "lng": 18.41723
+      },
+      "officialUrl": "https://www.theginbar.co.za/",
+      "sources": [
+        "https://www.openstreetmap.org/node/11185104937"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-the-waiting-room": {
+      "coords": {
+        "lat": -33.92649,
+        "lng": 18.41482
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4690227190"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-biesmiellah": {
+      "coords": {
+        "lat": -33.920145,
+        "lng": 18.414046
+      },
+      "costCurrency": "ZAR",
+      "costMax": 280,
+      "costMin": 150,
+      "sources": [
+        "https://www.openstreetmap.org/node/4762600554"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-bo-kaap-kitchen": {
+      "costCurrency": "ZAR",
+      "costMax": 250,
+      "costMin": 150
+    },
+    "r-gold-restaurant": {
+      "coords": {
+        "lat": -33.912971,
+        "lng": 18.419198
+      },
+      "costCurrency": "ZAR",
+      "costMax": 700,
+      "costMin": 500,
+      "officialUrl": "https://goldrestaurant.co.za/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4704261691"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-harbour-house-kalk-bay": {
+      "coords": {
+        "lat": -34.129619,
+        "lng": 18.449376
+      },
+      "costCurrency": "ZAR",
+      "costMax": 600,
+      "costMin": 350,
+      "sources": [
+        "https://www.openstreetmap.org/node/458918919"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-hemelhuijs": {
+      "coords": {
+        "lat": -33.918582,
+        "lng": 18.419773
+      },
+      "costCurrency": "ZAR",
+      "costMax": 350,
+      "costMin": 200,
+      "sources": [
+        "https://www.openstreetmap.org/node/6061101690"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-kalky-s-fish-and-chips": {
+      "costCurrency": "ZAR",
+      "costMax": 180,
+      "costMin": 100
+    },
+    "r-kloof-street-house": {
+      "closedDays": [],
+      "coords": {
+        "lat": -33.928197,
+        "lng": 18.412102
+      },
+      "costCurrency": "ZAR",
+      "costMax": 500,
+      "costMin": 300,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "26:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5238206021"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-la-colombe": {
+      "coords": {
+        "lat": -34.015116,
+        "lng": 18.403291
+      },
+      "costCurrency": "ZAR",
+      "costMax": 2500,
+      "costMin": 1500,
+      "officialUrl": "https://www.lacolombe.co.za/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4753478631"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-mama-africa": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": -33.92508,
+        "lng": 18.416128
+      },
+      "costCurrency": "ZAR",
+      "costMax": 450,
+      "costMin": 250,
+      "openingHours": [
+        {
+          "days": "Tu-Fr",
+          "open": "12:00",
+          "close": "15:00"
+        },
+        {
+          "days": "Tu-Fr",
+          "open": "18:30",
+          "close": "23:00"
+        },
+        {
+          "days": "Mo,Sa",
+          "open": "18:30",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4592397889"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-marco-s-african-place": {
+      "costCurrency": "ZAR",
+      "costMax": 450,
+      "costMin": 250
+    },
+    "r-the-pot-luck-club": {
+      "closedDays": [],
+      "coords": {
+        "lat": -33.927306,
+        "lng": 18.45738
+      },
+      "costCurrency": "ZAR",
+      "costMax": 800,
+      "costMin": 500,
+      "officialUrl": "https://thepotluckclub.co.za/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "12:30",
+          "close": "14:30"
+        },
+        {
+          "days": "Mo-Sa",
+          "open": "18:00",
+          "close": "22:30"
+        },
+        {
+          "days": "Su",
+          "open": "11:00",
+          "close": "15:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4677347889"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-willoughby-and-co": {
+      "coords": {
+        "lat": -33.902645,
+        "lng": 18.421412
+      },
+      "costCurrency": "ZAR",
+      "costMax": 350,
+      "costMin": 200,
+      "sources": [
+        "https://www.openstreetmap.org/node/828456065"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "robben-island": {
+      "coords": {
+        "lat": -33.8053,
+        "lng": 18.368883
+      },
+      "costCurrency": "ZAR",
+      "costMax": 700,
+      "costMin": 600,
+      "officialUrl": "https://www.robben-island.org.za/contact",
+      "sources": [
+        "https://www.openstreetmap.org/relation/2302069",
+        "https://www.wikidata.org/wiki/Q192493"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-greenmarket-square": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": -33.922707,
+        "lng": 18.420084
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/23893904",
+        "https://www.wikidata.org/wiki/Q5604316"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-neighbourgoods-market": {
+      "closedDays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "coords": {
+        "lat": -33.927451,
+        "lng": 18.458137
+      },
+      "officialUrl": "https://www.neighbourgoodsmarket.co.za/",
+      "openingHours": [
+        {
+          "days": "Sa",
+          "open": "09:00",
+          "close": "15:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/12227309"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-pan-african-market": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": -33.922048,
+        "lng": 18.419414
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:30",
+          "close": "17:30"
+        },
+        {
+          "days": "Sa",
+          "open": "08:30",
+          "close": "15:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4689665798"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-vanda-waterfront": {
+      "coords": {
+        "lat": -33.906002,
+        "lng": 18.419526
+      },
+      "officialUrl": "http://www.waterfront.co.za/",
+      "sources": [
+        "https://www.openstreetmap.org/way/689159965",
+        "https://www.wikidata.org/wiki/Q2166975"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "signal-hill-and-lion-s-head": {
+      "coords": {
+        "lat": -33.917778,
+        "lng": 18.402778
+      },
+      "costCurrency": "ZAR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2094786"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-cape-peninsula-cape-point-and-boulders-beach": {
+      "coords": {
+        "lat": -34.214881,
+        "lng": 18.410994
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4354865050"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-hermanus": {
+      "coords": {
+        "lat": -34.4175,
+        "lng": 19.236111
+      },
+      "officialUrl": "http://www.hermanus.co.za/",
+      "sources": [
+        "https://www.openstreetmap.org/node/29162331",
+        "https://www.wikidata.org/wiki/Q1613480"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-stellenbosch-and-franschhoek-winelands": {
+      "coords": {
+        "lat": -33.936667,
+        "lng": 18.861389
+      },
+      "officialUrl": "https://stellenbosch.gov.za/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q5460"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "table-mountain": {
+      "coords": {
+        "lat": -33.959063,
+        "lng": 18.403872
+      },
+      "costCurrency": "ZAR",
+      "costMax": 550,
+      "costMin": 450,
+      "officialUrl": "http://www.sanparks.org/parks/table_mountain",
+      "sources": [
+        "https://www.openstreetmap.org/way/112264998",
+        "https://www.wikidata.org/wiki/Q213360"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "vanda-waterfront": {
+      "coords": {
+        "lat": -33.906002,
+        "lng": 18.419526
+      },
+      "costCurrency": "ZAR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.waterfront.co.za/",
+      "sources": [
+        "https://www.openstreetmap.org/way/689159965",
+        "https://www.wikidata.org/wiki/Q2166975"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-lion-s-head-sunrise-hike": {
+      "costCurrency": "ZAR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-robben-island-tour": {
+      "costCurrency": "ZAR",
+      "costMax": 700,
+      "costMin": 600
+    },
+    "x-table-mountain-cable-car-or-hike": {
+      "costCurrency": "ZAR",
+      "costMax": 550,
+      "costMin": 450
+    },
+    "x-township-culture-tour": {
+      "costCurrency": "ZAR",
+      "costMax": 1100,
+      "costMin": 600
+    },
+    "x-winelands-tasting-day": {
+      "costCurrency": "ZAR",
+      "costMax": 1800,
+      "costMin": 800
+    },
+    "zeitz-mocaa": {
+      "closedDays": [],
+      "coords": {
+        "lat": -33.908398,
+        "lng": 18.423001
+      },
+      "costCurrency": "ZAR",
+      "costMax": 250,
+      "costMin": 200,
+      "officialUrl": "https://zeitzmocaa.museum/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/36852808",
+        "https://www.wikidata.org/wiki/Q28003638"
+      ],
+      "verifiedAt": "2026-10-19"
+    }
+  },
+  "neighborhoods": {
+    "atlantic-seaboard-camps-bay-and-clifton": {
+      "coords": {
+        "lat": -33.909877,
+        "lng": 18.408503
+      },
+      "radiusKm": 0.4
+    },
+    "bo-kaap": {
+      "coords": {
+        "lat": -33.920561,
+        "lng": 18.412881
+      },
+      "radiusKm": 0.77
+    },
+    "city-bowl-and-cbd": {
+      "coords": {
+        "lat": -33.924657,
+        "lng": 18.421723
+      },
+      "radiusKm": 0.8
+    },
+    "constantia-and-southern-suburbs": {
+      "coords": {
+        "lat": -34.010368,
+        "lng": 18.417026
+      },
+      "radiusKm": 0.8
+    },
+    "false-bay-muizenberg-and-kalk-bay": {
+      "coords": {
+        "lat": -34.227027,
+        "lng": 18.655491
+      },
+      "radiusKm": 3
+    },
+    "vanda-waterfront": {
+      "coords": {
+        "lat": -33.906002,
+        "lng": 18.419526
+      },
+      "radiusKm": 1.35
+    }
+  }
+}

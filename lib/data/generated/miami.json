@@ -1,0 +1,686 @@
+{
+  "bbox": [
+    25.4742,
+    -80.5267,
+    26.0742,
+    -79.8605
+  ],
+  "places": {
+    "bill-baggs-cape-florida-state-park": {
+      "coords": {
+        "lat": 25.674253,
+        "lng": -80.157962
+      },
+      "costCurrency": "USD",
+      "costMax": 8,
+      "costMin": 8,
+      "officialUrl": "https://www.floridastateparks.org/parks-and-trails/bill-baggs-cape-florida-state-park",
+      "sources": [
+        "https://www.openstreetmap.org/relation/1539757",
+        "https://www.wikidata.org/wiki/Q4907986"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-azucar-ice-cream-company": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.765836,
+        "lng": -80.219655
+      },
+      "officialUrl": "https://www.azucaricecream.com/location/azucar-ice-cream-miami-fl/",
+      "openingHours": [
+        {
+          "days": "Mo-We",
+          "open": "11:00",
+          "close": "21:00"
+        },
+        {
+          "days": "Th-Sa",
+          "open": "11:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Su",
+          "open": "11:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3243659271"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-greenstreet-cafe": {
+      "coords": {
+        "lat": 25.726735,
+        "lng": -80.243994
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/763658494"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-panther-coffee": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.799897,
+        "lng": -80.199254
+      },
+      "officialUrl": "https://www.panthercoffee.com/",
+      "openingHours": [
+        {
+          "days": "Su",
+          "open": "08:00",
+          "close": "21:00"
+        },
+        {
+          "days": "Mo-Sa",
+          "open": "07:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2773797419"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-pura-vida-miami": {
+      "coords": {
+        "lat": 25.789421,
+        "lng": -80.129959
+      },
+      "officialUrl": "https://www.puravidamiami.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/5633098921"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-zak-the-baker": {
+      "coords": {
+        "lat": 25.80165,
+        "lng": -80.200918
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/314808059"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "espanola-way": {
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "everglades-national-park-shark-valley": {
+      "costCurrency": "USD",
+      "costMax": 60,
+      "costMin": 30
+    },
+    "fairchild-tropical-botanic-garden": {
+      "coords": {
+        "lat": 25.678505,
+        "lng": -80.274336
+      },
+      "costCurrency": "USD",
+      "costMax": 30,
+      "costMin": 30,
+      "officialUrl": "https://fairchildgarden.org/",
+      "sources": [
+        "https://www.openstreetmap.org/way/436106263"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "lincoln-road-mall": {
+      "coords": {
+        "lat": 25.790304,
+        "lng": -80.136518
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://lincolnroadmall.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/441809093",
+        "https://www.wikidata.org/wiki/Q3241310"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "little-havana-and-calle-ocho": {
+      "coords": {
+        "lat": 25.772578,
+        "lng": -80.214589
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q665413"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "little-havana-s-domino-park": {
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "n-ball-and-chain": {
+      "coords": {
+        "lat": 25.765833,
+        "lng": -80.219777
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/3243659272"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-club-space": {
+      "closedDays": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "coords": {
+        "lat": 25.784555,
+        "lng": -80.193153
+      },
+      "officialUrl": "https://www.clubspace.com/",
+      "openingHours": [
+        {
+          "days": "Fr-Su",
+          "open": "23:00",
+          "close": "35:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/960715591",
+        "https://www.wikidata.org/wiki/Q5136384"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-mac-s-club-deuce": {
+      "coords": {
+        "lat": 25.785291,
+        "lng": -80.131474
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/2082949526"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-sweet-liberty": {
+      "coords": {
+        "lat": 25.796115,
+        "lng": -80.129783
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/436034275"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "perez-art-museum-miami-pamm": {
+      "closedDays": [
+        2,
+        3
+      ],
+      "coords": {
+        "lat": 25.786033,
+        "lng": -80.186339
+      },
+      "costCurrency": "USD",
+      "costMax": 20,
+      "costMin": 16,
+      "officialUrl": "https://www.pamm.org/",
+      "openingHours": [
+        {
+          "days": "Mo,Fr-Su",
+          "open": "11:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Th",
+          "open": "11:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/484587327",
+        "https://www.wikidata.org/wiki/Q3026874"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "phillip-and-patricia-frost-museum-of-science": {
+      "costCurrency": "USD",
+      "costMax": 40,
+      "costMin": 30
+    },
+    "r-cafe-la-trova": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.766183,
+        "lng": -80.210473
+      },
+      "costCurrency": "USD",
+      "costMax": 70,
+      "costMin": 40,
+      "officialUrl": "https://www.cafelatrova.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "16:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "16:00",
+          "close": "26:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/806270869"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-carbone-miami": {
+      "coords": {
+        "lat": 25.769241,
+        "lng": -80.13393
+      },
+      "costCurrency": "USD",
+      "costMax": 140,
+      "costMin": 90,
+      "officialUrl": "https://carbonemiami.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/14045934578"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-el-palacio-de-los-jugos": {
+      "coords": {
+        "lat": 25.748284,
+        "lng": -80.309416
+      },
+      "costCurrency": "USD",
+      "costMax": 18,
+      "costMin": 10,
+      "sources": [
+        "https://www.openstreetmap.org/way/435378570"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-joe-s-stone-crab": {
+      "coords": {
+        "lat": 25.768408,
+        "lng": -80.13524
+      },
+      "costCurrency": "USD",
+      "costMax": 120,
+      "costMin": 70,
+      "officialUrl": "https://joesstonecrab.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4001946250"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-kyu": {
+      "costCurrency": "USD",
+      "costMax": 80,
+      "costMin": 50
+    },
+    "r-la-sandwicherie": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.766077,
+        "lng": -80.194074
+      },
+      "costCurrency": "USD",
+      "costMax": 18,
+      "costMin": 12,
+      "officialUrl": "https://www.lasandwicherie.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "29:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6010865589"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-michael-s-genuine-food-and-drink": {
+      "coords": {
+        "lat": 25.813253,
+        "lng": -80.192694
+      },
+      "costCurrency": "USD",
+      "costMax": 75,
+      "costMin": 45,
+      "sources": [
+        "https://www.openstreetmap.org/node/8075240534"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-sanguich-de-miami": {
+      "costCurrency": "USD",
+      "costMax": 18,
+      "costMin": 12
+    },
+    "r-stubborn-seed": {
+      "coords": {
+        "lat": 25.770132,
+        "lng": -80.134892
+      },
+      "costCurrency": "USD",
+      "costMax": 180,
+      "costMin": 120,
+      "sources": [
+        "https://www.openstreetmap.org/way/435389637",
+        "https://www.wikidata.org/wiki/Q121113886"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-versailles": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.764989,
+        "lng": -80.252768
+      },
+      "costCurrency": "USD",
+      "costMax": 35,
+      "costMin": 20,
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "08:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "08:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1576341770",
+        "https://www.wikidata.org/wiki/Q7922622"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-yardbird-southern-table-and-bar": {
+      "coords": {
+        "lat": 25.78907,
+        "lng": -80.140089
+      },
+      "costCurrency": "USD",
+      "costMax": 70,
+      "costMin": 40,
+      "officialUrl": "https://runchickenrun.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2697912555"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-zuma": {
+      "coords": {
+        "lat": 25.770387,
+        "lng": -80.189061
+      },
+      "costCurrency": "USD",
+      "costMax": 140,
+      "costMin": 80,
+      "officialUrl": "https://www.zumarestaurant.com/en/miami",
+      "sources": [
+        "https://www.openstreetmap.org/node/6933187386"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-bayside-marketplace": {
+      "coords": {
+        "lat": 25.778236,
+        "lng": -80.187103
+      },
+      "officialUrl": "http://www.baysidemarketplace.com/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/17832055",
+        "https://www.wikidata.org/wiki/Q4874837"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-lincoln-road-mall": {
+      "coords": {
+        "lat": 25.790304,
+        "lng": -80.136518
+      },
+      "officialUrl": "https://lincolnroadmall.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/441809093",
+        "https://www.wikidata.org/wiki/Q3241310"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-miami-design-district": {
+      "coords": {
+        "lat": 25.812644,
+        "lng": -80.191299
+      },
+      "officialUrl": "https://www.miamidesigndistrict.net/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4215516695",
+        "https://www.wikidata.org/wiki/Q6827304"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "south-beach-and-the-art-deco-historic-district": {
+      "coords": {
+        "lat": 25.781875,
+        "lng": -80.136261
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q186106"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-biscayne-national-park": {
+      "coords": {
+        "lat": 25.503122,
+        "lng": -80.23485
+      },
+      "officialUrl": "https://nps.gov/bisc",
+      "sources": [
+        "https://www.openstreetmap.org/relation/9107419",
+        "https://www.wikidata.org/wiki/Q866080"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-everglades-national-park": {
+      "coords": {
+        "lat": 25.367944,
+        "lng": -80.878307
+      },
+      "officialUrl": "https://www.nps.gov/ever/index.htm",
+      "sources": [
+        "https://www.openstreetmap.org/relation/2163707",
+        "https://www.wikidata.org/wiki/Q274131"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-florida-keys-and-key-west": {
+      "coords": {
+        "lat": 24.666944,
+        "lng": -81.544167
+      },
+      "sources": [
+        "https://www.wikidata.org/wiki/Q537749"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "the-holocaust-memorial": {
+      "coords": {
+        "lat": 25.795451,
+        "lng": -80.136224
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://holocaustmemorialmiamibeach.org/",
+      "sources": [
+        "https://www.openstreetmap.org/way/92334592",
+        "https://www.wikidata.org/wiki/Q562023"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "venetian-pool": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.74578,
+        "lng": -80.27316
+      },
+      "costCurrency": "USD",
+      "costMax": 20,
+      "costMin": 15,
+      "officialUrl": "https://www.coralgables.com/venetian-pool",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "11:00",
+          "close": "17:30"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "10:00",
+          "close": "16:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/297000205",
+        "https://www.wikidata.org/wiki/Q5578214"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "vizcaya-museum-and-gardens": {
+      "coords": {
+        "lat": 25.744699,
+        "lng": -80.211577
+      },
+      "costCurrency": "USD",
+      "costMax": 30,
+      "costMin": 25,
+      "sources": [
+        "https://www.openstreetmap.org/relation/19672042"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "wynwood-walls": {
+      "closedDays": [],
+      "coords": {
+        "lat": 25.801139,
+        "lng": -80.199658
+      },
+      "costCurrency": "USD",
+      "costMax": 12,
+      "costMin": 12,
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "10:30",
+          "close": "23:00"
+        },
+        {
+          "days": "Su",
+          "open": "10:30",
+          "close": "21:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/311836305",
+        "https://www.wikidata.org/wiki/Q123138647"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-biscayne-bay-boat-tour": {
+      "costCurrency": "USD",
+      "costMax": 60,
+      "costMin": 30
+    },
+    "x-everglades-airboat-tour": {
+      "costCurrency": "USD",
+      "costMax": 60,
+      "costMin": 30
+    },
+    "x-little-havana-food-and-culture-walk": {
+      "costCurrency": "USD",
+      "costMax": 90,
+      "costMin": 60
+    },
+    "x-salsa-night-in-little-havana": {
+      "costCurrency": "USD",
+      "costMax": 30,
+      "costMin": 15
+    },
+    "x-wynwood-street-art-tour": {
+      "costCurrency": "USD",
+      "costMax": 50,
+      "costMin": 25
+    }
+  },
+  "neighborhoods": {
+    "coconut-grove": {
+      "coords": {
+        "lat": 25.712601,
+        "lng": -80.256995
+      },
+      "radiusKm": 1.49
+    },
+    "coral-gables": {
+      "coords": {
+        "lat": 25.73311,
+        "lng": -80.258511
+      },
+      "radiusKm": 3
+    },
+    "design-district": {
+      "coords": {
+        "lat": 25.81466,
+        "lng": -80.191432
+      },
+      "radiusKm": 1.49
+    },
+    "downtown-and-brickell": {
+      "coords": {
+        "lat": 25.779803,
+        "lng": -80.188914
+      },
+      "radiusKm": 0.8
+    },
+    "little-havana": {
+      "coords": {
+        "lat": 25.76815,
+        "lng": -80.233469
+      },
+      "radiusKm": 1.49
+    },
+    "south-beach": {
+      "coords": {
+        "lat": 25.774429,
+        "lng": -80.133241
+      },
+      "radiusKm": 1.49
+    },
+    "wynwood": {
+      "coords": {
+        "lat": 25.801412,
+        "lng": -80.199087
+      },
+      "radiusKm": 1.49
+    }
+  }
+}

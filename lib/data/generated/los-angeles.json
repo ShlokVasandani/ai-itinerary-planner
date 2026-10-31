@@ -1,0 +1,692 @@
+{
+  "bbox": [
+    33.7537,
+    -118.6049,
+    34.3537,
+    -117.8807
+  ],
+  "places": {
+    "c-alfred-coffee": {
+      "closedDays": [],
+      "coords": {
+        "lat": 34.045298,
+        "lng": -118.236437
+      },
+      "officialUrl": "https://locations.alfred.la/arts-district",
+      "openingHours": [
+        {
+          "days": "Sa,Su",
+          "open": "07:00",
+          "close": "17:00"
+        },
+        {
+          "days": "Mo-Fr",
+          "open": "06:30",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/427628873"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-cafe-gratitude": {
+      "closedDays": [],
+      "coords": {
+        "lat": 34.082696,
+        "lng": -118.324036
+      },
+      "officialUrl": "https://cafegratitude.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "08:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "08:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2570992279"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-go-get-em-tiger": {
+      "coords": {
+        "lat": 34.035263,
+        "lng": -118.24056
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/7590517486"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-intelligentsia": {
+      "coords": {
+        "lat": 33.991088,
+        "lng": -118.466922
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/3855965601"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "getty-center": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 34.077017,
+        "lng": -118.47401
+      },
+      "costCurrency": "USD",
+      "costMax": 25,
+      "costMin": 0,
+      "officialUrl": "https://www.getty.edu/visit/center/",
+      "openingHours": [
+        {
+          "days": "Tu-Fr,Su",
+          "open": "10:00",
+          "close": "17:30"
+        },
+        {
+          "days": "Sa",
+          "open": "10:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4745189816",
+        "https://www.wikidata.org/wiki/Q731126"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "griffith-observatory": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 34.118219,
+        "lng": -118.300293
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://griffithobservatory.org/",
+      "openingHours": [
+        {
+          "days": "Tu-Fr",
+          "open": "12:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "10:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/422130705",
+        "https://www.wikidata.org/wiki/Q575901"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "griffith-park-hike": {
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "hollywood-sign-viewpoints": {
+      "coords": {
+        "lat": 34.130628,
+        "lng": -118.318828
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/8401071650"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "hollywood-walk-of-fame": {
+      "coords": {
+        "lat": 34.102073,
+        "lng": -118.34095
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.tclchinesetheatres.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/424105908",
+        "https://www.wikidata.org/wiki/Q1122565"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "lacma-urban-light": {
+      "closedDays": [
+        3
+      ],
+      "coords": {
+        "lat": 34.063736,
+        "lng": -118.358938
+      },
+      "officialUrl": "https://www.lacma.org/",
+      "openingHours": [
+        {
+          "days": "Mo,Tu,Th",
+          "open": "11:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Fr",
+          "open": "11:00",
+          "close": "20:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "10:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/358731585",
+        "https://www.wikidata.org/wiki/Q1641836"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-arts-district-breweries": {
+      "coords": {
+        "lat": 34.044683,
+        "lng": -118.235291
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/6486352171"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-perch-la": {
+      "coords": {
+        "lat": 34.048944,
+        "lng": -118.251397
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4624144790"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-the-roxy-whisky-a-go-go": {
+      "closedDays": [],
+      "coords": {
+        "lat": 34.090895,
+        "lng": -118.38798
+      },
+      "officialUrl": "https://www.theroxy.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "19:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/159541706",
+        "https://www.wikidata.org/wiki/Q1565972"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-gjusta": {
+      "coords": {
+        "lat": 33.995274,
+        "lng": -118.474578
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4308663492"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-grand-central-market": {
+      "coords": {
+        "lat": 34.050734,
+        "lng": -118.248799
+      },
+      "costCurrency": "USD",
+      "costMax": 18,
+      "costMin": 10,
+      "sources": [
+        "https://www.openstreetmap.org/way/904226185",
+        "https://www.wikidata.org/wiki/Q5890125"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-guelaguetza": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 34.052424,
+        "lng": -118.300733
+      },
+      "costCurrency": "USD",
+      "costMax": 35,
+      "costMin": 20,
+      "officialUrl": "https://www.ilovemole.com/",
+      "openingHours": [
+        {
+          "days": "Tu-Th",
+          "open": "11:00",
+          "close": "21:00"
+        },
+        {
+          "days": "Fr-Su",
+          "open": "09:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5038979121"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-in-n-out": {
+      "costCurrency": "USD",
+      "costMax": 12,
+      "costMin": 8
+    },
+    "r-kogi-truck": {
+      "costCurrency": "USD",
+      "costMax": 8,
+      "costMin": 4
+    },
+    "r-langers": {
+      "costCurrency": "USD",
+      "costMax": 25,
+      "costMin": 20
+    },
+    "r-musso-frank-grill": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 34.101756,
+        "lng": -118.335298
+      },
+      "officialUrl": "https://mussoandfrank.com/",
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "17:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Su",
+          "open": "16:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/600501584",
+        "https://www.wikidata.org/wiki/Q6943139"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-nobu-malibu": {
+      "costCurrency": "USD",
+      "costMax": 150,
+      "costMin": 100
+    },
+    "r-nong-la": {
+      "costCurrency": "USD",
+      "costMax": 45,
+      "costMin": 30
+    },
+    "r-philippe-the-original": {
+      "closedDays": [],
+      "coords": {
+        "lat": 34.059674,
+        "lng": -118.236941
+      },
+      "officialUrl": "https://www.philippes.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "06:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/470872073",
+        "https://www.wikidata.org/wiki/Q3309185"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-pink-s-hot-dogs": {
+      "closedDays": [],
+      "coords": {
+        "lat": 34.083908,
+        "lng": -118.344283
+      },
+      "officialUrl": "http://www.pinkshollywood.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:30",
+          "close": "26:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/423889767",
+        "https://www.wikidata.org/wiki/Q1453665"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-republique": {
+      "closedDays": [],
+      "coords": {
+        "lat": 34.064158,
+        "lng": -118.343766
+      },
+      "costCurrency": "USD",
+      "costMax": 70,
+      "costMin": 40,
+      "officialUrl": "https://republiquela.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "08:00",
+          "close": "15:00"
+        },
+        {
+          "days": "Mo-Th,Su",
+          "open": "17:30",
+          "close": "22:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "08:00",
+          "close": "15:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "16:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5036951925"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-abbot-kinney-boulevard": {
+      "coords": {
+        "lat": 33.991546,
+        "lng": -118.469524
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/403712275"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-melrose-avenue": {
+      "coords": {
+        "lat": 34.083494,
+        "lng": -118.325071
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/384824617"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-rodeo-drive": {
+      "coords": {
+        "lat": 34.06763,
+        "lng": -118.401355
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/601412033"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-the-grove-original-farmers-market": {
+      "coords": {
+        "lat": 34.072589,
+        "lng": -118.357739
+      },
+      "officialUrl": "https://thegrovela.com/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/10179682",
+        "https://www.wikidata.org/wiki/Q7738393"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "santa-monica-pier": {
+      "coords": {
+        "lat": 34.008896,
+        "lng": -118.4974
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.santamonicapier.org/",
+      "sources": [
+        "https://www.openstreetmap.org/way/22728853",
+        "https://www.wikidata.org/wiki/Q595439"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-disneyland-anaheim": {
+      "coords": {
+        "lat": 33.813651,
+        "lng": -117.919735
+      },
+      "officialUrl": "https://disneyland.disney.go.com/destinations/disneyland/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/5586855",
+        "https://www.wikidata.org/wiki/Q181185"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-joshua-tree-national-park": {
+      "coords": {
+        "lat": 33.897067,
+        "lng": -115.951116
+      },
+      "officialUrl": "https://www.nps.gov/jotr/index.htm",
+      "sources": [
+        "https://www.openstreetmap.org/relation/6145614",
+        "https://www.wikidata.org/wiki/Q735202"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-malibu-point-dume": {
+      "coords": {
+        "lat": 34.001631,
+        "lng": -118.806676
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/358795797",
+        "https://www.wikidata.org/wiki/Q49062846"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "the-broad": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 34.054458,
+        "lng": -118.250594
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://thebroad.org/",
+      "openingHours": [
+        {
+          "days": "Tu,We,Fr",
+          "open": "11:00",
+          "close": "17:00"
+        },
+        {
+          "days": "Th",
+          "open": "11:00",
+          "close": "20:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/427532197",
+        "https://www.wikidata.org/wiki/Q17060100"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "universal-studios": {
+      "coords": {
+        "lat": 34.139232,
+        "lng": -118.354383
+      },
+      "costCurrency": "USD",
+      "costMin": 115,
+      "officialUrl": "https://www.universalstudioshollywood.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1304528747",
+        "https://www.wikidata.org/wiki/Q1337576"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "venice-boardwalk": {
+      "coords": {
+        "lat": 33.986713,
+        "lng": -118.474105
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/285608129"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "venice-canals": {
+      "coords": {
+        "lat": 33.986909,
+        "lng": -118.473587
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/4285071648"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "walt-disney-concert-hall": {
+      "coords": {
+        "lat": 34.055429,
+        "lng": -118.249913
+      },
+      "officialUrl": "https://www.laphil.com/about/our-venues/about-the-walt-disney-concert-hall",
+      "sources": [
+        "https://www.openstreetmap.org/relation/6333150",
+        "https://www.wikidata.org/wiki/Q474326"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-getty-center-architecture-and-garden-walk": {
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-griffith-observatory-at-sunset": {
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-hollywood-sign-hike-griffith-park": {
+      "coords": {
+        "lat": 34.134427,
+        "lng": -118.305092
+      },
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.laparks.org/griffithpark/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/7091174",
+        "https://www.wikidata.org/wiki/Q1340614"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-pacific-coast-highway-drive-to-malibu": {
+      "costCurrency": "USD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-universal-studios-hollywood": {
+      "coords": {
+        "lat": 34.139232,
+        "lng": -118.354383
+      },
+      "costCurrency": "USD",
+      "costMin": 115,
+      "officialUrl": "https://www.universalstudioshollywood.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/1304528747",
+        "https://www.wikidata.org/wiki/Q1337576"
+      ],
+      "verifiedAt": "2026-10-16"
+    }
+  },
+  "neighborhoods": {
+    "downtown-la": {
+      "coords": {
+        "lat": 34.057552,
+        "lng": -118.243427
+      },
+      "radiusKm": 0.8
+    },
+    "hollywood": {
+      "coords": {
+        "lat": 34.098003,
+        "lng": -118.329523
+      },
+      "radiusKm": 2.88
+    },
+    "koreatown": {
+      "coords": {
+        "lat": 34.061794,
+        "lng": -118.305447
+      },
+      "radiusKm": 2.88
+    },
+    "santa-monica": {
+      "coords": {
+        "lat": 33.98846,
+        "lng": -118.418188
+      },
+      "radiusKm": 0.4
+    },
+    "silver-lake": {
+      "coords": {
+        "lat": 34.035263,
+        "lng": -118.24056
+      },
+      "radiusKm": 0.8
+    },
+    "west-hollywood": {
+      "coords": {
+        "lat": 34.092301,
+        "lng": -118.369289
+      },
+      "radiusKm": 2.7
+    }
+  }
+}

@@ -1,0 +1,583 @@
+{
+  "bbox": [
+    47.9084,
+    15.9223,
+    48.5084,
+    16.8227
+  ],
+  "places": {
+    "albertina": {
+      "costCurrency": "EUR",
+      "costMax": 19.9,
+      "costMin": 19.9
+    },
+    "belvedere": {
+      "coords": {
+        "lat": 48.191072,
+        "lng": 16.379761
+      },
+      "costCurrency": "EUR",
+      "costMax": 22,
+      "costMin": 22,
+      "sources": [
+        "https://www.openstreetmap.org/node/11061784935"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-cafe-hawelka": {
+      "coords": {
+        "lat": 48.207956,
+        "lng": 16.369805
+      },
+      "officialUrl": "https://www.hawelka.at/",
+      "sources": [
+        "https://www.openstreetmap.org/node/319735103",
+        "https://www.wikidata.org/wiki/Q494438"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-cafe-prueckel": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.207608,
+        "lng": 16.380417
+      },
+      "officialUrl": "https://www.prueckel.at/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:30",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1952352277",
+        "https://www.wikidata.org/wiki/Q269481"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-cafe-sacher": {
+      "coords": {
+        "lat": 48.203939,
+        "lng": 16.36966
+      },
+      "officialUrl": "https://www.sacher.com/hotel-wien-2/kulinarik/cafe-sacher-wien/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4163604659"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-cafe-sperl": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.199838,
+        "lng": 16.36117
+      },
+      "officialUrl": "https://www.cafesperl.at/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "07:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Su",
+          "open": "10:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/317815743",
+        "https://www.wikidata.org/wiki/Q877553"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-kleines-cafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.230413,
+        "lng": 16.367362
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "08:00",
+          "close": "14:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2484899326"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "hofburg-palace": {
+      "coords": {
+        "lat": 48.206329,
+        "lng": 16.365626
+      },
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 15,
+      "officialUrl": "http://www.hofburg-wien.at/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/3898175",
+        "https://www.wikidata.org/wiki/Q46242"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "hundertwasserhaus": {
+      "coords": {
+        "lat": 48.207384,
+        "lng": 16.393941
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.hundertwasser-haus.info/en/",
+      "sources": [
+        "https://www.openstreetmap.org/node/76469807",
+        "https://www.wikidata.org/wiki/Q493126"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "karlskirche": {
+      "coords": {
+        "lat": 48.198279,
+        "lng": 16.371895
+      },
+      "officialUrl": "https://karlskirche.at/",
+      "sources": [
+        "https://www.openstreetmap.org/way/8097149",
+        "https://www.wikidata.org/wiki/Q408847"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "kunsthistorisches-museum": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 48.203739,
+        "lng": 16.361782
+      },
+      "officialUrl": "https://www.khm.at/",
+      "openingHours": [
+        {
+          "days": "Tu,We,Fr-Su",
+          "open": "10:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Th",
+          "open": "10:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/20165",
+        "https://www.wikidata.org/wiki/Q95569"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-grelle-forelle": {
+      "coords": {
+        "lat": 48.234412,
+        "lng": 16.36106
+      },
+      "officialUrl": "https://www.grelleforelle.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/1350366989"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "naschmarkt": {
+      "coords": {
+        "lat": 48.19818,
+        "lng": 16.362622
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.wien.gv.at/freizeit/einkaufen/maerkte/lebensmittel/naschmarkt/index.html",
+      "sources": [
+        "https://www.openstreetmap.org/way/29320733",
+        "https://www.wikidata.org/wiki/Q417645"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "prater": {
+      "coords": {
+        "lat": 48.191651,
+        "lng": 16.44333
+      },
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 12,
+      "officialUrl": "http://www.prater.wien.info/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/1406382",
+        "https://www.wikidata.org/wiki/Q264752"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-cafe-central": {
+      "coords": {
+        "lat": 48.210367,
+        "lng": 16.365387
+      },
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 15,
+      "officialUrl": "https://cafecentral.wien/",
+      "sources": [
+        "https://www.openstreetmap.org/node/319734659",
+        "https://www.wikidata.org/wiki/Q694757"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-cafe-landtmann": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.211562,
+        "lng": 16.36145
+      },
+      "officialUrl": "https://www.landtmann.at/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:30",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/339910920",
+        "https://www.wikidata.org/wiki/Q264318"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-demel": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.208605,
+        "lng": 16.367211
+      },
+      "costCurrency": "EUR",
+      "costMax": 18,
+      "costMin": 10,
+      "officialUrl": "http://www.demel.at/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/964884519",
+        "https://www.wikidata.org/wiki/Q254425"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-figlmuller": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.209421,
+        "lng": 16.374843
+      },
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 25,
+      "officialUrl": "https://www.figlmueller.at/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:00",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1426806930"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-gasthaus-wolf": {
+      "coords": {
+        "lat": 48.192881,
+        "lng": 16.364715
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 20,
+      "officialUrl": "https://www.gasthauswolf.at/",
+      "sources": [
+        "https://www.openstreetmap.org/node/628757252"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-naschmarkt-stalls": {
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 10
+    },
+    "r-plachutta": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.207548,
+        "lng": 16.378755
+      },
+      "costCurrency": "EUR",
+      "costMax": 45,
+      "costMin": 30,
+      "officialUrl": "https://www.plachutta-wollzeile.at/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:30",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/956430057"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-skopik-lohn": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.220165,
+        "lng": 16.376648
+      },
+      "officialUrl": "https://skopikundlohn.at/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "18:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/398597854"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-steirereck": {
+      "coords": {
+        "lat": 48.20446,
+        "lng": 16.381279
+      },
+      "costCurrency": "EUR",
+      "costMin": 200,
+      "officialUrl": "https://www.steirereck.at/meierei/",
+      "sources": [
+        "https://www.openstreetmap.org/node/333672130"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-trzesniewski": {
+      "coords": {
+        "lat": 48.267865,
+        "lng": 16.398405
+      },
+      "costCurrency": "EUR",
+      "costMax": 8,
+      "costMin": 5,
+      "sources": [
+        "https://www.openstreetmap.org/node/10219844177"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-zum-schwarzen-kameel": {
+      "closedDays": [
+        0,
+        1
+      ],
+      "coords": {
+        "lat": 48.209995,
+        "lng": 16.368317
+      },
+      "officialUrl": "https://www.kameel.at/",
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "12:00",
+          "close": "14:30"
+        },
+        {
+          "days": "Tu-Sa",
+          "open": "17:30",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/549357085",
+        "https://www.wikidata.org/wiki/Q229527"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-graben-kohlmarkt": {
+      "coords": {
+        "lat": 48.208366,
+        "lng": 16.370204
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/30322134",
+        "https://www.wikidata.org/wiki/Q699937"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-naschmarkt": {
+      "coords": {
+        "lat": 48.19818,
+        "lng": 16.362622
+      },
+      "officialUrl": "https://www.wien.gv.at/freizeit/einkaufen/maerkte/lebensmittel/naschmarkt/index.html",
+      "sources": [
+        "https://www.openstreetmap.org/way/29320733",
+        "https://www.wikidata.org/wiki/Q417645"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "schonbrunn-palace": {
+      "coords": {
+        "lat": 48.184989,
+        "lng": 16.311568
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 22,
+      "officialUrl": "https://www.schoenbrunn.at/",
+      "sources": [
+        "https://www.openstreetmap.org/way/8756754",
+        "https://www.wikidata.org/wiki/Q131330"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "spanish-riding-school": {
+      "coords": {
+        "lat": 48.207307,
+        "lng": 16.366707
+      },
+      "officialUrl": "https://www.srs.at/",
+      "sources": [
+        "https://www.openstreetmap.org/node/62626088",
+        "https://www.wikidata.org/wiki/Q269273"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "st-stephens-cathedral": {
+      "closedDays": [],
+      "coords": {
+        "lat": 48.208492,
+        "lng": 16.373127
+      },
+      "costCurrency": "EUR",
+      "costMax": 6,
+      "costMin": 0,
+      "officialUrl": "https://www.stephanskirche.at/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "06:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Su",
+          "open": "07:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/212496461",
+        "https://www.wikidata.org/wiki/Q5943"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-baden-bei-wien": {
+      "coords": {
+        "lat": 48.007671,
+        "lng": 16.234369
+      },
+      "officialUrl": "https://baden.at/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/111479",
+        "https://www.wikidata.org/wiki/Q486450"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "vienna-state-opera": {
+      "coords": {
+        "lat": 48.203286,
+        "lng": 16.369194
+      },
+      "costCurrency": "EUR",
+      "costMax": 200,
+      "costMin": 10,
+      "officialUrl": "https://www.wiener-staatsoper.at/",
+      "sources": [
+        "https://www.openstreetmap.org/way/8097595",
+        "https://www.wikidata.org/wiki/Q209937"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-danube-bike-path-ride": {
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 5
+    },
+    "x-prater-ferris-wheel-ride": {
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 12
+    },
+    "x-schonbrunn-gardens-and-gloriette-walk": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-standing-room-opera-or-musikverein-concert": {
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 10
+    },
+    "x-viennese-coffee-house-ritual": {
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 8
+    }
+  },
+  "neighborhoods": {
+    "innere-stadt": {
+      "coords": {
+        "lat": 48.210007,
+        "lng": 16.369703
+      },
+      "radiusKm": 1.52
+    },
+    "josefstadt": {
+      "coords": {
+        "lat": 48.210882,
+        "lng": 16.347369
+      },
+      "radiusKm": 0.84
+    },
+    "leopoldstadt": {
+      "coords": {
+        "lat": 48.200638,
+        "lng": 16.426895
+      },
+      "radiusKm": 3
+    },
+    "museumsquartier": {
+      "coords": {
+        "lat": 48.199838,
+        "lng": 16.36117
+      },
+      "radiusKm": 0.8
+    }
+  }
+}

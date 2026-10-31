@@ -1,0 +1,674 @@
+{
+  "bbox": [
+    49.7619,
+    19.4695,
+    50.3619,
+    20.4042
+  ],
+  "places": {
+    "barbican-and-florian-gate": {
+      "costCurrency": "PLN",
+      "costMax": 10,
+      "costMin": 10
+    },
+    "c-bunkier-cafe": {
+      "coords": {
+        "lat": 50.063528,
+        "lng": 19.934165
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/13566162836"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-camelot": {
+      "coords": {
+        "lat": 50.062997,
+        "lng": 19.939105
+      },
+      "officialUrl": "http://camelotcafe.pl/",
+      "sources": [
+        "https://www.openstreetmap.org/node/10951576960"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-noworolski": {
+      "coords": {
+        "lat": 50.0614,
+        "lng": 19.9374
+      },
+      "sources": [
+        "https://www.wikidata.org/wiki/Q11737568"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "cloth-hall-sukiennice-and-rynek-underground": {
+      "coords": {
+        "lat": 50.061701,
+        "lng": 19.937351
+      },
+      "costCurrency": "PLN",
+      "costMax": 35,
+      "costMin": 25,
+      "officialUrl": "https://mnk.pl/oddzial/galeria-sztuki-polskiej",
+      "sources": [
+        "https://www.openstreetmap.org/way/23256528",
+        "https://www.wikidata.org/wiki/Q1072350"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "collegium-maius": {
+      "coords": {
+        "lat": 50.061563,
+        "lng": 19.933409
+      },
+      "costCurrency": "PLN",
+      "costMax": 30,
+      "costMin": 20,
+      "sources": [
+        "https://www.openstreetmap.org/way/781854753"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "czartoryski-museum": {
+      "coords": {
+        "lat": 50.064641,
+        "lng": 19.939967
+      },
+      "costCurrency": "PLN",
+      "costMax": 40,
+      "costMin": 30,
+      "officialUrl": "https://mnk.pl/oddzial/muzeum-ksiazat-czartoryskich",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1450630"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "ghetto-heroes-square": {
+      "costCurrency": "PLN",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "kazimierz": {
+      "coords": {
+        "lat": 50.051855,
+        "lng": 19.944947
+      },
+      "costCurrency": "PLN",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://ztp.krakow.pl/sim/obszary-sim",
+      "sources": [
+        "https://www.openstreetmap.org/relation/3228454",
+        "https://www.wikidata.org/wiki/Q93706"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "kosciuszko-mound": {
+      "coords": {
+        "lat": 50.054915,
+        "lng": 19.893354
+      },
+      "costCurrency": "PLN",
+      "costMax": 25,
+      "costMin": 25,
+      "officialUrl": "https://kopieckosciuszki.pl/",
+      "sources": [
+        "https://www.openstreetmap.org/node/226153423",
+        "https://www.wikidata.org/wiki/Q641398"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "main-market-square-rynek-g-owny": {
+      "coords": {
+        "lat": 50.062025,
+        "lng": 19.938848
+      },
+      "costCurrency": "PLN",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/234875262"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-alchemia": {
+      "coords": {
+        "lat": 50.052147,
+        "lng": 19.944934
+      },
+      "officialUrl": "https://alchemia.com.pl/",
+      "sources": [
+        "https://www.openstreetmap.org/node/773107379"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-hevre": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.051181,
+        "lng": 19.943377
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "10:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "10:00",
+          "close": "25:00"
+        },
+        {
+          "days": "Su",
+          "open": "10:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6010850389"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-piwnica-pod-baranami": {
+      "coords": {
+        "lat": 50.061602,
+        "lng": 19.935398
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/475387327",
+        "https://www.wikidata.org/wiki/Q448341"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-singer-bar": {
+      "coords": {
+        "lat": 50.051297,
+        "lng": 19.945918
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/1754155810"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "old-synagogue": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.051367,
+        "lng": 19.948638
+      },
+      "costCurrency": "PLN",
+      "costMax": 25,
+      "costMin": 20,
+      "officialUrl": "https://muzeumkrakowa.pl/oddzialy/stara-synagoga",
+      "openingHours": [
+        {
+          "days": "Mo",
+          "open": "10:00",
+          "close": "14:00"
+        },
+        {
+          "days": "Tu-Su",
+          "open": "10:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/152104775",
+        "https://www.wikidata.org/wiki/Q3502453"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "oskar-schindler-s-enamel-factory": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.047455,
+        "lng": 19.961709
+      },
+      "costCurrency": "PLN",
+      "costMax": 45,
+      "costMin": 35,
+      "officialUrl": "https://muzeumkrakowa.pl/oddzialy/fabryka-emalia-oskara-schindlera",
+      "openingHours": [
+        {
+          "days": "Mo",
+          "open": "10:00",
+          "close": "15:00"
+        },
+        {
+          "days": "Tu-Su",
+          "open": "09:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/136648568",
+        "https://www.wikidata.org/wiki/Q286522"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "planty-park": {
+      "coords": {
+        "lat": 50.060209,
+        "lng": 19.941907
+      },
+      "costCurrency": "PLN",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/1221128266",
+        "https://www.wikidata.org/wiki/Q1945780"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-ariel": {
+      "coords": {
+        "lat": 50.052197,
+        "lng": 19.948486
+      },
+      "costCurrency": "PLN",
+      "costMax": 140,
+      "costMin": 80,
+      "officialUrl": "https://www.ariel-krakow.pl/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2487488665"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-bar-mleczny-pod-temida": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.057733,
+        "lng": 19.93793
+      },
+      "costCurrency": "PLN",
+      "costMax": 35,
+      "costMin": 20,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2348490970"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-chimera-salad-bar": {
+      "costCurrency": "PLN",
+      "costMax": 70,
+      "costMin": 40
+    },
+    "r-endzior-zapiekanki": {
+      "costCurrency": "PLN",
+      "costMax": 25,
+      "costMin": 15
+    },
+    "r-hamsa": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.053129,
+        "lng": 19.9476
+      },
+      "costCurrency": "PLN",
+      "costMax": 70,
+      "costMin": 40,
+      "officialUrl": "http://www.hamsa.pl/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "10:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "09:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4291232689"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-mleczarnia": {
+      "coords": {
+        "lat": 50.038787,
+        "lng": 20.053866
+      },
+      "costCurrency": "PLN",
+      "costMax": 70,
+      "costMin": 40,
+      "sources": [
+        "https://www.openstreetmap.org/node/12202880313"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-pod-anio-ami": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.058255,
+        "lng": 19.93785
+      },
+      "costCurrency": "PLN",
+      "costMax": 140,
+      "costMin": 80,
+      "officialUrl": "https://www.podaniolami.pl/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "13:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3373652456"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-restauracja-wierzynek": {
+      "costCurrency": "PLN",
+      "costMax": 300,
+      "costMin": 150
+    },
+    "r-starka": {
+      "coords": {
+        "lat": 50.05066,
+        "lng": 19.944398
+      },
+      "costCurrency": "PLN",
+      "costMax": 120,
+      "costMin": 70,
+      "officialUrl": "http://www.starka.com.pl/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2135508882"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-szara-ges": {
+      "coords": {
+        "lat": 50.060541,
+        "lng": 19.937248
+      },
+      "costCurrency": "PLN",
+      "costMax": 150,
+      "costMin": 90,
+      "officialUrl": "https://www.szarages.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4668552892"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-zapiecek": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 50.063402,
+        "lng": 19.939669
+      },
+      "costCurrency": "PLN",
+      "costMax": 50,
+      "costMin": 30,
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "10:00",
+          "close": "20:00"
+        },
+        {
+          "days": "Sa",
+          "open": "10:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4745690442"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-zazie-bistro": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.051243,
+        "lng": 19.946994
+      },
+      "costCurrency": "PLN",
+      "costMax": 130,
+      "costMin": 80,
+      "officialUrl": "http://www.zaziebistro.pl/",
+      "openingHours": [
+        {
+          "days": "Mo",
+          "open": "16:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Tu,Su",
+          "open": "13:00",
+          "close": "22:00"
+        },
+        {
+          "days": "We-Sa",
+          "open": "13:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2135508887"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-cloth-hall-sukiennice": {
+      "coords": {
+        "lat": 50.061701,
+        "lng": 19.937351
+      },
+      "officialUrl": "https://mnk.pl/oddzial/galeria-sztuki-polskiej",
+      "sources": [
+        "https://www.openstreetmap.org/way/23256528",
+        "https://www.wikidata.org/wiki/Q1072350"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-galeria-krakowska": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.067655,
+        "lng": 19.946144
+      },
+      "officialUrl": "https://www.galeriakrakowska.pl/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Su",
+          "open": "10:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/87527970",
+        "https://www.wikidata.org/wiki/Q5518441"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-stary-kleparz": {
+      "coords": {
+        "lat": 50.067384,
+        "lng": 19.941086
+      },
+      "officialUrl": "https://www.starykleparz.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/25070800",
+        "https://www.wikidata.org/wiki/Q9324454"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "st-mary-s-basilica": {
+      "closedDays": [],
+      "coords": {
+        "lat": 50.061655,
+        "lng": 19.939449
+      },
+      "costCurrency": "PLN",
+      "costMax": 20,
+      "costMin": 15,
+      "officialUrl": "https://mariacki.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "11:30",
+          "close": "18:00"
+        },
+        {
+          "days": "Su",
+          "open": "14:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/26195267",
+        "https://www.wikidata.org/wiki/Q1143171"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-auschwitz-birkenau": {
+      "coords": {
+        "lat": 50.038906,
+        "lng": 19.171298
+      },
+      "officialUrl": "https://www.auschwitz.org/historia/auschwitz-ii/",
+      "sources": [
+        "https://www.openstreetmap.org/way/53908378",
+        "https://www.wikidata.org/wiki/Q7341"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-wieliczka-salt-mine": {
+      "closedDays": [],
+      "coords": {
+        "lat": 49.983048,
+        "lng": 20.055708
+      },
+      "officialUrl": "https://www.kopalnia.pl/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:30",
+          "close": "19:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/148464891",
+        "https://www.wikidata.org/wiki/Q454019"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-zakopane-and-the-tatra-mountains": {
+      "coords": {
+        "lat": 49.299444,
+        "lng": 19.951944
+      },
+      "officialUrl": "https://www.zakopane.pl/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q144786"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "vistula-boulevards": {
+      "costCurrency": "PLN",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "wawel-royal-castle-and-cathedral": {
+      "coords": {
+        "lat": 50.0542,
+        "lng": 19.9353
+      },
+      "costCurrency": "PLN",
+      "costMax": 50,
+      "costMin": 30,
+      "officialUrl": "https://wawel.krakow.pl",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q7975612"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-auschwitz-birkenau-guided-visit": {
+      "costCurrency": "PLN",
+      "costMax": 200,
+      "costMin": 100
+    },
+    "x-kazimierz-walking-tour": {
+      "costCurrency": "PLN",
+      "costMax": 100,
+      "costMin": 0
+    },
+    "x-nowa-huta-communist-tour": {
+      "costCurrency": "PLN",
+      "costMax": 250,
+      "costMin": 150
+    },
+    "x-pierogi-cooking-class": {
+      "costCurrency": "PLN",
+      "costMax": 250,
+      "costMin": 150
+    },
+    "x-wieliczka-salt-mine-tour": {
+      "costCurrency": "PLN",
+      "costMax": 160,
+      "costMin": 120
+    }
+  },
+  "neighborhoods": {
+    "kazimierz": {
+      "coords": {
+        "lat": 50.051855,
+        "lng": 19.944947
+      },
+      "radiusKm": 1.05
+    },
+    "nowa-huta": {
+      "coords": {
+        "lat": 50.080619,
+        "lng": 20.129332
+      },
+      "radiusKm": 3
+    },
+    "old-town-stare-miasto": {
+      "coords": {
+        "lat": 50.061409,
+        "lng": 19.935679
+      },
+      "radiusKm": 0.94
+    },
+    "planty-and-the-university-quarter": {
+      "coords": {
+        "lat": 50.061767,
+        "lng": 19.936494
+      },
+      "radiusKm": 0.8
+    },
+    "podgorze-and-the-ghetto": {
+      "coords": {
+        "lat": 50.047455,
+        "lng": 19.961709
+      },
+      "radiusKm": 0.8
+    },
+    "zwierzyniec-and-salwator": {
+      "coords": {
+        "lat": 50.054915,
+        "lng": 19.893354
+      },
+      "radiusKm": 0.8
+    }
+  }
+}

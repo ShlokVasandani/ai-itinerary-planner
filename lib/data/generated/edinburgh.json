@@ -1,0 +1,862 @@
+{
+  "bbox": [
+    55.6533,
+    -3.7242,
+    56.2533,
+    -2.6525
+  ],
+  "places": {
+    "arthur-s-seat-and-holyrood-park": {
+      "coords": {
+        "lat": 55.944167,
+        "lng": -3.161944
+      },
+      "costCurrency": "GBP",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q712311"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-fortitude-coffee": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.956172,
+        "lng": -3.171854
+      },
+      "officialUrl": "https://www.fortitudecoffee.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:30",
+          "close": "16:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "09:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/11498452194"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-mimi-s-bakehouse": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.942893,
+        "lng": -3.290302
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "09:00",
+          "close": "16:00"
+        },
+        {
+          "days": "Fr-Su",
+          "open": "09:00",
+          "close": "16:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3397807672"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-the-elephant-house": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.94757,
+        "lng": -3.191785
+      },
+      "officialUrl": "https://elephanthouse.biz/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "08:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Fr",
+          "open": "08:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Sa",
+          "open": "09:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2901511654"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-the-milkman": {
+      "coords": {
+        "lat": 55.950379,
+        "lng": -3.188528
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/2930824242"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "calton-hill": {
+      "coords": {
+        "lat": 55.955254,
+        "lng": -3.182798
+      },
+      "costCurrency": "GBP",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/1519743672",
+        "https://www.wikidata.org/wiki/Q1199959"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "dean-village": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.952259,
+        "lng": -3.218221
+      },
+      "costCurrency": "GBP",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.visitscotland.com/info/see-do/dean-village-p1419651",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/18573379",
+        "https://www.wikidata.org/wiki/Q5246524"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "edinburgh-castle": {
+      "coords": {
+        "lat": 55.948688,
+        "lng": -3.200418
+      },
+      "costCurrency": "GBP",
+      "costMax": 22,
+      "costMin": 20,
+      "officialUrl": "https://www.edinburghcastle.scot/",
+      "sources": [
+        "https://www.openstreetmap.org/way/4301292",
+        "https://www.wikidata.org/wiki/Q212065"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "greyfriars-kirkyard": {
+      "coords": {
+        "lat": 55.946828,
+        "lng": -3.192895
+      },
+      "costCurrency": "GBP",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/relation/298677",
+        "https://www.wikidata.org/wiki/Q2876448"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-cabaret-voltaire": {
+      "coords": {
+        "lat": 55.948909,
+        "lng": -3.187253
+      },
+      "officialUrl": "https://www.thecabaretvoltaire.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2952627920"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-panda-and-sons": {
+      "coords": {
+        "lat": 55.953207,
+        "lng": -3.206972
+      },
+      "officialUrl": "https://pandaandsons.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2542270625"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-sandy-bell-s": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.946081,
+        "lng": -3.19129
+      },
+      "officialUrl": "https://www.sandybellsedinburgh.co.uk/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "12:00",
+          "close": "25:00"
+        },
+        {
+          "days": "Su",
+          "open": "12:30",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1951680695",
+        "https://www.wikidata.org/wiki/Q65080284"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-the-jazz-bar": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.948121,
+        "lng": -3.186953
+      },
+      "officialUrl": "https://www.thejazzbar.co.uk/",
+      "openingHours": [
+        {
+          "days": "Mo,Tu",
+          "open": "19:00",
+          "close": "24:00"
+        },
+        {
+          "days": "We,Th,Su",
+          "open": "17:00",
+          "close": "26:00"
+        },
+        {
+          "days": "Fr",
+          "open": "17:00",
+          "close": "27:00"
+        },
+        {
+          "days": "Sa",
+          "open": "14:00",
+          "close": "27:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5869015354"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "national-museum-of-scotland": {
+      "coords": {
+        "lat": 55.947071,
+        "lng": -3.189335
+      },
+      "costCurrency": "GBP",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.nms.ac.uk/national-museum-of-scotland",
+      "sources": [
+        "https://www.openstreetmap.org/way/467226683",
+        "https://www.wikidata.org/wiki/Q1633842"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "palace-of-holyroodhouse": {
+      "coords": {
+        "lat": 55.952695,
+        "lng": -3.171613
+      },
+      "costCurrency": "GBP",
+      "costMax": 22,
+      "costMin": 20,
+      "officialUrl": "https://www.royalcollection.org.uk/visit/palace-of-holyroodhouse",
+      "sources": [
+        "https://www.openstreetmap.org/relation/16769442",
+        "https://www.wikidata.org/wiki/Q505950"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "princes-street-gardens": {
+      "coords": {
+        "lat": 55.95025,
+        "lng": -3.199495
+      },
+      "costCurrency": "GBP",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/13444424887"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-cafe-st-honore": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.954087,
+        "lng": -3.200243
+      },
+      "costCurrency": "GBP",
+      "costMax": 40,
+      "costMin": 25,
+      "officialUrl": "https://www.cafesthonore.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "12:00",
+          "close": "14:00"
+        },
+        {
+          "days": "Mo-Fr",
+          "open": "17:15",
+          "close": "22:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "12:00",
+          "close": "14:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "17:15",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2114384586"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-contini-george-street": {
+      "costCurrency": "GBP",
+      "costMax": 50,
+      "costMin": 30
+    },
+    "r-dishoom-edinburgh": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.953543,
+        "lng": -3.192513
+      },
+      "costCurrency": "GBP",
+      "costMax": 35,
+      "costMin": 20,
+      "officialUrl": "https://www.dishoom.com/edinburgh/",
+      "openingHours": [
+        {
+          "days": "Mo-We",
+          "open": "08:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Th,Fr",
+          "open": "08:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Sa",
+          "open": "09:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4548150786"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-howies-victoria-street": {
+      "costCurrency": "GBP",
+      "costMax": 35,
+      "costMin": 20
+    },
+    "r-makars-gourmet-mash-bar": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.949885,
+        "lng": -3.193698
+      },
+      "costCurrency": "GBP",
+      "costMax": 15,
+      "costMin": 10,
+      "officialUrl": "https://gourmet-mash-bar.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "11:30",
+          "close": "20:30"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "11:30",
+          "close": "22:30"
+        },
+        {
+          "days": "Su",
+          "open": "11:30",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2112358147"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-mother-india-s-cafe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.948098,
+        "lng": -3.186
+      },
+      "costCurrency": "GBP",
+      "costMax": 25,
+      "costMin": 15,
+      "openingHours": [
+        {
+          "days": "Mo-We",
+          "open": "12:00",
+          "close": "14:00"
+        },
+        {
+          "days": "Mo-We",
+          "open": "17:00",
+          "close": "22:30"
+        },
+        {
+          "days": "Th",
+          "open": "12:00",
+          "close": "22:30"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "12:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Su",
+          "open": "12:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/499990285"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-oink": {
+      "coords": {
+        "lat": 55.95299,
+        "lng": -3.19736
+      },
+      "costCurrency": "GBP",
+      "costMax": 8,
+      "costMin": 5,
+      "officialUrl": "https://www.oinkhogroast.co.uk/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2441578938"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-the-fishmarket": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.981706,
+        "lng": -3.194824
+      },
+      "costCurrency": "GBP",
+      "costMax": 30,
+      "costMin": 15,
+      "officialUrl": "https://www.thefishmarketnewhaven.co.uk/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5876020986"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-the-kitchin": {
+      "closedDays": [
+        0,
+        1
+      ],
+      "coords": {
+        "lat": 55.977029,
+        "lng": -3.172583
+      },
+      "costCurrency": "GBP",
+      "costMax": 180,
+      "costMin": 120,
+      "officialUrl": "https://www.thekitchin.com/",
+      "openingHours": [
+        {
+          "days": "Tu-Sa",
+          "open": "12:00",
+          "close": "14:15"
+        },
+        {
+          "days": "Tu-Sa",
+          "open": "18:00",
+          "close": "21:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/573453336"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-the-scran-and-scallie": {
+      "coords": {
+        "lat": 55.959143,
+        "lng": -3.214567
+      },
+      "costCurrency": "GBP",
+      "costMax": 50,
+      "costMin": 30,
+      "officialUrl": "https://www.scranandscallie.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2874723953"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-the-witchery-by-the-castle": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.948807,
+        "lng": -3.195626
+      },
+      "costCurrency": "GBP",
+      "costMax": 90,
+      "costMin": 50,
+      "officialUrl": "https://www.thewitchery.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:00",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1472180941",
+        "https://www.wikidata.org/wiki/Q7775304"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-timberyard": {
+      "coords": {
+        "lat": 55.946355,
+        "lng": -3.201729
+      },
+      "costCurrency": "GBP",
+      "costMax": 130,
+      "costMin": 80,
+      "officialUrl": "https://www.timberyard.co/",
+      "sources": [
+        "https://www.openstreetmap.org/node/1951364889"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "royal-botanic-garden-edinburgh": {
+      "coords": {
+        "lat": 55.965285,
+        "lng": -3.208859
+      },
+      "costCurrency": "GBP",
+      "costMax": 10,
+      "costMin": 0,
+      "officialUrl": "http://www.rbge.org.uk/",
+      "sources": [
+        "https://www.openstreetmap.org/way/5209575",
+        "https://www.wikidata.org/wiki/Q1807521"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "royal-yacht-britannia": {
+      "coords": {
+        "lat": 55.982146,
+        "lng": -3.177309
+      },
+      "costCurrency": "GBP",
+      "costMax": 20,
+      "costMin": 20,
+      "officialUrl": "https://www.royalyachtbritannia.co.uk/",
+      "sources": [
+        "https://www.openstreetmap.org/way/99889822",
+        "https://www.wikidata.org/wiki/Q1529544"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-multrees-walk": {
+      "coords": {
+        "lat": 55.955184,
+        "lng": -3.191243
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/393904903",
+        "https://www.wikidata.org/wiki/Q6935188"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-stockbridge-market": {
+      "closedDays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "coords": {
+        "lat": 55.957629,
+        "lng": -3.208443
+      },
+      "officialUrl": "https://www.stockbridgemarket.com/",
+      "openingHours": [
+        {
+          "days": "Su",
+          "open": "10:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2338447599"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-victoria-street": {
+      "coords": {
+        "lat": 55.94865,
+        "lng": -3.193769
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/416314343",
+        "https://www.wikidata.org/wiki/Q12268861"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "scott-monument": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.95236,
+        "lng": -3.193256
+      },
+      "costCurrency": "GBP",
+      "costMax": 9,
+      "costMin": 8,
+      "officialUrl": "https://www.edinburghmuseums.org.uk/venue/scott-monument",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/39044819",
+        "https://www.wikidata.org/wiki/Q2502213"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "scottish-national-gallery": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.950885,
+        "lng": -3.195612
+      },
+      "costCurrency": "GBP",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.nationalgalleries.org/",
+      "openingHours": [
+        {
+          "days": "Mo-We,Fr-Su",
+          "open": "10:00",
+          "close": "17:00"
+        },
+        {
+          "days": "Th",
+          "open": "10:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/5182746",
+        "https://www.wikidata.org/wiki/Q942713"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "st-giles-cathedral": {
+      "coords": {
+        "lat": 55.949479,
+        "lng": -3.190852
+      },
+      "costCurrency": "GBP",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.stgilescathedral.org.uk/",
+      "sources": [
+        "https://www.openstreetmap.org/way/42407060",
+        "https://www.wikidata.org/wiki/Q1547466"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-loch-lomond-and-the-trossachs": {
+      "coords": {
+        "lat": 56.25,
+        "lng": -4.61667
+      },
+      "officialUrl": "https://www.lochlomond-trossachs.org/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q116661"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-st-andrews": {
+      "coords": {
+        "lat": 56.340368,
+        "lng": -2.795044
+      },
+      "officialUrl": "http://www.standrews.org.uk/",
+      "sources": [
+        "https://www.openstreetmap.org/node/21511530",
+        "https://www.wikidata.org/wiki/Q207736"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-stirling": {
+      "coords": {
+        "lat": 56.118124,
+        "lng": -3.936001
+      },
+      "officialUrl": "https://www.stirling.gov.uk/",
+      "sources": [
+        "https://www.openstreetmap.org/node/21091709",
+        "https://www.wikidata.org/wiki/Q182923"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "the-real-mary-king-s-close": {
+      "closedDays": [],
+      "coords": {
+        "lat": 55.949961,
+        "lng": -3.190446
+      },
+      "costCurrency": "GBP",
+      "costMax": 22,
+      "costMin": 20,
+      "officialUrl": "https://www.realmarykingsclose.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "17:45"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6585283285"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "the-royal-mile": {
+      "coords": {
+        "lat": 55.951533,
+        "lng": -3.179198
+      },
+      "costCurrency": "GBP",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/328144777",
+        "https://www.wikidata.org/wiki/Q4251125"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-arthur-s-seat-sunrise-hike": {
+      "costCurrency": "GBP",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-edinburgh-festival-fringe-show": {
+      "costCurrency": "GBP",
+      "costMax": 25,
+      "costMin": 10
+    },
+    "x-royal-mile-historic-walking-tour": {
+      "costCurrency": "GBP",
+      "costMax": 20,
+      "costMin": 0
+    },
+    "x-underground-vaults-ghost-tour": {
+      "costCurrency": "GBP",
+      "costMax": 25,
+      "costMin": 15
+    },
+    "x-whisky-tasting": {
+      "costCurrency": "GBP",
+      "costMax": 50,
+      "costMin": 25
+    }
+  },
+  "neighborhoods": {
+    "calton-hill-and-holyrood": {
+      "coords": {
+        "lat": 55.953975,
+        "lng": -3.177205
+      },
+      "radiusKm": 0.8
+    },
+    "leith": {
+      "coords": {
+        "lat": 55.97255,
+        "lng": -3.170949
+      },
+      "radiusKm": 2.65
+    },
+    "new-town": {
+      "coords": {
+        "lat": 55.955458,
+        "lng": -3.199
+      },
+      "radiusKm": 2.54
+    },
+    "old-town-royal-mile": {
+      "coords": {
+        "lat": 55.94957,
+        "lng": -3.191454
+      },
+      "radiusKm": 1.65
+    },
+    "stockbridge": {
+      "coords": {
+        "lat": 55.957972,
+        "lng": -3.20934
+      },
+      "radiusKm": 0.87
+    },
+    "west-end-and-dean-village": {
+      "coords": {
+        "lat": 55.952259,
+        "lng": -3.218221
+      },
+      "radiusKm": 0.8
+    }
+  }
+}

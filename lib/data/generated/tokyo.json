@@ -1,0 +1,602 @@
+{
+  "bbox": [
+    35.3769,
+    139.3946,
+    35.9769,
+    140.1332
+  ],
+  "places": {
+    "c-blue-bottle": {
+      "closedDays": [],
+      "coords": {
+        "lat": 35.688934,
+        "lng": 139.702089
+      },
+      "officialUrl": "https://bluebottlecoffee.jp/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "21:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5753699574"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-fuglen-tokyo": {
+      "closedDays": [],
+      "coords": {
+        "lat": 35.666644,
+        "lng": 139.692426
+      },
+      "openingHours": [
+        {
+          "days": "Mo-We",
+          "open": "08:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Th",
+          "open": "08:00",
+          "close": "25:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "08:00",
+          "close": "26:00"
+        },
+        {
+          "days": "Su",
+          "open": "08:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2723034393"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-nana-green-tea": {
+      "coords": {
+        "lat": 35.7104,
+        "lng": 139.775652
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/6828770085"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-toranomon-koffee": {
+      "coords": {
+        "lat": 35.668476,
+        "lng": 139.710895
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5941077285"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "imperial-palace-east-gardens": {
+      "closedDays": [
+        1,
+        5
+      ],
+      "coords": {
+        "lat": 35.686701,
+        "lng": 139.757396
+      },
+      "costCurrency": "JPY",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+      "sources": [
+        "https://www.openstreetmap.org/relation/5415394",
+        "https://www.wikidata.org/wiki/Q6631907"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "meiji-jingu": {
+      "coords": {
+        "lat": 35.674842,
+        "lng": 139.699627
+      },
+      "costCurrency": "JPY",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.meijijingu.or.jp/",
+      "sources": [
+        "https://www.openstreetmap.org/way/469908925",
+        "https://www.wikidata.org/wiki/Q287165"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-golden-gai": {
+      "coords": {
+        "lat": 35.69399,
+        "lng": 139.7047
+      },
+      "officialUrl": "http://goldengai.jp/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/16562139",
+        "https://www.wikidata.org/wiki/Q5363705"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-omoide-yokocho": {
+      "coords": {
+        "lat": 35.693069,
+        "lng": 139.699502
+      },
+      "officialUrl": "https://shinjuku-omoide.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/4154282189",
+        "https://www.wikidata.org/wiki/Q11501868"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-womb-shibuya": {
+      "coords": {
+        "lat": 35.658426,
+        "lng": 139.695049
+      },
+      "officialUrl": "https://www.womb.co.jp/",
+      "sources": [
+        "https://www.openstreetmap.org/node/1773640267",
+        "https://www.wikidata.org/wiki/Q111627"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-afuri": {
+      "coords": {
+        "lat": 35.644463,
+        "lng": 139.699688
+      },
+      "costCurrency": "JPY",
+      "costMax": 1200,
+      "costMin": 1200,
+      "sources": [
+        "https://www.openstreetmap.org/node/5965511536"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-gyukatsu-motomura": {
+      "coords": {
+        "lat": 35.656978,
+        "lng": 139.704018
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/140482605"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-hoshinoya-breakfast": {
+      "costCurrency": "JPY",
+      "costMax": 1300,
+      "costMin": 900
+    },
+    "r-ichiran": {
+      "closedDays": [],
+      "coords": {
+        "lat": 35.66096,
+        "lng": 139.6987
+      },
+      "costCurrency": "JPY",
+      "costMax": 1500,
+      "costMin": 1000,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4536691593"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-kagari": {
+      "costCurrency": "JPY",
+      "costMax": 1200,
+      "costMin": 1200
+    },
+    "r-nihonbashi-tamai": {
+      "closedDays": [],
+      "coords": {
+        "lat": 35.686845,
+        "lng": 139.774744
+      },
+      "costCurrency": "JPY",
+      "costMax": 8000,
+      "costMin": 5000,
+      "officialUrl": "https://anago-tamai.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/11412513772"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-omoide-yokocho": {
+      "costCurrency": "JPY",
+      "costMax": 4000,
+      "costMin": 2500
+    },
+    "r-rokurinsha-tokyo-station-ramen-street": {
+      "coords": {
+        "lat": 35.713281,
+        "lng": 139.776542
+      },
+      "officialUrl": "https://rokurinsha.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/12712686939"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-sushi-dai-alt": {
+      "costCurrency": "JPY",
+      "costMin": 25000
+    },
+    "r-tonki": {
+      "closedDays": [],
+      "coords": {
+        "lat": 35.671064,
+        "lng": 139.762125
+      },
+      "costCurrency": "JPY",
+      "costMax": 2500,
+      "costMin": 2000,
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "11:30",
+          "close": "15:00"
+        },
+        {
+          "days": "Mo-Fr",
+          "open": "17:00",
+          "close": "21:30"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "11:30",
+          "close": "15:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6303385885"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-don-quijote-shibuya": {
+      "closedDays": [],
+      "coords": {
+        "lat": 35.648745,
+        "lng": 139.693113
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/883721045"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-nakamise-dori": {
+      "coords": {
+        "lat": 35.712521,
+        "lng": 139.796517
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/573269291"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-takeshita-street": {
+      "coords": {
+        "lat": 35.671161,
+        "lng": 139.704955
+      },
+      "officialUrl": "https://www.takeshita-street.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/26604007",
+        "https://www.wikidata.org/wiki/Q3179287"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "senso-ji": {
+      "closedDays": [],
+      "coords": {
+        "lat": 35.713403,
+        "lng": 139.795526
+      },
+      "costCurrency": "JPY",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://senso-ji.jp/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "06:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/173154847",
+        "https://www.wikidata.org/wiki/Q615183"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "shibuya-crossing": {
+      "coords": {
+        "lat": 35.659495,
+        "lng": 139.700498
+      },
+      "costCurrency": "JPY",
+      "costMax": 2500,
+      "costMin": 0,
+      "officialUrl": "https://youtu.be/0ONXRMlI8hw?si=jwgknPUNRCuK2koL",
+      "sources": [
+        "https://www.openstreetmap.org/way/1335178864",
+        "https://www.wikidata.org/wiki/Q21083961"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "shinjuku-gyoen": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 35.685072,
+        "lng": 139.709547
+      },
+      "costCurrency": "JPY",
+      "costMax": 500,
+      "costMin": 500,
+      "officialUrl": "http://www.env.go.jp/garden/shinjukugyoen/",
+      "sources": [
+        "https://www.openstreetmap.org/way/15772074",
+        "https://www.wikidata.org/wiki/Q776863"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-hakone": {
+      "coords": {
+        "lat": 35.232366,
+        "lng": 139.106885
+      },
+      "officialUrl": "https://www.town.hakone.kanagawa.jp/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/2689439",
+        "https://www.wikidata.org/wiki/Q671040"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-kamakura": {
+      "coords": {
+        "lat": 35.319281,
+        "lng": 139.546963
+      },
+      "officialUrl": "https://www.city.kamakura.kanagawa.jp/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/2689445",
+        "https://www.wikidata.org/wiki/Q200267"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-nikko": {
+      "coords": {
+        "lat": 36.719758,
+        "lng": 139.698139
+      },
+      "officialUrl": "https://www.city.nikko.lg.jp/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/4196326",
+        "https://www.wikidata.org/wiki/Q235753"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "teamlab-planets": {
+      "closedDays": [],
+      "coords": {
+        "lat": 35.64938,
+        "lng": 139.789728
+      },
+      "costCurrency": "JPY",
+      "costMax": 3800,
+      "costMin": 3800,
+      "officialUrl": "https://planets.teamlab.art/tokyo/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6291685287",
+        "https://www.wikidata.org/wiki/Q97613610"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "tokyo-national-museum": {
+      "closedDays": [
+        2
+      ],
+      "coords": {
+        "lat": 35.719045,
+        "lng": 139.775968
+      },
+      "costCurrency": "JPY",
+      "costMax": 1000,
+      "costMin": 1000,
+      "officialUrl": "https://www.tnm.jp/",
+      "openingHours": [
+        {
+          "days": "Mo,We,Th",
+          "open": "09:30",
+          "close": "17:00"
+        },
+        {
+          "days": "Fr-Su",
+          "open": "09:30",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/33439660",
+        "https://www.wikidata.org/wiki/Q653433"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "tokyo-skytree": {
+      "closedDays": [],
+      "coords": {
+        "lat": 35.710054,
+        "lng": 139.810714
+      },
+      "costCurrency": "JPY",
+      "costMax": 3400,
+      "costMin": 2100,
+      "officialUrl": "https://www.tokyo-skytree.jp/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/288269147",
+        "https://www.wikidata.org/wiki/Q57965"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "tokyo-tower": {
+      "closedDays": [],
+      "coords": {
+        "lat": 35.658449,
+        "lng": 139.745536
+      },
+      "officialUrl": "https://www.tokyotower.co.jp/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/4247312",
+        "https://www.wikidata.org/wiki/Q183536"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "tsukiji-outer": {
+      "coords": {
+        "lat": 35.665388,
+        "lng": 139.770473
+      },
+      "officialUrl": "https://www.tsukiji.or.jp/",
+      "sources": [
+        "https://www.openstreetmap.org/way/606978548",
+        "https://www.wikidata.org/wiki/Q859471"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "ueno-park": {
+      "coords": {
+        "lat": 35.715291,
+        "lng": 139.773828
+      },
+      "costCurrency": "JPY",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/relation/18158889",
+        "https://www.wikidata.org/wiki/Q92909922"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-golden-gai-bar-hop": {
+      "costCurrency": "JPY",
+      "costMax": 2000,
+      "costMin": 1000
+    },
+    "x-kimono-photo-walk-in-asakusa": {
+      "costCurrency": "JPY",
+      "costMax": 7000,
+      "costMin": 4000
+    },
+    "x-robot-restaurant-style-neon-show": {
+      "costCurrency": "JPY",
+      "costMax": 8000,
+      "costMin": 6000
+    },
+    "x-sumo-morning-practice-viewing": {
+      "costCurrency": "JPY",
+      "costMax": 10000,
+      "costMin": 5000
+    },
+    "x-tea-ceremony-experience": {
+      "costCurrency": "JPY",
+      "costMax": 5000,
+      "costMin": 3000
+    }
+  },
+  "neighborhoods": {
+    "asakusa": {
+      "coords": {
+        "lat": 35.717597,
+        "lng": 139.797563
+      },
+      "radiusKm": 0.93
+    },
+    "ginza": {
+      "coords": {
+        "lat": 35.672013,
+        "lng": 139.76472
+      },
+      "radiusKm": 0.95
+    },
+    "harajuku-omotesando": {
+      "coords": {
+        "lat": 35.671161,
+        "lng": 139.704955
+      },
+      "radiusKm": 0.8
+    },
+    "shibuya": {
+      "coords": {
+        "lat": 35.663711,
+        "lng": 139.697694
+      },
+      "radiusKm": 3
+    },
+    "shinjuku": {
+      "coords": {
+        "lat": 35.693763,
+        "lng": 139.703632
+      },
+      "radiusKm": 3
+    },
+    "yanaka": {
+      "coords": {
+        "lat": 35.724789,
+        "lng": 139.768558
+      },
+      "radiusKm": 0.91
+    }
+  }
+}

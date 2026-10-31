@@ -1,0 +1,802 @@
+{
+  "bbox": [
+    43.3535,
+    -79.7986,
+    43.9535,
+    -78.9693
+  ],
+  "places": {
+    "art-gallery-of-ontario-ago": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 43.653613,
+        "lng": -79.39278
+      },
+      "costCurrency": "CAD",
+      "costMax": 30,
+      "costMin": 30,
+      "officialUrl": "https://ago.ca/",
+      "openingHours": [
+        {
+          "days": "Tu,Th",
+          "open": "10:30",
+          "close": "17:00"
+        },
+        {
+          "days": "We,Fr",
+          "open": "10:30",
+          "close": "21:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "10:30",
+          "close": "17:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/141693334",
+        "https://www.wikidata.org/wiki/Q670250"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "bata-shoe-museum": {
+      "coords": {
+        "lat": 43.667258,
+        "lng": -79.400143
+      },
+      "costCurrency": "CAD",
+      "costMax": 18,
+      "costMin": 16,
+      "officialUrl": "https://batashoemuseum.ca/",
+      "sources": [
+        "https://www.openstreetmap.org/way/22372216",
+        "https://www.wikidata.org/wiki/Q810693"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-balzac-s-coffee-roasters": {
+      "coords": {
+        "lat": 43.631279,
+        "lng": -79.395933
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/11136997283"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-dineen-coffee-co": {},
+    "c-jimmy-s-coffee": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.658477,
+        "lng": -79.38556
+      },
+      "officialUrl": "http://www.jimmyscoffee.ca/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "08:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3119035625"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-sam-james-coffee-bar": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.641803,
+        "lng": -79.43263
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:00",
+          "close": "16:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "08:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/9123316758"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "casa-loma": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.678101,
+        "lng": -79.409416
+      },
+      "costCurrency": "CAD",
+      "costMax": 40,
+      "costMin": 40,
+      "officialUrl": "https://casaloma.ca/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:30",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/198471666",
+        "https://www.wikidata.org/wiki/Q1046446"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "cn-tower": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.642564,
+        "lng": -79.387087
+      },
+      "costCurrency": "CAD",
+      "costMax": 200,
+      "costMin": 45,
+      "officialUrl": "https://www.cntower.ca/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/32742038",
+        "https://www.wikidata.org/wiki/Q134883"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "distillery-historic-district": {
+      "costCurrency": "CAD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "evergreen-brick-works": {
+      "coords": {
+        "lat": 43.684225,
+        "lng": -79.365019
+      },
+      "costCurrency": "CAD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/629745696"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "high-park": {
+      "coords": {
+        "lat": 43.646281,
+        "lng": -79.463795
+      },
+      "costCurrency": "CAD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.toronto.ca/parks/featured-parks/high-park/",
+      "sources": [
+        "https://www.openstreetmap.org/way/14344414",
+        "https://www.wikidata.org/wiki/Q1617812"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "hockey-hall-of-fame": {
+      "coords": {
+        "lat": 43.646996,
+        "lng": -79.377302
+      },
+      "costCurrency": "CAD",
+      "costMax": 25,
+      "costMin": 25,
+      "officialUrl": "https://www.hhof.com/",
+      "sources": [
+        "https://www.openstreetmap.org/way/62255416",
+        "https://www.wikidata.org/wiki/Q1136687"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "kensington-market": {
+      "coords": {
+        "lat": 43.655214,
+        "lng": -79.40226
+      },
+      "costCurrency": "CAD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/relation/11879671",
+        "https://www.wikidata.org/wiki/Q3195260"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-bar-raval": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.655831,
+        "lng": -79.409924
+      },
+      "officialUrl": "https://www.thisisbarraval.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5717981321"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-cabana-pool-bar": {
+      "coords": {
+        "lat": 43.64008,
+        "lng": -79.354445
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/176711929"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-horseshoe-tavern": {
+      "coords": {
+        "lat": 43.649049,
+        "lng": -79.395904
+      },
+      "officialUrl": "http://www.horseshoetavern.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/401521685",
+        "https://www.wikidata.org/wiki/Q5906075"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-lee-s-palace": {
+      "coords": {
+        "lat": 43.665315,
+        "lng": -79.409429
+      },
+      "officialUrl": "https://www.leespalace.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/575254670",
+        "https://www.wikidata.org/wiki/Q6512822"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-the-drake-hotel": {
+      "coords": {
+        "lat": 43.643247,
+        "lng": -79.424521
+      },
+      "officialUrl": "http://thedrakehotel.ca/",
+      "sources": [
+        "https://www.openstreetmap.org/way/535658026",
+        "https://www.wikidata.org/wiki/Q5305606"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "nathan-phillips-square-and-city-hall": {
+      "coords": {
+        "lat": 43.6525,
+        "lng": -79.383611
+      },
+      "costCurrency": "CAD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2915521"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-alo": {
+      "coords": {
+        "lat": 43.648501,
+        "lng": -79.395939
+      },
+      "costCurrency": "CAD",
+      "costMax": 350,
+      "costMin": 250,
+      "officialUrl": "https://alorestaurant.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/6182234486",
+        "https://www.wikidata.org/wiki/Q121335409"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-banh-mi-boys": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.648744,
+        "lng": -79.396944
+      },
+      "costCurrency": "CAD",
+      "costMax": 20,
+      "costMin": 12,
+      "officialUrl": "https://www.banhmiboys.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "11:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Sa",
+          "open": "11:00",
+          "close": "21:00"
+        },
+        {
+          "days": "Su",
+          "open": "12:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2503325982"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-canoe": {
+      "coords": {
+        "lat": 43.64326,
+        "lng": -79.355018
+      },
+      "costCurrency": "CAD",
+      "costMax": 180,
+      "costMin": 100,
+      "sources": [
+        "https://www.openstreetmap.org/node/10893913022"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-carousel-bakery": {
+      "coords": {
+        "lat": 43.648748,
+        "lng": -79.371816
+      },
+      "costCurrency": "CAD",
+      "costMax": 15,
+      "costMin": 10,
+      "sources": [
+        "https://www.openstreetmap.org/node/3308179661"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-fran-s-restaurant": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.661338,
+        "lng": -79.38403
+      },
+      "costCurrency": "CAD",
+      "costMax": 25,
+      "costMin": 15,
+      "officialUrl": "https://www.fransrestaurant.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/769477000",
+        "https://www.wikidata.org/wiki/Q5478086"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-kinka-izakaya": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.660454,
+        "lng": -79.379152
+      },
+      "costCurrency": "CAD",
+      "costMax": 55,
+      "costMin": 35,
+      "openingHours": [
+        {
+          "days": "Mo-We,Su",
+          "open": "17:00",
+          "close": "35:00"
+        },
+        {
+          "days": "Th",
+          "open": "17:00",
+          "close": "24:00"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "17:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5575058136"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-pai-northern-thai-kitchen": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.708633,
+        "lng": -79.398545
+      },
+      "costCurrency": "CAD",
+      "costMax": 50,
+      "costMin": 30,
+      "officialUrl": "https://paitoronto.com/",
+      "openingHours": [
+        {
+          "days": "Mo",
+          "open": "16:00",
+          "close": "21:30"
+        },
+        {
+          "days": "Tu-Th",
+          "open": "11:30",
+          "close": "21:30"
+        },
+        {
+          "days": "Fr,Sa",
+          "open": "11:30",
+          "close": "22:00"
+        },
+        {
+          "days": "Su",
+          "open": "14:00",
+          "close": "21:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/10235874896"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-pizzeria-libretto": {
+      "coords": {
+        "lat": 43.648429,
+        "lng": -79.384969
+      },
+      "costCurrency": "CAD",
+      "costMax": 40,
+      "costMin": 25,
+      "officialUrl": "https://www.pizzerialibretto.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/3181901871"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-richmond-station": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.65148,
+        "lng": -79.379512
+      },
+      "costCurrency": "CAD",
+      "costMax": 80,
+      "costMin": 50,
+      "officialUrl": "https://richmondstation.ca/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "11:30",
+          "close": "14:30"
+        },
+        {
+          "days": "Mo-Fr",
+          "open": "16:30",
+          "close": "22:30"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "16:30",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/2269842479"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-rodney-s-oyster-house": {
+      "coords": {
+        "lat": 43.644953,
+        "lng": -79.39691
+      },
+      "costCurrency": "CAD",
+      "costMax": 70,
+      "costMin": 40,
+      "sources": [
+        "https://www.openstreetmap.org/node/527033490"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-seven-lives-tacos": {
+      "coords": {
+        "lat": 43.654548,
+        "lng": -79.400772
+      },
+      "costCurrency": "CAD",
+      "costMax": 20,
+      "costMin": 12,
+      "sources": [
+        "https://www.openstreetmap.org/node/4366655490"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-sunset-grill": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.67105,
+        "lng": -79.384016
+      },
+      "costCurrency": "CAD",
+      "costMax": 25,
+      "costMin": 15,
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:00",
+          "close": "14:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "08:00",
+          "close": "15:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1348494471"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "ripley-s-aquarium-of-canada": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.642484,
+        "lng": -79.386127
+      },
+      "costCurrency": "CAD",
+      "costMax": 45,
+      "costMin": 45,
+      "officialUrl": "https://www.ripleys.com/attractions/ripleys-aquarium-of-canada",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/197447638",
+        "https://www.wikidata.org/wiki/Q14875406"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "royal-ontario-museum-rom": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.667656,
+        "lng": -79.394699
+      },
+      "costCurrency": "CAD",
+      "costMax": 30,
+      "costMin": 25,
+      "officialUrl": "https://www.rom.on.ca/en",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Sa,Su",
+          "open": "10:00",
+          "close": "17:30"
+        },
+        {
+          "days": "Fr",
+          "open": "10:00",
+          "close": "18:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/4942687",
+        "https://www.wikidata.org/wiki/Q649250"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-eaton-centre": {
+      "closedDays": [],
+      "coords": {
+        "lat": 43.654146,
+        "lng": -79.380793
+      },
+      "officialUrl": "https://shops.cadillacfairview.com/property/cf-toronto-eaton-centre/store/the-gap-n132a",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "10:00",
+          "close": "21:00"
+        },
+        {
+          "days": "Su",
+          "open": "11:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/4321312",
+        "https://www.wikidata.org/wiki/Q1278419"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-kensington-market": {
+      "coords": {
+        "lat": 43.655214,
+        "lng": -79.40226
+      },
+      "sources": [
+        "https://www.openstreetmap.org/relation/11879671",
+        "https://www.wikidata.org/wiki/Q3195260"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-st-lawrence-market": {
+      "coords": {
+        "lat": 43.6489,
+        "lng": -79.3717
+      },
+      "officialUrl": "http://www.stlawrencemarket.com",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2320221"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "st-lawrence-market": {
+      "coords": {
+        "lat": 43.6489,
+        "lng": -79.3717
+      },
+      "costCurrency": "CAD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.stlawrencemarket.com",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2320221"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-elora-gorge": {
+      "coords": {
+        "lat": 43.672802,
+        "lng": -80.448751
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/479696093",
+        "https://www.wikidata.org/wiki/Q5367207"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-niagara-falls": {
+      "coords": {
+        "lat": 43.084841,
+        "lng": -79.070179
+      },
+      "sources": [
+        "https://www.openstreetmap.org/relation/3126920",
+        "https://www.wikidata.org/wiki/Q34221"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-niagara-on-the-lake": {
+      "coords": {
+        "lat": 43.255612,
+        "lng": -79.072326
+      },
+      "officialUrl": "https://www.notl.org/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/2388052",
+        "https://www.wikidata.org/wiki/Q448372"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "toronto-islands": {
+      "coords": {
+        "lat": 43.622877,
+        "lng": -79.3943
+      },
+      "costCurrency": "CAD",
+      "costMax": 9,
+      "costMin": 9,
+      "sources": [
+        "https://www.openstreetmap.org/relation/10705563",
+        "https://www.wikidata.org/wiki/Q248110"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-cn-tower-edgewalk": {
+      "costCurrency": "CAD",
+      "costMax": 250,
+      "costMin": 200
+    },
+    "x-kensington-market-food-tour": {
+      "costCurrency": "CAD",
+      "costMax": 110,
+      "costMin": 75
+    },
+    "x-nhl-nba-or-mlb-game": {
+      "costCurrency": "CAD",
+      "costMax": 300,
+      "costMin": 50
+    },
+    "x-niagara-falls-day-trip": {
+      "costCurrency": "CAD",
+      "costMax": 80,
+      "costMin": 30
+    },
+    "x-toronto-islands-cycling": {
+      "costCurrency": "CAD",
+      "costMax": 15,
+      "costMin": 9
+    }
+  },
+  "neighborhoods": {
+    "distillery-district": {
+      "coords": {
+        "lat": 43.650328,
+        "lng": -79.3592
+      },
+      "radiusKm": 0.4
+    },
+    "downtown-and-the-entertainment-district": {
+      "coords": {
+        "lat": 43.662677,
+        "lng": -79.383775
+      },
+      "radiusKm": 0.8
+    },
+    "harbourfront-and-toronto-islands": {
+      "coords": {
+        "lat": 43.631479,
+        "lng": -79.374372
+      },
+      "radiusKm": 0.8
+    },
+    "kensington-market-and-chinatown": {
+      "coords": {
+        "lat": 43.653529,
+        "lng": -79.403741
+      },
+      "radiusKm": 0.8
+    },
+    "old-town-and-st-lawrence": {
+      "coords": {
+        "lat": 43.648748,
+        "lng": -79.371816
+      },
+      "radiusKm": 0.8
+    },
+    "queen-west-and-west-queen-west": {
+      "coords": {
+        "lat": 43.652104,
+        "lng": -79.397271
+      },
+      "radiusKm": 0.8
+    },
+    "yorkville": {
+      "coords": {
+        "lat": 43.671386,
+        "lng": -79.390168
+      },
+      "radiusKm": 1.37
+    }
+  }
+}

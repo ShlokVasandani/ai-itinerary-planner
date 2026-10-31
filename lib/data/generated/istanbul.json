@@ -1,0 +1,687 @@
+{
+  "bbox": [
+    40.7064,
+    28.5783,
+    41.3064,
+    29.3734
+  ],
+  "places": {
+    "basilica-cistern": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.008479,
+        "lng": 28.978383
+      },
+      "costCurrency": "TRY",
+      "costMax": 900,
+      "costMin": 900,
+      "officialUrl": "http://yerebatansarnici.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/11006008339",
+        "https://www.wikidata.org/wiki/Q216511"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "blue-mosque": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.005384,
+        "lng": 28.976853
+      },
+      "costCurrency": "TRY",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.geziyerler.com/sultan-ahmet-camii",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:30",
+          "close": "12:15"
+        },
+        {
+          "days": "Mo-Su",
+          "open": "14:00",
+          "close": "16:45"
+        },
+        {
+          "days": "Mo-Su",
+          "open": "17:45",
+          "close": "18:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/18055570",
+        "https://www.wikidata.org/wiki/Q80541"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "bosphorus-cruise": {
+      "costCurrency": "TRY",
+      "costMax": 400,
+      "costMin": 200
+    },
+    "c-cafe-privato": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.026862,
+        "lng": 28.974083
+      },
+      "officialUrl": "http://privatocafe.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5370651424"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-hafiz-mustafa": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.016011,
+        "lng": 28.97336
+      },
+      "officialUrl": "https://www.hafizmustafa.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "06:00",
+          "close": "22:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6324428785"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-kronotrop": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.994115,
+        "lng": 29.124159
+      },
+      "officialUrl": "https://www.kronotrop.com.tr/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:30",
+          "close": "23:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/13041187383"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-mandabatmaz": {
+      "coords": {
+        "lat": 41.032763,
+        "lng": 28.97617
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5115410024"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-petra-roasting": {
+      "coords": {
+        "lat": 41.080688,
+        "lng": 29.044598
+      },
+      "officialUrl": "https://www.petracoffee.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/10297942309"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-vefa-bozacisi": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.015324,
+        "lng": 28.958419
+      },
+      "officialUrl": "https://www.vefa.com.tr/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5110342187"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "chora-church-kariye": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.031214,
+        "lng": 28.938955
+      },
+      "officialUrl": "https://muze.gen.tr/muze-detay/kariye",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/7614527",
+        "https://www.wikidata.org/wiki/Q849489"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "dolmabahce-palace": {
+      "coords": {
+        "lat": 41.038961,
+        "lng": 28.999773
+      },
+      "officialUrl": "http://www.millisaraylar.gov.tr/saraylar/dolmabahce-sarayi",
+      "sources": [
+        "https://www.openstreetmap.org/way/24826707",
+        "https://www.wikidata.org/wiki/Q274141"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "galata-tower": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.025641,
+        "lng": 28.974213
+      },
+      "costCurrency": "TRY",
+      "costMax": 650,
+      "costMin": 650,
+      "officialUrl": "https://muze.gen.tr/muze-detay/galatakulesi",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "20:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/23236783",
+        "https://www.wikidata.org/wiki/Q91274"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "grand-bazaar": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 41.010954,
+        "lng": 28.968022
+      },
+      "costCurrency": "TRY",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.kapalicarsi.org.tr/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/303807317",
+        "https://www.wikidata.org/wiki/Q505954"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "hagia-sophia": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.008505,
+        "lng": 28.980011
+      },
+      "costCurrency": "TRY",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://muze.gen.tr/muze-detay/ayasofya",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "19:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/109862851",
+        "https://www.wikidata.org/wiki/Q12506"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "istanbul-archaeology-museums": {
+      "coords": {
+        "lat": 41.011669,
+        "lng": 28.981389
+      },
+      "officialUrl": "https://muze.gov.tr/muze-detay?SectionId=IAR01&DistId=IAR",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q636978"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-360-istanbul": {
+      "coords": {
+        "lat": 41.032744,
+        "lng": 28.976723
+      },
+      "officialUrl": "https://360istanbul.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/1000033444"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-reina": {
+      "coords": {
+        "lat": 41.007477,
+        "lng": 28.956172
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5113127915"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-balik-ekmek": {
+      "costCurrency": "TRY",
+      "costMax": 200,
+      "costMin": 150
+    },
+    "r-cibalikapi-balikcisi": {
+      "coords": {
+        "lat": 41.025843,
+        "lng": 28.958921
+      },
+      "costCurrency": "TRY",
+      "costMax": 1500,
+      "costMin": 1000,
+      "sources": [
+        "https://www.openstreetmap.org/node/5081442500"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-ciya-sofrasi": {
+      "closedDays": [],
+      "coords": {
+        "lat": 40.989347,
+        "lng": 29.024429
+      },
+      "costCurrency": "TRY",
+      "costMax": 700,
+      "costMin": 400,
+      "officialUrl": "http://www.ciya.com.tr/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "11:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/9869626517"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-develi": {
+      "coords": {
+        "lat": 40.989178,
+        "lng": 29.028174
+      },
+      "costCurrency": "TRY",
+      "costMax": 800,
+      "costMin": 500,
+      "sources": [
+        "https://www.openstreetmap.org/node/14167556301"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-hocapasa": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.013976,
+        "lng": 28.975606
+      },
+      "costCurrency": "TRY",
+      "costMax": 350,
+      "costMin": 200,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/5108837440"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-karakoy-gulluoglu": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.024885,
+        "lng": 28.980958
+      },
+      "officialUrl": "https://www.karakoygulluoglu.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "07:30",
+          "close": "25:00"
+        },
+        {
+          "days": "Su",
+          "open": "08:00",
+          "close": "25:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4548658690"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-karakoy-lokantasi": {
+      "coords": {
+        "lat": 41.024592,
+        "lng": 28.980028
+      },
+      "costCurrency": "TRY",
+      "costMax": 1200,
+      "costMin": 800,
+      "officialUrl": "http://www.karakoylokantasi.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/1898334690"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-mikla": {
+      "coords": {
+        "lat": 41.031087,
+        "lng": 28.974017
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4209023791"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-pandeli": {
+      "coords": {
+        "lat": 41.017145,
+        "lng": 28.971179
+      },
+      "costCurrency": "TRY",
+      "costMax": 900,
+      "costMin": 600,
+      "officialUrl": "https://www.pandeli.com.tr/",
+      "sources": [
+        "https://www.openstreetmap.org/node/3079823142"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-simit-street": {
+      "costCurrency": "TRY",
+      "costMax": 25,
+      "costMin": 15
+    },
+    "r-zubeyir-ocakbas": {
+      "coords": {
+        "lat": 41.036515,
+        "lng": 28.982135
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/5915106985"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-arasta-bazaar": {
+      "coords": {
+        "lat": 41.004927,
+        "lng": 28.977903
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/25512785",
+        "https://www.wikidata.org/wiki/Q120829207"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-grand-bazaar": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 41.010954,
+        "lng": 28.968022
+      },
+      "officialUrl": "http://www.kapalicarsi.org.tr/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "09:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/303807317",
+        "https://www.wikidata.org/wiki/Q505954"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-istiklal-caddesi": {
+      "coords": {
+        "lat": 41.033861,
+        "lng": 28.978167
+      },
+      "officialUrl": "https://www.geziyerler.com/istiklal-caddesi",
+      "sources": [
+        "https://www.openstreetmap.org/way/485070951",
+        "https://www.wikidata.org/wiki/Q344348"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-spice-bazaar-egyptian-bazaar": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.016479,
+        "lng": 28.970538
+      },
+      "officialUrl": "http://www.misircarsisi.net/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "08:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:30",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/24234971",
+        "https://www.wikidata.org/wiki/Q668641"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "spice-bazaar-msr-carss": {
+      "closedDays": [],
+      "coords": {
+        "lat": 41.016479,
+        "lng": 28.970538
+      },
+      "costCurrency": "TRY",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.misircarsisi.net/",
+      "openingHours": [
+        {
+          "days": "Mo-Sa",
+          "open": "08:00",
+          "close": "19:00"
+        },
+        {
+          "days": "Su",
+          "open": "09:30",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/24234971",
+        "https://www.wikidata.org/wiki/Q668641"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "suleymaniye-mosque": {
+      "coords": {
+        "lat": 41.016229,
+        "lng": 28.963955
+      },
+      "costCurrency": "TRY",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.geziyerler.com/suleymaniye-camii",
+      "sources": [
+        "https://www.openstreetmap.org/relation/1564032",
+        "https://www.wikidata.org/wiki/Q178643"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-bursa": {
+      "coords": {
+        "lat": 40.182573,
+        "lng": 29.067504
+      },
+      "officialUrl": "http://www.bursa.bel.tr/",
+      "sources": [
+        "https://www.openstreetmap.org/node/289534897",
+        "https://www.wikidata.org/wiki/Q40738"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-edirne": {
+      "coords": {
+        "lat": 41.675933,
+        "lng": 26.558722
+      },
+      "officialUrl": "https://edirne.bel.tr/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/1834221",
+        "https://www.wikidata.org/wiki/Q43387"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-princes-islands": {
+      "coords": {
+        "lat": 40.8753,
+        "lng": 29.0944
+      },
+      "officialUrl": "http://www.adalar.gov.tr",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1020668"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "topkapi-palace": {
+      "coords": {
+        "lat": 41.01298,
+        "lng": 28.984066
+      },
+      "costCurrency": "TRY",
+      "costMax": 1500,
+      "costMin": 1500,
+      "officialUrl": "https://muze.gen.tr/",
+      "sources": [
+        "https://www.openstreetmap.org/way/335415778",
+        "https://www.wikidata.org/wiki/Q170495"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-bosphorus-sunset-ferry": {
+      "costCurrency": "TRY",
+      "costMax": 50,
+      "costMin": 30
+    },
+    "x-grand-bazaar-and-spice-bazaar-combined-walk": {
+      "costCurrency": "TRY",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-princes-islands-day-trip": {
+      "costCurrency": "TRY",
+      "costMax": 100,
+      "costMin": 60
+    },
+    "x-traditional-hammam-turkish-bath": {
+      "coords": {
+        "lat": 41.017933,
+        "lng": 29.021637
+      },
+      "costCurrency": "TRY",
+      "costMax": 3000,
+      "costMin": 1500,
+      "sources": [
+        "https://www.openstreetmap.org/way/333933194"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-whirling-dervish-ceremony": {
+      "costCurrency": "TRY",
+      "costMax": 800,
+      "costMin": 500
+    }
+  },
+  "neighborhoods": {
+    "besiktas": {
+      "coords": {
+        "lat": 41.038961,
+        "lng": 28.999773
+      },
+      "radiusKm": 0.8
+    },
+    "beyoglu": {
+      "coords": {
+        "lat": 41.033801,
+        "lng": 28.978076
+      },
+      "radiusKm": 0.8
+    },
+    "kadikoy": {
+      "coords": {
+        "lat": 40.991295,
+        "lng": 29.024563
+      },
+      "radiusKm": 3
+    },
+    "karakoy-galata": {
+      "coords": {
+        "lat": 41.0095,
+        "lng": 29.052558
+      },
+      "radiusKm": 0.8
+    },
+    "sultanahmet": {
+      "coords": {
+        "lat": 41.004114,
+        "lng": 28.976909
+      },
+      "radiusKm": 0.47
+    }
+  }
+}

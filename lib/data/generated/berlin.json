@@ -1,0 +1,857 @@
+{
+  "bbox": [
+    52.2174,
+    12.9021,
+    52.8174,
+    13.8881
+  ],
+  "places": {
+    "berlin-cathedral": {
+      "coords": {
+        "lat": 52.519082,
+        "lng": 13.401094
+      },
+      "costCurrency": "EUR",
+      "costMax": 12,
+      "costMin": 10,
+      "officialUrl": "https://www.berlinerdom.de/",
+      "sources": [
+        "https://www.openstreetmap.org/way/313670734",
+        "https://www.wikidata.org/wiki/Q154563"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "berlin-wall-memorial": {
+      "coords": {
+        "lat": 52.537513,
+        "lng": 13.394675
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.stiftung-berliner-mauer.de/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/14375945",
+        "https://www.wikidata.org/wiki/Q95517"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "brandenburg-gate": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.51627,
+        "lng": 13.377703
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.visitberlin.de/en/spot/brandenburg-gate",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/518071791",
+        "https://www.wikidata.org/wiki/Q82425"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-bonanza-coffee-heroes": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.539997,
+        "lng": 13.40538
+      },
+      "officialUrl": "https://www.bonanzacoffee.de/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:30",
+          "close": "18:30"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "10:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/802550080"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-brammibal-s-donuts": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.525294,
+        "lng": 13.369683
+      },
+      "officialUrl": "https://www.brammibalsdonuts.de/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/1330109191"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-cafe-einstein-unter-den-linden": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.517102,
+        "lng": 13.385946
+      },
+      "officialUrl": "http://www.einstein-udl.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/1412218896",
+        "https://www.wikidata.org/wiki/Q1025595"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-father-carpenter": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.524444,
+        "lng": 13.406596
+      },
+      "officialUrl": "http://www.fathercarpenter.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "09:00",
+          "close": "16:00"
+        },
+        {
+          "days": "Sa",
+          "open": "10:00",
+          "close": "17:00"
+        },
+        {
+          "days": "Su",
+          "open": "12:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3868790052"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-the-barn": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.508368,
+        "lng": 13.374699
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "08:30",
+          "close": "19:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "09:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/766467492"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "c-zeit-fur-brot": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.499066,
+        "lng": 13.312198
+      },
+      "openingHours": [
+        {
+          "days": "Mo-Fr",
+          "open": "07:00",
+          "close": "20:00"
+        },
+        {
+          "days": "Sa",
+          "open": "08:00",
+          "close": "20:00"
+        },
+        {
+          "days": "Su",
+          "open": "08:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4708524876"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "charlottenburg-palace": {
+      "coords": {
+        "lat": 52.520642,
+        "lng": 13.29271
+      },
+      "costCurrency": "EUR",
+      "costMax": 15,
+      "costMin": 10,
+      "officialUrl": "https://www.spsg.de/schloesser-gaerten/objekt/schloss-charlottenburg-altes-schloss/",
+      "sources": [
+        "https://www.openstreetmap.org/way/186517395",
+        "https://www.wikidata.org/wiki/Q154996"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "checkpoint-charlie": {
+      "coords": {
+        "lat": 52.507432,
+        "lng": 13.390381
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.berlin.de/en/attractions-and-sights/3560059-3104052-checkpoint-charlie.en.html",
+      "sources": [
+        "https://www.openstreetmap.org/node/417346627",
+        "https://www.wikidata.org/wiki/Q68689"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "east-side-gallery": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.504454,
+        "lng": 13.440839
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.eastsidegallery-berlin.de/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/6807791",
+        "https://www.wikidata.org/wiki/Q313746"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "gendarmenmarkt": {
+      "coords": {
+        "lat": 52.51357,
+        "lng": 13.392297
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/844740667",
+        "https://www.wikidata.org/wiki/Q170103"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "jewish-museum-berlin": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.501872,
+        "lng": 13.396209
+      },
+      "costCurrency": "EUR",
+      "costMax": 10,
+      "costMin": 10,
+      "officialUrl": "https://www.jmberlin.de/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/302942554",
+        "https://www.wikidata.org/wiki/Q157003"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "mauerpark": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.543716,
+        "lng": 13.401933
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/233994267",
+        "https://www.wikidata.org/wiki/Q639887"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "memorial-to-the-murdered-jews-of-europe": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.513873,
+        "lng": 13.378735
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.stiftung-denkmal.de/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/172234733",
+        "https://www.wikidata.org/wiki/Q160700"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "museum-island": {
+      "coords": {
+        "lat": 52.520033,
+        "lng": 13.397816
+      },
+      "costCurrency": "EUR",
+      "costMax": 19,
+      "costMin": 14,
+      "officialUrl": "https://www.museumsinsel-berlin.de/",
+      "sources": [
+        "https://www.openstreetmap.org/way/330840129",
+        "https://www.wikidata.org/wiki/Q151963"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-bar-zentral": {
+      "coords": {
+        "lat": 52.505052,
+        "lng": 13.329033
+      },
+      "officialUrl": "http://www.barzentral.de/",
+      "sources": [
+        "https://www.openstreetmap.org/node/2720667492"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-berghain": {
+      "coords": {
+        "lat": 52.511167,
+        "lng": 13.443036
+      },
+      "officialUrl": "https://www.berghain.de/",
+      "sources": [
+        "https://www.openstreetmap.org/node/6341225967",
+        "https://www.wikidata.org/wiki/Q136975"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-klunkerkranich": {
+      "coords": {
+        "lat": 52.50793,
+        "lng": 13.529277
+      },
+      "sources": [
+        "https://www.openstreetmap.org/relation/15095114"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "n-watergate": {
+      "coords": {
+        "lat": 52.501051,
+        "lng": 13.445457
+      },
+      "officialUrl": "http://www.water-gate.de/",
+      "sources": [
+        "https://www.openstreetmap.org/way/303035499",
+        "https://www.wikidata.org/wiki/Q3566680"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-cafe-einstein-stammhaus": {
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20
+    },
+    "r-clarchens-ballhaus": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 52.526474,
+        "lng": 13.39691
+      },
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20,
+      "officialUrl": "https://www.claerchensball.haus/",
+      "openingHours": [
+        {
+          "days": "Tu-Fr",
+          "open": "17:00",
+          "close": "23:00"
+        },
+        {
+          "days": "Sa,Su",
+          "open": "14:00",
+          "close": "23:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/429735547",
+        "https://www.wikidata.org/wiki/Q1103846"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-curry-36": {
+      "coords": {
+        "lat": 52.493492,
+        "lng": 13.387687
+      },
+      "costCurrency": "EUR",
+      "costMax": 8,
+      "costMin": 5,
+      "officialUrl": "https://curry36.de/mehringdamm/",
+      "sources": [
+        "https://www.openstreetmap.org/node/30022140",
+        "https://www.wikidata.org/wiki/Q1144909"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-konnopke-s-imbiss": {
+      "closedDays": [
+        0,
+        1
+      ],
+      "coords": {
+        "lat": 52.540475,
+        "lng": 13.412219
+      },
+      "costCurrency": "EUR",
+      "costMax": 8,
+      "costMin": 5,
+      "officialUrl": "https://www.konnopke-imbiss.de/",
+      "openingHours": [
+        {
+          "days": "Tu-Fr",
+          "open": "11:00",
+          "close": "18:00"
+        },
+        {
+          "days": "Sa",
+          "open": "12:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/149607221",
+        "https://www.wikidata.org/wiki/Q879342"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-markthalle-neun": {
+      "coords": {
+        "lat": 52.502166,
+        "lng": 13.431489
+      },
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 10,
+      "officialUrl": "https://markthalleneun.de/",
+      "sources": [
+        "https://www.openstreetmap.org/relation/9503840",
+        "https://www.wikidata.org/wiki/Q1226563"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-max-und-moritz": {
+      "closedDays": [
+        1,
+        2
+      ],
+      "coords": {
+        "lat": 52.502619,
+        "lng": 13.414004
+      },
+      "costCurrency": "EUR",
+      "costMax": 35,
+      "costMin": 20,
+      "officialUrl": "http://www.maxundmoritzberlin.de/",
+      "sources": [
+        "https://www.openstreetmap.org/node/3803711354"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-mustafa-s-gemuse-kebap": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.493449,
+        "lng": 13.388524
+      },
+      "costCurrency": "EUR",
+      "costMax": 8,
+      "costMin": 6,
+      "officialUrl": "http://www.mustafas.de/",
+      "openingHours": [
+        {
+          "days": "Mo-Th,Su",
+          "open": "10:00",
+          "close": "25:00"
+        },
+        {
+          "days": "Fr",
+          "open": "13:00",
+          "close": "27:00"
+        },
+        {
+          "days": "Sa",
+          "open": "10:00",
+          "close": "26:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/7060011377"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-nobelhart-and-schmutzig": {
+      "coords": {
+        "lat": 52.505388,
+        "lng": 13.39054
+      },
+      "costCurrency": "EUR",
+      "costMax": 250,
+      "costMin": 180,
+      "officialUrl": "https://www.nobelhartundschmutzig.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/3718480033"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-tadshikische-teestube": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.525085,
+        "lng": 13.39507
+      },
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 10,
+      "officialUrl": "https://www.tadshikische-teestube.de/",
+      "openingHours": [
+        {
+          "days": "Mo",
+          "open": "16:00",
+          "close": "21:00"
+        },
+        {
+          "days": "Tu-Fr",
+          "open": "16:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Sa",
+          "open": "12:00",
+          "close": "22:00"
+        },
+        {
+          "days": "Su",
+          "open": "12:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3903346162"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-voner": {
+      "closedDays": [],
+      "coords": {
+        "lat": 52.506729,
+        "lng": 13.46873
+      },
+      "costCurrency": "EUR",
+      "costMax": 9,
+      "costMin": 6,
+      "officialUrl": "https://www.voener.de/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "12:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/863962760"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-zum-schusterjungen": {
+      "coords": {
+        "lat": 52.435044,
+        "lng": 13.348914
+      },
+      "costCurrency": "EUR",
+      "costMax": 30,
+      "costMin": 15,
+      "sources": [
+        "https://www.openstreetmap.org/node/14084251306"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "r-zur-letzten-instanz": {
+      "coords": {
+        "lat": 52.517453,
+        "lng": 13.413776
+      },
+      "costCurrency": "EUR",
+      "costMax": 40,
+      "costMin": 25,
+      "officialUrl": "http://www.zurletzteninstanz.de/",
+      "sources": [
+        "https://www.openstreetmap.org/node/411728139",
+        "https://www.wikidata.org/wiki/Q230377"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "reichstag-building-and-dome": {
+      "coords": {
+        "lat": 52.518611,
+        "lng": 13.376111
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "http://www.bundestag.de",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q151897"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-hackesche-hofe": {
+      "coords": {
+        "lat": 52.524538,
+        "lng": 13.401222
+      },
+      "officialUrl": "https://www.hackesche-hoefe.de/",
+      "sources": [
+        "https://www.openstreetmap.org/way/337201828",
+        "https://www.wikidata.org/wiki/Q736425"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "s-kadewe": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 52.501575,
+        "lng": 13.341003
+      },
+      "officialUrl": "https://www.kadewe.de/",
+      "openingHours": [
+        {
+          "days": "Mo-Th",
+          "open": "10:00",
+          "close": "20:00"
+        },
+        {
+          "days": "Fr",
+          "open": "10:00",
+          "close": "21:00"
+        },
+        {
+          "days": "Sa",
+          "open": "09:30",
+          "close": "20:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/60541581",
+        "https://www.wikidata.org/wiki/Q686011"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-potsdam": {
+      "coords": {
+        "lat": 52.400931,
+        "lng": 13.05914
+      },
+      "officialUrl": "https://www.potsdam.de/de",
+      "sources": [
+        "https://www.openstreetmap.org/relation/62369",
+        "https://www.wikidata.org/wiki/Q1711"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "t-spreewald": {
+      "coords": {
+        "lat": 51.953298,
+        "lng": 13.884878
+      },
+      "sources": [
+        "https://www.openstreetmap.org/relation/534268",
+        "https://www.wikidata.org/wiki/Q864768"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "tempelhofer-feld": {
+      "coords": {
+        "lat": 52.474419,
+        "lng": 13.402601
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://gruen-berlin.de/tempelhofer-feld",
+      "sources": [
+        "https://www.openstreetmap.org/relation/7317281",
+        "https://www.wikidata.org/wiki/Q2402748"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "topography-of-terror": {
+      "coords": {
+        "lat": 52.506214,
+        "lng": 13.384155
+      },
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.topographie.de/",
+      "sources": [
+        "https://www.openstreetmap.org/way/24368681",
+        "https://www.wikidata.org/wiki/Q819081"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "tv-tower-fernsehturm": {
+      "coords": {
+        "lat": 52.520828,
+        "lng": 13.409421
+      },
+      "costCurrency": "EUR",
+      "costMax": 28,
+      "costMin": 22,
+      "officialUrl": "https://www.tv-turm.de/",
+      "sources": [
+        "https://www.openstreetmap.org/way/556435241",
+        "https://www.wikidata.org/wiki/Q151356"
+      ],
+      "verifiedAt": "2026-10-19"
+    },
+    "x-berlin-club-night": {
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 15
+    },
+    "x-berlin-wall-and-cold-war-walking-tour": {
+      "costCurrency": "EUR",
+      "costMax": 25,
+      "costMin": 0
+    },
+    "x-cycling-tour-of-berlin": {
+      "costCurrency": "EUR",
+      "costMax": 40,
+      "costMin": 25
+    },
+    "x-reichstag-dome-visit": {
+      "costCurrency": "EUR",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-spree-river-cruise": {
+      "costCurrency": "EUR",
+      "costMax": 20,
+      "costMin": 15
+    }
+  },
+  "neighborhoods": {
+    "charlottenburg": {
+      "coords": {
+        "lat": 52.515747,
+        "lng": 13.309683
+      },
+      "radiusKm": 2.76
+    },
+    "friedrichshain": {
+      "coords": {
+        "lat": 52.512215,
+        "lng": 13.45029
+      },
+      "radiusKm": 3
+    },
+    "kreuzberg": {
+      "coords": {
+        "lat": 52.497644,
+        "lng": 13.411914
+      },
+      "radiusKm": 3
+    },
+    "mitte": {
+      "coords": {
+        "lat": 52.517885,
+        "lng": 13.40406
+      },
+      "radiusKm": 2.94
+    },
+    "museum-island": {
+      "coords": {
+        "lat": 52.520033,
+        "lng": 13.397816
+      },
+      "radiusKm": 0.4
+    },
+    "neukolln": {
+      "coords": {
+        "lat": 52.48115,
+        "lng": 13.43535
+      },
+      "radiusKm": 3
+    },
+    "prenzlauer-berg": {
+      "coords": {
+        "lat": 52.539847,
+        "lng": 13.428565
+      },
+      "radiusKm": 3
+    },
+    "tiergarten": {
+      "coords": {
+        "lat": 52.509778,
+        "lng": 13.35726
+      },
+      "radiusKm": 2.09
+    }
+  }
+}

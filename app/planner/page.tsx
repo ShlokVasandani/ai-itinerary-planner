@@ -1,10 +1,36 @@
-import { Suspense } from "react";
-import PlannerClient from "@/components/PlannerClient";
+import type { Metadata } from "next";
+import PlannerClient, { type PlannerInitial } from "@/components/PlannerClient";
+import PageTransition from "@/components/PageTransition";
+import { isKnownCity, loadDestination } from "@/lib/data/catalog";
 
-export default function PlannerPage() {
+export const metadata: Metadata = {
+  title: "Plan a trip: day-by-day itinerary builder",
+  description:
+    "Choose a city, dates, pace and budget and get a day-by-day plan that respects opening hours, with walking times, cost ranges and booking links.",
+  alternates: { canonical: "/planner" },
+  openGraph: { title: "Plan a trip with Sekai", description: "Day-by-day itineraries that respect opening hours, with cost ranges and booking links.", url: "/planner" },
+};
+
+type Params = Record<string, string | string[] | undefined>;
+const one = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v);
+
+export default async function PlannerPage({ searchParams }: { searchParams: Promise<Params> }) {
+  const p = await searchParams;
+  // Read on the server so the page is rendered as HTML instead of waiting for client JavaScript.
+  const initial: PlannerInitial = {
+    city: one(p.city),
+    start: one(p.start),
+    end: one(p.end),
+    adults: one(p.adults),
+    children: one(p.children),
+    go: one(p.go),
+    origin: one(p.origin),
+  };
+  const slug = initial.city && isKnownCity(initial.city) ? initial.city : "tokyo";
+  const destination = (await loadDestination(slug))!;
   return (
-    <Suspense fallback={<main style={{ padding: 100 }}>Loading planner…</main>}>
-      <PlannerClient />
-    </Suspense>
+    <PageTransition>
+      <PlannerClient initial={{ ...initial, city: slug }} initialDestination={destination} />
+    </PageTransition>
   );
 }

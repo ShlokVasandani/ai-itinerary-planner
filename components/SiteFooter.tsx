@@ -1,53 +1,62 @@
 import Link from "next/link";
-import { destinations } from "@/lib/data";
+import { cityIndex, curatedCount, openCount } from "@/lib/data/catalog";
 
 export default function SiteFooter() {
-  const featured = destinations.slice(0, 6);
-
+  const featured = cityIndex.slice(0, 6);
   return (
     <footer className="site-footer">
-      <div className="footer-top">
+      <div className="footer-inner">
         <div className="footer-brand">
-          <span className="logo">Sekai✦</span>
+          <span className="brand">
+            <span className="brand-mark" aria-hidden="true" />
+            Sekai
+          </span>
           <p>
-            20 cities, zero invented places — every trip built from real,
-            hand-verified landmarks, restaurants, and neighborhoods.
+            {cityIndex.length} cities, no invented places.{" "}
+            {openCount
+              ? `${curatedCount} guides are written and checked by hand; the rest are built from Wikidata, Wikipedia and OpenStreetMap and machine-checked.`
+              : "Every guide is written and checked by hand."}{" "}
+            Distances and opening hours come from OpenStreetMap.
           </p>
         </div>
-        <div className="footer-col">
-          <h4>Popular cities</h4>
+        <nav className="footer-col" aria-label="Popular cities">
+          <h2>Popular cities</h2>
           <ul>
             {featured.map((d) => (
               <li key={d.slug}>
-                <Link href={`/destinations/${d.slug}`}>{d.city}</Link>
+                <Link href={`/destinations/${d.slug}`} transitionTypes={["nav-fade"]}>{d.city}</Link>
               </li>
             ))}
           </ul>
-        </div>
-        <div className="footer-col">
-          <h4>Plan</h4>
+        </nav>
+        <nav className="footer-col" aria-label="Plan">
+          <h2>Plan</h2>
           <ul>
             <li>
-              <Link href="/#destinations">All destinations</Link>
+              <Link href="/destinations" transitionTypes={["nav-fade"]}>All destinations</Link>
             </li>
             <li>
-              <Link href="/planner">Build an itinerary</Link>
+              <Link href="/planner" transitionTypes={["nav-fade"]}>Build an itinerary</Link>
             </li>
             <li>
-              <Link href="/credits">Photo credits</Link>
+              <Link href="/credits" transitionTypes={["nav-fade"]}>Photo credits</Link>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
-      <div className="footer-bottom">
-        <span>© {new Date().getFullYear()} Sekai</span>
-        <span>
-          Photography via{" "}
-          <Link href="/credits" style={{ color: "inherit" }}>
-            Wikimedia Commons
-          </Link>
-          . No AI-generated venues. No sponsored placements.
-        </span>
+      <div className="footer-note">
+        <p>
+          <strong>Affiliate links.</strong> Some booking links (flights, stays, tours) may earn Sekai a small commission
+          at no extra cost to you. Official venue links never do. Prices change; always confirm on the provider&apos;s
+          site.
+        </p>
+        <p>
+          © {new Date().getFullYear()} Sekai · Map data ©{" "}
+          <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">
+            OpenStreetMap contributors
+          </a>{" "}
+          · Photography via <Link href="/credits" transitionTypes={["nav-fade"]}>Wikimedia Commons</Link>
+        </p>
       </div>
     </footer>
   );

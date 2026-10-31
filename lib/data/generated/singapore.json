@@ -1,0 +1,647 @@
+{
+  "bbox": [
+    0.9899,
+    103.5518,
+    1.5899,
+    104.152
+  ],
+  "places": {
+    "artscience-museum": {
+      "closedDays": [],
+      "coords": {
+        "lat": 1.286138,
+        "lng": 103.85923
+      },
+      "officialUrl": "https://marinabaysands.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/11361584770"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "buddha-tooth-relic-temple": {
+      "closedDays": [],
+      "coords": {
+        "lat": 1.281509,
+        "lng": 103.844189
+      },
+      "costCurrency": "SGD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.btrts.org.sg/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:00",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/47298635",
+        "https://www.wikidata.org/wiki/Q839965"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-chye-seng-huat-hardware": {
+      "coords": {
+        "lat": 1.311573,
+        "lng": 103.860328
+      },
+      "officialUrl": "https://cshhcoffee.com/",
+      "sources": [
+        "https://www.openstreetmap.org/node/3376091793"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-common-man": {
+      "closedDays": [],
+      "coords": {
+        "lat": 1.312062,
+        "lng": 103.900611
+      },
+      "officialUrl": "https://commonmancoffeeroasters.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "07:30",
+          "close": "17:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/10877063837"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-nylon-coffee": {
+      "coords": {
+        "lat": 1.276814,
+        "lng": 103.839832
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/4398307389"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "c-toast-box": {
+      "coords": {
+        "lat": 1.332407,
+        "lng": 103.743168
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/3355441060"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "clarke-quay": {
+      "coords": {
+        "lat": 1.288241,
+        "lng": 103.846428
+      },
+      "costCurrency": "SGD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/743599220",
+        "https://www.wikidata.org/wiki/Q2012051"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "gardens-by-the-bay": {
+      "closedDays": [],
+      "coords": {
+        "lat": 1.281149,
+        "lng": 103.86496
+      },
+      "costCurrency": "SGD",
+      "costMax": 46,
+      "costMin": 0,
+      "officialUrl": "https://www.gardensbythebay.com.sg/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "09:00",
+          "close": "21:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/relation/10231144",
+        "https://www.wikidata.org/wiki/Q630135"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "haw-par-villa": {
+      "coords": {
+        "lat": 1.282477,
+        "lng": 103.781826
+      },
+      "costCurrency": "SGD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/823759111",
+        "https://www.wikidata.org/wiki/Q3524310"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "marina-bay-sands-skypark": {
+      "costCurrency": "SGD",
+      "costMax": 32,
+      "costMin": 32
+    },
+    "merlion-park": {
+      "closedDays": [],
+      "coords": {
+        "lat": 1.285685,
+        "lng": 103.854159
+      },
+      "costCurrency": "SGD",
+      "costMax": 0,
+      "costMin": 0,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/687917300",
+        "https://www.wikidata.org/wiki/Q6819812"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "n-1-altitude": {
+      "closedDays": [],
+      "coords": {
+        "lat": 1.284747,
+        "lng": 103.850993
+      },
+      "officialUrl": "https://www.1-altitude.com/viewing-gallery/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:30",
+          "close": "17:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/3324020268"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "national-gallery": {
+      "closedDays": [],
+      "coords": {
+        "lat": 1.290256,
+        "lng": 103.851471
+      },
+      "costCurrency": "SGD",
+      "costMax": 20,
+      "costMin": 20,
+      "officialUrl": "https://www.nationalgallery.sg/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "19:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4759240362",
+        "https://www.wikidata.org/wiki/Q6970475"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-hawker-chan": {
+      "costCurrency": "SGD",
+      "costMax": 5,
+      "costMin": 3
+    },
+    "r-jumbo-seafood": {
+      "coords": {
+        "lat": 1.305148,
+        "lng": 103.930677
+      },
+      "costCurrency": "SGD",
+      "costMax": 90,
+      "costMin": 60,
+      "officialUrl": "http://www.jumboseafood.com.sg/",
+      "sources": [
+        "https://www.openstreetmap.org/node/462263947",
+        "https://www.wikidata.org/wiki/Q135451407"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-komala-vilas": {
+      "coords": {
+        "lat": 1.306475,
+        "lng": 103.851975
+      },
+      "officialUrl": "https://komalavilas.com.sg/",
+      "sources": [
+        "https://www.openstreetmap.org/way/176326963"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-lau-pa-sat": {
+      "closedDays": [],
+      "coords": {
+        "lat": 1.280617,
+        "lng": 103.85048
+      },
+      "costCurrency": "SGD",
+      "costMax": 15,
+      "costMin": 10,
+      "officialUrl": "http://www.laupasat.biz/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/45098520",
+        "https://www.wikidata.org/wiki/Q7697795"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-maxwell-tian-tian": {
+      "closedDays": [
+        1
+      ],
+      "coords": {
+        "lat": 1.280495,
+        "lng": 103.844798
+      },
+      "costCurrency": "SGD",
+      "costMax": 7,
+      "costMin": 5,
+      "openingHours": [
+        {
+          "days": "Tu-Su",
+          "open": "10:00",
+          "close": "16:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/4629107275"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-newton-food-centre": {
+      "closedDays": [],
+      "coords": {
+        "lat": 1.312079,
+        "lng": 103.839288
+      },
+      "costCurrency": "SGD",
+      "costMax": 30,
+      "costMin": 15,
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "00:00",
+          "close": "02:00"
+        },
+        {
+          "days": "Mo-Su",
+          "open": "12:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/41662296",
+        "https://www.wikidata.org/wiki/Q14874460"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-odette": {
+      "closedDays": [
+        0
+      ],
+      "coords": {
+        "lat": 1.289947,
+        "lng": 103.851523
+      },
+      "costCurrency": "SGD",
+      "costMin": 368,
+      "officialUrl": "https://www.odetterestaurant.com/",
+      "openingHours": [
+        {
+          "days": "Mo",
+          "open": "19:00",
+          "close": "21:30"
+        },
+        {
+          "days": "Tu-Sa",
+          "open": "12:00",
+          "close": "14:00"
+        },
+        {
+          "days": "Tu-Sa",
+          "open": "19:00",
+          "close": "21:30"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/node/6370355510",
+        "https://www.wikidata.org/wiki/Q84955194"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-old-airport-road-food-centre": {
+      "coords": {
+        "lat": 1.308273,
+        "lng": 103.885856
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/9861610176"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-song-fa-bak-kut-teh": {
+      "coords": {
+        "lat": 1.38019,
+        "lng": 103.764271
+      },
+      "sources": [
+        "https://www.openstreetmap.org/node/12534132524"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-tekka-centre": {
+      "coords": {
+        "lat": 1.306191,
+        "lng": 103.850615
+      },
+      "costCurrency": "SGD",
+      "costMax": 8,
+      "costMin": 4,
+      "sources": [
+        "https://www.openstreetmap.org/way/47198835",
+        "https://www.wikidata.org/wiki/Q7695362"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-tiong-bahru-market": {
+      "coords": {
+        "lat": 1.284792,
+        "lng": 103.832551
+      },
+      "costCurrency": "SGD",
+      "costMax": 6,
+      "costMin": 3,
+      "sources": [
+        "https://www.openstreetmap.org/relation/21297472"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "r-ya-kun-kaya-toast": {
+      "coords": {
+        "lat": 1.435839,
+        "lng": 103.78572
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1395135459"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "raffles-hotel": {
+      "coords": {
+        "lat": 1.294682,
+        "lng": 103.854641
+      },
+      "officialUrl": "https://raffles.com/singapore",
+      "sources": [
+        "https://www.openstreetmap.org/node/11517501222",
+        "https://www.wikidata.org/wiki/Q1538837"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-haji-lane": {
+      "coords": {
+        "lat": 1.301227,
+        "lng": 103.858734
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/32489943"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-ion-orchard": {
+      "closedDays": [],
+      "coords": {
+        "lat": 1.303948,
+        "lng": 103.831905
+      },
+      "officialUrl": "https://www.ionorchard.com/",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "10:00",
+          "close": "22:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/231917869",
+        "https://www.wikidata.org/wiki/Q3146786"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "s-orchard-road": {
+      "coords": {
+        "lat": 1.301465,
+        "lng": 103.838515
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/655888571"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "singapore-botanic-gardens": {
+      "closedDays": [],
+      "coords": {
+        "lat": 1.314632,
+        "lng": 103.815615
+      },
+      "costCurrency": "SGD",
+      "costMax": 0,
+      "costMin": 0,
+      "officialUrl": "https://www.nparks.gov.sg/sbg",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "05:00",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/47257476",
+        "https://www.wikidata.org/wiki/Q3046409"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "singapore-zoo": {
+      "closedDays": [],
+      "coords": {
+        "lat": 1.403708,
+        "lng": 103.794037
+      },
+      "costCurrency": "SGD",
+      "costMax": 55,
+      "costMin": 48,
+      "officialUrl": "https://www.wrs.com.sg/en/singapore-zoo.html",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "08:30",
+          "close": "18:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/262885931",
+        "https://www.wikidata.org/wiki/Q2709506"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "sultan-mosque": {
+      "coords": {
+        "lat": 1.303433,
+        "lng": 103.859697
+      },
+      "costCurrency": "SGD",
+      "costMax": 0,
+      "costMin": 0,
+      "sources": [
+        "https://www.openstreetmap.org/node/410468050"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-johor-bahru": {
+      "coords": {
+        "lat": 1.458199,
+        "lng": 103.764906
+      },
+      "officialUrl": "http://www.mbjb.gov.my/",
+      "sources": [
+        "https://www.openstreetmap.org/node/254237831",
+        "https://www.wikidata.org/wiki/Q231318"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "t-pulau-ubin": {
+      "coords": {
+        "lat": 1.413448,
+        "lng": 103.965943
+      },
+      "officialUrl": "https://ubin.mnd.gov.sg/MS/PulauUbin.aspx",
+      "sources": [
+        "https://www.openstreetmap.org/relation/2243165",
+        "https://www.wikidata.org/wiki/Q1928550"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-chinatown-heritage-walking-tour": {
+      "costCurrency": "SGD",
+      "costMax": 30,
+      "costMin": 0
+    },
+    "x-gardens-by-the-bay-garden-rhapsody-light-show": {
+      "costCurrency": "SGD",
+      "costMax": 0,
+      "costMin": 0
+    },
+    "x-night-safari": {
+      "closedDays": [],
+      "coords": {
+        "lat": 1.401353,
+        "lng": 103.789002
+      },
+      "costCurrency": "SGD",
+      "costMax": 55,
+      "costMin": 55,
+      "officialUrl": "https://www.wrs.com.sg/en/night-safari.html",
+      "openingHours": [
+        {
+          "days": "Mo-Su",
+          "open": "19:15",
+          "close": "24:00"
+        }
+      ],
+      "sources": [
+        "https://www.openstreetmap.org/way/262885924",
+        "https://www.wikidata.org/wiki/Q2234723"
+      ],
+      "verifiedAt": "2026-10-16"
+    },
+    "x-sentosa-island-day": {
+      "costCurrency": "SGD",
+      "costMax": 80,
+      "costMin": 0
+    },
+    "x-singapore-river-cruise": {
+      "coords": {
+        "lat": 1.282217,
+        "lng": 103.856853
+      },
+      "costCurrency": "SGD",
+      "costMax": 25,
+      "costMin": 25,
+      "sources": [
+        "https://www.openstreetmap.org/node/1833770002"
+      ],
+      "verifiedAt": "2026-10-16"
+    }
+  },
+  "neighborhoods": {
+    "chinatown": {
+      "coords": {
+        "lat": 1.279969,
+        "lng": 103.843688
+      },
+      "radiusKm": 0.81
+    },
+    "kampong-glam": {
+      "coords": {
+        "lat": 1.302263,
+        "lng": 103.859691
+      },
+      "radiusKm": 0.41
+    },
+    "little-india": {
+      "coords": {
+        "lat": 1.306843,
+        "lng": 103.849274
+      },
+      "radiusKm": 0.4
+    },
+    "marina-bay": {
+      "coords": {
+        "lat": 1.277658,
+        "lng": 103.853687
+      },
+      "radiusKm": 0.4
+    },
+    "orchard-road": {
+      "coords": {
+        "lat": 1.303047,
+        "lng": 103.835523
+      },
+      "radiusKm": 0.4
+    },
+    "tiong-bahru": {
+      "coords": {
+        "lat": 1.286179,
+        "lng": 103.827225
+      },
+      "radiusKm": 0.4
+    }
+  }
+}
