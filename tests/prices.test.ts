@@ -156,3 +156,14 @@ describe("untrusted upstream URLs", () => {
     expect(acts.map((a) => a.title)).toEqual(["z"]);
   });
 });
+
+describe("flight query dates", () => {
+  it("rejects dates that are not real calendar dates", async () => {
+    const { flightQuery } = await import("../lib/prices/schema");
+    const ok = { origin: "jfk", destination: "nrt", departure: "2027-03-02", return: "2028-02-29" };
+    expect(flightQuery.safeParse(ok).success).toBe(true);
+    for (const bad of ["2027-02-31", "2027-13-01", "9999-12-31", "2027-3-2", "tomorrow"]) {
+      expect(flightQuery.safeParse({ ...ok, departure: bad }).success, bad).toBe(false);
+    }
+  });
+});

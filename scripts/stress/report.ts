@@ -51,7 +51,8 @@ export function writeReport(
   dir: string,
   meta: { base: string; commit: string; started: string; ms: number; jobs: number },
   cities: CityResult[],
-  tiles: TileResult[]
+  tiles: TileResult[],
+  note?: string
 ) {
   mkdirSync(dir, { recursive: true });
   writeFileSync(`${dir}/stress-results.json`, JSON.stringify({ meta, cities, tiles }, null, 1));
@@ -73,6 +74,7 @@ export function writeReport(
   L.push(`- Server: \`${meta.base}\` (production build), commit \`${meta.commit}\``);
   L.push(`- Run: ${meta.started}, ${Math.round(meta.ms / 60000)} min, ${meta.jobs} parallel workers, fixed seed \`stress-v1\``);
   L.push(`- Cities: ${cities.length}. Plans built and checked in the browser: **${all.length}**. Plans with at least one failure: **${failing.length}**. Distinct failure types: **${byCheck.size}**.`);
+  if (note) L.push(`- ${note}`);
   L.push(`- Map tiles in this run: a local 1x1 PNG stub for every plan; real OpenStreetMap tiles only in the three-city check below.`, "");
 
   L.push("## Failures by type", "");

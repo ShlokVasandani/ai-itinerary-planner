@@ -66,7 +66,7 @@ export const skyscanner: SyncAdapter = {
     const dest = destCode(q).toLowerCase();
     const out = yymmdd(q.startDate);
     const back = yymmdd(q.endDate);
-    const path = ["transport", "flights", origin || "anywhere", dest, out, back].filter(Boolean).join("/");
+    const path = ["transport", "flights", origin || "anywhere", enc(dest), out, back].filter(Boolean).join("/");
     const params = new URLSearchParams({ adultsv2: String(adults), cabinclass: "economy", rtn: back ? "1" : "0" });
     if (children > 0) params.set("childrenv2", Array(children).fill("8").join("|"));
     return [offer("skyscanner", "flight", `Flights to ${q.city} on Skyscanner`, `https://www.skyscanner.net/${path}/?${params}`)];

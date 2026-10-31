@@ -280,6 +280,39 @@ describe("selected interests are served", () => {
   });
 });
 
+describe("meal slot labels tell the truth about the time", () => {
+  const mins = (t: string) => Number(t.slice(0, 2)) * 60 + Number(t.slice(3));
+  const WINDOW: Record<string, [number, number]> = {
+    breakfast: [6 * 60, 11 * 60],
+    lunch: [11 * 60 + 30, 15 * 60 + 30],
+    coffee: [14 * 60, 18 * 60 + 30],
+    dinner: [18 * 60, 23 * 60],
+  };
+
+  it("a meal outside its usual hours carries an honest label instead of the plain one", () => {
+    const wrong: string[] = [];
+    let relabelled = 0;
+    for (const d of destinations) {
+      for (const duration of [3, 7, 14]) {
+        const it = generateItinerary({ ...base(d.slug), startDate: undefined, duration, interests: ["food", "cafes", "history"] });
+        for (const day of it.days)
+          for (const s of day.stops) {
+            const w = WINDOW[s.kind];
+            if (!w) continue;
+            const t = mins(s.time);
+            const inside = t >= w[0] && t <= w[1];
+            const slotLabel = (s as { slotLabel?: string }).slotLabel;
+            if (!inside && !slotLabel) wrong.push(`${d.slug} day ${day.dayNumber}: ${s.kind} at ${s.time} "${s.name}"`);
+            if (inside && slotLabel) wrong.push(`${d.slug} day ${day.dayNumber}: ${s.kind} at ${s.time} is on time but labelled "${slotLabel}"`);
+            if (slotLabel) relabelled++;
+          }
+      }
+    }
+    expect(wrong).toEqual([]);
+    expect(relabelled, "the cases that motivated this should still occur, now relabelled").toBeGreaterThan(0);
+  });
+});
+
 describe("determinism", () => {
   it("same input gives identical output", () => {
     for (const slug of ["tokyo", "lisbon", "dubai"]) {
@@ -401,5 +434,40 @@ describe("late arrival", () => {
     expect(it.days[0].stops).toHaveLength(1);
     expect(it.days[0].stops[0].name).toMatch(/rest/i);
     expect(findClosedStops(it)).toEqual([]);
+  });
+});
+
+describe("input validation", () => {
+  const lisbon = () => destinations.find((d) => d.slug === "lisbon")!;
+  const plan = (extra: Partial<PlannerInput>) =>
+    generateItinerary({ destination: lisbon(), duration: 3, budget: "mid-range", travelStyle: "first-time", interests: ["history"], ...extra });
+
+  it("treats dates that are not real calendar dates, or absurdly far away, as no dates", () => {
+    for (const bad of ["2027-02-31", "2027-13-01", "2027-00-10", "0000-01-01", "9999-12-31", "1800-06-01", "2027-1-1", "abcd-ef-gh"]) {
+      const it = plan({ startDate: bad, endDate: bad });
+      expect(it.startDate, bad).toBeUndefined();
+      expect(it.days.every((d) => d.date === undefined), bad).toBe(true);
+      expect(it.days).toHaveLength(3);
+    }
+  });
+
+  it("still accepts real dates, including a leap day", () => {
+    expect(plan({ startDate: "2028-02-29", endDate: "2028-03-02" }).days.map((d) => d.date)).toEqual(["2028-02-29", "2028-03-01", "2028-03-02"]);
+  });
+
+  it("ignores flight times that are not clock times", () => {
+    for (const bad of ["99:99", "24:30", "12:60", "7pm", "-1:00", "1:5"]) {
+      const it = plan({ arrivalFlightTime: bad, departureFlightTime: bad });
+      expect(it.input.arrivalFlightTime, bad).toBeUndefined();
+      expect(it.input.departureFlightTime, bad).toBeUndefined();
+    }
+    expect(plan({ arrivalFlightTime: "9:05" }).input.arrivalFlightTime).toBe("9:05");
+  });
+
+  it("clamps trip length and party size to sane bounds", () => {
+    expect(plan({ duration: 500 }).days).toHaveLength(14);
+    expect(plan({ duration: -4 }).days).toHaveLength(1);
+    expect(plan({ duration: Number.NaN }).days.length).toBeGreaterThanOrEqual(1);
+    expect(plan({ groupSize: 0 }).input.groupSize).toBe(1);
   });
 });

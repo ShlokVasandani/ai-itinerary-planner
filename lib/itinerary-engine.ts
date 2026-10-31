@@ -36,6 +36,7 @@ import { parseCost } from "./cost-text";
 import { centroid, defaultLeg, haversineKm, legNote, travelLeg, type Leg } from "./engine/geo";
 import { closedDaysLabel } from "./engine/days";
 import { combinedDietFit, dietNote, dietRank, type DietFit } from "./engine/dietary";
+import { mealSlotLabel } from "./engine/meals";
 import { seededRandom } from "./engine/rng";
 import {
   addDays,
@@ -44,6 +45,7 @@ import {
   fitOpening,
   fromMin,
   isClosedAllDay,
+  isClockTime,
   isIsoDate,
   toMin,
   weekdayOf,
@@ -123,6 +125,8 @@ export interface TimelineStop {
   time: string;
   endTime?: string;
   kind: StopKind;
+  /** Replaces the plain label for `kind` when the meal landed outside its usual hours ("Late lunch", "Evening drinks"). */
+  slotLabel?: string;
   name: string;
   neighborhood: string;
   description: string;
@@ -420,8 +424,8 @@ function buildCatalog(d: Destination): Catalog {
 // ---------------------------------------------------------------------------
 
 export function resolveInput(input: PlannerInput): ResolvedInput {
-  let duration = input.duration ?? 3;
-  let startDate = isIsoDate(input.startDate) ? input.startDate : undefined;
+  let duration = Number.isFinite(input.duration) ? (input.duration as number) : 3;
+  const startDate = isIsoDate(input.startDate) ? input.startDate : undefined;
   let endDate = isIsoDate(input.endDate) ? input.endDate : undefined;
   if (startDate && endDate) {
     const span = diffDays(startDate, endDate) + 1;
@@ -439,14 +443,14 @@ export function resolveInput(input: PlannerInput): ResolvedInput {
     startDate,
     endDate,
     pace: input.pace ?? "balanced",
-    groupSize: Math.max(1, Math.round(input.groupSize ?? 1)),
+    groupSize: Number.isFinite(input.groupSize) ? Math.max(1, Math.round(input.groupSize as number)) : 1,
     hasKids: !!input.hasKids,
     mobility: input.mobility ?? "standard",
     dietary: [...new Set(input.dietary ?? [])],
     mustInclude: [...new Set(input.mustInclude ?? [])],
     avoid: [...new Set(input.avoid ?? [])],
-    arrivalFlightTime: /^\d{1,2}:\d{2}$/.test(input.arrivalFlightTime ?? "") ? input.arrivalFlightTime : undefined,
-    departureFlightTime: /^\d{1,2}:\d{2}$/.test(input.departureFlightTime ?? "") ? input.departureFlightTime : undefined,
+    arrivalFlightTime: isClockTime(input.arrivalFlightTime) ? input.arrivalFlightTime : undefined,
+    departureFlightTime: isClockTime(input.departureFlightTime) ? input.departureFlightTime : undefined,
     seed: String(input.seed ?? "sekai"),
   };
 }
@@ -659,16 +663,6 @@ function legBetween(env: Env, prev: Entry | undefined, next: Entry): Leg | undef
   return travelLeg(km, env.inp.mobility, approximate);
 }
 
-const KIND_FOR_CAT: Record<StopCategory, StopKind> = {
-  landmark: "landmark",
-  restaurant: "lunch",
-  cafe: "coffee",
-  experience: "experience",
-  shopping: "shopping",
-  nightlife: "nightlife",
-  dayTrip: "day-trip",
-};
-
 interface BuildState {
   clock: number;
   prev?: Entry;
@@ -725,6 +719,7 @@ function entryToStop(
     time: fromMin(start),
     endTime: fromMin(start + duration),
     kind,
+    slotLabel: mealSlotLabel(kind, start),
     name: e.name,
     neighborhood: e.neighborhood || env.inp.destination.city,
     description,

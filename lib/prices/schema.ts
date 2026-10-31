@@ -1,8 +1,9 @@
 import { z } from "zod";
+import { isIsoDate } from "../engine/time";
 
 const iata = z.string().trim().regex(/^[A-Za-z]{3}$/, "Use a 3-letter airport code").transform((s) => s.toUpperCase());
 const currency = z.string().trim().regex(/^[A-Za-z]{3}$/).transform((s) => s.toUpperCase());
-const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Use YYYY-MM-DD");
+const isoDate = z.string().refine(isIsoDate, "Use a real date as YYYY-MM-DD");
 
 export const flightQuery = z.object({
   origin: iata,

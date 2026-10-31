@@ -1,5 +1,4 @@
 import type { Destination, Verifiable } from "../types";
-import { withAffiliate } from "./affiliateConfig";
 import { buildLinks, searchLinks } from "./links";
 import type { Offer, SearchQuery } from "./types";
 

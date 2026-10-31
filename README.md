@@ -31,10 +31,66 @@ a map and booking providers. It runs with **zero API keys**.
 ```bash
 npm install
 npm run dev          # http://localhost:3000
+npm run build && npm start   # production build and server
 npm test             # vitest
+npm run typecheck
+npm run lint
 npm run validate     # data checks (add --skip-urls via npm run validate:offline)
-npm run build
 ```
+
+Read [`AGENTS.md`](AGENTS.md) before changing framework code: this Next.js version differs from older ones, and its
+guides are in `node_modules/next/dist/docs/`.
+
+## Testing
+
+| What | Command | Needs |
+|---|---|---|
+| Unit and render tests (engine, tabs, day card, place matching, trip problems, meal labels) | `npm test` | nothing |
+| End-to-end: every city's 5-day plan, every Book menu, every outbound link, every day map, city switching, day-trip menus, tab keyboard | `npx tsx scripts/verify-e2e.ts http://localhost:3000` (add city slugs to limit it, or `--ui-only` for just the interaction checks) | a running production server and Chrome |
+| Stress test: ~58 plans per city across all 50 cities in a real browser, checked against the raw data | `npm run stress -- --base http://localhost:3000` (`--cities a,b`, `--groups A,B,I`, `--no-tiles`); `npm run stress:dry` is the engine-only pass, no browser | a running production server and Chrome |
+
+The stress test writes `reports/stress-test.md`; its screenshots and raw JSON are generated, not committed.
+`scripts/stress/regress.ts` replays the failing scenarios on an older build to tell regressions from old bugs. If a busy machine makes a few steps time out in a parallel run (a timeout throws a city's chain out of step and inflates the counts), re-run just those cities with `--jobs 1` and combine with `npx tsx scripts/stress/merge.ts <full.json> <rerun.json>`. `scripts/verify-browser.ts` is a person's-eye check of the main flow with real tiles (one at a time, hard-capped) for Tokyo and Lisbon.
+Map tiles are answered with a 1x1 PNG in every bulk run: **never point a bulk run at `tile.openstreetmap.org`**, it is a
+free community service. The real-tile check covers three cities, one request at a time. Run it against a production
+build (`npm run build && npm start`); `next dev` cannot download Google Fonts offline.
+
+## Motion
+
+All motion lives in `app/globals.css` and is driven by tokens in `:root`:
+
+- Easing: `--ease-out` (everything that enters or responds), `--ease-in-out` (on-screen movement), `--ease-drawer`.
+  `--ease` is an alias for `--ease-out`. **No `ease-in` anywhere.**
+- `--press` (0.97) is the press scale; `--rise`, `--pop-y`, `--pop-scale` and `--banner-scale` are travel distances.
+  `prefers-reduced-motion` zeroes the travel tokens, so entrances become fades; press dims instead of shrinking.
+- Rules: UI transitions stay at or under 300 ms (exits faster than enters); only `transform` and `opacity` animate,
+  except short (at most 160 ms) `color` / `background` / `border-color` changes on controls; hover styles live behind
+  `(hover: hover) and (pointer: fine)`; every pressable element answers on `:active`, and a mouse commits toggles on
+  pointer-down (`components/usePress.ts`); popovers scale from the arrow or trigger edge and are transitions, not
+  keyframes, so they can be interrupted; nothing animates from `scale(0)`.
+- Page transitions use React's `<ViewTransition>` (`components/PageTransition.tsx`, one per page): links carry a
+  `transitionTypes` of `nav-forward`, `nav-back` or `nav-fade`.
+- **A library-owned element must never have a dynamic `className`.** Leaflet adds `leaflet-container` and friends to
+  the host div; if React rewrites `className` it wipes them and the map renders as a blank grey box with tiles
+  loading unseen. `components/DayMap.tsx` keeps `className="day-map-canvas"` static and signals readiness with
+  `data-ready`. The same applies to anything else a library decorates.
+
+## Known limitations
+
+- **Browser back and forward have no page transition.** Next does not run popstate navigations through a view
+  transition, so they swap instantly (tried: a crossfade default for untyped navigations did not start one).
+  Clicking a link or button always transitions.
+- **Swap and Shuffle can remove the stop that served a selected interest.** The guarantee "if the city has venues
+  for a selected interest, the plan contains one" applies when a plan is generated, not to later edits. Build again
+  to restore it.
+- **Some trips cannot be planned.** A late landing or an early flight can leave no time for sightseeing (for example a
+  one-day trip with both flight times close together). The planner says so and names the field to change instead of
+  showing an empty plan.
+- **Meals follow opening hours, not the clock.** A venue that opens late can put lunch at 16:20; such a meal is
+  labelled "Late lunch" (or "Evening meal", "Evening drinks", "Brunch", "Early dinner") rather than moved.
+- Day-trip stops and some venues have no coordinates, so a day's map can show fewer pins than stops.
+- Opening hours, prices and dietary matches come from public data and heuristics; the UI asks people to confirm with
+  the venue.
 
 ## Data model
 
@@ -92,8 +148,22 @@ Without a key, or if an API fails, they return link-only offers with placeholder
 
 ## Photos and credits
 
-Photos are licensed Wikimedia Commons images (see [`CREDITS.md`](CREDITS.md) and `/credits`). Map tiles and place data are
-© OpenStreetMap contributors.
+Photos are licensed Wikimedia Commons images. **Policy:** an image is only added if its author, licence and source page
+are recorded (`lib/photo-manifest.json`, or `lib/data/open/photos.json` for open-data cities) and shown on `/credits` (see [`CREDITS.md`](CREDITS.md)); no image is committed
+without that record, and photo archives (zips) are never committed. Run `npx tsx scripts/fetch-photos.ts <slug>` to add
+one. Map tiles and place data are © OpenStreetMap contributors; the attribution stays visible on every map.
+
+## Continuous integration
+
+`.github/workflows/ci.yml` runs install, lint, typecheck, vitest and a production build on every pull request;
+Dependabot (`.github/dependabot.yml`) proposes npm and GitHub Actions updates weekly. `tests/photo-credits.test.ts`
+and `tests/security-headers.test.ts` keep the credits and header policies true.
+
+## Security
+
+See [`SECURITY.md`](SECURITY.md) for how to report a vulnerability. Security headers (CSP, HSTS in production,
+frame and referrer policies) are set in `next.config.mjs`. HSTS is `max-age` only, with no `includeSubDomains` or
+`preload`, so it pins this host and nothing else on your domain; the price API routes validate input and rate-limit.
 
 ## License
 

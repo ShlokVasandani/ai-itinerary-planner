@@ -14,7 +14,9 @@ const LINKS = [
 export default function SiteHeader() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
-  const [open, setOpen] = useState(false);
+  // The menu is open only for the path it was opened on, so navigating closes it without an effect.
+  const [openFor, setOpenFor] = useState<string | null>(null);
+  const open = openFor === pathname;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 6);
@@ -24,12 +26,8 @@ export default function SiteHeader() {
   }, []);
 
   useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
-
-  useEffect(() => {
     if (!open) return;
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpenFor(null);
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [open]);
@@ -54,7 +52,7 @@ export default function SiteHeader() {
           Plan my trip
         </Link>
 
-        <PressButton className="menu-btn" aria-expanded={open} aria-controls="mobile-menu" onPress={() => setOpen((v) => !v)}>
+        <PressButton className="menu-btn" aria-expanded={open} aria-controls="mobile-menu" onPress={() => setOpenFor(open ? null : pathname)}>
           <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
           <span className="menu-bars" aria-hidden="true" />
         </PressButton>

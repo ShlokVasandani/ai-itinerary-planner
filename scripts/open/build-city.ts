@@ -100,7 +100,7 @@ export async function buildCity(seed: Seed, taken: Set<string>): Promise<BuildRe
   };
 
   const landmarks: Place[] = [];
-  accepted.forEach(({ a, c }, i) => {
+  accepted.forEach(({ a, c }) => {
     const desc = wiki[a.enwiki] ?? (a.description ? `${cap(a.description)}.` : "");
     if (!desc) return;
     const osm = lmTags[a.qid];

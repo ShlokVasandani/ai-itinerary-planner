@@ -25,18 +25,18 @@ function Row({ title, hint, value, min, max, onChange }: { title: string; hint: 
 
 export default function TravellerField({
   adults,
-  children,
+  kids,
   onChange,
   className,
   align = "end",
 }: {
   adults: number;
-  children: number;
-  onChange: (adults: number, children: number) => void;
+  kids: number;
+  onChange: (adults: number, kids: number) => void;
   className?: string;
   align?: "start" | "end";
 }) {
-  const total = adults + children;
+  const total = adults + kids;
   return (
     <SearchField
       label="Travellers"
@@ -44,12 +44,12 @@ export default function TravellerField({
       className={className}
       align={align}
       panelClassName="sf-trav"
-      value={`${total} ${total === 1 ? "traveller" : "travellers"}${children ? `, ${children} ${children === 1 ? "child" : "children"}` : ""}`}
+      value={`${total} ${total === 1 ? "traveller" : "travellers"}${kids ? `, ${kids} ${kids === 1 ? "child" : "children"}` : ""}`}
     >
       {() => (
         <>
-          <Row title="Adults" hint="Age 13 or over" value={adults} min={1} max={12} onChange={(n) => onChange(n, children)} />
-          <Row title="Children" hint="Age 0 to 12" value={children} min={0} max={8} onChange={(n) => onChange(adults, n)} />
+          <Row title="Adults" hint="Age 13 or over" value={adults} min={1} max={12} onChange={(n) => onChange(n, kids)} />
+          <Row title="Children" hint="Age 0 to 12" value={kids} min={0} max={8} onChange={(n) => onChange(adults, n)} />
         </>
       )}
     </SearchField>

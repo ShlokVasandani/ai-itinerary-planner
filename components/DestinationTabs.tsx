@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useRef, useState } from "react";
+import { nextTabIndex } from "@/lib/tab-keys";
 import type { Destination, Verifiable } from "@/lib/types";
 import NoteIcon from "@/components/NoteIcon";
 import PriorityIcon from "@/components/PriorityIcon";
@@ -113,17 +114,32 @@ export default function DestinationTabs({ d }: { d: Destination }) {
     practical: true,
   };
   const TABS = ALL_TABS.filter((t) => present[t.id]);
+  const base = useId();
+  const panelId = `${base}-panel`;
+  const tabId = (id: TabId) => `${base}-tab-${id}`;
+  const nav = useRef<HTMLDivElement>(null);
+
+  // ARIA tabs with automatic activation: arrows and Home/End move focus and select; only the selected tab is in the Tab order.
+  function onKeyDown(e: React.KeyboardEvent<HTMLDivElement>) {
+    const i = TABS.findIndex((t) => t.id === tab);
+    const next = nextTabIndex(e.key, i, TABS.length);
+    if (next === undefined) return;
+    e.preventDefault();
+    setTab(TABS[next].id);
+    nav.current?.querySelectorAll<HTMLButtonElement>('[role="tab"]')[next]?.focus();
+  }
 
   return (
     <div className="tabs-wrap">
-      <div className="tabs-nav" role="tablist" aria-label={`${d.city} information sections`}>
+      <div ref={nav} className="tabs-nav" role="tablist" aria-label={`${d.city} information sections`} onKeyDown={onKeyDown}>
         {TABS.map((t) => (
           <PressButton
             key={t.id}
-            id={`tab-${t.id}`}
+            id={tabId(t.id)}
             role="tab"
+            tabIndex={tab === t.id ? 0 : -1}
             aria-selected={tab === t.id}
-            aria-controls={`panel-${t.id}`}
+            aria-controls={panelId}
             className={`tab-btn${tab === t.id ? " active" : ""}`}
             onPress={() => setTab(t.id)}
           >
@@ -132,7 +148,7 @@ export default function DestinationTabs({ d }: { d: Destination }) {
         ))}
       </div>
 
-      <div key={tab} className="tab-panel" role="tabpanel" id={`panel-${tab}`} aria-labelledby={`tab-${tab}`} tabIndex={0}>
+      <div key={tab} className="tab-panel" role="tabpanel" id={panelId} aria-labelledby={tabId(tab)} tabIndex={0}>
         <h2 className="sr-only">{TABS.find((t) => t.id === tab)?.label}</h2>
         {tab === "overview" && (
           <div className="panel-grid">

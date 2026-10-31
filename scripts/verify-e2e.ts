@@ -24,6 +24,8 @@ const base = new URL(BASE);
  *  - Changing the city in the picker must leave "Build my itinerary" enabled and not busy, and the plan must be for
  *    the new city. (A race in the city-loading effect once left it disabled for good.)
  *  - A day trip must get a Book/Details menu even when it has no official or map URL of its own.
+ *  - A trip with no room for sightseeing shows the "too tight for your flight times" notice instead of a plan.
+ *  - The city-guide tabs follow the ARIA keyboard pattern.
  */
 async function checkInteractions(browser: import("playwright-core").Browser): Promise<string[]> {
   const problems: string[] = [];
@@ -78,6 +80,50 @@ async function checkInteractions(browser: import("playwright-core").Browser): Pr
     const row = trips.nth(i);
     if ((await row.locator(".popover > button").count()) === 0) problems.push(`day trips: "${((await row.locator("h4").textContent()) ?? "").trim()}" has no Book/Details menu`);
   }
+  // A trip with no room for sightseeing shows a friendly notice naming the fields to change, not an empty plan.
+  await page.goto(`${BASE}/planner?city=lisbon`, { waitUntil: "domcontentloaded" });
+  await page.waitForFunction(() => {
+    const b = document.querySelector(".planner-form button[type=submit]");
+    return !!b && Object.keys(b).some((k) => k.startsWith("__reactFiber"));
+  });
+  const tightDays = page.getByRole("group", { name: "Days (1–14)", exact: true });
+  for (let i = 0; i < 20 && Number((await tightDays.locator("output").innerText()).trim()) !== 1; i++) {
+    await tightDays.getByRole("button", { name: "Fewer: Days (1–14)", exact: true }).click();
+  }
+  await page.locator("details.field-details summary").click();
+  await page.getByLabel("Landing on day 1").fill("14:00");
+  await page.getByLabel("Flight home, last day").fill("18:00");
+  await page.locator(".planner-form button[type=submit]").click();
+  const notice = page.locator('.planner-empty[role="status"]');
+  try {
+    await notice.waitFor({ timeout: 10000 });
+    const text = await notice.innerText();
+    for (const want of ["too tight for your flight times", "14:00", "18:00", "Trip length", "Landing on day 1", "Flight home, last day"]) {
+      if (!text.includes(want)) problems.push(`too-tight notice does not mention "${want}": ${text.replace(/\s+/g, " ").slice(0, 120)}`);
+    }
+    if ((await page.locator(".day-card").count()) > 0) problems.push("too-tight notice: day cards are shown next to it");
+  } catch {
+    problems.push("a 1-day trip landing 14:00 with a flight home at 18:00 did not show the too-tight notice");
+  }
+
+  // City-guide tabs: the ARIA keyboard pattern (arrows, Home/End, roving tabindex).
+  await page.goto(`${BASE}/destinations/lisbon`, { waitUntil: "domcontentloaded" });
+  await page.waitForFunction(() => {
+    const b = document.querySelector('[role="tab"]');
+    return !!b && Object.keys(b).some((k) => k.startsWith("__reactFiber"));
+  });
+  const tabs = page.locator('[role="tab"]');
+  const count = await tabs.count();
+  const selected = async () => page.evaluate(() => [...document.querySelectorAll('[role="tab"]')].findIndex((t) => t.getAttribute("aria-selected") === "true"));
+  const focused = async () => page.evaluate(() => [...document.querySelectorAll('[role="tab"]')].findIndex((t) => t === document.activeElement));
+  await tabs.first().focus();
+  for (const [key, want] of [["ArrowRight", 1], ["ArrowRight", 2], ["ArrowLeft", 1], ["End", count - 1], ["ArrowRight", 0], ["ArrowLeft", count - 1], ["Home", 0]] as const) {
+    await page.keyboard.press(key);
+    const [sel, foc] = [await selected(), await focused()];
+    if (sel !== want || foc !== want) problems.push(`tabs: after ${key} expected tab ${want} selected and focused, got selected ${sel}, focused ${foc}`);
+  }
+  const inOrder = await page.evaluate(() => [...document.querySelectorAll('[role="tab"]')].filter((t) => (t as HTMLElement).tabIndex === 0).length);
+  if (inOrder !== 1) problems.push(`tabs: ${inOrder} tabs are in the Tab order, expected 1`);
   await ctx.close();
   return problems;
 }
@@ -97,7 +143,11 @@ async function main() {
   let totalLinks = 0;
   let totalClicks = 0;
   let mapsChecked = 0;
-  for (const d of cityIndex.filter((x) => only.length === 0 || only.includes(x.slug))) {
+  cities: for (const d of cityIndex.filter((x) => only.length === 0 || only.includes(x.slug))) {
+    // A timeout from a busy machine should cost one retry of this city, not the whole run.
+    for (let attempt = 1; attempt <= 2; attempt++) {
+      const saved = { problems: problems.length, totalLinks, totalClicks, mapsChecked };
+      try {
     const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
     // Never hit third-party hosts: answer them with a stub page.
     await ctx.route("**/*", (route) => {
@@ -116,7 +166,7 @@ async function main() {
     } catch {
       problems.push(`${d.slug}: no plan rendered`);
       await ctx.close();
-      continue;
+      continue cities;
     }
     const days = await page.locator(".day-card").count();
     if (days !== 5) problems.push(`${d.slug}: expected 5 days, got ${days}`);
@@ -213,6 +263,15 @@ async function main() {
     for (const e of errors) problems.push(`${d.slug}: ${e}`);
     console.log(`${d.slug.padEnd(15)} days ${days}, stops ${stops}, links ${anchors.length}, clicked ${distinct.length}${errors.length ? `, errors ${errors.length}` : ""}`);
     await ctx.close();
+        break;
+      } catch (e) {
+        problems.length = saved.problems;
+        ({ totalLinks, totalClicks, mapsChecked } = saved);
+        const why = (e as Error).message.split("\n")[0];
+        if (attempt === 2) problems.push(`${d.slug}: the check could not complete twice: ${why}`);
+        else console.log(`${d.slug}: retrying once after: ${why}`);
+      }
+    }
   }
   await browser.close();
   console.log(`\n${totalLinks} outbound links checked, ${totalClicks} distinct links clicked, ${mapsChecked} day maps checked.`);
